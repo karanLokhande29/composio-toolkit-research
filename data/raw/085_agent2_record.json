@@ -1,0 +1,99 @@
+{
+ "id": 85,
+ "app": "iPayX",
+ "category": "Finance and Fintech",
+ "hint": "ipayx.ai/docs",
+ "one_liner": "Service for auditing foreign exchange fees and comparing currency margins in cross-border payments.",
+ "app_type": "saas",
+ "auth": {
+  "methods": [
+   "bearer_token"
+  ],
+  "oauth_grant_types": [],
+  "notes": "Static API key sent as Bearer token; obtained from ipayx.ai",
+  "evidence": [
+   {
+    "url": "https://github.com/iPAYX-Technologies/mcp-fx-audit",
+    "snippet": "Bearer — API key from https://www.ipayx.ai/ai-access",
+    "check": "exact"
+   }
+  ]
+ },
+ "access": {
+  "status": "self_serve_free",
+  "dev_sandbox": true,
+  "notes": "Free API key available from ipayx.ai with restrictive rate limit on free tier",
+  "evidence": [
+   {
+    "url": "https://github.com/Ipayx-stellar/mcp-fx-audit",
+    "snippet": "get a free key at ipayx.ai",
+    "check": "exact"
+   },
+   {
+    "url": "https://github.com/iPAYX-Technologies/mcp-fx-audit",
+    "snippet": "3 free audits per IP per calendar month",
+    "check": "exact"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "sdk_only"
+  ],
+  "breadth": "narrow",
+  "openapi_spec_url": null,
+  "webhooks": null,
+  "rate_limit_note": "3 free audits per IP per calendar month",
+  "evidence": [
+   {
+    "url": "https://github.com/Ipayx-stellar/mcp-fx-audit",
+    "snippet": "Grade an invoice 0–100 on FX fairness with explanation",
+    "check": "exact"
+   },
+   {
+    "url": "https://github.com/iPAYX-Technologies/mcp-fx-audit",
+    "snippet": "audit FX transactions against the mid-market rate in real time",
+    "check": "exact"
+   }
+  ]
+ },
+ "mcp": {
+  "official": "https://github.com/Ipayx-stellar/mcp-fx-audit",
+  "community": [],
+  "evidence": [
+   {
+    "url": "https://github.com/Ipayx-stellar/mcp-fx-audit",
+    "snippet": "MCP server for iPayX Protocol — audit FX fees, compare currency conversion margins",
+    "check": "exact"
+   }
+  ]
+ },
+ "buildability": {
+  "verdict": "ready_with_caveats",
+  "main_blocker": "other",
+  "rationale": "Self-serve free API credentials obtainable; MCP server and functions documented; but API surface is narrow and free tier rate limit (3 calls/month) highly restrictive for toolkit development.",
+  "composio_existing_toolkit": "no",
+  "composio_slug": null
+ },
+ "overview_evidence": [
+  {
+   "url": "https://github.com/Ipayx-stellar/mcp-fx-audit",
+   "snippet": "MCP server for iPayX Protocol — audit FX fees, compare currency conversion margins and score cross-border payment invoices"
+  }
+ ],
+ "confidence": 0.72,
+ "unknown_reasons": {
+  "auth": "",
+  "access": "",
+  "api_surface": "Underlying HTTP API specification not documented in provided pages; only MCP server interface shown. Full OpenAPI spec and detailed endpoint documentation likely at ipayx.ai/docs but not provided.",
+  "mcp": ""
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 3,
+  "error": null,
+  "cost_usd": 0.063046,
+  "seconds": 88.3
+ }
+}

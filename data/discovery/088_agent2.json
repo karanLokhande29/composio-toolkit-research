@@ -1,0 +1,298 @@
+{
+ "id": 88,
+ "app": "Brex",
+ "tag": "agent2",
+ "urls": [
+  {
+   "url": "https://developer.brex.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.brex.com/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.brex.com/docs/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.brex.com/docs/authentication/",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.brex.com/docs/getting_started/",
+   "purpose": "credentials/sandbox",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.brex.com/docs/partner_program/",
+   "purpose": "partner programme",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.brex.com/docs/pricing/",
+   "purpose": "pricing",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.brex.com/openapi/",
+   "purpose": "API reference",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.brex.com/docs/rate_limiting/",
+   "purpose": "rate limits",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.brex.com/docs/webhooks/",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.brex.com/docs/mcp/",
+   "purpose": "MCP server",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/crazyrabbitLTC/mcp-brex-server",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/dennisonbertram/mcp-brex",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/agenticledger/brex-mcp-http",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/brex.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.brex.com/_auth/idp-login?idpId=oidc&localePrefix=&redirectTo=",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.brex.com/docs/mcp",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.brex.com/guides/authentication",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.brex.com/guides/partner_authentication",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.brex.com/guides/rate_limits",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.brex.com/guides/authentication.md",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.brex.com/docs/mcp.md",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.brex.com/guides/quickstart",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.brex.com/openapi/accounting_api",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.brex.com/openapi/budgets_api",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.brex.com/openapi/expenses_api",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.brex.com/openapi/fields_api",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.brex.com/openapi/onboarding_api",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.brex.com/openapi/payments_api",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "crazyrabbitLTC/mcp-brex-server",
+   "url": "https://github.com/crazyrabbitLTC/mcp-brex-server",
+   "stars": 4,
+   "description": "A MCP server for interacting with Brex expense tracking platform"
+  },
+  {
+   "repo": "dennisonbertram/mcp-brex",
+   "url": "https://github.com/dennisonbertram/mcp-brex",
+   "stars": 0,
+   "description": "A model context protocol server for Brex"
+  },
+  {
+   "repo": "agenticledger/brex-mcp-http",
+   "url": "https://github.com/agenticledger/brex-mcp-http",
+   "stars": 0,
+   "description": "Brex MCP Server — Streamable HTTP transport with Bearer passthrough auth"
+  },
+  {
+   "repo": "shuji-bonji/s1000d-brex-mcp",
+   "url": "https://github.com/shuji-bonji/s1000d-brex-mcp",
+   "stars": 0,
+   "description": "MCP server that reads S1000D® BREX (Business Rules Exchange) data modules and checks data modules against them. Not affiliated with ASD."
+  },
+  {
+   "repo": "shuji-bonji/s1000d-writer-mcp",
+   "url": "https://github.com/shuji-bonji/s1000d-writer-mcp",
+   "stars": 0,
+   "description": "MCP server that builds, repairs and prepares for translation S1000D® data modules without letting the LLM write XML: structured drafts in, XML out, always verif"
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Brex",
+    "slug": "BREX",
+    "tools": 84,
+    "auth": [
+     "OAUTH2",
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/brex.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Brex",
+    "slug": "BREX",
+    "tools": 84,
+    "auth": [
+     "OAUTH2",
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/brex.md"
+   }
+  ]
+ },
+ "search_meta": {}
+}

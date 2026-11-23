@@ -1,0 +1,137 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.044915,
+  "seconds": 35.7,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://docs.reducto.ai/api-reference",
+  "https://docs.reducto.ai/getting-started",
+  "https://docs.reducto.ai/webhooks",
+  "https://reducto.ai",
+  "https://docs.reducto.ai",
+  "https://reducto.ai/pricing",
+  "https://reducto.ai/contact",
+  "https://docs.reducto.ai/mcp-server",
+  "https://docs.reducto.ai/reference/rate-limits",
+  "https://docs.reducto.ai/reference/pricing-migration",
+  "https://reducto.ai/developers",
+  "https://docs.reducto.ai/studio-quickstart"
+ ],
+ "output": {
+  "one_liner": "Reducto is an agentic document platform that parses, extracts, splits, classifies, and edits 30+ document types into structured JSON.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "bearer_token"
+   ],
+   "oauth_grant_types": [],
+   "notes": "Static bearer token (API key) sent in Authorization header",
+   "evidence": [
+    {
+     "url": "https://docs.reducto.ai/api-reference",
+     "snippet": "-H \"Authorization: Bearer $REDUCTO_API_KEY"
+    },
+    {
+     "url": "https://docs.reducto.ai/getting-started",
+     "snippet": "Set your API key as an environment variable export REDUCTO_API_KEY=\"your-api-key\""
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Anyone can sign up for free account with $150 in free usage credits; pay-as-you-go Standard tier available after credits exhausted",
+   "evidence": [
+    {
+     "url": "https://docs.reducto.ai/getting-started",
+     "snippet": "Create a Reducto account Sign up for a free account without leaving the docs."
+    },
+    {
+     "url": "https://reducto.ai/pricing",
+     "snippet": "Free $150 in free usage Get started No Page Limits After your free $150, standard rates apply."
+    },
+    {
+     "url": "https://reducto.ai",
+     "snippet": "You can get API access right away by starting off on our Standard tier, pay-as-you-go plan."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "moderate",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "1,000 requests/sec sustained per API key; additional limits per endpoint (e.g., 300 req/s for GET /job/{job_id})",
+   "evidence": [
+    {
+     "url": "https://docs.reducto.ai/api-reference",
+     "snippet": "OpenAPI schema Parse Delete job Webhooks Configure webhook"
+    },
+    {
+     "url": "https://docs.reducto.ai",
+     "snippet": "/parse /extract /split /classify /edit Five API endpoints plus a visual Studio"
+    },
+    {
+     "url": "https://docs.reducto.ai/webhooks",
+     "snippet": "Svix webhooks provide cryptographic request signing, automatic retries with exponential backoff"
+    },
+    {
+     "url": "https://docs.reducto.ai/reference/rate-limits",
+     "snippet": "All endpoints 1,000 req/s sustained"
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://mcp.reducto.ai/mcp",
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://docs.reducto.ai/mcp-server",
+     "snippet": "The hosted server runs at https://mcp.reducto.ai/mcp. Add this block to your MCP client config"
+    },
+    {
+     "url": "https://docs.reducto.ai/getting-started",
+     "snippet": "Fastest path for coding agents If you are using Claude Code, Codex, Cursor, use the Reducto MCP server."
+    },
+    {
+     "url": "https://docs.reducto.ai/mcp-server",
+     "snippet": "The Reducto MCP server connects AI agents directly to Reducto. Once installed, agents in Claude Desktop, Claude Code, Codex, Cursor, VS Code, Windsurf can classify, parse, extract, split, and edit documents"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Self-serve free credentials with no approval gates, fully documented REST API with OpenAPI schema, official MCP server, and SDKs for Python/Node/Go enable toolkit build today.",
+   "composio_existing_toolkit": "no",
+   "composio_slug": null
+  },
+  "overview_evidence": [
+   {
+    "url": "https://reducto.ai",
+    "snippet": "The agentic document platform for leading AI teams who demand enterprise performance at scale."
+   },
+   {
+    "url": "https://docs.reducto.ai",
+    "snippet": "Reducto is the agentic document platform for AI teams who need production-grade document processing."
+   },
+   {
+    "url": "https://reducto.ai/developers",
+    "snippet": "Parse, extract, classify, split, and edit 30+ file types. Production-ready structured JSON."
+   }
+  ],
+  "confidence": 0.96,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  }
+ }
+}

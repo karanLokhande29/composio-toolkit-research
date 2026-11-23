@@ -1,0 +1,102 @@
+{
+ "fields": [
+  "access.status",
+  "api_surface.breadth",
+  "api_surface.styles",
+  "buildability.main_blocker",
+  "buildability.verdict"
+ ],
+ "pages": [
+  "https://docs.composio.dev/toolkits/notebook_lm.md",
+  "https://cloud.google.com/find-a-partner/",
+  "https://ai.google.dev/gemini-api/docs",
+  "https://ai.google.dev/gemini-api/docs/api-key",
+  "https://ai.google.dev/gemini-api/docs/pricing",
+  "https://ai.google.dev/api",
+  "https://cloud.google.com/vertex-ai/generative-ai/docs/reference/rest"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.14878200000000003,
+  "seconds": 51.7,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "access.status",
+    "value": "admin_approval",
+    "evidence": [
+     {
+      "url": "https://docs.composio.dev/toolkits/notebook_lm.md",
+      "snippet": "The user needs an active license and the **Cloud NotebookLM User** role in the deployment project."
+     },
+     {
+      "url": "https://docs.composio.dev/toolkits/notebook_lm.md",
+      "snippet": "NotebookLM connects to an existing Gemini Notebook Enterprise deployment in the Global location."
+     }
+    ],
+    "reason": "Access depends on an admin-granted IAM role (Cloud NotebookLM User) and license inside an existing enterprise deployment, not a self-serve purchase or sales call — matching admin_approval rather than paid_plan_required or contact_sales."
+   },
+   {
+    "field": "api_surface.breadth",
+    "value": "unknown",
+    "evidence": [
+     {
+      "url": "https://docs.composio.dev/toolkits/notebook_lm.md",
+      "snippet": "search for **Discovery Engine API** (`discoveryengine.googleapis.com`), and select **Enable**."
+     },
+     {
+      "url": "https://docs.composio.dev/toolkits/notebook_lm.md",
+      "snippet": "See the [notebook listing reference](https://docs.cloud.google.com/gemini/enterprise/docs/reference/rest/v1alpha/projects.locations.notebooks/listRecentlyViewed) for the required scopes and IAM permissions."
+     }
+    ],
+    "reason": "The pages only reference one API (Discovery Engine) and one example endpoint without enumerating the full resource/endpoint set, so overall breadth cannot be determined."
+   },
+   {
+    "field": "api_surface.styles",
+    "value": [
+     "rest"
+    ],
+    "evidence": [
+     {
+      "url": "https://docs.composio.dev/toolkits/notebook_lm.md",
+      "snippet": "See the [notebook listing reference](https://docs.cloud.google.com/gemini/enterprise/docs/reference/rest/v1alpha/projects.locations.notebooks/listRecentlyViewed) for the required scopes and IAM permissions."
+     },
+     {
+      "url": "https://docs.composio.dev/toolkits/notebook_lm.md",
+      "snippet": "search for **Discovery Engine API** (`discoveryengine.googleapis.com`), and select **Enable**."
+     }
+    ],
+    "reason": "The linked reference is an explicit REST API path (v1alpha REST resource for notebooks), confirming a REST surface rather than none."
+   },
+   {
+    "field": "buildability.main_blocker",
+    "value": "admin_scope",
+    "evidence": [
+     {
+      "url": "https://docs.composio.dev/toolkits/notebook_lm.md",
+      "snippet": "The user needs an active license and the **Cloud NotebookLM User** role in the deployment project."
+     }
+    ],
+    "reason": "The main friction is that a user/admin must already hold a license and the correct IAM role in an existing enterprise deployment, an admin-scope gate rather than a payment paywall or absence of a blocker."
+   },
+   {
+    "field": "buildability.verdict",
+    "value": "ready_with_caveats",
+    "evidence": [
+     {
+      "url": "https://docs.composio.dev/toolkits/notebook_lm.md",
+      "snippet": "The user needs an active license and the **Cloud NotebookLM User** role in the deployment project."
+     },
+     {
+      "url": "https://docs.composio.dev/toolkits/notebook_lm.md",
+      "snippet": "**Auth:** OAUTH2"
+     }
+    ],
+    "reason": "OAuth2 credentials can be self-configured and the API is documented, but real use requires an existing enterprise deployment plus an admin-granted license/role, so it is buildable only with caveats, not fully ready out-of-the-box."
+   }
+  ]
+ }
+}

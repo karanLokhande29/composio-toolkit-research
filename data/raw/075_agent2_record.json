@@ -1,0 +1,121 @@
+{
+ "id": 75,
+ "app": "Asana",
+ "category": "Productivity and Project Management",
+ "hint": "developers.asana.com",
+ "one_liner": "Asana is a cloud-based project and work management platform for team collaboration.",
+ "app_type": "saas",
+ "auth": {
+  "methods": [
+   "bearer_token",
+   "oauth2"
+  ],
+  "oauth_grant_types": [
+   "authorization_code"
+  ],
+  "notes": "Personal Access Token (PAT) and OAuth 2.0 (authorization code grant) are primary methods; Service Accounts (Enterprise tier) also use Bearer tokens; OpenID Connect available.",
+  "evidence": [
+   {
+    "url": "https://developers.asana.com/docs/authentication",
+    "snippet": "A personal access token (PAT) is the quickest and simplest way to authenticate in the API.",
+    "check": "exact"
+   },
+   {
+    "url": "https://developers.asana.com/docs/oauth",
+    "snippet": "Asana supports the authorization code grant flow",
+    "check": "exact"
+   },
+   {
+    "url": "https://developers.asana.com/docs/personal-access-token",
+    "snippet": "-H \"Authorization: Bearer ACCESS_TOKEN\"",
+    "check": "exact"
+   }
+  ]
+ },
+ "access": {
+  "status": "self_serve_free",
+  "dev_sandbox": true,
+  "notes": "Free Asana account enables PAT generation and API testing; OAuth apps default to private; developer sandbox available on request for premium features.",
+  "evidence": [
+   {
+    "url": "https://developers.asana.com/docs",
+    "snippet": "You can test in any of your existing workspaces, create a free account, or request a developer sandbox",
+    "check": "repaired"
+   },
+   {
+    "url": "https://developers.asana.com/docs/personal-access-token",
+    "snippet": "You can generate a personal access token from the Asana developer console",
+    "check": "exact"
+   },
+   {
+    "url": "https://developers.asana.com/docs",
+    "snippet": "By default, all apps start out private to the developer.",
+    "check": "exact"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "rest"
+  ],
+  "breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "rate_limit_note": "Free tier: 150 req/min, Paid tier: 1,500 req/min; per-token limits; standard, volume, and job concurrency rate limiters",
+  "evidence": [
+   {
+    "url": "https://developers.asana.com/reference/rest-api-reference",
+    "snippet": "This reference is generated from our OpenAPI Specification",
+    "check": "exact"
+   },
+   {
+    "url": "https://developers.asana.com/reference/rest-api-reference",
+    "snippet": "The Asana API is a REST ful interface with predictable resource-oriented URLs,",
+    "check": "repaired"
+   },
+   {
+    "url": "https://developers.asana.com/docs/webhooks",
+    "snippet": "Webhooks allow you to subscribe to notifications about events that occur on Asana resources",
+    "check": "exact"
+   },
+   {
+    "url": "https://developers.asana.com/docs/rate-limits",
+    "snippet": "Limits are based on minute-long windows and differ depending on whether the domain is free or paid",
+    "check": "exact"
+   }
+  ]
+ },
+ "mcp": {
+  "official": null,
+  "community": [],
+  "evidence": []
+ },
+ "buildability": {
+  "verdict": "ready",
+  "main_blocker": "none",
+  "rationale": "Self-serve free credentials, documented REST+OAuth API with webhooks, 247-tool Composio toolkit already published.",
+  "composio_existing_toolkit": "yes",
+  "composio_slug": "ASANA"
+ },
+ "overview_evidence": [
+  {
+   "url": "https://docs.composio.dev/toolkits/asana.md",
+   "snippet": "Category: project management, Auth: OAUTH2, Composio-managed OAuth available? Yes, Tools: 247"
+  }
+ ],
+ "confidence": 0.92,
+ "unknown_reasons": {
+  "auth": "",
+  "access": "",
+  "api_surface": "OpenAPI spec file URL not directly provided, only reference to existing spec",
+  "mcp": "MCP server documentation referenced in navigation but actual MCP server URLs and details not in provided pages"
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 8,
+  "error": null,
+  "cost_usd": 0.06925100000000001,
+  "seconds": 74.7
+ }
+}

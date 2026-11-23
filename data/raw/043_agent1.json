@@ -1,0 +1,123 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.058682,
+  "seconds": 54.4,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://developer.bigcommerce.com/api-reference",
+  "https://developer.bigcommerce.com/docs",
+  "https://docs.composio.dev/toolkits/bigcommerce.md",
+  "https://developer.bigcommerce.com/docs/start/authentication",
+  "https://docs.bigcommerce.com/developer/docs/storefront/getting-started",
+  "https://docs.bigcommerce.com/developer/docs/integrations/getting-started",
+  "https://docs.bigcommerce.com/developer/docs/b2b-edition/getting-started",
+  "https://docs.bigcommerce.com/developer/docs/storefront/guides/customer-authentication/customer-login",
+  "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/rate-limits",
+  "https://docs.bigcommerce.com/developer/docs/storefront/catalyst/getting-started/prerequisites",
+  "https://docs.bigcommerce.com/developer/docs/storefront/catalyst/getting-started/one-click-catalyst",
+  "https://docs.bigcommerce.com/developer/docs/storefront/catalyst/getting-started/cli-installation"
+ ],
+ "output": {
+  "one_liner": "BigCommerce is a SaaS ecommerce platform providing REST and GraphQL APIs for managing products, orders, customers, carts, checkouts, and store data.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "api_key"
+   ],
+   "oauth_grant_types": [],
+   "notes": "OAuth-based API accounts with client_id and client_secret; Store-level accounts include static access tokens usable as bearer tokens; App-level accounts generate unique tokens per store installation.",
+   "evidence": [
+    {
+     "url": "https://developer.bigcommerce.com/docs/start/authentication",
+     "snippet": "BigCommerce offers three types of OAuth-based API accounts to developers who wish to use BigCommerce's REST APIs"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Free developer sandbox stores available for development; production use requires paid BigCommerce plan. Create API credentials in control panel with scopes needed for your use case.",
+   "evidence": [
+    {
+     "url": "https://developer.bigcommerce.com/docs",
+     "snippet": "Sign up for a free BigCommerce trial store to test API calls and build integrations without affecting live data"
+    },
+    {
+     "url": "https://docs.bigcommerce.com/developer/docs/b2b-edition/getting-started",
+     "snippet": "The developer sandbox is free of charge."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest",
+    "graphql"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "OAuth apps rate-limited with quota refreshed every 30 seconds; limits vary by store plan type (Core, Performance, etc.)",
+   "evidence": [
+    {
+     "url": "https://developer.bigcommerce.com/api-reference",
+     "snippet": "REST Store Management APIs, REST Storefront API, GraphQL Storefront API, GraphQL Admin API"
+    },
+    {
+     "url": "https://developer.bigcommerce.com/api-reference",
+     "snippet": "You can download generated OpenAPI specification files for API references in JSON or YAML"
+    },
+    {
+     "url": "https://docs.bigcommerce.com/developer/docs/integrations/getting-started",
+     "snippet": "Manage real-time events with webhooks. Use webhooks to be instantly notified of specific store events"
+    },
+    {
+     "url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/rate-limits",
+     "snippet": "Apps using OAuth are rate-limited based on a quota that's refreshed every 30 seconds"
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://developer.bigcommerce.com/docs",
+     "snippet": "Docs MCP Server - Connect Cursor, Claude, or Codex to the BigCommerce developer docs via MCP"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Composio toolkit already exists with 532 tools; APIs fully self-serve with free sandbox credentials, comprehensive REST and GraphQL documentation, and published OpenAPI specs.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "BIGCOMMERCE"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://developer.bigcommerce.com/api-reference",
+    "snippet": "BigCommerce has several APIs that let you manage store data, authenticate customers, make client-side queries for product information, and more"
+   },
+   {
+    "url": "https://developer.bigcommerce.com/docs",
+    "snippet": "We deliver our core platform and products using a SaaS model."
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/bigcommerce.md",
+    "snippet": "BigCommerce (slug BIGCOMMERCE, 532 tools, auth API_KEY,OAUTH2)"
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": "Pages mention BigCommerce Docs MCP Server but do not provide a repository URL"
+  }
+ }
+}

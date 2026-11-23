@@ -1,0 +1,114 @@
+{
+ "id": 7,
+ "app": "Zoho CRM",
+ "category": "CRM and Sales",
+ "hint": "zoho.com/crm",
+ "one_liner": "Zoho CRM is an AI-powered cloud-based customer relationship management platform for sales automation and pipeline management.",
+ "app_type": "saas",
+ "auth": {
+  "methods": [
+   "oauth2"
+  ],
+  "oauth_grant_types": [],
+  "notes": "OAuth 2.0 is the protocol; specific grant type not explicitly named in pages, though server-based application flow is described.",
+  "evidence": [
+   {
+    "url": "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html",
+    "snippet": "The Zoho CRM API uses the OAuth 2.0 protocol for authentication.",
+    "check": "exact"
+   }
+  ]
+ },
+ "access": {
+  "status": "self_serve_free",
+  "dev_sandbox": true,
+  "notes": "Freemium plan available to any user at no cost (up to 3 users). 30-day full-feature trial also available with no credit card required.",
+  "evidence": [
+   {
+    "url": "https://zoho.com/crm",
+    "snippet": "Zoho CRM's freemium edition supports up to 3 users and comes with the essentials like leads, documents, and mobile apps",
+    "check": "exact"
+   },
+   {
+    "url": "https://www.zoho.com/crm/crmplus/pricing.html",
+    "snippet": "Yes, during the 30-day CRM Plus trial period, you'll have access to all features and capabilities.",
+    "check": "exact"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "graphql",
+   "rest"
+  ],
+  "breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "rate_limit_note": "Rate limits not documented in provided pages.",
+  "evidence": [
+   {
+    "url": "https://www.zoho.com/crm/developer/docs/api/v8/",
+    "snippet": "Perform CRUD operations on CRM module entities and integrate with any third party application through flexible RESTful endpoints.",
+    "check": "exact"
+   },
+   {
+    "url": "https://www.zoho.com/crm/developer/docs/",
+    "snippet": "Learn how to request specific resources, fields of the resources and relationships of the resources in a single query.",
+    "check": "exact"
+   },
+   {
+    "url": "https://www.zoho.com/crm/developer/docs/api/v8/",
+    "snippet": "Get notified whenever a data change occurs inside your CRM.",
+    "check": "exact"
+   },
+   {
+    "url": "https://www.zoho.com/crm/developer/docs/api/v8/",
+    "snippet": "Metadata APIs Fetch the metadata of modules, fields, layouts, custom views, and related lists.",
+    "check": "exact"
+   }
+  ]
+ },
+ "mcp": {
+  "official": "https://www.zoho.com/crm/developer/docs/",
+  "community": [],
+  "evidence": [
+   {
+    "url": "https://www.zoho.com/crm/developer/docs/",
+    "snippet": "Empower Zoho CRM with next-gen agentic automation. Configure an MCP server to enable AI agents",
+    "check": "repaired"
+   }
+  ]
+ },
+ "buildability": {
+  "verdict": "ready",
+  "main_blocker": "none",
+  "rationale": "Self-serve free credentials available; well-documented REST and GraphQL APIs with webhooks; Composio toolkit already exists with 115 tools.",
+  "composio_existing_toolkit": "yes",
+  "composio_slug": "ZOHO"
+ },
+ "overview_evidence": [
+  {
+   "url": "https://zoho.com/crm",
+   "snippet": "The easiest AI CRM for growth. Intelligent automation meets intuitive design. Built with AI at its core."
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/zoho.md",
+   "snippet": "Category: crm Auth: OAUTH2 Composio-managed OAuth available? Yes Tools: 115"
+  }
+ ],
+ "confidence": 0.95,
+ "unknown_reasons": {
+  "auth": "",
+  "access": "",
+  "api_surface": "OpenAPI specification URL not mentioned; rate limits not documented.",
+  "mcp": "No community MCP server repositories mentioned."
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 10,
+  "error": null,
+  "cost_usd": 0.064724,
+  "seconds": 71.3
+ }
+}

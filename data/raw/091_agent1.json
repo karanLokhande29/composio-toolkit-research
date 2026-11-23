@@ -1,0 +1,114 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.09095199999999999,
+  "seconds": 91.9,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://docs.composio.dev/toolkits/notebook_lm.md",
+  "https://cloud.google.com/gemini",
+  "https://cloud.google.com/docs/authentication",
+  "https://cloud.google.com/pricing",
+  "https://cloud.google.com/products/spectrum-access-system",
+  "https://cloud.google.com/compute/all-pricing",
+  "https://cloud.google.com/sql/pricing",
+  "https://cloud.google.com/kubernetes-engine/pricing",
+  "https://cloud.google.com/storage/pricing",
+  "https://cloud.google.com/bigquery/pricing",
+  "https://cloud.google.com/pricing/list",
+  "https://cloud.google.com/partners"
+ ],
+ "output": {
+  "one_liner": "Google's licensed enterprise notebook service for organizing and analyzing sources with AI.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2"
+   ],
+   "oauth_grant_types": [
+    "authorization_code"
+   ],
+   "notes": "OAuth2 required; Composio provides managed OAuth or custom credentials via Google Cloud Console.",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/notebook_lm.md",
+     "snippet": "Auth: OAUTH2"
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/notebook_lm.md",
+     "snippet": "Composio-managed OAuth available? Yes"
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/notebook_lm.md",
+     "snippet": "Open **Clients** → **Create client**, choose **Web application**, and give it a name."
+    }
+   ]
+  },
+  "access": {
+   "status": "paid_plan_required",
+   "dev_sandbox": false,
+   "notes": "NotebookLM Enterprise license required; user must have Cloud NotebookLM User role in deployment project.",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/notebook_lm.md",
+     "snippet": "NotebookLM connects to an existing Gemini Notebook Enterprise deployment in the Global location."
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/notebook_lm.md",
+     "snippet": "The user needs an active license and the **Cloud NotebookLM User** role in the deployment project."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "moderate",
+   "openapi_spec_url": null,
+   "webhooks": null,
+   "rate_limit_note": "",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/notebook_lm.md",
+     "snippet": "search for **Discovery Engine API** (`discoveryengine.googleapis.com`), and select **Enable**."
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/notebook_lm.md",
+     "snippet": "See the notebook listing reference for the required scopes and IAM permissions."
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": []
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Composio toolkit already exists with documented OAuth2 integration and 11 tools.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "NOTEBOOK_LM"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://docs.composio.dev/toolkits/notebook_lm.md",
+    "snippet": "NotebookLM Enterprise is Google's licensed, source-grounded notebook service for organizing sources in global-location deployments."
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/notebook_lm.md",
+    "snippet": "Category: ai assistants"
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  }
+ }
+}

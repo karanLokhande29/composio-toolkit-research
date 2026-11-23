@@ -1,0 +1,121 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.063099,
+  "seconds": 82.1,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://docs.composio.dev/toolkits/github.md",
+  "https://docs.github.com/rest",
+  "https://github.com/github/github-mcp-server",
+  "https://github.com/idosal/git-mcp",
+  "https://github.com/kucherenko/jscpd"
+ ],
+ "output": {
+  "one_liner": "GitHub is a platform for repository hosting, code review, and collaboration with a REST API for integrations.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "bearer_token"
+   ],
+   "oauth_grant_types": [],
+   "notes": "GitHub supports OAuth2 and Personal Access Tokens (sent as Bearer tokens). Custom GitHub Apps can also be configured.",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/github.md",
+     "snippet": "Confirm the authentication method is **OAuth2**, review the scopes"
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/github.md",
+     "snippet": "You can bring your own GitHub App by configuring its client ID and client secret"
+    },
+    {
+     "url": "https://github.com/github/github-mcp-server",
+     "snippet": "Bearer ${input:github_mcp_pat}"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Free self-service OAuth setup with no payment required for basic API access.",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/github.md",
+     "snippet": "Composio-managed OAuth available? Yes"
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/github.md",
+     "snippet": "Sign in to GitHub with the account that should own the app"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "GitHub REST API includes rate limiting and pagination controls.",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/github.md",
+     "snippet": "**Tools:** 905"
+    },
+    {
+     "url": "https://docs.github.com/rest",
+     "snippet": "Create integrations, retrieve data, and automate your workflows with the GitHub REST API"
+    },
+    {
+     "url": "https://docs.github.com/rest",
+     "snippet": "Rate limits and Pagination are documented sections"
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://github.com/github/github-mcp-server",
+   "community": [
+    "https://github.com/idosal/git-mcp"
+   ],
+   "evidence": [
+    {
+     "url": "https://github.com/github/github-mcp-server",
+     "snippet": "The GitHub MCP Server connects AI tools directly to GitHub's platform"
+    },
+    {
+     "url": "https://github.com/idosal/git-mcp",
+     "snippet": "GitMCP is a free, open-source, remote MCP server for any GitHub project"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Composio toolkit already exists with 905 tools; GitHub provides free self-serve OAuth and comprehensive REST API documentation.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "GITHUB"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://docs.composio.dev/toolkits/github.md",
+    "snippet": "**Category:** developer tools **Auth:** OAUTH2 **Tools:** 905"
+   },
+   {
+    "url": "https://docs.github.com/rest",
+    "snippet": "GitHub REST API documentation"
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "OpenAPI spec URL not provided in pages; GraphQL API not mentioned in provided pages",
+   "mcp": ""
+  }
+ }
+}

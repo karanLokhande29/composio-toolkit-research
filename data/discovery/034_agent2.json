@@ -1,0 +1,156 @@
+{
+ "id": 34,
+ "app": "GoHighLevel",
+ "tag": "agent2",
+ "urls": [
+  {
+   "url": "https://highlevel.stoplight.io",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://highlevel.stoplight.io/docs/integrations/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://highlevel.stoplight.io/docs/integrations/0443d0cf5fa19-authentication",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://highlevel.stoplight.io/docs/integrations/68a1980db132d-create-a-private-app",
+   "purpose": "sandbox",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://marketplace.gohighlevel.com/",
+   "purpose": "partner programme",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://marketplace.gohighlevel.com/pricing",
+   "purpose": "pricing",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://highlevel.stoplight.io/docs/integrations/a04b2440e0f92-our-api-reference-structure",
+   "purpose": "API reference",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://highlevel.stoplight.io/docs/integrations/ZG9jOjM1MTM2NjMw-rate-limits",
+   "purpose": "rate limits",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://highlevel.stoplight.io/docs/integrations/5e9e2a7a0e9a0-webhooks",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://marketplace.gohighlevel.com/docs/mcp",
+   "purpose": "mcp server",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://highlevel.stoplight.io/docs/integrations/ZG9jOjI4MzM4NTY5-overview",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://github.com/mastanley13/GoHighLevel-MCP",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/BusyBee3333/Go-High-Level-MCP-2026-Complete",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/basicmachines-co/open-ghl-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "mastanley13/GoHighLevel-MCP",
+   "url": "https://github.com/mastanley13/GoHighLevel-MCP",
+   "stars": 197,
+   "description": ""
+  },
+  {
+   "repo": "BusyBee3333/Go-High-Level-MCP-2026-Complete",
+   "url": "https://github.com/BusyBee3333/Go-High-Level-MCP-2026-Complete",
+   "stars": 128,
+   "description": "GoHighLevel from Claude, Codex & MCP apps — 927 tools, full v3 coverage, safe CRM automation, plus RealWave for native workflow building."
+  },
+  {
+   "repo": "basicmachines-co/open-ghl-mcp",
+   "url": "https://github.com/basicmachines-co/open-ghl-mcp",
+   "stars": 53,
+   "description": "An open source Model Context Protocol server for GoHighLevel API v2 with OAuth"
+  },
+  {
+   "repo": "tenfoldmarc/ghl-mcp",
+   "url": "https://github.com/tenfoldmarc/ghl-mcp",
+   "stars": 19,
+   "description": "Connect your GoHighLevel sub-account to Claude Code. Manage contacts, pipelines, calendars, invoices, and 70+ tools — all from your terminal."
+  },
+  {
+   "repo": "drausal/gohighlevel-mcp",
+   "url": "https://github.com/drausal/gohighlevel-mcp",
+   "stars": 10,
+   "description": "Model Context Protocol (MCP) server for GoHighLevel API - Complete access to contacts, opportunities, calendars, workflows, and more"
+  }
+ ],
+ "composio": {
+  "exact": [],
+  "candidates": []
+ },
+ "search_meta": {}
+}

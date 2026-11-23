@@ -1,0 +1,129 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.11474599999999999,
+  "seconds": 154.1,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://api.slack.com/authentication/basics",
+  "https://api.slack.com/docs/oauth",
+  "https://api.slack.com/methods",
+  "https://api.slack.com/docs",
+  "https://api.slack.com/docs/rate-limits",
+  "https://api.slack.com/apis/events-api",
+  "https://api.slack.com/messaging/webhooks",
+  "https://docs.composio.dev/toolkits/slack.md",
+  "https://api.slack.com/apps",
+  "https://slack.com/intl/en-in/accessibility"
+ ],
+ "output": {
+  "one_liner": "A channel-based messaging platform where teams communicate, integrate tools, and find information within a secure enterprise-grade environment.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "bearer_token"
+   ],
+   "oauth_grant_types": [
+    "authorization_code"
+   ],
+   "notes": "OAuth 2.0 with authorization code grant flow; issued access tokens function as bearer tokens for API requests",
+   "evidence": [
+    {
+     "url": "https://api.slack.com/docs/oauth",
+     "snippet": "OAuth 2.0 is a protocol that lets your app request authorization to private details in a user's Slack account"
+    },
+    {
+     "url": "https://api.slack.com/docs/oauth",
+     "snippet": "Access tokens for all apps are also known as bearer tokens."
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/slack.md",
+     "snippet": "Composio-managed auth works without any setup: create a Slack auth config, choose Composio Managed, and connect."
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Developers can freely create a Slack workspace, build an app, obtain credentials (Client ID/Client Secret), and test using a free Developer Program sandbox without payment or vendor approval.",
+   "evidence": [
+    {
+     "url": "https://api.slack.com/authentication/basics",
+     "snippet": "If you don't have a Slack workspace already, we recommend also setting up a developer sandbox."
+    },
+    {
+     "url": "https://api.slack.com/messaging/webhooks",
+     "snippet": "Pick features, then click Continue and select the workspace where you'll play around and build your app."
+    },
+    {
+     "url": "https://api.slack.com/docs/oauth",
+     "snippet": "You'll need to register your app before getting started. A registered app is assigned a unique Client ID and Client Secret"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Web API: most methods ≥20 requests/minute; tier-specific limits exist (e.g., chat.postMessage ~1 msg/sec/channel); incoming webhooks: 1/sec, 10k/hour; documented burst tolerance",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/slack.md",
+     "snippet": "With the integration you can send and read messages, manage channels, upload files, react to events, search conversations, and more"
+    },
+    {
+     "url": "https://api.slack.com/docs/rate-limits",
+     "snippet": "Most methods allow at least 20 requests per minute, while allowing for occasional bursts of more requests."
+    },
+    {
+     "url": "https://api.slack.com/apis/events-api",
+     "snippet": "If your workspace has already installed your application, your request URL will soon begin receiving your configured event subscriptions."
+    },
+    {
+     "url": "https://api.slack.com/messaging/webhooks",
+     "snippet": "Incoming webhooks are a way to post messages from apps into Slack."
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://mcp.slack.com/mcp",
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://api.slack.com/docs",
+     "snippet": "Slack MCP server Server URL https://mcp.slack.com/mcp Remote MCP over HTTP with OAuth."
+    },
+    {
+     "url": "https://api.slack.com/authentication/basics",
+     "snippet": "Try using the Slack MCP Plugin to aid in agent-assisted development."
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Self-serve free credentials, documented REST API with broad method coverage, webhooks, rate limits, and official MCP server enable toolkit building immediately.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "SLACK"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://docs.composio.dev/toolkits/slack.md",
+    "snippet": "Slack is a channel-based messaging platform. With Slack, people can work together more effectively, connect all their software tools and services"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/slack.md",
+    "snippet": "Composio turns Slack's API into ready-to-use tools that AI agents and automations can call."
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {}
+ }
+}

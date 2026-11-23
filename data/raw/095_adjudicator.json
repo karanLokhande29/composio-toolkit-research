@@ -1,0 +1,42 @@
+{
+ "fields": [
+  "auth.methods"
+ ],
+ "pages": [
+  "https://docs.reducto.ai/api-reference",
+  "https://docs.reducto.ai/get-started/authentication",
+  "https://docs.reducto.ai/mcp-server",
+  "https://studio.reducto.ai/auth",
+  "https://docs.reducto.ai/_auth/login?return_to=%2F",
+  "https://docs.reducto.ai/_auth/login?return_to=%2Fquickstart",
+  "https://docs.reducto.ai/_auth/login?return_to=%2Fapi-reference%2Fapi%2Fsections%2Fparse%2Foperations%2Fparse"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.06648899999999999,
+  "seconds": 11.4,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "auth.methods",
+    "value": [
+     "bearer_token"
+    ],
+    "evidence": [
+     {
+      "url": "https://docs.reducto.ai/api-reference",
+      "snippet": "-H \"Authorization: Bearer $REDUCTO_API_KEY"
+     },
+     {
+      "url": "https://docs.reducto.ai/mcp-server",
+      "snippet": "\"Authorization\": \"Bearer your-api-key\""
+     }
+    ],
+    "reason": "The REST API and MCP server both authenticate via a static Bearer API key; the OAuth device-code flow mentioned is only a CLI login convenience to retrieve that same API key, not a separate OAuth2 grant for API access."
+   }
+  ]
+ }
+}

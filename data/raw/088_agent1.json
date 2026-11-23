@@ -1,0 +1,152 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.065416,
+  "seconds": 76.8,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://docs.composio.dev/toolkits/brex.md",
+  "https://developer.brex.com",
+  "https://developer.brex.com/docs/authentication",
+  "https://developer.brex.com/docs/mcp",
+  "https://developer.brex.com/guides/partner_authentication",
+  "https://developer.brex.com/guides/rate_limits",
+  "https://developer.brex.com/guides/authentication.md",
+  "https://developer.brex.com/guides/quickstart",
+  "https://github.com/crazyrabbitLTC/mcp-brex-server",
+  "https://github.com/dennisonbertram/mcp-brex",
+  "https://github.com/agenticledger/brex-mcp-http"
+ ],
+ "output": {
+  "one_liner": "Brex is a unified spend platform providing corporate cards, expense management, reimbursements, travel, and bill pay with REST APIs.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "bearer_token"
+   ],
+   "oauth_grant_types": [
+    "authorization_code",
+    "client_credentials"
+   ],
+   "notes": "OAuth2 required for partner integrations via authorization_code or client_credentials grants; bearer_token (user tokens) for direct user API access.",
+   "evidence": [
+    {
+     "url": "https://developer.brex.com/docs/authentication",
+     "snippet": "Authorization: \"Bearer {{your user_token here}}\""
+    },
+    {
+     "url": "https://developer.brex.com/docs/mcp",
+     "snippet": "The Brex MCP server supports two authentication methods. OAuth (recommended)"
+    },
+    {
+     "url": "https://developer.brex.com/guides/partner_authentication",
+     "snippet": "Brex currently supports 2 different authorization grant types: Authorization Code Grant and Client Credentials Grant"
+    }
+   ]
+  },
+  "access": {
+   "status": "admin_approval",
+   "dev_sandbox": false,
+   "notes": "Account admin or card admin must accept developer API agreement in Settings > Developer, then generate bearer tokens. No free sandbox; only production API server at https://api.brex.com. Requires Brex customer account (typically paid). Partner integrations contact Brex developer support.",
+   "evidence": [
+    {
+     "url": "https://developer.brex.com/docs/authentication",
+     "snippet": "Sign in to dashboard.brex.com as an account admin or card admin. Go to Developer > Settings."
+    },
+    {
+     "url": "https://developer.brex.com/docs/authentication",
+     "snippet": "If your company has not accepted the developer API agreement, please review the terms and conditions. These must be accepted to use the developer API."
+    },
+    {
+     "url": "https://developer.brex.com/docs/mcp",
+     "snippet": "An account admin or card admin must accept the Developer API agreement in Settings → Developer."
+    },
+    {
+     "url": "https://developer.brex.com/docs/authentication",
+     "snippet": "Brex currently only offers a production API server at https://api.brex.com."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "1000 requests per 60 seconds per client ID and account; 1000 transfers, 100 international wires per 24 hours; 5000 cards per 24 hours.",
+   "evidence": [
+    {
+     "url": "https://developer.brex.com",
+     "snippet": "Brex APIs use the REST architecture, are defined using the OpenAPI specification and use standard HTTP response codes and verbs."
+    },
+    {
+     "url": "https://developer.brex.com",
+     "snippet": "Accounting API, Budgets API, Expenses API, Fields API, Onboarding API, Payments API, Team API, Transactions API, Travel API, Webhooks API."
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/brex.md",
+     "snippet": "Tools: 84"
+    },
+    {
+     "url": "https://developer.brex.com/guides/rate_limits",
+     "snippet": "Per Client ID and Brex account, we allow: Up to 1,000 requests in 60 seconds."
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://api.brex.com/mcp",
+   "community": [
+    "https://github.com/crazyrabbitLTC/mcp-brex-server",
+    "https://github.com/dennisonbertram/mcp-brex",
+    "https://github.com/agenticledger/brex-mcp-http"
+   ],
+   "evidence": [
+    {
+     "url": "https://developer.brex.com/docs/mcp",
+     "snippet": "The Brex MCP server lets AI assistants interact directly with your Brex account: manage expenses, look up users, check cards."
+    },
+    {
+     "url": "https://developer.brex.com/docs/mcp",
+     "snippet": "The server is hosted at https://api.brex.com/mcp and supports any MCP-compatible client."
+    },
+    {
+     "url": "https://github.com/crazyrabbitLTC/mcp-brex-server",
+     "snippet": "A MCP server for interacting with Brex expense tracking platform"
+    },
+    {
+     "url": "https://github.com/dennisonbertram/mcp-brex",
+     "snippet": "A model context protocol server for Brex API. Optimized for safe, small, read-only responses."
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Composio has successfully built a 84-tool toolkit; Brex API is fully documented with REST/OpenAPI, broad surface, and official MCP support.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "BREX"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://developer.brex.com",
+    "snippet": "Brex is the first fully unified spend platform — with global corporate cards, expense management, reimbursements, travel, and bill pay."
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/brex.md",
+    "snippet": "Category: accounting. Auth: OAUTH2, API_KEY. Tools: 84"
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  }
+ }
+}

@@ -1,0 +1,126 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.082481,
+  "seconds": 83.8,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://developer.monday.com/resources/webhooks",
+  "https://docs.composio.dev/toolkits/monday.md",
+  "https://docs.composio.dev/toolkits/monday_mcp.md",
+  "https://developer.monday.com/api-reference",
+  "https://developer.monday.com/apps",
+  "https://developer.monday.com/api-reference/docs/getting-started",
+  "https://developer.monday.com/api-reference/docs/authentication",
+  "https://monday.com/pricing",
+  "https://monday.com/partnership",
+  "https://monday.com/accessibility-statement",
+  "https://developer.monday.com/apps/docs/monday-apps-mcp",
+  "https://developer.monday.com/api-reference/docs/basics"
+ ],
+ "output": {
+  "one_liner": "monday.com is a customizable work management platform for project planning, collaboration, and automation with GraphQL API and native agent integration support.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "bearer_token"
+   ],
+   "oauth_grant_types": [],
+   "notes": "OAuth2 with configurable scopes (boards:read, boards:write, workspaces:read, users:read, me:read) or personal V2 API tokens as bearer tokens.",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/monday.md",
+     "snippet": "Auth: OAUTH2"
+    },
+    {
+     "url": "https://developer.monday.com/api-reference/docs/authentication",
+     "snippet": "The monday.com platform API utilizes personal V2 API tokens"
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/monday.md",
+     "snippet": "Select the scopes your integration needs, such as `boards:read`, `boards:write`, `workspaces:read`, `users:read`, and `me:read`"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Free developer account available without expiration; workspace admin approval needed to install OAuth app but not required for toolkit development.",
+   "evidence": [
+    {
+     "url": "https://developer.monday.com/api-reference/docs/getting-started",
+     "snippet": "If you don't have a monday.com account yet, create a free developer account"
+    },
+    {
+     "url": "https://developer.monday.com/api-reference/docs/basics",
+     "snippet": "For building and testing apps or API integrations without touching production data, use a free developer account"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "graphql"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "API calls available in pricing tiers; specific rate limits not detailed in documentation",
+   "evidence": [
+    {
+     "url": "https://developer.monday.com/api-reference",
+     "snippet": "Get everything you need in one API call"
+    },
+    {
+     "url": "https://developer.monday.com/api-reference/docs/getting-started",
+     "snippet": "Our API endpoint is: https://api.monday.com/v2"
+    },
+    {
+     "url": "https://developer.monday.com/resources/webhooks",
+     "snippet": "Webhooks Trigger workflows from any monday action"
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://developer.monday.com/resources/webhooks",
+     "snippet": "Connect agents to the platform Use our native integration, or manually connect with our hosted MCP url"
+    },
+    {
+     "url": "https://developer.monday.com/apps/docs/monday-apps-mcp",
+     "snippet": "The monday apps MCP gives your AI assistant direct access to the monday.com apps framework"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Public GraphQL API with free developer account access; Composio already ships 126-tool and 96-tool Monday toolkits proving buildability.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "MONDAY"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://docs.composio.dev/toolkits/monday.md",
+    "snippet": "monday.com is a customizable work management platform for project planning, collaboration, and automation"
+   },
+   {
+    "url": "https://developer.monday.com/api-reference",
+    "snippet": "Connect to your monday data with the platform API"
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "Specific rate limit numbers not provided in documentation pages",
+   "mcp": "Official MCP server URL not provided; pages reference hosted MCP but do not include explicit URL"
+  }
+ }
+}

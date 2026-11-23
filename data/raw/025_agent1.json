@@ -1,0 +1,117 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.03491450000000001,
+  "seconds": 61.7,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+  "https://pumble.com/help/integrations/add-pumble-apps/guide-to-pumble-integrations/",
+  "https://pumble.com/mcp",
+  "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/",
+  "https://pumble.com/learn/pumble/ai-automation-guide/",
+  "https://pumble.com/help/integrations/add-pumble-apps/incoming-webhooks-for-pumble/",
+  "https://docs.composio.dev/toolkits/pumble.md",
+  "https://pumble.com",
+  "https://pumble.com/pricing",
+  "https://pumble.com/guest-access",
+  "https://pumble.com/help/workspace-administration/pricing/upgrade-a-free-workspace-to-a-paid-plan/",
+  "https://pumble.com/learn/author/ana/"
+ ],
+ "output": {
+  "one_liner": "Team communication platform offering messaging, channels, file sharing, and video conferencing with API and MCP integration support.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "bearer_token"
+   ],
+   "oauth_grant_types": [],
+   "notes": "API key generated in workspace and passed as Bearer token in HTTP Authorization header",
+   "evidence": [
+    {
+     "url": "https://pumble.com/learn/pumble/ai-automation-guide/",
+     "snippet": "This token must be passed inside the HTTP header of every request as a bearer token."
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": null,
+   "notes": "API addon available on all plans (Free, Pro, Business, Enterprise); workspace admin must install addon first; members then self-serve generate API keys",
+   "evidence": [
+    {
+     "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+     "snippet": "Available on all plans"
+    },
+    {
+     "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+     "snippet": "you can generate API keys directly in Pumble. Here's how: Click on API Select Add API key"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "narrow",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "1000 requests per minute per user",
+   "evidence": [
+    {
+     "url": "https://pumble.com/learn/pumble/ai-automation-guide/",
+     "snippet": "The Pumble API addon provides simple HTTP endpoints to handle"
+    },
+    {
+     "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+     "snippet": "The rate limit is up to 1000 requests per minute per user."
+    },
+    {
+     "url": "https://pumble.com/help/integrations/add-pumble-apps/incoming-webhooks-for-pumble/",
+     "snippet": "With the incoming webhooks, you can easily post messages from other apps into Pumble."
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://mcp.pumble.com/mcp",
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/",
+     "snippet": "With the Pumble Model Context Protocol (MCP) server, you can connect third-party AI agents (e.g., Claude, Gemini, Codex) to Pumble"
+    },
+    {
+     "url": "https://pumble.com/mcp",
+     "snippet": "Bring your AI agent into your Pumble workspace and streamline collaboration"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Free self-serve API with documented REST endpoints, simple bearer token auth, official MCP server, and Composio has already built a production toolkit.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "PUMBLE"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://pumble.com",
+    "snippet": "Pumble – FREE Business Communication Tool Send messages and files to team members"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/pumble.md",
+    "snippet": "Auth: API_KEY Composio-managed OAuth available? N/A Tools: 9"
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  }
+ }
+}

@@ -1,0 +1,345 @@
+{
+ "id": 12,
+ "app": "Intercom",
+ "tag": "agent2",
+ "urls": [
+  {
+   "url": "https://intercom.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.intercom.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.intercom.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.intercom.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://intercom.com/pricing",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.intercom.com/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication/",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authorization/setting-up-oauth/",
+   "purpose": "auth",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developers.intercom.com/docs/references/introduction/",
+   "purpose": "API reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.intercom.com/docs/references/rest-apis/",
+   "purpose": "API reference",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/rest-apis/rate-limiting/",
+   "purpose": "rate limits",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/webhooks/",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developers.intercom.com/docs/references/webhooks/webhook-models/",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/building-apps/getting-your-app-set-up/",
+   "purpose": "credentials setup",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://www.intercom.com/partners",
+   "purpose": "partner programme",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.intercom.com/pricing",
+   "purpose": "pricing",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/building-apps/building-your-app-locally/",
+   "purpose": "sandbox/dev setup",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://github.com/melgarafael/DeskcommCRM",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/chattermate/chattermate.chat",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/PersonaliAI/chatty",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/intercom.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.intercom.com/solution-partner-program",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.intercom.com/technology-partner-program",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.intercom.com/docs/build-an-integration/getting-started/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.intercom.com/docs/build-an-integration/getting-started/build-an-app-for-your-messenger/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.intercom.com/docs/build-an-integration/getting-started/build-an-app-for-your-inbox/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.intercom.com/help/en/collections/1865264-getting-started",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.intercom.com/pricing/calculator",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.intercom.com/en/pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.intercom.com/fr-fr/pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.intercom.com/es-la/pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.intercom.com/de-de/pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.intercom.com/pt-br/pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "melgarafael/DeskcommCRM",
+   "url": "https://github.com/melgarafael/DeskcommCRM",
+   "stars": 5524,
+   "description": "Open-source AI sales OS — self-hosted CRM with native AI agents + WhatsApp (WAHA). Open alternative to Kommo, Octadesk & Intercom for any business that sells by"
+  },
+  {
+   "repo": "chattermate/chattermate.chat",
+   "url": "https://github.com/chattermate/chattermate.chat",
+   "stars": 178,
+   "description": "Open-source AI customer support chatbot with human handoff — omnichannel inbox (web, WhatsApp, Instagram, Messenger, Slack, email), AI lead capture, AI-generate"
+  },
+  {
+   "repo": "PersonaliAI/chatty",
+   "url": "https://github.com/PersonaliAI/chatty",
+   "stars": 24,
+   "description": "Open-source, self-hostable Zendesk and Intercom alternative for AI customer support: chat widget, shared inbox, real-time voice, Multimodal RAG, and MCP."
+  },
+  {
+   "repo": "intercom/intercom-mcp-server",
+   "url": "https://github.com/intercom/intercom-mcp-server",
+   "stars": 8,
+   "description": "Intercom MCP Server documentation"
+  },
+  {
+   "repo": "fabian1710/mcp-intercom",
+   "url": "https://github.com/fabian1710/mcp-intercom",
+   "stars": 8,
+   "description": "MCP server for Intercom chat integration"
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Intercom",
+    "slug": "INTERCOM",
+    "tools": 138,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/intercom.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Intercom",
+    "slug": "INTERCOM",
+    "tools": 138,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/intercom.md"
+   },
+   {
+    "name": "Intercom MCP",
+    "slug": "INTERCOM_MCP",
+    "tools": 15,
+    "auth": [
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/intercom_mcp.md"
+   }
+  ]
+ },
+ "search_meta": {}
+}

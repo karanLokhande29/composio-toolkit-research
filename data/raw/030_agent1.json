@@ -1,0 +1,137 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.057779,
+  "seconds": 62.0,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://developer.vonage.com/en/getting-started/concepts/authentication",
+  "https://developer.vonage.com/en/getting-started/overview",
+  "https://developer.vonage.com/en/dashboard/control/pricing",
+  "https://developer.vonage.com/en/api",
+  "https://developer.vonage.com/en/mcp-server/overview",
+  "https://developer.vonage.com/en/home",
+  "https://developer.vonage.com/en/messages/technical-details",
+  "https://developer.vonage.com/en/getting-started/concepts/webhooks",
+  "https://developer.vonage.com/en/getting-started/concepts/openapi",
+  "https://github.com/Vonage-Community/telephony-mcp-server",
+  "https://www.vonage.com/communications-apis/pricing",
+  "https://developer.vonage.com/voice/voice-api/getting-started?source=voice"
+ ],
+ "output": {
+  "one_liner": "Vonage provides cloud-based communications APIs for SMS, voice, video, messaging, and identity verification across multiple channels.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "api_key",
+    "basic",
+    "jwt"
+   ],
+   "oauth_grant_types": [],
+   "notes": "Three primary authentication methods: API Key and Secret, Basic Authentication (Base64 encoded in header), and JWT. JWT recommended for production use, webhooks, and advanced features like ACLs.",
+   "evidence": [
+    {
+     "url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+     "snippet": "Vonage APIs support different authentication methods depending on which product you are using: API Key and Secret (Header), JSON Web Token (JWT)"
+    },
+    {
+     "url": "https://developer.vonage.com/en/messages/technical-details",
+     "snippet": "The Messages API supports either Basic authentication or JWT (JSON Web Token) authentication"
+    },
+    {
+     "url": "https://developer.vonage.com/en/messages/technical-details",
+     "snippet": "We recommend that you use JWT authentication in production for most use-cases."
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_trial",
+   "dev_sandbox": true,
+   "notes": "Free account signup includes initial free credit and sandbox/demo accounts for testing. Continued production use requires topping up with payment. Per-request billing model.",
+   "evidence": [
+    {
+     "url": "https://developer.vonage.com/en/getting-started/overview",
+     "snippet": "sign up for an account. This will give you an API key and secret that you can use to access our APIs."
+    },
+    {
+     "url": "https://developer.vonage.com/en/getting-started/overview",
+     "snippet": "We'll give you some free credit when you first open your account and you can top up."
+    },
+    {
+     "url": "https://developer.vonage.com/voice/voice-api/getting-started?source=voice",
+     "snippet": "this feature is only available for demo or trial accounts until you add credit to your account."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Messages API default rate limit is 75 requests per second per API key; case-by-case increases available.",
+   "evidence": [
+    {
+     "url": "https://developer.vonage.com/en/api",
+     "snippet": "SMS API, Voice API, Messages API, Video API, Conversation API, Account API, External Accounts API, Pricing API"
+    },
+    {
+     "url": "https://developer.vonage.com/en/getting-started/concepts/openapi",
+     "snippet": "OpenAPI is an industry standard specification for describing APIs. We use OpenAPI to describe all our APIs"
+    },
+    {
+     "url": "https://developer.vonage.com/en/getting-started/concepts/webhooks",
+     "snippet": "SMS API, Voice API, Verify API, Messages and Dispatch APIs support webhooks"
+    },
+    {
+     "url": "https://developer.vonage.com/en/messages/technical-details",
+     "snippet": "The default rate limit for requests to the Messages API is 75 requests per second per API key."
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://developer.vonage.com/en/mcp-server/overview",
+   "community": [
+    "https://github.com/Vonage-Community/telephony-mcp-server"
+   ],
+   "evidence": [
+    {
+     "url": "https://developer.vonage.com/en/mcp-server/overview",
+     "snippet": "The Vonage MCP Server enables AI agents and developer tools to discover, describe, and use Vonage capabilities via the Model Context Protocol."
+    },
+    {
+     "url": "https://github.com/Vonage-Community/telephony-mcp-server",
+     "snippet": "A very simple MCP Server with telephony tools like voice call and sms. Vonage API is used for calls, SMS, Speech-to-Text and Speech Recognition."
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Self-serve signup with free trial, broad REST API surface with published OpenAPI specs, webhooks support, official MCP server, multiple SDKs, and clear documentation enable building a production toolkit today.",
+   "composio_existing_toolkit": "no",
+   "composio_slug": null
+  },
+  "overview_evidence": [
+   {
+    "url": "https://developer.vonage.com/en/getting-started/overview",
+    "snippet": "When you are ready to start building your app, you'll want to use one of our Server SDKs instead of coding each request by hand."
+   },
+   {
+    "url": "https://developer.vonage.com/en/messages/technical-details",
+    "snippet": "The Messages API allows you to send and in some cases receive messages over SMS, MMS, RCS, Facebook Messenger, Viber, WhatsApp and Email."
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  }
+ }
+}

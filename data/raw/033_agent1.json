@@ -1,0 +1,138 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.082732,
+  "seconds": 81.1,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://learn.microsoft.com/en-us/linkedin/shared/authentication/authorization-code-flow",
+  "https://learn.microsoft.com/en-us/linkedin/shared/authentication/getting-access",
+  "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/marketing-tiers?view=li-lms-2026-04",
+  "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads-reporting/ad-budget-pricing?view=li-lms-2026-07",
+  "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/getting-started?view=li-lms-2026-09",
+  "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/ads-overview?view=li-lms-2026-10",
+  "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads-reporting/conversions-api?view=li-lms-2026-09",
+  "https://learn.microsoft.com/en-us/linkedin/shared/api-guide/developer-webhooks",
+  "https://docs.composio.dev/toolkits/linkedin_ads.md",
+  "https://github.com/danielpopamd/linkedin-ads-mcp",
+  "https://github.com/paidsync/linkedin-ads-mcp",
+  "https://learn.microsoft.com/linkedin/marketing"
+ ],
+ "output": {
+  "one_liner": "The Advertising API enables developers to manage LinkedIn advertising campaigns, audiences, and analytics on behalf of clients.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2"
+   ],
+   "oauth_grant_types": [
+    "authorization_code"
+   ],
+   "notes": "3-legged OAuth flow with Client ID and Client Secret obtained from Developer Portal. Bearer token required for API calls.",
+   "evidence": [
+    {
+     "url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/getting-access",
+     "snippet": "The LinkedIn API uses OAuth 2.0 for user authorization and API authentication."
+    },
+    {
+     "url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/authorization-code-flow",
+     "snippet": "Authorization Code Flow is used for applications to request permission from a LinkedIn member"
+    }
+   ]
+  },
+  "access": {
+   "status": "app_review",
+   "dev_sandbox": true,
+   "notes": "Developers must apply through Developer Portal and be approved by LinkedIn. Development tier with test ad accounts available for self-serve testing. Standard tier requires qualification review. LinkedIn reserves discretion to approve or deny applications.",
+   "evidence": [
+    {
+     "url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/getting-access",
+     "snippet": "Most permissions and partner programs require explicit approval from LinkedIn."
+    },
+    {
+     "url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/getting-access",
+     "snippet": "Developers seeking to build a marketing related integration using Advertising API permissions must be approved."
+    },
+    {
+     "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/marketing-tiers?view=li-lms-2026-04",
+     "snippet": "Visit your app's Product tab in the Developer Portal to apply for the Advertising API product."
+    },
+    {
+     "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/marketing-tiers?view=li-lms-2026-04",
+     "snippet": "LinkedIn reserves the right to review applications and select partners at its discretion"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Rate limits not explicitly documented in provided pages",
+   "evidence": [
+    {
+     "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads-reporting/ad-budget-pricing?view=li-lms-2026-07",
+     "snippet": "The Ad Budget Pricing API provides key insights on pricing metrics such as minimum, maximum, and suggested bids."
+    },
+    {
+     "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/getting-started?view=li-lms-2026-09",
+     "snippet": "POST https://api.linkedin.com/rest/adAccounts Sample Request Body"
+    },
+    {
+     "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/ads-overview?view=li-lms-2026-10",
+     "snippet": "These APIs provide all features available in LinkedIn Campaign Manager, including creation and management of ad accounts, campaign groups, campaigns, creatives, ad types, and analytics."
+    },
+    {
+     "url": "https://learn.microsoft.com/en-us/linkedin/shared/api-guide/developer-webhooks",
+     "snippet": "To better support partners who provision applications and register webhooks on behalf of their customers"
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [
+    "https://github.com/danielpopamd/linkedin-ads-mcp",
+    "https://github.com/paidsync/linkedin-ads-mcp"
+   ],
+   "evidence": [
+    {
+     "url": "https://github.com/danielpopamd/linkedin-ads-mcp",
+     "snippet": "LinkedIn Ads MCP server with full write access: 25 tools across campaigns, creatives, audiences, conversions, and analytics."
+    },
+    {
+     "url": "https://github.com/paidsync/linkedin-ads-mcp",
+     "snippet": "34 LinkedIn tools with full write access. Every write is approval-gated."
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "app_review",
+   "rationale": "REST API well-documented with self-serve Development tier testing available, but all production use requires LinkedIn approval review.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "LINKEDIN_ADS"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/ads-overview?view=li-lms-2026-10",
+    "snippet": "The Advertising API enables developers to manage LinkedIn's campaign management platform on behalf of clients through APIs."
+   },
+   {
+    "url": "https://learn.microsoft.com/linkedin/marketing",
+    "snippet": "The LinkedIn Marketing Platform helps businesses grow by building technology to reach, engage, and convert professional audiences at scale."
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "Rate limits not documented in provided pages",
+   "mcp": ""
+  }
+ }
+}

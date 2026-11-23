@@ -1,0 +1,76 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.052942,
+  "seconds": 77.4,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://fanbasis.com"
+ ],
+ "output": {
+  "one_liner": "Commas (formerly FanBasis) is a SaaS platform enabling creators to build and monetize courses and communities with integrated payment processing and BNPL financing.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [],
+   "oauth_grant_types": [],
+   "notes": "Page mentions APIs and SDKs but does not specify authentication methods",
+   "evidence": [
+    {
+     "url": "https://fanbasis.com",
+     "snippet": "Embedded checkouts, multi-rail payouts, APIs and SDKs."
+    }
+   ]
+  },
+  "access": {
+   "status": "unknown",
+   "dev_sandbox": null,
+   "notes": "Page does not document API access model or how developers obtain credentials",
+   "evidence": []
+  },
+  "api_surface": {
+   "styles": [],
+   "breadth": "unknown",
+   "openapi_spec_url": null,
+   "webhooks": null,
+   "rate_limit_note": "",
+   "evidence": [
+    {
+     "url": "https://fanbasis.com",
+     "snippet": "Embedded checkouts, multi-rail payouts, APIs and SDKs. Everything you'd replace Stripe with, plus BNPL, recovery and lower effective rates."
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": []
+  },
+  "buildability": {
+   "verdict": "blocked",
+   "main_blocker": "no_public_api",
+   "rationale": "API documentation is not publicly available; no documented credential access path, authentication methods, or API specification provided.",
+   "composio_existing_toolkit": "no",
+   "composio_slug": null
+  },
+  "overview_evidence": [
+   {
+    "url": "https://fanbasis.com",
+    "snippet": "One place to create, sell, and get paid, with payments built in."
+   },
+   {
+    "url": "https://fanbasis.com",
+    "snippet": "Launch a course, a paid community, or both, inside one branded Studio"
+   }
+  ],
+  "confidence": 0.35,
+  "unknown_reasons": {
+   "auth": "Page mentions APIs and SDKs but does not document which authentication schemes (OAuth2, API key, Bearer, etc.) are supported",
+   "access": "Page does not describe the API access model, credential provisioning process, or whether free/trial access is available to developers",
+   "api_surface": "While APIs are mentioned, no documentation is provided on REST/GraphQL styles, endpoint breadth, OpenAPI spec, webhooks, or rate limits",
+   "mcp": "Page mentions 'MCP' in ambiguous context (possibly Commas-specific acronym, not Model Context Protocol); unclear status and cannot be properly cited"
+  }
+ }
+}

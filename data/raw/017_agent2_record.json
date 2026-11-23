@@ -1,0 +1,109 @@
+{
+ "id": 17,
+ "app": "Plain",
+ "category": "Support and Helpdesk",
+ "hint": "plain.com",
+ "one_liner": "Plain is a support platform for B2B teams, built API-first so you can automate workflows and integrate with custom systems.",
+ "app_type": "saas",
+ "auth": {
+  "methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "oauth_grant_types": [],
+  "notes": "API accepts API_KEY authentication. MCP server uses OAuth2 for user authentication via browser sign-in.",
+  "evidence": [
+   {
+    "url": "https://docs.composio.dev/toolkits/plain.md",
+    "snippet": "**Auth:** API_KEY - **Composio-managed OAuth available?** N/A - **Tools:** 120",
+    "check": "repaired"
+   },
+   {
+    "url": "https://www.plain.com/docs/getting-started",
+    "snippet": "which signs in as that person with OAuth. Don't ask the person for an API key",
+    "check": "exact"
+   }
+  ]
+ },
+ "access": {
+  "status": "self_serve_trial",
+  "dev_sandbox": null,
+  "notes": "7-day free trial available without credit card. Pages do not explicitly confirm whether API key credentials are obtainable during trial.",
+  "evidence": [
+   {
+    "url": "https://www.plain.com/docs/product/billing/pricing",
+    "snippet": "Every plan starts with a free 7-day trial, and the trial doesn't need a credit card.",
+    "check": "exact"
+   },
+   {
+    "url": "https://www.plain.com/pricing",
+    "snippet": "Plain Pricing â Plans from $45/user/month | 7-Day Free Trial",
+    "check": "repaired"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "graphql"
+  ],
+  "breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "rate_limit_note": "",
+  "evidence": [
+   {
+    "url": "https://www.plain.com/docs",
+    "snippet": "Everything the app can do, the GraphQL API can do, so you can automate a workflow",
+    "check": "exact"
+   },
+   {
+    "url": "https://www.plain.com/docs/webhooks",
+    "snippet": "Webhooks allow you to get notified about events happening in your Plain workspace.",
+    "check": "exact"
+   }
+  ]
+ },
+ "mcp": {
+  "official": "https://mcp.plain.com/mcp",
+  "community": [],
+  "evidence": [
+   {
+    "url": "https://www.plain.com/docs/getting-started",
+    "snippet": "You do the setup through Plain's Model Context Protocol (MCP) server at https://mcp.plain.com/mcp",
+    "check": "exact"
+   }
+  ]
+ },
+ "buildability": {
+  "verdict": "ready",
+  "main_blocker": "none",
+  "rationale": "Composio toolkit with 120 tools already exists, GraphQL API fully documented, MCP server available from vendor, free trial enables development.",
+  "composio_existing_toolkit": "yes",
+  "composio_slug": "PLAIN"
+ },
+ "overview_evidence": [
+  {
+   "url": "https://www.plain.com/docs",
+   "snippet": "Plain is a support platform for B2B teams."
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/plain.md",
+   "snippet": "Creates a new customer group in Plain for organizing and segmenting customers."
+  }
+ ],
+ "confidence": 0.92,
+ "unknown_reasons": {
+  "auth": "OAuth grant type (authorization code, etc.) not specified in pages.",
+  "access": "Pages do not explicitly state whether API key credentials are available during the free trial period.",
+  "api_surface": "No OpenAPI specification mentioned; no explicit rate limit values or thresholds provided.",
+  "mcp": "No community-maintained MCP server repositories mentioned in provided pages."
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 9,
+  "error": null,
+  "cost_usd": 0.082717,
+  "seconds": 104.5
+ }
+}

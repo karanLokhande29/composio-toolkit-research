@@ -1,0 +1,304 @@
+{
+ "id": 87,
+ "app": "Xero",
+ "tag": "agent2",
+ "urls": [
+  {
+   "url": "https://developer.xero.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.xero.com/documentation/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.xero.com/documentation/guides/oauth2/overview/",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.xero.com/documentation/guides/oauth2/auth-flow/",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.xero.com/myapps",
+   "purpose": "credentials",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.xero.com/documentation/guides/oauth2/scopes/",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.xero.com/documentation/api/accounting/overview",
+   "purpose": "api reference",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.xero.com/documentation/api/accounting/requests-and-responses",
+   "purpose": "api reference",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.xero.com/documentation/guides/oauth2/limits/",
+   "purpose": "rate limits",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.xero.com/documentation/guides/webhooks/overview/",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.xero.com/documentation/guides/webhooks/setting-up-webhooks/",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.xero.com/documentation/guides/oauth2/pkce-flow/",
+   "purpose": "sandbox/credentials",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.xero.com/mcp",
+   "purpose": "MCP server",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://github.com/XeroAPI/xero-mcp-server",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/XeroAPI/xero-agent-toolkit",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/john-zhang-dev/xero-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/xero.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.xero.com/documentation/getting-started-guide/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.xero.com/documentation/xero-app-store/app-partner-guides/grow-your-app-with-xero/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.xero.com/documentation/xero-app-store/app-partner-guides/app-listing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.xero.com/faq/pricing-and-policy-updates",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.xero.com/documentation/guides/oauth2/custom-connections/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.xero.com/documentation/guides/how-to-guides/app-partner-steps/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.xero.com/documentation/guides/remote-mcp/overview/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.xero.com/documentation/guides/oauth2/overview",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://www.xero.com/signup/developers/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://devblog.xero.com/xero-developer-growth-program-open-for-applications-apply-now-7c3dd8f39ea2",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.xero.com/documentation/guides/webhooks/overview",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.xero.com/developer-events",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.xero.com/xero-developer-platform-terms-conditions",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "XeroAPI/xero-mcp-server",
+   "url": "https://github.com/XeroAPI/xero-mcp-server",
+   "stars": 397,
+   "description": "An MCP server that integrates with the MCP protocol. https://modelcontextprotocol.io/introduction"
+  },
+  {
+   "repo": "XeroAPI/xero-agent-toolkit",
+   "url": "https://github.com/XeroAPI/xero-agent-toolkit",
+   "stars": 60,
+   "description": "A collection of examples demonstrating how to build AI agents that integrate with the Xero API using various agentic frameworks and the Xero MCP (Model Context "
+  },
+  {
+   "repo": "john-zhang-dev/xero-mcp",
+   "url": "https://github.com/john-zhang-dev/xero-mcp",
+   "stars": 22,
+   "description": "A Model Context Protocol server allows Clients to interact with Xero"
+  },
+  {
+   "repo": "garfystyle/justmc-mcp",
+   "url": "https://github.com/garfystyle/justmc-mcp",
+   "stars": 3,
+   "description": "MCP для JustMC Creative+: нейросеть пишет код на Xero, заливает его в мир и сама проверяет в игре"
+  },
+  {
+   "repo": "Xero-05/xenon-browser",
+   "url": "https://github.com/Xero-05/xenon-browser",
+   "stars": 3,
+   "description": "A Windows Chromium browser for parallel MCP agents, isolated workspaces and seamless live-tab handoff."
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Xero",
+    "slug": "XERO",
+    "tools": 109,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/xero.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Xero",
+    "slug": "XERO",
+    "tools": 109,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/xero.md"
+   }
+  ]
+ },
+ "search_meta": {}
+}

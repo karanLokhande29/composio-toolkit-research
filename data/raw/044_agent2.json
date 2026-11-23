@@ -1,0 +1,116 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.09369,
+  "seconds": 120.1,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+  "https://docs.composio.dev/toolkits/salesforce.md",
+  "https://docs.composio.dev/toolkits/salesforce_data_360.md",
+  "https://developer.salesforce.com/docs/commerce",
+  "https://developer.salesforce.com/docs/commerce/commerce-api/guide/get-started.html",
+  "https://developer.salesforce.com/docs/commerce/commerce-api/guide/auth-z-scope-catalog.html",
+  "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-shopper-apis.html",
+  "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-admin-apis.html"
+ ],
+ "output": {
+  "one_liner": "Salesforce Commerce Cloud is a SaaS platform for building and managing B2B/D2C and B2C ecommerce storefronts with customizable APIs and real-time inventory management.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2"
+   ],
+   "oauth_grant_types": [],
+   "notes": "Uses OAuth 2.1 with JWT tokens sent as Bearer. Supports public clients (PWA/SFRA/mobile, no secret) and private clients (BFF/Web App, with secret). Token endpoint auth method is client_secret_post. Specific grant types not explicitly documented.",
+   "evidence": [
+    {
+     "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+     "snippet": "To authorize this wide range of client types, we've defined a set of scopes based on the OAuth 2.1 standard."
+    },
+    {
+     "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+     "snippet": "Both the Admin and Shopper APIs are authorized using an access token in the form of a JSON Web Token (JWT)."
+    },
+    {
+     "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+     "snippet": "The JWT access tokens for both SCAPI Admin APIs and Shopper APIs are included in your API requests as an HTTP header that follows the Bearer authentication scheme."
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Free Salesforce Developer Edition available for signup. API client creation is self-service through Account Manager (Admin APIs) or SLAS Admin UI (Shopper APIs). No vendor approval required, only admin role within Account Manager org.",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/salesforce.md",
+     "snippet": "If you don't have an org to test in, sign up for a free Salesforce Developer Edition."
+    },
+    {
+     "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-admin-apis.html",
+     "snippet": "To use the SCAPI Admin APIs, you (or someone with administrator access) must first create an API client."
+    },
+    {
+     "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-shopper-apis.html",
+     "snippet": "The easiest way to create a SLAS client is to use the SLAS Admin UI."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Rate limits not documented in provided pages.",
+   "evidence": [
+    {
+     "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/auth-z-scope-catalog.html",
+     "snippet": "Determine the API families with which your storefront needs to interact: Shopper APIs, SCAPI Admin APIs, and SLAS Admin APIs."
+    },
+    {
+     "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/auth-z-scope-catalog.html",
+     "snippet": "Scopes control which B2C Commerce endpoints a token can access and define the permissions and operations a token can perform."
+    },
+    {
+     "url": "https://developer.salesforce.com/docs/commerce",
+     "snippet": "Extend your POS operations with comprehensive APIs, SPIs, and webhooks that enable seamless integration with external systems."
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": []
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Free developer sandbox, documented OAuth 2.1 REST API covering broad functionality, self-service API client creation, no vendor approval requirements.",
+   "composio_existing_toolkit": "no",
+   "composio_slug": null
+  },
+  "overview_evidence": [
+   {
+    "url": "https://developer.salesforce.com/docs/commerce",
+    "snippet": "Salesforce Commerce Cloud offers distinct solutions for B2B/D2C (business-to-business and direct-to-consumer) and B2C commerce."
+   },
+   {
+    "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/get-started.html",
+    "snippet": "B2C Commerce provides the resources and processing for your ecommerce sites, called a storefront."
+   }
+  ],
+  "confidence": 0.78,
+  "unknown_reasons": {
+   "auth": "Specific OAuth 2.1 grant types (authorization_code, client_credentials, etc.) not explicitly documented; inferred from client type documentation.",
+   "access": "",
+   "api_surface": "OpenAPI spec availability and explicit rate limit policies not mentioned in provided pages.",
+   "mcp": "No MCP server information for Salesforce Commerce Cloud found in provided pages."
+  }
+ }
+}

@@ -1,107 +1,236 @@
 {
- "n_apps": 12,
+ "n_apps": 100,
  "auth_distribution": {
-  "oauth2": 12,
-  "bearer_token": 5,
-  "api_key": 5,
-  "basic": 1
+  "oauth2": 74,
+  "api_key": 44,
+  "bearer_token": 38,
+  "basic": 10,
+  "unknown": 5,
+  "jwt": 4,
+  "other": 1
  },
  "auth_summary": {
-  "oauth2_any": 12,
-  "key_or_token_any": 8,
-  "both": 8,
-  "key_only": 0,
-  "oauth2_pct": 100,
-  "key_or_token_pct": 67,
-  "both_pct": 67
+  "oauth2_any": 74,
+  "key_or_token_any": 77,
+  "both": 56,
+  "key_only": 21,
+  "oauth2_pct": 74,
+  "key_or_token_pct": 77,
+  "both_pct": 56
  },
  "access_distribution": {
-  "self_serve_free": 7,
-  "self_serve_trial": 3,
-  "paid_plan_required": 1,
-  "admin_approval": 1
+  "self_serve_free": 56,
+  "self_serve_trial": 18,
+  "app_review": 9,
+  "admin_approval": 6,
+  "contact_sales": 4,
+  "unknown": 4,
+  "paid_plan_required": 3
  },
  "access_buckets": {
-  "self-serve": 10,
-  "paid plan": 1,
-  "gated": 1
+  "self-serve": 74,
+  "gated": 19,
+  "unknown": 4,
+  "paid plan": 3
  },
- "self_serve_pct": 83,
- "gated_n": 1,
+ "self_serve_pct": 74,
+ "gated_n": 19,
  "access_by_category": {
   "CRM and Sales": {
+   "n": 10,
+   "self-serve": 9,
+   "paid plan": 0,
+   "gated": 1,
+   "unknown": 0,
+   "self_serve_pct": 90,
+   "ready": 6,
+   "ready_with_caveats": 4,
+   "blocked": 0,
+   "oauth2": 10,
+   "mcp_official": 8
+  },
+  "Support and Helpdesk": {
+   "n": 10,
+   "self-serve": 8,
+   "paid plan": 0,
+   "gated": 2,
+   "unknown": 0,
+   "self_serve_pct": 80,
+   "ready": 4,
+   "ready_with_caveats": 5,
+   "blocked": 1,
+   "oauth2": 8,
+   "mcp_official": 8
+  },
+  "Communications and Messaging": {
+   "n": 10,
+   "self-serve": 9,
+   "paid plan": 0,
+   "gated": 1,
+   "unknown": 0,
+   "self_serve_pct": 90,
+   "ready": 7,
+   "ready_with_caveats": 3,
+   "blocked": 0,
+   "oauth2": 7,
+   "mcp_official": 5
+  },
+  "Marketing, Ads, Email and Social": {
+   "n": 10,
+   "self-serve": 4,
+   "paid plan": 0,
+   "gated": 6,
+   "unknown": 0,
+   "self_serve_pct": 40,
+   "ready": 4,
+   "ready_with_caveats": 6,
+   "blocked": 0,
+   "oauth2": 8,
+   "mcp_official": 1
+  },
+  "Ecommerce": {
+   "n": 10,
+   "self-serve": 5,
+   "paid plan": 0,
+   "gated": 3,
+   "unknown": 2,
+   "self_serve_pct": 50,
+   "ready": 4,
+   "ready_with_caveats": 5,
+   "blocked": 1,
+   "oauth2": 7,
+   "mcp_official": 1
+  },
+  "Data, SEO and Scraping": {
    "n": 10,
    "self-serve": 8,
    "paid plan": 1,
    "gated": 1,
    "unknown": 0,
    "self_serve_pct": 80,
-   "ready": 6,
-   "ready_with_caveats": 4,
-   "blocked": 0,
-   "oauth2": 10,
-   "mcp_official": 7
+   "ready": 7,
+   "ready_with_caveats": 2,
+   "blocked": 1,
+   "oauth2": 4,
+   "mcp_official": 8
   },
-  "Support and Helpdesk": {
-   "n": 2,
-   "self-serve": 2,
+  "Developer, Infra and Data platforms": {
+   "n": 10,
+   "self-serve": 10,
    "paid plan": 0,
    "gated": 0,
    "unknown": 0,
    "self_serve_pct": 100,
-   "ready": 1,
+   "ready": 9,
    "ready_with_caveats": 1,
    "blocked": 0,
-   "oauth2": 2,
-   "mcp_official": 1
+   "oauth2": 10,
+   "mcp_official": 3
+  },
+  "Productivity and Project Management": {
+   "n": 10,
+   "self-serve": 9,
+   "paid plan": 1,
+   "gated": 0,
+   "unknown": 0,
+   "self_serve_pct": 90,
+   "ready": 8,
+   "ready_with_caveats": 2,
+   "blocked": 0,
+   "oauth2": 9,
+   "mcp_official": 5
+  },
+  "Finance and Fintech": {
+   "n": 10,
+   "self-serve": 6,
+   "paid plan": 0,
+   "gated": 3,
+   "unknown": 1,
+   "self_serve_pct": 60,
+   "ready": 5,
+   "ready_with_caveats": 3,
+   "blocked": 2,
+   "oauth2": 5,
+   "mcp_official": 5
+  },
+  "AI, Research and Media-native": {
+   "n": 10,
+   "self-serve": 6,
+   "paid plan": 1,
+   "gated": 2,
+   "unknown": 1,
+   "self_serve_pct": 60,
+   "ready": 4,
+   "ready_with_caveats": 5,
+   "blocked": 1,
+   "oauth2": 6,
+   "mcp_official": 6
   }
  },
  "category_rank_self_serve": [
+  "Developer, Infra and Data platforms",
+  "CRM and Sales",
+  "Communications and Messaging",
+  "Productivity and Project Management",
+  "Data, SEO and Scraping",
   "Support and Helpdesk",
-  "CRM and Sales"
+  "AI, Research and Media-native",
+  "Finance and Fintech",
+  "Ecommerce",
+  "Marketing, Ads, Email and Social"
  ],
  "best_category": {
-  "name": "Support and Helpdesk",
+  "name": "Developer, Infra and Data platforms",
   "self_serve_pct": 100
  },
  "worst_category": {
-  "name": "CRM and Sales",
-  "self_serve_pct": 80
+  "name": "Marketing, Ads, Email and Social",
+  "self_serve_pct": 40
  },
  "blocker_frequency": {
-  "paid_plan": 3,
-  "app_review": 1,
-  "admin_scope": 1
+  "paid_plan": 13,
+  "app_review": 11,
+  "admin_scope": 7,
+  "other": 5,
+  "partner_gate": 4,
+  "cli_only": 2
  },
  "top_blocker": {
   "name": "paid_plan",
-  "n": 3
+  "n": 13
  },
  "verdicts": {
-  "ready": 7,
-  "ready_with_caveats": 5
+  "ready": 58,
+  "ready_with_caveats": 36,
+  "blocked": 6
  },
- "ready_n": 7,
- "caveats_n": 5,
- "blocked_n": 0,
+ "ready_n": 58,
+ "caveats_n": 36,
+ "blocked_n": 6,
  "mcp_coverage": {
-  "official": 8,
-  "community_only": 3,
-  "none_found": 1
+  "official": 50,
+  "community_only": 25,
+  "none_found": 25
  },
  "composio_coverage": {
-  "has_toolkit": 11,
-  "no_toolkit": 1
+  "has_toolkit": 80,
+  "no_toolkit": 20
  },
  "api_styles": {
-  "rest": 12,
-  "graphql": 3,
-  "soap": 1,
-  "none": 1
+  "rest": 92,
+  "graphql": 12,
+  "websocket": 3,
+  "none": 2,
+  "cli_or_library_only": 2,
+  "sdk_only": 2,
+  "soap": 1
  },
  "app_types": {
-  "saas": 11,
-  "open_source_self_hostable": 1
+  "saas": 89,
+  "cloud_platform": 6,
+  "open_source_self_hostable": 2,
+  "cli_or_library": 2,
+  "other": 1
  },
  "easy_wins": [
   {
@@ -180,13 +309,631 @@
    "composio_toolkit": "yes",
    "mcp_official": true,
    "rationale": "Self-serve free developer workspaces with immediate API credentials, fully documented REST API with OpenAPI spec, webhooks support, and official MCP server enable toolkit development today."
+  },
+  {
+   "id": 14,
+   "app": "Front",
+   "category": "Support and Helpdesk",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": true,
+   "rationale": "Free developer account, fully documented REST API with OpenAPI specs, webhooks support, and official MCP server all enable immediate toolkit development."
+  },
+  {
+   "id": 17,
+   "app": "Plain",
+   "category": "Support and Helpdesk",
+   "access": "self_serve_trial",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": true,
+   "rationale": "GraphQL API is well-documented, self-serve API key authentication is available, official MCP server exists, and Composio toolkit already exists with 120 tools."
+  },
+  {
+   "id": 19,
+   "app": "Gorgias",
+   "category": "Support and Helpdesk",
+   "access": "self_serve_trial",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": true,
+   "rationale": "Fully documented REST API with broad resource coverage; self-serve API key access; Composio toolkit already in production with 51 tools."
+  },
+  {
+   "id": 21,
+   "app": "Slack",
+   "category": "Communications and Messaging",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": true,
+   "rationale": "Self-serve free OAuth2 credentials via Developer Program sandbox, extensively documented broad REST API, official MCP server, and existing Composio toolkit confirm buildability."
+  },
+  {
+   "id": 23,
+   "app": "Zoho Cliq",
+   "category": "Communications and Messaging",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": false,
+   "rationale": "REST API is well-documented with OpenAPI spec; self-serve OAuth registration available; comprehensive Composio toolkit with 162 tools already exists, confirming API is accessible and buildable."
+  },
+  {
+   "id": 24,
+   "app": "Lark (Larksuite)",
+   "category": "Communications and Messaging",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": true,
+   "rationale": "Composio already provides 451 integrated tools with OAuth2 authentication; documented self-serve API access available"
+  },
+  {
+   "id": 26,
+   "app": "Discord",
+   "category": "Communications and Messaging",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": false,
+   "rationale": "Self-serve OAuth2 credentials are freely available, REST API is well-documented with public OpenAPI spec, and Composio already has a 28-tool Discord toolkit."
+  },
+  {
+   "id": 27,
+   "app": "Telegram",
+   "category": "Communications and Messaging",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": false,
+   "rationale": "Self-serve free API credentials via @BotFather, well-documented REST API with broad endpoint coverage, webhooks supported, and existing Composio toolkit with 18 tools demonstrates full buildability."
+  },
+  {
+   "id": 29,
+   "app": "Aircall",
+   "category": "Communications and Messaging",
+   "access": "self_serve_trial",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": false,
+   "rationale": "Self-serve free trial access, documented REST API with broad endpoint coverage, webhooks support, and working Composio toolkit with 48 tools."
+  },
+  {
+   "id": 35,
+   "app": "Mailchimp",
+   "category": "Marketing, Ads, Email and Social",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": false,
+   "rationale": "Self-serve free tier, fully documented REST API, OAuth2 support, and existing successful 278-tool Composio toolkit demonstrate full buildability."
+  },
+  {
+   "id": 36,
+   "app": "Klaviyo",
+   "category": "Marketing, Ads, Email and Social",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": true,
+   "rationale": "Self-serve private credentials, comprehensive REST API with OpenAPI spec, official MCP support, and existing Composio toolkit with 233 tools already built."
+  },
+  {
+   "id": 37,
+   "app": "systeme.io",
+   "category": "Marketing, Ads, Email and Social",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "no",
+   "mcp_official": false,
+   "rationale": "Public REST API with self-serve free credentials and broad feature coverage enables toolkit building today."
+  },
+  {
+   "id": 40,
+   "app": "SendGrid",
+   "category": "Marketing, Ads, Email and Social",
+   "access": "self_serve_trial",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": false,
+   "rationale": "Public REST API with comprehensive documentation, straightforward API key auth, free trial access, and existing Composio toolkit with 364 tools confirm full buildability."
+  },
+  {
+   "id": 42,
+   "app": "WooCommerce",
+   "category": "Ecommerce",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "no",
+   "mcp_official": false,
+   "rationale": "Free self-serve credentials, documented REST API with broad coverage; toolkit could be built today."
+  },
+  {
+   "id": 43,
+   "app": "BigCommerce",
+   "category": "Ecommerce",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": false,
+   "rationale": "Composio toolkit already exists with 532 tools; APIs fully self-serve with free sandbox credentials, comprehensive REST and GraphQL documentation, and published OpenAPI specs."
+  },
+  {
+   "id": 45,
+   "app": "Magento (Adobe Commerce)",
+   "category": "Ecommerce",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "no",
+   "mcp_official": false,
+   "rationale": "Documented REST/GraphQL/SOAP APIs with self-serve credential creation (OAuth integration via Admin) and no external gating described in the pages, so a toolkit could be built today."
+  },
+  {
+   "id": 48,
+   "app": "Gumroad",
+   "category": "Ecommerce",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": false,
+   "rationale": "Free self-serve credentials, fully documented REST API with 13 tools, webhook support, and existing Composio toolkit confirm ready buildability."
+  },
+  {
+   "id": 51,
+   "app": "DataForSEO",
+   "category": "Data, SEO and Scraping",
+   "access": "self_serve_trial",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": true,
+   "rationale": "Self-serve free trial, well-documented REST API, Composio toolkit with 354 tools already exists, and official MCP server available."
+  },
+  {
+   "id": 54,
+   "app": "MrScraper",
+   "category": "Data, SEO and Scraping",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": true,
+   "rationale": "Self-serve free plan available, well-documented REST API, official MCP server published, and Composio toolkit already built and maintained."
+  },
+  {
+   "id": 55,
+   "app": "Apify",
+   "category": "Data, SEO and Scraping",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": true,
+   "rationale": "Self-serve free credentials, well-documented REST API with OpenAPI spec, official MCP server, and existing Composio toolkit with 185 tools already deployed."
+  },
+  {
+   "id": 56,
+   "app": "Firecrawl",
+   "category": "Data, SEO and Scraping",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": true,
+   "rationale": "Self-serve free credentials, documented REST API with broad endpoint coverage, official SDKs, webhooks, and official MCP server enable immediate toolkit development."
+  },
+  {
+   "id": 57,
+   "app": "Bright Data",
+   "category": "Data, SEO and Scraping",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": true,
+   "rationale": "Self-serve free tier offers immediate credential access; documented REST API with 167 tools; official MCP server published; Composio toolkit already exists."
+  },
+  {
+   "id": 60,
+   "app": "Clay",
+   "category": "Data, SEO and Scraping",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": true,
+   "rationale": "Clay offers free API access with documented REST and plugin interfaces, webhooks support, and an existing Composio toolkit with 15 tools confirms full buildability."
+  },
+  {
+   "id": 61,
+   "app": "GitHub",
+   "category": "Developer, Infra and Data platforms",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": true,
+   "rationale": "Composio toolkit already exists with 905 tools; GitHub provides free self-serve OAuth and comprehensive REST API documentation."
+  },
+  {
+   "id": 62,
+   "app": "Vercel",
+   "category": "Developer, Infra and Data platforms",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": false,
+   "rationale": "Public REST API with comprehensive documentation, free tier access available, no approval required; Composio has already built 414-tool toolkit proving immediate buildability."
+  },
+  {
+   "id": 63,
+   "app": "Netlify",
+   "category": "Developer, Infra and Data platforms",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": true,
+   "rationale": "Self-serve free credentials available; REST API well-documented with OpenAPI reference; OAuth2 fully supported; official Netlify MCP server already published."
+  },
+  {
+   "id": 64,
+   "app": "Cloudflare",
+   "category": "Developer, Infra and Data platforms",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": false,
+   "rationale": "Documented REST API with 171 tools, self-serve API key credentials, and existing production Composio toolkit enable immediate toolkit building."
+  },
+  {
+   "id": 65,
+   "app": "Supabase",
+   "category": "Developer, Infra and Data platforms",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": false,
+   "rationale": "Self-serve free tier with well-documented REST/GraphQL APIs, 235 available tools, and existing Composio toolkit."
+  },
+  {
+   "id": 66,
+   "app": "Neo4j",
+   "category": "Developer, Infra and Data platforms",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": true,
+   "rationale": "Composio toolkit for Neo4j already exists with 21 tools supporting free tier and multiple authentication methods."
+  },
+  {
+   "id": 68,
+   "app": "MongoDB Atlas",
+   "category": "Developer, Infra and Data platforms",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": false,
+   "rationale": "Composio already has MongoDB toolkit with 496 tools; REST API fully documented; OAuth 2.0 and API key auth supported; free tier available for self-serve access."
+  },
+  {
+   "id": 69,
+   "app": "Datadog",
+   "category": "Developer, Infra and Data platforms",
+   "access": "self_serve_trial",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": false,
+   "rationale": "API fully documented as REST service with self-serve trial access and multiple auth methods; existing Composio toolkit with 256 tools."
+  },
+  {
+   "id": 70,
+   "app": "Sentry",
+   "category": "Developer, Infra and Data platforms",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": false,
+   "rationale": "Self-serve OAuth2 authentication, well-documented REST API with 200+ endpoints across multiple resources, webhooks support, and existing Composio toolkit with 212 tools."
+  },
+  {
+   "id": 71,
+   "app": "Notion",
+   "category": "Productivity and Project Management",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": true,
+   "rationale": "Self-serve free credentials, fully documented REST API with broad breadth, multiple auth methods, official MCP support, and existing Composio toolkit already built."
+  },
+  {
+   "id": 72,
+   "app": "Airtable",
+   "category": "Productivity and Project Management",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": true,
+   "rationale": "Self-serve free credentials with OAuth2 and API keys, comprehensive documented REST API with 28 implemented Composio tools, and official MCP server available to all users."
+  },
+  {
+   "id": 73,
+   "app": "Linear",
+   "category": "Productivity and Project Management",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": false,
+   "rationale": "Self-serve credentials, no cost, no approval required, well-documented GraphQL API with webhooks enables comprehensive toolkit development."
+  },
+  {
+   "id": 74,
+   "app": "Jira",
+   "category": "Productivity and Project Management",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": false,
+   "rationale": "Jira has a comprehensive REST API with 50+ resources, self-serve OAuth and API token credentials, free developer sandboxes, webhooks support, and an existing Composio toolkit with 171 tools already built."
+  },
+  {
+   "id": 75,
+   "app": "Asana",
+   "category": "Productivity and Project Management",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": true,
+   "rationale": "Self-serve free API access, full REST+OpenAPI documentation, multiple auth methods, webhooks, MCP support, and existing production Composio toolkit confirm immediate buildability."
+  },
+  {
+   "id": 77,
+   "app": "ClickUp",
+   "category": "Productivity and Project Management",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": true,
+   "rationale": "Public API with self-serve free access, comprehensive REST documentation, OAuth support, official MCP server, and existing Composio toolkit already deployed."
+  },
+  {
+   "id": 78,
+   "app": "Coda",
+   "category": "Productivity and Project Management",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": false,
+   "rationale": "Self-serve free API with complete OpenAPI spec; 110-tool toolkit already exists in Composio"
+  },
+  {
+   "id": 80,
+   "app": "Harvest",
+   "category": "Productivity and Project Management",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": false,
+   "rationale": "Free trial available, OAuth2 and bearer token authentication fully documented, REST API with broad resource coverage; Composio toolkit already exists with 57 tools."
+  },
+  {
+   "id": 81,
+   "app": "Stripe",
+   "category": "Finance and Fintech",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": false,
+   "rationale": "Public REST API with broad coverage (435 tools), free sandbox credentials, complete documentation, and official Composio toolkit already exists."
+  },
+  {
+   "id": 82,
+   "app": "Plaid",
+   "category": "Finance and Fintech",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": false,
+   "rationale": "Self-serve free Sandbox, well-documented REST API with OpenAPI spec, and static API credentials enable immediate toolkit building; Composio's 70-tool implementation already exists."
+  },
+  {
+   "id": 86,
+   "app": "QuickBooks",
+   "category": "Finance and Fintech",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": true,
+   "rationale": "Developers can self-register an app, obtain sandbox credentials, and build against the documented REST API today, matching both agents' 'ready' verdict."
+  },
+  {
+   "id": 87,
+   "app": "Xero",
+   "category": "Finance and Fintech",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": true,
+   "rationale": "Composio toolkit already exists with 109 tools, self-serve free credentials available, documented REST API, and official MCP server published by Xero."
+  },
+  {
+   "id": 93,
+   "app": "Fathom",
+   "category": "AI, Research and Media-native",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": true,
+   "rationale": "Self-serve free tier with public API access, full OAuth2 and API key support, and existing Composio toolkit confirms full buildability."
+  },
+  {
+   "id": 94,
+   "app": "Consensus",
+   "category": "AI, Research and Media-native",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": true,
+   "rationale": "Self-serve API key generation, fully documented REST API, and official MCP server enable toolkit development today; Composio already has an existing toolkit."
+  },
+  {
+   "id": 95,
+   "app": "Reducto",
+   "category": "AI, Research and Media-native",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "no",
+   "mcp_official": true,
+   "rationale": "Self-serve free credentials with no approval gates, fully documented REST API with OpenAPI schema, official MCP server, and SDKs for Python/Node/Go enable toolkit build today."
+  },
+  {
+   "id": 100,
+   "app": "Grain",
+   "category": "AI, Research and Media-native",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": true,
+   "rationale": "Composio toolkit already exists; self-serve free credentials available; documented REST API with webhooks, 17 tools, and both token and OAuth2 auth."
   }
  ],
- "easy_wins_n": 7,
- "easy_wins_without_composio_toolkit": [],
- "easy_new_n": 0,
- "needs_outreach": [],
- "outreach_n": 0,
+ "easy_wins_n": 55,
+ "easy_wins_without_composio_toolkit": [
+  {
+   "id": 37,
+   "app": "systeme.io",
+   "category": "Marketing, Ads, Email and Social",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "no",
+   "mcp_official": false,
+   "rationale": "Public REST API with self-serve free credentials and broad feature coverage enables toolkit building today."
+  },
+  {
+   "id": 42,
+   "app": "WooCommerce",
+   "category": "Ecommerce",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "no",
+   "mcp_official": false,
+   "rationale": "Free self-serve credentials, documented REST API with broad coverage; toolkit could be built today."
+  },
+  {
+   "id": 45,
+   "app": "Magento (Adobe Commerce)",
+   "category": "Ecommerce",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "no",
+   "mcp_official": false,
+   "rationale": "Documented REST/GraphQL/SOAP APIs with self-serve credential creation (OAuth integration via Admin) and no external gating described in the pages, so a toolkit could be built today."
+  },
+  {
+   "id": 95,
+   "app": "Reducto",
+   "category": "AI, Research and Media-native",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "no",
+   "mcp_official": true,
+   "rationale": "Self-serve free credentials with no approval gates, fully documented REST API with OpenAPI schema, official MCP server, and SDKs for Python/Node/Go enable toolkit build today."
+  }
+ ],
+ "easy_new_n": 4,
+ "needs_outreach": [
+  {
+   "id": 15,
+   "app": "Pylon",
+   "category": "Support and Helpdesk",
+   "access": "contact_sales",
+   "verdict": "blocked",
+   "blocker": "partner_gate",
+   "composio_toolkit": "yes",
+   "mcp_official": true,
+   "rationale": "The pricing page shows no free plan (only sales-arranged trials) and lists REST API as a feature only on the Advanced/Enterprise tiers, indicating a paid plan is required to get working API access. [rule: API access requires contact sales, i.e. outreach before a toolkit can be built]"
+  },
+  {
+   "id": 59,
+   "app": "Waterfall.io",
+   "category": "Data, SEO and Scraping",
+   "access": "contact_sales",
+   "verdict": "blocked",
+   "blocker": "partner_gate",
+   "composio_toolkit": "no",
+   "mcp_official": false,
+   "rationale": "API is well-documented with multiple endpoints and webhooks, but developers cannot self-serve credentials and must contact sales first. [rule: API access requires contact sales, i.e. outreach before a toolkit can be built]"
+  },
+  {
+   "id": 90,
+   "app": "PitchBook",
+   "category": "Finance and Fintech",
+   "access": "contact_sales",
+   "verdict": "blocked",
+   "blocker": "partner_gate",
+   "composio_toolkit": "yes",
+   "mcp_official": false,
+   "rationale": "Composio toolkit with 130 tools already exists, but API access requires a contract with PitchBook. [rule: API access requires contact sales, i.e. outreach before a toolkit can be built]"
+  },
+  {
+   "id": 92,
+   "app": "Otter AI",
+   "category": "AI, Research and Media-native",
+   "access": "contact_sales",
+   "verdict": "blocked",
+   "blocker": "partner_gate",
+   "composio_toolkit": "yes",
+   "mcp_official": false,
+   "rationale": "Composio already provides a working MCP toolkit with 3 tools, but the underlying Otter.ai public API requires an Enterprise plan and sales contact. [rule: API access requires contact sales, i.e. outreach before a toolkit can be built]"
+  }
+ ],
+ "outreach_n": 4,
  "needs_app_review": [
   {
    "id": 2,
@@ -198,9 +945,119 @@
    "composio_toolkit": "yes",
    "mcp_official": true,
    "rationale": "Self-serve free developer account with documented REST/GraphQL API and webhooks; app review required for production distribution."
+  },
+  {
+   "id": 28,
+   "app": "WhatsApp Business",
+   "category": "Communications and Messaging",
+   "access": "app_review",
+   "verdict": "ready_with_caveats",
+   "blocker": "app_review",
+   "composio_toolkit": "yes",
+   "mcp_official": false,
+   "rationale": "Self-serve free credentials and comprehensive documented REST API are available; app review required for production multi-customer use."
+  },
+  {
+   "id": 31,
+   "app": "Google Ads",
+   "category": "Marketing, Ads, Email and Social",
+   "access": "app_review",
+   "verdict": "ready_with_caveats",
+   "blocker": "app_review",
+   "composio_toolkit": "yes",
+   "mcp_official": false,
+   "rationale": "Self-serve OAuth and test access available, but production multi-customer use requires API access level approval; Composio toolkit with 78 tools already built."
+  },
+  {
+   "id": 32,
+   "app": "Meta Ads",
+   "category": "Marketing, Ads, Email and Social",
+   "access": "app_review",
+   "verdict": "ready_with_caveats",
+   "blocker": "app_review",
+   "composio_toolkit": "yes",
+   "mcp_official": false,
+   "rationale": "Development credentials available immediately; full production access requires Meta App Review."
+  },
+  {
+   "id": 33,
+   "app": "LinkedIn Ads",
+   "category": "Marketing, Ads, Email and Social",
+   "access": "app_review",
+   "verdict": "ready_with_caveats",
+   "blocker": "app_review",
+   "composio_toolkit": "yes",
+   "mcp_official": false,
+   "rationale": "Developers can build/test against the documented REST API and OAuth flow, but production marketing use requires LinkedIn's approval, making it buildable with caveats rather than fully ready."
+  },
+  {
+   "id": 34,
+   "app": "GoHighLevel",
+   "category": "Marketing, Ads, Email and Social",
+   "access": "app_review",
+   "verdict": "ready_with_caveats",
+   "blocker": "app_review",
+   "composio_toolkit": "no",
+   "mcp_official": false,
+   "rationale": "The blocker aligns with the access.status determination: you can build/test with a Private Integration Token, but shipping a public multi-tenant OAuth integration requires HighLevel's app review step."
+  },
+  {
+   "id": 38,
+   "app": "Pinterest",
+   "category": "Marketing, Ads, Email and Social",
+   "access": "app_review",
+   "verdict": "ready_with_caveats",
+   "blocker": "app_review",
+   "composio_toolkit": "yes",
+   "mcp_official": false,
+   "rationale": "Public REST API with broad coverage is well-documented; Composio already built 27-tool toolkit. Friction: app review required for Trial access; additional review for production Standard access."
+  },
+  {
+   "id": 39,
+   "app": "Threads (Meta)",
+   "category": "Marketing, Ads, Email and Social",
+   "access": "app_review",
+   "verdict": "ready_with_caveats",
+   "blocker": "app_review",
+   "composio_toolkit": "yes",
+   "mcp_official": false,
+   "rationale": "Public REST API with moderate breadth, well-documented, self-serve development sandbox, but production use requires Meta app review."
+  },
+  {
+   "id": 41,
+   "app": "Shopify",
+   "category": "Ecommerce",
+   "access": "app_review",
+   "verdict": "ready_with_caveats",
+   "blocker": "app_review",
+   "composio_toolkit": "yes",
+   "mcp_official": false,
+   "rationale": "A toolkit can be built and tested today with free Dev Dashboard/Partner credentials, but scaling to many merchants requires passing Shopify's app review, so it's ready with caveats rather than fully unrestricted."
+  },
+  {
+   "id": 46,
+   "app": "Squarespace",
+   "category": "Ecommerce",
+   "access": "app_review",
+   "verdict": "ready_with_caveats",
+   "blocker": "app_review",
+   "composio_toolkit": "no",
+   "mcp_official": true,
+   "rationale": "Self-serve OAuth credentials available immediately for development, but production deployment requires Squarespace app review and approval."
+  },
+  {
+   "id": 49,
+   "app": "Amazon Selling Partner",
+   "category": "Ecommerce",
+   "access": "self_serve_free",
+   "verdict": "ready_with_caveats",
+   "blocker": "app_review",
+   "composio_toolkit": "yes",
+   "mcp_official": false,
+   "rationale": "Public API with documentation, self-serve registration, and sandbox available; however, production multi-customer apps through Appstore require vendor verification."
   }
  ],
- "review_n": 1,
+ "review_n": 11,
  "needs_paid_plan": [
   {
    "id": 3,
@@ -211,18 +1068,18 @@
    "blocker": "paid_plan",
    "composio_toolkit": "yes",
    "mcp_official": false,
-   "rationale": "REST API is well-documented with free sandbox and broad endpoints, but end-users require paid Pipedrive plan after 14-day trial."
+   "rationale": "A developer can self-serve a token or sandbox account to build immediately, but sustained/production or Marketplace-distributed use requires a paid plan and Pipedrive's app review, so it's buildable with caveats rather than fully unrestricted."
   },
   {
    "id": 9,
    "app": "Copper",
    "category": "CRM and Sales",
-   "access": "paid_plan_required",
+   "access": "self_serve_trial",
    "verdict": "ready_with_caveats",
    "blocker": "paid_plan",
    "composio_toolkit": "yes",
    "mcp_official": false,
-   "rationale": "Well-documented REST API with broad resource coverage and webhooks, but requires paid Professional tier ($69+/user/month) for access and admin-only API key generation."
+   "rationale": "A toolkit can be built via self-serve API keys, but real usage requires an Admin role, a trial that converts to a paid seat-based plan, and OAuth app registration needs contacting Copper, so it is buildable with friction rather than fully frictionless."
   },
   {
    "id": 11,
@@ -233,37 +1090,261 @@
    "blocker": "paid_plan",
    "composio_toolkit": "yes",
    "mcp_official": false,
-   "rationale": "Free trial with documented OAuth and REST API enable development, but production use requires paid Zendesk account."
-  }
- ],
- "paid_n": 3,
- "unknowns": [],
- "non_saas": [],
- "rest_n": 12,
- "graphql_n": 3,
- "headlines": [
-  {
-   "text": "OAuth2 is the dominant auth pattern: 12 of 12 apps support it, and 8 offer both OAuth2 and a static key/token - so most toolkits need an OAuth app registration, with API keys as the quick path for single-tenant use.",
-   "key": "auth_summary.oauth2_any"
+   "rationale": "A documented REST API with OAuth/API-token auth is usable today, but only via a time-limited trial before a paid plan is required for ongoing use, hence caveats rather than fully free."
   },
   {
-   "text": "Getting credentials is mostly self-serve: 83% of apps let a developer get working credentials alone (free or trial); 1 are gated by an admin, app review, partner programme or sales.",
+   "id": 13,
+   "app": "Freshdesk",
+   "category": "Support and Helpdesk",
+   "access": "self_serve_trial",
+   "verdict": "ready_with_caveats",
+   "blocker": "paid_plan",
+   "composio_toolkit": "yes",
+   "mcp_official": true,
+   "rationale": "A documented REST API with API-key auth exists, but it is gated behind a paid plan (not the free tier) so building is possible yet with a paid-plan caveat."
+  },
+  {
+   "id": 16,
+   "app": "LiveAgent",
+   "category": "Support and Helpdesk",
+   "access": "self_serve_trial",
+   "verdict": "ready_with_caveats",
+   "blocker": "paid_plan",
+   "composio_toolkit": "no",
+   "mcp_official": true,
+   "rationale": "REST API well-documented with OpenAPI spec and available on free trial; production use requires paid subscription after 30 days."
+  },
+  {
+   "id": 18,
+   "app": "Help Scout",
+   "category": "Support and Helpdesk",
+   "access": "self_serve_trial",
+   "verdict": "ready_with_caveats",
+   "blocker": "paid_plan",
+   "composio_toolkit": "yes",
+   "mcp_official": true,
+   "rationale": "The Mailbox API is well-documented and self-serve via OAuth2 app creation, but functional API access requires a paid plan, making it buildable with the caveat of payment."
+  },
+  {
+   "id": 22,
+   "app": "Twilio",
+   "category": "Communications and Messaging",
+   "access": "self_serve_trial",
+   "verdict": "ready_with_caveats",
+   "blocker": "paid_plan",
+   "composio_toolkit": "yes",
+   "mcp_official": true,
+   "rationale": "A developer can self-serve a working trial account and build against the documented REST API today, but trial expiration, verified-recipient limits, and template restrictions are real caveats before production use."
+  },
+  {
+   "id": 30,
+   "app": "Vonage",
+   "category": "Communications and Messaging",
+   "access": "self_serve_trial",
+   "verdict": "ready_with_caveats",
+   "blocker": "paid_plan",
+   "composio_toolkit": "no",
+   "mcp_official": true,
+   "rationale": "Self-serve signup gives API key/secret and free credit, but production/non-demo use requires adding paid credit, so it's buildable with friction rather than fully free."
+  },
+  {
+   "id": 52,
+   "app": "SE Ranking",
+   "category": "Data, SEO and Scraping",
+   "access": "self_serve_trial",
+   "verdict": "ready_with_caveats",
+   "blocker": "paid_plan",
+   "composio_toolkit": "no",
+   "mcp_official": true,
+   "rationale": "API is well-documented with self-serve free trial and clear REST endpoints, but production use requires paid plan after 14-day trial expires (credits are self-serve purchasable)."
+  },
+  {
+   "id": 53,
+   "app": "Ahrefs",
+   "category": "Data, SEO and Scraping",
+   "access": "paid_plan_required",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": true,
+   "rationale": "Composio toolkit already exists with 46 tools; REST API is well-documented with comprehensive endpoints and straightforward authentication."
+  },
+  {
+   "id": 79,
+   "app": "Smartsheet",
+   "category": "Productivity and Project Management",
+   "access": "paid_plan_required",
+   "verdict": "ready_with_caveats",
+   "blocker": "paid_plan",
+   "composio_toolkit": "yes",
+   "mcp_official": true,
+   "rationale": "The API is fully documented and self-serve via access tokens or OAuth2, but only usable on a paid Business/Enterprise plan, making it buildable but with a paid-plan caveat rather than fully free/ready."
+  },
+  {
+   "id": 96,
+   "app": "Devin",
+   "category": "AI, Research and Media-native",
+   "access": "paid_plan_required",
+   "verdict": "ready_with_caveats",
+   "blocker": "paid_plan",
+   "composio_toolkit": "yes",
+   "mcp_official": true,
+   "rationale": "A documented REST API and MCP server exist and credentials are self-serve, but only via a paid plan, so buildable with caveats rather than fully free/ready."
+  },
+  {
+   "id": 97,
+   "app": "higgsfield",
+   "category": "AI, Research and Media-native",
+   "access": "unknown",
+   "verdict": "ready_with_caveats",
+   "blocker": "paid_plan",
+   "composio_toolkit": "yes",
+   "mcp_official": false,
+   "rationale": "A documented REST API with key/secret auth exists and is self-serve to set up, but real usage is metered by paid plan credits, so it is buildable with caveats rather than fully free/ready."
+  },
+  {
+   "id": 99,
+   "app": "YouTube Transcript",
+   "category": "AI, Research and Media-native",
+   "access": "self_serve_trial",
+   "verdict": "ready_with_caveats",
+   "blocker": "paid_plan",
+   "composio_toolkit": "yes",
+   "mcp_official": true,
+   "rationale": "A developer can self-serve a key and build immediately, but the free allowance is only 100 trial credits and continued/production use requires a paid plan, which is a caveat rather than fully free/ready."
+  }
+ ],
+ "paid_n": 14,
+ "unknowns": [
+  {
+   "id": 47,
+   "app": "Ecwid",
+   "category": "Ecommerce",
+   "access": "unknown",
+   "verdict": "ready_with_caveats",
+   "blocker": "other",
+   "composio_toolkit": "no",
+   "mcp_official": false,
+   "rationale": "REST API and webhooks are well-documented with broad endpoint coverage, but the credential acquisition process and access status (free vs. paid vs. approval required) are not documented in the provided pages."
+  },
+  {
+   "id": 49,
+   "app": "Amazon Selling Partner",
+   "category": "Ecommerce",
+   "access": "self_serve_free",
+   "verdict": "ready_with_caveats",
+   "blocker": "app_review",
+   "composio_toolkit": "yes",
+   "mcp_official": false,
+   "rationale": "Public API with documentation, self-serve registration, and sandbox available; however, production multi-customer apps through Appstore require vendor verification."
+  },
+  {
+   "id": 50,
+   "app": "fanbasis",
+   "category": "Ecommerce",
+   "access": "unknown",
+   "verdict": "blocked",
+   "blocker": "other",
+   "composio_toolkit": "no",
+   "mcp_official": false,
+   "rationale": "No public developer docs for auth or access were found; needs outreach to confirm an API exists."
+  },
+  {
+   "id": 58,
+   "app": "Sherlock",
+   "category": "Data, SEO and Scraping",
+   "access": "self_serve_free",
+   "verdict": "ready_with_caveats",
+   "blocker": "cli_only",
+   "composio_toolkit": "no",
+   "mcp_official": false,
+   "rationale": "Open-source and freely available but CLI-only tool without native API; Composio would need to wrap CLI or integrate community MCP server"
+  },
+  {
+   "id": 84,
+   "app": "Paygent Connect",
+   "category": "Finance and Fintech",
+   "access": "unknown",
+   "verdict": "blocked",
+   "blocker": "other",
+   "composio_toolkit": "no",
+   "mcp_official": false,
+   "rationale": "No public developer docs for auth or access were found; needs outreach to confirm an API exists."
+  },
+  {
+   "id": 97,
+   "app": "higgsfield",
+   "category": "AI, Research and Media-native",
+   "access": "unknown",
+   "verdict": "ready_with_caveats",
+   "blocker": "paid_plan",
+   "composio_toolkit": "yes",
+   "mcp_official": false,
+   "rationale": "A documented REST API with key/secret auth exists and is self-serve to set up, but real usage is metered by paid plan credits, so it is buildable with caveats rather than fully free/ready."
+  },
+  {
+   "id": 98,
+   "app": "Mermaid CLI",
+   "category": "AI, Research and Media-native",
+   "access": "self_serve_free",
+   "verdict": "ready_with_caveats",
+   "blocker": "cli_only",
+   "composio_toolkit": "no",
+   "mcp_official": false,
+   "rationale": "Open-source CLI tool with Node.JS API available, but fundamentally CLI-only without traditional service API; buildable via CLI invocation or Node.JS integration but requires wrapper abstraction."
+  }
+ ],
+ "non_saas": [
+  {
+   "id": 58,
+   "app": "Sherlock",
+   "category": "Data, SEO and Scraping",
+   "access": "self_serve_free",
+   "verdict": "ready_with_caveats",
+   "blocker": "cli_only",
+   "composio_toolkit": "no",
+   "mcp_official": false,
+   "rationale": "Open-source and freely available but CLI-only tool without native API; Composio would need to wrap CLI or integrate community MCP server",
+   "app_type": "cli_or_library"
+  },
+  {
+   "id": 98,
+   "app": "Mermaid CLI",
+   "category": "AI, Research and Media-native",
+   "access": "self_serve_free",
+   "verdict": "ready_with_caveats",
+   "blocker": "cli_only",
+   "composio_toolkit": "no",
+   "mcp_official": false,
+   "rationale": "Open-source CLI tool with Node.JS API available, but fundamentally CLI-only without traditional service API; buildable via CLI invocation or Node.JS integration but requires wrapper abstraction.",
+   "app_type": "cli_or_library"
+  }
+ ],
+ "rest_n": 92,
+ "graphql_n": 12,
+ "headlines": [
+  {
+   "text": "Static keys/tokens are the most common auth: 77 of 100 apps accept an API key or token, 74 support OAuth2, and 56 offer both - so most toolkits can start on API-key auth and add OAuth for multi-tenant use.",
+   "key": "auth_summary.key_or_token_any"
+  },
+  {
+   "text": "Getting credentials is mostly self-serve: 74% of apps let a developer get working credentials alone (free or trial); 19 are gated by an admin, app review, partner programme or sales.",
    "key": "self_serve_pct"
   },
   {
-   "text": "Gating clusters by category: Support and Helpdesk is the most self-serve (100%), CRM and Sales the least (80%).",
+   "text": "Gating clusters by category: Developer, Infra and Data platforms is the most self-serve (100%), Marketing, Ads, Email and Social the least (40%).",
    "key": "worst_category.self_serve_pct"
   },
   {
-   "text": "The most common blocker is 'paid plan' (3 apps); 7 apps are ready today, 5 ready with caveats, 0 blocked.",
+   "text": "The most common blocker is 'paid plan' (13 apps); 58 apps are ready today, 36 ready with caveats, 6 blocked.",
    "key": "top_blocker.n"
   },
   {
-   "text": "MCP is already mainstream: 8 vendors ship an official MCP server and 3 more have only community servers.",
+   "text": "MCP is already mainstream: 50 vendors ship an official MCP server and 25 more have only community servers.",
    "key": "mcp_coverage.official"
   },
   {
-   "text": "Composio already has toolkits for 11 of the 12; 0 self-serve, ready apps have no Composio toolkit yet - the cheapest net-new wins.",
+   "text": "Composio already has toolkits for 80 of the 100; 4 self-serve, ready apps have no Composio toolkit yet - the cheapest net-new wins.",
    "key": "easy_new_n"
   }
  ]

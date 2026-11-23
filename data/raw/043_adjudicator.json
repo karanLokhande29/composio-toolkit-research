@@ -1,0 +1,47 @@
+{
+ "fields": [
+  "auth.methods"
+ ],
+ "pages": [
+  "https://developer.bigcommerce.com/docs/start/authentication",
+  "https://developer.bigcommerce.com/docs/start/authentication/api-accounts",
+  "https://docs.composio.dev/toolkits/bigcommerce.md",
+  "https://developer.bigcommerce.com/api-reference"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.060648,
+  "seconds": 9.3,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "auth.methods",
+    "value": [
+     "api_key",
+     "oauth2"
+    ],
+    "evidence": [
+     {
+      "url": "https://developer.bigcommerce.com/docs/start/authentication",
+      "snippet": "BigCommerce offers three types of OAuth-based API accounts to developers who wish to use BigCommerce's REST APIs",
+      "check": "exact"
+     },
+     {
+      "url": "https://developer.bigcommerce.com/docs/start/authentication",
+      "snippet": "Store-level API accounts include a static access token that does not change.",
+      "check": "exact"
+     },
+     {
+      "url": "https://docs.composio.dev/toolkits/bigcommerce.md",
+      "snippet": "Auth: API_KEY, OAUTH2",
+      "check": "exact"
+     }
+    ],
+    "reason": "Both agents and all three pages agree BigCommerce uses OAuth2-based API accounts plus static access tokens functioning as API keys, confirmed by Composio's own toolkit metadata."
+   }
+  ]
+ }
+}

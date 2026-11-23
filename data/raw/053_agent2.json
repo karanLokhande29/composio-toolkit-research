@@ -1,0 +1,128 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.1153,
+  "seconds": 145.4,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://ahrefs.com/api/pricing",
+  "https://docs.composio.dev/toolkits/ahrefs.md",
+  "https://docs.ahrefs.com/en/mcp/docs/introduction",
+  "https://docs.ahrefs.com/en/mcp/docs/claude-desktop-web",
+  "https://docs.ahrefs.com/en/mcp/docs/chatgpt-web",
+  "https://docs.ahrefs.com/en/mcp/docs/claude-code",
+  "https://docs.ahrefs.com/en/ahrefs-connect/docs/oauth-guide",
+  "https://docs.ahrefs.com/en/api/reference/site-explorer",
+  "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management",
+  "https://github.com/cnych/seo-mcp"
+ ],
+ "output": {
+  "one_liner": "Access Ahrefs marketing and search data through REST APIs and developer tools to build custom integrations and workflows.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "api_key",
+    "oauth2"
+   ],
+   "oauth_grant_types": [
+    "authorization_code"
+   ],
+   "notes": "API key uses Bearer token format. OAuth 2.0 uses Authorization Code Flow with PKCE for Ahrefs Connect.",
+   "evidence": [
+    {
+     "url": "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management",
+     "snippet": "You'll need an API key to send requests via Ahrefs API v3."
+    },
+    {
+     "url": "https://docs.ahrefs.com/en/ahrefs-connect/docs/oauth-guide",
+     "snippet": "Ahrefs Connect uses OAuth 2.0 Authorization Code Flow with Proof Key for Code Exchange"
+    }
+   ]
+  },
+  "access": {
+   "status": "unknown",
+   "dev_sandbox": null,
+   "notes": "Pages mention 'free test queries' available without Enterprise plan, but do not explicitly detail whether general developers can obtain free credentials or what plan tier is required.",
+   "evidence": [
+    {
+     "url": "https://ahrefs.com/api/pricing",
+     "snippet": "Try API endpoints without an Enterprise plan"
+    },
+    {
+     "url": "https://docs.ahrefs.com/en/mcp/docs/introduction",
+     "snippet": "The remote MCP server is available on paid plans starting from Lite"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": null,
+   "rate_limit_note": "Pricing based on API units ($0.006 per 10 units); specific rate limit thresholds not documented in provided pages.",
+   "evidence": [
+    {
+     "url": "https://ahrefs.com/api/pricing",
+     "snippet": "Research keywords, analyze backlinks, track rankings, and monitor brand visibility across traditional search"
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/ahrefs.md",
+     "snippet": "Category: seo & ai visibility Auth: API_KEY, OAUTH2 Composio-managed OAuth available? No Tools: 46"
+    },
+    {
+     "url": "https://ahrefs.com/api/pricing",
+     "snippet": "OpenAPI spec Full machine-readable spec for every endpoint"
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://api.ahrefs.com/mcp/mcp",
+   "community": [
+    "https://github.com/cnych/seo-mcp"
+   ],
+   "evidence": [
+    {
+     "url": "https://docs.ahrefs.com/en/mcp/docs/introduction",
+     "snippet": "Ahrefs provides a hosted MCP server that allows users with Lite plan or higher"
+    },
+    {
+     "url": "https://docs.ahrefs.com/en/mcp/docs/introduction",
+     "snippet": "Ahrefs MCP lets AI agents securely access the Ahrefs API and enrich their answers"
+    },
+    {
+     "url": "https://github.com/cnych/seo-mcp",
+     "snippet": "A free SEO tool MCP service based on Ahrefs data Includes backlinks keyword ideas"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Composio toolkit already exists with 46 tools; REST API well-documented with broad coverage and OpenAPI spec.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "AHREFS"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://ahrefs.com/api/pricing",
+    "snippet": "Access Ahrefs marketing and search data through our APIs and developer tools"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/ahrefs.md",
+    "snippet": "Category: seo & ai visibility Auth: API_KEY, OAUTH2 Composio-managed OAuth available? No Tools: 46"
+   }
+  ],
+  "confidence": 0.85,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "Pages mention 'free test queries' available without Enterprise plan but do not explicitly state whether general developers can obtain free credentials without payment or trial.",
+   "api_surface": "",
+   "mcp": ""
+  }
+ }
+}

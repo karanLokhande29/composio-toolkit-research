@@ -1,0 +1,298 @@
+{
+ "id": 36,
+ "app": "Klaviyo",
+ "tag": "agent2",
+ "urls": [
+  {
+   "url": "https://developers.klaviyo.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.klaviyo.com/en/docs/welcome_to_the_klaviyo_api",
+   "purpose": "overview",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.klaviyo.com/en/docs/authenticate_",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.klaviyo.com/en/docs/retrieve_api_credentials",
+   "purpose": "credentials",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.klaviyo.com/en/docs/rate_limits_and_error_handling",
+   "purpose": "rate_limits",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.klaviyo.com/en/reference/api_overview",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.klaviyo.com/en/docs/webhooks",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.klaviyo.com/en/docs/receiving_webhooks_from_klaviyo",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.klaviyo.com/en/docs/partner_program",
+   "purpose": "partner_programme",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.klaviyo.com/en/docs/mcp_server",
+   "purpose": "mcp_server",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.klaviyo.com/en/docs/sandbox",
+   "purpose": "sandbox",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.klaviyo.com/en/docs",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.klaviyo.com/pricing",
+   "purpose": "pricing",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/CosmoBlk/email-design",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/mattcoatsworth/Klaviyo-MCP-Server",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/mattcoatsworth/Klaviyo-MCP-Server-4-15",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/klaviyo.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.klaviyo.com/en/docs/klaviyo_mcp_server",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.klaviyo.com/en/docs/connect_to_the_klaviyo_mcp_server",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.klaviyo.com/en/docs/authenticate_.md",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.klaviyo.com/en/docs/set_up_oauth",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.klaviyo.com/en/docs/klaviyo_mcp_server_available_tools",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.klaviyo.com/en/docs/create_a_public_oauth_app",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.klaviyo.com/en/docs/handle_your_apps_oauth_flow",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.klaviyo.com/en/docs/troubleshoot_oauth_errors",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.klaviyo.com/en/docs/update_your_oauth_scopes",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.klaviyo.com/en/docs/migrate_to_oauth_from_private_key_authentication",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.klaviyo.com/en/docs/application_objects_for_app_partners",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.klaviyo.com/en/docs/rate_limits_and_error_handling.md",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "CosmoBlk/email-design",
+   "url": "https://github.com/CosmoBlk/email-design",
+   "stars": 8,
+   "description": "Email design skill for Claude Code. Anti-slop emails — six committed archetypes, brand-aware briefs, real imagery, real footers. Works with any ESP via MCP (Nit"
+  },
+  {
+   "repo": "mattcoatsworth/Klaviyo-MCP-Server",
+   "url": "https://github.com/mattcoatsworth/Klaviyo-MCP-Server",
+   "stars": 6,
+   "description": ""
+  },
+  {
+   "repo": "mattcoatsworth/Klaviyo-MCP-Server-4-15",
+   "url": "https://github.com/mattcoatsworth/Klaviyo-MCP-Server-4-15",
+   "stars": 3,
+   "description": ""
+  },
+  {
+   "repo": "ivan-rivera-projects/Klaviyo-MCP-Server-Enhanced",
+   "url": "https://github.com/ivan-rivera-projects/Klaviyo-MCP-Server-Enhanced",
+   "stars": 3,
+   "description": "Klaviyo MCP Server Enhanced with better reporting and analytics"
+  },
+  {
+   "repo": "universal-mcp/klaviyo",
+   "url": "https://github.com/universal-mcp/klaviyo",
+   "stars": 1,
+   "description": ""
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Klaviyo",
+    "slug": "KLAVIYO",
+    "tools": 233,
+    "auth": [
+     "API_KEY",
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/klaviyo.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Klaviyo",
+    "slug": "KLAVIYO",
+    "tools": 233,
+    "auth": [
+     "API_KEY",
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/klaviyo.md"
+   }
+  ]
+ },
+ "search_meta": {}
+}

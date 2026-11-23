@@ -73,7 +73,7 @@ def main(argv=None):
     p = argparse.ArgumentParser()
     p.add_argument("--apps", default="1-100")
     p.add_argument("--stage", default="all",
-                   choices=["discover", "fetch", "extract", "verify", "loop1", "loop2", "loop3", "analyze", "page", "all"])
+                   choices=["discover", "fetch", "extract", "verify", "loop1", "loop2", "loop3", "rules", "analyze", "page", "all"])
     p.add_argument("--force", action="store_true")
     p.add_argument("--workers", type=int, default=int(env("WORKERS", "6")))
     args = p.parse_args(argv)
@@ -94,6 +94,9 @@ def main(argv=None):
     if st in ("verify", "loop3", "all"):
         from src import browser_check
         browser_check.run([a["id"] for a in apps], workers=max(2, args.workers // 2))
+    if st in ("verify", "loop3", "rules", "all"):
+        from src import verify
+        verify.run_final_rules([a["id"] for a in apps])
     if st in ("analyze", "all"):
         from src import analyze, metrics
         metrics.run(); analyze.run()

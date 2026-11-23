@@ -1,0 +1,261 @@
+{
+ "id": 65,
+ "app": "Supabase",
+ "tag": "agent2",
+ "urls": [
+  {
+   "url": "https://supabase.com/docs",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://supabase.com/docs/guides/auth",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://supabase.com/docs/guides/api/api-keys",
+   "purpose": "credentials",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://supabase.com/docs/guides/api",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://supabase.com/docs/reference/javascript/introduction",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://supabase.com/docs/reference/api/introduction",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://supabase.com/pricing",
+   "purpose": "pricing",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://supabase.com/docs/guides/platform/going-into-prod",
+   "purpose": "rate_limits",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://supabase.com/docs/guides/auth/rate-limits",
+   "purpose": "rate_limits",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://supabase.com/docs/guides/database/webhooks",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://supabase.com/docs/guides/getting-started/mcp",
+   "purpose": "mcp_server",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://supabase.com/partners",
+   "purpose": "partner_programme",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/supabase.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://supabase.com/docs/guides/getting-started",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://supabase.com/docs/guides/getting-started/the-supabase-way-to-build",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://supabase.com/docs/guides/getting-started/api-keys",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://supabase.com/docs/guides/local-development/cli/getting-started",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://supabase.com/docs/guides/getting-started/architecture",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://supabase.com/docs/guides/getting-started/migrating-to-new-api-keys",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://supabase.com/docs/guides/getting-started/quickstarts/reactjs",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://supabase.com/docs/guides/getting-started/quickstarts/nextjs",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://supabase.com/docs/guides/getting-started/quickstarts/tanstack",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://supabase.com/docs/guides/getting-started/quickstarts/astrojs",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://supabase.com/docs/guides/getting-started/quickstarts/vue",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://supabase.com/docs/guides/getting-started/quickstarts/nuxtjs",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://supabase.com/docs/guides/getting-started/quickstarts/sveltekit",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [],
+ "composio": {
+  "exact": [
+   {
+    "name": "Supabase",
+    "slug": "SUPABASE",
+    "tools": 235,
+    "auth": [
+     "OAUTH2",
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/supabase.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Supabase",
+    "slug": "SUPABASE",
+    "tools": 235,
+    "auth": [
+     "OAUTH2",
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/supabase.md"
+   },
+   {
+    "name": "Supabase MCP",
+    "slug": "SUPABASE_MCP",
+    "tools": 32,
+    "auth": [
+     "DCR_OAUTH"
+    ],
+    "url": "https://docs.composio.dev/toolkits/supabase_mcp.md"
+   },
+   {
+    "name": "Supabase Read MCP",
+    "slug": "SUPABASE_READ_MCP",
+    "tools": 21,
+    "auth": [
+     "DCR_OAUTH"
+    ],
+    "url": "https://docs.composio.dev/toolkits/supabase_read_mcp.md"
+   }
+  ]
+ },
+ "search_meta": {}
+}

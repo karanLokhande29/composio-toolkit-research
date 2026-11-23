@@ -46,3 +46,20 @@ discover: 62 apps to do (0 cached)
   [ 85] iPayX                        urls= 9 ok= 3
   [ 80] Harvest                      urls=17 ok=15
   [ 82] Plaid                        urls=26 ok=20
+  [ 83] Binance                      urls=15 ok= 3
+  [ 86] QuickBooks                   urls=12 ok= 4
+  [ 87] Xero                         urls=29 ok=11
+  [ 90] PitchBook                    urls= 9 ok= 4
+  [ 89] Ramp                         urls=12 ok=12
+  [ 92] Otter AI                     urls=13 ok= 8
+  [ 93] Fathom                       urls= 9 ok= 6
+  [ 94] Consensus                    urls=14 ok=11
+  [ 97] higgsfield                   urls= 8 ok= 8
+  [ 91] NotebookLM                   urls=25 ok=19
+  [ 96] Devin                        urls=13 ok=13
+  [100] Grain                        urls=13 ok=11
+  [ 99] YouTube Transcript           urls=18 ok=15
+  [ 88] Brex                         urls=28 ok=12
+  [ 98] Mermaid CLI                  urls= 6 ok= 6
+  [ 95] Reducto                      urls=27 ok=19
+done in 407s | IST now 16:28 | deadline 23:00 | 6h31m left

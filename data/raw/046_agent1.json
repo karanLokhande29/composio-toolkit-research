@@ -1,0 +1,108 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.084339,
+  "seconds": 109.1,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://developers.squarespace.com",
+  "https://developers.squarespace.com/mcp/overview",
+  "https://developers.squarespace.com/changes/self-service-oauth-credential-management",
+  "https://developers.squarespace.com/reseller/products-and-pricing",
+  "https://www.squarespace.com/developer-terms",
+  "https://github.com/BusyBee3333/squarespace-mcp-2026-complete",
+  "https://github.com/timncox/squarespace-mcp",
+  "https://github.com/nodemode-dev/formpublisher"
+ ],
+ "output": {
+  "one_liner": "Squarespace is a website and ecommerce platform with REST APIs and an official MCP server for building integrations and managing stores.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2"
+   ],
+   "oauth_grant_types": [],
+   "notes": "OAuth2 is the primary authentication method with self-serve credential generation available as of July 27, 2026.",
+   "evidence": [
+    {
+     "url": "https://developers.squarespace.com/changes/self-service-oauth-credential-management",
+     "snippet": "Instant Credential Generation: Generate OAuth client IDs and secrets immediately for development and testing."
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Developers can generate OAuth credentials immediately for free in Demo Mode for development and testing. Production use requires requesting a review through the developer dashboard.",
+   "evidence": [
+    {
+     "url": "https://developers.squarespace.com/changes/self-service-oauth-credential-management",
+     "snippet": "all new applications created via the self-service tool will enter Demo Mode by default."
+    },
+    {
+     "url": "https://developers.squarespace.com/changes/self-service-oauth-credential-management",
+     "snippet": "When you are ready to take your integration live, simply request a review directly from the app details page in your dashboard."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "moderate",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "No rate limit details provided in available documentation",
+   "evidence": [
+    {
+     "url": "https://developers.squarespace.com",
+     "snippet": "REST endpoints, webhooks for order events, and signed payloads for safe server-to-server delivery."
+    },
+    {
+     "url": "https://developers.squarespace.com",
+     "snippet": "Subscribe to order, inventory, content, and customer events with signed delivery."
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://mcp.squarespace.com/mcp",
+   "community": [
+    "https://github.com/BusyBee3333/squarespace-mcp-2026-complete",
+    "https://github.com/timncox/squarespace-mcp"
+   ],
+   "evidence": [
+    {
+     "url": "https://developers.squarespace.com/mcp/overview",
+     "snippet": "The Squarespace MCP server connects AI assistants to Squarespace."
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "app_review",
+   "rationale": "Self-serve OAuth credentials available immediately for development, but production deployment requires Squarespace app review and approval.",
+   "composio_existing_toolkit": "no",
+   "composio_slug": null
+  },
+  "overview_evidence": [
+   {
+    "url": "https://developers.squarespace.com",
+    "snippet": "Everything you need to build and publish external apps – reliable APIs, clear documentation, and a marketplace to reach Squarespace's global customer base."
+   },
+   {
+    "url": "https://developers.squarespace.com",
+    "snippet": "Commerce APIs. Read and write orders, products, inventory, and transactions."
+   }
+  ],
+  "confidence": 0.85,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "Complete API endpoint count and resource scope not fully detailed in provided pages",
+   "mcp": ""
+  }
+ }
+}

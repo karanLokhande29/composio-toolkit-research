@@ -1,0 +1,60 @@
+{
+ "fields": [
+  "access.status",
+  "api_surface.breadth"
+ ],
+ "pages": [
+  "https://developer.atlassian.com/cloud/jira/platform/getting-started/",
+  "https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/",
+  "https://developer.atlassian.com/cloud/jira/platform/rate-limiting/",
+  "https://docs.composio.dev/toolkits/jira.md",
+  "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+  "https://developer.atlassian.com/cloud/jira/platform/webhooks/",
+  "https://developer.atlassian.com"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.097473,
+  "seconds": 10.4,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "access.status",
+    "value": "self_serve_free",
+    "evidence": [
+     {
+      "url": "https://developer.atlassian.com/cloud/jira/platform/getting-started/",
+      "snippet": "The Cloud Developer Bundle provides a free Atlassian cloud development site for building and testing"
+     },
+     {
+      "url": "https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/",
+      "snippet": "OAuth 2.0 (3LO) apps are created and managed in the developer console"
+     }
+    ],
+    "reason": "Developers can get a free Atlassian cloud development site and create OAuth 2.0 (3LO) apps in the developer console at no cost, with rate-limit tiers only affecting high-volume/per-tenant usage, not initial access."
+   },
+   {
+    "field": "api_surface.breadth",
+    "value": "broad",
+    "evidence": [
+     {
+      "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+      "snippet": "version 3 of the Jira Cloud platform REST API, which is the latest version."
+     },
+     {
+      "url": "https://developer.atlassian.com/cloud/jira/platform/rate-limiting/",
+      "snippet": "The same points system applies to both REST and GraphQL APIs."
+     },
+     {
+      "url": "https://developer.atlassian.com/cloud/jira/platform/webhooks/",
+      "snippet": "A webhook is a user-defined callback over HTTPS. You can use Jira webhooks to notify your app or web application when certain events occur in"
+     }
+    ],
+    "reason": "Jira exposes a large REST API (v3) covering many resources (issues, projects, permissions, plans, policies, tasks, teams, users, webhooks, workflow schemes) plus GraphQL and webhooks, indicating a broad surface."
+   }
+  ]
+ }
+}

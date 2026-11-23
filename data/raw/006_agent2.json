@@ -1,0 +1,116 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.07867400000000001,
+  "seconds": 102.4,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://developers.podio.com/authentication",
+  "https://developers.podio.com/doc",
+  "https://developers.podio.com/",
+  "https://developers.podio.com/doc/hooks",
+  "https://docs.composio.dev/toolkits/podio.md",
+  "https://podio.com",
+  "https://developer.podio.com",
+  "https://developers.podio.com/api-key",
+  "https://developers.podio.com/clients",
+  "https://company.podio.com/partners",
+  "https://developers.podio.com/authentication/scopes",
+  "https://developers.podio.com/authentication/server_side"
+ ],
+ "output": {
+  "one_liner": "Work management platform enabling enterprise collaboration and business process automation",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2"
+   ],
+   "oauth_grant_types": [
+    "authorization_code",
+    "password",
+    "client_credentials"
+   ],
+   "notes": "Supports four OAuth2 flows: server-side (authorization code), client-side (implicit), username & password (password grant), and app authentication (client credentials)",
+   "evidence": [
+    {
+     "url": "https://developers.podio.com/authentication",
+     "snippet": "The Podio API uses the OAuth2 protocol for authentication. Podio supports four different ways of autheticating"
+    }
+   ]
+  },
+  "access": {
+   "status": "unknown",
+   "dev_sandbox": null,
+   "notes": "Pages show self-serve signup and API key generation, but do not explicitly state whether free Podio accounts have API access or if paid plan is required for API use",
+   "evidence": [
+    {
+     "url": "https://developers.podio.com/api-key",
+     "snippet": "It's easy to get one or more API keys for accessing your Podio data. You just have to sign in or sign up with Podio"
+    },
+    {
+     "url": "https://developers.podio.com/",
+     "snippet": "You'll need a Podio account, first of all. Then you should review our Terms of API use and then grab an API key"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Sensible rate-limits in place; developers can request higher limits by contacting support",
+   "evidence": [
+    {
+     "url": "https://developers.podio.com/",
+     "snippet": "The Podio API is a complete programmable interface to all Podio functionality"
+    },
+    {
+     "url": "https://developers.podio.com/",
+     "snippet": "the entire Podio frontend is built on the API, and we've exposed it all for you to use too"
+    },
+    {
+     "url": "https://developers.podio.com/doc/hooks",
+     "snippet": "Hooks are webhooks that can call external sites when certain actions occur in Podio"
+    },
+    {
+     "url": "https://developers.podio.com/",
+     "snippet": "There are some sensible rate-limits in place, but if you need us to raise them for your app, get in touch"
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": []
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Composio has already built a production toolkit with 143 tools; REST API is well-documented with broad resource coverage and OAuth2 support",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "PODIO"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://podio.com",
+    "snippet": "Work Management Platform | Streamline Collaboration & Workflows"
+   },
+   {
+    "url": "https://developers.podio.com/",
+    "snippet": "The Podio API is a complete programmable interface to all Podio functionality"
+   }
+  ],
+  "confidence": 0.8,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "Pages show self-serve signup and API key generation but do not explicitly state whether free tier accounts have API access or if a paid plan is required",
+   "api_surface": "",
+   "mcp": "No MCP server documentation found in provided pages"
+  }
+ }
+}

@@ -1,0 +1,121 @@
+{
+ "id": 30,
+ "app": "Vonage",
+ "category": "Communications and Messaging",
+ "hint": "developer.vonage.com",
+ "one_liner": "Vonage provides cloud communications APIs for SMS, MMS, voice, video, and verification services.",
+ "app_type": "saas",
+ "auth": {
+  "methods": [
+   "api_key",
+   "basic",
+   "jwt"
+  ],
+  "oauth_grant_types": [],
+  "notes": "APIs support API Key and Secret, JWT tokens, and Basic authentication (Base64-encoded credentials). SIP Trunking also uses Digest authentication.",
+  "evidence": [
+   {
+    "url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+    "snippet": "Vonage APIs support different authentication methods depending on which product you are using: API{filter} API Key and Secret (Header) JSON Web Token (JWT)",
+    "check": "repaired"
+   },
+   {
+    "url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+    "snippet": "A number of newer Vonage APIs require authentication to be done using an API key and secret sent Base64 encoded in the Authorization header",
+    "check": "exact"
+   },
+   {
+    "url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+    "snippet": "The Vonage Client and Video SDKs use JWTs for authentication when a client connects to Vonage",
+    "check": "exact"
+   }
+  ]
+ },
+ "access": {
+  "status": "self_serve_trial",
+  "dev_sandbox": true,
+  "notes": "Developers can sign up for free demo/trial account and receive API key and secret. Trial accounts enable testing; production use requires adding credit. Some features like Email require additional approval.",
+  "evidence": [
+   {
+    "url": "https://developer.vonage.com/voice/voice-api/getting-started?source=voice",
+    "snippet": "sign up for an account . This will give you an API key and secret that you can use to access our APIs.",
+    "check": "repaired"
+   },
+   {
+    "url": "https://developer.vonage.com/voice/voice-api/getting-started?source=voice",
+    "snippet": "this feature is only available for demo or trial accounts until you add credit to your account",
+    "check": "exact"
+   },
+   {
+    "url": "https://developer.vonage.com/messages/concepts/getting-started/getting-started-email",
+    "snippet": "Request Email access. Submit a request in the Dashboard and include the API key you plan to use",
+    "check": "exact"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "rest"
+  ],
+  "breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "rate_limit_note": "Rate limits not documented in provided pages",
+  "evidence": [
+   {
+    "url": "https://developer.vonage.com/en/messages/overview",
+    "snippet": "The Vonage Messages API integrates with SMS, MMS, RCS, WhatsApp, Messenger, Viber, and Email",
+    "check": "exact"
+   },
+   {
+    "url": "https://developer.vonage.com/en/getting-started-network/what-are-network-apis?",
+    "snippet": "Vonage Network Features expose new capabilities from mobile operators, going beyond traditional SMS and Voice",
+    "check": "exact"
+   },
+   {
+    "url": "https://developer.vonage.com/messages/concepts/getting-started/getting-started-sms",
+    "snippet": "The Messages API provides webhooks for Inbound messages and also for Message Status",
+    "check": "exact"
+   }
+  ]
+ },
+ "mcp": {
+  "official": null,
+  "community": [],
+  "evidence": [
+   {
+    "url": "https://developer.vonage.com/en/documentation",
+    "snippet": "MCP Server Communicate with tools through a standardized interface that lets AI agents safely use external APIs",
+    "check": "exact"
+   }
+  ]
+ },
+ "buildability": {
+  "verdict": "ready_with_caveats",
+  "main_blocker": "paid_plan",
+  "rationale": "Trial credentials enable building and testing; production use and some features require payment or approval.",
+  "composio_existing_toolkit": "no",
+  "composio_slug": null
+ },
+ "overview_evidence": [
+  {
+   "url": "https://developer.vonage.com/en/messages/overview",
+   "snippet": "The Vonage Messages API integrates with SMS, MMS, RCS, WhatsApp, Messenger, Viber, and Email allowing you to communicate"
+  }
+ ],
+ "confidence": 0.78,
+ "unknown_reasons": {
+  "auth": "",
+  "access": "",
+  "api_surface": "OpenAPI spec not documented; rate limits not documented in provided pages",
+  "mcp": "MCP Server listed in documentation but no URL provided; publication status unclear"
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 11,
+  "error": null,
+  "cost_usd": 0.08995399999999999,
+  "seconds": 111.3
+ }
+}

@@ -1,0 +1,336 @@
+{
+ "id": 11,
+ "app": "Zendesk",
+ "tag": "agent2",
+ "urls": [
+  {
+   "url": "https://zendesk.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.zendesk.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.zendesk.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.zendesk.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://zendesk.com/pricing",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.zendesk.com/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.zendesk.com/documentation/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.zendesk.com/api-reference/ticketing/introduction/",
+   "purpose": "api-reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.zendesk.com/api-reference/",
+   "purpose": "api-reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.zendesk.com/api-reference/ticketing/account-configuration/usage_limits/",
+   "purpose": "rate-limits",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.zendesk.com/documentation/webhooks/",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.zendesk.com/documentation/webhooks/getting-started/",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.zendesk.com/documentation/apps/app-developer-guide/getting_started/",
+   "purpose": "sandbox",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.zendesk.com/partners/",
+   "purpose": "partner-programme",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.zendesk.com/pricing/",
+   "purpose": "pricing",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.zendesk.com/api-reference/ticketing/apps/apps-sandbox/",
+   "purpose": "sandbox",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/chattermate/chattermate.chat",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/reminia/zendesk-mcp-server",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/mattcoatsworth/zendesk-mcp-server",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/zendesk.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.zendesk.com/in/partner/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.zendesk.com/in/pricing/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.zendesk.com/partner/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://support.zendesk.com/hc/en-us/articles/10831381898650-Zendesk-Accessibility-Plan",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.zendesk.com/documentation/authentication/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.zendesk.com/documentation/developer-tools/getting-started/getting-a-trial-or-sponsored-account-for-development/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.zendesk.com/documentation/ticketing/getting-started/zendesk-api-quick-start/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.zendesk.com/documentation/zendesk-sdks/sdks/android/getting_started/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.zendesk.com/documentation/zendesk-sdks/sdks/ios/getting_started/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/unity/getting_started/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.zendesk.com/documentation/custom-data/custom-objects/getting-started-with-custom-objects/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.zendesk.com/documentation/ticketing/profiles/getting-started-with-profiles/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.zendesk.com/documentation/ticketing/events/getting-started-with-events/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "chattermate/chattermate.chat",
+   "url": "https://github.com/chattermate/chattermate.chat",
+   "stars": 178,
+   "description": "Open-source AI customer support chatbot with human handoff — omnichannel inbox (web, WhatsApp, Instagram, Messenger, Slack, email), AI lead capture, AI-generate"
+  },
+  {
+   "repo": "reminia/zendesk-mcp-server",
+   "url": "https://github.com/reminia/zendesk-mcp-server",
+   "stars": 126,
+   "description": "A Model Context Protocol server for Zendesk"
+  },
+  {
+   "repo": "mattcoatsworth/zendesk-mcp-server",
+   "url": "https://github.com/mattcoatsworth/zendesk-mcp-server",
+   "stars": 30,
+   "description": ""
+  },
+  {
+   "repo": "PersonaliAI/chatty",
+   "url": "https://github.com/PersonaliAI/chatty",
+   "stars": 24,
+   "description": "Open-source, self-hostable Zendesk and Intercom alternative for AI customer support: chat widget, shared inbox, real-time voice, Multimodal RAG, and MCP."
+  },
+  {
+   "repo": "koundinya/zd-mcp-server",
+   "url": "https://github.com/koundinya/zd-mcp-server",
+   "stars": 16,
+   "description": "Zendesk MCP Server"
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Zendesk",
+    "slug": "ZENDESK",
+    "tools": 484,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/zendesk.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Zendesk",
+    "slug": "ZENDESK",
+    "tools": 484,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/zendesk.md"
+   }
+  ]
+ },
+ "search_meta": {}
+}

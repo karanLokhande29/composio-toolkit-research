@@ -1,0 +1,106 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.091358,
+  "seconds": 120.4,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://developer-docs.amazon.com/sp-api/docs/connecting-to-the-selling-partner-api",
+  "https://developer-docs.amazon.com/sp-api/docs/faq",
+  "https://developer-docs.amazon.com/sp-api/docs/welcome",
+  "https://developer-docs.amazon.com/sp-api/docs/notifications-api-v1-reference",
+  "https://docs.composio.dev/toolkits/amazon.md",
+  "https://developer-docs.amazon.com/sp-api",
+  "https://developer-docs.amazon.com/sp-api/docs/registering-your-application",
+  "https://developer-docs.amazon.com/sp-api/docs/developer-registration",
+  "https://developer-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits",
+  "https://sellercentral.amazon.com/sellingpartner/developerconsole"
+ ],
+ "output": {
+  "one_liner": "A REST-based API enabling developers to build applications for managing Amazon seller operations including inventory, orders, pricing, and fulfillment.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2"
+   ],
+   "oauth_grant_types": [],
+   "notes": "Pages show OAuth2 via Composio toolkit. Specific OAuth grant types (authorization_code, client_credentials, etc.) not detailed in provided pages.",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/amazon.md",
+     "snippet": "Auth: OAUTH2"
+    }
+   ]
+  },
+  "access": {
+   "status": "unknown",
+   "dev_sandbox": true,
+   "notes": "Documentation mentions Sandbox Application and Production Application registration steps, indicating a free sandbox environment exists. Payment and approval requirements for production API access not specified in provided pages.",
+   "evidence": [
+    {
+     "url": "https://developer-docs.amazon.com/sp-api/docs/connecting-to-the-selling-partner-api",
+     "snippet": "Step 4: Register a Sandbox Application"
+    },
+    {
+     "url": "https://developer-docs.amazon.com/sp-api/docs/connecting-to-the-selling-partner-api",
+     "snippet": "Step 7: Register Your Production Application"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Dedicated Usage Plans and Rate Limits page exists; specific rate limit values not shown in provided content.",
+   "evidence": [
+    {
+     "url": "https://developer-docs.amazon.com/sp-api",
+     "snippet": "Learn how to get started and build applications with Amazon's REST-based SP-API."
+    },
+    {
+     "url": "https://developer-docs.amazon.com/sp-api/docs/notifications-api-v1-reference",
+     "snippet": "The Selling Partner API for Notifications lets you subscribe to notifications"
+    },
+    {
+     "url": "https://developer-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits",
+     "snippet": "Usage Plans and Rate Limits"
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": []
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "app_review",
+   "rationale": "REST API is well-documented with broad coverage and sandbox available; production appears to require application authorization/approval based on distinct registration steps.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "AMAZON"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://developer-docs.amazon.com/sp-api",
+    "snippet": "Welcome to SP-API Documentation. Learn how to get started and build applications with Amazon's REST-based SP-API."
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/amazon.md",
+    "snippet": "Amazon is an e-commerce giant delivering a massive online marketplace, cloud services, and digital products that connect retailers, consumers, and businesses worldwide"
+   }
+  ],
+  "confidence": 0.38,
+  "unknown_reasons": {
+   "auth": "Pages reference OAuth2 in Composio toolkit but do not explicitly specify all authentication schemes SP-API accepts or OAuth grant types supported.",
+   "access": "Pages show sandbox and production registration exist but do not specify whether production requires payment, vendor approval, partner agreements, or seller account authorization.",
+   "api_surface": "OpenAPI spec not mentioned; breadth inferred from extensive API categories listed in navigation (Notifications, Fulfillment, Listings, Pricing, etc.) but actual endpoint count unknown; rate limit values not shown in provided content.",
+   "mcp": "No MCP servers mentioned in any provided pages; Composio toolkit exists but shows 0 tools and 0 triggers implemented."
+  }
+ }
+}

@@ -1,0 +1,55 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.0052049999999999996,
+  "seconds": 7.7,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [],
+ "output": {
+  "one_liner": "unknown",
+  "app_type": "unknown",
+  "auth": {
+   "methods": [],
+   "oauth_grant_types": [],
+   "notes": "",
+   "evidence": []
+  },
+  "access": {
+   "status": "unknown",
+   "dev_sandbox": null,
+   "notes": "",
+   "evidence": []
+  },
+  "api_surface": {
+   "styles": [],
+   "breadth": "unknown",
+   "openapi_spec_url": null,
+   "webhooks": null,
+   "rate_limit_note": "",
+   "evidence": []
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": []
+  },
+  "buildability": {
+   "verdict": "unknown",
+   "main_blocker": "unknown",
+   "rationale": "No source pages provided for analysis.",
+   "composio_existing_toolkit": "no",
+   "composio_slug": null
+  },
+  "overview_evidence": [],
+  "confidence": 0.0,
+  "unknown_reasons": {
+   "auth": "No pages provided",
+   "access": "No pages provided",
+   "api_surface": "No pages provided",
+   "mcp": "No pages provided"
+  }
+ }
+}

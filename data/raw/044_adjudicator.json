@@ -1,0 +1,94 @@
+{
+ "fields": [
+  "access.status",
+  "auth.methods",
+  "buildability.main_blocker",
+  "buildability.verdict"
+ ],
+ "pages": [
+  "https://docs.composio.dev/toolkits/salesforce.md",
+  "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-admin-apis.html",
+  "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-shopper-apis.html",
+  "https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-commerce-ocapi/get-started-with-ocapi.html",
+  "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+  "https://developer.salesforce.com/docs/commerce/commerce-api/overview"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.10306499999999999,
+  "seconds": 23.4,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "access.status",
+    "value": "admin_approval",
+    "evidence": [
+     {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-admin-apis.html",
+      "snippet": "To use the SCAPI Admin APIs, you (or someone with administrator access) must first create an API client"
+     },
+     {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-shopper-apis.html",
+      "snippet": "The Account Administrator role in Account Manager. If you get stuck, ask an administrator on your team"
+     }
+    ],
+    "reason": "Both SCAPI Admin and Shopper (SLAS) API clients require administrator/Account Administrator access to provision, not an open self-serve free signup for Commerce Cloud itself."
+   },
+   {
+    "field": "auth.methods",
+    "value": [
+     "oauth2",
+     "jwt"
+    ],
+    "evidence": [
+     {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+      "snippet": "Both the Admin and Shopper APIs are authorized using an access token in the form of a JSON Web Token"
+     },
+     {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+      "snippet": "weâve defined a set of scopes based on the OAuth 2.1 standard."
+     },
+     {
+      "url": "https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-commerce-ocapi/get-started-with-ocapi.html",
+      "snippet": "Authenticate the user by obtaining an OAuth token for a Business Manager user to be passed in each request."
+     }
+    ],
+    "reason": "SCAPI/OCAPI docs explicitly describe OAuth 2.1-based client credentials and JWT bearer access tokens; client ID is a request identifier, not a separate api_key auth scheme."
+   },
+   {
+    "field": "buildability.main_blocker",
+    "value": "admin_scope",
+    "evidence": [
+     {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-admin-apis.html",
+      "snippet": "To use the SCAPI Admin APIs, you (or someone with administrator access) must first create an API client"
+     },
+     {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-shopper-apis.html",
+      "snippet": "The Account Administrator role in Account Manager. If you get stuck, ask an administrator on your team"
+     }
+    ],
+    "reason": "Both Admin and Shopper API credential creation require org administrator privileges, which is the primary friction point, not a paid-plan gate per se (pages don't mention pricing)."
+   },
+   {
+    "field": "buildability.verdict",
+    "value": "ready_with_caveats",
+    "evidence": [
+     {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-admin-apis.html",
+      "snippet": "To use the SCAPI Admin APIs, you (or someone with administrator access) must first create an API client"
+     },
+     {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-shopper-apis.html",
+      "snippet": "Calls to SLAS Admin APIs require the role Sandbox API User"
+     }
+    ],
+    "reason": "The documented REST APIs (SCAPI Admin, Shopper, OCAPI) are buildable with JWT/OAuth tokens, but require administrator-level setup/roles, making it ready_with_caveats rather than fully open ready."
+   }
+  ]
+ }
+}

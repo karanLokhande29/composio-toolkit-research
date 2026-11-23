@@ -1,0 +1,101 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.079819,
+  "seconds": 98.7,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://developers.gorgias.com/reference/authentication",
+  "https://developers.gorgias.com/reference",
+  "https://developers.gorgias.com/",
+  "https://docs.composio.dev/toolkits/gorgias.md",
+  "https://gorgias.com",
+  "https://docs.gorgias.com",
+  "https://gorgias.com/pricing",
+  "https://www.gorgias.com/partners",
+  "https://www.gorgias.com/tech-partner",
+  "https://www.gorgias.com/partner-stories",
+  "https://www.gorgias.com/partner-referral",
+  "https://www.gorgias.com/legal/accessibility"
+ ],
+ "output": {
+  "one_liner": "An AI-powered conversational helpdesk platform for ecommerce that automates customer support.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "api_key",
+    "oauth2"
+   ],
+   "oauth_grant_types": [],
+   "notes": "API supports API key for private apps and OAuth2 for public apps. OAuth grant flow type not specified in pages.",
+   "evidence": [
+    {
+     "url": "https://developers.gorgias.com/reference/authentication",
+     "snippet": "The Gorgias API supports two authentication methods: API key and OAuth2 for public apps"
+    }
+   ]
+  },
+  "access": {
+   "status": "unknown",
+   "dev_sandbox": null,
+   "notes": "Pages state private apps need no approval and Developer Portal signup is required only for public apps, but do not explicitly state whether API credentials require a paid Gorgias account.",
+   "evidence": [
+    {
+     "url": "https://developers.gorgias.com/",
+     "snippet": "Sign up for our Developer Portal to start our partnership. For Private apps there is no need for approval."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": null,
+   "rate_limit_note": "Rate Limits section mentioned in documentation navigation but details not provided in supplied pages.",
+   "evidence": [
+    {
+     "url": "https://developers.gorgias.com/reference",
+     "snippet": "The Gorgias API is structured with REST in mind. Our API has predictable resource-oriented URLs, accepts JSON-encoded responses, and uses standard HTTP response codes."
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/gorgias.md",
+     "snippet": "The default auth config requests read and write scopes for account, users, customers, tickets, custom fields, events, integrations, jobs, macros, rules"
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": []
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Composio already published toolkit with 51 tools supporting both API key and OAuth2 authentication.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "gorgias"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://gorgias.com",
+    "snippet": "Bring your support team, customer data, workflows, and AI Agent together in one platform built for every stage of the customer journey."
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/gorgias.md",
+    "snippet": "Category: crm; Auth: API_KEY, OAUTH2; Composio-managed OAuth available? Yes; Tools: 51"
+   }
+  ],
+  "confidence": 0.85,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "Pages do not state whether API credentials require paid Gorgias account or if free tier API access is available.",
+   "api_surface": "Webhook support and detailed rate limit information not documented in provided pages.",
+   "mcp": "No mention of MCP servers in provided pages."
+  }
+ }
+}

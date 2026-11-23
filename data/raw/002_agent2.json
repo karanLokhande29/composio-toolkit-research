@@ -1,126 +1,114 @@
 {
  "meta": {
   "backend": "claude_cli",
-  "model": "sonnet",
-  "cost_usd": 0.249441,
-  "seconds": 56.5,
+  "model": "haiku",
+  "cost_usd": 0.07528800000000001,
+  "seconds": 98.6,
   "turns": 1
  },
  "error": null,
  "pages": [
-  "https://developers.hubspot.com/docs/api/intro-to-auth",
-  "https://developers.hubspot.com/docs/api/working-with-oauth",
   "https://developers.hubspot.com/docs/api/overview",
   "https://developers.hubspot.com/docs/api/webhooks",
   "https://docs.composio.dev/toolkits/hubspot.md",
   "https://hubspot.com",
   "https://developers.hubspot.com",
-  "https://developers.hubspot.com/docs/api/usage-details",
-  "https://developers.hubspot.com/mcp",
-  "https://www.hubspot.com/partners/solutions",
-  "https://www.hubspot.com/partners/app",
-  "https://www.hubspot.com/partners/affiliates",
-  "https://academy.hubspot.com/education-partner-program",
-  "https://www.hubspot.com/startups/partners"
+  "https://developers.hubspot.com/docs/api/intro-to-auth",
+  "https://developers.hubspot.com/docs/api/oauth-quickstart-guide",
+  "https://developers.hubspot.com/docs/api/private-apps"
  ],
  "output": {
-  "one_liner": "HubSpot is a cloud-based CRM and customer platform that unifies marketing, sales, service, content, and operations tools for growing businesses.",
+  "one_liner": "HubSpot is a comprehensive cloud-based platform for managing customer relationships, marketing, sales, and customer service.",
   "app_type": "saas",
   "auth": {
    "methods": [
     "oauth2",
-    "bearer_token",
-    "api_key"
+    "api_key",
+    "bearer_token"
    ],
    "oauth_grant_types": [
-    "authorization_code",
-    "client_credentials"
+    "authorization_code"
    ],
-   "notes": "OAuth (authorization_code) is required for multi-account/marketplace apps; static auth tokens (sent as Bearer) are used for single-account private apps; developer API keys are passed as a query parameter for certain features; client_credentials tokens are used for the webhooks journal API.",
+   "notes": "OAuth 2.0 required for multi-account distribution; static bearer tokens for single-account private apps; API keys for specific developer features; client credentials for app-level webhooks management.",
    "evidence": [
+    {
+     "url": "https://developers.hubspot.com/docs/api/intro-to-auth",
+     "snippet": "OAuth is required for multiple accounts, while static auth access tokens are used for installing in a single account at a time."
+    },
     {
      "url": "https://developers.hubspot.com/docs/api/intro-to-auth",
      "snippet": "This access token is provided using the Bearer HTTP authorization header."
     },
     {
-     "url": "https://developers.hubspot.com/docs/api/intro-to-auth",
-     "snippet": "This token can be found in your app settings."
+     "url": "https://developers.hubspot.com/docs/api/webhooks",
+     "snippet": "All API endpoints require OAuth 2.0 authentication."
     },
     {
-     "url": "https://developers.hubspot.com/docs/api/intro-to-auth",
-     "snippet": "These tokens are OAuth 2.0 tokens with short-term expiry windows that must be refreshed after a certain amount of time."
-    },
-    {
-     "url": "https://developers.hubspot.com/docs/api/working-with-oauth",
-     "snippet": "OAuth is a secure means of authentication that uses authorization tokens rather than a password to connect your app to a user account."
+     "url": "https://docs.composio.dev/toolkits/hubspot.md",
+     "snippet": "Auth: OAUTH2, API_KEY"
     }
    ]
   },
   "access": {
    "status": "self_serve_free",
    "dev_sandbox": true,
-   "notes": "A free developer account and free HubSpot CRM account can be created without payment or sales contact; static auth tokens for single-account private apps require no approval. OAuth apps intended for multiple accounts or Marketplace listing go through an app review process before production/public distribution.",
+   "notes": "Free developer account with private app support—developers can create and use bearer tokens without payment or approval for single-account testing. Multi-account public/marketplace apps require HubSpot app review.",
    "evidence": [
     {
-     "url": "https://hubspot.com",
-     "snippet": "Get started free with HubSpot's free tools"
-    },
-    {
      "url": "https://developers.hubspot.com/docs/api/intro-to-auth",
-     "snippet": "This token can be found in your app settings."
+     "snippet": "Private apps allow you to use HubSpot's APIs to access specific data from your HubSpot account."
     },
     {
-     "url": "https://developers.hubspot.com/docs/api/usage-details",
-     "snippet": "You can create up to 100 legacy public apps per developer account."
+     "url": "https://docs.composio.dev/toolkits/hubspot.md",
+     "snippet": "Create a developer account in the HubSpot developer portal. HubSpot public apps must belong to a developer account."
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/hubspot.md",
+     "snippet": "HubSpot shows this warning because the default Composio-managed HubSpot OAuth app is still awaiting HubSpot approval."
     }
    ]
   },
   "api_surface": {
    "styles": [
-    "rest",
-    "graphql"
+    "rest"
    ],
    "breadth": "broad",
    "openapi_spec_url": null,
    "webhooks": true,
-   "rate_limit_note": "The number of calls your app can make is based on your account subscription in the account it's installed in",
+   "rate_limit_note": "Rate Limits mentioned as section topic but specific limits not documented in provided pages.",
    "evidence": [
     {
      "url": "https://developers.hubspot.com/docs/api/overview",
-     "snippet": "Reference documentation for HubSpot's 2026-09 APIs"
+     "snippet": "All endpoints in this section follow the pattern: /api-name/2026-09/resource"
     },
     {
      "url": "https://developers.hubspot.com/docs/api/overview",
-     "snippet": "Understanding the CRM Using object APIs Activities Associations CRM Data Model"
+     "snippet": "For example, to retrieve all contacts: GET /crm/objects/2026-09/contacts"
     },
     {
      "url": "https://developers.hubspot.com/docs/api/webhooks",
-     "snippet": "Webhooks journal and management APIs (BETA)"
+     "snippet": "The webhooks journal API enables third-party integrators to subscribe to real-time events, retrieve historical event data, and manage snapshots of CRM objects."
     },
     {
-     "url": "https://developers.hubspot.com/docs/api/usage-details",
-     "snippet": "the exports API CRM Search API GraphQL API endpoints"
-    },
-    {
-     "url": "https://developers.hubspot.com/docs/api/usage-details",
-     "snippet": "The number of calls your app can make is based on your account subscription"
+     "url": "https://developers.hubspot.com/docs/api/webhooks",
+     "snippet": "Webhooks journal and management APIs (BETA) Learn how to use the new webhooks journal and v4 management APIs."
     }
    ]
   },
   "mcp": {
-   "official": "https://developers.hubspot.com/mcp",
+   "official": null,
    "community": [],
    "evidence": [
     {
-     "url": "https://developers.hubspot.com/mcp",
-     "snippet": "The HubSpot MCP server enables you to give any MCP-compatible AI tool or agent secure read and write access to your HubSpot CRM data"
+     "url": "https://developers.hubspot.com/docs/api/intro-to-auth",
+     "snippet": "HubSpot MCP server Add features Serverless functions MCP server Beta"
     }
    ]
   },
   "buildability": {
    "verdict": "ready_with_caveats",
    "main_blocker": "app_review",
-   "rationale": "Free developer credentials and a broad documented REST/GraphQL API with webhooks and an official MCP server exist today, but production/multi-account OAuth apps require HubSpot's app review and Composio's own default OAuth app is still awaiting that approval.",
+   "rationale": "Composio toolkit with 355 tools already exists and functional; self-serve free credentials available for testing; friction point is Composio-managed OAuth app awaiting HubSpot approval, but custom credentials provide working workaround.",
    "composio_existing_toolkit": "yes",
    "composio_slug": "HUBSPOT"
   },
@@ -130,16 +118,16 @@
     "snippet": "All of HubSpot's marketing, sales, and customer service software on one agentic platform."
    },
    {
-    "url": "https://docs.composio.dev/toolkits/hubspot.md",
-    "snippet": "HubSpot shows this warning because the default Composio-managed HubSpot OAuth app is still awaiting HubSpot approval."
+    "url": "https://developers.hubspot.com",
+    "snippet": "Create tomorrow's solutions today on HubSpot's Developer Platform."
    }
   ],
-  "confidence": 0.8,
+  "confidence": 0.92,
   "unknown_reasons": {
    "auth": "",
    "access": "",
-   "api_surface": "No OpenAPI/Swagger spec URL was found on the provided pages.",
-   "mcp": "No third-party/community MCP server repository for HubSpot was mentioned on the provided pages."
+   "api_surface": "OpenAPI spec URL not mentioned; specific rate limit values not provided in pages.",
+   "mcp": "MCP server listed in navigation but no official URL/link provided in pages; cannot confirm production deployment details."
   }
  }
 }

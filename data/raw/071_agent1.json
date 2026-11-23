@@ -1,0 +1,133 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.066982,
+  "seconds": 72.6,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://developers.notion.com/reference",
+  "https://docs.composio.dev/toolkits/notion.md",
+  "https://developers.notion.com",
+  "https://developers.notion.com/guides/mcp/overview",
+  "https://developers.notion.com/guides/mcp/notion-skills",
+  "https://developers.notion.com/guides/mcp/enterprise-managed-authorization",
+  "https://developers.notion.com/guides/mcp/mcp-security-best-practices",
+  "https://developers.notion.com/guides/connections-and-tokens/personal-access-tokens",
+  "https://developers.notion.com/reference/authentication",
+  "https://developers.notion.com/cli/get-started/overview",
+  "https://developers.notion.com/reference/post-page",
+  "https://developers.notion.com/reference/status-codes"
+ ],
+ "output": {
+  "one_liner": "Notion is a cloud-based productivity and project management platform with a REST API to create, read, update, and manage pages, databases, and collaborative content.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "api_key",
+    "bearer_token"
+   ],
+   "oauth_grant_types": [
+    "authorization_code"
+   ],
+   "notes": "Notion supports OAuth2 for public integrations (users select pages during authorization), API keys for internal integrations (admin grants page access), and personal access tokens (bearer token format). Notion uses capabilities instead of OAuth scopes.",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/notion.md",
+     "snippet": "Set the integration type to **Public**. Composio's OAuth flow requires a public integration."
+    },
+    {
+     "url": "https://developers.notion.com/reference/authentication",
+     "snippet": "The Notion API accepts bearer tokens in this header."
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/notion.md",
+     "snippet": "Copy the integration secret. It starts with `ntn_` or `secret_`."
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Free Notion workspaces can create integrations and personal access tokens without cost. OAuth and API key integrations can be set up directly by users or workspace admins with no payment required.",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/notion.md",
+     "snippet": "Go to [Notion integrations](https://www.notion.so/profile/integrations) and click **New integration**."
+    },
+    {
+     "url": "https://developers.notion.com/guides/connections-and-tokens/personal-access-tokens",
+     "snippet": "Personal access tokens (PATs) let one Notion user call the Notion API."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "API enforces rate limits; requests exceeding limits receive 429 status code with message to retry later.",
+   "evidence": [
+    {
+     "url": "https://developers.notion.com/reference",
+     "snippet": "Send requests over HTTPS to https://api.notion.com."
+    },
+    {
+     "url": "https://developers.notion.com/reference",
+     "snippet": "Endpoints: Authentication, Blocks, Pages, Databases, Comments, Views, File Uploads, Search, Users, Custom emojis, Agents, Webhook events"
+    },
+    {
+     "url": "https://developers.notion.com/reference/post-page",
+     "snippet": "Connection webhooks still receive events for the change."
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://mcp.notion.com/mcp",
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://developers.notion.com/guides/mcp/overview",
+     "snippet": "Connect your AI assistant to Notion with MCP to manage projects and tasks."
+    },
+    {
+     "url": "https://developers.notion.com/guides/mcp/mcp-security-best-practices",
+     "snippet": "Use Notion's official Streamable HTTP endpoint, https://mcp.notion.com/mcp."
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Self-serve free credentials, fully documented REST API with broad breadth, multiple auth methods, official MCP support, and existing Composio toolkit already built.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "NOTION"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://developers.notion.com",
+    "snippet": "Build tools and automations that create pages, organize data, and share feedback in Notion."
+   },
+   {
+    "url": "https://developers.notion.com/guides/mcp/overview",
+    "snippet": "Notion MCP lets your AI assistant search your workspace, create and edit pages, and manage databases."
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/notion.md",
+    "snippet": "**Auth:** OAUTH2, API_KEY"
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  }
+ }
+}

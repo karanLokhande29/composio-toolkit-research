@@ -1,0 +1,330 @@
+{
+ "id": 19,
+ "app": "Gorgias",
+ "tag": "agent2",
+ "urls": [
+  {
+   "url": "https://gorgias.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.gorgias.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.gorgias.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://docs.gorgias.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://gorgias.com/pricing",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.gorgias.com/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.gorgias.com/reference/introduction",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.gorgias.com/reference/authentication",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.gorgias.com/reference/basic-auth",
+   "purpose": "auth",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developers.gorgias.com/reference/oauth2-authentication",
+   "purpose": "auth",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developers.gorgias.com/docs/getting-access-to-oauth",
+   "purpose": "credentials/access",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developers.gorgias.com/docs/create-a-developer-app",
+   "purpose": "credentials/access",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developers.gorgias.com/reference",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.gorgias.com/reference/rate-limiting",
+   "purpose": "rate_limits",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developers.gorgias.com/docs/webhooks",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 429,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developers.gorgias.com/reference/webhooks",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://www.gorgias.com/partners",
+   "purpose": "partner_programme",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/mattcoatsworth/Gorgias-MCP-Server",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/benpalmer1/Gorgias-MCP-Server",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/gorgias/mcp-cookbook",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/gorgias.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.gorgias.com/pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.gorgias.com/tech-partner",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.gorgias.com/partner-stories",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.gorgias.com/pricing?ref=home&ref-position=other",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.gorgias.com/partner-referral",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.gorgias.com/partner-program",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.gorgias.com/legal/accessibility",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://partners.gorgias.com/signup",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://www.gorgias.com/partner-program?utm_source=help-center&utm_content=link&utm_campaign=footer",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.gorgias.com/docs/set-up-oauth2-app-store",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 429,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://docs.gorgias.com/en-US",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.gorgias.com/docs",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 429,
+   "ok": false,
+   "js_rendered": true
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "mattcoatsworth/Gorgias-MCP-Server",
+   "url": "https://github.com/mattcoatsworth/Gorgias-MCP-Server",
+   "stars": 4,
+   "description": ""
+  },
+  {
+   "repo": "benpalmer1/Gorgias-MCP-Server",
+   "url": "https://github.com/benpalmer1/Gorgias-MCP-Server",
+   "stars": 2,
+   "description": "Helpful MCP server for the Gorgias API"
+  },
+  {
+   "repo": "gorgias/mcp-cookbook",
+   "url": "https://github.com/gorgias/mcp-cookbook",
+   "stars": 2,
+   "description": "Ready-to-fork recipes for the Gorgias MCP — automate your helpdesk and AI Agent from Claude, ChatGPT, or Cursor."
+  },
+  {
+   "repo": "Elie-Elia/gorgias-mcp",
+   "url": "https://github.com/Elie-Elia/gorgias-mcp",
+   "stars": 0,
+   "description": "MCP server: Gorgias MCP Server"
+  },
+  {
+   "repo": "NoBanks/gorgias-mcp",
+   "url": "https://github.com/NoBanks/gorgias-mcp",
+   "stars": 0,
+   "description": "MCP server for Gorgias, the e-commerce customer support helpdesk. 5 tools for AI agents to triage tickets, read context, draft internal notes, send replies when"
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Gorgias",
+    "slug": "GORGIAS",
+    "tools": 51,
+    "auth": [
+     "API_KEY",
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/gorgias.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Gorgias",
+    "slug": "GORGIAS",
+    "tools": 51,
+    "auth": [
+     "API_KEY",
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/gorgias.md"
+   }
+  ]
+ },
+ "search_meta": {}
+}

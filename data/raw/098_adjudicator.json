@@ -1,0 +1,25 @@
+{
+ "fields": [
+  "auth.methods"
+ ],
+ "pages": [],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.010011,
+  "seconds": 5.2,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "auth.methods",
+    "value": [
+     "unknown"
+    ],
+    "evidence": [],
+    "reason": "No pages were provided to verify authentication methods for Mermaid CLI, and both agents agree it is unverifiable."
+   }
+  ]
+ }
+}

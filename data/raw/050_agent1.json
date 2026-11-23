@@ -1,0 +1,76 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.016689000000000002,
+  "seconds": 26.7,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://fanbasis.com"
+ ],
+ "output": {
+  "one_liner": "An e-commerce platform for creators to build and monetize courses, communities, and digital products with built-in payments and Buy Now Pay Later financing.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [],
+   "oauth_grant_types": [],
+   "notes": "No authentication method details found",
+   "evidence": []
+  },
+  "access": {
+   "status": "unknown",
+   "dev_sandbox": null,
+   "notes": "APIs described as part of Enterprise offering but no self-serve or approval process documented",
+   "evidence": [
+    {
+     "url": "https://fanbasis.com",
+     "snippet": "Enterprise & APIs. Embedded checkouts, multi-rail payouts, APIs and SDKs."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [],
+   "breadth": "unknown",
+   "openapi_spec_url": null,
+   "webhooks": null,
+   "rate_limit_note": "",
+   "evidence": [
+    {
+     "url": "https://fanbasis.com",
+     "snippet": "Embedded checkouts, multi-rail payouts, APIs and SDKs. Everything you'd replace Stripe with"
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": []
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "contact_sales",
+   "rationale": "APIs confirmed to exist but positioned as enterprise offering with no public documentation, authentication details, or self-serve access path documented.",
+   "composio_existing_toolkit": "no",
+   "composio_slug": null
+  },
+  "overview_evidence": [
+   {
+    "url": "https://fanbasis.com",
+    "snippet": "FanBasis is now Commas!"
+   },
+   {
+    "url": "https://fanbasis.com",
+    "snippet": "One place to create, sell, and get paid, with payments built in."
+   }
+  ],
+  "confidence": 0.3,
+  "unknown_reasons": {
+   "auth": "Page mentions APIs/SDKs exist but specifies no authentication methods, grant types, or technical details.",
+   "access": "Enterprise APIs referenced without describing sandbox access, approval workflows, sign-up process, or credential acquisition path.",
+   "api_surface": "No API documentation, endpoint details, style specifications, or rate limiting information provided on the page.",
+   "mcp": "Page mentions 'MCP beta' as a product feature with revenue metric; not related to Model Context Protocol standard."
+  }
+ }
+}

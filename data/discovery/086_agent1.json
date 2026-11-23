@@ -1,0 +1,167 @@
+{
+ "id": 86,
+ "app": "QuickBooks",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://developer.intuit.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.intuit.com/app/developer/qbapi",
+   "purpose": "overview",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.intuit.com/docs/quickbooks-api/authentication",
+   "purpose": "authentication",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.intuit.com/docs/quickbooks-api/quickstart",
+   "purpose": "sandbox and getting access",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.intuit.com/app/developer/myapps",
+   "purpose": "credentials",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.intuit.com/docs/quickbooks-api",
+   "purpose": "API reference",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.intuit.com/docs/quickbooks-api/best-practices/rate-limits",
+   "purpose": "rate limits",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.intuit.com/docs/quickbooks-api/webhooks",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/Scottcjn/qb-auto",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/CDataSoftware/quickbooks-mcp-server-by-cdata",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/quickbooks.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "intuit/quickbooks-online-mcp-server",
+   "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+   "stars": 460,
+   "description": "The QuickBooks MCP Server lets AI assistants access QuickBooks data via a standard interface. It uses the Model Context Protocol to expose QBO features as calla"
+  },
+  {
+   "repo": "Scottcjn/qb-auto",
+   "url": "https://github.com/Scottcjn/qb-auto",
+   "stars": 48,
+   "description": "QuickBooks Online MCP server for Claude Code — 8 automation tools replacing 50K-token snapshots with ~200-token targeted extraction"
+  },
+  {
+   "repo": "CDataSoftware/quickbooks-mcp-server-by-cdata",
+   "url": "https://github.com/CDataSoftware/quickbooks-mcp-server-by-cdata",
+   "stars": 18,
+   "description": "Deprecated and archived. For agentic coding, use CData CLI (cdata.com/solutions/cli). For enterprise AI/MCP, use CData Connect AI (cdata.com/ai)."
+  },
+  {
+   "repo": "laf-rge/quickbooks-mcp",
+   "url": "https://github.com/laf-rge/quickbooks-mcp",
+   "stars": 13,
+   "description": "MCP server for QuickBooks Online - query, create, and edit accounting data with Claude"
+  },
+  {
+   "repo": "LibreChat-AI/quickbooks-online-mcp",
+   "url": "https://github.com/LibreChat-AI/quickbooks-online-mcp",
+   "stars": 11,
+   "description": "QuickBooks Online MCP server rebuilt on Cloudflare Workers with OAuth 2.0, typed Zod schemas, and Streamable HTTP/SSE transport. Drop-in compatible with LibreCh"
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "QuickBooks",
+    "slug": "QUICKBOOKS",
+    "tools": 119,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/quickbooks.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "QuickBooks",
+    "slug": "QUICKBOOKS",
+    "tools": 119,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/quickbooks.md"
+   }
+  ]
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.037997,
+  "seconds": 47.9,
+  "turns": 1,
+  "mode": "knowledge+crawl"
+ }
+}

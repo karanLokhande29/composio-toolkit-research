@@ -1,0 +1,267 @@
+{
+ "id": 95,
+ "app": "Reducto",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://reducto.ai",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.reducto.ai",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.reducto.ai",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.reducto.ai",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://reducto.ai/pricing",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.reducto.ai/getting-started",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.reducto.ai/authentication",
+   "purpose": "authentication",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.reducto.ai/api-reference",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.reducto.ai/webhooks",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.reducto.ai/rate-limits",
+   "purpose": "rate_limits",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://reducto.ai/contact",
+   "purpose": "partner_program",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/arpitpatel25/ReadAnyDoc",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/Reza2kn/reducto-agent-benchmark",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/b-mcilveen/reducto-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://studio.reducto.ai/auth",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://docs.reducto.ai/mcp-server",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.reducto.ai/reference/rate-limits",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.reducto.ai/reference/pricing-migration",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.reducto.ai/_auth/login?return_to=%2F",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://docs.reducto.ai/_auth/login?return_to=%2Fquickstart",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://docs.reducto.ai/_auth/login?return_to=%2Fapi-reference%2Fapi%2Fsections%2Fparse%2Foperations%2Fparse",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://docs.reducto.ai/_auth/login?return_to=%2Fworkflows%2Fsvix-webhooks",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://reducto.ai/developers",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.reducto.ai/quickstart",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.reducto.ai/studio-quickstart",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.reducto.ai/contextual-schema-optimization/reducto-beta",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.reducto.ai/workflows/svix-webhooks",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "arpitpatel25/ReadAnyDoc",
+   "url": "https://github.com/arpitpatel25/ReadAnyDoc",
+   "stars": 11,
+   "description": "Open-source Reducto alternative: parse PDFs, scans and forms into Markdown, tables and typed data with a citation for every value. Claude Haiku or any model. Py"
+  },
+  {
+   "repo": "Reza2kn/reducto-agent-benchmark",
+   "url": "https://github.com/Reza2kn/reducto-agent-benchmark",
+   "stars": 1,
+   "description": "Benchmark of AI agent platforms on the Reducto API + a standalone MCP server"
+  },
+  {
+   "repo": "b-mcilveen/reducto-mcp",
+   "url": "https://github.com/b-mcilveen/reducto-mcp",
+   "stars": 0,
+   "description": "A repository for reducto-mcp"
+  },
+  {
+   "repo": "franckyo/mcp-server-reducto",
+   "url": "https://github.com/franckyo/mcp-server-reducto",
+   "stars": 0,
+   "description": ""
+  },
+  {
+   "repo": "settlegrid/settlegrid-reducto",
+   "url": "https://github.com/settlegrid/settlegrid-reducto",
+   "stars": 0,
+   "description": "MCP server for Reducto with SettleGrid billing. Parse and extract structured data from documents (PDFs, images, and more) using the Reducto document processing "
+  }
+ ],
+ "composio": {
+  "exact": [],
+  "candidates": []
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.014258,
+  "seconds": 25.9,
+  "turns": 1,
+  "mode": "knowledge+crawl"
+ }
+}

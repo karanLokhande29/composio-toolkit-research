@@ -1,0 +1,112 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.05942,
+  "seconds": 75.0,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://developer-docs.amazon.com/sp-api/docs/getting-access-to-the-sp-api",
+  "https://developer-docs.amazon.com/sp-api/docs/orders-api-v0-reference",
+  "https://developer-docs.amazon.com/sp-api/docs/feeds-api-v2021-06-30-reference",
+  "https://developer-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits",
+  "https://developer-docs.amazon.com/sp-api/docs/notifications-api-v1-reference",
+  "https://docs.composio.dev/toolkits/amazon.md",
+  "https://developer-docs.amazon.com/sp-api",
+  "https://developer-docs.amazon.com/sp-api/docs/registering-your-application",
+  "https://developer-docs.amazon.com/sp-api/docs/sp-api-endpoints",
+  "https://developer-docs.amazon.com/sp-api/docs/application-authorization-limits",
+  "https://sellercentral.amazon.com/sellingpartner/developerconsole",
+  "https://developer-docs.amazon.com/sp-api/docs/strategies-to-optimize-rate-limits-for-your-application-workloads"
+ ],
+ "output": {
+  "one_liner": "Amazon's REST-based API for developers to build applications that manage selling partner operations including orders, inventory, pricing, feeds, and fulfillment.",
+  "app_type": "cloud_platform",
+  "auth": {
+   "methods": [
+    "oauth2"
+   ],
+   "oauth_grant_types": [],
+   "notes": "OAuth2 authentication required. Specific grant types (e.g., authorization_code) not detailed in provided pages.",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/amazon.md",
+     "snippet": "Auth: OAUTH2"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Self-serve registration for sandbox and production applications without explicit payment or approval requirements documented. Developers register through sequential self-serve steps. Sellers must authorize applications to access their data.",
+   "evidence": [
+    {
+     "url": "https://developer-docs.amazon.com/sp-api/docs/registering-your-application",
+     "snippet": "Step 3: Create a Developer Profile Step 4: Register a Sandbox Application Step 7: Register Your Production Application"
+    },
+    {
+     "url": "https://developer-docs.amazon.com/sp-api",
+     "snippet": "Learn how to get started and build applications with Amazon's REST-based SP-API"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Usage Plans and Rate Limits documentation page exists; specific limits not detailed in provided pages.",
+   "evidence": [
+    {
+     "url": "https://developer-docs.amazon.com/sp-api",
+     "snippet": "build applications with Amazon's REST-based SP-API"
+    },
+    {
+     "url": "https://developer-docs.amazon.com/sp-api/docs/feeds-api-v2021-06-30-reference",
+     "snippet": "The Selling Partner API for Feeds lets you upload data to Amazon on behalf of a selling partner"
+    },
+    {
+     "url": "https://developer-docs.amazon.com/sp-api/docs/orders-api-v0-reference",
+     "snippet": "Use the Orders Selling Partner API to programmatically retrieve order information"
+    },
+    {
+     "url": "https://developer-docs.amazon.com/sp-api/docs/notifications-api-v1-reference",
+     "snippet": "Subscribe to relevant notifications relevant to a selling partner's business"
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": []
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "app_review",
+   "rationale": "Public API with documentation, self-serve registration, and sandbox available; however, production multi-customer apps through Appstore require vendor verification.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "AMAZON"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://developer-docs.amazon.com/sp-api",
+    "snippet": "Welcome to Selling Partner API Documentation. Learn how to get started and build applications with Amazon's REST-based SP-API"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/amazon.md",
+    "snippet": "Amazon is an e-commerce giant delivering a massive online marketplace with seamless transactions"
+   }
+  ],
+  "confidence": 0.68,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "Pages show self-serve registration steps for sandbox and production, but do not explicitly document whether production app approval/review is automatic or requires vendor verification.",
+   "api_surface": "Pages list many endpoints and APIs (Orders, Feeds, Notifications, Fulfillment, Pricing, Listings, Catalog) but do not provide OpenAPI/Swagger specification URL.",
+   "mcp": "Pages do not discuss Model Context Protocol servers."
+  }
+ }
+}

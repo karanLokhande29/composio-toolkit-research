@@ -1,0 +1,115 @@
+{
+ "id": 3,
+ "app": "Pipedrive",
+ "category": "CRM and Sales",
+ "hint": "pipedrive.com",
+ "one_liner": "Pipedrive is a web-based sales CRM for managing sales pipelines, leads, and automating sales processes.",
+ "app_type": "saas",
+ "auth": {
+  "methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "oauth_grant_types": [
+   "authorization_code"
+  ],
+  "notes": "OAuth 2.0 for Marketplace apps; API token passed via x-api-token header for direct integrations",
+  "evidence": [
+   {
+    "url": "https://pipedrive.readme.io/docs/core-api-concepts-authentication",
+    "snippet": "The API token must be provided in the x-api-token header for all requests",
+    "check": "exact"
+   },
+   {
+    "url": "https://pipedrive.readme.io/docs/marketplace-oauth-authorization",
+    "snippet": "Using OAuth 2.0 is necessary for developing apps that are available in the Pipedrive Marketplace",
+    "check": "exact"
+   }
+  ]
+ },
+ "access": {
+  "status": "self_serve_free",
+  "dev_sandbox": true,
+  "notes": "Free 14-day trial and free sandbox accounts available without credit card or sales contact required",
+  "evidence": [
+   {
+    "url": "https://pipedrive.com",
+    "snippet": "14-day free trial, no credit card required",
+    "check": "exact"
+   },
+   {
+    "url": "https://developers.pipedrive.com/",
+    "snippet": "Sign up for a Sandbox Account today to begin experimenting and developing in a risk free environment",
+    "check": "exact"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "rest"
+  ],
+  "breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "rate_limit_note": "Token-based rate limiting with daily budget; base 30,000 tokens multiplied by plan tier and seat count",
+  "evidence": [
+   {
+    "url": "https://developers.pipedrive.com/docs/api/v1",
+    "snippet": "This reference helps you implement the RESTful Pipedrive API.",
+    "check": "exact"
+   },
+   {
+    "url": "https://developers.pipedrive.com/docs/api/v1",
+    "snippet": "You can always import our OpenAPI 3 specification files",
+    "check": "exact"
+   },
+   {
+    "url": "https://pipedrive.readme.io/docs/guide-for-webhooks",
+    "snippet": "Webhooks allow you to get programmatic notifications from Pipedrive about changes to your data",
+    "check": "exact"
+   },
+   {
+    "url": "https://pipedrive.readme.io/docs/core-api-concepts-rate-limiting",
+    "snippet": "With token-based rate limiting, each request consumes a certain number of tokens from a set daily allowance",
+    "check": "exact"
+   }
+  ]
+ },
+ "mcp": {
+  "official": null,
+  "community": [],
+  "evidence": []
+ },
+ "buildability": {
+  "verdict": "ready",
+  "main_blocker": "none",
+  "rationale": "Self-serve free sandbox, fully documented REST API with OpenAPI 3, webhooks support, and dual auth methods (OAuth2 and API key)",
+  "composio_existing_toolkit": "yes",
+  "composio_slug": "PIPEDRIVE"
+ },
+ "overview_evidence": [
+  {
+   "url": "https://pipedrive.com",
+   "snippet": "Pipedrive lets you track your sales pipeline, optimize leads, manage deals with AI and automate your entire sales process"
+  },
+  {
+   "url": "https://developers.pipedrive.com/docs/api/v1",
+   "snippet": "Pipedrive is a Web-based Sales CRM."
+  }
+ ],
+ "confidence": 0.9,
+ "unknown_reasons": {
+  "auth": "",
+  "access": "",
+  "api_surface": "OpenAPI specification file URL not explicitly provided in pages, but existence of v1 and v2 specs confirmed",
+  "mcp": "Pages mention 'Pipedrive MCP' in navigation but provide no implementation details or URL"
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 9,
+  "error": null,
+  "cost_usd": 0.078686,
+  "seconds": 95.0
+ }
+}

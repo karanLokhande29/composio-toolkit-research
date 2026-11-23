@@ -1,0 +1,37 @@
+{
+ "fields": [
+  "api_surface.styles"
+ ],
+ "pages": [
+  "https://docs.composio.dev/toolkits/fathom.md",
+  "https://github.com/Dot-Fun/fathom-mcp"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.037581,
+  "seconds": 7.8,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "api_surface.styles",
+    "value": [
+     "rest"
+    ],
+    "evidence": [
+     {
+      "url": "https://docs.composio.dev/toolkits/fathom.md",
+      "snippet": "Tool to create a webhook to receive new meeting content from Fathom."
+     },
+     {
+      "url": "https://github.com/Dot-Fun/fathom-mcp",
+      "snippet": "Model Context Protocol server for interacting with the Fathom AI API"
+     }
+    ],
+    "reason": "Fathom exposes a documented HTTP/REST API (webhooks, GET endpoints, API key auth) per Composio toolkit docs and the MCP server's description of calling the Fathom AI API."
+   }
+  ]
+ }
+}

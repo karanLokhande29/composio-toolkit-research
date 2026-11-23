@@ -1,0 +1,120 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.083201,
+  "seconds": 102.0,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication/",
+  "https://www.intercom.com/pricing",
+  "https://developers.intercom.com/",
+  "https://developers.intercom.com/docs/references/webhooks/webhook-models/",
+  "https://docs.composio.dev/toolkits/intercom.md",
+  "https://intercom.com",
+  "https://docs.intercom.com",
+  "https://developers.intercom.com/docs/references/introduction/",
+  "https://www.intercom.com/help/en/collections/1865264-getting-started",
+  "https://www.intercom.com/de-de/pricing"
+ ],
+ "output": {
+  "one_liner": "A complete AI-powered customer service and helpdesk platform with messaging, ticketing, and native AI Agent capabilities.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "bearer_token"
+   ],
+   "oauth_grant_types": [],
+   "notes": "Two options: Access Token (Bearer token) for private apps accessing own workspace; OAuth for public apps accessing other workspaces. OAuth grant types not specified.",
+   "evidence": [
+    {
+     "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication/",
+     "snippet": "To access the Intercom API, you have two authentication options depending on whether you app is public or private."
+    },
+    {
+     "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication/",
+     "snippet": "simply provide it as an Authorization:Bearer header in your requests"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Free development workspace signup with zero cost, no credit card, no approval. Access Token issued immediately on app creation. 14-day product trial without card.",
+   "evidence": [
+    {
+     "url": "https://developers.intercom.com/",
+     "snippet": "Get started by setting up a free development workspace to test and publish your app."
+    },
+    {
+     "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication/",
+     "snippet": "We provide you with an Access Token as soon as you create an app on your workspace."
+    },
+    {
+     "url": "https://www.intercom.com/pricing",
+     "snippet": "14-day cardless free trial. No credit card required."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Rate limit policy not stated in provided pages.",
+   "evidence": [
+    {
+     "url": "https://developers.intercom.com/docs/references/introduction/",
+     "snippet": "This API reference is auto-generated from an OpenAPI specification."
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/intercom.md",
+     "snippet": "Tools: 138"
+    },
+    {
+     "url": "https://developers.intercom.com/docs/references/webhooks/webhook-models/",
+     "snippet": "You can subscribe to the following Webhook topics, and you will receive notifications on your endpoint URL"
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://www.intercom.com/",
+     "snippet": "Fin pulls in customer data and takes action through APIs or MCP."
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Self-serve free dev workspace with immediate Bearer token credentials, REST API with OpenAPI spec and webhooks, plus existing Composio toolkit (138 tools, OAuth managed).",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "INTERCOM"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://www.intercom.com/",
+    "snippet": "A complete system for human and AI customer service"
+   },
+   {
+    "url": "https://developers.intercom.com/",
+    "snippet": "Integrate with Intercom by building apps on the complete AI customer service platform."
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "Rate limit policy not stated in provided pages.",
+   "mcp": "Pages mention MCP but do not provide URLs to official or community MCP server implementations."
+  }
+ }
+}

@@ -1,0 +1,115 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.078763,
+  "seconds": 92.1,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://neo4j.com/pricing/",
+  "https://neo4j.com/docs/http-api/current/",
+  "https://neo4j.com/docs/",
+  "https://neo4j.com/docs/aura/platform/api/overview/",
+  "https://docs.composio.dev/toolkits/neo4j.md",
+  "https://neo4j.com/sandbox/",
+  "https://neo4j.com/partners/",
+  "https://neo4j.com/docs/getting-started/current/",
+  "https://neo4j.com/docs/mcp/current",
+  "https://neo4j.com/labs/agent-memory/getting-started/",
+  "https://neo4j.com/docs/aura/getting-started/create-instance/"
+ ],
+ "output": {
+  "one_liner": "Neo4j is a graph database platform with REST and GraphQL APIs for executing queries and managing cloud instances.",
+  "app_type": "cloud_platform",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "api_key",
+    "basic"
+   ],
+   "oauth_grant_types": [],
+   "notes": "S2S_OAUTH2 (server-to-server OAuth) variant also supported",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/neo4j.md",
+     "snippet": "Auth: OAUTH2, BASIC, API_KEY, S2S_OAUTH2"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "AuraDB Free tier has no expiration, requires no credit card, one free instance per account",
+   "evidence": [
+    {
+     "url": "https://neo4j.com/sandbox/",
+     "snippet": "The free tier doesn't expire, requires no credit card, and needs no infrastructure to set up or maintain."
+    },
+    {
+     "url": "https://neo4j.com/docs/aura/getting-started/create-instance/",
+     "snippet": "You can only create one Free instance per account."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest",
+    "graphql"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": null,
+   "rate_limit_note": "Free tier: 25 req/min; Pro with billing: 125 req/min; Billing endpoints: 10 req/day",
+   "evidence": [
+    {
+     "url": "https://neo4j.com/docs/http-api/current/",
+     "snippet": "The Neo4j HTTP API allows to execute a series of Cypher statements against a Neo4j server through HTTP requests."
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/neo4j.md",
+     "snippet": "Executes a directorsAggregate GraphQL query to count directors in Neo4j."
+    },
+    {
+     "url": "https://neo4j.com/docs/aura/platform/api/overview/",
+     "snippet": "AuraDB Free and AuraDB Professional trial accounts without a billing method attached, get a rate limit of 25 requests per minute."
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://neo4j.com/docs/mcp/current",
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://neo4j.com/docs/mcp/current",
+     "snippet": "Neo4j MCP implements the Model Context Protocol (MCP), an open standard that lets applications connect to external data sources and tools."
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Composio toolkit already exists with 21 tools; free tier provides self-serve credentials; multiple auth methods supported.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "NEO4J"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://neo4j.com/docs/aura/platform/api/overview/",
+    "snippet": "The Aura API allows you to programmatically perform actions on your Aura instances without the need to log in to the Console."
+   },
+   {
+    "url": "https://neo4j.com/sandbox/",
+    "snippet": "Neo4j Sandbox is no longer maintained. For new projects, start with AuraDB Free, our fully managed cloud graph database."
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "OpenAPI spec format not explicitly confirmed; webhooks not mentioned in provided documentation.",
+   "mcp": ""
+  }
+ }
+}

@@ -1,0 +1,125 @@
+{
+ "id": 9,
+ "app": "Copper",
+ "category": "CRM and Sales",
+ "hint": "copper.com",
+ "one_liner": "CRM software that keeps every client relationship in one place: contacts, leads, deals, projects, tasks and email history.",
+ "app_type": "saas",
+ "auth": {
+  "methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "oauth_grant_types": [
+   "authorization_code"
+  ],
+  "notes": "API Keys are self-service from system settings; OAuth2.0 requires pre-registration by contacting vendor.",
+  "evidence": [
+   {
+    "url": "https://developer.copper.com/introduction/authentication.html",
+    "snippet": "There are two ways to access the Copper Developer API: API keys and OAuth2.0",
+    "check": "exact"
+   },
+   {
+    "url": "https://developer.copper.com/introduction/authentication.html",
+    "snippet": "To generate an API token, in the Copper web app go to System settings > API Keys and click the 'GENERATE API KEY' button",
+    "check": "exact"
+   },
+   {
+    "url": "https://developer.copper.com/introduction/oauth/index.html",
+    "snippet": "To register your application, contact us",
+    "check": "repaired"
+   },
+   {
+    "url": "https://developer.copper.com/introduction/oauth/flow.html",
+    "snippet": "Employing the widely used Authorization Code Grant flow, Copper ensures a seamless and quick authentication process",
+    "check": "exact"
+   }
+  ]
+ },
+ "access": {
+  "status": "unknown",
+  "dev_sandbox": null,
+  "notes": "Free Copper account available without credit card, but pages do not explicitly state whether API access is included in free tier or requires paid plan. OAuth2.0 requires contacting vendor for application registration.",
+  "evidence": [
+   {
+    "url": "https://www.copper.com/pricing",
+    "snippet": "Start free, no credit card required.",
+    "check": "exact"
+   },
+   {
+    "url": "https://developer.copper.com/introduction/oauth/index.html",
+    "snippet": "To register your application, contact us",
+    "check": "repaired"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "rest"
+  ],
+  "breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "rate_limit_note": "180 requests per minute (rolling window); bulk APIs limited to 3 requests per second",
+  "evidence": [
+   {
+    "url": "https://developer.copper.com/",
+    "snippet": "the box. The Copper Developer API (\"Dev API\") provides a RESTful interface with JSON-formatted responses to access most Copper resources.",
+    "check": "repaired"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/copper.md",
+    "snippet": "Copper is a customer relationship management platform for managing contacts, companies, leads, opportunities, projects, tasks, activities, files, and webhooks",
+    "check": "exact"
+   },
+   {
+    "url": "https://developer.copper.com/introduction/requests.html",
+    "snippet": "All API calls are limited to 180 requests per minute.",
+    "check": "exact"
+   },
+   {
+    "url": "https://developer.copper.com/introduction/requests.html",
+    "snippet": "Our bulk APIs have an additional rate limit of 3 requests per second.",
+    "check": "exact"
+   }
+  ]
+ },
+ "mcp": {
+  "official": null,
+  "community": [],
+  "evidence": []
+ },
+ "buildability": {
+  "verdict": "ready",
+  "main_blocker": "none",
+  "rationale": "REST API is well-documented with broad coverage (65 tools); Composio toolkit already exists and functional.",
+  "composio_existing_toolkit": "yes",
+  "composio_slug": "COPPER"
+ },
+ "overview_evidence": [
+  {
+   "url": "https://www.copper.com",
+   "snippet": "Copper is CRM software that keeps every client relationship in one place: contacts, leads, deals, projects, tasks and email history"
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/copper.md",
+   "snippet": "Copper is a customer relationship management platform for managing contacts, companies, leads, opportunities, projects, tasks, activities, files, and webhooks"
+  }
+ ],
+ "confidence": 0.85,
+ "unknown_reasons": {
+  "auth": "",
+  "access": "Pages do not explicitly state whether API access is available in free tier or only in paid plans. OAuth2.0 requires vendor application registration.",
+  "api_surface": "",
+  "mcp": "Pages do not mention MCP (Model Context Protocol) or any MCP servers for Copper."
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 12,
+  "error": null,
+  "cost_usd": 0.083078,
+  "seconds": 100.5
+ }
+}

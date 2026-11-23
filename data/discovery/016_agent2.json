@@ -1,0 +1,184 @@
+{
+ "id": 16,
+ "app": "LiveAgent",
+ "tag": "agent2",
+ "urls": [
+  {
+   "url": "https://liveagent.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.liveagent.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.liveagent.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.liveagent.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://liveagent.com/pricing",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.liveagent.com/dev/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.liveagent.com/dev/rest-api/",
+   "purpose": "authentication",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.liveagent.com/dev/api/",
+   "purpose": "api reference",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.liveagent.com/api/",
+   "purpose": "api reference",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.liveagent.com/pricing/",
+   "purpose": "pricing",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.liveagent.com/partners/",
+   "purpose": "partner programme",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.liveagent.com/help/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.liveagent.com/academy/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/QualityUnit/liveagent-mcp-server",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/shinnjr/liveagentdata-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/wiselingsnet-ops/liveagent-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.liveagent.com/features/mcp-server/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.liveagent.com/blog/zendesk-pricing/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://support.liveagent.com/840770-Complete-API-reference",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "QualityUnit/liveagent-mcp-server",
+   "url": "https://github.com/QualityUnit/liveagent-mcp-server",
+   "stars": 1,
+   "description": "LiveAgent MCP Server to automate tasks in your helpdesk"
+  },
+  {
+   "repo": "shinnjr/liveagentdata-mcp",
+   "url": "https://github.com/shinnjr/liveagentdata-mcp",
+   "stars": 0,
+   "description": "Open-source tool by James Shinn (MIT)"
+  },
+  {
+   "repo": "wiselingsnet-ops/liveagent-mcp",
+   "url": "https://github.com/wiselingsnet-ops/liveagent-mcp",
+   "stars": 0,
+   "description": ""
+  }
+ ],
+ "composio": {
+  "exact": [],
+  "candidates": []
+ },
+ "search_meta": {}
+}

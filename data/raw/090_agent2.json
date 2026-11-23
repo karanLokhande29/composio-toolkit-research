@@ -1,0 +1,96 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.05843400000000001,
+  "seconds": 68.3,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://docs.composio.dev/toolkits/pitchbook.md",
+  "https://github.com/Avierovich/openpitch",
+  "https://github.com/dontmesswithme-cpu/IBsuite",
+  "https://github.com/JyothikKOPPULA/Multi-agent-pitchbook-generator"
+ ],
+ "output": {
+  "one_liner": "PitchBook provides private-market data on companies, deals, funds, investors, people, and service providers through REST API.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "api_key"
+   ],
+   "oauth_grant_types": [],
+   "notes": "API uses API_KEY authentication scheme",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/pitchbook.md",
+     "snippet": "- **Auth:** API_KEY"
+    }
+   ]
+  },
+  "access": {
+   "status": "unknown",
+   "dev_sandbox": null,
+   "notes": "Described as 'contracted REST API' but pages do not specify credential acquisition method, free tier availability, pricing requirements, or approval workflows.",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/pitchbook.md",
+     "snippet": "PitchBook provides private-market data on companies, deals, funds, investors, people, and service providers through its contracted REST API."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": null,
+   "rate_limit_note": "",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/pitchbook.md",
+     "snippet": "PitchBook provides private-market data on companies, deals, funds, investors, people, and service providers through its contracted REST API."
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/pitchbook.md",
+     "snippet": "- **Tools:** 130"
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": []
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "other",
+   "rationale": "REST API with 130 tools is documented and functional, but credential access model unspecified; 'contracted' language suggests gating beyond self-serve.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "PITCHBOOK"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://docs.composio.dev/toolkits/pitchbook.md",
+    "snippet": "PitchBook provides private-market data on companies, deals, funds, investors, people, and service providers through its contracted REST API."
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/pitchbook.md",
+    "snippet": "- **Auth:** API_KEY"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/pitchbook.md",
+    "snippet": "- **Tools:** 130"
+   }
+  ],
+  "confidence": 0.68,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "Pages state 'contracted REST API' but do not specify credential acquisition method, free tier, pricing model, sandbox availability, or approval process.",
+   "api_surface": "OpenAPI specification, webhooks, rate-limit documentation not mentioned in provided pages.",
+   "mcp": "No official or community MCP server documented for PitchBook; PAGE 2 describes openpitch, an independent open-source alternative product, not a PitchBook MCP server."
+  }
+ }
+}

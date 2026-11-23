@@ -1,0 +1,176 @@
+{
+ "id": 89,
+ "app": "Ramp",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://docs.ramp.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.ramp.com/guides/getting-started",
+   "purpose": "getting-started",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.ramp.com/guides/authentication",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.ramp.com/guides/getting-access",
+   "purpose": "credentials",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.ramp.com/api-reference",
+   "purpose": "api-reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.ramp.com/guides/rate-limits",
+   "purpose": "rate-limits",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.ramp.com/guides/webhooks",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.ramp.com/guides/sandbox",
+   "purpose": "sandbox",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/highflame-ai/ramparts",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/ramp-public/ramp_mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/KevinRabun/FedRAMP20xMCP",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/ramp.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "highflame-ai/ramparts",
+   "url": "https://github.com/highflame-ai/ramparts",
+   "stars": 99,
+   "description": "MCP & SKILL scanner that scans any mcp server or skills for indirect attack vectors and security or configuration vulnerabilities. Aligned with OWASP SKILL Top "
+  },
+  {
+   "repo": "ramp-public/ramp_mcp",
+   "url": "https://github.com/ramp-public/ramp_mcp",
+   "stars": 35,
+   "description": "ramp_mcp"
+  },
+  {
+   "repo": "KevinRabun/FedRAMP20xMCP",
+   "url": "https://github.com/KevinRabun/FedRAMP20xMCP",
+   "stars": 6,
+   "description": "MCP server for querying FedRAMP 20x requirements with Azure-first guidance"
+  },
+  {
+   "repo": "PrynAI/AgenticAI-OnRamp-with-Langgraph",
+   "url": "https://github.com/PrynAI/AgenticAI-OnRamp-with-Langgraph",
+   "stars": 5,
+   "description": "Branch-based learning repo for Agentic AI and LLM engineering with LangGraph: ReAct tool calling, Agentic RAG, MCP, Reflection, Reflexion, Human-in-the-loop mem"
+  },
+  {
+   "repo": "rampify-dev/rampify-mcp",
+   "url": "https://github.com/rampify-dev/rampify-mcp",
+   "stars": 3,
+   "description": "Turn your coding agent into a marketing agent: search data, specs to build, fixes verified by scan."
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Ramp",
+    "slug": "RAMP",
+    "tools": 186,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/ramp.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Ramp",
+    "slug": "RAMP",
+    "tools": 186,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/ramp.md"
+   },
+   {
+    "name": "Ramp MCP",
+    "slug": "RAMP_MCP",
+    "tools": 213,
+    "auth": [
+     "DCR_OAUTH"
+    ],
+    "url": "https://docs.composio.dev/toolkits/ramp_mcp.md"
+   }
+  ]
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.036637,
+  "seconds": 49.8,
+  "turns": 1,
+  "mode": "knowledge+crawl"
+ }
+}

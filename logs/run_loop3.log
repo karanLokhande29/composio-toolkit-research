@@ -1,0 +1,77 @@
+IST now 21:39 | deadline 23:00 | 1h20m left
+loop3: browser + adjudicator on 74 apps
+  loop3 [  5] Twenty                     fields=['mcp.official'] changed=[] unresolved=0
+  loop3 [  3] Pipedrive                  fields=['buildability.main_blocker', 'buildability.verdict'] changed=[] unresolved=0
+  loop3 [  4] Attio                      fields=['mcp.official'] changed=[] unresolved=0
+  loop3 [  1] Salesforce                 fields=['api_surface.breadth', 'mcp.official'] changed=[] unresolved=0
+  loop3 [  2] HubSpot                    fields=['mcp.official'] changed=[] unresolved=0
+  loop3 [  6] Podio                      fields=['access.status', 'auth.methods', 'mcp.official'] changed=[] unresolved=1
+  loop3 [ 12] Intercom                   fields=['mcp.official'] changed=[] unresolved=1
+  loop3 [ 11] Zendesk                    fields=['buildability.main_blocker', 'buildability.verdict'] changed=[] unresolved=0
+  loop3 [ 10] DealCloud                  fields=['access.status', 'buildability.main_blocker', 'mcp.official'] changed=['mcp.official'] unresolved=0
+  loop3 [  9] Copper                     fields=['access.status', 'buildability.main_blocker', 'buildability.verdict'] changed=['access.status'] unresolved=0
+  loop3 [ 13] Freshdesk                  fields=['buildability.main_blocker', 'buildability.verdict', 'mcp.official'] changed=['mcp.official'] unresolved=0
+  loop3 [ 18] Help Scout                 fields=['auth.methods', 'buildability.main_blocker', 'buildability.verdict', 'mcp.official'] changed=['auth.methods'] unresolved=0
+  loop3 [ 14] Front                      fields=['mcp.official'] changed=[] unresolved=1
+  loop3 [ 15] Pylon                      fields=['api_surface.breadth', 'buildability.main_blocker'] changed=[] unresolved=0
+  loop3 [ 19] Gorgias                    fields=['access.status', 'auth.methods', 'mcp.official'] changed=['access.status'] unresolved=0
+  loop3 [ 20] Gladly                     fields=['api_surface.breadth', 'auth.methods', 'buildability.main_blocker', 'buildability.verdict'] changed=[] unresolved=0
+  loop3 [ 23] Zoho Cliq                  fields=['access.status'] changed=['access.status'] unresolved=0
+  loop3 [ 21] Slack                      fields=['auth.methods'] changed=['auth.methods'] unresolved=0
+  loop3 [ 24] Lark (Larksuite)           fields=['access.status'] changed=['access.status'] unresolved=0
+  loop3 [ 22] Twilio                     fields=['auth.methods', 'buildability.main_blocker', 'buildability.verdict', 'mcp.official'] changed=[] unresolved=0
+  loop3 [ 25] Pumble                     fields=['mcp.official'] changed=[] unresolved=0
+  loop3 [ 33] LinkedIn Ads               fields=['access.status', 'buildability.main_blocker', 'buildability.verdict'] changed=[] unresolved=0
+  loop3 [ 28] WhatsApp Business          fields=['access.status', 'api_surface.breadth', 'auth.methods'] changed=['access.status'] unresolved=0
+  loop3 [ 30] Vonage                     fields=['buildability.main_blocker', 'buildability.verdict', 'mcp.official'] changed=['buildability.main_blocker', 'buildability.verdict'] unresolved=0
+  loop3 [ 34] GoHighLevel                fields=['access.status', 'buildability.main_blocker', 'mcp.official'] changed=[] unresolved=1
+  loop3 [ 35] Mailchimp                  fields=['mcp.official'] changed=['mcp.official'] unresolved=0
+  loop3 [ 37] systeme.io                 fields=['mcp.official'] changed=['mcp.official'] unresolved=0
+  loop3 [ 43] BigCommerce                fields=['auth.methods'] changed=[] unresolved=0
+  loop3 [ 41] Shopify                    fields=['access.status', 'buildability.main_blocker', 'buildability.verdict', 'mcp.official'] changed=['access.status', 'buildability.main_blocker', 'buildability.verdict', 'mcp.official'] unresolved=0
+  loop3 [ 47] Ecwid                      fields=['access.status'] changed=[] unresolved=1
+  loop3 [ 45] Magento (Adobe Commerce)   fields=['access.status', 'auth.methods', 'buildability.main_blocker', 'buildability.verdict'] changed=['auth.methods', 'buildability.main_blocker', 'buildability.verdict'] unresolved=0
+  loop3 [ 44] Salesforce Commerce Cloud  fields=['access.status', 'auth.methods', 'buildability.main_blocker', 'buildability.verdict'] changed=['access.status', 'auth.methods', 'buildability.main_blocker'] unresolved=0
+  loop3 [ 50] fanbasis                   fields=['access.status', 'api_surface.breadth', 'auth.methods', 'buildability.main_blocker', 'buildability.verdict'] changed=[] unresolved=3
+  loop3 [ 46] Squarespace                fields=['access.status'] changed=['access.status'] unresolved=0
+  loop3 [ 48] Gumroad                    fields=['access.status'] changed=[] unresolved=0
+  loop3 [ 52] SE Ranking                 fields=['access.status'] changed=[] unresolved=0
+  loop3 [ 51] DataForSEO                 fields=['mcp.official'] changed=[] unresolved=0
+  loop3 [ 53] Ahrefs                     fields=['access.status'] changed=[] unresolved=0
+  loop3 [ 49] Amazon Selling Partner     fields=['access.status', 'auth.methods'] changed=[] unresolved=2
+  loop3 [ 55] Apify                      fields=['mcp.official'] changed=[] unresolved=1
+  loop3 [ 58] Sherlock                   fields=['api_surface.breadth', 'auth.methods'] changed=[] unresolved=2
+  loop3 [ 56] Firecrawl                  fields=['mcp.official'] changed=['mcp.official'] unresolved=0
+  loop3 [ 62] Vercel                     fields=['access.status', 'mcp.official'] changed=['mcp.official'] unresolved=0
+  loop3 [ 61] GitHub                     fields=['mcp.official'] changed=[] unresolved=0
+  loop3 [ 60] Clay                       fields=['auth.methods', 'mcp.official'] changed=['mcp.official'] unresolved=0
+  loop3 [ 64] Cloudflare                 fields=['access.status'] changed=[] unresolved=0
+  loop3 [ 68] MongoDB Atlas              fields=['access.status'] changed=[] unresolved=0
+  loop3 [ 70] Sentry                     fields=['access.status'] changed=[] unresolved=0
+  loop3 [ 67] Snowflake                  fields=['access.status'] changed=[] unresolved=0
+  loop3 [ 71] Notion                     fields=['mcp.official'] changed=[] unresolved=0
+  loop3 [ 73] Linear                     fields=['access.status', 'mcp.official'] changed=[] unresolved=1
+  loop3 [ 72] Airtable                   fields=['access.status'] changed=[] unresolved=0
+  loop3 [ 75] Asana                      fields=['mcp.official'] changed=[] unresolved=0
+  loop3 [ 74] Jira                       fields=['access.status', 'api_surface.breadth'] changed=[] unresolved=0
+  loop3 [ 76] Monday.com                 fields=['auth.methods', 'buildability.main_blocker', 'buildability.verdict'] changed=['buildability.main_blocker', 'buildability.verdict'] unresolved=0
+  loop3 [ 78] Coda                       fields=['mcp.official'] changed=['mcp.official'] unresolved=0
+  loop3 [ 79] Smartsheet                 fields=['access.status', 'buildability.main_blocker', 'buildability.verdict'] changed=[] unresolved=0
+  loop3 [ 84] Paygent Connect            fields=['access.status', 'api_surface.breadth', 'auth.methods', 'buildability.main_blocker', 'buildability.verdict'] changed=[] unresolved=5
+  loop3 [ 80] Harvest                    fields=['api_surface.breadth'] changed=[] unresolved=0
+  loop3 [ 82] Plaid                      fields=['auth.methods'] changed=[] unresolved=0
+  loop3 [ 83] Binance                    fields=['api_surface.breadth', 'buildability.main_blocker', 'buildability.verdict'] changed=['buildability.main_blocker', 'buildability.verdict'] unresolved=1
+  loop3 [ 87] Xero                       fields=['api_surface.breadth', 'auth.methods'] changed=[] unresolved=0
+  loop3 [ 88] Brex                       fields=['access.status'] changed=[] unresolved=0
+  loop3 [ 89] Ramp                       fields=['access.status', 'buildability.main_blocker', 'buildability.verdict'] changed=[] unresolved=0
+  loop3 [ 86] QuickBooks                 fields=['api_surface.styles', 'buildability.verdict'] changed=['api_surface.styles'] unresolved=0
+  loop3 [ 90] PitchBook                  fields=['access.status', 'auth.methods'] changed=[] unresolved=0
+  loop3 [ 93] Fathom                     fields=['api_surface.styles'] changed=[] unresolved=0
+  loop3 [ 92] Otter AI                   fields=['access.status', 'auth.methods'] changed=['access.status'] unresolved=0
+  loop3 [ 98] Mermaid CLI                fields=['auth.methods'] changed=[] unresolved=1
+  loop3 [ 96] Devin                      fields=['access.status', 'buildability.main_blocker', 'buildability.verdict', 'mcp.official'] changed=['access.status', 'buildability.main_blocker', 'buildability.verdict'] unresolved=0
+  loop3 [ 95] Reducto                    fields=['auth.methods'] changed=[] unresolved=0
+  loop3 [ 97] higgsfield                 fields=['access.status', 'auth.methods', 'buildability.main_blocker', 'buildability.verdict'] changed=['buildability.main_blocker', 'buildability.verdict'] unresolved=1
+  loop3 [ 91] NotebookLM                 fields=['access.status', 'api_surface.breadth', 'api_surface.styles', 'buildability.main_blocker', 'buildability.verdict'] changed=['access.status', 'buildability.main_blocker', 'buildability.verdict'] unresolved=1
+  loop3 [ 99] YouTube Transcript         fields=['buildability.main_blocker', 'buildability.verdict'] changed=[] unresolved=0
+done in 613s | IST now 21:49 | deadline 23:00 | 1h10m left

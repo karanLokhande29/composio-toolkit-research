@@ -1,0 +1,69 @@
+{
+ "fields": [
+  "access.status",
+  "auth.methods",
+  "mcp.official"
+ ],
+ "pages": [
+  "https://developers.podio.com/api-key",
+  "https://developers.podio.com/",
+  "https://developers.podio.com/authentication",
+  "https://mcp.podio.com",
+  "https://github.com/Vuxified/podio-mcp-server",
+  "https://developers.podio.com/doc"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.069363,
+  "seconds": 12.9,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "access.status",
+    "value": "self_serve_free",
+    "evidence": [
+     {
+      "url": "https://developers.podio.com/api-key",
+      "snippet": "It's easy to get one or more API keys for accessing your Podio data."
+     },
+     {
+      "url": "https://developers.podio.com/",
+      "snippet": "grab an API key for each app you want to build from your account settings page."
+     }
+    ],
+    "reason": "Any developer can sign up for a free Podio account and immediately generate an API key from account settings with no payment or approval step mentioned."
+   },
+   {
+    "field": "auth.methods",
+    "value": [
+     "oauth2"
+    ],
+    "evidence": [
+     {
+      "url": "https://developers.podio.com/authentication",
+      "snippet": "The Podio API uses the OAuth2 protocol for authentication."
+     },
+     {
+      "url": "https://developers.podio.com/authentication",
+      "snippet": "Before you can use the Podio API you must register your application . Your application is assigned a unique identifier, called \"Client ID\", together with a \"Client Secret\"."
+     }
+    ],
+    "reason": "Documentation explicitly and solely describes OAuth2 flows (server-side, client-side, username/password, app authentication) as the authentication mechanism."
+   },
+   {
+    "field": "mcp.official",
+    "value": "https://mcp.podio.com",
+    "evidence": [
+     {
+      "url": "https://mcp.podio.com",
+      "snippet": "MCP server exposing Podio API tools for integration with ChatGPT, Copilot Studio, and other MCP-compatible clients."
+     }
+    ],
+    "reason": "The MCP server is hosted on the podio.com subdomain itself (mcp.podio.com), indicating it is vendor-published rather than third-party."
+   }
+  ]
+ }
+}

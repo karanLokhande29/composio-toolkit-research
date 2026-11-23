@@ -1,0 +1,39 @@
+{
+ "fields": [
+  "mcp.official"
+ ],
+ "pages": [
+  "https://firecrawl.dev",
+  "https://www.firecrawl.dev/use-cases/ai-mcps",
+  "https://docs.firecrawl.dev/authentication",
+  "https://docs.firecrawl.dev/api-reference/introduction",
+  "https://docs.firecrawl.dev/api-reference/v2-endpoint/scrape",
+  "https://www.firecrawl.dev/pricing"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.08361299999999999,
+  "seconds": 6.5,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "mcp.official",
+    "value": "https://mcp.firecrawl.dev/v2/mcp",
+    "evidence": [
+     {
+      "url": "https://docs.firecrawl.dev/authentication",
+      "snippet": "Point your MCP client at\nhttps://mcp.firecrawl.dev/v2/mcp\nand add the API key as a bearer token in the client config"
+     },
+     {
+      "url": "https://www.firecrawl.dev/use-cases/ai-mcps",
+      "snippet": "Install the official Firecrawl MCP server and Claude Code, Cursor, Codex, and Windsurf can call Search, Scrape, Parse"
+     }
+    ],
+    "reason": "Firecrawl's own docs explicitly give the hosted MCP endpoint URL and the marketing pages confirm it is an official, vendor-run MCP server."
+   }
+  ]
+ }
+}

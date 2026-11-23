@@ -1,0 +1,128 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.055063,
+  "seconds": 49.2,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://developers.linear.app/docs/getting-started",
+  "https://docs.composio.dev/toolkits/linear.md",
+  "https://linear.app/developers/rate-limiting",
+  "https://linear.app/developers/oauth-2-0-authentication",
+  "https://linear.app/developers/oauth-actor-authorization",
+  "https://linear.app/developers/oauth-app-manifests",
+  "https://linear.app/developers/file-storage-authentication",
+  "https://linear.app/developers/graphql",
+  "https://linear.app/developers/pagination",
+  "https://linear.app/developers/filtering",
+  "https://linear.app/developers/deprecations",
+  "https://linear.app/developers/webhooks"
+ ],
+ "output": {
+  "one_liner": "Linear is a streamlined issue tracking and project management tool for modern teams with fast workflows and GitHub integrations.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "api_key"
+   ],
+   "oauth_grant_types": [
+    "authorization_code",
+    "client_credentials"
+   ],
+   "notes": "OAuth2 recommended for building applications for others; personal API keys suitable for scripts and direct user authentication",
+   "evidence": [
+    {
+     "url": "https://linear.app/developers/oauth-2-0-authentication",
+     "snippet": "Linear supports OAuth2 authentication, which is recommended if you're building applications to integrate with Linear."
+    },
+    {
+     "url": "https://linear.app/developers/graphql",
+     "snippet": "The Linear API supports personal API keys and OAuth2 authentication."
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/linear.md",
+     "snippet": "Auth: OAUTH2, API_KEY"
+    },
+    {
+     "url": "https://linear.app/developers/oauth-2-0-authentication",
+     "snippet": "Authorization-code grants use refresh tokens; client-credentials grants do not."
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": null,
+   "notes": "Users can create personal API keys directly in settings; OAuth applications created without approval or payment",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/linear.md",
+     "snippet": "Each user creates a personal API key in Linear under Settings > Security & access > Personal API keys and pastes it when connecting."
+    },
+    {
+     "url": "https://linear.app/developers/oauth-2-0-authentication",
+     "snippet": "Create a new OAuth2 Application and configure the redirect callback URLs to your application."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "graphql"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "API key: 2,500 requests/hour; OAuth app: 5,000 requests/hour; complexity limits also apply",
+   "evidence": [
+    {
+     "url": "https://linear.app/developers/graphql",
+     "snippet": "Linear's public API is built using GraphQL. It's the same API we use internally for developing our applications."
+    },
+    {
+     "url": "https://linear.app/developers/webhooks",
+     "snippet": "Linear provides webhooks which allow you to receive HTTP push notifications whenever data is created, updated or removed."
+    },
+    {
+     "url": "https://linear.app/developers/rate-limiting",
+     "snippet": "When authenticated using an API key you can make up to 2,500 requests per hour."
+    },
+    {
+     "url": "https://linear.app/developers/rate-limiting",
+     "snippet": "When making OAuth App requests, you are limited to 5,000 requests per hour."
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": []
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Self-serve credentials, no cost, no approval required, well-documented GraphQL API with webhooks enables comprehensive toolkit development.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "LINEAR"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://developers.linear.app/docs/getting-started",
+    "snippet": "Learn about building apps and integrations for Linear using the GraphQL API and TypeScript SDK."
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/linear.md",
+    "snippet": "Linear is a streamlined issue tracking and project planning tool for modern teams, featuring fast workflows, keyboard shortcuts, and GitHub integrations"
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": "Pages do not mention any official or community MCP servers for Linear"
+  }
+ }
+}

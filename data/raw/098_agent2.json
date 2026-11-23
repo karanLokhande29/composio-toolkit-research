@@ -1,0 +1,87 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.059959,
+  "seconds": 70.0,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://github.com/mermaid-js/mermaid-cli#readme",
+  "https://docs.composio.dev/toolkits/mermaid_chart_mcp.md",
+  "https://github.com/mermaid-js/mermaid-cli/blob/master/README.md",
+  "https://github.com/hudsonkit/arc",
+  "https://github.com/mozi-app/mermAId",
+  "https://github.com/andrewginns/mermaid-mcp-server"
+ ],
+ "output": {
+  "one_liner": "Command-line interface for the Mermaid library that transforms diagrams and markdown files into SVG output.",
+  "app_type": "cli_or_library",
+  "auth": {
+   "methods": [],
+   "oauth_grant_types": [],
+   "notes": "Open-source local CLI tool; no API authentication required.",
+   "evidence": []
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": null,
+   "notes": "Freely available as open-source npm package; no signup, approval, or payment required.",
+   "evidence": [
+    {
+     "url": "https://github.com/mermaid-js/mermaid-cli#readme",
+     "snippet": "npm install -g @mermaid-js/mermaid-cli"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "cli_or_library_only"
+   ],
+   "breadth": "narrow",
+   "openapi_spec_url": null,
+   "webhooks": null,
+   "rate_limit_note": "",
+   "evidence": [
+    {
+     "url": "https://github.com/mermaid-js/mermaid-cli#readme",
+     "snippet": "It's possible to call mermaid-cli via a Node.JS API"
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [
+    "https://github.com/andrewginns/mermaid-mcp-server",
+    "https://github.com/mozi-app/mermAId"
+   ],
+   "evidence": [
+    {
+     "url": "https://github.com/andrewginns/mermaid-mcp-server",
+     "snippet": "Python MCP Server abstracting the official mermaid-cli for ease of use"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "cli_only",
+   "rationale": "Self-serve free and documented Node.JS API, but fundamentally a local CLI tool, not a hosted web service.",
+   "composio_existing_toolkit": "no",
+   "composio_slug": null
+  },
+  "overview_evidence": [
+   {
+    "url": "https://github.com/mermaid-js/mermaid-cli#readme",
+    "snippet": "This is a command-line interface (CLI) for mermaid"
+   }
+  ],
+  "confidence": 0.9,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "Pages do not mention OpenAPI specs, webhooks, or rate limits.",
+   "mcp": "No official MCP server published by mermaid-js vendor documented."
+  }
+ }
+}

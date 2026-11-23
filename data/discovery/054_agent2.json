@@ -1,0 +1,216 @@
+{
+ "id": 54,
+ "app": "MrScraper",
+ "tag": "agent2",
+ "urls": [
+  {
+   "url": "https://docs.mrscraper.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/mrscraper-com/mrscraper-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/ai-mrscraper/zed-mrscraper",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/mrscraper-com/mrscraper-jetbrains-plugin",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/mrscraper.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.mrscraper.com/docs/getting-started/overview",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.mrscraper.com/docs/getting-started/quickstart",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.mrscraper.com/docs/getting-started/web-search",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.mrscraper.com/docs/getting-started/scraper-api",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.mrscraper.com/docs/getting-started/api-token",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.mrscraper.com/docs/getting-started/cli",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.mrscraper.com/docs/getting-started/billing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.mrscraper.com/docs/residential-proxy/getting-started/overview",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.mrscraper.com/docs/residential-proxy/configuration/authentication",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.mrscraper.com/docs/features/activating-api",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.mrscraper.com/docs/features/marketplace",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.mrscraper.com/docs/integrations/webhook",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.mrscraper.com/docs/api/overview",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "mrscraper-com/mrscraper-mcp",
+   "url": "https://github.com/mrscraper-com/mrscraper-mcp",
+   "stars": 1,
+   "description": "Official MrScraper MCP server: Scraper API for HTML, Markdown, and screenshots, web search, and account usage for AI agents."
+  },
+  {
+   "repo": "ai-mrscraper/zed-mrscraper",
+   "url": "https://github.com/ai-mrscraper/zed-mrscraper",
+   "stars": 0,
+   "description": "MrScraper MCP server extension for the Zed editor"
+  },
+  {
+   "repo": "mrscraper-com/mrscraper-jetbrains-plugin",
+   "url": "https://github.com/mrscraper-com/mrscraper-jetbrains-plugin",
+   "stars": 0,
+   "description": "MrScraper MCP for JetBrains IDEs: connects AI Assistant, Junie, and other JetBrains AI agents to the hosted MrScraper MCP server."
+  },
+  {
+   "repo": "pray-mrscraper/mrscraper-claude-plugin",
+   "url": "https://github.com/pray-mrscraper/mrscraper-claude-plugin",
+   "stars": 0,
+   "description": "MrScraper MCP skills and marketplace plugin for Claude"
+  },
+  {
+   "repo": "mrscraper-com/mrscraper-claude-plugin",
+   "url": "https://github.com/mrscraper-com/mrscraper-claude-plugin",
+   "stars": 0,
+   "description": "MrScraper MCP skills and marketplace plugin for Claude"
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "MrScraper",
+    "slug": "MRSCRAPER",
+    "tools": 11,
+    "auth": [
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/mrscraper.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "MrScraper",
+    "slug": "MRSCRAPER",
+    "tools": 11,
+    "auth": [
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/mrscraper.md"
+   }
+  ]
+ },
+ "search_meta": {}
+}

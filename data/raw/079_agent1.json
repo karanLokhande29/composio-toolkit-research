@@ -1,0 +1,130 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.090129,
+  "seconds": 91.7,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://smartsheet.com/pricing",
+  "https://docs.composio.dev/toolkits/smartsheet.md",
+  "https://smartsheet.com/developers",
+  "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server",
+  "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server-tools",
+  "https://www.smartsheet.com/solutions/client-partner-delivery",
+  "https://www.smartsheet.com/partners",
+  "https://www.smartsheet.com/marketplace/partners",
+  "https://www.smartsheet.com/partners/partner-program",
+  "https://www.smartsheet.com/partners/partner-solutions",
+  "https://www.smartsheet.com/content-center/best-practices/tips-tricks/api-getting-started",
+  "https://developers.smartsheet.com/register"
+ ],
+ "output": {
+  "one_liner": "Smartsheet is a cloud-based work management platform for planning, managing, and tracking projects, programs, and processes.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "bearer_token"
+   ],
+   "oauth_grant_types": [],
+   "notes": "Bearer tokens are personal/static API access tokens. OAuth2 used for third-party applications. Specific OAuth grant types not explicitly documented in available pages.",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/smartsheet.md",
+     "snippet": "Auth:** OAUTH2, BEARER_TOKEN"
+    },
+    {
+     "url": "https://www.smartsheet.com/content-center/best-practices/tips-tricks/api-getting-started",
+     "snippet": "to authenticate API requests via Direct API Access, you'll need an API access token"
+    },
+    {
+     "url": "https://www.smartsheet.com/content-center/best-practices/tips-tricks/api-getting-started",
+     "snippet": "If you're building a third-party application that will implement the OAuth2 Flow to retrieve an access token"
+    }
+   ]
+  },
+  "access": {
+   "status": "paid_plan_required",
+   "dev_sandbox": true,
+   "notes": "Business plan minimum required. Developer sandbox available for development and testing. Developer Registration required for third-party OAuth apps.",
+   "evidence": [
+    {
+     "url": "https://developers.smartsheet.com/register",
+     "snippet": "must belong to an existing licensed Smartsheet user on a Business plan or higher"
+    },
+    {
+     "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server",
+     "snippet": "Required plan: Business, Enterprise, or Advanced Work Management"
+    },
+    {
+     "url": "https://www.smartsheet.com/content-center/best-practices/tips-tricks/api-getting-started",
+     "snippet": "you want to create a sandbox Smartsheet account that you can use for development and testing purposes"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Subject to Smartsheet API rate limiting",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/smartsheet.md",
+     "snippet": "Tools:** 185"
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/smartsheet.md",
+     "snippet": "Creates an inactive webhook owned by the connected API-token user"
+    },
+    {
+     "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server-tools",
+     "snippet": "The tools are subject to Smartsheet API rate limiting and search"
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server",
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://smartsheet.com/developers",
+     "snippet": "Explore API docs, connect to our MCP server, develop faster on SDKs, and join a thriving community"
+    },
+    {
+     "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server",
+     "snippet": "Interact with your project data in Smartsheet using the Smartsheet MCP server"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "paid_plan",
+   "rationale": "REST API is well-documented with broad coverage and existing Composio toolkit (185 tools), but requires Business plan minimum.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "SMARTSHEET"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://www.smartsheet.com/pricing",
+    "snippet": "Choose the plan that works best for you and manage your projects, programs, and processes — all in one place"
+   },
+   {
+    "url": "https://smartsheet.com/developers",
+    "snippet": "Explore API docs, connect to our MCP server, develop faster on SDKs, and join a thriving community"
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  }
+ }
+}

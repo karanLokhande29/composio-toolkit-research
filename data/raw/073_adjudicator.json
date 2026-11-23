@@ -1,0 +1,53 @@
+{
+ "fields": [
+  "access.status",
+  "mcp.official"
+ ],
+ "pages": [
+  "https://docs.composio.dev/toolkits/linear.md",
+  "https://linear.app/developers/oauth-2-0-authentication",
+  "https://linear.app/docs/mcp",
+  "https://developers.linear.app/docs/oauth/authentication"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.060927,
+  "seconds": 9.7,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "access.status",
+    "value": "self_serve_free",
+    "evidence": [
+     {
+      "url": "https://docs.composio.dev/toolkits/linear.md",
+      "snippet": "Each user creates a personal API key in Linear under Settings > Security & access > Personal API keys and pastes it when connecting."
+     },
+     {
+      "url": "https://linear.app/developers/oauth-2-0-authentication",
+      "snippet": "Create a new OAuth2 Application and configure the redirect callback URLs to your application."
+     }
+    ],
+    "reason": "Developers can self-serve generate a free personal API key or create an OAuth2 application without payment or admin approval mentioned."
+   },
+   {
+    "field": "mcp.official",
+    "value": "https://mcp.linear.app/mcp",
+    "evidence": [
+     {
+      "url": "https://linear.app/docs/mcp",
+      "snippet": "The Model Context Protocol (MCP) server provides a standardized interface that allows any compatible AI model or agent to access your Linear data"
+     },
+     {
+      "url": "https://linear.app/docs/mcp",
+      "snippet": "Read-write access is provided through"
+     }
+    ],
+    "reason": "Linear's own docs page describes and hosts an official MCP server at https://mcp.linear.app/mcp."
+   }
+  ]
+ }
+}

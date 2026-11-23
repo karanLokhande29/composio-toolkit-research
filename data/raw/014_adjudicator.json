@@ -1,0 +1,39 @@
+{
+ "fields": [
+  "mcp.official"
+ ],
+ "pages": [
+  "https://dev.frontapp.com/docs/mcp-server",
+  "https://github.com/wearehoust/front-mcp",
+  "https://dev.frontapp.com/",
+  "https://dev.frontapp.com/docs/oauth",
+  "https://help.front.com/en/articles/2309",
+  "https://dev.frontapp.com/reference/introduction"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.06692999999999999,
+  "seconds": 7.0,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "mcp.official",
+    "value": "https://mcp.frontapp.com/mcp",
+    "evidence": [
+     {
+      "url": "https://dev.frontapp.com/docs/mcp-server",
+      "snippet": "Front's MCP server (\nmcp.frontapp.com/mcp\n) lets AI agents act on Front conversation data using a single OAuth-authenticated endpoint."
+     },
+     {
+      "url": "https://dev.frontapp.com/docs/mcp-server",
+      "snippet": "Endpoint\nhttps://mcp.frontapp.com/mcp"
+     }
+    ],
+    "reason": "Front's own developer docs explicitly name mcp.frontapp.com/mcp as the vendor-hosted MCP server endpoint, confirming it is official despite agent2's page not mentioning the URL."
+   }
+  ]
+ }
+}

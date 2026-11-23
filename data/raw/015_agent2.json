@@ -1,0 +1,122 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.05380600000000001,
+  "seconds": 62.1,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://docs.composio.dev/toolkits/pylon_mcp.md",
+  "https://usepylon.com",
+  "https://docs.usepylon.com",
+  "https://usepylon.com/pricing",
+  "https://www.usepylon.com/integrations/mcp",
+  "https://docs.usepylon.com/pylon-docs/getting-started/publish-your-docs",
+  "https://docs.usepylon.com/pylon-docs/getting-started/setup",
+  "https://docs.usepylon.com/pylon-docs/getting-started/channel-configuration",
+  "https://docs.usepylon.com/pylon-docs/getting-started/user-guide",
+  "https://docs.usepylon.com/pylon-docs/getting-started/pylonboarding",
+  "https://docs.usepylon.com/pylon-docs/knowledge-base/custom-authentication",
+  "https://docs.usepylon.com/pylon-docs/customer-portal/access-control"
+ ],
+ "output": {
+  "one_liner": "Agentic B2B support platform that tracks customer issues across channels and enables AI agents to investigate, take action, and resolve them.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "api_key"
+   ],
+   "oauth_grant_types": [],
+   "notes": "OAuth 2.0 for interactive clients and MCP, scoped API tokens for programmatic access",
+   "evidence": [
+    {
+     "url": "https://www.usepylon.com/integrations/mcp",
+     "snippet": "Sign in with OAuth or use an API token"
+    },
+    {
+     "url": "https://www.usepylon.com/integrations/mcp",
+     "snippet": "Auth is OAuth 2.0 or an API token. Transport is Streamable HTTP (stateless)."
+    },
+    {
+     "url": "https://usepylon.com/pricing",
+     "snippet": "Scoped API Tokens"
+    }
+   ]
+  },
+  "access": {
+   "status": "contact_sales",
+   "dev_sandbox": false,
+   "notes": "Free trials available but require sales representative to set up demo organization; no self-serve free tier",
+   "evidence": [
+    {
+     "url": "https://usepylon.com/pricing",
+     "snippet": "Pylon offers free trials for prospects. Your sales representative will work with you on setting up the demo organization."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "moderate",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "",
+   "evidence": [
+    {
+     "url": "https://usepylon.com/pricing",
+     "snippet": "REST API"
+    },
+    {
+     "url": "https://usepylon.com/pricing",
+     "snippet": "Webhooks"
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/pylon_mcp.md",
+     "snippet": "Tools: 12"
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://www.usepylon.com/integrations/mcp",
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://www.usepylon.com/integrations/mcp",
+     "snippet": "US server: mcp.usepylon.com; EU server: mcp.eu.usepylon.com"
+    },
+    {
+     "url": "https://www.usepylon.com/integrations/mcp",
+     "snippet": "Pylon's MCP server exposes your Pylon workspace (issues, accounts, contacts, and more)"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "contact_sales",
+   "rationale": "MCP and REST APIs documented with published tools; Composio toolkit already exists; friction from sales-gated credentials.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "PYLON_MCP"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://docs.usepylon.com",
+    "snippet": "Pylon is the first agentic support platform built for B2B. Track customer issues across any channel and orchestrate agents and Automations to investigate, take action, and resolve customer issues."
+   },
+   {
+    "url": "https://usepylon.com",
+    "snippet": "Build support, account, and product intelligence across conversations, CRM, product usage, logs, and code, then make it available via MCP to your agents and team."
+   }
+  ],
+  "confidence": 0.8,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "Full REST API documentation scope and rate limits not documented in provided pages; breadth inferred from 12 MCP tools plus REST endpoints",
+   "mcp": ""
+  }
+ }
+}

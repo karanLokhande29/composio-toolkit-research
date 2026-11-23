@@ -1,0 +1,122 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.088697,
+  "seconds": 100.3,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://plaid.com/pricing/",
+  "https://plaid.com/docs/api/",
+  "https://plaid.com/docs/",
+  "https://plaid.com/docs/errors/",
+  "https://plaid.com/docs/api/webhooks/",
+  "https://docs.composio.dev/toolkits/plaid.md",
+  "https://plaid.com/docs/auth/",
+  "https://plaid.com/docs/sandbox/",
+  "https://plaid.com/docs/account/"
+ ],
+ "output": {
+  "one_liner": "Plaid is a financial data connectivity and payments platform that enables applications to securely connect to users' financial accounts and access data like transactions, balances, and identity information.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "api_key"
+   ],
+   "oauth_grant_types": [],
+   "notes": "API uses client_id and secret; end-user authentication to financial institutions occurs via Plaid Link, which uses OAuth but is separate from API authentication.",
+   "evidence": [
+    {
+     "url": "https://plaid.com/docs/api/",
+     "snippet": "Almost all Plaid API endpoints require a `client_id` and `secret`. These may be sent either in the request body or in the headers `PLAID-CLIENT-ID` and `PLAID-SECRET`."
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/plaid.md",
+     "snippet": "You connect by pasting keys from your Plaid account into a Composio connection."
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Free Sandbox environment with unlimited test Items; production access available on pay-as-you-go plan starting at $0/month.",
+   "evidence": [
+    {
+     "url": "https://plaid.com/pricing/",
+     "snippet": "Get started for free. $0/month, pay-as-you-go. Best for startups & new businesses"
+    },
+    {
+     "url": "https://plaid.com/pricing/",
+     "snippet": "Can I try Plaid for free? Absolutely. Our Free Trial allows you to make API calls using live data."
+    },
+    {
+     "url": "https://plaid.com/docs/sandbox/",
+     "snippet": "The Plaid Sandbox is a free and fully-featured environment for application development and testing."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "",
+   "evidence": [
+    {
+     "url": "https://plaid.com/docs/api/",
+     "snippet": "OpenAPI is a standard format for describing RESTful APIs that allows those APIs to be integrated with tools"
+    },
+    {
+     "url": "https://plaid.com/docs/api/",
+     "snippet": "The Plaid API is specified in our Plaid OpenAPI GitHub repo."
+    },
+    {
+     "url": "https://plaid.com/docs/api/webhooks/",
+     "snippet": "A webhook is an HTTP request used to provide push notifications."
+    },
+    {
+     "url": "https://plaid.com/docs/errors/",
+     "snippet": "Rate Limit Exceeded errors. Occur when an excessive number of requests are made in a short period of time."
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://plaid.com/docs/api/",
+     "snippet": "Pssst -- I also moonlight as your IDE's research librarian! Plug me in via the Plaid MCP Server."
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Self-serve free sandbox credentials, REST API with OpenAPI spec, documented webhooks, and existing Composio toolkit with 70 tools enable immediate buildability.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "PLAID"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://plaid.com/docs/",
+    "snippet": "API Reference. Explore server-side API libraries and integrate with API endpoints"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/plaid.md",
+    "snippet": "**Tools:** 70"
+   }
+  ],
+  "confidence": 0.92,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "OpenAPI spec GitHub repo URL not provided; specific rate limit numbers not documented.",
+   "mcp": "Plaid MCP Server mentioned multiple times in docs but no direct URL provided in pages."
+  }
+ }
+}

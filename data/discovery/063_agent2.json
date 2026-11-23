@@ -1,0 +1,286 @@
+{
+ "id": 63,
+ "app": "Netlify",
+ "tag": "agent2",
+ "urls": [
+  {
+   "url": "https://docs.netlify.com/api",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.netlify.com/api/get-started/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.netlify.com/api/get-started/#authentication",
+   "purpose": "authentication",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.netlify.com/api/get-started/#rate-limiting",
+   "purpose": "rate_limits",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://app.netlify.com/user/applications",
+   "purpose": "credentials",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://open-api.netlify.com/",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.netlify.com/api/get-started/#oauth2-clients",
+   "purpose": "oauth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.netlify.com/site-deploys/notifications/",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.netlify.com/api/get-started/#webhooks",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.netlify.com/pricing/",
+   "purpose": "pricing",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.netlify.com/cli/get-started/",
+   "purpose": "cli_access",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.netlify.com/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/netlify/netlify-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/bella-and-c/sleepy-dog-lock",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/jbulger82/LLAMA_Hub",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/netlify_mcp.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.netlify.com/manage/security/secure-netlify-access/configure-team-saml-sso",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.netlify.com/blog/2016/10/10/integrating-with-netlify-oauth2/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.netlify.com/pricing/?category=developer",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.netlify.com/pricing/?category=enterprise",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.netlify.com/manage/security/secure-access-to-sites/git-gateway",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.netlify.com/build/build-with-ai/netlify-mcp-server/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.netlify.com/manage/security/secure-access-to-sites/traffic-rules/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/credit-based-pricing-plans/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.netlify.com/partners/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.netlify.com/manage/security/secure-access-to-sites/project-visibility",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.netlify.com/manage/security/secure-access-to-sites/identity/overview/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.netlify.com/manage/security/secure-netlify-access/overview/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.netlify.com/manage/security/overview",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "netlify/netlify-mcp",
+   "url": "https://github.com/netlify/netlify-mcp",
+   "stars": 75,
+   "description": "Netlify's Official MCP server"
+  },
+  {
+   "repo": "bella-and-c/sleepy-dog-lock",
+   "url": "https://github.com/bella-and-c/sleepy-dog-lock",
+   "stars": 32,
+   "description": "Turn good night into an enforceable iPhone sleep guard with Shortcuts, Bark, Netlify, MCP, and a native Shield scaffold."
+  },
+  {
+   "repo": "jbulger82/LLAMA_Hub",
+   "url": "https://github.com/jbulger82/LLAMA_Hub",
+   "stars": 26,
+   "description": "An upgraded llama.cpp GUI (https://github.com/ggml-org) local-first cloud model llama.cpp GUI multi agent command center with RAG, MCP tools, browser automation"
+  },
+  {
+   "repo": "areebahmeddd/superbox.ai",
+   "url": "https://github.com/areebahmeddd/superbox.ai",
+   "stars": 9,
+   "description": "📦 Discover, deploy and test MCPs in isolated sandboxes (for test: https://superbox-demo.netlify.app)"
+  },
+  {
+   "repo": "mathruffian-dot/clasp-netlify-mcp-guide",
+   "url": "https://github.com/mathruffian-dot/clasp-netlify-mcp-guide",
+   "stars": 7,
+   "description": "Clasp 雲端部署 + Netlify MCP 雙向閉環網頁系統：Agent 安裝與避坑指南"
+  }
+ ],
+ "composio": {
+  "exact": [],
+  "candidates": [
+   {
+    "name": "Netlify MCP",
+    "slug": "NETLIFY_MCP",
+    "tools": 9,
+    "auth": [
+     "DCR_OAUTH"
+    ],
+    "url": "https://docs.composio.dev/toolkits/netlify_mcp.md"
+   }
+  ]
+ },
+ "search_meta": {}
+}

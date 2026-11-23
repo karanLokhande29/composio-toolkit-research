@@ -1,0 +1,39 @@
+{
+ "fields": [
+  "mcp.official"
+ ],
+ "pages": [
+  "https://docs.attio.com/mcp/overview",
+  "https://github.com/kesslerio/attio-mcp-server",
+  "https://attio.com/platform/mcp",
+  "https://github.com/hmk/attio-mcp-server",
+  "https://docs.attio.com/rest-api/guides/authentication",
+  "https://attio.com/platform/developers"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.07251300000000001,
+  "seconds": 6.9,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "mcp.official",
+    "value": "https://mcp.attio.com/mcp",
+    "evidence": [
+     {
+      "url": "https://docs.attio.com/mcp/overview",
+      "snippet": "Add https://mcp.attio.com/mcp as a remote MCP server and complete the OAuth authentication when prompted."
+     },
+     {
+      "url": "https://docs.attio.com/mcp/overview",
+      "snippet": "Attio MCP is Attio's hosted MCP server that gives AI tools secure access to your Attio workspace."
+     }
+    ],
+    "reason": "Attio's own docs explicitly host and document this MCP server URL as their official hosted MCP server, confirmed by attio.com/platform/mcp marketing page describing the same first-party MCP offering."
+   }
+  ]
+ }
+}

@@ -1,0 +1,66 @@
+{
+ "fields": [
+  "access.status",
+  "buildability.main_blocker",
+  "mcp.official"
+ ],
+ "pages": [
+  "https://api.docs.dealcloud.com/docs/apikeys",
+  "https://api.docs.dealcloud.com/mcp/getting-started",
+  "https://api.docs.dealcloud.com/mcp",
+  "https://api.docs.dealcloud.com/docs/token",
+  "https://api.docs.dealcloud.com/docs"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.086091,
+  "seconds": 16.7,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "access.status",
+    "value": "admin_approval",
+    "evidence": [
+     {
+      "url": "https://api.docs.dealcloud.com/docs/apikeys",
+      "snippet": "To enable API access, ensure the intended user is assigned to a user group with the appropriate permissions."
+     },
+     {
+      "url": "https://api.docs.dealcloud.com/docs/apikeys",
+      "snippet": "If you do not see the Admin section, contact your organization's admin or DealCloud Customer Success Manager"
+     }
+    ],
+    "reason": "API access requires an admin to assign user-group permissions and enable the 'API' capability before a developer can obtain a key or token."
+   },
+   {
+    "field": "buildability.main_blocker",
+    "value": "admin_scope",
+    "evidence": [
+     {
+      "url": "https://api.docs.dealcloud.com/docs/apikeys",
+      "snippet": "Navigate to Admin > User Management , select the relevant user group, go to Capabilities > Site Areas , and enable \"API\"."
+     }
+    ],
+    "reason": "No pricing/paid-plan gating is mentioned anywhere in the pages; the documented friction is admin-controlled user-group/API capability permissions."
+   },
+   {
+    "field": "mcp.official",
+    "value": "https://api.docs.dealcloud.com/mcp",
+    "evidence": [
+     {
+      "url": "https://api.docs.dealcloud.com/mcp",
+      "snippet": "The DealCloud MCP Server helps teams turn their DealCloud data into faster, higher-quality outcomes."
+     },
+     {
+      "url": "https://api.docs.dealcloud.com/mcp/getting-started",
+      "snippet": "DealCloud provides a default MCP Server out-of-the-box without any configuration required."
+     }
+    ],
+    "reason": "DealCloud itself documents and ships a default, out-of-the-box MCP Server, so this vendor-authored page is the official MCP server reference (the actual endpoint is tenant-specific, e.g. https://[tenant].my.intapp.com/mcp/celeste/DealCloud)."
+   }
+  ]
+ }
+}

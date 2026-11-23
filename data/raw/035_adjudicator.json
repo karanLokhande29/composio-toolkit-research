@@ -1,0 +1,42 @@
+{
+ "fields": [
+  "mcp.official"
+ ],
+ "pages": [
+  "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server",
+  "https://github.com/damientilman/mailchimp-mcp-server",
+  "https://mailchimp.com/developer/marketing/api-concepts/authentication",
+  "https://mailchimp.com/developer/marketing/guides/access-user-data-oauth-2/",
+  "https://mailchimp.com/pricing/marketing/",
+  "https://mailchimp.com/developer/marketing/api/",
+  "https://us1.admin.mailchimp.com/account/oauth2/"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.10101600000000001,
+  "seconds": 13.9,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "mcp.official",
+    "value": null,
+    "evidence": [
+     {
+      "url": "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server",
+      "snippet": "This documentation site is itself an MCP server. Connect an agent to it and the agent can search these docs directly",
+      "check": "exact"
+     },
+     {
+      "url": "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server",
+      "snippet": "that call the Marketing API itself.",
+      "check": "exact"
+     }
+    ],
+    "reason": "The vendor-hosted MCP server only exposes docs-search/fetch tools for the documentation site itself, not the Mailchimp Marketing API, so it does not qualify as an official API MCP server; no other vendor-published API MCP server is shown in the pages."
+   }
+  ]
+ }
+}

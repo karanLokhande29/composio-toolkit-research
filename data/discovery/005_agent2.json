@@ -53,26 +53,10 @@
   },
   {
    "url": "https://twenty.com/developers/section/api-and-webhooks",
-   "purpose": "api_reference",
+   "purpose": "overview",
    "source": "search",
    "status": 200,
    "ok": true,
-   "js_rendered": false
-  },
-  {
-   "url": "https://twenty.com/developers/section/api-and-webhooks/webhooks",
-   "purpose": "webhooks",
-   "source": "search",
-   "status": 200,
-   "ok": true,
-   "js_rendered": false
-  },
-  {
-   "url": "https://twenty.com/developers/section/api-and-webhooks/rest-api",
-   "purpose": "api_reference",
-   "source": "search",
-   "status": 404,
-   "ok": false,
    "js_rendered": false
   },
   {
@@ -84,6 +68,22 @@
    "js_rendered": false
   },
   {
+   "url": "https://twenty.com/developers/section/api-and-webhooks/rest-api",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://twenty.com/developers/section/api-and-webhooks/webhooks",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
    "url": "https://twenty.com/developers/section/api-and-webhooks/authentication",
    "purpose": "auth",
    "source": "search",
@@ -92,7 +92,15 @@
    "js_rendered": false
   },
   {
-   "url": "https://twenty.com/developers/section/api-and-webhooks/mcp-server",
+   "url": "https://twenty.com/developers/section/api-and-webhooks/api-rate-limiting",
+   "purpose": "rate_limits",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://twenty.com/developers/section/mcp",
    "purpose": "mcp_server",
    "source": "search",
    "status": 404,
@@ -105,6 +113,22 @@
    "source": "search",
    "status": 200,
    "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://twenty.com/partners",
+   "purpose": "partner_programme",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://twenty.com/developers/section/standard-objects",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 404,
+   "ok": false,
    "js_rendered": false
   },
   {
@@ -141,14 +165,6 @@
   },
   {
    "url": "https://twenty.com/customers/alternative-partners",
-   "purpose": "crawl",
-   "source": "crawl",
-   "status": 200,
-   "ok": true,
-   "js_rendered": false
-  },
-  {
-   "url": "https://twenty.com/partners",
    "purpose": "crawl",
    "source": "crawl",
    "status": 200,
@@ -205,6 +221,38 @@
   },
   {
    "url": "https://docs.twenty.com/getting-started/core-concepts/layout",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.twenty.com/getting-started/core-concepts/workflows",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.twenty.com/getting-started/core-concepts/calendar-and-email",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.twenty.com/getting-started/core-concepts/ai",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.twenty.com/getting-started/core-concepts/apps",
    "purpose": "crawl",
    "source": "crawl",
    "status": 200,

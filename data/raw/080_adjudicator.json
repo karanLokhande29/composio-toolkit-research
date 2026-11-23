@@ -1,0 +1,42 @@
+{
+ "fields": [
+  "api_surface.breadth"
+ ],
+ "pages": [
+  "https://docs.composio.dev/toolkits/harvest.md",
+  "https://developers.harvestapp.com",
+  "https://developer.harvestapp.com",
+  "https://www.getharvest.com/pricing",
+  "https://id.getharvest.com/developers"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.045174,
+  "seconds": 11.6,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "api_surface.breadth",
+    "value": "broad",
+    "evidence": [
+     {
+      "url": "https://docs.composio.dev/toolkits/harvest.md",
+      "snippet": "**Tools:** 57"
+     },
+     {
+      "url": "https://docs.composio.dev/toolkits/harvest.md",
+      "snippet": "Tool to create a new client contact. Use when you need to add a contact under an existing client."
+     },
+     {
+      "url": "https://docs.composio.dev/toolkits/harvest.md",
+      "snippet": "Tool to create a new invoice. Use when you have gathered all invoice details and need to bill a client in Harvest."
+     }
+    ],
+    "reason": "The Composio toolkit page lists 57 distinct tools spanning many separate resources (clients, contacts, estimates, estimate messages, expenses, invoices, invoice messages, invoice payments), indicating a broad API surface rather than a narrow single-purpose one."
+   }
+  ]
+ }
+}

@@ -1,0 +1,130 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.055632,
+  "seconds": 47.3,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://stripe.com/docs/payments",
+  "https://stripe.com/docs/webhooks",
+  "https://docs.composio.dev/toolkits/stripe.md",
+  "https://stripe.com/docs/api",
+  "https://stripe.com/docs/keys",
+  "https://stripe.com/docs/testing",
+  "https://stripe.com/docs/get-started",
+  "https://stripe.com/docs/rate-limits",
+  "https://stripe.com/docs/development",
+  "https://stripe.com/docs/error-codes",
+  "https://docs.stripe.com/api/authentication",
+  "https://docs.stripe.com/api/three-d-secure/authentication"
+ ],
+ "output": {
+  "one_liner": "Stripe provides APIs for accepting payments online and in person, managing customers, subscriptions, and processing financial transactions.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "api_key",
+    "oauth2"
+   ],
+   "oauth_grant_types": [],
+   "notes": "API key authentication uses HTTP Basic Auth or Bearer token format. OAuth2 available for Stripe Connect integrations with read_only or read_write scopes.",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/stripe.md",
+     "snippet": "Auth: API_KEY, OAUTH2"
+    },
+    {
+     "url": "https://stripe.com/docs/api",
+     "snippet": "The Stripe API uses API keys to authenticate requests."
+    },
+    {
+     "url": "https://docs.stripe.com/api/authentication",
+     "snippet": "The Stripe API authenticates requests using HTTP Basic Auth."
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Anyone can create a free Stripe account and immediately get test API keys for sandbox mode. Testing is completely free; live payments require payment processing.",
+   "evidence": [
+    {
+     "url": "https://stripe.com/docs/get-started",
+     "snippet": "Create account and immediately start building your integration."
+    },
+    {
+     "url": "https://stripe.com/docs/testing",
+     "snippet": "Test your integration in a sandbox by simulating transactions with test values"
+    },
+    {
+     "url": "https://stripe.com/docs/keys",
+     "snippet": "Use a sandbox, and its associated test API keys, as you build your integration."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Global: 100 requests/second live, 25 requests/second sandbox. Individual endpoints: 25 requests/second unless otherwise noted.",
+   "evidence": [
+    {
+     "url": "https://stripe.com/docs/api",
+     "snippet": "The Stripe API is organized around REST."
+    },
+    {
+     "url": "https://stripe.com/docs/webhooks",
+     "snippet": "Listen for events from Stripe on your webhook endpoint"
+    },
+    {
+     "url": "https://stripe.com/docs/rate-limits",
+     "snippet": "Live mode: 100 requests per second, Sandbox: 25 requests per second"
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/stripe.md",
+     "snippet": "Tools: 435"
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://stripe.com/docs/development",
+     "snippet": "MCP - Enable agents to use tools and securely take actions in your Stripe account."
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Public REST API with broad coverage (435 tools), free sandbox credentials, complete documentation, and official Composio toolkit already exists.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "STRIPE"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://docs.composio.dev/toolkits/stripe.md",
+    "snippet": "Category: payment processing, Auth: API_KEY, OAUTH2, Tools: 435"
+   },
+   {
+    "url": "https://stripe.com/docs/payments",
+    "snippet": "Integrate with Stripe to start accepting payments online and in person"
+   }
+  ],
+  "confidence": 0.98,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": "MCP support mentioned but no specific official server URL provided in documentation"
+  }
+ }
+}

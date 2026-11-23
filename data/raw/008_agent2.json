@@ -1,0 +1,126 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.064726,
+  "seconds": 72.0,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://developer.close.com/#authentication",
+  "https://close.com/pricing/",
+  "https://docs.composio.dev/toolkits/close.md",
+  "https://close.com",
+  "https://help.close.com/docs/api-keys",
+  "https://help.close.com/",
+  "https://developer.close.com/mcp",
+  "https://close.com/partners"
+ ],
+ "output": {
+  "one_liner": "Close is a sales CRM with built-in calling, email, SMS, and AI agents.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "api_key"
+   ],
+   "oauth_grant_types": [],
+   "notes": "API keys for scripts or OAuth 2.0 for user-facing integrations. Both methods support API and MCP server access.",
+   "evidence": [
+    {
+     "url": "https://developer.close.com/#authentication",
+     "snippet": "API keys for scripts or OAuth 2.0 for user-facing integrations."
+    },
+    {
+     "url": "https://help.close.com/docs/api-keys",
+     "snippet": "An API key is a secret token (like a password) which you can use to connect Close data"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_trial",
+   "dev_sandbox": true,
+   "notes": "14-day free trial available without approval or sales contact. Developers can immediately create API keys during trial. Continued use requires paid plan.",
+   "evidence": [
+    {
+     "url": "https://close.com/pricing/",
+     "snippet": "14-day free trial · We'll help you move your data, get set up, and start selling in Close."
+    },
+    {
+     "url": "https://help.close.com/docs/api-keys",
+     "snippet": "To create a new API key, go to Settings > Developer > API Keys and click + New API Key."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Essentials plan and above offer no daily API quota or per-request fees. Solo plan rate limits not explicitly documented.",
+   "evidence": [
+    {
+     "url": "https://developer.close.com/#authentication",
+     "snippet": "REST API Reference Full endpoint docs with schemas, examples, and interactive API explorer."
+    },
+    {
+     "url": "https://developer.close.com/#authentication",
+     "snippet": "Webhooks & Events Real-time event notifications and a 30-day event log."
+    },
+    {
+     "url": "https://close.com/pricing/",
+     "snippet": "No daily API request quota or per-request fees."
+    },
+    {
+     "url": "https://developer.close.com/#authentication",
+     "snippet": "Browse 100+ Integrations"
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://mcp.close.com/mcp",
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://developer.close.com/mcp",
+     "snippet": "The MCP server URL is https://mcp.close.com/mcp and has HTTP Streamable and OAuth 2.0 Dynamic Client Registration support."
+    },
+    {
+     "url": "https://developer.close.com/mcp",
+     "snippet": "Close's MCP server is officially supported across the Claude ecosystem."
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Self-serve free trial, public REST API with webhooks, official MCP server, and Composio toolkit with 75 tools already published.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "CLOSE"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://close.com",
+    "snippet": "Close CRM | The CRM That Does the Work"
+   },
+   {
+    "url": "https://close.com/pricing/",
+    "snippet": "Built-in calling, sales dialers, email, SMS, and AI Agents in one CRM."
+   },
+   {
+    "url": "https://developer.close.com/#authentication",
+    "snippet": "Build integrations, automate workflows, and extend Close for your team."
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "OpenAPI spec URL not documented; API breadth inferred from 100+ integrations directory and 75 published Composio tools.",
+   "mcp": ""
+  }
+ }
+}

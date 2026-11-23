@@ -1,0 +1,132 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.07641300000000001,
+  "seconds": 87.6,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://docs.composio.dev/toolkits/fathom.md",
+  "https://fathom.video",
+  "https://fathom.video/pricing",
+  "https://github.com/agencyenterprise/fathom-mcp-server",
+  "https://github.com/Dot-Fun/fathom-mcp",
+  "https://github.com/sourcegate/mcp-fathom-server"
+ ],
+ "output": {
+  "one_liner": "AI-powered meeting intelligence platform that automatically records, transcribes, summarizes meetings and extracts action items.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "api_key"
+   ],
+   "oauth_grant_types": [],
+   "notes": "Both OAuth2 and API key authentication supported. API keys managed in Fathom Settings > API Access.",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/fathom.md",
+     "snippet": "Auth: OAUTH2, API_KEY"
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/fathom.md",
+     "snippet": "Create a key in Fathom under Settings > API Access, create a Fathom auth config with the API Key authentication type"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": null,
+   "notes": "Free plan available permanently with unlimited recordings and transcriptions. Public API accessible from free tier.",
+   "evidence": [
+    {
+     "url": "https://fathom.video/pricing",
+     "snippet": "Free forever. Unlimited recordings + transcriptions"
+    },
+    {
+     "url": "https://fathom.video/pricing",
+     "snippet": "Public API & MCP - Build custom integrations and workflows."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "moderate",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Rate limiting enforced; requests return HTTP 429 when rate limit exceeded.",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/fathom.md",
+     "snippet": "Tools: 10"
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/fathom.md",
+     "snippet": "Tool to create a webhook to receive new meeting content from Fathom."
+    },
+    {
+     "url": "https://github.com/Dot-Fun/fathom-mcp",
+     "snippet": "Rate-limited requests return HTTP 429"
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://developers.fathom.ai/mcp-docs",
+   "community": [
+    "https://github.com/agencyenterprise/fathom-mcp-server",
+    "https://github.com/Dot-Fun/fathom-mcp",
+    "https://github.com/sourcegate/mcp-fathom-server"
+   ],
+   "evidence": [
+    {
+     "url": "https://github.com/agencyenterprise/fathom-mcp-server",
+     "snippet": "Fathom now has an offical mcp: https://developers.fathom.ai/mcp-docs"
+    },
+    {
+     "url": "https://github.com/agencyenterprise/fathom-mcp-server",
+     "snippet": "An mcp server built for fathom and works in claude."
+    },
+    {
+     "url": "https://github.com/Dot-Fun/fathom-mcp",
+     "snippet": "Model Context Protocol server for Fathom AI - access meeting recordings, transcripts, summaries, teams, and webhooks"
+    },
+    {
+     "url": "https://github.com/sourcegate/mcp-fathom-server",
+     "snippet": "MCP server that integrates with Fathom AI's meeting API"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Self-serve free tier with public API access, full OAuth2 and API key support, and existing Composio toolkit confirms full buildability.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "FATHOM"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://fathom.video",
+    "snippet": "Fathom AI Notetaker - Never Take Notes Again"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/fathom.md",
+    "snippet": "Category: ai meeting assistants"
+   },
+   {
+    "url": "https://fathom.video",
+    "snippet": "Fathom summarizes your meetings so you can focus on the conversation."
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  }
+ }
+}

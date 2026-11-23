@@ -1,0 +1,112 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.09067599999999999,
+  "seconds": 109.7,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://api.docs.dealcloud.com/",
+  "https://api.docs.dealcloud.com/docs/publications/getting_started",
+  "https://api.docs.dealcloud.com/docs/publications/getting_started/topics",
+  "https://api.docs.dealcloud.com/docs/publications/getting_started/poll",
+  "https://api.docs.dealcloud.com/docs/publications/getting_started/acknowledge",
+  "https://api.docs.dealcloud.com/mcp",
+  "https://api.docs.dealcloud.com/mcp/getting-started",
+  "https://api.docs.dealcloud.com/mcp/connections",
+  "https://api.docs.dealcloud.com/mcp/authentication",
+  "https://api.docs.dealcloud.com/mcp/tools",
+  "https://api.docs.dealcloud.com/mcp/custom-servers",
+  "https://api.docs.dealcloud.com/sdk/python-1.X/getting-started/installation"
+ ],
+ "output": {
+  "one_liner": "DealCloud is a cloud-based CRM and sales platform enabling teams to manage deals, relationships, and pipeline data.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2"
+   ],
+   "oauth_grant_types": [
+    "client_credentials"
+   ],
+   "notes": "OAuth 2.0 with client_credentials grant type. Configuration published via standard .well-known discovery endpoints for clients to discover automatically.",
+   "evidence": [
+    {
+     "url": "https://api.docs.dealcloud.com/docs/publications/getting_started",
+     "snippet": "grant_type=client_credentials & client_id=106 & client_secret=1356GYNU"
+    },
+    {
+     "url": "https://api.docs.dealcloud.com/mcp/authentication",
+     "snippet": "DealCloud MCP publishes its OAuth configuration through standard .well-known discovery endpoints."
+    }
+   ]
+  },
+  "access": {
+   "status": "unknown",
+   "dev_sandbox": null,
+   "notes": "Documentation assumes developer has existing DealCloud instance with admin access; no explanation provided for obtaining initial API credentials.",
+   "evidence": [
+    {
+     "url": "https://api.docs.dealcloud.com/mcp/getting-started",
+     "snippet": "User Permissions Manage MCP Servers capability for admins to configure."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest",
+    "graphql"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": false,
+   "rate_limit_note": "Rate Limits section documented but specific details not visible in provided pages.",
+   "evidence": [
+    {
+     "url": "https://api.docs.dealcloud.com/mcp/tools",
+     "snippet": "The DealCloud MCP Server exposes the following set of tools, allowing an AI assistant to explore, retrieve, and update data."
+    },
+    {
+     "url": "https://api.docs.dealcloud.com/docs/publications/getting_started",
+     "snippet": "You can also access your Publications Swagger by clicking the Open Swagger link."
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://api.docs.dealcloud.com/mcp",
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://api.docs.dealcloud.com/mcp",
+     "snippet": "The DealCloud MCP Server helps teams turn their DealCloud data into faster, higher-quality outcomes."
+    },
+    {
+     "url": "https://api.docs.dealcloud.com/mcp/getting-started",
+     "snippet": "DealCloud provides a default MCP Server out-of-the-box without any configuration required."
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "paid_plan",
+   "rationale": "Official MCP server and comprehensive REST/GraphQL APIs are fully documented, but require active DealCloud subscription and admin access.",
+   "composio_existing_toolkit": "no",
+   "composio_slug": null
+  },
+  "overview_evidence": [
+   {
+    "url": "https://api.docs.dealcloud.com/mcp",
+    "snippet": "AI assistants can surface sharper relationship and pipeline insights, prepare teams for diligence and meetings, then act on what they find."
+   }
+  ],
+  "confidence": 0.72,
+  "unknown_reasons": {
+   "auth": "API Keys section referenced in navigation but content not shown in provided pages; full range of auth schemes not explicitly documented.",
+   "access": "Pages do not explain how to obtain initial API credentials or access approval process; no information on free tiers or sandboxes.",
+   "api_surface": "OpenAPI spec URL not explicitly provided; rate limit specifics not shown in provided excerpts.",
+   "mcp": "No community MCP server repositories mentioned in provided documentation pages."
+  }
+ }
+}

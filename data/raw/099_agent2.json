@@ -1,0 +1,113 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.114919,
+  "seconds": 133.4,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://transcriptapi.com/docs",
+  "https://docs.composio.dev/toolkits/youtube_transcript.md",
+  "https://transcriptapi.com",
+  "https://transcriptapi.com/docs/mcp/chatgpt/",
+  "https://transcriptapi.com/docs/mcp/claude/",
+  "https://transcriptapi.com/docs/mcp/",
+  "https://transcriptapi.com/docs/getting-started/python/",
+  "https://transcriptapi.com/docs/getting-started/javascript/",
+  "https://transcriptapi.com/docs/getting-started/curl/",
+  "https://transcriptapi.com/docs/getting-started/",
+  "https://transcriptapi.com/signup"
+ ],
+ "output": {
+  "one_liner": "Extract YouTube video transcripts and search videos through a REST API or Model Context Protocol integration.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "bearer_token",
+    "oauth2"
+   ],
+   "oauth_grant_types": [],
+   "notes": "REST API uses API key sent as Bearer token. MCP clients use OAuth 2.1 (Claude, ChatGPT) or Bearer token (OpenAI Agent Builder, others).",
+   "evidence": [
+    {
+     "url": "https://transcriptapi.com/docs/mcp/",
+     "snippet": "OAuth 2.1 (Claude, ChatGPT) or an API key sent as a Bearer token (OpenAI Agent Builder and other clients)"
+    },
+    {
+     "url": "https://transcriptapi.com/docs/getting-started/curl/",
+     "snippet": "An API key. Sign up to get 100 free credits (no card required), then copy a key from the API Keys dashboard."
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": null,
+   "notes": "New accounts receive 100 free credits at signup with no card required. Paid plans start at $5/month. No approval or sales contact required.",
+   "evidence": [
+    {
+     "url": "https://transcriptapi.com",
+     "snippet": "You can start for free: new accounts get 100 free credits, no card required"
+    },
+    {
+     "url": "https://transcriptapi.com/docs/getting-started/python/",
+     "snippet": "Sign up to get 100 free credits (no card required), then copy a key from the API Keys dashboard"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "moderate",
+   "openapi_spec_url": null,
+   "webhooks": null,
+   "rate_limit_note": "200 RPM for starter plan, 300 RPM for paid plan (more on request)",
+   "evidence": [
+    {
+     "url": "https://transcriptapi.com/docs/getting-started/",
+     "snippet": "Extract transcripts from any YouTube video with captions Search YouTube videos and channels (paginated) Browse channel uploads with pagination"
+    },
+    {
+     "url": "https://transcriptapi.com",
+     "snippet": "200 RPM Rate Limit Human support on paid plan"
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://transcriptapi.com/mcp",
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://transcriptapi.com/docs/mcp/",
+     "snippet": "TranscriptAPI runs a hosted (remote) MCP server at https://transcriptapi.com/mcp"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Self-serve free credentials, documented REST API, official MCP server, and moderate API breadth enable immediate toolkit development.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "YOUTUBE_TRANSCRIPT"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://transcriptapi.com/docs",
+    "snippet": "Extract YouTube video transcripts with a simple API call or through Model Context Protocol"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/youtube_transcript.md",
+    "snippet": "Retrieve and store captions for one video or a bounded batch, read job and batch status, access stored transcripts"
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "OpenAPI spec file URL and webhook support not explicitly documented in provided pages",
+   "mcp": ""
+  }
+ }
+}

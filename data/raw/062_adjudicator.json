@@ -1,0 +1,48 @@
+{
+ "fields": [
+  "access.status",
+  "mcp.official"
+ ],
+ "pages": [
+  "https://vercel.com/docs/rest-api/rate-limits",
+  "https://vercel.com/pricing",
+  "https://vercel.com/docs/webhooks"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.051126,
+  "seconds": 8.7,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "access.status",
+    "value": "self_serve_free",
+    "evidence": [
+     {
+      "url": "https://vercel.com/pricing",
+      "snippet": "Our Hobby plan is free and a great way to get started"
+     },
+     {
+      "url": "https://vercel.com/docs/rest-api/rate-limits",
+      "snippet": "You can raise many of the limits on this page. The process depends on your plan"
+     }
+    ],
+    "reason": "The Hobby plan is free and self-serve, and the REST API/account tokens are available on Hobby accounts (webhooks and other advanced features being Pro/Enterprise-gated doesn't block basic API access on the free tier)."
+   },
+   {
+    "field": "mcp.official",
+    "value": null,
+    "evidence": [
+     {
+      "url": "https://vercel.com/docs/webhooks",
+      "snippet": "[get_webhooks](https://vercel.com/docs/agent-resources/vercel-mcp/tools/integrations/get_webhooks) — Use get_webhooks with Vercel MCP."
+     }
+    ],
+    "reason": "The pages reference an official 'Vercel MCP' tool set but no URL for a vendor-published MCP server repository is given, and the claimed next-devtools-mcp URL is not present on any provided page."
+   }
+  ]
+ }
+}

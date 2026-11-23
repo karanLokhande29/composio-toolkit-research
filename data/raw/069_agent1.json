@@ -1,0 +1,123 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.08565600000000001,
+  "seconds": 89.4,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://docs.datadoghq.com/api/latest/",
+  "https://docs.composio.dev/toolkits/datadog.md",
+  "https://docs.datadoghq.com/api/latest/authentication/",
+  "https://docs.datadoghq.com/api/latest/rate-limits/",
+  "https://www.datadoghq.com/pricing/",
+  "https://www.datadoghq.com/product/ai/mcp-server/",
+  "https://www.datadoghq.com/marketplacepartners/",
+  "https://www.datadoghq.com/partner/network/",
+  "https://docs.datadoghq.com/api/latest/authn-mappings/",
+  "https://docs.datadoghq.com/api/latest/cloud-authentication/",
+  "https://docs.datadoghq.com/api/latest/oauth2-client-public/",
+  "https://docs.datadoghq.com/api/latest/org-authorized-clients/"
+ ],
+ "output": {
+  "one_liner": "Datadog is a comprehensive observability and security platform for monitoring infrastructure, applications, and cloud environments.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "api_key",
+    "oauth2",
+    "bearer_token"
+   ],
+   "oauth_grant_types": [],
+   "notes": "API key via DD-API-KEY header; OAuth2 and Bearer token also supported",
+   "evidence": [
+    {
+     "url": "https://docs.datadoghq.com/api/latest/",
+     "snippet": "Authenticate to the API with an API key using the header DD-API-KEY"
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/datadog.md",
+     "snippet": "Auth: OAUTH2, API_KEY, BEARER_TOKEN"
+    },
+    {
+     "url": "https://docs.datadoghq.com/api/latest/authentication/",
+     "snippet": "All requests to Datadogs API must be authenticated. Requests that write data require an API key"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_trial",
+   "dev_sandbox": true,
+   "notes": "Free 14-day trial of entire platform; continued use requires paid subscription",
+   "evidence": [
+    {
+     "url": "https://www.datadoghq.com/product/ai/mcp-server/",
+     "snippet": "Get started today with a 14-day free-trial of the entire Datadog product suite"
+    },
+    {
+     "url": "https://www.datadoghq.com/pricing/",
+     "snippet": "Start Free Trial Explore telemetry and take action faster"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "API endpoints have varying rate limits; can be increased by contacting support",
+   "evidence": [
+    {
+     "url": "https://docs.datadoghq.com/api/latest/",
+     "snippet": "The Datadog API is an HTTP REST API. The API uses resource-oriented URLs to call the API"
+    },
+    {
+     "url": "https://docs.datadoghq.com/api/latest/rate-limits/",
+     "snippet": "Many API endpoints are rate limited. Rate limits can be increased from defaults by contacting"
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/datadog.md",
+     "snippet": "Create a webhook in Datadog. Registers a named destination endpoint for webhook notifications."
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://www.datadoghq.com/product/ai/mcp-server/",
+     "snippet": "Datadog MCP Server and Pup CLI give AI agents secure, real-time access to unified observability data"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "API fully documented as REST service with self-serve trial access and multiple auth methods; existing Composio toolkit with 256 tools.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "DATADOG"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://docs.datadoghq.com/api/latest/",
+    "snippet": "Use the Datadog API to access the Datadog platform programmatically."
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/datadog.md",
+    "snippet": "Creates a new downtime in Datadog to suppress alerts during maintenance windows or planned outages."
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": "Pages confirm Datadog publishes official MCP Server but do not provide GitHub repository URL"
+  }
+ }
+}

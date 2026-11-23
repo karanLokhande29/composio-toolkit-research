@@ -1,0 +1,129 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.08616940000000001,
+  "seconds": 135.0,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://docs.discord.com/developers/topics/oauth2",
+  "https://docs.discord.com/developers/quick-start/getting-started",
+  "https://docs.discord.com/developers/reference",
+  "https://docs.discord.com/developers/quick-start/overview-of-apps",
+  "https://docs.discord.com/developers/topics/rate-limits",
+  "https://docs.discord.com/developers/platform/webhooks",
+  "https://github.com/discord/discord-api-spec",
+  "https://docs.composio.dev/toolkits/discord.md",
+  "https://github.com/SaseQ/discord-mcp",
+  "https://discord.com",
+  "https://docs.discord.com",
+  "https://docs.discord.com/developers/platform/oauth2-and-permissions"
+ ],
+ "output": {
+  "one_liner": "Discord is a communications and messaging platform for group chat, voice, video, and community interactions.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "bearer_token",
+    "basic"
+   ],
+   "notes": "OAuth2 is the primary authentication method with multiple grant flows. Bearer tokens include both OAuth2 access tokens and bot tokens. Basic authentication uses client_id:client_secret for OAuth2 endpoints.",
+   "evidence": [
+    {
+     "url": "https://docs.discord.com/developers/topics/oauth2",
+     "snippet": "OAuth2 enables application developers to build applications that utilize authentication and data from the Discord API"
+    },
+    {
+     "url": "https://docs.discord.com/developers/reference",
+     "snippet": "For all authentication types, authentication is performed with the Authorization HTTP header in the format Authorization: TOKEN_TYPE TOKEN"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Developers can register applications and obtain OAuth2 credentials at no cost through the Developer Portal. Some advanced scopes are partner-gated or require Discord approval.",
+   "evidence": [
+    {
+     "url": "https://docs.discord.com/developers/quick-start/getting-started",
+     "snippet": "The first step in implementing OAuth2 is registering a developer application and retrieving your client ID and client secret"
+    },
+    {
+     "url": "https://docs.discord.com/developers/topics/oauth2",
+     "snippet": "Some scopes require approval from Discord to use. Requesting them from a user without approval from Discord may cause errors"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest",
+    "websocket"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": "https://github.com/discord/discord-api-spec",
+   "webhooks": true,
+   "rate_limit_note": "Per-route and global rate limits apply. API returns rate limit headers with responses; clients should parse headers to avoid hitting limits.",
+   "evidence": [
+    {
+     "url": "https://docs.discord.com/developers/reference",
+     "snippet": "The Discord API is a REST API that allows you to interact with Discord data from your own applications"
+    },
+    {
+     "url": "https://docs.discord.com/developers/reference",
+     "snippet": "Discord's Gateway API is used for maintaining persistent, stateful websocket connections between your client and our servers"
+    },
+    {
+     "url": "https://docs.discord.com/developers/platform/webhooks",
+     "snippet": "Discord supports two distinct types of webhooks: incoming webhooks for posting messages into Discord, and webhook events"
+    },
+    {
+     "url": "https://github.com/discord/discord-api-spec",
+     "snippet": "This repository contains the public preview of the OpenAPI 3.1 specification for Discord APIs"
+    },
+    {
+     "url": "https://docs.discord.com/developers/topics/rate-limits",
+     "snippet": "Rate limits exist across Discord's APIs to prevent spam, abuse, and service overload"
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [
+    "https://github.com/SaseQ/discord-mcp"
+   ],
+   "evidence": [
+    {
+     "url": "https://github.com/SaseQ/discord-mcp",
+     "snippet": "A MCP server for the Discord integration. Enable your AI assistants to seamlessly interact with Discord."
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Self-serve OAuth2 credentials are freely available, REST API is well-documented with public OpenAPI spec, and Composio already has a 28-tool Discord toolkit.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "DISCORD"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://discord.com",
+    "snippet": "Discord is great for playing games and chilling with friends, or even building a worldwide community"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/discord.md",
+    "snippet": "Category: team chat, Auth: OAUTH2, Tools: 28"
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  }
+ }
+}

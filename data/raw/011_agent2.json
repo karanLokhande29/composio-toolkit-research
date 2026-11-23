@@ -1,0 +1,116 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.091868,
+  "seconds": 111.4,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+  "https://www.zendesk.com/pricing/",
+  "https://developer.zendesk.com/",
+  "https://developer.zendesk.com/documentation/webhooks/",
+  "https://docs.composio.dev/toolkits/zendesk.md",
+  "https://zendesk.com",
+  "https://developers.zendesk.com",
+  "https://developer.zendesk.com/api-reference/ticketing/introduction/",
+  "https://developer.zendesk.com/api-reference/",
+  "https://developer.zendesk.com/documentation/apps/app-developer-guide/getting_started/"
+ ],
+ "output": {
+  "one_liner": "Zendesk is a cloud-based customer service platform that unifies support tickets across multiple channels.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "bearer_token",
+    "basic"
+   ],
+   "oauth_grant_types": [],
+   "notes": "OAuth2 is the primary method via Bearer tokens in Authorization headers. Basic authentication with API tokens is deprecated. Global OAuth tokens required for distributing apps to multiple Zendesk customers.",
+   "evidence": [
+    {
+     "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+     "snippet": "In your requests, specify the access token in an Authorization header as follows"
+    },
+    {
+     "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+     "snippet": "Basic authentication is used for API tokens. The credentials must be sent with the request in an Authorization header."
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/zendesk.md",
+     "snippet": "Use your own Zendesk OAuth client when you want users to see your app's name on the consent screen"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_trial",
+   "dev_sandbox": true,
+   "notes": "Developers can sign up for a 14-day free trial without credit card or approval. Full API access during trial; paid plan required after expiration.",
+   "evidence": [
+    {
+     "url": "https://developer.zendesk.com/",
+     "snippet": "Create a developer account. Try out the Sunshine Platform with a free, 14-day trial account."
+    },
+    {
+     "url": "https://zendesk.com",
+     "snippet": "14-day free trial. No credit card required."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Rate limits documented as requests per minute, but specific allowances not stated in provided pages.",
+   "evidence": [
+    {
+     "url": "https://developer.zendesk.com/",
+     "snippet": "Zendesk's APIs are organized around REST principles. Our APIs have resource-oriented URLs"
+    },
+    {
+     "url": "https://developer.zendesk.com/documentation/webhooks/",
+     "snippet": "Webhooks let you build or set up integrations that subscribe to certain activity in Zendesk Support, Guide, Gather, and Messaging."
+    },
+    {
+     "url": "https://developer.zendesk.com/api-reference/ticketing/introduction/",
+     "snippet": "For information on the number of requests allowed per minute, see Rate limits"
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": []
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Composio already built a 484-tool production-ready toolkit with self-serve OAuth2 and comprehensive REST API documentation.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "ZENDESK"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://www.zendesk.com/pricing/",
+    "snippet": "Zendesk Ticketing brings email, messaging, phone, social and more into a single place. With AI automations and simple admin tools."
+   },
+   {
+    "url": "https://zendesk.com",
+    "snippet": "Go beyond answers to improve customer and employee experiences with the Zendesk Outcome AI™ Platform."
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "OpenAPI spec URL not provided in pages; breadth inferred from API Reference category listings.",
+   "mcp": "Pages do not mention any official or community MCP servers for Zendesk."
+  }
+ }
+}

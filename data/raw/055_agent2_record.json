@@ -1,0 +1,113 @@
+{
+ "id": 55,
+ "app": "Apify",
+ "category": "Data, SEO and Scraping",
+ "hint": "docs.apify.com",
+ "one_liner": "A cloud platform for developing, deploying, and running web scraping and automation actors with integrated storage, proxy, and monitoring.",
+ "app_type": "saas",
+ "auth": {
+  "methods": [
+   "bearer_token"
+  ],
+  "oauth_grant_types": [],
+  "notes": "API token sent as Bearer token in Authorization header or URL query parameter; Bearer header method recommended",
+  "evidence": [
+   {
+    "url": "https://docs.apify.com/api/v2",
+    "snippet": "Add the token to your request's Authorization header as Bearer <token>",
+    "check": "repaired"
+   },
+   {
+    "url": "https://docs.apify.com/platform/integrations/api",
+    "snippet": "To access the Apify API in your integrations, you need to authenticate using your secret API token.",
+    "check": "exact"
+   }
+  ]
+ },
+ "access": {
+  "status": "self_serve_free",
+  "dev_sandbox": true,
+  "notes": "Free tier documented with specific limits (5 concurrent Actor runs, 16GB max memory); API tokens managed in Apify Console",
+  "evidence": [
+   {
+    "url": "https://docs.apify.com/platform/integrations/api",
+    "snippet": "You manage your tokens on the API & Integrations page in Apify Console.",
+    "check": "exact"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "rest"
+  ],
+  "breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "rate_limit_note": "Rate limits exist but details deferred to API documentation",
+  "evidence": [
+   {
+    "url": "https://docs.apify.com/api/v2",
+    "snippet": "You can download the complete OpenAPI schema of Apify API in the YAML",
+    "check": "exact"
+   },
+   {
+    "url": "https://docs.apify.com/platform/integrations/webhooks",
+    "snippet": "Webhooks allow you to configure the Apify platform to perform an action when a certain system event occurs.",
+    "check": "exact"
+   },
+   {
+    "url": "https://docs.apify.com/platform/limits",
+    "snippet": "For API limits such as rate limits and max payload size, see the API documentation",
+    "check": "repaired"
+   }
+  ]
+ },
+ "mcp": {
+  "official": null,
+  "community": [],
+  "evidence": [
+   {
+    "url": "https://docs.apify.com/",
+    "snippet": "MCP Discover and use Actors with AI agents and LLMs via Apify MCP server.",
+    "check": "exact"
+   },
+   {
+    "url": "https://docs.apify.com/platform/integrations",
+    "snippet": "Apify MCP server Expose Apify Actors and storages to any MCP-compatible AI client.",
+    "check": "exact"
+   }
+  ]
+ },
+ "buildability": {
+  "verdict": "ready",
+  "main_blocker": "none",
+  "rationale": "Self-serve free credentials available, documented REST API with OpenAPI spec, webhooks supported; Composio toolkit already published with 185 tools.",
+  "composio_existing_toolkit": "yes",
+  "composio_slug": "APIFY"
+ },
+ "overview_evidence": [
+  {
+   "url": "https://docs.apify.com/",
+   "snippet": "Apify is all about Actors—a new way to package your code to make it easy to share, integrate, and build upon."
+  },
+  {
+   "url": "https://docs.apify.com/",
+   "snippet": "Develop, run, and share web scraping and automation tools in the cloud."
+  }
+ ],
+ "confidence": 0.95,
+ "unknown_reasons": {
+  "auth": "",
+  "access": "",
+  "api_surface": "OpenAPI spec exact URL not provided in pages; only downloadable reference mentioned",
+  "mcp": "Official MCP server repository URL not provided; only documented as existing"
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 9,
+  "error": null,
+  "cost_usd": 0.064029,
+  "seconds": 79.3
+ }
+}

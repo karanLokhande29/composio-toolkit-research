@@ -1,0 +1,126 @@
+{
+ "id": 2,
+ "app": "HubSpot",
+ "category": "CRM and Sales",
+ "hint": "hubspot.com",
+ "one_liner": "HubSpot is a comprehensive cloud-based platform for managing customer relationships, marketing, sales, and customer service.",
+ "app_type": "saas",
+ "auth": {
+  "methods": [
+   "api_key",
+   "bearer_token",
+   "oauth2"
+  ],
+  "oauth_grant_types": [
+   "authorization_code"
+  ],
+  "notes": "OAuth 2.0 required for multi-account distribution; static bearer tokens for single-account private apps; API keys for specific developer features; client credentials for app-level webhooks management.",
+  "evidence": [
+   {
+    "url": "https://developers.hubspot.com/docs/api/intro-to-auth",
+    "snippet": "OAuth is required for multiple accounts, while static auth access tokens are used for installing in a single account at a time.",
+    "check": "exact"
+   },
+   {
+    "url": "https://developers.hubspot.com/docs/api/intro-to-auth",
+    "snippet": "This access token is provided using the Bearer HTTP authorization header.",
+    "check": "exact"
+   },
+   {
+    "url": "https://developers.hubspot.com/docs/api/webhooks",
+    "snippet": "All API endpoints require OAuth 2.0 authentication.",
+    "check": "exact"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/hubspot.md",
+    "snippet": "Auth: OAUTH2, API_KEY",
+    "check": "exact"
+   }
+  ]
+ },
+ "access": {
+  "status": "self_serve_free",
+  "dev_sandbox": true,
+  "notes": "Free developer account with private app support—developers can create and use bearer tokens without payment or approval for single-account testing. Multi-account public/marketplace apps require HubSpot app review.",
+  "evidence": [
+   {
+    "url": "https://docs.composio.dev/toolkits/hubspot.md",
+    "snippet": "Create the HubSpot app 1. Create a developer account in the [HubSpot developer portal](https://developers.hubspot.com/get-started). HubSpot public apps must belong to a developer account.",
+    "check": "repaired"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/hubspot.md",
+    "snippet": "HubSpot shows this warning because the default Composio-managed HubSpot OAuth app is still awaiting HubSpot approval.",
+    "check": "exact"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "rest"
+  ],
+  "breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "rate_limit_note": "Rate Limits mentioned as section topic but specific limits not documented in provided pages.",
+  "evidence": [
+   {
+    "url": "https://developers.hubspot.com/docs/api/overview",
+    "snippet": "All endpoints in this section follow the pattern: /api-name/2026-09/resource",
+    "check": "exact"
+   },
+   {
+    "url": "https://developers.hubspot.com/docs/api/overview",
+    "snippet": "For example, to retrieve all contacts: GET /crm/objects/2026-09/contacts",
+    "check": "exact"
+   },
+   {
+    "url": "https://developers.hubspot.com/docs/api/webhooks",
+    "snippet": "the webhooks subscription API. The webhooks journal API enables third-party integrators to subscribe to real-time events, retrieve historical event data, and manage snapshots of CRM objects,",
+    "check": "repaired"
+   },
+   {
+    "url": "https://developers.hubspot.com/docs/api/webhooks",
+    "snippet": "Webhooks journal and management APIs (BETA) Learn how to use the new webhooks journal and v4 management APIs.",
+    "check": "exact"
+   }
+  ]
+ },
+ "mcp": {
+  "official": null,
+  "community": [],
+  "evidence": []
+ },
+ "buildability": {
+  "verdict": "ready_with_caveats",
+  "main_blocker": "app_review",
+  "rationale": "Composio toolkit with 355 tools already exists and functional; self-serve free credentials available for testing; friction point is Composio-managed OAuth app awaiting HubSpot approval, but custom credentials provide working workaround.",
+  "composio_existing_toolkit": "yes",
+  "composio_slug": "HUBSPOT"
+ },
+ "overview_evidence": [
+  {
+   "url": "https://hubspot.com",
+   "snippet": "All of HubSpot's marketing, sales, and customer service software on one agentic platform."
+  },
+  {
+   "url": "https://developers.hubspot.com",
+   "snippet": "Create tomorrow's solutions today on HubSpot's Developer Platform."
+  }
+ ],
+ "confidence": 0.92,
+ "unknown_reasons": {
+  "auth": "",
+  "access": "",
+  "api_surface": "OpenAPI spec URL not mentioned; specific rate limit values not provided in pages.",
+  "mcp": "MCP server listed in navigation but no official URL/link provided in pages; cannot confirm production deployment details."
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 8,
+  "error": null,
+  "cost_usd": 0.07528800000000001,
+  "seconds": 98.6
+ }
+}

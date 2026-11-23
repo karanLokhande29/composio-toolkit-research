@@ -1,0 +1,126 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.092637,
+  "seconds": 123.6,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://supabase.com/docs/guides/auth",
+  "https://supabase.com/pricing",
+  "https://supabase.com/docs/guides/api",
+  "https://supabase.com/docs/reference/javascript/introduction",
+  "https://supabase.com/docs/reference/api/introduction",
+  "https://supabase.com/docs/guides/platform/going-into-prod",
+  "https://supabase.com/docs/guides/auth/rate-limits",
+  "https://supabase.com/docs/guides/database/webhooks"
+ ],
+ "output": {
+  "one_liner": "Supabase auto-generates an API directly from your database schema allowing you to connect to your database through a restful interface, directly from the browser.",
+  "app_type": "cloud_platform",
+  "auth": {
+   "methods": [
+    "api_key",
+    "oauth2",
+    "bearer_token"
+   ],
+   "oauth_grant_types": [],
+   "notes": "API key auth for Data REST API, Bearer token for Management API personal access tokens (PATs), OAuth2 for third-party applications",
+   "evidence": [
+    {
+     "url": "https://supabase.com/docs/guides/api",
+     "snippet": "provisioned behind an API gateway with key-auth enabled"
+    },
+    {
+     "url": "https://supabase.com/docs/reference/api/introduction",
+     "snippet": "All API requests require an access token to be included in the Authorization header"
+    },
+    {
+     "url": "https://supabase.com/docs/reference/api/introduction",
+     "snippet": "Personal access token (PAT): PATs are tokens with a custom expiry"
+    },
+    {
+     "url": "https://supabase.com/docs/reference/api/introduction",
+     "snippet": "OAuth2 allows your application to generate tokens on behalf of a Supabase user"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Free tier includes 2 active projects with full API access. Projects pause after 1 week inactivity. No approval or sales contact required.",
+   "evidence": [
+    {
+     "url": "https://supabase.com/pricing",
+     "snippet": "Free: Perfect for passion projects & simple websites"
+    },
+    {
+     "url": "https://supabase.com/pricing",
+     "snippet": "Free projects are paused after 1 week of inactivity"
+    },
+    {
+     "url": "https://supabase.com/docs/guides/api",
+     "snippet": "You can find the API Keys in the Settings > API Keys section"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Management API: 120 requests/minute per user/scope/endpoint. Auth endpoints: 30-1800 requests/hour by operation type with burst capacity.",
+   "evidence": [
+    {
+     "url": "https://supabase.com/docs/guides/api",
+     "snippet": "Supabase provides a RESTful API using PostgREST"
+    },
+    {
+     "url": "https://supabase.com/docs/guides/api",
+     "snippet": "The reflected API is designed to retain as much of Postgres' capability as possible"
+    },
+    {
+     "url": "https://supabase.com/docs/reference/javascript/introduction",
+     "snippet": "This reference documents every object and method available in Supabase"
+    },
+    {
+     "url": "https://supabase.com/docs/guides/database/webhooks",
+     "snippet": "Database Webhooks allow you to send real-time data from your database"
+    },
+    {
+     "url": "https://supabase.com/docs/reference/api/introduction",
+     "snippet": "Rate limits are applied to prevent abuse and ensure fair usage"
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": []
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Self-serve free credentials, documented REST API, comprehensive SDK with hundreds of methods across database/auth/storage/realtime, webhooks, and explicit rate-limit documentation enable immediate toolkit development.",
+   "composio_existing_toolkit": "no",
+   "composio_slug": "SUPABASE"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://supabase.com/docs/guides/api",
+    "snippet": "Supabase auto-generates an API directly from your database schema allowing you to connect to your database through a restful interface"
+   }
+  ],
+  "confidence": 0.88,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "GraphQL API listed in product navigation but detailed documentation not in provided pages; OpenAPI spec URL not provided (SDK method exists but no public spec URL given)",
+   "mcp": "No MCP server documentation found in provided Supabase pages"
+  }
+ }
+}

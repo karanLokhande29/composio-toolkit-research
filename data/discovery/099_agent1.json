@@ -1,0 +1,224 @@
+{
+ "id": 99,
+ "app": "YouTube Transcript",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://transcriptapi.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.transcriptapi.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.transcriptapi.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.transcriptapi.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://transcriptapi.com/pricing",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/kimtaeyoon83/mcp-server-youtube-transcript",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/jkawamoto/mcp-youtube-transcript",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/0xchamin/mcptube",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/youtube_transcript.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://transcriptapi.com/docs/mcp/chatgpt/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://transcriptapi.com/docs/mcp/claude/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://transcriptapi.com/docs/mcp/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://transcriptapi.com/docs/getting-started/python/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://transcriptapi.com/docs/getting-started/javascript/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://transcriptapi.com/docs/getting-started/curl/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://transcriptapi.com/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://transcriptapi.com/signup",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": true
+  },
+  {
+   "url": "https://transcriptapi.com/docs/api/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "kimtaeyoon83/mcp-server-youtube-transcript",
+   "url": "https://github.com/kimtaeyoon83/mcp-server-youtube-transcript",
+   "stars": 609,
+   "description": "This is an MCP server that allows you to directly download transcripts of YouTube videos."
+  },
+  {
+   "repo": "jkawamoto/mcp-youtube-transcript",
+   "url": "https://github.com/jkawamoto/mcp-youtube-transcript",
+   "stars": 499,
+   "description": "MCP server retrieving transcripts of YouTube videos"
+  },
+  {
+   "repo": "0xchamin/mcptube",
+   "url": "https://github.com/0xchamin/mcptube",
+   "stars": 166,
+   "description": "Transform YouTube videos into a compounding knowledge base with transcripts, vision analysis, and agentic search. Works as an MCP server for Claude, Copilot & m"
+  },
+  {
+   "repo": "egoist/fetch-mcp",
+   "url": "https://github.com/egoist/fetch-mcp",
+   "stars": 157,
+   "description": "An MCP server for fetching URLs / Youtube video transcript."
+  },
+  {
+   "repo": "guimatheus92/mcp-video-analyzer",
+   "url": "https://github.com/guimatheus92/mcp-video-analyzer",
+   "stars": 133,
+   "description": "MCP server that turns any video — YouTube, Instagram, TikTok, Loom, X, Vimeo, direct URLs, local files — into transcripts, key frames, OCR text, and metadata fo"
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "YouTube Transcript",
+    "slug": "YOUTUBE_TRANSCRIPT",
+    "tools": 9,
+    "auth": [
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/youtube_transcript.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "YouTube",
+    "slug": "YOUTUBE",
+    "tools": 69,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/youtube.md"
+   },
+   {
+    "name": "YouTube Transcript",
+    "slug": "YOUTUBE_TRANSCRIPT",
+    "tools": 9,
+    "auth": [
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/youtube_transcript.md"
+   }
+  ]
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.003226,
+  "seconds": 7.0,
+  "turns": 1,
+  "mode": "knowledge+crawl"
+ }
+}

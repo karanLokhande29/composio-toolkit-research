@@ -1,0 +1,47 @@
+{
+ "fields": [
+  "auth.methods"
+ ],
+ "pages": [
+  "https://api.slack.com/authentication/oauth-v2",
+  "https://api.slack.com/docs/oauth",
+  "https://docs.composio.dev/toolkits/slack.md",
+  "https://api.slack.com/developer-program",
+  "https://api.slack.com/docs/developer-sandbox",
+  "https://api.slack.com/methods",
+  "https://slack.com/help/articles/48855576908307-Guide-to-Model-Context-Protocol-in-Slack"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.087684,
+  "seconds": 7.9,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "auth.methods",
+    "value": [
+     "oauth2",
+     "bearer_token"
+    ],
+    "evidence": [
+     {
+      "url": "https://api.slack.com/authentication/oauth-v2",
+      "snippet": "Slack apps are installed with a v2 OAuth 2.0 flow."
+     },
+     {
+      "url": "https://api.slack.com/docs/oauth",
+      "snippet": "Access tokens for all apps are also known as bearer tokens."
+     },
+     {
+      "url": "https://api.slack.com/docs/oauth",
+      "snippet": "is by presenting them in a request's\nAuthorization\nHTTP header:\nGET /api/conversations.list?limit=50\nAuthorization: Bearer xoxb-1234-abcdefgh"
+     }
+    ],
+    "reason": "Slack apps install via OAuth2, but the resulting access tokens are static bearer tokens sent in the Authorization header, so both methods apply."
+   }
+  ]
+ }
+}

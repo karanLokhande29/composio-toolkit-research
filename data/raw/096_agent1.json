@@ -1,0 +1,109 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.098982,
+  "seconds": 107.0,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://docs.composio.dev/toolkits/devin_mcp.md",
+  "https://docs.devin.ai",
+  "https://docs.devin.ai/enterprise/getting-started/get-started",
+  "https://docs.devin.ai/work-with-devin/browser-auth",
+  "https://docs.devin.ai/work-with-devin/mcp",
+  "https://docs.devin.ai/work-with-devin/deepwiki-mcp",
+  "https://docs.devin.ai/work-with-devin/devin-mcp",
+  "https://docs.devin.ai/product-guides/plugin-mcp-setups",
+  "https://docs.devin.ai/api-reference/overview",
+  "https://docs.devin.ai/product-guides/oidc",
+  "https://github.com/TabularisDB/tabularis",
+  "https://github.com/jhacksman/OpenSCAD-MCP-Server"
+ ],
+ "output": {
+  "one_liner": "Devin is an AI-powered development assistant that automates software engineering tasks through intelligent sessions, automations, and integrations.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "bearer_token"
+   ],
+   "oauth_grant_types": [],
+   "notes": "Static API key (service user key or personal access token) sent as Bearer token in Authorization header",
+   "evidence": [
+    {
+     "url": "https://docs.devin.ai/work-with-devin/devin-mcp",
+     "snippet": "To use the Devin MCP server, you need a Devin API key"
+    },
+    {
+     "url": "https://docs.devin.ai/work-with-devin/devin-mcp",
+     "snippet": "\"Authorization\": \"Bearer <API_KEY>\""
+    }
+   ]
+  },
+  "access": {
+   "status": "unknown",
+   "dev_sandbox": null,
+   "notes": "Pages state Individual and Teams plans available at app.devin.ai but do not specify free tier, trial period, or if payment is required",
+   "evidence": [
+    {
+     "url": "https://docs.devin.ai",
+     "snippet": "You can find Devin plans at app.devin.ai. Individual and Teams plans are available."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Rate limiting enforced (429 Too Many Requests) but specific rate limits not detailed",
+   "evidence": [
+    {
+     "url": "https://docs.devin.ai/api-reference/overview",
+     "snippet": "Learn how to programmatically interact with Devin using our REST APIs."
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/devin_mcp.md",
+     "snippet": "Automations run Devin in response to events GitHub activity Slack messages Linear updates schedules incoming webhooks"
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://mcp.devin.ai/",
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://docs.devin.ai/work-with-devin/devin-mcp",
+     "snippet": "The Devin MCP server is an authenticated service that provides access to both public and private repositories"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Official MCP server and comprehensive REST API fully documented with straightforward authentication; Composio toolkit already exists.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "DEVIN_MCP"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://docs.devin.ai",
+    "snippet": "Watch Devin browse through documentation test web applications it builds download upload information and more"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/devin_mcp.md",
+    "snippet": "Devin MCP Category model context protocol Auth API_KEY Tools 23 Slug DEVIN_MCP"
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "Pages indicate plans available for signup but do not state whether access is free trial-based or paid-only",
+   "api_surface": "",
+   "mcp": ""
+  }
+ }
+}

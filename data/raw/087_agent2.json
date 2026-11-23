@@ -1,0 +1,122 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.044869,
+  "seconds": 43.2,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://docs.composio.dev/toolkits/xero.md",
+  "https://developer.xero.com",
+  "https://developer.xero.com/faq/pricing-and-policy-updates",
+  "https://www.xero.com/signup/developers/",
+  "https://devblog.xero.com/xero-developer-growth-program-open-for-applications-apply-now-7c3dd8f39ea2",
+  "https://developer.xero.com/developer-events",
+  "https://developer.xero.com/xero-developer-platform-terms-conditions",
+  "https://github.com/XeroAPI/xero-mcp-server",
+  "https://github.com/XeroAPI/xero-agent-toolkit",
+  "https://github.com/john-zhang-dev/xero-mcp"
+ ],
+ "output": {
+  "one_liner": "Xero is a cloud-based accounting platform providing APIs for integrating with accounting workflows and financial operations.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "bearer_token"
+   ],
+   "oauth_grant_types": [],
+   "notes": "OAuth2 is the primary authentication method. Custom Connections use OAuth2. Bearer tokens available for multi-account scenarios.",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/xero.md",
+     "snippet": "Auth: OAUTH2"
+    },
+    {
+     "url": "https://github.com/XeroAPI/xero-mcp-server",
+     "snippet": "There are 2 modes of authentication supported in the Xero MCP server: 1. Custom Connections, Xero OAuth2 authentication, 2. Bearer Token"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Free developer signup, no credit card required. Usage-based pricing model in effect from 2026-03-02 for multi-connection apps, but single-client bespoke integrations and custom connections remain exempt.",
+   "evidence": [
+    {
+     "url": "https://www.xero.com/signup/developers/",
+     "snippet": "Create your Xero account to get up and running with Xero API. No credit card required"
+    },
+    {
+     "url": "https://developer.xero.com",
+     "snippet": "Sign up for a free account to build on the Xero platform."
+    },
+    {
+     "url": "https://developer.xero.com/faq/pricing-and-policy-updates",
+     "snippet": "Bespoke Integrations for Accountant and Bookkeepers built for your own practice or a single client are exempt"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Not documented in provided pages",
+   "evidence": [
+    {
+     "url": "https://developer.xero.com",
+     "snippet": "OAuth 2, API reference, Webhooks"
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/xero.md",
+     "snippet": "Tools: 109"
+    },
+    {
+     "url": "https://github.com/XeroAPI/xero-mcp-server",
+     "snippet": "Xero OpenAPI Specs"
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://github.com/XeroAPI/xero-mcp-server",
+   "community": [
+    "https://github.com/john-zhang-dev/xero-mcp"
+   ],
+   "evidence": [
+    {
+     "url": "https://github.com/XeroAPI/xero-mcp-server",
+     "snippet": "An MCP server that integrates with the MCP protocol. Xero OAuth2 authentication with custom connections"
+    },
+    {
+     "url": "https://github.com/john-zhang-dev/xero-mcp",
+     "snippet": "A Model Context Protocol server allows Clients to interact with Xero"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Composio toolkit with 109 tools already exists, self-serve free credentials available, official MCP server published, and documented API.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "XERO"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://docs.composio.dev/toolkits/xero.md",
+    "snippet": "Category: accounting, Auth: OAUTH2, Tools: 109"
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "Rate limit policy not stated in provided pages; OpenAPI spec URL exists but not linked",
+   "mcp": ""
+  }
+ }
+}

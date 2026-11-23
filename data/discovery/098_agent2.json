@@ -1,0 +1,110 @@
+{
+ "id": 98,
+ "app": "Mermaid CLI",
+ "tag": "agent2",
+ "urls": [
+  {
+   "url": "https://github.com/mermaid-js/mermaid-cli",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/mermaid-js/mermaid-cli#readme",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/mermaid-js/mermaid-cli/blob/master/README.md",
+   "purpose": "reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/hudsonkit/arc",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/mozi-app/mermAId",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/andrewginns/mermaid-mcp-server",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/mermaid_chart_mcp.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "hudsonkit/arc",
+   "url": "https://github.com/hudsonkit/arc",
+   "stars": 17,
+   "description": "Architecture diagrams as code — typed JSON schema, React renderer, visual editor, Mermaid import, ASCII/SVG/PNG export, CLI + MCP server"
+  },
+  {
+   "repo": "mozi-app/mermAId",
+   "url": "https://github.com/mozi-app/mermAId",
+   "stars": 13,
+   "description": "AI-agent-focused Mermaid editor for planning, with built-in MCP server and CLI tool"
+  },
+  {
+   "repo": "andrewginns/mermaid-mcp-server",
+   "url": "https://github.com/andrewginns/mermaid-mcp-server",
+   "stars": 11,
+   "description": "Python MCP Server abstracting the official mermaid-cli for ease of use"
+  },
+  {
+   "repo": "JSiapoDEV/md2pdf",
+   "url": "https://github.com/JSiapoDEV/md2pdf",
+   "stars": 5,
+   "description": "Free, open-source Markdown to PDF, HTML and image converter that runs in your browser: 11 styles, Mermaid, table of contents, templates. Share documents as end-"
+  },
+  {
+   "repo": "elchacal801/countermap",
+   "url": "https://github.com/elchacal801/countermap",
+   "stars": 4,
+   "description": "Cross-framework MCP server and CLI for MITRE ATT&CK®, D3FEND, ATLAS and F3, with provenance on every link. Renders D3FEND CAD, Attack Flow, Navigator and Mermai"
+  }
+ ],
+ "composio": {
+  "exact": [],
+  "candidates": [
+   {
+    "name": "Mermaid Chart MCP",
+    "slug": "MERMAID_CHART_MCP",
+    "tools": 1,
+    "auth": [
+     "NO_AUTH"
+    ],
+    "url": "https://docs.composio.dev/toolkits/mermaid_chart_mcp.md"
+   }
+  ]
+ },
+ "search_meta": {}
+}

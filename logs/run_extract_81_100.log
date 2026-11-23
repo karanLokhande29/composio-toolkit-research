@@ -1,0 +1,23 @@
+IST now 16:28 | deadline 23:00 | 6h31m left
+extract: 20 apps to do
+  [ 84] Paygent Connect              auth=unknown            access=unknown            verdict=ready_with_caveats pages=0 7.7s $0.005 
+  [ 81] Stripe                       auth=api_key,oauth2     access=self_serve_free    verdict=ready              pages=12 47.3s $0.056 
+  [ 83] Binance                      auth=api_key            access=self_serve_free    verdict=ready              pages=3 67.5s $0.051 
+  [ 87] Xero                         auth=oauth2             access=self_serve_free    verdict=ready              pages=10 73.9s $0.061 
+  [ 85] iPayX                        auth=bearer_token       access=self_serve_free    verdict=ready_with_caveats pages=3 85.8s $0.061 
+  [ 86] QuickBooks                   auth=oauth2             access=self_serve_free    verdict=ready              pages=4 94.8s $0.063 
+  [ 88] Brex                         auth=bearer_token,oauth2 access=admin_approval     verdict=ready              pages=11 76.8s $0.065 
+  [ 82] Plaid                        auth=api_key            access=self_serve_free    verdict=ready              pages=12 130.1s $0.103 
+  [ 89] Ramp                         auth=oauth2             access=admin_approval     verdict=ready_with_caveats pages=5 93.0s $0.072 
+  [ 90] PitchBook                    auth=api_key            access=contact_sales      verdict=ready_with_caveats pages=4 81.8s $0.063 
+  [ 91] NotebookLM                   auth=oauth2             access=paid_plan_required verdict=ready              pages=12 91.9s $0.091 
+  [ 92] Otter AI                     auth=bearer_token,oauth2 access=paid_plan_required verdict=ready_with_caveats pages=7 85.5s $0.066 
+  [ 94] Consensus                    auth=api_key,oauth2     access=self_serve_free    verdict=ready              pages=10 64.5s $0.063 
+  [ 95] Reducto                      auth=bearer_token       access=self_serve_free    verdict=ready              pages=12 35.7s $0.045 
+  [ 93] Fathom                       auth=api_key,oauth2     access=self_serve_free    verdict=ready              pages=6 87.6s $0.076 
+  [ 97] higgsfield                   auth=api_key            access=unknown            verdict=ready              pages=8 49.1s $0.043 
+  [ 98] Mermaid CLI                  auth=unknown            access=self_serve_free    verdict=ready_with_caveats pages=6 89.8s $0.070 
+  [ 96] Devin                        auth=bearer_token       access=unknown            verdict=ready              pages=12 107.0s $0.099 
+  [100] Grain                        auth=bearer_token,oauth2 access=self_serve_free    verdict=ready              pages=11 106.7s $0.093 
+  [ 99] YouTube Transcript           auth=bearer_token,oauth2 access=self_serve_trial   verdict=ready_with_caveats pages=12 129.1s $0.100 
+done in 324s | IST now 16:34 | deadline 23:00 | 6h25m left

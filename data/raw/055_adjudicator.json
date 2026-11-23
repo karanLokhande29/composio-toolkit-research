@@ -1,0 +1,39 @@
+{
+ "fields": [
+  "mcp.official"
+ ],
+ "pages": [
+  "https://docs.apify.com/mcp",
+  "https://docs.apify.com/",
+  "https://docs.apify.com/platform/integrations",
+  "https://docs.apify.com/api/v2",
+  "https://mcp.apify.com",
+  "https://mcp.apify.com/"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.0687,
+  "seconds": 6.5,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "mcp.official",
+    "value": "https://mcp.apify.com",
+    "evidence": [
+     {
+      "url": "https://docs.apify.com/mcp",
+      "snippet": "The Apify's MCP server ( mcp.apify.com ) allows AI applications and agents to interact with the Apify platform"
+     },
+     {
+      "url": "https://mcp.apify.com",
+      "snippet": "This is the MCP server. To use it, you need to pass your Apify API token."
+     }
+    ],
+    "reason": "Apify's own documentation and the mcp.apify.com site itself confirm this is the vendor's official MCP server."
+   }
+  ]
+ }
+}

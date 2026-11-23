@@ -1,0 +1,36 @@
+{
+ "fields": [
+  "mcp.official"
+ ],
+ "pages": [
+  "https://developers.hubspot.com/ai-tools/mcp",
+  "https://github.com/LokiMCPUniverse/hubspot-mcp-server",
+  "https://hubspot.com/pricing",
+  "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+  "https://knowledge.hubspot.com/integrations/how-do-i-get-my-hubspot-api-key",
+  "https://developers.hubspot.com/docs/api/usage-details",
+  "https://developers.hubspot.com/docs/api-reference/latest/overview"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.079326,
+  "seconds": 7.1,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "mcp.official",
+    "value": "https://developers.hubspot.com/ai-tools/mcp",
+    "evidence": [
+     {
+      "url": "https://developers.hubspot.com/ai-tools/mcp",
+      "snippet": "HubSpot offers two distinct MCP (Model Context Protocol) servers — one for connecting any MCP-compatible AI tool or agent to your CRM"
+     }
+    ],
+    "reason": "HubSpot's own developer site publishes and documents its official remote and local MCP servers at this URL, confirming agent1's claim."
+   }
+  ]
+ }
+}

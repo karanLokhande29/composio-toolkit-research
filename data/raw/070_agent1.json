@@ -1,0 +1,116 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.076291,
+  "seconds": 88.9,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://docs.sentry.io/api/",
+  "https://docs.composio.dev/toolkits/sentry.md",
+  "https://docs.sentry.io/api/rate-limits/",
+  "https://docs.sentry.io/api/events/",
+  "https://docs.sentry.io/api/projects/",
+  "https://docs.sentry.io/api/organizations/",
+  "https://docs.sentry.io/api/teams/",
+  "https://docs.sentry.io/api/releases/",
+  "https://docs.sentry.io/api/users/",
+  "https://docs.sentry.io/api/auth/",
+  "https://docs.sentry.io/api/guides/create-auth-token/",
+  "https://docs.sentry.io/api/organizations/create-an-org-auth-token/"
+ ],
+ "output": {
+  "one_liner": "Error tracking and monitoring platform that helps developers identify, track and fix production issues",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "bearer_token"
+   ],
+   "oauth_grant_types": [
+    "authorization_code",
+    "device_code"
+   ],
+   "notes": "OAuth2 with authorization code and device authorization flows. Bearer token authentication for personal tokens, org auth tokens, and OAuth access tokens.",
+   "evidence": [
+    {
+     "url": "https://docs.sentry.io/api/auth/",
+     "snippet": "OAuth2 with the authorization code grant type allows users to authorize"
+    },
+    {
+     "url": "https://docs.sentry.io/api/auth/",
+     "snippet": "Authentication tokens are passed using an auth header"
+    },
+    {
+     "url": "https://docs.sentry.io/api/auth/",
+     "snippet": "Device Authorization Flow enables applications on devices without a browser"
+    }
+   ]
+  },
+  "access": {
+   "status": "unknown",
+   "dev_sandbox": true,
+   "notes": "Pages do not explicitly state API access tier requirements. Sandbox environment referenced in documentation. Composio-managed OAuth availability and 212-tool toolkit suggest self-serve access, but tier confirmation not provided.",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/sentry.md",
+     "snippet": "Composio-managed OAuth available? Yes"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Per-endpoint rate limits with per-second and concurrent request limits, tracked via response headers.",
+   "evidence": [
+    {
+     "url": "https://docs.sentry.io/api/",
+     "snippet": "The Sentry web API is used to access the Sentry platform programmatically"
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/sentry.md",
+     "snippet": "Tools: 212"
+    },
+    {
+     "url": "https://docs.sentry.io/api/rate-limits/",
+     "snippet": "We recommend using our webhooks if possible"
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": []
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Self-serve OAuth2 authentication, well-documented REST API with 200+ endpoints across multiple resources, webhooks support, and existing Composio toolkit with 212 tools.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "SENTRY"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://docs.sentry.io/api/",
+    "snippet": "The Sentry web API is used to access the Sentry platform programmatically"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/sentry.md",
+    "snippet": "Composio-managed OAuth available? Yes"
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "Documentation pages do not explicitly state API access tier requirements or pricing constraints",
+   "api_surface": "",
+   "mcp": "MCP server availability not mentioned in provided documentation pages"
+  }
+ }
+}

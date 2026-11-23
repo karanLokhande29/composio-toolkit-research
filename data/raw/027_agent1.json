@@ -1,0 +1,139 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.070007,
+  "seconds": 113.3,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://core.telegram.org/api/auth",
+  "https://core.telegram.org/bots/tutorial",
+  "https://core.telegram.org/api/obtaining_api_id",
+  "https://core.telegram.org/bots/api",
+  "https://core.telegram.org/bots",
+  "https://core.telegram.org/bots/faq",
+  "https://core.telegram.org/bots/webhooks",
+  "https://core.telegram.org/schema",
+  "https://docs.composio.dev/toolkits/telegram.md",
+  "https://github.com/mcp-telegram",
+  "https://core.telegram.org",
+  "https://core.telegram.org/api/url-authorization"
+ ],
+ "output": {
+  "one_liner": "Telegram is a cloud-based messaging application with APIs for building custom clients and bots.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "api_key"
+   ],
+   "oauth_grant_types": [],
+   "notes": "Bot API uses unique authentication tokens obtained from @BotFather. User API uses api_id and api_hash parameters. OAuth is not supported for bot authentication.",
+   "evidence": [
+    {
+     "url": "https://core.telegram.org/bots/tutorial",
+     "snippet": "Each bot has a unique token which can also be revoked at any time via @BotFather"
+    },
+    {
+     "url": "https://core.telegram.org/bots/api",
+     "snippet": "Each bot is given a unique authentication token when it is created"
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/telegram.md",
+     "snippet": "Telegram doesn't support OAuth. Composio connects to a Telegram bot using the bot token from BotFather."
+    },
+    {
+     "url": "https://core.telegram.org/api/obtaining_api_id",
+     "snippet": "You will get basic addresses as well as the api_id and api_hash parameters required for user authorization."
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": null,
+   "notes": "Bots can be registered free via @BotFather. User API credentials available through self-service registration at my.telegram.org. Accounts may be monitored for API abuse.",
+   "evidence": [
+    {
+     "url": "https://core.telegram.org/api/obtaining_api_id",
+     "snippet": "We welcome all developers to use our API and source code to create Telegram-like messaging applications on our platform free of charge."
+    },
+    {
+     "url": "https://core.telegram.org/bots",
+     "snippet": "Bots are free for both users and developers."
+    },
+    {
+     "url": "https://core.telegram.org",
+     "snippet": "You are welcome to use both APIs free of charge."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Bots limited to ~30 messages per second for broadcasts unless paid broadcasts enabled; 0.1 Telegram Stars per message beyond free limit.",
+   "evidence": [
+    {
+     "url": "https://core.telegram.org/bots/api",
+     "snippet": "If you're using webhooks, you can perform a request to the Bot API while sending an answer to the webhook."
+    },
+    {
+     "url": "https://core.telegram.org/bots/webhooks",
+     "snippet": "There are some advantages of using a webhook over getUpdates."
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/telegram.md",
+     "snippet": "What the bot can do depends on which chats, groups, and channels you add it to, and on the admin rights you give it there."
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [
+    "https://github.com/mcp-telegram"
+   ],
+   "evidence": [
+    {
+     "url": "https://github.com/mcp-telegram",
+     "snippet": "Connect your personal Telegram account to Claude, ChatGPT, Cursor and any MCP client. 180+ tools"
+    },
+    {
+     "url": "https://github.com/mcp-telegram",
+     "snippet": "mcp-telegram is an independent project and is not affiliated with Telegram."
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Self-serve free API credentials via @BotFather, well-documented REST API with broad endpoint coverage, webhooks supported, and existing Composio toolkit with 18 tools demonstrates full buildability.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "TELEGRAM"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://core.telegram.org/bots",
+    "snippet": "Bots are free for both users and developers."
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/telegram.md",
+    "snippet": "Composio connects to a Telegram bot using the bot token from BotFather. The connection acts as the bot."
+   },
+   {
+    "url": "https://core.telegram.org/api/obtaining_api_id",
+    "snippet": "We welcome all developers to use our API and source code to create Telegram-like messaging applications on our platform free of charge."
+   }
+  ],
+  "confidence": 0.98,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  }
+ }
+}

@@ -1,0 +1,134 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.082841,
+  "seconds": 98.9,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://developers.klaviyo.com/en/docs/authenticate_",
+  "https://www.klaviyo.com/pricing",
+  "https://developers.klaviyo.com/en/reference/api_overview",
+  "https://developers.klaviyo.com/en/docs",
+  "https://developers.klaviyo.com/en/docs/rate_limits_and_error_handling",
+  "https://docs.composio.dev/toolkits/klaviyo.md",
+  "https://developers.klaviyo.com",
+  "https://github.com/CosmoBlk/email-design"
+ ],
+ "output": {
+  "one_liner": "Klaviyo is a B2C CRM and marketing automation platform for email, SMS, social campaigns, and customer data management.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "api_key",
+    "oauth2"
+   ],
+   "oauth_grant_types": [],
+   "notes": "Private API keys sent as 'Authorization: Klaviyo-API-Key' header; OAuth recommended for tech partners; public keys as query parameters for client-side APIs",
+   "evidence": [
+    {
+     "url": "https://developers.klaviyo.com/en/docs/authenticate_",
+     "snippet": "Klaviyo provides 3 methods of authentication including private key authentication and OAuth and public key authentication"
+    },
+    {
+     "url": "https://developers.klaviyo.com/en/reference/api_overview",
+     "snippet": "Private key authentication for /api endpoints is performed by setting the following request header: Authorization: Klaviyo-API-Key"
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/klaviyo.md",
+     "snippet": "Auth: API_KEY, OAUTH2"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Free plan available with up to 250 active profiles and 500 emails/month. Test/sandbox accounts can be created linked to production account.",
+   "evidence": [
+    {
+     "url": "https://www.klaviyo.com/pricing",
+     "snippet": "Up to 250 active profiles and 500 emails per month Start for free"
+    },
+    {
+     "url": "https://developers.klaviyo.com",
+     "snippet": "Learn how to create a sandbox account that is linked to your production account login"
+    },
+    {
+     "url": "https://developers.klaviyo.com/en/docs/authenticate_",
+     "snippet": "To manage API keys, you must have an Owner, Admin, or Manager role on your Klaviyo account"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Per-account rate limiting with 1-second burst and 1-minute steady windows; XS tier: 350/s burst, 3500/m steady; OAuth apps receive per-instance quotas",
+   "evidence": [
+    {
+     "url": "https://developers.klaviyo.com/en/reference/api_overview",
+     "snippet": "Every endpoint in the Klaviyo REST API, with its authentication, parameters, request and response bodies"
+    },
+    {
+     "url": "https://developers.klaviyo.com/en/reference/api_overview",
+     "snippet": "View the latest OpenAPI spec here. The machine-readable definition this page is generated from"
+    },
+    {
+     "url": "https://developers.klaviyo.com/en/docs/rate_limits_and_error_handling",
+     "snippet": "All new API endpoints are rate limited on a per-account basis, and use a fixed-window rate limiting algorithm with two distinct windows"
+    },
+    {
+     "url": "https://developers.klaviyo.com/en/docs",
+     "snippet": "Flow webhooks How to add a webhook action to a flow Understanding webhook status codes System webhooks"
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://mcp.klaviyo.com/mcp",
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://developers.klaviyo.com",
+     "snippet": "Klaviyo's MCP server lets an agent work with the data in a Klaviyo account. Add the remote server at https://mcp.klaviyo.com/mcp"
+    },
+    {
+     "url": "https://developers.klaviyo.com/en/docs",
+     "snippet": "Klaviyo MCP server Get AI assistance with your Klaviyo data using Klaviyo's MCP server"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Public REST API with OpenAPI spec, documented webhooks, self-serve free credentials, official MCP server, and 233 Composio tools already built.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "KLAVIYO"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://www.klaviyo.com/pricing",
+    "snippet": "Up to 250 active profiles and 500 emails per month Start for free"
+   },
+   {
+    "url": "https://developers.klaviyo.com/en/reference/api_overview",
+    "snippet": "Every endpoint in the Klaviyo REST API, with its authentication, parameters, request and response bodies"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/klaviyo.md",
+    "snippet": "Category: marketing automation Auth: API_KEY, OAUTH2 Tools: 233"
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  }
+ }
+}

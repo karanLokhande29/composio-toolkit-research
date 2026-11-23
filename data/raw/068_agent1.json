@@ -1,0 +1,112 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.10031100000000001,
+  "seconds": 128.2,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://mongodb.com/docs/atlas/api/",
+  "https://docs.composio.dev/toolkits/mongodb.md",
+  "https://docs.composio.dev/toolkits/mongodb_mcp.md",
+  "https://mongodb.com/docs/atlas/configure-api-access/",
+  "https://mongodb.com/docs/atlas/app-services/",
+  "https://mongodb.com/docs/atlas/app-services/authentication/",
+  "https://www.mongodb.com/company/partners",
+  "https://www.mongodb.com/pricing",
+  "https://www.mongodb.com/docs/atlas/cli/current/atlas-cli-getting-started/",
+  "https://www.mongodb.com/docs/atlas/access/manage-org-users/",
+  "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+  "https://www.mongodb.com/docs/atlas/access/orgs-create-view-edit-delete/"
+ ],
+ "output": {
+  "one_liner": "MongoDB Atlas is a fully managed cloud database platform providing REST APIs for programmatic administration of clusters, projects, users, and infrastructure resources.",
+  "app_type": "cloud_platform",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "api_key"
+   ],
+   "oauth_grant_types": [
+    "client_credentials"
+   ],
+   "notes": "OAuth 2.0 Service Accounts (recommended) use Client Credentials flow; API keys are legacy using HTTP Digest Authentication protocol.",
+   "evidence": [
+    {
+     "url": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+     "snippet": "Service account access tokens (OAuth 2.0), API keys (HTTP Digest Authentication)"
+    },
+    {
+     "url": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+     "snippet": "Service accounts are the recommended method to manage authentication to the Atlas Administration API"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Free tier permanently available; anyone can sign up and create free Atlas clusters with programmatic API access.",
+   "evidence": [
+    {
+     "url": "https://www.mongodb.com/docs/atlas/cli/current/atlas-cli-getting-started/",
+     "snippet": "first free database in Atlas with default settings? It's free forever!"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": null,
+   "rate_limit_note": "",
+   "evidence": [
+    {
+     "url": "https://mongodb.com/docs/atlas/configure-api-access/",
+     "snippet": "The Atlas Administration API follows the principles of the REST architectural style"
+    },
+    {
+     "url": "https://mongodb.com/docs/atlas/api/",
+     "snippet": "Atlas Administration API resources add, edit, or delete administrative objects within Atlas, including projects, users, and clusters"
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://mongodb.com/docs/atlas/configure-api-access/",
+     "snippet": "Model Context Protocol (MCP) clients. If your organization requires all Atlas Administration API traffic"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Composio already has MongoDB toolkit with 496 tools; REST API fully documented; OAuth 2.0 and API key auth supported; free tier available for self-serve access.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "MONGODB"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://mongodb.com/docs/atlas/api/",
+    "snippet": "Atlas Administration API - Programmatically perform administrative tasks on your Atlas cluster"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/mongodb.md",
+    "snippet": "Administer MongoDB Atlas organizations, projects, clusters, users, networking, backups, and related cloud resources"
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": "MongoDB mentions supporting MCP clients but official MCP server URL not provided in pages; Composio MongoDB MCP toolkit exists but specific repository URL not documented"
+  }
+ }
+}

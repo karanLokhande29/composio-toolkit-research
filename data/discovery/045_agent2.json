@@ -1,0 +1,276 @@
+{
+ "id": 45,
+ "app": "Magento (Adobe Commerce)",
+ "tag": "agent2",
+ "urls": [
+  {
+   "url": "https://developer.adobe.com/commerce",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.adobe.com/commerce/webapi/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.adobe.com/commerce/webapi/get-started/",
+   "purpose": "getting_started",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.adobe.com/commerce/webapi/rest/authentication/gs-authentication/",
+   "purpose": "auth",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.adobe.com/commerce/partners/",
+   "purpose": "partner_programme",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.adobe.com/commerce/webapi/rest/",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.adobe.com/commerce/webapi/graphql/",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.adobe.com/commerce/webapi/graphql/usage/rate-limiting/",
+   "purpose": "rate_limits",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.adobe.com/commerce/extensibility/webhooks/",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.adobe.com/commerce/extensibility/webhooks/introduction/",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.adobe.com/commerce/extensibility/mcp-server/",
+   "purpose": "mcp_server",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.adobe.com/commerce/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/MagePsycho/awesome-magento-ai",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/magendooro/magento-claude-skills",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/magendooro/magemcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://solutionpartners.adobe.com/solution-partners/training_and_certification/certification.html",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-oauth",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-token",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.adobe.com/commerce/webapi/rest/authentication/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.adobe.com/commerce/webapi/rest/authentication/server-to-server",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-session",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.adobe.com/commerce/php/tutorials/backend/create-access-control-list-rule",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.adobe.com/commerce/webapi/rest/authentication/user",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.adobe.com/commerce/docs",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.adobe.com/commerce/extensibility/developer-agent/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://experienceleague.adobe.com/developer/commerce/storefront/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://experienceleague.adobe.com/developer/commerce/storefront/playgrounds/commerce-services/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://learning.adobe.com/learning-path.html?products=Adobe%20Commerce%20(Magento)",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "MagePsycho/awesome-magento-ai",
+   "url": "https://github.com/MagePsycho/awesome-magento-ai",
+   "stars": 18,
+   "description": "Curated list of AI tools for Magento 2, Adobe Commerce & Mage-OS — agent skills, MCP servers, modules, CLIs, starter kits"
+  },
+  {
+   "repo": "magendooro/magento-claude-skills",
+   "url": "https://github.com/magendooro/magento-claude-skills",
+   "stars": 14,
+   "description": "Claude Code skills for Magento 2 / Adobe Commerce — interact with your store via REST and GraphQL directly from Claude, no MCP server needed"
+  },
+  {
+   "repo": "magendooro/magemcp",
+   "url": "https://github.com/magendooro/magemcp",
+   "stars": 9,
+   "description": "MageMCP — MCP server connecting AI agents to Magento 2 / Adobe Commerce. Exposes catalog, orders, customers, and inventory as MCP tools via REST and GraphQL API"
+  },
+  {
+   "repo": "thomastx05/magento-mcp",
+   "url": "https://github.com/thomastx05/magento-mcp",
+   "stars": 2,
+   "description": "MCP (Model Context Protocol) server for Adobe Commerce / Magento 2 administration. 30+ tools for catalog, promotions, CMS, diagnostics, and more."
+  },
+  {
+   "repo": "DavidBelicza/Magento-MCP-Server",
+   "url": "https://github.com/DavidBelicza/Magento-MCP-Server",
+   "stars": 2,
+   "description": "🧠 MCP server that gives AI agents symbolic, GraphRAG-style reasoning over a Magento, Adobe Commerce, MageOS and PHP codebase, plus semantic search over its admi"
+  }
+ ],
+ "composio": {
+  "exact": [],
+  "candidates": []
+ },
+ "search_meta": {}
+}

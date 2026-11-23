@@ -1,0 +1,102 @@
+{
+ "id": 89,
+ "app": "Ramp",
+ "category": "Finance and Fintech",
+ "hint": "docs.ramp.com",
+ "one_liner": "Ramp is an accounting and expense management platform for managing corporate cards, bills, purchase orders, and spending.",
+ "app_type": "saas",
+ "auth": {
+  "methods": [
+   "oauth2"
+  ],
+  "oauth_grant_types": [
+   "authorization_code",
+   "client_credentials",
+   "refresh_token"
+  ],
+  "notes": "OAuth2 is the sole auth scheme. All three grant types are required; without refresh_token grant, connections become inactive when access token expires.",
+  "evidence": [
+   {
+    "url": "https://docs.composio.dev/toolkits/ramp.md",
+    "snippet": "turn on Authorization code, Client credentials, and Refresh token. Without the refresh token grant, connections stop working when the access token expires.",
+    "check": "exact"
+   }
+  ]
+ },
+ "access": {
+  "status": "unknown",
+  "dev_sandbox": true,
+  "notes": "Pages reference demo.ramp.com environment and walk through OAuth app registration but do not state whether free developer accounts or unrestricted demo access exist without payment or approval.",
+  "evidence": [
+   {
+    "url": "https://docs.composio.dev/toolkits/ramp.md",
+    "snippet": "If you registered the app on a Ramp demo account (your browser shows `demo.ramp.com`), use the `demo-api.ramp.com` and `demo.ramp.com` hosts instead.",
+    "check": "repaired"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "rest"
+  ],
+  "breadth": "broad",
+  "openapi_spec_url": "https://docs.ramp.com/openapi/developer-api.json",
+  "webhooks": null,
+  "rate_limit_note": "",
+  "evidence": [
+   {
+    "url": "https://docs.ramp.com/developer-api/v1/overview/authentication",
+    "snippet": "/llms-api.txt (API reference), /llms-full.txt (combined docs), or /openapi/developer-api.json (OpenAPI spec).",
+    "check": "repaired"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/ramp.md",
+    "snippet": "read and write scopes across accounting, bills, cards, departments, limits, locations, memos, purchase orders, receipts, spend programs, users, and vendors, plus read access to transactions, statements, and other",
+    "check": "repaired"
+   }
+  ]
+ },
+ "mcp": {
+  "official": "https://github.com/ramp-public/ramp_mcp",
+  "community": [],
+  "evidence": [
+   {
+    "url": "https://github.com/ramp-public/ramp_mcp",
+    "snippet": "A Model Context Protocol server for retrieving and analyzing data or running tasks for Ramp",
+    "check": "exact"
+   }
+  ]
+ },
+ "buildability": {
+  "verdict": "ready",
+  "main_blocker": "none",
+  "rationale": "Composio toolkit already published with 186 tools; Ramp publishes official MCP server; documented REST API with OpenAPI spec and broad resource coverage.",
+  "composio_existing_toolkit": "yes",
+  "composio_slug": "RAMP"
+ },
+ "overview_evidence": [
+  {
+   "url": "https://docs.composio.dev/toolkits/ramp.md",
+   "snippet": "read and write scopes across accounting bills cards departments limits locations memos purchase orders receipts spend programs users vendors plus other resources"
+  },
+  {
+   "url": "https://github.com/ramp-public/ramp_mcp",
+   "snippet": "A Model Context Protocol server for retrieving and analyzing data or running tasks for Ramp"
+  }
+ ],
+ "confidence": 0.78,
+ "unknown_reasons": {
+  "auth": "",
+  "access": "Pages document OAuth app registration and mention demo accounts but do not explicitly state whether free developer tier, sandbox account, or demo access are available to anyone without sales contact or payment.",
+  "api_surface": "Webhooks and rate limit policies not mentioned in provided pages.",
+  "mcp": ""
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 5,
+  "error": null,
+  "cost_usd": 0.09020399999999999,
+  "seconds": 113.5
+ }
+}

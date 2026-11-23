@@ -1,0 +1,110 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.09930900000000001,
+  "seconds": 137.3,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://docs.composio.dev/toolkits/coda.md",
+  "https://coda.io/developers",
+  "https://coda.io/apis/v1/openapi.yaml",
+  "https://coda.io/apis/v1/openapi.json",
+  "https://github.com/bartolli/codanna",
+  "https://github.com/orellazri/coda-mcp",
+  "https://github.com/codacy/codacy-mcp-server"
+ ],
+ "output": {
+  "one_liner": "Collaborative document platform for building customizable docs with tables, formulas, and automations",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "bearer_token"
+   ],
+   "oauth_grant_types": [],
+   "notes": "",
+   "evidence": [
+    {
+     "url": "https://github.com/orellazri/coda-mcp",
+     "snippet": "API_KEY : Your Coda API key. You can generate one from your Coda account settings."
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Some endpoints require Doc Maker or Admin role in workspace",
+   "evidence": [
+    {
+     "url": "https://coda.io/developers",
+     "snippet": "We make the Superhuman Docs API available to all of our users free of charge, in both free and paid workspaces."
+    },
+    {
+     "url": "https://coda.io/apis/v1/openapi.yaml",
+     "snippet": "the owner of the API token must be a Doc Maker (or Admin) in the workspace"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "moderate",
+   "openapi_spec_url": "https://coda.io/apis/v1/openapi.yaml",
+   "webhooks": null,
+   "rate_limit_note": "Reading: 100 req/6s; Writing: 10 req/6s; Listing docs: 4 req/6s",
+   "evidence": [
+    {
+     "url": "https://coda.io/developers",
+     "snippet": "The Superhuman Docs API is a RESTful API that lets you programmatically interact with data in Superhuman Docs (formerly Coda)"
+    },
+    {
+     "url": "https://coda.io/developers",
+     "snippet": "Reading data (with the exceptions below): 100 requests per 6 seconds"
+    },
+    {
+     "url": "https://coda.io/developers",
+     "snippet": "we offer an OpenAPI 3.0 specification"
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://docs.superhuman.com/resources/guides/getting_started_with_coda_mcp",
+   "community": [
+    "https://github.com/orellazri/coda-mcp"
+   ],
+   "evidence": [
+    {
+     "url": "https://coda.io/developers",
+     "snippet": "you may also want to consider using the Superhuman Docs MCP server"
+    },
+    {
+     "url": "https://github.com/orellazri/coda-mcp",
+     "snippet": "implements a Model Context Protocol (MCP) server that acts as a bridge to interact with the Coda API"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Self-serve free API with complete OpenAPI spec; 110-tool toolkit already exists in Composio",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "coda"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://coda.io/developers",
+    "snippet": "The Superhuman Docs API is a RESTful API that lets you programmatically interact with data in Superhuman Docs (formerly Coda)"
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  }
+ }
+}

@@ -1,0 +1,119 @@
+{
+ "id": 54,
+ "app": "MrScraper",
+ "category": "Data, SEO and Scraping",
+ "hint": "docs.mrscraper.com",
+ "one_liner": "AI-powered web scraping platform for extracting structured data from websites via APIs.",
+ "app_type": "saas",
+ "auth": {
+  "methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "oauth_grant_types": [],
+  "notes": "API key authentication via Bearer token header and x-api-token header. OAuth 2.1 for MCP server browser sign-in.",
+  "evidence": [
+   {
+    "url": "https://docs.mrscraper.com/docs/getting-started/quickstart",
+    "snippet": "Authorization: bearer <MRSCRAPER_API_TOKEN>",
+    "check": "exact"
+   },
+   {
+    "url": "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+    "snippet": "OAuth 2.1; do not configure a static header",
+    "check": "exact"
+   }
+  ]
+ },
+ "access": {
+  "status": "self_serve_free",
+  "dev_sandbox": true,
+  "notes": "Free tier: 100 tokens/month, no credit card required. Create account and obtain API key immediately from dashboard.",
+  "evidence": [
+   {
+    "url": "https://docs.mrscraper.com/docs/getting-started/billing",
+    "snippet": "The Free plan includes 100 tokens per month with no credit card required.",
+    "check": "exact"
+   },
+   {
+    "url": "https://docs.mrscraper.com/docs/getting-started/quickstart",
+    "snippet": "Create a MrScraper account and obtain your API key from",
+    "check": "exact"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "rest"
+  ],
+  "breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "rate_limit_note": "Concurrent request limits by plan: 10 (Free), 100 (Pro), Custom (Enterprise). Token-based usage limits.",
+  "evidence": [
+   {
+    "url": "https://docs.mrscraper.com/docs/getting-started/scraper-api",
+    "snippet": "Build, test, and validate scraping requests in MrScraper's Scraper API",
+    "check": "exact"
+   },
+   {
+    "url": "https://docs.mrscraper.com/docs/getting-started/billing",
+    "snippet": "Concurrent Requests 10 100 Custom",
+    "check": "repaired"
+   },
+   {
+    "url": "https://docs.mrscraper.com",
+    "snippet": "Webhook Zapier ClawHub x402 n8n Dify Scalekit SDKs MrScraper",
+    "check": "repaired"
+   }
+  ]
+ },
+ "mcp": {
+  "official": "https://mcp.mrscraper.com/mcp",
+  "community": [],
+  "evidence": [
+   {
+    "url": "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+    "snippet": "Official MrScraper MCP server for retrieving web pages, web search, and account usage.",
+    "check": "exact"
+   },
+   {
+    "url": "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+    "snippet": "Install the @mrscraper/mcp npm package",
+    "check": "exact"
+   }
+  ]
+ },
+ "buildability": {
+  "verdict": "ready",
+  "main_blocker": "none",
+  "rationale": "Self-serve free credentials available, well-documented REST API, MCP server published, and Composio toolkit already built.",
+  "composio_existing_toolkit": "yes",
+  "composio_slug": "MRSCRAPER"
+ },
+ "overview_evidence": [
+  {
+   "url": "https://docs.mrscraper.com",
+   "snippet": "Your all-in-one guide to understanding, configuring, and using the MrScraper platform"
+  },
+  {
+   "url": "https://docs.mrscraper.com",
+   "snippet": "Whether you're scraping e-commerce product data, collecting job listings, gathering customer reviews"
+  }
+ ],
+ "confidence": 0.95,
+ "unknown_reasons": {
+  "auth": "",
+  "access": "",
+  "api_surface": "OpenAPI spec not documented in provided pages",
+  "mcp": ""
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 12,
+  "error": null,
+  "cost_usd": 0.076691,
+  "seconds": 98.2
+ }
+}

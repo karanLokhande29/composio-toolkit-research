@@ -1,0 +1,110 @@
+{
+ "id": 43,
+ "app": "BigCommerce",
+ "category": "Ecommerce",
+ "hint": "developer.bigcommerce.com",
+ "one_liner": "BigCommerce is a SaaS e-commerce platform for building and managing online stores with integrated payment processing and comprehensive APIs.",
+ "app_type": "saas",
+ "auth": {
+  "methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "oauth_grant_types": [],
+  "notes": "OAuth2 is extensively documented with configurable scopes. API_KEY is listed in Composio integration catalog. JWT and private tokens are mentioned in documentation section titles but lack detailed explanations in provided pages.",
+  "evidence": [
+   {
+    "url": "https://developer.bigcommerce.com/docs/start/authentication/api-accounts",
+    "snippet": "BigCommerce offers three types of OAuth-based API accounts to developers who wish to use BigCommerce's REST APIs",
+    "check": "exact"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/bigcommerce.md",
+    "snippet": "Auth: API_KEY, OAUTH2",
+    "check": "exact"
+   }
+  ]
+ },
+ "access": {
+  "status": "self_serve_trial",
+  "dev_sandbox": true,
+  "notes": "Developers can sign up for a free trial store and create API credentials immediately via the control panel without approval or sales contact. Free trial is time-limited; continued production use requires a paid plan.",
+  "evidence": [
+   {
+    "url": "https://developer.bigcommerce.com/docs/start",
+    "snippet": "Sign up for a free BigCommerce trial store to test API calls and build integrations without affecting live data",
+    "check": "exact"
+   },
+   {
+    "url": "https://developer.bigcommerce.com/docs/start",
+    "snippet": "Create credentials with the scopes you need",
+    "check": "exact"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "graphql",
+   "rest"
+  ],
+  "breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "rate_limit_note": "",
+  "evidence": [
+   {
+    "url": "https://developer.bigcommerce.com/docs/start",
+    "snippet": "Use REST and GraphQL APIs to manage products, orders, customers, and store settings programmatically",
+    "check": "exact"
+   },
+   {
+    "url": "https://developer.bigcommerce.com/docs/integrations/webhooks",
+    "snippet": "Webhooks notify applications when specific events occur on a BigCommerce store",
+    "check": "exact"
+   }
+  ]
+ },
+ "mcp": {
+  "official": null,
+  "community": [],
+  "evidence": [
+   {
+    "url": "https://developer.bigcommerce.com/docs/start",
+    "snippet": "docs. Docs MCP Server Connect Cursor, Claude, or Codex to the BigCommerce developer docs via MCP.",
+    "check": "repaired"
+   }
+  ]
+ },
+ "buildability": {
+  "verdict": "ready",
+  "main_blocker": "none",
+  "rationale": "Self-serve free trial provides immediate sandbox access with credential creation; REST and GraphQL APIs are well-documented with webhooks support; Composio has already built a 532-tool toolkit proving feasibility.",
+  "composio_existing_toolkit": "yes",
+  "composio_slug": "BIGCOMMERCE"
+ },
+ "overview_evidence": [
+  {
+   "url": "https://developer.bigcommerce.com/docs/start",
+   "snippet": "We deliver our core platform and products using a SaaS model"
+  },
+  {
+   "url": "https://www.bigcommerce.com/pricing/",
+   "snippet": "Start with a free trial. Scale when you're ready"
+  }
+ ],
+ "confidence": 0.95,
+ "unknown_reasons": {
+  "auth": "",
+  "access": "",
+  "api_surface": "Rate limit information is not documented in the provided pages.",
+  "mcp": "Only a documentation MCP server is explicitly documented (Docs MCP Server); unclear if an official BigCommerce API integration MCP server exists."
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 7,
+  "error": null,
+  "cost_usd": 0.102988,
+  "seconds": 139.4
+ }
+}

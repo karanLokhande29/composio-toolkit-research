@@ -1,0 +1,113 @@
+{
+ "id": 35,
+ "app": "Mailchimp",
+ "category": "Marketing, Ads, Email and Social",
+ "hint": "mailchimp.com/developer",
+ "one_liner": "Mailchimp is a marketing platform that sends email campaigns and transactional messages with custom data integration.",
+ "app_type": "saas",
+ "auth": {
+  "methods": [
+   "bearer_token",
+   "oauth2"
+  ],
+  "oauth_grant_types": [],
+  "notes": "API keys sent as Bearer tokens; OAuth 2 also supported. Both credentials sent in Authorization header as Bearer tokens.",
+  "evidence": [
+   {
+    "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/api-keys",
+    "snippet": "An API key authenticates requests against the account it was created in.",
+    "check": "exact"
+   },
+   {
+    "url": "https://mailchimp.com/developer/marketing/api/root/",
+    "snippet": "Authorization using a Mailchimp API key (a.k.a. Bearer token)",
+    "check": "exact"
+   }
+  ]
+ },
+ "access": {
+  "status": "self_serve_free",
+  "dev_sandbox": null,
+  "notes": "Free plan up to 250 contacts; API credentials immediately available. Some advanced tools require paid Essentials plan.",
+  "evidence": [
+   {
+    "url": "https://mailchimp.com/pricing/",
+    "snippet": "Under 250 contacts? It's free. Use core features to manage early growth.",
+    "check": "exact"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/mailchimp.md",
+    "snippet": "Some Mailchimp tools require at least the Mailchimp Essentials plan",
+    "check": "exact"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "rest"
+  ],
+  "breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "rate_limit_note": "10 simultaneous connections per user limit; 429 response for excess requests",
+  "evidence": [
+   {
+    "url": "https://mailchimp.com/developer/marketing/docs/fundamentals/",
+    "snippet": "The Marketing API generally follows REST conventions, with some deviations.",
+    "check": "exact"
+   },
+   {
+    "url": "https://mailchimp.com/developer/marketing/docs/fundamentals/",
+    "snippet": "We use the OpenAPI Specification (formerly known as Swagger) to describe each endpoint.",
+    "check": "exact"
+   },
+   {
+    "url": "https://mailchimp.com/developer/marketing/api/root/",
+    "snippet": "Get links to all other resources available in the API.",
+    "check": "exact"
+   },
+   {
+    "url": "https://mailchimp.com/developer/marketing/docs/errors/",
+    "snippet": "The Marketing API sets a limit of 10 simultaneously processing requests per user.",
+    "check": "exact"
+   }
+  ]
+ },
+ "mcp": {
+  "official": null,
+  "community": [],
+  "evidence": []
+ },
+ "buildability": {
+  "verdict": "ready",
+  "main_blocker": "none",
+  "rationale": "Self-serve free credentials, documented REST API with OpenAPI, webhooks supported; Composio toolkit with 278 tools already built.",
+  "composio_existing_toolkit": "yes",
+  "composio_slug": "MAILCHIMP"
+ },
+ "overview_evidence": [
+  {
+   "url": "https://mailchimp.com/developer/",
+   "snippet": "Mailchimp's developer tools provide everything you need to integrate your data with intelligent marketing tools"
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/mailchimp.md",
+   "snippet": "Category: email newsletters Auth: OAUTH2 Composio-managed OAuth available? Yes Tools: 278"
+  }
+ ],
+ "confidence": 0.82,
+ "unknown_reasons": {
+  "auth": "",
+  "access": "",
+  "api_surface": "OpenAPI specification URL not explicitly provided in pages; only mentioned that spec is used to describe endpoints",
+  "mcp": "MCP server mentioned in navigation menu but actual URL and vendor confirmation not provided in given pages"
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 9,
+  "error": null,
+  "cost_usd": 0.08756399999999999,
+  "seconds": 116.2
+ }
+}

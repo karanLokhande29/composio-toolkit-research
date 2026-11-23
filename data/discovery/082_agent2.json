@@ -1,0 +1,297 @@
+{
+ "id": 82,
+ "app": "Plaid",
+ "tag": "agent2",
+ "urls": [
+  {
+   "url": "https://plaid.com/docs",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://plaid.com/docs/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://plaid.com/docs/api/",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://plaid.com/docs/auth/",
+   "purpose": "authentication",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://plaid.com/docs/api/tokens/",
+   "purpose": "authentication",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://plaid.com/docs/sandbox/",
+   "purpose": "credentials_sandbox",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://plaid.com/docs/account/",
+   "purpose": "credentials_access",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://plaid.com/pricing/",
+   "purpose": "pricing",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://plaid.com/docs/api/webhooks/",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://plaid.com/docs/errors/",
+   "purpose": "rate_limits",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://plaid.com/docs/mcp/",
+   "purpose": "mcp_server",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/tomfunk/fungible",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/elcukro/bank-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/plaid/ai-coding-toolkit",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/plaid.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://plaid.com/docs/api/products/auth/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://plaid.com/docs/api/oauth/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://plaid.com/docs/api/processor-partners/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://plaid.com/docs/api/partner/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://plaid.com/docs/auth/add-to-app/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://plaid.com/docs/auth/partnerships/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://plaid.com/docs/auth/pay-by-bank-ux/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://plaid.com/docs/auth/coverage/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://plaid.com/partner-directory/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://plaid.com/docs/auth/coverage/same-day-link-best-practices/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://plaid.com/docs/auth/partnerships/vopay/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://plaid.com/docs/auth/coverage/testing/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://plaid.com/docs/link/oauth/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "tomfunk/fungible",
+   "url": "https://github.com/tomfunk/fungible",
+   "stars": 114,
+   "description": "Terminal UI and Desktop GUI for personal finance — Plaid sync, CSV import, AI assistant, and MCP server"
+  },
+  {
+   "repo": "elcukro/bank-mcp",
+   "url": "https://github.com/elcukro/bank-mcp",
+   "stars": 55,
+   "description": "Give your AI assistant secure, read-only access to your bank accounts. MCP server supporting Plaid, Teller, Enable Banking, and Tink."
+  },
+  {
+   "repo": "plaid/ai-coding-toolkit",
+   "url": "https://github.com/plaid/ai-coding-toolkit",
+   "stars": 34,
+   "description": "Build your Plaid integration in record time with a development toolkit for your AI coding tools, including prompts, sandbox data, and an MCP server."
+  },
+  {
+   "repo": "meetpandya27/plaidify",
+   "url": "https://github.com/meetpandya27/plaidify",
+   "stars": 12,
+   "description": "The open-source gateway to authenticated web data — connect to any user-authorized site via REST API, hosted link, or MCP, with MFA handling under a read-only p"
+  },
+  {
+   "repo": "304techmaven/plaid-mcp-server",
+   "url": "https://github.com/304techmaven/plaid-mcp-server",
+   "stars": 10,
+   "description": "MCP server that connects LLMs to plaid authorization and transactions api calls"
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Plaid",
+    "slug": "PLAID",
+    "tools": 70,
+    "auth": [
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/plaid.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Plaid",
+    "slug": "PLAID",
+    "tools": 70,
+    "auth": [
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/plaid.md"
+   },
+   {
+    "name": "Plaid MCP",
+    "slug": "PLAID_MCP",
+    "tools": 5,
+    "auth": [
+     "DCR_OAUTH"
+    ],
+    "url": "https://docs.composio.dev/toolkits/plaid_mcp.md"
+   }
+  ]
+ },
+ "search_meta": {}
+}

@@ -1,0 +1,76 @@
+{
+ "fields": [
+  "access.status",
+  "buildability.main_blocker",
+  "mcp.official"
+ ],
+ "pages": [
+  "https://marketplace.gohighlevel.com/docs/oauth/CreateDeveloperAccount/",
+  "https://marketplace.gohighlevel.com/docs/oauth/ExternalAuthentication/index.html",
+  "https://marketplace.gohighlevel.com/docs/Authorization/authorization_doc",
+  "https://github.com/mastanley13/GoHighLevel-MCP",
+  "https://github.com/basicmachines-co/open-ghl-mcp",
+  "https://marketplace.gohighlevel.com/docs/other/mcp/index.html",
+  "https://github.com/BusyBee3333/Go-High-Level-MCP-2026-Complete"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.127617,
+  "seconds": 28.0,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "access.status",
+    "value": "app_review",
+    "evidence": [
+     {
+      "url": "https://marketplace.gohighlevel.com/docs/Authorization/authorization_doc",
+      "snippet": "Your use case involves accessing our API endpoints for internal purposes."
+     },
+     {
+      "url": "https://marketplace.gohighlevel.com/docs/oauth/ExternalAuthentication/index.html",
+      "snippet": "Before submitting your app for review, always use Step 3 - Test your auth"
+     },
+     {
+      "url": "https://marketplace.gohighlevel.com/docs/oauth/CreateDeveloperAccount/",
+      "snippet": "Fill in the Sign Up form with the details requested. Verify your Phone Number."
+     }
+    ],
+    "reason": "A Private Integration Token can be self-serve created for single-location/internal use, but public, multi-customer OAuth Marketplace apps must go through an app review/testing process before publishing, matching the app_review definition rather than unknown."
+   },
+   {
+    "field": "buildability.main_blocker",
+    "value": "app_review",
+    "evidence": [
+     {
+      "url": "https://marketplace.gohighlevel.com/docs/oauth/ExternalAuthentication/index.html",
+      "snippet": "Before submitting your app for review, always use Step 3 - Test your auth"
+     },
+     {
+      "url": "https://marketplace.gohighlevel.com/docs/Authorization/authorization_doc",
+      "snippet": "You should use a Private Integration Token if: Your use case involves accessing our API endpoints for internal purposes."
+     }
+    ],
+    "reason": "The blocker aligns with the access.status determination: you can build/test with a Private Integration Token, but shipping a public multi-tenant OAuth integration requires HighLevel's app review step."
+   },
+   {
+    "field": "mcp.official",
+    "value": "https://services.leadconnectorhq.com/mcp/anthropic/v2",
+    "evidence": [
+     {
+      "url": "https://marketplace.gohighlevel.com/docs/other/mcp/index.html",
+      "snippet": "https://services.leadconnectorhq.com/mcp/anthropic/v2"
+     },
+     {
+      "url": "https://marketplace.gohighlevel.com/docs/other/mcp/index.html",
+      "snippet": "No API key to create or paste. Sign in with your HighLevel login, connect your sub-account, and"
+     }
+    ],
+    "reason": "The vendor's own marketplace.gohighlevel.com docs page describes the HighLevel MCP Server and gives its connection URL for Claude, which is an official first-party MCP endpoint, not null as both agents claimed."
+   }
+  ]
+ }
+}

@@ -1,0 +1,56 @@
+{
+ "fields": [
+  "auth.methods",
+  "mcp.official"
+ ],
+ "pages": [
+  "https://university.clay.com/docs-topics/getting-started",
+  "https://docs.composio.dev/toolkits/clay.md",
+  "https://www.clay.com/mcp",
+  "https://university.clay.com/courses/clay-mcps-for-reps"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.05300099999999999,
+  "seconds": 8.0,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "auth.methods",
+    "value": [
+     "api_key",
+     "jwt"
+    ],
+    "evidence": [
+     {
+      "url": "https://university.clay.com/docs-topics/getting-started",
+      "snippet": "Use HTTP API connections authenticated securely with JWT tokens."
+     },
+     {
+      "url": "https://docs.composio.dev/toolkits/clay.md",
+      "snippet": "Return the Clay user and workspace associated with the connected Public API key."
+     }
+    ],
+    "reason": "Pages show both JWT-authenticated HTTP API and a Public API key used for authentication, and both agents agree."
+   },
+   {
+    "field": "mcp.official",
+    "value": "https://www.clay.com/mcp",
+    "evidence": [
+     {
+      "url": "https://www.clay.com/mcp",
+      "snippet": "Give reps the best prospecting data in their AI tools"
+     },
+     {
+      "url": "https://university.clay.com/courses/clay-mcps-for-reps",
+      "snippet": "Learn how to use Clay directly inside of AI chat tools like ChatGPT, Claude, and more"
+     }
+    ],
+    "reason": "Clay's own site hosts a dedicated Clay MCP page and University course describing a vendor-published MCP offering."
+   }
+  ]
+ }
+}

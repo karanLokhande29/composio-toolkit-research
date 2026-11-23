@@ -1,0 +1,113 @@
+{
+ "id": 31,
+ "app": "Google Ads",
+ "category": "Marketing, Ads, Email and Social",
+ "hint": "developers.google.com/google-ads",
+ "one_liner": "Create and manage ads that reach users looking for your products or services on Google Search, Display, YouTube and more.",
+ "app_type": "saas",
+ "auth": {
+  "methods": [
+   "oauth2"
+  ],
+  "oauth_grant_types": [],
+  "notes": "OAuth 2.0 is the authentication protocol. A developer token is also required for API calls but functions as a configuration credential, not an authentication scheme. Pages do not specify OAuth grant types (authorization_code, service_account, etc.)",
+  "evidence": [
+   {
+    "url": "https://developers.google.com/google-ads/api/docs/oauth/overview",
+    "snippet": "Google Ads API utilizes the OAuth 2.0 protocol for authentication and authorization",
+    "check": "exact"
+   },
+   {
+    "url": "https://developers.google.com/google-ads/api/docs/oauth/overview",
+    "snippet": "In addition to OAuth 2.0 credentials, a developer token is also required to make Google Ads API calls.",
+    "check": "exact"
+   }
+  ]
+ },
+ "access": {
+  "status": "app_review",
+  "dev_sandbox": true,
+  "notes": "Test access is free and self-serve; developers can create a Google Cloud project and enable the API. Production account access requires application review and approval for Explorer, Basic, or Standard access levels. Review is automated in most cases.",
+  "evidence": [
+   {
+    "url": "https://developers.google.com/google-ads/api/docs/first-call/dev-token",
+    "snippet": "Explorer access (automated review and approval in most cases, for up to 2,880 operations per day on production accounts)",
+    "check": "exact"
+   },
+   {
+    "url": "https://developers.google.com/google-ads/api/docs/first-call/dev-token",
+    "snippet": "Basic access applications are automated and will be reviewed within minutes after brand verification",
+    "check": "exact"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "rest"
+  ],
+  "breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "rate_limit_note": "Mutate requests limited to 10,000 operations per request; planning services 1-2 QPS per customer; conversion upload 2,000 per request.",
+  "evidence": [
+   {
+    "url": "https://developers.google.com/google-ads/api/docs/concepts/call-structure",
+    "snippet": "Google Ads API calls can be made using either gRPC (preferred) or REST.",
+    "check": "exact"
+   },
+   {
+    "url": "https://developers.google.com/google-ads/api/docs/best-practices/quotas",
+    "snippet": "Mutate requests are limited to 10,000 operations per request, in addition to counting against the daily operation quota.",
+    "check": "exact"
+   },
+   {
+    "url": "https://developers.google.com/google-ads",
+    "snippet": "Webhook Use webhook to send data from Google Ads to your CRM system. Lead form Webhook",
+    "check": "repaired"
+   }
+  ]
+ },
+ "mcp": {
+  "official": null,
+  "community": [],
+  "evidence": [
+   {
+    "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+    "snippet": "The Google Ads MCP server provides a standardized bridge to the Google Ads API. It lets",
+    "check": "exact"
+   }
+  ]
+ },
+ "buildability": {
+  "verdict": "ready_with_caveats",
+  "main_blocker": "app_review",
+  "rationale": "Public API is fully documented and broad; official MCP server and Composio toolkit (78 tools) already exist. Friction: production use requires application review and approval.",
+  "composio_existing_toolkit": "yes",
+  "composio_slug": "googleads"
+ },
+ "overview_evidence": [
+  {
+   "url": "https://developers.google.com/google-ads",
+   "snippet": "Create and manage ads that reach users looking for your products or services on Google Search, Display, YouTube and more."
+  },
+  {
+   "url": "https://developers.google.com/google-ads/api/docs/start",
+   "snippet": "Save time by automating your Google Ads campaign management. Build an application to interact directly with the Google Ads platform"
+  }
+ ],
+ "confidence": 0.92,
+ "unknown_reasons": {
+  "auth": "",
+  "access": "",
+  "api_surface": "OpenAPI specification URL not documented in provided pages; gRPC supported but not enumerated.",
+  "mcp": "Official MCP server repository URL not explicitly provided (only 'google-ads-mcp repository' mentioned as reference); no community MCP servers listed in provided pages."
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 9,
+  "error": null,
+  "cost_usd": 0.06548,
+  "seconds": 84.2
+ }
+}

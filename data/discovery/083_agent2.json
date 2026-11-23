@@ -1,0 +1,172 @@
+{
+ "id": 83,
+ "app": "Binance",
+ "tag": "agent2",
+ "urls": [
+  {
+   "url": "https://binance-docs.github.io",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://binance-docs.github.io/apidocs/spot/en/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://binance-docs.github.io/apidocs/spot/en/#introduction",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://binance-docs.github.io/apidocs/spot/en/#general-api-information",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://binance-docs.github.io/apidocs/spot/en/#signed-trade-and-user_data-endpoint-security",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://binance-docs.github.io/apidocs/spot/en/#endpoint-security-type",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://binance-docs.github.io/apidocs/spot/en/#limits",
+   "purpose": "rate_limits",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://binance-docs.github.io/apidocs/spot/en/#user-data-streams",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://binance-docs.github.io/apidocs/spot/en/#websocket-market-streams",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://binance-docs.github.io/apidocs/futures/en/",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://binance-docs.github.io/apidocs/delivery/en/",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://binance-docs.github.io/apidocs/voptions/en/",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://binance-docs.github.io/apidocs/spot/en/#public-api-definitions",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://github.com/chrisleekr/binance-trading-bot",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/guangxiangdebizi/FinanceMCP",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/TermiX-official/binance-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "chrisleekr/binance-trading-bot",
+   "url": "https://github.com/chrisleekr/binance-trading-bot",
+   "stars": 5619,
+   "description": "Automated Binance trading bot with pluggable strategies, historical backtesting, a live dashboard, and connect an AI agent over MCP"
+  },
+  {
+   "repo": "guangxiangdebizi/FinanceMCP",
+   "url": "https://github.com/guangxiangdebizi/FinanceMCP",
+   "stars": 874,
+   "description": "这是一个金融领域相关的mcp,本项目通过集成 Tushare API 和 Binance API 为语言模型（如Claude）提供全面的实时金融数据访问能力，支持股票、基金、债券、宏观经济指标、稳定币、虚拟货币等多维度金融数据分析。其中也包含了金融数据查询、财经新闻查询、国家统计局数据查询等"
+  },
+  {
+   "repo": "TermiX-official/binance-mcp",
+   "url": "https://github.com/TermiX-official/binance-mcp",
+   "stars": 97,
+   "description": "binance-mcp"
+  },
+  {
+   "repo": "StringKe/dotfiles",
+   "url": "https://github.com/StringKe/dotfiles",
+   "stars": 92,
+   "description": "macOS 开发环境配置：bin/setup.sh 按模块安装软件与配置；zsh + starship + mise + Rex，claude-code / opencode 共用提示词、skills 与 MCP"
+  },
+  {
+   "repo": "AnalyticAce/binance-mcp-server",
+   "url": "https://github.com/AnalyticAce/binance-mcp-server",
+   "stars": 51,
+   "description": "Unofficial tools and server implementation for Binance's Model Context Protocol (MCP). Designed to support developers building crypto trading  AI Agents."
+  }
+ ],
+ "composio": {
+  "exact": [],
+  "candidates": []
+ },
+ "search_meta": {}
+}

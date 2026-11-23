@@ -1,0 +1,104 @@
+{
+ "id": 69,
+ "app": "Datadog",
+ "category": "Developer, Infra and Data platforms",
+ "hint": "docs.datadoghq.com/api",
+ "one_liner": "Datadog is a cloud-based observability and security platform for monitoring applications, infrastructure, and security.",
+ "app_type": "saas",
+ "auth": {
+  "methods": [
+   "api_key",
+   "bearer_token",
+   "oauth2"
+  ],
+  "oauth_grant_types": [],
+  "notes": "API key via DD-API-KEY header; some endpoints also require Application key. OAuth2 and bearer token also supported.",
+  "evidence": [
+   {
+    "url": "https://docs.datadoghq.com/api/latest/",
+    "snippet": "Authenticate to the API with an API key using the header DD-API-KEY . For some endpoints, you also need an Application key",
+    "check": "repaired"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/datadog.md",
+    "snippet": "Auth: OAUTH2, API_KEY, BEARER_TOKEN",
+    "check": "exact"
+   }
+  ]
+ },
+ "access": {
+  "status": "self_serve_trial",
+  "dev_sandbox": true,
+  "notes": "Free trial available without approval or sales contact; continued access requires paid plan; trial duration not specified.",
+  "evidence": [
+   {
+    "url": "https://www.datadoghq.com/pricing/",
+    "snippet": "Start Free Trial Explore telemetry and take action faster with Bits Chat",
+    "check": "exact"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "rest"
+  ],
+  "breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "rate_limit_note": "Rate limits documented per endpoint; 250,000 events per minute per organization for event submission; can be increased via support.",
+  "evidence": [
+   {
+    "url": "https://docs.datadoghq.com/api/latest/",
+    "snippet": "The Datadog API is an HTTP REST API. The API uses resource-oriented URLs to call the API, uses status codes to indicate the success or failure of requests, returns JSON from all requests",
+    "check": "exact"
+   },
+   {
+    "url": "https://docs.datadoghq.com/api/latest/rate-limits/",
+    "snippet": "The rate limit for event submission is 250,000 events per minute per organization.",
+    "check": "exact"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/datadog.md",
+    "snippet": "Create a webhook in Datadog. Registers a named destination endpoint; each monitor must explicitly reference the webhook by name",
+    "check": "exact"
+   }
+  ]
+ },
+ "mcp": {
+  "official": null,
+  "community": [],
+  "evidence": []
+ },
+ "buildability": {
+  "verdict": "ready",
+  "main_blocker": "none",
+  "rationale": "Composio toolkit with 256 tools already exists and production-ready; self-serve trial access available without approval.",
+  "composio_existing_toolkit": "yes",
+  "composio_slug": "DATADOG"
+ },
+ "overview_evidence": [
+  {
+   "url": "https://www.datadoghq.com/pricing/",
+   "snippet": "The integrated platform for monitoring & security"
+  },
+  {
+   "url": "https://docs.datadoghq.com/api/latest/",
+   "snippet": "Use the Datadog API to access the Datadog platform programmatically."
+  }
+ ],
+ "confidence": 0.8,
+ "unknown_reasons": {
+  "auth": "",
+  "access": "Free trial duration and scope of credentials available during trial not documented in provided pages.",
+  "api_surface": "OpenAPI specification URL not documented in provided pages.",
+  "mcp": "MCP Server mentioned in navigation and documentation but no direct URL to official repository provided in pages."
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 7,
+  "error": null,
+  "cost_usd": 0.074879,
+  "seconds": 93.2
+ }
+}

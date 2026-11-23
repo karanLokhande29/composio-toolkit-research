@@ -1,0 +1,248 @@
+{
+ "id": 40,
+ "app": "SendGrid",
+ "tag": "agent2",
+ "urls": [
+  {
+   "url": "https://sendgrid.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.sendgrid.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.sendgrid.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.sendgrid.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://sendgrid.com/pricing",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.sendgrid.com/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.sendgrid.com/for-developers/sending-email/authentication",
+   "purpose": "authentication",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.sendgrid.com/ui/account-and-settings/api-keys",
+   "purpose": "credentials",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://sendgrid.com/en-us/pricing",
+   "purpose": "pricing",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://sendgrid.com/en-us/partners",
+   "purpose": "partner programme",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.sendgrid.com/api-reference/",
+   "purpose": "api reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.sendgrid.com/api-reference/how-to-use-the-sendgrid-v3-api/rate-limits",
+   "purpose": "rate limits",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.sendgrid.com/for-developers/tracking-events/getting-started-event-webhook",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.sendgrid.com/for-developers/tracking-events/event",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.sendgrid.com/for-developers",
+   "purpose": "developer access overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.sendgrid.com/for-developers/sending-email/sandbox-mode",
+   "purpose": "sandbox",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/Garoth/sendgrid-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/KiKi-Builds/AI-Briefing-Skill",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/deyikong/sendgrid-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/sendgrid.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://app.sendgrid.com/settings/api_keys",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://sendgrid.com/blog/leveraging-sendgrids-event-api/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://sendgrid.com/blog/leveraging-sendgrids-event-api",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "Garoth/sendgrid-mcp",
+   "url": "https://github.com/Garoth/sendgrid-mcp",
+   "stars": 32,
+   "description": "Allows AI Agents to interact with the Twilio SendGrid v3 API, managing contact lists, templates, single sends, and stats"
+  },
+  {
+   "repo": "KiKi-Builds/AI-Briefing-Skill",
+   "url": "https://github.com/KiKi-Builds/AI-Briefing-Skill",
+   "stars": 5,
+   "description": "Claude skill for automated AI content briefings. Sources: Twitter/X · RSS · YouTube · Podcasts · GitHub · arXiv · Reddit · HN ·  Rednote · Tiktok· WeChat · Bili"
+  },
+  {
+   "repo": "deyikong/sendgrid-mcp",
+   "url": "https://github.com/deyikong/sendgrid-mcp",
+   "stars": 4,
+   "description": "Sendgrid MCP, Contacts, Templates, Campaigns, Stats, etc. more to come. With READ_ONLY option. "
+  },
+  {
+   "repo": "garethcull/sendgrid-mcp",
+   "url": "https://github.com/garethcull/sendgrid-mcp",
+   "stars": 2,
+   "description": "An open source Sendgrid MCP server that helps marketing teams pull email stats and save html templates to sendgrid using AI Models. Built in Flask with Python."
+  },
+  {
+   "repo": "reshashi/opensend",
+   "url": "https://github.com/reshashi/opensend",
+   "stars": 2,
+   "description": "Open-source email infrastructure for AI agents - SendGrid alternative with MCP support"
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "SendGrid",
+    "slug": "SENDGRID",
+    "tools": 364,
+    "auth": [
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/sendgrid.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "SendGrid",
+    "slug": "SENDGRID",
+    "tools": 364,
+    "auth": [
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/sendgrid.md"
+   }
+  ]
+ },
+ "search_meta": {}
+}

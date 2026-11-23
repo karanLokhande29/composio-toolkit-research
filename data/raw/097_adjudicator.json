@@ -1,0 +1,88 @@
+{
+ "fields": [
+  "access.status",
+  "auth.methods",
+  "buildability.main_blocker",
+  "buildability.verdict"
+ ],
+ "pages": [
+  "https://docs.composio.dev/toolkits/higgsfield.md",
+  "https://higgsfield.ai/cli",
+  "https://docs.higgsfield.ai/docs/quickstart",
+  "https://docs.higgsfield.ai/docs/authentication",
+  "https://higgsfield.ai/pricing"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.100893,
+  "seconds": 30.3,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "access.status",
+    "value": "unknown",
+    "evidence": [
+     {
+      "url": "https://docs.higgsfield.ai/docs/quickstart",
+      "snippet": "Prerequisites account An API key ID and secret"
+     },
+     {
+      "url": "https://docs.higgsfield.ai/docs/authentication",
+      "snippet": "Authenticate server-side API requests with your Higgsfield key and secret."
+     }
+    ],
+    "reason": "Pages show that an account and API key/secret are required but never state whether obtaining or using that key is free, trial-limited, or requires a paid plan."
+   },
+   {
+    "field": "auth.methods",
+    "value": [
+     "api_key"
+    ],
+    "evidence": [
+     {
+      "url": "https://docs.higgsfield.ai/docs/authentication",
+      "snippet": "Authenticate server-side API requests with your Higgsfield key and secret."
+     },
+     {
+      "url": "https://docs.higgsfield.ai/docs/authentication",
+      "snippet": "Send both values in the Authorization header"
+     }
+    ],
+    "reason": "Both agents agree and the authentication page confirms a key+secret pair sent via an Authorization header, which is a static API key scheme."
+   },
+   {
+    "field": "buildability.main_blocker",
+    "value": "paid_plan",
+    "evidence": [
+     {
+      "url": "https://higgsfield.ai/cli",
+      "snippet": "Each generation costs credits based on the model and resolution. Your existing Higgsfield plan credits work seamlessly"
+     },
+     {
+      "url": "https://higgsfield.ai/pricing",
+      "snippet": "Credit top-ups with discount Unlimited paid parallel generations All Seedance models"
+     }
+    ],
+    "reason": "Even though an API key can be created, actual generation calls consume credits tied to a paid Higgsfield plan, making payment the practical blocker to real usage."
+   },
+   {
+    "field": "buildability.verdict",
+    "value": "ready_with_caveats",
+    "evidence": [
+     {
+      "url": "https://docs.higgsfield.ai/docs/quickstart",
+      "snippet": "This guide uses the REST API so you can see the complete request lifecycle. It takes about five minutes."
+     },
+     {
+      "url": "https://higgsfield.ai/cli",
+      "snippet": "Each generation costs credits based on the model and resolution. Your existing Higgsfield plan credits work seamlessly"
+     }
+    ],
+    "reason": "A documented REST API with key/secret auth exists and is self-serve to set up, but real usage is metered by paid plan credits, so it is buildable with caveats rather than fully free/ready."
+   }
+  ]
+ }
+}

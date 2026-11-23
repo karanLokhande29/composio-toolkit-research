@@ -1,0 +1,38 @@
+{
+ "fields": [
+  "access.status"
+ ],
+ "pages": [
+  "https://developers.squarespace.com/changes/self-service-oauth-credential-management"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.023415000000000002,
+  "seconds": 7.5,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "access.status",
+    "value": "app_review",
+    "evidence": [
+     {
+      "url": "https://developers.squarespace.com/changes/self-service-oauth-credential-management",
+      "snippet": "Generate OAuth client IDs and secrets immediately for development and testing."
+     },
+     {
+      "url": "https://developers.squarespace.com/changes/self-service-oauth-credential-management",
+      "snippet": "all new applications created via the self-service tool will enter Demo Mode by default."
+     },
+     {
+      "url": "https://developers.squarespace.com/changes/self-service-oauth-credential-management",
+      "snippet": "When you are ready to take your integration live, simply request a review directly from the app details page in your dashboard."
+     }
+    ],
+    "reason": "Credentials can be self-generated for dev/testing, but production (live) use requires a vendor review to exit Demo Mode, matching the app_review definition rather than fully free self-serve."
+   }
+  ]
+ }
+}

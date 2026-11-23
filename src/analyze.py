@@ -108,8 +108,12 @@ def run() -> dict:
     def h(text, key):
         H.append({"text": text, "key": key})
 
-    h(f"OAuth2 is the dominant auth pattern: {oauth_any} of {n} apps support it, and {both} offer both OAuth2 and a static key/token "
-      f"- so most toolkits need an OAuth app registration, with API keys as the quick path for single-tenant use.", "auth_summary.oauth2_any")
+    if oauth_any >= key_any:
+        h(f"OAuth2 is the dominant auth pattern: {oauth_any} of {n} apps support it, and {both} offer both OAuth2 and a static key/token "
+          f"- so most toolkits need an OAuth app registration, with keys as the quick single-tenant path.", "auth_summary.oauth2_any")
+    else:
+        h(f"Static keys/tokens are the most common auth: {key_any} of {n} apps accept an API key or token, {oauth_any} support OAuth2, "
+          f"and {both} offer both - so most toolkits can start on API-key auth and add OAuth for multi-tenant use.", "auth_summary.key_or_token_any")
     h(f"Getting credentials is mostly self-serve: {pat['self_serve_pct']}% of apps let a developer get working credentials alone "
       f"(free or trial); {buckets.get('gated', 0)} are gated by an admin, app review, partner programme or sales.", "self_serve_pct")
     h(f"Gating clusters by category: {best_cat[0]} is the most self-serve ({best_cat[1]['self_serve_pct']}%), "

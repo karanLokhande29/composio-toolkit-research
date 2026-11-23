@@ -1,0 +1,98 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.06717100000000001,
+  "seconds": 78.5,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://cloud.google.com/vertex-ai/generative-ai/docs/reference/rest",
+  "https://cloud.google.com/gemini/docs/overview",
+  "https://cloud.google.com/vertex-ai/generative-ai/docs/quotas",
+  "https://docs.composio.dev/toolkits/notebook_lm.md",
+  "https://cloud.google.com/gemini",
+  "https://cloud.google.com/docs/authentication",
+  "https://aistudio.google.com/apikey",
+  "https://cloud.google.com/pricing"
+ ],
+ "output": {
+  "one_liner": "NotebookLM Enterprise is Google's licensed, source-grounded notebook service for organizing sources in global-location deployments.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2"
+   ],
+   "oauth_grant_types": [],
+   "notes": "Google OAuth 2.0 configuration required via Google Cloud Console",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/notebook_lm.md",
+     "snippet": "Auth: OAUTH2"
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/notebook_lm.md",
+     "snippet": "Open Clients → Create client, choose Web application, and give it a name."
+    }
+   ]
+  },
+  "access": {
+   "status": "contact_sales",
+   "dev_sandbox": false,
+   "notes": "Requires active license and existing Gemini Notebook Enterprise deployment; no free tier documented",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/notebook_lm.md",
+     "snippet": "The user needs an active license and the Cloud NotebookLM User role in the deployment project."
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/notebook_lm.md",
+     "snippet": "NotebookLM connects to an existing Gemini Notebook Enterprise deployment in the Global location."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [],
+   "breadth": "unknown",
+   "openapi_spec_url": null,
+   "webhooks": null,
+   "rate_limit_note": "",
+   "evidence": []
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://cloud.google.com/vertex-ai/generative-ai/docs/quotas",
+     "snippet": "Connect to the Knowledge MCP server"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "paid_plan",
+   "rationale": "Composio toolkit exists with 11 tools and OAuth2 configured, but requires paid NotebookLM Enterprise license and enterprise deployment for end users.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "NOTEBOOK_LM"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://docs.composio.dev/toolkits/notebook_lm.md",
+    "snippet": "NotebookLM Enterprise is Google's licensed, source-grounded notebook service for organizing sources in global-location deployments."
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/notebook_lm.md",
+    "snippet": "Composio-managed OAuth available? Yes"
+   }
+  ],
+  "confidence": 0.72,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "Pages state active license required but do not specify whether self-serve purchase or requires sales contract; classified as contact_sales based on enterprise product designation",
+   "api_surface": "NotebookLM API styles, breadth, and specifications not documented in provided pages; PAGE 1 covers broader Agent Platform API, not NotebookLM specifically",
+   "mcp": "PAGE 3 references Knowledge MCP server but does not confirm if official NotebookLM MCP server or provide URL"
+  }
+ }
+}

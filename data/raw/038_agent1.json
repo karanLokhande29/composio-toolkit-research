@@ -1,0 +1,142 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.062769,
+  "seconds": 70.0,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+  "https://developers.pinterest.com/docs/getting-started/connect-app/",
+  "https://developers.pinterest.com/docs/key-concepts/access-tiers/",
+  "https://developers.pinterest.com/about-pinterest-mcp/",
+  "https://developers.pinterest.com/docs/overview/welcome/",
+  "https://developers.pinterest.com/docs/reference/rate-limits/",
+  "https://developers.pinterest.com/docs/work-with-ads/lead-ads/",
+  "https://docs.composio.dev/toolkits/pinterest.md",
+  "https://github.com/postoncehq/pinterest-mcp",
+  "https://business.pinterest.com/en/pinterest-partners",
+  "https://help.pinterest.com/article/two-factor-authentication",
+  "https://developers.pinterest.com/docs/getting-started/make-an-api-call/"
+ ],
+ "output": {
+  "one_liner": "Visual discovery and social platform for managing pins, boards, campaigns and advertising campaigns.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2"
+   ],
+   "oauth_grant_types": [
+    "authorization_code",
+    "client_credentials"
+   ],
+   "notes": "OAuth 2.0 with Authorization Code and Client Credentials grant types. Bearer token authentication in HTTP requests.",
+   "evidence": [
+    {
+     "url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+     "snippet": "OAuth grant type selection. The grant type determines how your app authenticates and acquires authorization to access protected resources."
+    },
+    {
+     "url": "https://developers.pinterest.com/docs/getting-started/make-an-api-call/",
+     "snippet": "curl --location --request GET 'https://api.pinterest.com/v5/pins' --header 'Authorization: Bearer YOUR_TOKEN'"
+    },
+    {
+     "url": "https://developers.pinterest.com/docs/getting-started/connect-app/",
+     "snippet": "Build a working authentication flow based on OAuth 2. The basic flow is as follows: Make an authorization request to our OAuth page in your browser."
+    }
+   ]
+  },
+  "access": {
+   "status": "app_review",
+   "dev_sandbox": true,
+   "notes": "Trial access is free but requires Pinterest app review. Standard production access requires additional approval with video demo of OAuth flow implementation.",
+   "evidence": [
+    {
+     "url": "https://developers.pinterest.com/docs/getting-started/connect-app/",
+     "snippet": "Application requests are reviewed by Pinterest. You will receive an email notification after your app has been reviewed, letting you know whether it was approved or denied access."
+    },
+    {
+     "url": "https://developers.pinterest.com/docs/key-concepts/access-tiers/",
+     "snippet": "To ensure your app gets approved for Standard access make sure to prep the following: Prepare a video recording of your app completing an action using the Pinterest API."
+    },
+    {
+     "url": "https://developers.pinterest.com/docs/getting-started/connect-app/",
+     "snippet": "Our sandbox environment allows you to make test calls without impacting the Pinterest product environment."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Trial: 1000 requests/day; Standard: 100 requests/sec per user per app. Category-specific limits vary across ads, catalogs, org, trends, and conversion endpoints.",
+   "evidence": [
+    {
+     "url": "https://developers.pinterest.com/docs/reference/rate-limits/",
+     "snippet": "Rate limit categories: ads_analytics, ads_conversions, ads_read, ads_write, advanced_auction_read, advanced_auction_write, catalogs_read, catalogs_write, org_analytics, org_read, org_write, trends_read"
+    },
+    {
+     "url": "https://developers.pinterest.com/docs/reference/rate-limits/",
+     "snippet": "Trial access: 1000 requests per day for all API requests. Standard access: 100 requests per second per user per app for all API requests"
+    },
+    {
+     "url": "https://developers.pinterest.com/docs/work-with-ads/lead-ads/",
+     "snippet": "Specify the callback URL via the webhook_url field. The webhook_url should follow the HTTPS protocol and adhere to standard webhook behavior"
+    },
+    {
+     "url": "https://developers.pinterest.com/docs/getting-started/connect-app/",
+     "snippet": "Python SDK: Our SDK currently offers a Python library that supports campaign management and simplifies authentication and error handling."
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [
+    "https://github.com/postoncehq/pinterest-mcp"
+   ],
+   "evidence": [
+    {
+     "url": "https://developers.pinterest.com/about-pinterest-mcp/",
+     "snippet": "New announcement: Your AI just got a new superpower Pinterest MCP Server brings the power of Pinterest data directly into AI assistants."
+    },
+    {
+     "url": "https://developers.pinterest.com/about-pinterest-mcp/",
+     "snippet": "Be the first to know when it launches. Sign up for updates"
+    },
+    {
+     "url": "https://github.com/postoncehq/pinterest-mcp",
+     "snippet": "Pinterest MCP server for Claude, ChatGPT, Cursor and Codex. Publish and schedule Pinterest pins, carousels and video pins with titles and links"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "app_review",
+   "rationale": "Public REST API with broad coverage is well-documented; Composio already built 27-tool toolkit. Friction: app review required for Trial access; additional review for production Standard access.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "PINTEREST"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://developers.pinterest.com/docs/overview/welcome/",
+    "snippet": "The Pinterest API allows developers to build experiences and apps for creators, advertisers, and merchants."
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/pinterest.md",
+    "snippet": "Pinterest is a visual discovery platform. Category: social media accounts. Auth: OAUTH2. Tools: 27"
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  }
+ }
+}

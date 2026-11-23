@@ -1,0 +1,123 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.087329,
+  "seconds": 103.1,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://seranking.com/pricing",
+  "https://seranking.com/api/rate-limits",
+  "https://seranking.com/api-pricing.html",
+  "https://seranking.com/mcp.html",
+  "https://seranking.com/api/integrations/mcp/",
+  "https://seranking.com/api/data/getting-started/",
+  "https://seranking.com/api/data/quickstarts/generate-seo-intelligence-reports-with-seointel/",
+  "https://seranking.com/api/data/quickstarts/build-authority-with-link-building/",
+  "https://seranking.com/api/project/getting-started/",
+  "https://seranking.com/api/local-marketing-api/getting-started/",
+  "https://github.com/seranking/seo-skills",
+  "https://github.com/hireblackout/awesome-mcp-servers"
+ ],
+ "output": {
+  "one_liner": "SE Ranking is an SEO analytics platform providing programmatic access to keyword research, backlink analysis, domain insights, and AI search visibility data via REST API and MCP.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "api_key",
+    "bearer_token",
+    "oauth2"
+   ],
+   "oauth_grant_types": [],
+   "notes": "Static API key authentication via Authorization header (Token or Bearer prefix) or query parameter. OAuth 2.1 used for MCP server remote authentication.",
+   "evidence": [
+    {
+     "url": "https://seranking.com/api/data/getting-started/",
+     "snippet": "Include an Authorization header in your request, with the value Authorization: Token YOUR_API_KEY"
+    },
+    {
+     "url": "https://seranking.com/api/data/quickstarts/generate-seo-intelligence-reports-with-seointel/",
+     "snippet": "curl -X POST https://api.seranking.com/v1/domain/overview/db -H \"Authorization: Bearer YOUR_API_KEY\""
+    },
+    {
+     "url": "https://seranking.com/api/integrations/mcp/",
+     "snippet": "MCP server supports Streamable HTTP transports. This transport uses OAuth 2.1 with dynamic client registration"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_trial",
+   "dev_sandbox": true,
+   "notes": "14-day free trial with 100K API credits, no credit card required. After trial expires, self-serve purchase of credit packs required for continued API access. API key issued immediately upon signup.",
+   "evidence": [
+    {
+     "url": "https://seranking.com/api-pricing.html",
+     "snippet": "Yes. The 14-day free trial gives you 100K API credits across all six API endpoints, as well as MCP server access."
+    },
+    {
+     "url": "https://seranking.com/api-pricing.html",
+     "snippet": "Instantly. Your API key is issued immediately after payment. If you are on a free trial, you'll get an API key once you confirm your email."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": null,
+   "rate_limit_note": "Data API: 10 RPS; Project API: 5 RPS; Trial accounts: 1 RPS. Custom rate limits available on request.",
+   "evidence": [
+    {
+     "url": "https://seranking.com/api/rate-limits",
+     "snippet": "Data API Retrieving raw data (e.g., keywords, backlinks, domain analysis, website audit, AI Search). 10 requests per second (RPS)"
+    },
+    {
+     "url": "https://seranking.com/api/data/getting-started/",
+     "snippet": "All requests to the Data API must be authenticated. The base URL for all endpoints is: https://api.seranking.com"
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://api.seranking.com/mcp",
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://seranking.com/mcp.html",
+     "snippet": "SE Ranking MCP: Use SE Ranking's live data inside any AI assistant. Put 180+ SEO tools behind every prompt"
+    },
+    {
+     "url": "https://seranking.com/api/integrations/mcp/",
+     "snippet": "MCP server supports Streamable HTTP transports. This transport uses OAuth 2.1 with dynamic client registration for authentication at the following address: https://api.seranking.com/mcp"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "paid_plan",
+   "rationale": "API is well-documented with self-serve free trial and clear REST endpoints, but production use requires paid plan after 14-day trial expires (credits are self-serve purchasable).",
+   "composio_existing_toolkit": "no",
+   "composio_slug": null
+  },
+  "overview_evidence": [
+   {
+    "url": "https://seranking.com/pricing",
+    "snippet": "SE Ranking API Programmatic access to real-time SEO & GEO data via SE Ranking's standalone API plan"
+   },
+   {
+    "url": "https://seranking.com/api-pricing.html",
+    "snippet": "One API for keywords, backlinks, domains, audits, AI search, and more. Start pay as you go or commit annually for volume discounts."
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  }
+ }
+}

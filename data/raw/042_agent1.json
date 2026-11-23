@@ -1,0 +1,128 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.049612,
+  "seconds": 52.5,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://developer.woocommerce.com/docs/plugins/woocommerce/woocommerce-rest-api/",
+  "https://woocommerce.com/document/woocommerce-rest-api",
+  "https://woocommerce.com/partners/",
+  "https://woocommerce.com/documentation/woocommerce/getting-started/",
+  "https://woocommerce.com/pricing/",
+  "https://woocommerce.com/accessibility/",
+  "https://developer.woocommerce.com/docs/extensions/getting-started-extensions/",
+  "https://woocommerce.com/partnerships-contact/",
+  "https://woocommerce.com/products/",
+  "https://developer.woocommerce.com/",
+  "https://developer.woocommerce.com/docs/woo-marketplace/",
+  "https://github.com/techspawn/woocommerce-mcp-server"
+ ],
+ "output": {
+  "one_liner": "WooCommerce is a free, open-source ecommerce platform for WordPress that provides a REST API to connect stores with external systems.",
+  "app_type": "open_source_self_hostable",
+  "auth": {
+   "methods": [
+    "api_key",
+    "basic"
+   ],
+   "oauth_grant_types": [],
+   "notes": "REST API uses consumer key and consumer secret generated per WordPress user. WordPress methods support basic auth.",
+   "evidence": [
+    {
+     "url": "https://woocommerce.com/document/woocommerce-rest-api",
+     "snippet": "The WooCommerce REST API uses a key system to control access. Each set of keys is linked to a WordPress user."
+    },
+    {
+     "url": "https://github.com/techspawn/woocommerce-mcp-server",
+     "snippet": "WOOCOMMERCE_CONSUMER_KEY: WooCommerce REST API consumer key WOOCOMMERCE_CONSUMER_SECRET: WooCommerce REST API consumer secret"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": null,
+   "notes": "WooCommerce is free and open-source. Store owners generate API keys in their own WordPress admin dashboard.",
+   "evidence": [
+    {
+     "url": "https://woocommerce.com/pricing/",
+     "snippet": "WooCommerce is the free, Open Source ecommerce platform for WordPress."
+    },
+    {
+     "url": "https://woocommerce.com/pricing/",
+     "snippet": "Free to download and use. Unlimited products, orders, and APIs."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "",
+   "evidence": [
+    {
+     "url": "https://woocommerce.com/document/woocommerce-rest-api",
+     "snippet": "The WooCommerce REST API connects your store to external systems and services."
+    },
+    {
+     "url": "https://woocommerce.com/document/woocommerce-rest-api",
+     "snippet": "WooCommerce REST API Docs — the complete technical reference for all available endpoints."
+    },
+    {
+     "url": "https://github.com/techspawn/woocommerce-mcp-server",
+     "snippet": "It provides comprehensive tools for managing all aspects of products, orders, customers, shipping, taxes, discounts, store configuration."
+    },
+    {
+     "url": "https://woocommerce.com/document/woocommerce-rest-api",
+     "snippet": "Webhooks configured to use the legacy REST API also stop working unless you install this plugin."
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [
+    "https://github.com/techspawn/woocommerce-mcp-server"
+   ],
+   "evidence": [
+    {
+     "url": "https://developer.woocommerce.com/",
+     "snippet": "Jan 23, 2026 Call for Testing: WooCommerce MCP Beta"
+    },
+    {
+     "url": "https://github.com/techspawn/woocommerce-mcp-server",
+     "snippet": "A WooCommerce (MCP) Model Context Protocol server for WooCommerce integration, compatible with Windows, macOS, and Linux."
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Free self-serve credentials, documented REST API with broad coverage; toolkit could be built today.",
+   "composio_existing_toolkit": "no",
+   "composio_slug": null
+  },
+  "overview_evidence": [
+   {
+    "url": "https://woocommerce.com/document/woocommerce-rest-api",
+    "snippet": "The WooCommerce REST API connects your store to external systems and services."
+   },
+   {
+    "url": "https://woocommerce.com/pricing/",
+    "snippet": "WooCommerce is the free, Open Source ecommerce platform for WordPress."
+   }
+  ],
+  "confidence": 0.76,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "Rate limits not specified in provided pages. OpenAPI spec URL not provided.",
+   "mcp": "Official WooCommerce MCP server URL not provided; only community implementation and beta announcements available."
+  }
+ }
+}

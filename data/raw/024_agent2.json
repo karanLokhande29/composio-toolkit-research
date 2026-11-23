@@ -1,0 +1,101 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.048509000000000004,
+  "seconds": 71.4,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://docs.composio.dev/toolkits/lark.md",
+  "https://github.com/larksuite/lark-openapi-mcp"
+ ],
+ "output": {
+  "one_liner": "Enterprise collaboration platform with messaging, video conferencing, calendar, and document management",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2"
+   ],
+   "oauth_grant_types": [
+    "authorization_code"
+   ],
+   "notes": "OAuth 2.0 with App ID and App Secret; redirect flow for user authorization",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/lark.md",
+     "snippet": "Auth: OAUTH2"
+    },
+    {
+     "url": "https://github.com/larksuite/lark-openapi-mcp",
+     "snippet": "set the OAuth 2.0 redirect URL to http://localhost:3000/callback"
+    },
+    {
+     "url": "https://github.com/larksuite/lark-openapi-mcp",
+     "snippet": "Obtain the App ID and App Secret, which will be used for API authentication"
+    }
+   ]
+  },
+  "access": {
+   "status": "unknown",
+   "dev_sandbox": null,
+   "notes": "Pages describe application creation process but do not state whether it is free, requires payment, or needs approval",
+   "evidence": [
+    {
+     "url": "https://github.com/larksuite/lark-openapi-mcp",
+     "snippet": "Before using the lark-mcp tool, you need to create a Feishu/Lark application"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": null,
+   "rate_limit_note": "",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/lark.md",
+     "snippet": "Tools: 451"
+    },
+    {
+     "url": "https://github.com/larksuite/lark-openapi-mcp",
+     "snippet": "document processing, conversation management, calendar scheduling, and more"
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://github.com/larksuite/lark-openapi-mcp",
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://github.com/larksuite/lark-openapi-mcp",
+     "snippet": "This is the Feishu/Lark official OpenAPI MCP (Model Context Protocol) tool"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Composio toolkit already exists with 451 tools; OAuth2 documented; official MCP server published; buildability proven",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "LARK"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://docs.composio.dev/toolkits/lark.md",
+    "snippet": "Enterprise collaboration platform with messaging, video conferencing, calendar, and document management"
+   }
+  ],
+  "confidence": 0.8,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "Pages do not state whether creating applications or accessing API requires payment, approval, or free tier availability",
+   "api_surface": "OpenAPI spec URL not provided in pages; webhook support not mentioned; rate limits not documented",
+   "mcp": ""
+  }
+ }
+}

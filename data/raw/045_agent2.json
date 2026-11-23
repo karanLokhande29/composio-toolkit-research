@@ -1,0 +1,117 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.093099,
+  "seconds": 131.9,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://developer.adobe.com/commerce/webapi/get-started/authentication/",
+  "https://developer.adobe.com/commerce/webapi/rest/",
+  "https://developer.adobe.com/commerce/webapi/graphql/",
+  "https://developer.adobe.com/commerce/webapi/",
+  "https://developer.adobe.com/commerce/",
+  "https://developer.adobe.com/commerce/extensibility/webhooks/",
+  "https://developer.adobe.com/commerce/webapi/get-started/",
+  "https://solutionpartners.adobe.com/solution-partners/training_and_certification/certification.html",
+  "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-oauth",
+  "https://experienceleague.adobe.com/developer/commerce/storefront/playgrounds/commerce-services/"
+ ],
+ "output": {
+  "one_liner": "Adobe Commerce is a cloud-based e-commerce platform enabling merchants to build and manage multichannel commerce experiences, available as SaaS, self-hosted on-premises, and open-source.",
+  "app_type": "cloud_platform",
+  "auth": {
+   "methods": [
+    "bearer_token",
+    "other"
+   ],
+   "oauth_grant_types": [],
+   "notes": "OAuth 1.0a (not 2.0) for third-party integrations; Bearer tokens (IMS Access Token) for Cloud/SaaS; login credentials for admin/customer UI",
+   "evidence": [
+    {
+     "url": "https://developer.adobe.com/commerce/webapi/rest/",
+     "snippet": "Adobe Commerce REST APIs support multiple authentication methods, including:"
+    },
+    {
+     "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-oauth",
+     "snippet": "OAuth authentication with Adobe Commerce and Magento Open Source is based on OAuth 1.0a"
+    },
+    {
+     "url": "https://developer.adobe.com/commerce/webapi/rest/",
+     "snippet": "Both of these authentication methods require every request to be signed with an IMS Access Token."
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": null,
+   "notes": "Magento Open Source (free, open-source self-hostable) enables free credential generation via Admin integration creation. Adobe Commerce Cloud/SaaS pricing model and free trial/sandbox availability not specified.",
+   "evidence": [
+    {
+     "url": "https://developer.adobe.com/commerce/webapi/rest/",
+     "snippet": "Adobe Commerce on Cloud, Adobe Commerce on-premises, and Magento Open Source all use the same REST API"
+    },
+    {
+     "url": "https://developer.adobe.com/commerce/webapi/get-started/",
+     "snippet": "Create a new integration on Admin. To create an integration, click System Extensions Integration Add New Integration"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest",
+    "graphql",
+    "soap"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Rate limit policy not documented in provided pages",
+   "evidence": [
+    {
+     "url": "https://developer.adobe.com/commerce/webapi/get-started/",
+     "snippet": "Support for GraphQL, REST (Representational State Transfer) and SOAP (Simple Object Access Protocol)."
+    },
+    {
+     "url": "https://developer.adobe.com/commerce/webapi/rest/",
+     "snippet": "Adobe Commerce provides a wide range of REST API endpoints that allow you to perform actions"
+    },
+    {
+     "url": "https://developer.adobe.com/commerce/extensibility/webhooks/",
+     "snippet": "Webhooks enable developers to configure synchronous logic to execute calls to external systems"
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": []
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "REST/GraphQL/SOAP APIs and webhooks fully documented; Magento Open Source provides free self-serve development environment using identical core APIs as commercial Adobe Commerce.",
+   "composio_existing_toolkit": "no",
+   "composio_slug": null
+  },
+  "overview_evidence": [
+   {
+    "url": "https://developer.adobe.com/commerce/",
+    "snippet": "Adobe provides developers with software, tools, and services to customize and extend Adobe Commerce"
+   },
+   {
+    "url": "https://developer.adobe.com/commerce/webapi/",
+    "snippet": "The Commerce Web APIs allow you to integrate third-party software and build headless applications"
+   }
+  ],
+  "confidence": 0.72,
+  "unknown_reasons": {
+   "auth": "OAuth 1.0a is explicitly documented but does not fit OAuth2 enum value; classified as 'other'.",
+   "access": "Magento Open Source clearly free and self-serve; Adobe Commerce Cloud/SaaS free tier, trial, or sandbox availability not stated in provided pages.",
+   "api_surface": "OpenAPI specification URL and rate limiting policy not mentioned in provided pages.",
+   "mcp": "MCP servers not mentioned; likely predates these documentation pages or not yet implemented."
+  }
+ }
+}

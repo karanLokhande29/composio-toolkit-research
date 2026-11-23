@@ -1,0 +1,132 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.065775,
+  "seconds": 81.6,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://docs.brightdata.com/introduction",
+  "https://docs.composio.dev/toolkits/brightdata.md",
+  "https://brightdata.com",
+  "https://brightdata.com/pricing",
+  "https://docs.brightdata.com/api-reference/introduction",
+  "https://brightdata.com/partners",
+  "https://docs.brightdata.com/mcp-server/overview",
+  "https://brightdata.com/ai/web-access",
+  "https://brightdata.com/ai/mcp-server",
+  "https://brightdata.com/pricing/web-unlocker"
+ ],
+ "output": {
+  "one_liner": "Bright Data provides web scraping, data extraction, and proxy infrastructure giving AI agents real-time access to public web data.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "bearer_token",
+    "other"
+   ],
+   "oauth_grant_types": [],
+   "notes": "API key sent as Bearer token in Authorization header; also supports proxy protocol with username/password authentication.",
+   "evidence": [
+    {
+     "url": "https://docs.brightdata.com/api-reference/introduction",
+     "snippet": "An API key is a secure hashed token used to authenticate with Bright Data API."
+    },
+    {
+     "url": "https://docs.brightdata.com/api-reference/introduction",
+     "snippet": "Here's an example request: --header 'Authorization: Bearer <token>'"
+    },
+    {
+     "url": "https://docs.brightdata.com/api-reference/introduction",
+     "snippet": "Authenticate and interact with the Bright Data platform using proxy protocol username."
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "5,000 free credits per month with no credit card required. API key generation is self-service via account settings dashboard.",
+   "evidence": [
+    {
+     "url": "https://docs.brightdata.com/introduction",
+     "snippet": "5,000 free credits per month, no credit card required. See the free tier."
+    },
+    {
+     "url": "https://docs.brightdata.com/mcp-server/overview",
+     "snippet": "Start using the Bright Data MCP server with 5,000 requests per month, completely free."
+    },
+    {
+     "url": "https://docs.brightdata.com/api-reference/introduction",
+     "snippet": "To generate a new API key, follow these steps: Click Add API key button."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "HTTP 429 responses returned with Retry-After header present.",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/brightdata.md",
+     "snippet": "Tools: 167"
+    },
+    {
+     "url": "https://docs.brightdata.com/introduction",
+     "snippet": "cURL -H 'Authorization: Bearer YOUR_API_KEY'"
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/brightdata.md",
+     "snippet": "destination_type string api_pull webhook email gcs gcp_pubsub s3 snowflake"
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/brightdata.md",
+     "snippet": "If Bright Data returns HTTP 429, retry after the Retry-After delay when present."
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://mcp.brightdata.com/sse",
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://docs.brightdata.com/introduction",
+     "snippet": "mcp add brightdata https://mcp.brightdata.com/sse?token=YOUR_API_KEY"
+    },
+    {
+     "url": "https://docs.brightdata.com/mcp-server/overview",
+     "snippet": "The Bright Data MCP server gives AI agents real-time access to public web data through the Model Context Protocol."
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Self-serve free credentials, documented REST API with SDKs and CLI, official MCP published, and Composio has already built a 167-tool toolkit.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "BRIGHTDATA"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://docs.brightdata.com/introduction",
+    "snippet": "Guides, quickstarts and API references for Bright Data Scraper API, Scraper Studio, Web Unlocker API, SERP API"
+   },
+   {
+    "url": "https://brightdata.com",
+    "snippet": "Discover, access, extract, and interact with any public website. Get structured, reliable, real-time or historical data."
+   }
+  ],
+  "confidence": 0.92,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": "GitHub source repository URL not explicitly provided in pages, though official MCP endpoint and documentation clearly present."
+  }
+ }
+}

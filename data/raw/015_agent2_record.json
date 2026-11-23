@@ -1,0 +1,103 @@
+{
+ "id": 15,
+ "app": "Pylon",
+ "category": "Support and Helpdesk",
+ "hint": "usepylon.com",
+ "one_liner": "Agentic B2B support platform that tracks customer issues across channels and enables AI agents to investigate, take action, and resolve them.",
+ "app_type": "saas",
+ "auth": {
+  "methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "oauth_grant_types": [],
+  "notes": "OAuth 2.0 for interactive clients and MCP, scoped API tokens for programmatic access",
+  "evidence": [
+   {
+    "url": "https://www.usepylon.com/integrations/mcp",
+    "snippet": "Sign in with OAuth or use an API token",
+    "check": "exact"
+   },
+   {
+    "url": "https://www.usepylon.com/integrations/mcp",
+    "snippet": "Auth is OAuth 2.0 or an API token. Transport is Streamable HTTP (stateless).",
+    "check": "exact"
+   },
+   {
+    "url": "https://usepylon.com/pricing",
+    "snippet": "Scoped API Tokens",
+    "check": "exact"
+   }
+  ]
+ },
+ "access": {
+  "status": "contact_sales",
+  "dev_sandbox": false,
+  "notes": "Free trials available but require sales representative to set up demo organization; no self-serve free tier",
+  "evidence": [
+   {
+    "url": "https://usepylon.com/pricing",
+    "snippet": "Pylon offers free trials for prospects. Your sales representative will work with you on setting up the demo organization.",
+    "check": "exact"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "rest"
+  ],
+  "breadth": "unknown",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "rate_limit_note": "",
+  "evidence": []
+ },
+ "mcp": {
+  "official": "https://www.usepylon.com/integrations/mcp",
+  "community": [],
+  "evidence": [
+   {
+    "url": "https://www.usepylon.com/integrations/mcp",
+    "snippet": "US server: mcp.usepylon.com EU server: mcp.eu.usepylon.com",
+    "check": "repaired"
+   },
+   {
+    "url": "https://www.usepylon.com/integrations/mcp",
+    "snippet": "Pylon's MCP server exposes your Pylon workspace (issues, accounts, contacts, and more)",
+    "check": "exact"
+   }
+  ]
+ },
+ "buildability": {
+  "verdict": "ready_with_caveats",
+  "main_blocker": "other",
+  "rationale": "MCP and REST APIs documented with published tools; Composio toolkit already exists; friction from sales-gated credentials.",
+  "composio_existing_toolkit": "yes",
+  "composio_slug": "PYLON_MCP"
+ },
+ "overview_evidence": [
+  {
+   "url": "https://docs.usepylon.com",
+   "snippet": "Pylon is the first agentic support platform built for B2B. Track customer issues across any channel and orchestrate agents and Automations to investigate, take action, and resolve customer issues."
+  },
+  {
+   "url": "https://usepylon.com",
+   "snippet": "Build support, account, and product intelligence across conversations, CRM, product usage, logs, and code, then make it available via MCP to your agents and team."
+  }
+ ],
+ "confidence": 0.8,
+ "unknown_reasons": {
+  "auth": "",
+  "access": "",
+  "api_surface": "agent2: evidence did not verify",
+  "mcp": ""
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 12,
+  "error": null,
+  "cost_usd": 0.05380600000000001,
+  "seconds": 62.1
+ }
+}

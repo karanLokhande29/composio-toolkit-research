@@ -1,0 +1,114 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.062742,
+  "seconds": 77.0,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://learn.microsoft.com/en-us/linkedin/shared/authentication/authentication",
+  "https://learn.microsoft.com/en-us/linkedin/shared/authentication/authorization-code-flow",
+  "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads-reporting/ads-reporting",
+  "https://learn.microsoft.com/en-us/linkedin/marketing/overview",
+  "https://learn.microsoft.com/en-us/linkedin/marketing/getting-started",
+  "https://learn.microsoft.com/en-us/linkedin/shared/api-guide/concepts/rate-limits",
+  "https://docs.composio.dev/toolkits/linkedin_ads.md",
+  "https://learn.microsoft.com/linkedin/marketing"
+ ],
+ "output": {
+  "one_liner": "LinkedIn Ads is a professional advertising platform for creating, managing, and tracking targeted campaigns to reach professional audiences.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2"
+   ],
+   "oauth_grant_types": [
+    "authorization_code"
+   ],
+   "notes": "OAuth 2.0 required. Only 3-legged OAuth (member authorization) available for marketing APIs; 2-legged OAuth (client credentials) explicitly not supported for marketing use cases.",
+   "evidence": [
+    {
+     "url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/authentication",
+     "snippet": "The LinkedIn API uses OAuth 2.0 for member (user) authorization and API authentication."
+    },
+    {
+     "url": "https://learn.microsoft.com/en-us/linkedin/marketing/getting-started",
+     "snippet": "All these permission scopes are 3-legged permissions requiring explicit consent from a LinkedIn member. The 2-legged client credentials flow is not available for any marketing use cases."
+    }
+   ]
+  },
+  "access": {
+   "status": "unknown",
+   "dev_sandbox": null,
+   "notes": "Pages state access to 'the LinkedIn Marketing API Program' is required but do not document the acquisition process. References to 'LinkedIn Marketing Partner Program' and 'LinkedIn API Partner Support' suggest approval or partnership may be needed, but this is not explicit.",
+   "evidence": [
+    {
+     "url": "https://learn.microsoft.com/en-us/linkedin/marketing/getting-started",
+     "snippet": "Once you have a developer application that has been given access to the LinkedIn Marketing API Program, you're ready to start generating OAuth access tokens."
+    },
+    {
+     "url": "https://learn.microsoft.com/en-us/linkedin/marketing/overview",
+     "snippet": "Interested in Joining the LinkedIn Marketing Partner Program? The LinkedIn Marketing Partner Program is a global community of qualified technology and service providers."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": null,
+   "rate_limit_note": "Rate limits are per-endpoint and reset daily at midnight UTC. Standard rate limits are not published in documentation; developers must check the Developer Portal for specific endpoints.",
+   "evidence": [
+    {
+     "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads-reporting/ads-reporting",
+     "snippet": "curl -X GET 'https://api.linkedin.com/rest/adAnalytics?q=analytics&pivot={pivot}&timeGranularity=DAILY'"
+    },
+    {
+     "url": "https://learn.microsoft.com/en-us/linkedin/shared/api-guide/concepts/rate-limits",
+     "snippet": "Rate limits specify the maximum number of API calls that can be made in a 24 hour period. These limits reset at midnight UTC every day."
+    },
+    {
+     "url": "https://learn.microsoft.com/en-us/linkedin/shared/api-guide/concepts/rate-limits",
+     "snippet": "Standard rate limits are not published in documentation. You can look up the rate limit of any endpoint your app has access to through the Developer Portal."
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": []
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Composio has already published a production 28-tool toolkit for LinkedIn Ads with OAuth2 authentication, eliminating any technical barriers to building agent tools.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "LINKEDIN_ADS"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://learn.microsoft.com/en-us/linkedin/marketing/overview",
+    "snippet": "The LinkedIn Marketing Platform helps businesses grow by building technology to reach, engage, and convert professional audiences at scale."
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/linkedin_ads.md",
+    "snippet": "Tool to create a new LinkedIn ad account for campaign management. Use when setting up advertising infrastructure for an organization or person."
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/linkedin_ads.md",
+    "snippet": "Tool to retrieve LinkedIn ad analytics and reporting metrics for campaigns, creatives, and accounts. Supports filtering by accounts, campaigns, or campaign groups."
+   }
+  ],
+  "confidence": 0.78,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "Pages reference 'the LinkedIn Marketing API Program' as a requirement and mention 'LinkedIn Marketing Partner Program' but do not document the actual process to gain API access. No explicit self-serve, approval, or sales process documented.",
+   "api_surface": "",
+   "mcp": "No MCP servers mentioned in provided pages."
+  }
+ }
+}

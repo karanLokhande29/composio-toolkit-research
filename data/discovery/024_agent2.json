@@ -1,0 +1,160 @@
+{
+ "id": 24,
+ "app": "Lark (Larksuite)",
+ "tag": "agent2",
+ "urls": [
+  {
+   "url": "https://open.larksuite.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://open.larksuite.com/document/home/index",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/reference/authen-v1/access_token",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/reference/authen-v1/authorize",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://open.larksuite.com/document/server-docs/getting-started/api-access-token/app-access-token",
+   "purpose": "credentials",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://open.larksuite.com/document/home/develop-process",
+   "purpose": "sandbox",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://open.larksuite.com/document/isv-app-dev/isv-overview",
+   "purpose": "partner programme",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://open.larksuite.com/document/home/pricing-plan",
+   "purpose": "pricing",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://open.larksuite.com/document/server-docs/api-call-guide/server-api-list",
+   "purpose": "API reference",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://open.larksuite.com/api-explorer",
+   "purpose": "API reference",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://open.larksuite.com/document/server-docs/api-call-guide/frequency-control",
+   "purpose": "rate limits",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/reference/event-subscription-guide/event-subscription-configure-",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://open.larksuite.com/document/home/develop-process/event-subscription",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://github.com/larksuite/lark-openapi-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/lark.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "larksuite/lark-openapi-mcp",
+   "url": "https://github.com/larksuite/lark-openapi-mcp",
+   "stars": 874,
+   "description": "飞书/Lark官方 OpenAPI MCP"
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Lark",
+    "slug": "LARK",
+    "tools": 451,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/lark.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Lark",
+    "slug": "LARK",
+    "tools": 451,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/lark.md"
+   }
+  ]
+ },
+ "search_meta": {}
+}

@@ -1,0 +1,112 @@
+{
+ "id": 51,
+ "app": "DataForSEO",
+ "category": "Data, SEO and Scraping",
+ "hint": "docs.dataforseo.com",
+ "one_liner": "DataForSEO provides APIs for retrieving SEO data including search results, backlinks, app reviews, and business data across multiple sources.",
+ "app_type": "saas",
+ "auth": {
+  "methods": [
+   "basic"
+  ],
+  "oauth_grant_types": [],
+  "notes": "HTTP Basic Authentication with API login and password encoded in Base64, passed in Authorization header",
+  "evidence": [
+   {
+    "url": "https://docs.dataforseo.com/v3/auth/",
+    "snippet": "DataForSEO is using the Basic Authentication , which makes it possible to call our APIs with almost any programming language,",
+    "check": "repaired"
+   },
+   {
+    "url": "https://docs.dataforseo.com/v3/auth/",
+    "snippet": "your unique API token should be passed in the 'Authorization' header within the request in the following format",
+    "check": "exact"
+   }
+  ]
+ },
+ "access": {
+  "status": "self_serve_trial",
+  "dev_sandbox": true,
+  "notes": "Free account signup with $1 trial credit for testing. Sandbox available with sample responses.",
+  "evidence": [
+   {
+    "url": "https://dataforseo.com/pricing",
+    "snippet": "You can sign up for free and use your $1 trial credit available to new accounts for trying our APIs",
+    "check": "exact"
+   },
+   {
+    "url": "https://dataforseo.com/pricing",
+    "snippet": "You can also test API integration for free using the DataForSEO Sandbox",
+    "check": "exact"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "rest"
+  ],
+  "breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "rate_limit_note": "10,000 POST and GET API calls per minute total; rate limits provided in HTTP headers",
+  "evidence": [
+   {
+    "url": "https://docs.dataforseo.com/v3/",
+    "snippet": "DataForSEO API is using the REST technology for interchanging data between your application and our service",
+    "check": "exact"
+   },
+   {
+    "url": "https://docs.dataforseo.com/v3/",
+    "snippet": "YAML-formatted specification for all APIs",
+    "check": "exact"
+   },
+   {
+    "url": "https://docs.dataforseo.com/v3/",
+    "snippet": "Set multiple tasks in one request • Webhooks & callbacks",
+    "check": "repaired"
+   },
+   {
+    "url": "https://docs.dataforseo.com/v3/serp/overview/",
+    "snippet": "You can send up to 10000 POST and GET API calls per minute in total",
+    "check": "exact"
+   }
+  ]
+ },
+ "mcp": {
+  "official": null,
+  "community": [],
+  "evidence": []
+ },
+ "buildability": {
+  "verdict": "ready",
+  "main_blocker": "none",
+  "rationale": "Public REST API with Basic auth, free trial credentials available, documented rate limits, and Composio toolkit already exists with 354 tools.",
+  "composio_existing_toolkit": "yes",
+  "composio_slug": "DATAFORSEO"
+ },
+ "overview_evidence": [
+  {
+   "url": "https://dataforseo.com/apis",
+   "snippet": "DataForSEO APIs – Powerful Data Solutions for SEO and SEM"
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/dataforseo.md",
+   "snippet": "Tool to create Apple App Store reviews retrieval tasks. Use when you need to fetch user reviews for a specific iOS app"
+  }
+ ],
+ "confidence": 0.95,
+ "unknown_reasons": {
+  "auth": "",
+  "access": "",
+  "api_surface": "OpenAPI specification mentioned as YAML-formatted but direct URL not provided in pages",
+  "mcp": "Official MCP server URL not provided; product name 'DataForSEO MCP' mentioned in navigation only"
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 9,
+  "error": null,
+  "cost_usd": 0.09304399999999999,
+  "seconds": 111.1
+ }
+}

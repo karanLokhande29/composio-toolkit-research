@@ -1,0 +1,49 @@
+{
+ "fields": [
+  "access.status",
+  "auth.methods"
+ ],
+ "pages": [
+  "https://github.com/bcharleson/otter-cli"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.035487000000000005,
+  "seconds": 11.1,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "access.status",
+    "value": "contact_sales",
+    "evidence": [
+     {
+      "url": "https://github.com/bcharleson/otter-cli",
+      "snippet": "The Otter.ai public API is currently in beta and requires an Enterprise plan. Contact your Otter account manager for API access."
+     }
+    ],
+    "reason": "Access requires contacting an Otter account manager rather than a self-serve purchase, matching contact_sales."
+   },
+   {
+    "field": "auth.methods",
+    "value": [
+     "bearer_token",
+     "oauth2"
+    ],
+    "evidence": [
+     {
+      "url": "https://github.com/bcharleson/otter-cli",
+      "snippet": "Generate your access token in Otter.ai: Enterprise Settings → API → Generate Token"
+     },
+     {
+      "url": "https://github.com/bcharleson/otter-cli",
+      "snippet": "OTTER_ACCESS_TOKEN Otter.ai OAuth access token"
+     }
+    ],
+    "reason": "The token is manually generated as a static bearer credential but is explicitly described as an OAuth access token, so both apply."
+   }
+  ]
+ }
+}

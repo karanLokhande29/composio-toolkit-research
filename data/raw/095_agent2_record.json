@@ -1,0 +1,111 @@
+{
+ "id": 95,
+ "app": "Reducto",
+ "category": "AI, Research and Media-native",
+ "hint": "reducto.ai (document parsing)",
+ "one_liner": "Reducto is an AI-powered document processing platform that parses, extracts, classifies, splits, and edits 30+ file types at enterprise scale.",
+ "app_type": "saas",
+ "auth": {
+  "methods": [
+   "bearer_token",
+   "oauth2"
+  ],
+  "oauth_grant_types": [
+   "device_code"
+  ],
+  "notes": "API uses static API keys sent as Bearer tokens. OAuth2 device-code flow used for initial MCP server authentication; API key then stored locally.",
+  "evidence": [
+   {
+    "url": "https://docs.reducto.ai/get-started/authentication",
+    "snippet": "Create a key right here. Give it a name and copy it. It also shows up in Studio under API Keys",
+    "check": "repaired"
+   },
+   {
+    "url": "https://docs.reducto.ai/mcp-server",
+    "snippet": "This opens an OAuth device-code flow in your browser. Once approved, your API key is saved to ~/.reducto/config.yaml",
+    "check": "exact"
+   }
+  ]
+ },
+ "access": {
+  "status": "self_serve_free",
+  "dev_sandbox": true,
+  "notes": "Standard tier includes $150 in free usage credits with self-serve signup, no approval or sales contact needed. Growth/Enterprise tiers require contact form.",
+  "evidence": [
+   {
+    "url": "https://reducto.ai",
+    "snippet": "You can get API access right away by starting off on our Standard tier, pay-as-you-go plan.",
+    "check": "exact"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "rest"
+  ],
+  "breadth": "moderate",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "rate_limit_note": "1,000 req/s sustained per API key globally; 300 req/s for GET /job/{job_id} polling. SDKs auto-retry 429 responses with exponential backoff.",
+  "evidence": [
+   {
+    "url": "https://docs.reducto.ai",
+    "snippet": "Available in Python, Node.js, Go, and REST, with Studio for visual pipeline building.",
+    "check": "exact"
+   },
+   {
+    "url": "https://reducto.ai/developers",
+    "snippet": "Full OpenAPI spec with request/response schemas, error codes, and rate limits.",
+    "check": "exact"
+   },
+   {
+    "url": "https://docs.reducto.ai",
+    "snippet": "Async processing & webhooks Async processing Svix webhooks Direct webhooks Batch processing",
+    "check": "repaired"
+   }
+  ]
+ },
+ "mcp": {
+  "official": "https://mcp.reducto.ai/mcp",
+  "community": [],
+  "evidence": [
+   {
+    "url": "https://docs.reducto.ai/mcp-server",
+    "snippet": "The hosted server runs at https://mcp.reducto.ai/mcp . Add this block to your MCP client config",
+    "check": "repaired"
+   }
+  ]
+ },
+ "buildability": {
+  "verdict": "ready",
+  "main_blocker": "none",
+  "rationale": "Self-serve free credentials ($150), documented REST API with OpenAPI spec, webhooks supported, and official MCP server already published.",
+  "composio_existing_toolkit": "no",
+  "composio_slug": null
+ },
+ "overview_evidence": [
+  {
+   "url": "https://reducto.ai",
+   "snippet": "Reducto: The Agentic Document Platform for AI Teams. The agentic document platform for leading AI teams who demand enterprise performance at scale."
+  },
+  {
+   "url": "https://docs.reducto.ai",
+   "snippet": "Reducto is the agentic document platform for AI teams who need production-grade document processing at enterprise scale."
+  }
+ ],
+ "confidence": 0.95,
+ "unknown_reasons": {
+  "auth": "",
+  "access": "",
+  "api_surface": "",
+  "mcp": ""
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 9,
+  "error": null,
+  "cost_usd": 0.086754,
+  "seconds": 110.5
+ }
+}

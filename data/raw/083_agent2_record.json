@@ -1,0 +1,108 @@
+{
+ "id": 83,
+ "app": "Binance",
+ "category": "Finance and Fintech",
+ "hint": "binance-docs.github.io",
+ "one_liner": "Cryptocurrency exchange platform providing REST API for trading and market data",
+ "app_type": "cloud_platform",
+ "auth": {
+  "methods": [
+   "api_key"
+  ],
+  "oauth_grant_types": [],
+  "notes": "API key authentication via system-generated HMAC symmetric encryption or self-generated asymmetric (Ed25519/RSA) encryption. Public endpoints require no authentication.",
+  "evidence": [
+   {
+    "url": "https://github.com/TermiX-official/binance-mcp",
+    "snippet": "System-generated API keys (HMAC symmetric encryption) - You'll get the API key and the Secret Key.",
+    "check": "exact"
+   },
+   {
+    "url": "https://github.com/guangxiangdebizi/FinanceMCP",
+    "snippet": "当前只调用安全类型为 NONE 的公开 K 线接口，不需要 Binance 账号、API Key 或交易权限。",
+    "check": "repaired"
+   }
+  ]
+ },
+ "access": {
+  "status": "self_serve_free",
+  "dev_sandbox": null,
+  "notes": "Public API endpoints free and unauthenticated. Authenticated endpoints require Binance account with identity verification and 2FA; pages do not specify cost tier or approval requirements for authenticated access.",
+  "evidence": [
+   {
+    "url": "https://github.com/TermiX-official/binance-mcp",
+    "snippet": "Before using the Binance API integration, you need to create an API key.",
+    "check": "exact"
+   },
+   {
+    "url": "https://github.com/guangxiangdebizi/FinanceMCP",
+    "snippet": "FinanceMCP 当前只调用安全类型为 NONE 的公开 K 线接口，不需要 Binance 账号、API Key 或交易权限",
+    "check": "exact"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "rest"
+  ],
+  "breadth": "unknown",
+  "openapi_spec_url": null,
+  "webhooks": null,
+  "rate_limit_note": "",
+  "evidence": [
+   {
+    "url": "https://github.com/guangxiangdebizi/FinanceMCP",
+    "snippet": "Binance Public API 不需要 Spot REST API",
+    "check": "repaired"
+   }
+  ]
+ },
+ "mcp": {
+  "official": null,
+  "community": [
+   "https://github.com/chrisleekr/binance-trading-bot",
+   "https://github.com/guangxiangdebizi/FinanceMCP",
+   "https://github.com/TermiX-official/binance-mcp"
+  ],
+  "evidence": [
+   {
+    "url": "https://github.com/chrisleekr/binance-trading-bot",
+    "snippet": "Automated Binance trading bot with pluggable strategies, historical backtesting, a live dashboard, and connect an AI agent over MCP",
+    "check": "repaired"
+   },
+   {
+    "url": "https://github.com/TermiX-official/binance-mcp",
+    "snippet": "Binance MCP Server is a backend service designed to interact with the Binance API",
+    "check": "exact"
+   }
+  ]
+ },
+ "buildability": {
+  "verdict": "ready_with_caveats",
+  "main_blocker": "other",
+  "rationale": "Public API free and documented; working community MCPs prove feasibility; API key auth clear; unconfirmed if authenticated tier requires paid plan or approval.",
+  "composio_existing_toolkit": "no",
+  "composio_slug": null
+ },
+ "overview_evidence": [
+  {
+   "url": "https://github.com/TermiX-official/binance-mcp",
+   "snippet": "Binance MCP Server is a backend service designed to interact with the Binance API"
+  }
+ ],
+ "confidence": 0.25,
+ "unknown_reasons": {
+  "auth": "Pages show API key encryption types but lack official Binance auth documentation; OAuth, JWT, or other schemes not mentioned in provided pages.",
+  "access": "Public API confirmed free; pages do not specify if authenticated endpoint tier is free, trial, paid-plan-only, or approval-required.",
+  "api_surface": "Pages mention REST and 'Spot' but omit API breadth, OpenAPI spec URL, webhooks, rate-limit details; official Binance documentation not provided.",
+  "mcp": "No official Binance MCP published by vendor; only three third-party community MCP server repos found in pages."
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 3,
+  "error": null,
+  "cost_usd": 0.086211,
+  "seconds": 98.2
+ }
+}

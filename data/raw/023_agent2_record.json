@@ -1,0 +1,97 @@
+{
+ "id": 23,
+ "app": "Zoho Cliq",
+ "category": "Communications and Messaging",
+ "hint": "zoho.com/cliq",
+ "one_liner": "Team chat and communication software that streamlines business communication for teams and external stakeholders.",
+ "app_type": "saas",
+ "auth": {
+  "methods": [
+   "oauth2"
+  ],
+  "oauth_grant_types": [],
+  "notes": "OAuth 2.0 protocol required for all API requests over HTTPS",
+  "evidence": [
+   {
+    "url": "https://www.zoho.com/cliq/help/restapi/v2/#Authentication",
+    "snippet": "Zoho Cliq's Rest API's follows the OAuth 2.0 protocol to authorize and authenticate requests.",
+    "check": "exact"
+   }
+  ]
+ },
+ "access": {
+  "status": "unknown",
+  "dev_sandbox": null,
+  "notes": "Developer console registration accessible and free plan exists, but pages do not explicitly state whether API access requires paid plan",
+  "evidence": [
+   {
+    "url": "https://www.zoho.com/cliq/help/restapi/v2/#Authentication",
+    "snippet": "Register your application as a new client by accessing this website:",
+    "check": "exact"
+   },
+   {
+    "url": "https://www.zoho.com/cliq/flexible-pricing.html",
+    "snippet": "Free - Get everyone talking",
+    "check": "exact"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "rest"
+  ],
+  "breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": false,
+  "rate_limit_note": "5 requests per minute per user documented for some operations",
+  "evidence": [
+   {
+    "url": "https://www.zoho.com/cliq/help/restapi/v2/#Authentication",
+    "snippet": "Cliq API is standardized around REST, allowing you to perform read and write operations",
+    "check": "exact"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/zoho_cliq.md",
+    "snippet": "Limited by Zoho to 5 requests per minute per user.",
+    "check": "exact"
+   }
+  ]
+ },
+ "mcp": {
+  "official": null,
+  "community": [],
+  "evidence": []
+ },
+ "buildability": {
+  "verdict": "ready",
+  "main_blocker": "none",
+  "rationale": "Composio toolkit already exists with 162 tools; self-serve OAuth2 registration accessible.",
+  "composio_existing_toolkit": "yes",
+  "composio_slug": "ZOHO_CLIQ"
+ },
+ "overview_evidence": [
+  {
+   "url": "https://www.zoho.com/cliq/",
+   "snippet": "Team chat & communication software for businesses - Zoho Cliq"
+  },
+  {
+   "url": "https://www.zoho.com/cliq/",
+   "snippet": "Zoho Cliq streamlines your business communication and fuels effortless conversations within teams and external stakeholders"
+  }
+ ],
+ "confidence": 0.85,
+ "unknown_reasons": {
+  "auth": "",
+  "access": "Pages do not explicitly state whether API access is included in free plan or requires paid subscription",
+  "api_surface": "",
+  "mcp": "No pages mention MCP servers"
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 10,
+  "error": null,
+  "cost_usd": 0.09596099999999999,
+  "seconds": 122.9
+ }
+}

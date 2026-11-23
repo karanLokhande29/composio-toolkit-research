@@ -1,0 +1,111 @@
+{
+ "id": 25,
+ "app": "Pumble",
+ "category": "Communications and Messaging",
+ "hint": "pumble.com",
+ "one_liner": "Pumble is a team communication platform enabling messaging, file sharing, unlimited chat history, and video conferencing.",
+ "app_type": "saas",
+ "auth": {
+  "methods": [
+   "api_key"
+  ],
+  "oauth_grant_types": [],
+  "notes": "API key authentication via REST API, generated through the Pumble API addon",
+  "evidence": [
+   {
+    "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+    "snippet": "This addon lets you generate an API key that allows you to send messages, reactions, and more via simple HTTP requests.",
+    "check": "exact"
+   }
+  ]
+ },
+ "access": {
+  "status": "self_serve_free",
+  "dev_sandbox": true,
+  "notes": "Free Pumble account signup available; API addon available on all plans including free",
+  "evidence": [
+   {
+    "url": "https://pumble.com/pricing",
+    "snippet": "Start using Pumble for free, and upgrade when you need more features.",
+    "check": "exact"
+   },
+   {
+    "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+    "snippet": "Before you can create an API key, you need to install the API addon on your Pumble workspace.",
+    "check": "exact"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "rest"
+  ],
+  "breadth": "moderate",
+  "openapi_spec_url": null,
+  "webhooks": null,
+  "rate_limit_note": "1000 requests per minute per user",
+  "evidence": [
+   {
+    "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+    "snippet": "The full list of available actions is available in the Swagger documentation.",
+    "check": "exact"
+   },
+   {
+    "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+    "snippet": "The rate limit is up to 1000 requests per minute per user.",
+    "check": "exact"
+   },
+   {
+    "url": "https://github.com/infralayers/pumble-mcp",
+    "snippet": "Open-source Model Context Protocol (MCP) server published on npm (@infralayers/pumble-mcp).",
+    "check": "exact"
+   }
+  ]
+ },
+ "mcp": {
+  "official": null,
+  "community": [
+   "https://github.com/infralayers/pumble-mcp"
+  ],
+  "evidence": [
+   {
+    "url": "https://pumble.com/mcp",
+    "snippet": "Bring your AI agent into your Pumble workspace and streamline collaboration, stay in the loop, and get an efficient way to interact with your workspace.",
+    "check": "exact"
+   },
+   {
+    "url": "https://github.com/infralayers/pumble-mcp",
+    "snippet": "Open-source Model Context Protocol (MCP) server published on npm (@infralayers/pumble-mcp).",
+    "check": "exact"
+   }
+  ]
+ },
+ "buildability": {
+  "verdict": "ready",
+  "main_blocker": "none",
+  "rationale": "Self-serve free account + documented REST API + existing Composio toolkit make it buildable today",
+  "composio_existing_toolkit": "yes",
+  "composio_slug": "PUMBLE"
+ },
+ "overview_evidence": [
+  {
+   "url": "https://pumble.com",
+   "snippet": "Send messages and files to team members, easily find them with unlimited messages history, and start video conferencing with one click."
+  }
+ ],
+ "confidence": 0.95,
+ "unknown_reasons": {
+  "auth": "",
+  "access": "",
+  "api_surface": "OpenAPI spec URL and webhooks support not explicitly documented in provided pages",
+  "mcp": "Official Pumble MCP server URL not provided in pages (only referenced without direct link)"
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 11,
+  "error": null,
+  "cost_usd": 0.071258,
+  "seconds": 79.6
+ }
+}

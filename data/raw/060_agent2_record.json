@@ -1,0 +1,119 @@
+{
+ "id": 60,
+ "app": "Clay",
+ "category": "Data, SEO and Scraping",
+ "hint": "clay.com",
+ "one_liner": "Infrastructure to get any data, run agentic workflows, and launch GTM plays.",
+ "app_type": "saas",
+ "auth": {
+  "methods": [
+   "api_key",
+   "jwt"
+  ],
+  "oauth_grant_types": [],
+  "notes": "Clay API accepts API_KEY (primary authentication) and JWT for HTTP API connections.",
+  "evidence": [
+   {
+    "url": "https://docs.composio.dev/toolkits/clay.md",
+    "snippet": "Return the Clay user and workspace associated with the connected Public API key.",
+    "check": "exact"
+   },
+   {
+    "url": "https://university.clay.com/docs-topics/getting-started",
+    "snippet": "Use HTTP API connections authenticated securely with JWT tokens.",
+    "check": "exact"
+   }
+  ]
+ },
+ "access": {
+  "status": "self_serve_free",
+  "dev_sandbox": true,
+  "notes": "Free tier with 500 actions/month available; no approval or payment required to sign up.",
+  "evidence": [
+   {
+    "url": "https://www.clay.com/pricing",
+    "snippet": "Start building in Clay for free. No strings attached.",
+    "check": "exact"
+   },
+   {
+    "url": "https://www.clay.com",
+    "snippet": "Start for free today. No credit card required.",
+    "check": "exact"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "rest"
+  ],
+  "breadth": "moderate",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "rate_limit_note": "",
+  "evidence": [
+   {
+    "url": "https://developers.clay.com",
+    "snippet": "Use the developer platform to search Clay's GTM data, run reusable Clay logic, read table data, and work with Audiences programmatically.",
+    "check": "exact"
+   },
+   {
+    "url": "https://developers.clay.com",
+    "snippet": "Call the API directly Best for backend jobs, internal tools, custom apps, queues, and product workflows.",
+    "check": "exact"
+   },
+   {
+    "url": "https://www.clay.com/pricing",
+    "snippet": "Automate any signal via webhook",
+    "check": "exact"
+   }
+  ]
+ },
+ "mcp": {
+  "official": "https://www.clay.com/mcp",
+  "community": [],
+  "evidence": [
+   {
+    "url": "https://www.clay.com/mcp",
+    "snippet": "Give reps the best prospecting data in their AI tools",
+    "check": "exact"
+   },
+   {
+    "url": "https://university.clay.com/courses/clay-mcps-for-reps",
+    "snippet": "Learn how to use Clay directly inside of AI chat tools like ChatGPT, Claude, and more",
+    "check": "exact"
+   }
+  ]
+ },
+ "buildability": {
+  "verdict": "ready",
+  "main_blocker": "none",
+  "rationale": "Free tier available, documented REST API with 15 Composio tools already built, and official Clay MCP published.",
+  "composio_existing_toolkit": "yes",
+  "composio_slug": "CLAY"
+ },
+ "overview_evidence": [
+  {
+   "url": "https://www.clay.com",
+   "snippet": "Infrastructure to get any data, run agentic workflows, and launch GTM plays."
+  },
+  {
+   "url": "https://developers.clay.com",
+   "snippet": "Use Clay from agents, terminals, backend services, internal tools, and custom apps."
+  }
+ ],
+ "confidence": 0.95,
+ "unknown_reasons": {
+  "auth": "",
+  "access": "",
+  "api_surface": "",
+  "mcp": ""
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 11,
+  "error": null,
+  "cost_usd": 0.094762,
+  "seconds": 120.5
+ }
+}

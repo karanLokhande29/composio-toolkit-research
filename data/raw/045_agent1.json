@@ -1,0 +1,113 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.05272,
+  "seconds": 73.7,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://developer.adobe.com/commerce/docs",
+  "https://developer.adobe.com/commerce",
+  "https://solutionpartners.adobe.com/solution-partners/training_and_certification/certification.html",
+  "https://developer.adobe.com/commerce/extensibility/developer-agent/",
+  "https://experienceleague.adobe.com/developer/commerce/storefront/",
+  "https://experienceleague.adobe.com/developer/commerce/storefront/playgrounds/commerce-services/",
+  "https://developer.adobe.com/commerce/extensibility/webhooks/",
+  "https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/",
+  "https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/",
+  "https://experienceleague.adobe.com/developer/commerce/storefront/launch/",
+  "https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder",
+  "https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/architecture/enterprise-blueprint"
+ ],
+ "output": {
+  "one_liner": "Adobe Commerce (Magento) is an enterprise ecommerce platform providing REST and GraphQL APIs for building customized storefronts, integrations, and business logic extensions.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "unknown"
+   ],
+   "oauth_grant_types": [],
+   "notes": "Pages reference Adobe Developer Console and IMS authentication for Developer Agent specifically, but explicit API authentication mechanism (oauth2, api_key, bearer_token, etc.) for REST/GraphQL endpoints is not documented in provided pages.",
+   "evidence": [
+    {
+     "url": "https://developer.adobe.com/commerce/extensibility/developer-agent/",
+     "snippet": "IMS authentication Required"
+    }
+   ]
+  },
+  "access": {
+   "status": "unknown",
+   "dev_sandbox": null,
+   "notes": "Developer documentation and API Playground are publicly accessible, but the specific process for obtaining working API credentials—whether it requires paid plan, admin approval, app review, or is fully self-serve—is not documented in provided pages.",
+   "evidence": [
+    {
+     "url": "https://experienceleague.adobe.com/developer/commerce/storefront/playgrounds/commerce-services/",
+     "snippet": "Commerce API Playground"
+    },
+    {
+     "url": "https://developer.adobe.com/commerce/docs",
+     "snippet": "Start building event-driven integrations and high-performance storefronts for Adobe Commerce using modern development tools."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest",
+    "graphql"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Not documented in provided pages",
+   "evidence": [
+    {
+     "url": "https://developer.adobe.com/commerce/docs",
+     "snippet": "Use our GraphQL APIs to send data to and from the storefront. Our REST APIs integrate with third-party software."
+    },
+    {
+     "url": "https://developer.adobe.com/commerce/extensibility/webhooks/",
+     "snippet": "Webhooks enable developers to configure synchronous logic to execute calls to external systems when an Adobe Commerce event triggers."
+    },
+    {
+     "url": "https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/architecture/enterprise-blueprint",
+     "snippet": "GraphQL and REST APIs for integrating the core Commerce application with third-party systems and extending Commerce capabilities"
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": []
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "other",
+   "rationale": "APIs are well-documented (REST, GraphQL, webhooks) with clear extensibility patterns, but how developers obtain production API credentials and what approval/payment requirements exist is not documented.",
+   "composio_existing_toolkit": "no",
+   "composio_slug": null
+  },
+  "overview_evidence": [
+   {
+    "url": "https://developer.adobe.com/commerce",
+    "snippet": "Build your commerce vision Adobe provides developers with software, tools, and services to customize and extend Adobe Commerce"
+   },
+   {
+    "url": "https://developer.adobe.com/commerce/docs",
+    "snippet": "Develop, customize, and test Start building event-driven integrations and high-performance storefronts for Adobe Commerce"
+   },
+   {
+    "url": "https://developer.adobe.com/commerce/extensibility/webhooks/",
+    "snippet": "You can browse the available events from the Admin by selecting System Webhooks Webhooks List or use the GET /V1/webhooks/supportedList REST endpoint."
+   }
+  ],
+  "confidence": 0.55,
+  "unknown_reasons": {
+   "auth": "Pages document that REST and GraphQL APIs exist and reference Adobe Developer Console and IMS authentication for Developer Agent, but do not explicitly specify the authentication scheme (OAuth2, API key, bearer token, JWT) required for making API calls.",
+   "access": "Pages do not document the credential-obtaining process: whether the APIs are accessible to anyone with a Commerce instance, require admin setup/approval, require a paid plan, or need app review before use.",
+   "api_surface": "Rate limits and throttling policies are not mentioned in provided documentation.",
+   "mcp": "No MCP servers (official or community-maintained) are mentioned in the provided pages."
+  }
+ }
+}

@@ -1,0 +1,72 @@
+{
+ "fields": [
+  "buildability.main_blocker",
+  "buildability.verdict",
+  "mcp.official"
+ ],
+ "pages": [
+  "https://developer.vonage.com/en/getting-started/overview",
+  "https://developer.vonage.com/voice/voice-api/getting-started?source=voice",
+  "https://developer.vonage.com/messages/concepts/getting-started/getting-started-email",
+  "https://developer.vonage.com/en/mcp-server/overview",
+  "https://github.com/Vonage-Community/telephony-mcp-server",
+  "https://developer.vonage.com/en/documentation",
+  "https://developer.vonage.com/en/getting-started/concepts/authentication"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.10745099999999999,
+  "seconds": 22.8,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "buildability.verdict",
+    "value": "ready_with_caveats",
+    "evidence": [
+     {
+      "url": "https://developer.vonage.com/voice/voice-api/getting-started?source=voice",
+      "snippet": "this feature is only available for demo or trial accounts until you add credit to your account"
+     },
+     {
+      "url": "https://developer.vonage.com/en/getting-started/overview",
+      "snippet": "We’ll give you some free credit when you first open your account and you can"
+     }
+    ],
+    "reason": "Self-serve signup gives API key/secret and free credit, but production/non-demo use requires adding paid credit, so it's buildable with friction rather than fully free."
+   },
+   {
+    "field": "buildability.main_blocker",
+    "value": "paid_plan",
+    "evidence": [
+     {
+      "url": "https://developer.vonage.com/voice/voice-api/getting-started?source=voice",
+      "snippet": "this feature is only available for demo or trial accounts until you add credit to your account"
+     },
+     {
+      "url": "https://developer.vonage.com/en/getting-started/overview",
+      "snippet": "Access to our APIs is charged on a  per-request basis. We’ll give you some free credit when you first open your account and you can"
+     }
+    ],
+    "reason": "Beyond initial free credit/demo usage, continued or production use requires adding paid credit (per-request billing), matching the paid_plan blocker rather than none."
+   },
+   {
+    "field": "mcp.official",
+    "value": "https://developer.vonage.com/en/mcp-server/overview",
+    "evidence": [
+     {
+      "url": "https://developer.vonage.com/en/mcp-server/overview",
+      "snippet": "The Vonage MCP Server enables AI agents and developer tools to discover, describe, and use Vonage capabilities via the Model Context Protocol."
+     },
+     {
+      "url": "https://developer.vonage.com/en/mcp-server/overview",
+      "snippet": "How to Install the Vonage Documentation MCP Server"
+     }
+    ],
+    "reason": "This is a vendor-hosted page on developer.vonage.com describing and linking install guides for Vonage's own MCP servers, making it an official vendor-published MCP resource."
+   }
+  ]
+ }
+}

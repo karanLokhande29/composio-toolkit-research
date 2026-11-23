@@ -209,7 +209,10 @@ def loop1_record(rec: dict) -> dict:
     # MCP links must be real MCP pages
     m = rec["mcp"]
     ev_urls = " ".join(e["snippet"] + " " + e["url"] for e in m["evidence"])
-    if m["official"] and not (mcp_url_ok(m["official"], app) or m["official"] in ev_urls):
+    # a verified MCP quote that sits on a non-GitHub page (i.e. the vendor's own docs) also proves an official server
+    vendor_mcp_quote = any(("mcp" in norm_ws(e["snippet"]) or "model context protocol" in norm_ws(e["snippet"]))
+                           and "github.com" not in e["url"] for e in m["evidence"])
+    if m["official"] and not (mcp_url_ok(m["official"], app) or m["official"] in ev_urls or vendor_mcp_quote):
         log_jsonl(VLOG, {"loop": 1, "app": app, "group": "mcp", "check": "mcp_official_url", "result": "fail", "url": m["official"]})
         m["official"] = None; changed.append("mcp.official"); flags.append({"rule": "mcp_url_not_mcp_page", "fields": ["mcp.official"]})
     good = [c for c in m["community"] if isinstance(c, str) and mcp_url_ok(c, app)]
@@ -241,5 +244,44 @@ def run_loop1(ids: list[int]) -> list[dict]:
         out.append(s)
         print(f"  loop1 [{i:3d}] {r['app']:<26} ev exact={s['evidence']['exact']} repaired={s['evidence']['repaired']} "
               f"dropped={s['evidence']['dropped']} flags={[f['rule'] for f in s['flags']]} changed={s['changed']}")
-    save_results(results)
+    save_results(results, only=[i for i in ids if i in results])
     return out
+
+
+def final_rules(rec: dict) -> list[str]:
+    """Deterministic definitional rules applied AFTER Loop 3 (part of Loop 1's rule set; every change logged).
+    - contact_sales / partner_gated access means a toolkit needs outreach -> verdict blocked, blocker partner_gate.
+    - auth AND access both unknown -> we cannot claim buildable -> blocked / other (listed as a failure on the page).
+    - CLI / library tools have no hosted API auth -> give the unknown an explicit reason."""
+    b, changed = rec["buildability"], []
+    if rec["access"]["status"] in ("partner_gated", "contact_sales") and b["verdict"] != "blocked":
+        b["verdict"], b["main_blocker"] = "blocked", "partner_gate"
+        b["rationale"] = (b["rationale"] + " [rule: API access requires " + rec["access"]["status"].replace("_", " ") +
+                          ", i.e. outreach before a toolkit can be built]").strip()
+        changed += ["buildability.verdict", "buildability.main_blocker"]
+    if rec["access"]["status"] == "unknown" and rec["auth"]["methods"] == ["unknown"] and b["verdict"] != "blocked":
+        b["verdict"], b["main_blocker"] = "blocked", "other"
+        b["rationale"] = "No public developer docs for auth or access were found; needs outreach to confirm an API exists."
+        changed += ["buildability.verdict", "buildability.main_blocker"]
+    if rec["auth"]["methods"] == ["unknown"] and not rec.get("unknown_reasons", {}).get("auth"):
+        reason = ("Not a hosted API: this is a CLI / open-source tool run locally, so no API authentication applies"
+                  if rec.get("app_type") in ("cli_or_library",) or b["main_blocker"] == "cli_only"
+                  else "The fetched pages did not state an authentication method")
+        rec.setdefault("unknown_reasons", {})["auth"] = reason
+    if changed:
+        log_jsonl(VLOG, {"loop": 1, "app": rec["app"], "check": "final_rules", "result": "changed", "fields": changed})
+        v = rec["verification"]
+        v["checks"] = [c for c in v["checks"] if c.get("stage") != "final_rules"]
+        v["checks"].append({"loop": 1, "stage": "final_rules", "evidence": {"exact": 0, "repaired": 0, "dropped": 0},
+                            "flags": [{"rule": "definitional_verdict", "fields": changed}], "changed": changed})
+    return changed
+
+
+def run_final_rules(ids: list[int]) -> None:
+    results = load_results()
+    for i in ids:
+        if i in results:
+            ch = final_rules(results[i])
+            if ch:
+                print(f"  rules [{i:3d}] {results[i]['app']:<26} {ch}")
+    save_results(results, only=[i for i in ids if i in results])

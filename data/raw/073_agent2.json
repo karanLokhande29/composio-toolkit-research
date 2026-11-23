@@ -1,0 +1,109 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.092511,
+  "seconds": 108.8,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://developers.linear.app/docs/oauth/authentication",
+  "https://docs.composio.dev/toolkits/linear.md",
+  "https://linear.app/developers/rate-limiting",
+  "https://linear.app/docs/mcp",
+  "https://linear.app/developers/oauth-2-0-authentication",
+  "https://linear.app/developers/oauth-actor-authorization",
+  "https://linear.app/developers/oauth-app-manifests",
+  "https://linear.app/developers/file-storage-authentication",
+  "https://linear.app/integrations/vs-code-mcp"
+ ],
+ "output": {
+  "one_liner": "Linear is a streamlined issue tracking and project planning tool for modern teams, featuring fast workflows, keyboard shortcuts, and GitHub integrations",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "api_key"
+   ],
+   "oauth_grant_types": [
+    "authorization_code",
+    "client_credentials"
+   ],
+   "notes": "OAuth 2.0 supports authorization code and client credentials grant types. API keys are personal static tokens starting with lin_api_.",
+   "evidence": [
+    {
+     "url": "https://linear.app/developers/oauth-2-0-authentication",
+     "snippet": "Linear supports OAuth2 authentication, which is recommended if you're building applications to integrate with Linear."
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/linear.md",
+     "snippet": "Each user creates a personal API key in Linear under Settings > Security & access > Personal API keys and pastes it when connecting."
+    },
+    {
+     "url": "https://linear.app/developers/oauth-app-manifests",
+     "snippet": "Allowed values: authorization_code, client_credentials"
+    }
+   ]
+  },
+  "access": {
+   "status": "unknown",
+   "dev_sandbox": null,
+   "notes": "Pages show self-service OAuth app and API key creation without mentioning approval or sales requirements, but do not explicitly state pricing requirements or free tier availability.",
+   "evidence": []
+  },
+  "api_surface": {
+   "styles": [
+    "graphql"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "API key: 2,500 requests/hour (3,000,000 complexity points/hour); OAuth app: 5,000 requests/hour (2,000,000 complexity points/hour); unauthenticated: 600 requests/hour (100,000 points/hour)",
+   "evidence": [
+    {
+     "url": "https://developers.linear.app/docs/oauth/authentication",
+     "snippet": "Learn how to use the GraphQL API to query and mutate your data"
+    },
+    {
+     "url": "https://linear.app/developers/rate-limiting",
+     "snippet": "When authenticated using an API key you can make up to 2,500 requests per hour."
+    },
+    {
+     "url": "https://linear.app/developers/rate-limiting",
+     "snippet": "If you need to know when data updates in Linear, you should use our Webhook functionality."
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://mcp.linear.app/mcp",
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://linear.app/docs/mcp",
+     "snippet": "The Model Context Protocol (MCP) server provides a standardized interface that allows any compatible AI model or agent to access your Linear data"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Self-serve credentials available (OAuth and API key), documented GraphQL API, webhooks, TypeScript SDK, MCP server, and rate limits all documented; Composio toolkit with 48 tools already exists.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "LINEAR"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://docs.composio.dev/toolkits/linear.md",
+    "snippet": "Linear is a streamlined issue tracking and project planning tool for modern teams, featuring fast workflows, keyboard shortcuts, and GitHub integrations"
+   }
+  ],
+  "confidence": 0.9,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "Pages show self-service credential creation without mentioning approval or sales barriers, but do not explicitly state pricing requirements, free tier availability, or other access restrictions.",
+   "api_surface": "",
+   "mcp": ""
+  }
+ }
+}

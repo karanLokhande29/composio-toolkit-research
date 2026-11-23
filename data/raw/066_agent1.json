@@ -1,0 +1,111 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.070154,
+  "seconds": 86.9,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://docs.composio.dev/toolkits/neo4j.md",
+  "https://github.com/neo4j-contrib/mcp-neo4j",
+  "https://github.com/orneryd/NornicDB",
+  "https://github.com/cyanheads/atlas-mcp-server"
+ ],
+ "output": {
+  "one_liner": "Neo4j is a graph database platform for storing, querying, and analyzing connected data with cloud management services.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "api_key",
+    "basic"
+   ],
+   "oauth_grant_types": [],
+   "notes": "Composio toolkit supports OAuth2, Basic auth, and API Key. Specific OAuth2 grant types not documented.",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/neo4j.md",
+     "snippet": "Auth: OAUTH2, BASIC, API_KEY, S2S_OAUTH2"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Free-db instance type available indicates free tier. Self-serve cloud platform signup.",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/neo4j.md",
+     "snippet": "Must be one of: enterprise-db, enterprise-ds, business-critical, professional-db, professional-ds, free-db."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest",
+    "graphql"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": null,
+   "rate_limit_note": "",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/neo4j.md",
+     "snippet": "Executes a directorsAggregate GraphQL query to count directors in Neo4j."
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/neo4j.md",
+     "snippet": "Restore a Neo4j Aura instance from a snapshot. Replaces all current data with the snapshot data."
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://github.com/neo4j-contrib/mcp-neo4j",
+   "community": [
+    "https://github.com/orneryd/NornicDB",
+    "https://github.com/cyanheads/atlas-mcp-server"
+   ],
+   "evidence": [
+    {
+     "url": "https://github.com/neo4j-contrib/mcp-neo4j",
+     "snippet": "Neo4j Labs Model Context Protocol servers"
+    },
+    {
+     "url": "https://github.com/orneryd/NornicDB",
+     "snippet": "Using Neo4j Bolt/Cypher and qdrant's gRPC means you can switch with no changes while adding intelligent features"
+    },
+    {
+     "url": "https://github.com/cyanheads/atlas-mcp-server",
+     "snippet": "A Model Context Protocol (MCP) server for ATLAS, a Neo4j-powered task management system for LLM Agents"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Composio toolkit for Neo4j already exists with 21 tools supporting free tier and multiple authentication methods.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "NEO4J"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://docs.composio.dev/toolkits/neo4j.md",
+    "snippet": "List all Aura projects (tenants) available to the authenticated user."
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/neo4j.md",
+    "snippet": "Executes a directorsAggregate GraphQL query to count directors in Neo4j."
+   }
+  ],
+  "confidence": 0.93,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  }
+ }
+}

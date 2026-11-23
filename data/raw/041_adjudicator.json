@@ -1,0 +1,75 @@
+{
+ "fields": [
+  "access.status",
+  "buildability.main_blocker",
+  "buildability.verdict",
+  "mcp.official"
+ ],
+ "pages": [
+  "https://docs.composio.dev/toolkits/shopify.md",
+  "https://shopify.dev/docs/apps",
+  "https://www.shopify.com/pricing",
+  "https://shopify.dev/docs/apps/auth/oauth",
+  "https://shopify.dev/docs/api/shopify-mcp",
+  "https://shopify.dev/"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.09710700000000001,
+  "seconds": 19.2,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "access.status",
+    "value": "app_review",
+    "evidence": [
+     {
+      "url": "https://shopify.dev/docs/apps",
+      "snippet": "Publish your app in the Shopify App Store and any merchant can install it once it passes review."
+     },
+     {
+      "url": "https://shopify.dev/docs/apps",
+      "snippet": "A custom app takes the other path: one organization installs it directly, with no listing and no review."
+     }
+    ],
+    "reason": "Developers can self-serve build/test with free Partner/Dev Dashboard accounts, but public, multi-merchant distribution requires Shopify's App Store review process."
+   },
+   {
+    "field": "buildability.main_blocker",
+    "value": "app_review",
+    "evidence": [
+     {
+      "url": "https://shopify.dev/docs/apps",
+      "snippet": "Publish your app in the Shopify App Store and any merchant can install it once it passes review."
+     }
+    ],
+    "reason": "The documented friction for going beyond a single custom install is the mandatory App Store review, matching the app_review blocker category."
+   },
+   {
+    "field": "buildability.verdict",
+    "value": "ready_with_caveats",
+    "evidence": [
+     {
+      "url": "https://shopify.dev/docs/apps",
+      "snippet": "reviews your listing before it goes live. Read the requirements before you submit, because a rejection costs you a full review cycle."
+     }
+    ],
+    "reason": "A toolkit can be built and tested today with free Dev Dashboard/Partner credentials, but scaling to many merchants requires passing Shopify's app review, so it's ready with caveats rather than fully unrestricted."
+   },
+   {
+    "field": "mcp.official",
+    "value": null,
+    "evidence": [
+     {
+      "url": "https://shopify.dev/docs/api/shopify-mcp",
+      "snippet": "Shopify MCP isn't publicly available yet. This page shows where its documentation will live."
+     }
+    ],
+    "reason": "Shopify's own docs state the vendor-built Shopify MCP server is not yet publicly available, so no official MCP URL can be given."
+   }
+  ]
+ }
+}

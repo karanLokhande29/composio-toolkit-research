@@ -1,0 +1,143 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.065455,
+  "seconds": 72.9,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://docs.composio.dev/toolkits/harvest.md",
+  "https://harvestapp.com",
+  "https://developers.harvestapp.com",
+  "https://developer.harvestapp.com",
+  "https://help.getharvest.com/api-v2",
+  "https://www.getharvest.com/pricing",
+  "https://id.getharvest.com/google/oauth2/new?state%5Baccount_id%5D=1913509&state%5Bintent%5D=sign-in",
+  "https://help.getharvest.com/api-v2/authentication-api",
+  "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+  "https://www.getharvest.com/add-time-tracking",
+  "https://help.getharvest.com/api-v2/notifications-api/notifications/notification-preferences/",
+  "https://github.com/taiste/harvest-mcp-server"
+ ],
+ "output": {
+  "one_liner": "Time tracking and invoicing software that helps teams log billable hours, manage projects, and streamline payments.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "bearer_token"
+   ],
+   "oauth_grant_types": [
+    "authorization_code",
+    "implicit"
+   ],
+   "notes": "Supports full OAuth2 flow for integrations and Personal Access Tokens (Bearer tokens) for scripts and personal development.",
+   "evidence": [
+    {
+     "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+     "snippet": "The V2 API requires an access token to authenticate requests. There are two options available to you"
+    },
+    {
+     "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+     "snippet": "Implementing a full OAuth2 Authentication flow which allows other people to use your Harvest integrations"
+    },
+    {
+     "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+     "snippet": "Personal Access Token can be used to access the API by either providing the token in the Authorization header"
+    },
+    {
+     "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+     "snippet": "We use the Authorization Code flow for server-side authorization"
+    },
+    {
+     "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+     "snippet": "For client-side applications We use the Implicit Grant flow"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": null,
+   "notes": "30-day free trial available with no credit card required. Free plan available after trial for qualifying users. Personal Access Tokens creatable from Developers section.",
+   "evidence": [
+    {
+     "url": "https://www.getharvest.com/pricing",
+     "snippet": "Free 30-day trial. No credit card required."
+    },
+    {
+     "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+     "snippet": "Personal access tokens can be created from the Developers section of Harvest ID."
+    },
+    {
+     "url": "https://www.getharvest.com/pricing",
+     "snippet": "Free built for individual freelancers starting from 30-day free trial"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": null,
+   "rate_limit_note": "",
+   "evidence": [
+    {
+     "url": "https://help.getharvest.com/api-v2",
+     "snippet": "Clients API, Invoices API, Estimates API, Expenses API, Tasks API, Timesheets API, Projects API, Roles API, Users API, Reports API, Paid Time Off API, Approvals API, Notifications API, Reimbursements API, Imports API, Integrations API, Forecast API"
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/harvest.md",
+     "snippet": "Harvest is a time-tracking and invoicing tool designed for teams and freelancers, helping them log billable hours, manage projects, and streamline payments"
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/harvest.md",
+     "snippet": "Tools: 57"
+    },
+    {
+     "url": "https://help.getharvest.com/api-v2/notifications-api/notifications/notification-preferences/",
+     "snippet": "GET /v2/notification_preferences, PATCH /v2/notification_preferences, PUT /v2/notification_preferences"
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [
+    "https://github.com/taiste/harvest-mcp-server"
+   ],
+   "evidence": [
+    {
+     "url": "https://github.com/taiste/harvest-mcp-server",
+     "snippet": "This MCP (Model Context Protocol) server provides integration with the Harvest time tracking and project management API."
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Free trial available, OAuth2 and bearer token authentication fully documented, REST API with broad resource coverage; Composio toolkit already exists with 57 tools.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "HARVEST"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://harvestapp.com",
+    "snippet": "Harvest helps professional teams track time, bill clients, optimize team time, and measure performance with confidence"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/harvest.md",
+    "snippet": "Category: time tracking software. Auth: OAUTH2. Composio-managed OAuth available? Yes. Tools: 57"
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "API access eligibility on free plan not explicitly stated, only on paid plans and trial",
+   "api_surface": "OpenAPI spec URL and webhook support not mentioned in provided pages",
+   "mcp": ""
+  }
+ }
+}

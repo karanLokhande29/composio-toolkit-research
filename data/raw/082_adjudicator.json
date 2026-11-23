@@ -1,0 +1,41 @@
+{
+ "fields": [
+  "auth.methods"
+ ],
+ "pages": [
+  "https://plaid.com/docs/api/",
+  "https://docs.composio.dev/toolkits/plaid.md",
+  "https://dashboard.plaid.com/signup",
+  "https://plaid.com/pricing/"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.051644999999999996,
+  "seconds": 10.1,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "auth.methods",
+    "value": [
+     "api_key"
+    ],
+    "evidence": [
+     {
+      "url": "https://plaid.com/docs/api/",
+      "snippet": "Almost all Plaid API endpoints require a client_id and secret . These may be sent either in the request body or in the headers",
+      "check": "repaired"
+     },
+     {
+      "url": "https://docs.composio.dev/toolkits/plaid.md",
+      "snippet": "You connect by pasting keys from your Plaid account into a Composio connection.",
+      "check": "exact"
+     }
+    ],
+    "reason": "Plaid authenticates nearly all API calls via static client_id/secret credentials sent as headers or body fields, matching the api_key enum rather than OAuth2/bearer/JWT."
+   }
+  ]
+ }
+}

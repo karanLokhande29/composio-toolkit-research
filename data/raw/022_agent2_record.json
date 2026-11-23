@@ -1,0 +1,109 @@
+{
+ "id": 22,
+ "app": "Twilio",
+ "category": "Communications and Messaging",
+ "hint": "twilio.com",
+ "one_liner": "Communications platform providing APIs for SMS, voice, email, and customer engagement across channels",
+ "app_type": "saas",
+ "auth": {
+  "methods": [
+   "api_key",
+   "basic",
+   "oauth2"
+  ],
+  "oauth_grant_types": [],
+  "notes": "HTTP Basic authentication with API key SID/secret or Account SID/Auth Token; S2S OAuth2 for apps; specific OAuth2 grant types not documented",
+  "evidence": [
+   {
+    "url": "https://www.twilio.com/docs/iam/api",
+    "snippet": "To authenticate requests to the Twilio APIs, Twilio supports HTTP Basic authentication . Use your API key SID as the username and your API key secret as the password.",
+    "check": "repaired"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/twilio.md",
+    "snippet": "Use shared API_KEY credentials for production account REST and all 45 triggers; per-connection BASIC for account administration and cross-account tools; or account S2S OAuth for mapped actions.",
+    "check": "exact"
+   }
+  ]
+ },
+ "access": {
+  "status": "self_serve_free",
+  "dev_sandbox": true,
+  "notes": "Free trial without credit card; some services offer always-free tiers with usage limits, others pay-as-you-go from $0",
+  "evidence": [
+   {
+    "url": "https://www.twilio.com/pricing",
+    "snippet": "Sign up for a free trial—no credit card required Pay as you go with usage-based pricing",
+    "check": "repaired"
+   },
+   {
+    "url": "https://twilio.com",
+    "snippet": "Sign up for a free Twilio account and grab one of our official server-side SDKs to get started.",
+    "check": "exact"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "rest"
+  ],
+  "breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "rate_limit_note": "Not documented in provided pages",
+  "evidence": [
+   {
+    "url": "https://www.twilio.com/docs/usage/api",
+    "snippet": "With the Twilio APIs, you can build applications that help your users send messages, make phone calls, look up phone numbers, and more.",
+    "check": "exact"
+   },
+   {
+    "url": "https://www.twilio.com/docs/usage/webhooks",
+    "snippet": "to Webhooks To notify your web app when events like incoming phone calls or SMS messages occur, Twilio uses webhooks",
+    "check": "repaired"
+   },
+   {
+    "url": "https://www.twilio.com/docs",
+    "snippet": "OpenAPI Integrate our API with community tools for mocking, testing, generating libraries, Postman integrations,",
+    "check": "repaired"
+   }
+  ]
+ },
+ "mcp": {
+  "official": null,
+  "community": [],
+  "evidence": []
+ },
+ "buildability": {
+  "verdict": "ready",
+  "main_blocker": "none",
+  "rationale": "Self-serve free credentials available, well-documented REST API with webhooks, and Composio has successfully built a 454-tool toolkit for Twilio.",
+  "composio_existing_toolkit": "yes",
+  "composio_slug": "TWILIO"
+ },
+ "overview_evidence": [
+  {
+   "url": "https://twilio.com",
+   "snippet": "The Twilio platform empowers humans and AI agents to work together, coordinate across channels, and pick up every customer conversation where the last one left off."
+  },
+  {
+   "url": "https://www.twilio.com/docs/usage/api",
+   "snippet": "With the Twilio APIs, you can build applications that help your users send messages, make phone calls, look up phone numbers, and more."
+  }
+ ],
+ "confidence": 0.93,
+ "unknown_reasons": {
+  "auth": "",
+  "access": "",
+  "api_surface": "Specific OpenAPI spec URL not documented; rate limit policies not documented",
+  "mcp": "MCP servers not mentioned in provided Twilio documentation"
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 8,
+  "error": null,
+  "cost_usd": 0.076962,
+  "seconds": 94.4
+ }
+}

@@ -1,0 +1,123 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.086322,
+  "seconds": 101.0,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://www.getharvest.com/pricing",
+  "https://help.getharvest.com/api-v2/",
+  "https://docs.composio.dev/toolkits/harvest.md",
+  "https://harvestapp.com",
+  "https://developers.harvestapp.com",
+  "https://developer.harvestapp.com",
+  "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+  "https://help.getharvest.com/api-v2/clients-api/clients/clients/",
+  "https://help.getharvest.com/api-v2/projects-api/projects/projects/",
+  "https://help.getharvest.com/api-v2/timesheets-api/timesheets/time-entries/",
+  "https://id.getharvest.com/developers"
+ ],
+ "output": {
+  "one_liner": "Time tracking and invoicing platform that helps teams log billable hours, manage projects, and bill clients.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "bearer_token"
+   ],
+   "oauth_grant_types": [
+    "authorization_code",
+    "implicit"
+   ],
+   "notes": "Personal Access Token (bearer_token) or OAuth2. Personal tokens are static tokens sent as Bearer in Authorization header. OAuth2 supports server-side (Authorization Code) and client-side (Implicit Grant) flows.",
+   "evidence": [
+    {
+     "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+     "snippet": "The V2 API requires an access token to authenticate requests. There are two options available to you: A Personal Access Token which is tied directly to you and is the quickest way to start playing around with the API. Implementing a full OAuth2 Authentication flow which allows other people to use your Harvest integrations."
+    },
+    {
+     "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+     "snippet": "Once generated, a Personal Access Token can be used to access the API by either providing the token in the Authorization header or including it in the query string."
+    },
+    {
+     "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+     "snippet": "We use the Authorization Code flow for server-side authorization. To start the authorization flow, you need to redirect the user to the following URL"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_trial",
+   "dev_sandbox": null,
+   "notes": "Developers can sign up for a 30-day free trial without credit card and create a Personal Access Token immediately. After 30 days, trial account is deactivated. A Free plan tier exists but whether API access is available post-trial on free plan is not documented in provided pages.",
+   "evidence": [
+    {
+     "url": "https://www.getharvest.com/pricing",
+     "snippet": "Get started on any plan with a free trial. No credit card required."
+    },
+    {
+     "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+     "snippet": "The API can be accessed by creating a Personal Access Token from the Developers section of Harvest ID."
+    },
+    {
+     "url": "https://www.getharvest.com/pricing",
+     "snippet": "If you haven't upgraded at the end of 30 days, your trial account will be automatically deactivated."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": null,
+   "rate_limit_note": "",
+   "evidence": [
+    {
+     "url": "https://help.getharvest.com/api-v2/",
+     "snippet": "Clients API, Invoices API, Estimates API, Expenses API, Tasks API, Timesheets API, Projects API, Roles API, Users API, Reports API, Paid Time Off API, Approvals API, Notifications API, Reimbursements API, Imports API, Integrations API, Forecast API"
+    },
+    {
+     "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+     "snippet": "curl -H \"Authorization: Bearer $ACCESS_TOKEN\" https://api.harvestapp.com/v2/users/me"
+    },
+    {
+     "url": "https://help.getharvest.com/api-v2/clients-api/clients/clients/",
+     "snippet": "List all clients, Retrieve a client, Create a client, Update a client, Delete a client"
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": []
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Composio toolkit already built with 57 tools and Composio-managed OAuth available today.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "HARVEST"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://harvestapp.com",
+    "snippet": "Harvest helps professional teams track time, bill clients, optimize team time, and measure performance with confidence."
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/harvest.md",
+    "snippet": "Harvest is a time-tracking and invoicing tool designed for teams and freelancers, helping them log billable hours, manage projects, and streamline payments"
+   }
+  ],
+  "confidence": 0.85,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "Pages do not explicitly document whether API access is included on free plan tier after 30-day trial period ends.",
+   "api_surface": "OpenAPI spec URL not mentioned in provided pages; webhook support not documented; rate limit policy not provided in documentation pages shown.",
+   "mcp": "No vendor-published MCP server identified in provided pages; no community MCP server repositories documented in provided pages."
+  }
+ }
+}

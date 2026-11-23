@@ -1,0 +1,88 @@
+{
+ "fields": [
+  "access.status",
+  "auth.methods",
+  "buildability.main_blocker",
+  "buildability.verdict"
+ ],
+ "pages": [
+  "https://developer.adobe.com/commerce/webapi/rest/",
+  "https://developer.adobe.com/commerce/webapi/get-started/",
+  "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-oauth"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.061998,
+  "seconds": 12.5,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "access.status",
+    "value": "self_serve_free",
+    "evidence": [
+     {
+      "url": "https://developer.adobe.com/commerce/webapi/rest/",
+      "snippet": "Adobe Commerce on Cloud , Adobe Commerce on-premises, and Magento Open Source all use the same REST API"
+     },
+     {
+      "url": "https://developer.adobe.com/commerce/webapi/get-started/",
+      "snippet": "Create a new integration on Admin. To create an integration, click System > Extensions > Integration > Add New Integration**."
+     }
+    ],
+    "reason": "Magento Open Source is free/self-hostable and any store admin can self-create an integration with OAuth credentials at no cost, no vendor approval needed."
+   },
+   {
+    "field": "auth.methods",
+    "value": [
+     "oauth2",
+     "bearer_token",
+     "other"
+    ],
+    "evidence": [
+     {
+      "url": "https://developer.adobe.com/commerce/webapi/rest/",
+      "snippet": "Adobe Commerce REST APIs support multiple authentication methods , including:"
+     },
+     {
+      "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-oauth",
+      "snippet": "OAuth authentication with Adobe Commerce and Magento Open Source is based on OAuth 1.0a"
+     },
+     {
+      "url": "https://developer.adobe.com/commerce/webapi/rest/",
+      "snippet": "Both of these authentication methods require every request to be signed with an IMS Access Token."
+     }
+    ],
+    "reason": "Pages describe OAuth 1.0a (closest enum is oauth2, though technically 1.0a), token-based auth sent as Bearer for SaaS, and session/login-credential auth which falls under other."
+   },
+   {
+    "field": "buildability.main_blocker",
+    "value": "none",
+    "evidence": [
+     {
+      "url": "https://developer.adobe.com/commerce/webapi/get-started/",
+      "snippet": "Create a new integration on Admin. To create an integration, click System > Extensions > Integration > Add New Integration**."
+     }
+    ],
+    "reason": "Any merchant/admin can self-create an integration and get credentials with no external approval, review, or paid plan required to build and test."
+   },
+   {
+    "field": "buildability.verdict",
+    "value": "ready",
+    "evidence": [
+     {
+      "url": "https://developer.adobe.com/commerce/webapi/get-started/",
+      "snippet": "Create a new integration on Admin. To create an integration, click System > Extensions > Integration > Add New Integration**."
+     },
+     {
+      "url": "https://developer.adobe.com/commerce/webapi/rest/",
+      "snippet": "Adobe Commerce provides a wide range of REST API endpoints that allow you to perform actions on behalf of Commerce administrators, customers, and guest shoppers."
+     }
+    ],
+    "reason": "Documented REST/GraphQL/SOAP APIs with self-serve credential creation (OAuth integration via Admin) and no external gating described in the pages, so a toolkit could be built today."
+   }
+  ]
+ }
+}

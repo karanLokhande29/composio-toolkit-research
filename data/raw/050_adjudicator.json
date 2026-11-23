@@ -1,0 +1,84 @@
+{
+ "fields": [
+  "access.status",
+  "api_surface.breadth",
+  "auth.methods",
+  "buildability.main_blocker",
+  "buildability.verdict"
+ ],
+ "pages": [
+  "https://fanbasis.com"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.031614,
+  "seconds": 11.7,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "access.status",
+    "value": "unknown",
+    "reason": "Page mentions Enterprise & APIs but gives no sign-up flow, pricing, or approval process details.",
+    "evidence": [
+     {
+      "url": "https://fanbasis.com",
+      "snippet": "Enterprise & APIs Embedded checkouts, multi-rail payouts, APIs and SDKs."
+     }
+    ]
+   },
+   {
+    "field": "api_surface.breadth",
+    "value": "unknown",
+    "reason": "Only a marketing mention of APIs and SDKs exists with no endpoint list or documentation to judge breadth.",
+    "evidence": [
+     {
+      "url": "https://fanbasis.com",
+      "snippet": "Embedded checkouts, multi-rail payouts, APIs and SDKs. Everything you'd replace Stripe with, plus BNPL, recovery and lower effective rates."
+     }
+    ]
+   },
+   {
+    "field": "auth.methods",
+    "value": [
+     "unknown"
+    ],
+    "reason": "No authentication scheme (OAuth, API key, bearer token, etc.) is mentioned anywhere on the page.",
+    "evidence": [
+     {
+      "url": "https://fanbasis.com",
+      "snippet": "Embedded checkouts, multi-rail payouts, APIs and SDKs."
+     }
+    ]
+   },
+   {
+    "field": "buildability.main_blocker",
+    "value": "other",
+    "reason": "The page confirms an API/SDK and even an MCP (beta) exist, so it's not 'no_public_api'; lack of docs/access details is the real blocker, which falls under 'other'.",
+    "evidence": [
+     {
+      "url": "https://fanbasis.com",
+      "snippet": "Enterprise & APIs Embedded checkouts, multi-rail payouts, APIs and SDKs."
+     }
+    ]
+   },
+   {
+    "field": "buildability.verdict",
+    "value": "ready_with_caveats",
+    "reason": "An API, SDKs, and a beta MCP are advertised, indicating something buildable exists, but access/auth details are undocumented on this page, implying friction rather than a total block.",
+    "evidence": [
+     {
+      "url": "https://fanbasis.com",
+      "snippet": "Enterprise & APIs Embedded checkouts, multi-rail payouts, APIs and SDKs."
+     },
+     {
+      "url": "https://fanbasis.com",
+      "snippet": "MCP beta"
+     }
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,313 @@
+{
+ "id": 8,
+ "app": "Close",
+ "tag": "agent2",
+ "urls": [
+  {
+   "url": "https://close.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.close.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.close.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.close.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://close.com/pricing",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.close.com/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.close.com/#authentication",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://help.close.com/docs/api-keys",
+   "purpose": "credentials",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://close.com/partnerships/",
+   "purpose": "partner_program",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://close.com/pricing/",
+   "purpose": "pricing",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.close.com/#ratelimits",
+   "purpose": "rate_limits",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.close.com/resources/webhooks/",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://help.close.com/",
+   "purpose": "support_docs",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/runekaagaard/mcp-redmine",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/HazAT/pi-solo",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/jordigilh/kubernaut",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/close.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.close.com/mcp",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://close.com/partners",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.close.com/api/overview/api-key-authentication",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.close.com/integrations/create-an-oauth-app",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.close.com/pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.close.com/partners",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://help.close.com/integrations/close-mcp-server",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://help.close.com/integrations/api-keys-oauth",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://help.close.com/integrations/developers/create-oauth-apps",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://help.close.com/getting-started/onboarding-checklist-start-here",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://help.close.com/getting-started/connect-your-email",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://help.close.com/getting-started/close-mobile-app",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://help.close.com/getting-started/desktop-app",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "runekaagaard/mcp-redmine",
+   "url": "https://github.com/runekaagaard/mcp-redmine",
+   "stars": 257,
+   "description": "A redmine MCP server covering close to 100% of redmines API"
+  },
+  {
+   "repo": "HazAT/pi-solo",
+   "url": "https://github.com/HazAT/pi-solo",
+   "stars": 45,
+   "description": "Pi extension for Solo (soloterm.com) — registers every Solo MCP tool as a first-class Pi tool, auto-binds to SOLO_PROCESS_ID, idle-closes the helper, and render"
+  },
+  {
+   "repo": "jordigilh/kubernaut",
+   "url": "https://github.com/jordigilh/kubernaut",
+   "stars": 37,
+   "description": "An AIOps platform that closes the loop from Kubernetes alert to automated remediation: An AI Agent investigates via MCP tools, selects a fix from a pre-seeded w"
+  },
+  {
+   "repo": "puran-water/mathcad-mcp",
+   "url": "https://github.com/puran-water/mathcad-mcp",
+   "stars": 24,
+   "description": "MCP server for PTC MathCAD Prime control: AI agents manage worksheet operations (open/close/save), set/retrieve values with unit support (scalars, strings, matr"
+  },
+  {
+   "repo": "gzchenhao/openhire",
+   "url": "https://github.com/gzchenhao/openhire",
+   "stars": 16,
+   "description": "Companies screen you with AI. Screen them back. Let your AI assistant find jobs straight from employers' own ATS: is the job still open, is the company real, di"
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Close",
+    "slug": "CLOSE",
+    "tools": 75,
+    "auth": [
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/close.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Close",
+    "slug": "CLOSE",
+    "tools": 75,
+    "auth": [
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/close.md"
+   },
+   {
+    "name": "Close MCP",
+    "slug": "CLOSE_MCP",
+    "tools": 114,
+    "auth": [
+     "DCR_OAUTH"
+    ],
+    "url": "https://docs.composio.dev/toolkits/close_mcp.md"
+   }
+  ]
+ },
+ "search_meta": {}
+}

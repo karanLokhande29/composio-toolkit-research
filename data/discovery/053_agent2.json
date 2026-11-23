@@ -1,0 +1,235 @@
+{
+ "id": 53,
+ "app": "Ahrefs",
+ "tag": "agent2",
+ "urls": [
+  {
+   "url": "https://ahrefs.com/api",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.ahrefs.com/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.ahrefs.com/docs/api/getting-started",
+   "purpose": "authentication",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://docs.ahrefs.com/docs/api/authentication",
+   "purpose": "authentication",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://ahrefs.com/api/pricing",
+   "purpose": "pricing",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.ahrefs.com/docs/api/rate-limits",
+   "purpose": "rate_limits",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://docs.ahrefs.com/reference",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://docs.ahrefs.com/docs/api/subscriptions",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://github.com/cnych/seo-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/egebese/dataseo-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/ahrefs/ahrefs-mcp-server",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/ahrefs.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.ahrefs.com/en/mcp/docs/introduction",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.ahrefs.com/en/mcp/docs/claude-desktop-web",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.ahrefs.com/en/mcp/docs/chatgpt-web",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.ahrefs.com/en/mcp/docs/claude-code",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.ahrefs.com/en/ahrefs-connect/docs/oauth-guide",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.ahrefs.com/en/api/reference/site-explorer",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.ahrefs.com/openapi.json",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "cnych/seo-mcp",
+   "url": "https://github.com/cnych/seo-mcp",
+   "stars": 259,
+   "description": "A free SEO tool MCP (Model Control Protocol) service based on Ahrefs data. Includes features such as backlinks, keyword ideas, and more."
+  },
+  {
+   "repo": "egebese/dataseo-mcp",
+   "url": "https://github.com/egebese/dataseo-mcp",
+   "stars": 193,
+   "description": "A free SEO research tool using Model Context Protocol (MCP) powered by Ahrefs data. Get backlink analysis, keyword research, traffic estimation, and more — dire"
+  },
+  {
+   "repo": "ahrefs/ahrefs-mcp-server",
+   "url": "https://github.com/ahrefs/ahrefs-mcp-server",
+   "stars": 100,
+   "description": "Official Ahrefs MCP Server"
+  },
+  {
+   "repo": "universal-mcp/ahrefs",
+   "url": "https://github.com/universal-mcp/ahrefs",
+   "stars": 8,
+   "description": ""
+  },
+  {
+   "repo": "matthewgkay/ahrefs-mcp-proxy",
+   "url": "https://github.com/matthewgkay/ahrefs-mcp-proxy",
+   "stars": 4,
+   "description": ""
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Ahrefs",
+    "slug": "AHREFS",
+    "tools": 46,
+    "auth": [
+     "API_KEY",
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/ahrefs.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Ahrefs",
+    "slug": "AHREFS",
+    "tools": 46,
+    "auth": [
+     "API_KEY",
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/ahrefs.md"
+   },
+   {
+    "name": "Ahrefs MCP",
+    "slug": "AHREFS_MCP",
+    "tools": 135,
+    "auth": [
+     "DCR_OAUTH"
+    ],
+    "url": "https://docs.composio.dev/toolkits/ahrefs_mcp.md"
+   }
+  ]
+ },
+ "search_meta": {}
+}

@@ -1,84 +1,70 @@
 {
  "meta": {
   "backend": "claude_cli",
-  "model": "sonnet",
-  "cost_usd": 0.214452,
-  "seconds": 41.7,
+  "model": "haiku",
+  "cost_usd": 0.086977,
+  "seconds": 111.9,
   "turns": 1
  },
  "error": null,
  "pages": [
+  "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_understanding_authentication.htm",
   "https://www.salesforce.com/editions-pricing/platform/",
+  "https://developer.salesforce.com/",
   "https://docs.composio.dev/toolkits/salesforce.md",
   "https://salesforce.com",
-  "https://developer.salesforce.com",
   "https://docs.salesforce.com",
   "https://salesforce.com/pricing",
-  "https://www.salesforce.com/form/developer/pardot-isvforce-signup/",
-  "https://developer.salesforce.com/docs/atlas.en-us.platform_events.meta/platform_events/platform_events_intro.htm",
-  "https://www.salesforce.com/in/agentforce/pricing/",
-  "https://www.salesforce.com/in/sales/partner-cloud/",
-  "https://www.salesforce.com/in/sales/pricing/",
-  "https://www.salesforce.com/in/service/pricing/",
-  "https://www.salesforce.com/in/marketing/pricing/",
+  "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_rest.htm",
   "https://www.salesforce.com/in/commerce/pricing/"
  ],
  "output": {
-  "one_liner": "Salesforce is a cloud-based CRM platform (the \"#1 AI CRM\") that lets businesses manage sales, service, marketing and commerce data and build AI agents on top of it.",
-  "app_type": "cloud_platform",
+  "one_liner": "Salesforce is a cloud-based AI-powered CRM platform providing programmatic access to customer data via REST API.",
+  "app_type": "saas",
   "auth": {
    "methods": [
     "oauth2"
    ],
-   "oauth_grant_types": [
-    "authorization_code",
-    "refresh_token"
-   ],
-   "notes": "Salesforce exposes OAuth2 via Connected Apps / External Client Apps with Consumer Key/Secret, scopes (full, refresh_token, openid), and IP-allowlist controls for refresh tokens.",
+   "oauth_grant_types": [],
+   "notes": "OAuth 2.0 and S2S_OAUTH2 supported. Specific OAuth grant type names (authorization_code, refresh_token, etc.) not enumerated in provided pages.",
    "evidence": [
     {
-     "url": "https://docs.composio.dev/toolkits/salesforce.md",
-     "snippet": "**Auth:** OAUTH2, S2S_OAUTH2"
+     "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_understanding_authentication.htm",
+     "snippet": "To implement this authorization, use either an external client app or a connected app and an OAuth 2.0 authorization flow."
     },
     {
      "url": "https://docs.composio.dev/toolkits/salesforce.md",
-     "snippet": "Add OAuth scopes. The default auth config requests `full`, `refresh_token`, and `openid`"
+     "snippet": "Auth: OAUTH2, S2S_OAUTH2 Composio-managed OAuth available? Yes"
     }
    ]
   },
   "access": {
    "status": "self_serve_free",
    "dev_sandbox": true,
-   "notes": "A free Salesforce Developer Edition org can be signed up for without payment, approval or sales contact, and OAuth credentials (Consumer Key/Secret) can be created self-serve inside that org.",
+   "notes": "Free Salesforce Developer Edition available for immediate self-serve signup; no payment, approval, or sales contact required.",
    "evidence": [
     {
      "url": "https://docs.composio.dev/toolkits/salesforce.md",
-     "snippet": "If you don't have an org to test in, sign up for a free [Salesforce Developer Edition](https://developer.salesforce.com/signup)."
+     "snippet": "If you don't have an org to test in, sign up for a free Salesforce Developer Edition."
     }
    ]
   },
   "api_surface": {
    "styles": [
-    "rest",
-    "soap",
-    "other"
+    "rest"
    ],
-   "breadth": "broad",
+   "breadth": "unknown",
    "openapi_spec_url": null,
    "webhooks": null,
-   "rate_limit_note": "unknown - no rate-limit statement found on the provided pages",
+   "rate_limit_note": "",
    "evidence": [
     {
-     "url": "https://developer.salesforce.com",
-     "snippet": "Salesforce REST API Integrate Salesforce data into apps and perform complex operations on a large scale."
+     "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_rest.htm",
+     "snippet": "REST API provides you with programmatic access to your data in Salesforce."
     },
     {
-     "url": "https://developer.salesforce.com",
-     "snippet": "Marketing Cloud APIs Create your ideal integration with the Marketing Cloud REST and SOAP APIs."
-    },
-    {
-     "url": "https://developer.salesforce.com/docs/atlas.en-us.platform_events.meta/platform_events/platform_events_intro.htm",
-     "snippet": "Receive platform events in processes, flows, Apex triggers, Pub/Sub API, or CometD clients."
+     "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_rest.htm",
+     "snippet": "REST API is based on the usage of resources—pieces of data in Salesforce, such as records, collections of records, query results, metadata, or API information."
     }
    ]
   },
@@ -91,34 +77,34 @@
      "snippet": "Salesforce in Claude combines a prebuilt Salesforce MCP server with 37 ready-to-use sales skills"
     },
     {
-     "url": "https://developer.salesforce.com",
-     "snippet": "Salesforce Developer Edition now includes Agentforce Vibes IDE, Claude Sonnet 4.5, and Hosted MCP Servers – all free."
+     "url": "https://developer.salesforce.com/",
+     "snippet": "Salesforce Developer Edition now includes Agentforce Vibes IDE, Claude Sonnet 4.5, and Hosted MCP Servers"
     }
    ]
   },
   "buildability": {
    "verdict": "ready",
    "main_blocker": "none",
-   "rationale": "A free Developer Edition org plus self-serve OAuth2 Connected/External Client App setup and a broad, documented REST/SOAP/Platform-Events API surface means a toolkit can be built today without sales contact.",
+   "rationale": "Free developer account, documented REST API, OAuth support, and existing Composio toolkit make this buildable today.",
    "composio_existing_toolkit": "yes",
    "composio_slug": "SALESFORCE"
   },
   "overview_evidence": [
    {
     "url": "https://salesforce.com",
-    "snippet": "Salesforce: The #1 AI CRM | Salesforce IN"
+    "snippet": "Your agents, your team, your data — working together so every customer interaction reflects your business at its best."
    },
    {
-    "url": "https://developer.salesforce.com",
-    "snippet": "Discover Salesforce APIs and put them to work."
+    "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_rest.htm",
+    "snippet": "REST API provides you with programmatic access to your data in Salesforce."
    }
   ],
-  "confidence": 0.72,
+  "confidence": 0.82,
   "unknown_reasons": {
-   "auth": "Pages show OAuth2 Connected/External Client App setup only; no mention of basic/bearer/jwt schemes beyond the OAuth flow described.",
-   "access": "Free Developer Edition signup is confirmed, but exact self-serve limits (API call caps, sandbox restrictions) are not detailed in the provided pages.",
-   "api_surface": "No OpenAPI spec URL or explicit rate-limit statement appears on the provided pages; breadth inferred from multiple named API products (REST, SOAP, Metadata, Platform Events).",
-   "mcp": "Vendor text references a 'prebuilt Salesforce MCP server' and 'Hosted MCP Servers' but no direct MCP server URL is given on the provided pages."
+   "auth": "",
+   "access": "",
+   "api_surface": "Number of endpoints and breadth not enumerated in pages; OpenAPI spec, webhooks, and rate limits not documented.",
+   "mcp": "Salesforce MCP server existence confirmed but specific repository URL not provided in pages."
   }
  }
 }

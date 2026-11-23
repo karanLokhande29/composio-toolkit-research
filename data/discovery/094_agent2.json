@@ -1,0 +1,185 @@
+{
+ "id": 94,
+ "app": "Consensus",
+ "tag": "agent2",
+ "urls": [
+  {
+   "url": "https://consensus.app",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developers.consensus.app",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.consensus.app",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.consensus.app",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://consensus.app/pricing",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/antonbabenko/deliberation",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/wheattoast11/openrouter-deep-research-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/blackms/aistack",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/consensus.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.consensus.app/consensus-mcp",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.consensus.app/get-started/full-text-access",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.consensus.app/core-features/mcp",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.consensus.app/search-basics/research-an-author",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://consensus.app/pricing/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "antonbabenko/deliberation",
+   "url": "https://github.com/antonbabenko/deliberation",
+   "stars": 188,
+   "description": "Ask Codex, Gemini, Grok, and 400+ OpenRouter models (Qwen, Kimi, DeepSeek) for second opinions or arbiter-mediated consensus. One MCP server for Claude Code, Co"
+  },
+  {
+   "repo": "wheattoast11/openrouter-deep-research-mcp",
+   "url": "https://github.com/wheattoast11/openrouter-deep-research-mcp",
+   "stars": 56,
+   "description": "A multi-agent research MCP server + mini client adapter - orchestrates a net of async agents or streaming swarm to conduct ensemble consensus-backed research. E"
+  },
+  {
+   "repo": "blackms/aistack",
+   "url": "https://github.com/blackms/aistack",
+   "stars": 54,
+   "description": "Production-grade agent orchestration for Claude Code - 11 agents, 46 MCP tools, SQLite+FTS5, drift detection, consensus checkpoints"
+  },
+  {
+   "repo": "0xAkuti/ai-council-mcp",
+   "url": "https://github.com/0xAkuti/ai-council-mcp",
+   "stars": 33,
+   "description": "Multi-AI consensus MCP server that queries multiple AI models (OpenAI, Claude, Gemini, custom APIs) in parallel and synthesizes responses to reduce bias and imp"
+  },
+  {
+   "repo": "Consensus-NLP/consensus-mcp",
+   "url": "https://github.com/Consensus-NLP/consensus-mcp",
+   "stars": 30,
+   "description": "Official Consensus MCP server. Semantic search over 400M+ research papers, including all of PubMed, for Claude, ChatGPT, Cursor and any MCP client."
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Consensus",
+    "slug": "CONSENSUS",
+    "tools": 1,
+    "auth": [
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/consensus.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Consensus",
+    "slug": "CONSENSUS",
+    "tools": 1,
+    "auth": [
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/consensus.md"
+   },
+   {
+    "name": "Consensus MCP",
+    "slug": "CONSENSUS_MCP",
+    "tools": 1,
+    "auth": [
+     "DCR_OAUTH"
+    ],
+    "url": "https://docs.composio.dev/toolkits/consensus_mcp.md"
+   }
+  ]
+ },
+ "search_meta": {}
+}

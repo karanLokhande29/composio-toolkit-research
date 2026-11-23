@@ -1,2 +1,19 @@
 IST now 16:27 | deadline 23:00 | 6h32m left
 extract: 16 apps to do
+  [ 25] Pumble                       auth=bearer_token       access=self_serve_free    verdict=ready              pages=12 61.7s $0.035 
+  [ 28] WhatsApp Business            auth=bearer_token,oauth2 access=self_serve_free    verdict=ready_with_caveats pages=12 66.0s $0.060 
+  [ 24] Lark (Larksuite)             auth=oauth2             access=unknown            verdict=ready              pages=3 69.1s $0.045 
+  [ 23] Zoho Cliq                    auth=oauth2             access=unknown            verdict=ready              pages=12 97.2s $0.060 
+  [ 27] Telegram                     auth=api_key            access=self_serve_free    verdict=ready              pages=12 113.3s $0.070 
+  [ 30] Vonage                       auth=api_key,basic,jwt  access=self_serve_trial   verdict=ready              pages=12 62.0s $0.058 
+  [ 26] Discord                      auth=basic,bearer_token,oauth2 access=self_serve_free    verdict=ready              pages=12 135.0s $0.086 
+  [ 32] Meta Ads                     auth=api_key,oauth2     access=app_review         verdict=ready_with_caveats pages=12 43.6s $0.050 
+  [ 29] Aircall                      auth=basic,oauth2       access=self_serve_trial   verdict=ready              pages=12 96.9s $0.092 
+  [ 31] Google Ads                   auth=oauth2             access=app_review         verdict=ready_with_caveats pages=12 102.2s $0.083 
+  [ 33] LinkedIn Ads                 auth=oauth2             access=app_review         verdict=ready_with_caveats pages=12 81.1s $0.083 
+  [ 35] Mailchimp                    auth=api_key,oauth2     access=self_serve_free    verdict=ready              pages=12 62.2s $0.063 
+  [ 34] GoHighLevel                  auth=api_key,oauth2     access=app_review         verdict=ready_with_caveats pages=12 103.2s $0.078 
+  [ 38] Pinterest                    auth=oauth2             access=app_review         verdict=ready_with_caveats pages=12 70.0s $0.063 
+  [ 36] Klaviyo                      auth=api_key,oauth2     access=self_serve_free    verdict=ready              pages=12 58.5s $0.066 
+  [ 37] systeme.io                   auth=api_key            access=self_serve_free    verdict=ready              pages=12 102.9s $0.098 
+done in 262s | IST now 16:31 | deadline 23:00 | 6h28m left

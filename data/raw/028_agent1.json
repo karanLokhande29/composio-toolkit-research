@@ -1,0 +1,124 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.06049,
+  "seconds": 66.0,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://developers.facebook.com/documentation/business-messaging/whatsapp/access-tokens/",
+  "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started",
+  "https://developers.facebook.com/documentation/business-messaging/whatsapp/solution-providers/app-review",
+  "https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing",
+  "https://developers.facebook.com/docs/whatsapp/cloud-api/reference/messages/",
+  "https://developers.facebook.com/blog/post/2026/09/15/whatsapp-business-messaging-mcp-ai-agent/",
+  "https://developers.facebook.com/documentation/business-messaging/whatsapp/overview",
+  "https://developers.facebook.com/docs/whatsapp/api/rate-limits/",
+  "https://developers.facebook.com/documentation/business-messaging/whatsapp/webhooks/overview/",
+  "https://github.com/facebook/openapi",
+  "https://docs.composio.dev/toolkits/whatsapp.md",
+  "https://github.com/metabusiness-mcp/meta-business-mcp"
+ ],
+ "output": {
+  "one_liner": "Meta's cloud API platform enabling businesses to send and receive messages at scale via WhatsApp.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "bearer_token"
+   ],
+   "oauth_grant_types": [],
+   "notes": "Bearer tokens obtained through OAuth flow; System User tokens are long-lived and generated via Meta Business settings for server-to-server auth.",
+   "evidence": [
+    {
+     "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/reference/messages/",
+     "snippet": "Bearer token for API authentication. This should be a valid access token obtained through the appropriate OAuth flow or system user token."
+    },
+    {
+     "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/access-tokens/",
+     "snippet": "System user access tokens are long-lived and can represent automated services within your business or organization."
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Any developer can create an app and generate free credentials immediately. Advanced access and app review required only for production multi-customer use; direct self-use has no review requirement.",
+   "evidence": [
+    {
+     "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/solution-providers/app-review",
+     "snippet": "if you are using the API for yourself as a Direct Developer, you do not need Advanced access or app review."
+    },
+    {
+     "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started",
+     "snippet": "Open the Meta App Dashboard to create a new Meta app. Click Create App. Click Generate access token to generate a temporary access token."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": "https://github.com/facebook/openapi",
+   "webhooks": true,
+   "rate_limit_note": "Daily messaging limits and throughput controls enforced based on business verification status and message quality rating; free entry point windows available.",
+   "evidence": [
+    {
+     "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/reference/messages/",
+     "snippet": "Bearer token for API authentication in request headers; Authorization: Bearer your-token-here"
+    },
+    {
+     "url": "https://github.com/facebook/openapi",
+     "snippet": "This repository provides OpenAPI specifications for Meta APIs. Business Messaging - WhatsApp API OpenAPI Specification."
+    },
+    {
+     "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/webhooks/overview/",
+     "snippet": "Webhooks are HTTP requests containing JSON payloads that Meta's servers send to inform you of incoming messages, outgoing message status, and account changes."
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/whatsapp.md",
+     "snippet": "Tools: 127"
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [
+    "https://github.com/metabusiness-mcp/meta-business-mcp"
+   ],
+   "evidence": [
+    {
+     "url": "https://developers.facebook.com/blog/post/2026/09/15/whatsapp-business-messaging-mcp-ai-agent/",
+     "snippet": "WhatsApp Business Tools MCP changes that. It's an MCP server that connects your AI coding agent to the WhatsApp Business Platform, directly in your workflow."
+    },
+    {
+     "url": "https://github.com/metabusiness-mcp/meta-business-mcp",
+     "snippet": "Production-validated MCP server for WhatsApp Business Cloud API with compliance engine, error intelligence and 24 tools."
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "app_review",
+   "rationale": "Self-serve free credentials and comprehensive documented REST API are available; app review required for production multi-customer use.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "WHATSAPP"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/overview",
+    "snippet": "WhatsApp Business Platform — our enterprise-grade APIs for messaging and calling. Drive revenue growth, boost efficiency, and deliver exceptional customer experiences."
+   }
+  ],
+  "confidence": 0.87,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": "Official WhatsApp Business Tools MCP announced by Meta in blog post but specific GitHub repository URL not provided in documentation pages."
+  }
+ }
+}

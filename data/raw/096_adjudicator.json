@@ -1,0 +1,72 @@
+{
+ "fields": [
+  "access.status",
+  "buildability.main_blocker",
+  "buildability.verdict",
+  "mcp.official"
+ ],
+ "pages": [
+  "https://docs.devin.ai/",
+  "https://docs.devin.ai/work-with-devin/devin-mcp",
+  "https://docs.devin.ai/api-reference/authentication"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.057048,
+  "seconds": 13.8,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "access.status",
+    "value": "paid_plan_required",
+    "evidence": [
+     {
+      "url": "https://docs.devin.ai/",
+      "snippet": "Individual and Teams plans are available."
+     }
+    ],
+    "reason": "Self-serve signup exists but only through paid Individual/Teams plans, with no free tier mentioned; enterprise users instead need admin permission."
+   },
+   {
+    "field": "buildability.main_blocker",
+    "value": "paid_plan",
+    "evidence": [
+     {
+      "url": "https://docs.devin.ai/",
+      "snippet": "Individual and Teams plans are available."
+     }
+    ],
+    "reason": "Access to generate API keys requires purchasing an Individual or Teams plan, making paid plan the primary blocker."
+   },
+   {
+    "field": "buildability.verdict",
+    "value": "ready_with_caveats",
+    "evidence": [
+     {
+      "url": "https://docs.devin.ai/",
+      "snippet": "Individual and Teams plans are available."
+     },
+     {
+      "url": "https://docs.devin.ai/api-reference/authentication",
+      "snippet": "Copy the API key — the key starts with"
+     }
+    ],
+    "reason": "A documented REST API and MCP server exist and credentials are self-serve, but only via a paid plan, so buildable with caveats rather than fully free/ready."
+   },
+   {
+    "field": "mcp.official",
+    "value": "https://mcp.devin.ai/",
+    "evidence": [
+     {
+      "url": "https://docs.devin.ai/work-with-devin/devin-mcp",
+      "snippet": "Base Server URL: https://mcp.devin.ai/"
+     }
+    ],
+    "reason": "The vendor's own docs explicitly publish and describe this as the official Devin MCP server base URL."
+   }
+  ]
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "fields": [
+  "access.status"
+ ],
+ "pages": [
+  "https://docs.composio.dev/toolkits/gumroad.md",
+  "https://github.com/rmarescu/gumroad-mcp",
+  "https://gumroad.com/api"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.051264,
+  "seconds": 9.1,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "access.status",
+    "value": "self_serve_free",
+    "evidence": [
+     {
+      "url": "https://gumroad.com/api",
+      "snippet": "To start using the API, you'll need to register your OAuth application"
+     },
+     {
+      "url": "https://gumroad.com/api",
+      "snippet": "On the application page, click Generate access token to get the token you will use with the API."
+     }
+    ],
+    "reason": "Gumroad's official API docs show anyone can register an OAuth application and generate an access token directly with no payment, review, or admin approval mentioned."
+   }
+  ]
+ }
+}

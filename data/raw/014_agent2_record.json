@@ -1,0 +1,126 @@
+{
+ "id": 14,
+ "app": "Front",
+ "category": "Support and Helpdesk",
+ "hint": "front.com",
+ "one_liner": "Front is a customer service platform powered by AI with shared inboxes and collaborative support tools.",
+ "app_type": "saas",
+ "auth": {
+  "methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "oauth_grant_types": [
+   "authorization_code"
+  ],
+  "notes": "API tokens and OAuth2 both supported. OAuth uses authorization code grant type only. Basic auth used only during OAuth token exchange.",
+  "evidence": [
+   {
+    "url": "https://dev.frontapp.com/docs/oauth",
+    "snippet": "OAuth 2.0 is a protocol that lets external applications request authorization to API access in a secure way.",
+    "check": "exact"
+   },
+   {
+    "url": "https://dev.frontapp.com/reference/introduction",
+    "snippet": "Front supports OAuth2.0 as well as API Tokens.",
+    "check": "exact"
+   },
+   {
+    "url": "https://dev.frontapp.com/docs/oauth",
+    "snippet": "Front's OAuth implementation only supports the authorization code grant type",
+    "check": "exact"
+   }
+  ]
+ },
+ "access": {
+  "status": "self_serve_free",
+  "dev_sandbox": true,
+  "notes": "Free developer account provides sandbox environment with full API access. No credit card, approval, or sales contact required. Developer accounts limited to 3 teammates.",
+  "evidence": [
+   {
+    "url": "https://dev.frontapp.com/",
+    "snippet": "You can create a developer account by signing up here . You’ll get access to a free developer environment",
+    "check": "repaired"
+   },
+   {
+    "url": "https://dev.frontapp.com/",
+    "snippet": "The developer account will provide you with an environment that does not include production data so it will be safer to test in.",
+    "check": "exact"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "rest"
+  ],
+  "breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "rate_limit_note": "50 rpm (Starter), 200 rpm (Professional). Professional plan required for increases. Additional capacity: $200 per 100 rpm/month.",
+  "evidence": [
+   {
+    "url": "https://dev.frontapp.com/reference/introduction",
+    "snippet": "The API is designed to communicate with your server using JSON.",
+    "check": "exact"
+   },
+   {
+    "url": "https://dev.frontapp.com/",
+    "snippet": "Our webhooks also make it possible to respond to real-time events as actions and updates happen in Front.",
+    "check": "exact"
+   },
+   {
+    "url": "https://dev.frontapp.com/docs/rate-limiting",
+    "snippet": "By default, Front's API rate limit starts at 50 requests per minute and varies depending on your plan",
+    "check": "repaired"
+   },
+   {
+    "url": "https://dev.frontapp.com/docs/rate-limiting",
+    "snippet": "Rate limit increases beyond the default limits require the Professional plan or higher.",
+    "check": "exact"
+   }
+  ]
+ },
+ "mcp": {
+  "official": null,
+  "community": [],
+  "evidence": [
+   {
+    "url": "https://dev.frontapp.com/",
+    "snippet": "Access Front data and actions through the MCP protocol, allowing AI agents like Claude and ChatGPT to read and reply to conversations and other Front resources.",
+    "check": "exact"
+   }
+  ]
+ },
+ "buildability": {
+  "verdict": "ready",
+  "main_blocker": "none",
+  "rationale": "Free developer account provides immediate API access without approval; REST API with webhooks well-documented; 180-tool toolkit already exists in Composio.",
+  "composio_existing_toolkit": "yes",
+  "composio_slug": "FRONT"
+ },
+ "overview_evidence": [
+  {
+   "url": "https://front.com",
+   "snippet": "Front | Customer service platform, powered by AI"
+  },
+  {
+   "url": "https://dev.frontapp.com/",
+   "snippet": "Our primary backend API that allows you to read, create, update, and delete a wide range of data across Front's various entities"
+  }
+ ],
+ "confidence": 0.92,
+ "unknown_reasons": {
+  "auth": "",
+  "access": "",
+  "api_surface": "OpenAPI spec existence not mentioned in provided pages",
+  "mcp": "Official MCP server documented as existing but specific repository URL not provided in given pages"
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 8,
+  "error": null,
+  "cost_usd": 0.08667,
+  "seconds": 117.9
+ }
+}

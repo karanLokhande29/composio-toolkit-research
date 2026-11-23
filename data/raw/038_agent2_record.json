@@ -1,0 +1,115 @@
+{
+ "id": 38,
+ "app": "Pinterest",
+ "category": "Marketing, Ads, Email and Social",
+ "hint": "developers.pinterest.com",
+ "one_liner": "One API to seamlessly integrate with Pinterest for planning content, managing ads, uploading product feeds, and analyzing data.",
+ "app_type": "saas",
+ "auth": {
+  "methods": [
+   "oauth2"
+  ],
+  "oauth_grant_types": [
+   "authorization_code",
+   "client_credentials"
+  ],
+  "notes": "OAuth 2.0 with Authorization Code and Client Credentials flows. HTTP Basic Authentication required for token endpoint using client_id and client_secret.",
+  "evidence": [
+   {
+    "url": "https://developers.pinterest.com/docs/getting-started/authentication/",
+    "snippet": "Build a working authentication flow based on OAuth 2",
+    "check": "exact"
+   },
+   {
+    "url": "https://developers.pinterest.com/docs/getting-started/scopes/",
+    "snippet": "OAuth grant type selection The grant type determines how your app authenticates and acquires authorization",
+    "check": "repaired"
+   },
+   {
+    "url": "https://developers.pinterest.com/docs/getting-started/scopes/",
+    "snippet": "Use HTTP Basic Authentication: Username: client_id Password: client_secret",
+    "check": "exact"
+   }
+  ]
+ },
+ "access": {
+  "status": "app_review",
+  "dev_sandbox": true,
+  "notes": "Any developer can self-serve register an app via My apps, but Trial access requires Pinterest's approval. Trial is free but limited to Sandbox (Pins and Boards invisible to non-creator). Standard access for production use requires additional approval with video demo.",
+  "evidence": [
+   {
+    "url": "https://developers.pinterest.com/docs/getting-started/authentication/",
+    "snippet": "Submit your request for trial access. Application requests are reviewed by Pinterest.",
+    "check": "exact"
+   },
+   {
+    "url": "https://developers.pinterest.com/docs/getting-started/authentication/",
+    "snippet": "If your app is approved for Trial access , you can log into your account and manage your app details",
+    "check": "repaired"
+   },
+   {
+    "url": "https://developers.pinterest.com/docs/key-concepts/access-tiers/",
+    "snippet": "All Pins and Boards created with Trial access are only visible to their creator as Sandbox entities.",
+    "check": "exact"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "rest"
+  ],
+  "breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": null,
+  "rate_limit_note": "Trial: daily rate limits per app category. Standard: per-minute limits per user per app.",
+  "evidence": [
+   {
+    "url": "https://developers.pinterest.com/docs/getting-started/make-an-api-call/",
+    "snippet": "curl --location --request GET 'https://api.pinterest.com/v5/pins' \\ --header 'Authorization: Bearer YOUR_TOKEN'",
+    "check": "repaired"
+   },
+   {
+    "url": "https://developers.pinterest.com/docs/key-concepts/access-tiers/",
+    "snippet": "Apps with Trial access are rate limited based on calls per day/per app.",
+    "check": "repaired"
+   }
+  ]
+ },
+ "mcp": {
+  "official": null,
+  "community": [],
+  "evidence": []
+ },
+ "buildability": {
+  "verdict": "ready_with_caveats",
+  "main_blocker": "app_review",
+  "rationale": "API is well-documented with broad REST surface; self-serve app registration available but requires approval; Trial limited to Sandbox; production requires Standard tier approval.",
+  "composio_existing_toolkit": "yes",
+  "composio_slug": "PINTEREST"
+ },
+ "overview_evidence": [
+  {
+   "url": "https://developers.pinterest.com/",
+   "snippet": "One API to seamlessly integrate with Pinterest. Securely plan content, manage ads, upload product feeds."
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/pinterest.md",
+   "snippet": "Pinterest is a visual discovery platform for finding ideas like recipes, home and style inspiration."
+  }
+ ],
+ "confidence": 0.92,
+ "unknown_reasons": {
+  "auth": "",
+  "access": "",
+  "api_surface": "OpenAPI specification URL not documented. API webhooks not documented (only web widgets mentioned).",
+  "mcp": "Official MCP server announced as forthcoming but release date and details unknown. Community MCP servers not found in provided pages."
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 10,
+  "error": null,
+  "cost_usd": 0.096626,
+  "seconds": 126.7
+ }
+}

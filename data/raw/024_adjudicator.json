@@ -1,0 +1,44 @@
+{
+ "fields": [
+  "access.status"
+ ],
+ "pages": [
+  "https://github.com/larksuite/lark-openapi-mcp",
+  "https://open.larksuite.com",
+  "https://open.larksuite.com/document/",
+  "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/authentication-management/access-token/get-user-access-token",
+  "https://open.larksuite.com/document/server-docs/getting-started/api-access-token/g",
+  "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/api-call-guide/api-billing",
+  "https://open.larksuite.com/document/server-docs/getting-started/server-api-list"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.083367,
+  "seconds": 8.8,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "access.status",
+    "value": "self_serve_free",
+    "evidence": [
+     {
+      "url": "https://github.com/larksuite/lark-openapi-mcp",
+      "snippet": "Before using the lark-mcp tool, you need to create a Feishu/Lark application"
+     },
+     {
+      "url": "https://open.larksuite.com/document/server-docs/getting-started/api-access-token/g",
+      "snippet": "Log in to\nDeveloper Console\nto create a company custom app, and then go to the details page of the app to obtain its App ID and App Secret."
+     },
+     {
+      "url": "https://open.larksuite.com/document/server-docs/getting-started/server-api-list",
+      "snippet": "Unlimited: Core features including Authentication and Authorization, Event Subscription, and Contacts are free to use, regardless of your Lark plan."
+     }
+    ],
+    "reason": "Any developer can self-register, create a custom app, and immediately obtain App ID/App Secret and call unlimited/basic APIs for free, with no sales contact or admin approval needed to get working credentials (though higher usage may need a paid Lark plan or advanced API package)."
+   }
+  ]
+ }
+}

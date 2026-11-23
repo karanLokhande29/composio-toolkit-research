@@ -1,0 +1,310 @@
+{
+ "id": 66,
+ "app": "Neo4j",
+ "tag": "agent2",
+ "urls": [
+  {
+   "url": "https://neo4j.com/docs/api",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://neo4j.com/docs/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://neo4j.com/docs/aura/platform/api/overview/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://neo4j.com/docs/aura/platform/api/authentication/",
+   "purpose": "authentication",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://neo4j.com/docs/http-api/current/authentication/",
+   "purpose": "authentication",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://neo4j.com/docs/aura/platform/api/specification/",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://neo4j.com/docs/http-api/current/",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://neo4j.com/docs/aura/platform/api/rate-limiting/",
+   "purpose": "rate_limits",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://neo4j.com/sandbox/",
+   "purpose": "credentials_sandbox",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://neo4j.com/partners/",
+   "purpose": "partner_programme",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://neo4j.com/pricing/",
+   "purpose": "pricing",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://neo4j.com/docs/aura/platform/api/webhooks/",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://neo4j.com/docs/mcp-server/current/",
+   "purpose": "mcp_server",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/neo4j-contrib/mcp-neo4j",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/orneryd/NornicDB",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/cyanheads/atlas-mcp-server",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/neo4j.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://neo4j.com/docs/getting-started/current/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://neo4j.com/docs/mcp/current",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://neo4j.com/labs/agent-memory/getting-started/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://neo4j.com/labs/agent-memory/reference/mcp-tools/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://neo4j.com/docs/aura/getting-started/create-instance/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://neo4j.com/docs/operations-manual/current/authentication-authorization/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://neo4j.com/docs/getting-started/appendix/graphdb-concepts/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://neo4j.com/docs/getting-started/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://neo4j.com/docs/getting-started/cypher-intro/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://neo4j.com/docs/graph-data-science/current/getting-started/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://neo4j.com/docs/getting-started/data-modeling/data-modeling-tools/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://neo4j.com/docs/getting-started/appendix/tutorials/guide-import-relational-and-etl/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://neo4j.com/docs/getting-started/appendix/tutorials/guide-build-a-recommendation-engine/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "neo4j-contrib/mcp-neo4j",
+   "url": "https://github.com/neo4j-contrib/mcp-neo4j",
+   "stars": 993,
+   "description": "Neo4j Labs Model Context Protocol servers"
+  },
+  {
+   "repo": "orneryd/NornicDB",
+   "url": "https://github.com/orneryd/NornicDB",
+   "stars": 935,
+   "description": "Nornicdb is a distributed low-latency, Graph+Vector, Temporal MVCC with all sub-ms HNSW search, graph traversal, and writes. Using Neo4j Bolt/Cypher and qdrant'"
+  },
+  {
+   "repo": "cyanheads/atlas-mcp-server",
+   "url": "https://github.com/cyanheads/atlas-mcp-server",
+   "stars": 481,
+   "description": "A Model Context Protocol (MCP) server for ATLAS, a Neo4j-powered task management system for LLM Agents - implementing a three-tier architecture (Projects, Tasks"
+  },
+  {
+   "repo": "neo4j/mcp",
+   "url": "https://github.com/neo4j/mcp",
+   "stars": 309,
+   "description": "Neo4j official MCP Server"
+  },
+  {
+   "repo": "esinecan/skynet-agent",
+   "url": "https://github.com/esinecan/skynet-agent",
+   "stars": 135,
+   "description": "An Open Source, Claude Code Like Tool, With RAG + Graph RAG + MCP Integration, and Supports Most LLMs (Incomplete But Functional & Usable)Autonomous LLM agent: "
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Neo4J",
+    "slug": "NEO4J",
+    "tools": 21,
+    "auth": [
+     "OAUTH2",
+     "BASIC",
+     "API_KEY",
+     "S2S_OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/neo4j.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Neo4J",
+    "slug": "NEO4J",
+    "tools": 21,
+    "auth": [
+     "OAUTH2",
+     "BASIC",
+     "API_KEY",
+     "S2S_OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/neo4j.md"
+   }
+  ]
+ },
+ "search_meta": {}
+}

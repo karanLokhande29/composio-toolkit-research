@@ -1,0 +1,100 @@
+{
+ "id": 58,
+ "app": "Sherlock",
+ "tag": "agent2",
+ "urls": [
+  {
+   "url": "https://github.com/sherlock-project/sherlock",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/sherlock-project/sherlock#readme",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/sherlock-project/sherlock/wiki",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/sherlock-project/sherlock/blob/master/CONTRIBUTING.md",
+   "purpose": "reference",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/holistis/bug-bounty-intelligence-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/jcucci/dotnet-sherlock-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/Burnsedia/sherlock-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "holistis/bug-bounty-intelligence-mcp",
+   "url": "https://github.com/holistis/bug-bounty-intelligence-mcp",
+   "stars": 11,
+   "description": "MCP server that scans Solidity repos through a 7-gate verification framework (Al-Mizaan) to cut LLM false positives, benchmarked against Slither; free pattern-s"
+  },
+  {
+   "repo": "jcucci/dotnet-sherlock-mcp",
+   "url": "https://github.com/jcucci/dotnet-sherlock-mcp",
+   "stars": 10,
+   "description": "MCP server that uses reflection to provide LLM's with knowledger about dotnet classes, their members and their signatures"
+  },
+  {
+   "repo": "Burnsedia/sherlock-mcp",
+   "url": "https://github.com/Burnsedia/sherlock-mcp",
+   "stars": 8,
+   "description": "Sherlock MCP Server: Find truth and counter propaganda through ethical OSINT. FastMCP integration for social media username searches across 400+ platforms using"
+  },
+  {
+   "repo": "qKitNp/sherlock_mcp",
+   "url": "https://github.com/qKitNp/sherlock_mcp",
+   "stars": 5,
+   "description": ""
+  },
+  {
+   "repo": "Hackerobi/pentest-osint-mcp-server",
+   "url": "https://github.com/Hackerobi/pentest-osint-mcp-server",
+   "stars": 3,
+   "description": "A comprehensive MCP server integrating 25+ OSINT tools for penetration testing. Connects Claude Desktop to Sherlock, Maigret, Holehe, Nmap, theHarvester, Spider"
+  }
+ ],
+ "composio": {
+  "exact": [],
+  "candidates": []
+ },
+ "search_meta": {}
+}

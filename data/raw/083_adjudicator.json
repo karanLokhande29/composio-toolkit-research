@@ -1,0 +1,67 @@
+{
+ "fields": [
+  "api_surface.breadth",
+  "buildability.main_blocker",
+  "buildability.verdict"
+ ],
+ "pages": [
+  "https://github.com/TermiX-official/binance-mcp",
+  "https://github.com/guangxiangdebizi/FinanceMCP"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.066804,
+  "seconds": 19.6,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "api_surface.breadth",
+    "value": "unknown",
+    "evidence": [
+     {
+      "url": "https://github.com/TermiX-official/binance-mcp",
+      "snippet": "Retrieve real-time trading data and account information Implement structured transactions"
+     },
+     {
+      "url": "https://github.com/guangxiangdebizi/FinanceMCP",
+      "snippet": "Binance Public API 不需要 Spot REST API"
+     }
+    ],
+    "reason": "Both pages are third-party MCP wrapper repos describing a handful of functions, not the official Binance API docs, so endpoint count/breadth cannot be determined from these pages."
+   },
+   {
+    "field": "buildability.main_blocker",
+    "value": "other",
+    "evidence": [
+     {
+      "url": "https://github.com/TermiX-official/binance-mcp",
+      "snippet": "Complete identity verification"
+     },
+     {
+      "url": "https://github.com/TermiX-official/binance-mcp",
+      "snippet": "Enable two-factor authentication (2FA) on your account"
+     }
+    ],
+    "reason": "Getting a working Binance API key requires identity verification and 2FA, a KYC-style friction that does not map to paid_plan, app_review, admin_scope or partner_gate, so it is classified as other."
+   },
+   {
+    "field": "buildability.verdict",
+    "value": "ready_with_caveats",
+    "evidence": [
+     {
+      "url": "https://github.com/TermiX-official/binance-mcp",
+      "snippet": "Complete identity verification"
+     },
+     {
+      "url": "https://github.com/TermiX-official/binance-mcp",
+      "snippet": "Your API key is now created."
+     }
+    ],
+    "reason": "A developer can self-serve create API keys and build against the API, but only after completing identity verification and enabling 2FA, which is friction rather than a full blocker, making ready_with_caveats the better fit than plain ready."
+   }
+  ]
+ }
+}

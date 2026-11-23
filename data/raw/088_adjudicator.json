@@ -1,0 +1,41 @@
+{
+ "fields": [
+  "access.status"
+ ],
+ "pages": [
+  "https://developer.brex.com/docs/authentication",
+  "https://developer.brex.com/docs/mcp",
+  "https://developer.brex.com/docs/authentication/",
+  "https://developer.brex.com/guides/quickstart"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.044205,
+  "seconds": 7.7,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "access.status",
+    "value": "admin_approval",
+    "evidence": [
+     {
+      "url": "https://developer.brex.com/docs/authentication",
+      "snippet": "If your company has not accepted the developer API agreement, please review the terms and conditions. These must be accepted to use the developer API."
+     },
+     {
+      "url": "https://developer.brex.com/docs/mcp",
+      "snippet": "An account admin or card admin must accept the Developer API agreement in"
+     },
+     {
+      "url": "https://developer.brex.com/guides/quickstart",
+      "snippet": "This guide assumes you are a Brex customer with admin access to your dashboard."
+     }
+    ],
+    "reason": "Pages consistently state that an account/card admin must accept the developer agreement and provision tokens, so credentials require admin approval rather than being open self-serve."
+   }
+  ]
+ }
+}

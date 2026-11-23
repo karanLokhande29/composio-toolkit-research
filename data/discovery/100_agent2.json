@@ -1,0 +1,176 @@
+{
+ "id": 100,
+ "app": "Grain",
+ "tag": "agent2",
+ "urls": [
+  {
+   "url": "https://grain.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.grain.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.grain.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.grain.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://grain.com/pricing",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://grain.com/api",
+   "purpose": "overview",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/mcpgod/cli",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/alessandro-afloarei/shadowgit-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/autodesk-platform-services/aps-mcp-server-nodejs",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/grain.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.grain.com/mcp/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.grain.com/authentication.html",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.grain.com/rate-limits.html",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://grain.com/blog/arrows-customer-success-grain",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "mcpgod/cli",
+   "url": "https://github.com/mcpgod/cli",
+   "stars": 115,
+   "description": "Fine-grained control over model context protocol (MCP) clients, servers, and tools. Context is God."
+  },
+  {
+   "repo": "alessandro-afloarei/shadowgit-mcp",
+   "url": "https://github.com/alessandro-afloarei/shadowgit-mcp",
+   "stars": 50,
+   "description": "A Model Context Protocol (MCP) server that provides AI assistants with secure, read-only access to your ShadowGit repositories. This enables powerful debugging "
+  },
+  {
+   "repo": "autodesk-platform-services/aps-mcp-server-nodejs",
+   "url": "https://github.com/autodesk-platform-services/aps-mcp-server-nodejs",
+   "stars": 25,
+   "description": "Simple Model Context Protocol server built with Node.js, providing access to Autodesk Platform Services API, with fine-grained access control using Secure Servi"
+  },
+  {
+   "repo": "bdecost/mcpm",
+   "url": "https://github.com/bdecost/mcpm",
+   "stars": 15,
+   "description": "mcpm: python implementation of the modified Potts model for grain growth developed in Mason, J. K., et al. \"Kinetics and anisotropy of the Monte Carlo model of "
+  },
+  {
+   "repo": "hannesill/Gatelet",
+   "url": "https://github.com/hannesill/Gatelet",
+   "stars": 14,
+   "description": "Self-hosted MCP proxy that gives AI agents fine-grained access to your accounts (e.g. GMail, GCal, Outlook) – without giving away the keys."
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Grain",
+    "slug": "GRAIN",
+    "tools": 17,
+    "auth": [
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/grain.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Grain",
+    "slug": "GRAIN",
+    "tools": 17,
+    "auth": [
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/grain.md"
+   }
+  ]
+ },
+ "search_meta": {}
+}

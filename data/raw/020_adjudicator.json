@@ -1,0 +1,95 @@
+{
+ "fields": [
+  "api_surface.breadth",
+  "auth.methods",
+  "buildability.main_blocker",
+  "buildability.verdict"
+ ],
+ "pages": [
+  "https://developer.gladly.com/rest/",
+  "https://help.gladly.com/docs/generate-api-tokens-and-create-webhooks",
+  "https://developer.gladly.com/",
+  "https://help.gladly.com/developer-tutorials/docs/app-platform-overview"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.073494,
+  "seconds": 19.9,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "api_surface.breadth",
+    "value": "moderate",
+    "evidence": [
+     {
+      "url": "https://developer.gladly.com/rest/",
+      "snippet": "Gladly API\nAgents\npost\nAdd or Remove Freeform topic\npost\nDelete customer\nEndpoints\nget\nList Endpoints\nget\nGet Endpoint\nEvents\nGet file\nFreeform Topics"
+     },
+     {
+      "url": "https://developer.gladly.com/rest/",
+      "snippet": "Webhooks\npost\nCreate webhook\nget\nList webhooks\npatch\nUpdate webhook\ndel\nDelete webhook\nget\nGet webhook"
+     }
+    ],
+    "reason": "The REST API documentation lists several distinct resource categories (Agents, Endpoints, Events, Freeform Topics, Webhooks) each with multiple operations, plus a separate Lookup API and Reporting API rate limit section, indicating more than a handful of endpoints but not hundreds, so moderate fits better than unknown."
+   },
+   {
+    "field": "auth.methods",
+    "value": [
+     "basic"
+    ],
+    "evidence": [
+     {
+      "url": "https://developer.gladly.com/rest/",
+      "snippet": "Gladly API uses token-based\nBasic Authentication\n. API tokens are associated with designated Gladly users."
+     },
+     {
+      "url": "https://developer.gladly.com/rest/",
+      "snippet": "HTTP\nHTTP Authorization Scheme\nbasic"
+     }
+    ],
+    "reason": "The developer docs explicitly and unambiguously state the API uses token-based Basic Authentication with the HTTP Authorization scheme 'basic', not Bearer."
+   },
+   {
+    "field": "buildability.main_blocker",
+    "value": "admin_scope",
+    "evidence": [
+     {
+      "url": "https://developer.gladly.com/rest/",
+      "snippet": "Gladly Administrators can set API permissions on an agent-by-agent basis."
+     },
+     {
+      "url": "https://developer.gladly.com/rest/",
+      "snippet": "To create and use an API token, your user must have the API User permission."
+     },
+     {
+      "url": "https://help.gladly.com/docs/generate-api-tokens-and-create-webhooks",
+      "snippet": "As an Administrator,\ncreate a user\nto use explicitly to create and attach webhooks or tokens."
+     }
+    ],
+    "reason": "Both the developer docs and help docs show that only a Gladly Administrator can grant the API User permission/role needed to create tokens, making admin approval the key friction point rather than a formal app review process (no mention of app review anywhere in the pages)."
+   },
+   {
+    "field": "buildability.verdict",
+    "value": "ready_with_caveats",
+    "evidence": [
+     {
+      "url": "https://developer.gladly.com/rest/",
+      "snippet": "Download OpenAPI specification:\nDownload"
+     },
+     {
+      "url": "https://developer.gladly.com/rest/",
+      "snippet": "Gladly Administrators can set API permissions on an agent-by-agent basis."
+     },
+     {
+      "url": "https://help.gladly.com/docs/generate-api-tokens-and-create-webhooks",
+      "snippet": "API tokens are required to use Gladly APIs for security and authentication purposes."
+     }
+    ],
+    "reason": "A fully documented REST API with an OpenAPI spec exists and tokens can be self-generated once a user has the API User permission, so the API is buildable but with the caveat that an admin must grant that permission first, matching ready_with_caveats rather than blocked (no evidence of a vendor app-review gate or complete inability to access)."
+   }
+  ]
+ }
+}

@@ -1,0 +1,105 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.068264,
+  "seconds": 86.3,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://docs.composio.dev/toolkits/vercel.md",
+  "https://vercel.com/docs/rest-api",
+  "https://vercel.com/docs/rest-api/authentication",
+  "https://vercel.com/docs/rest-api/rate-limits",
+  "https://github.com/vercel/next-devtools-mcp",
+  "https://github.com/vercel-labs/mcp-handler",
+  "https://github.com/vercel-labs/mcp-for-next.js"
+ ],
+ "output": {
+  "one_liner": "Vercel is a cloud platform for deploying, managing, and scaling web applications with serverless functions, edge computing, and built-in Git integration.",
+  "app_type": "cloud_platform",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "api_key"
+   ],
+   "oauth_grant_types": [],
+   "notes": "OAuth2 and API key authentication supported; Composio does not manage OAuth",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/vercel.md",
+     "snippet": "**Auth:** OAUTH2, API_KEY"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Hobby plan provides free tier with API access; multiple environments (development, preview, production) available; no approval or gating mentioned",
+   "evidence": [
+    {
+     "url": "https://vercel.com/docs/rest-api/rate-limits",
+     "snippet": "You can raise many of the limits on this page. The process depends on your plan"
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/vercel.md",
+     "snippet": "Tools:** 414"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": null,
+   "rate_limit_note": "Rate limits vary by plan tier (Hobby, Pro, Enterprise); limits documented and can be raised upon request",
+   "evidence": [
+    {
+     "url": "https://vercel.com/docs/rest-api",
+     "snippet": "| **GET** | [`/v1/access-groups`](/docs/rest-api/access-groups/list-access-groups-for-a-team-project-or-member.md) | List access groups |"
+    },
+    {
+     "url": "https://vercel.com/docs/rest-api/rate-limits",
+     "snippet": "Runtime logs are stored for 1 hour on Hobby, 1 day on Pro, 3 days on Enterprise"
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://github.com/vercel/next-devtools-mcp",
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://github.com/vercel/next-devtools-mcp",
+     "snippet": "next-devtools-mcp is a Model Context Protocol server connecting agents to running Next.js dev servers"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Public REST API with comprehensive documentation, free tier access available, no approval required; Composio has already built 414-tool toolkit proving immediate buildability.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "VERCEL"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://vercel.com/docs/rest-api",
+    "snippet": "Interact programmatically with your Vercel account using the SDK or direct HTTP requests"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/vercel.md",
+    "snippet": "Category:** developer tools"
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "OAuth2 grant types not explicitly documented in provided pages",
+   "access": "",
+   "api_surface": "OpenAPI specification URL and webhook support not mentioned in provided pages",
+   "mcp": "Official MCP server (next-devtools-mcp) is for Next.js development; no MCP server identified specifically for Vercel REST API in provided pages"
+  }
+ }
+}

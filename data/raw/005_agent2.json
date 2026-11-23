@@ -1,15 +1,15 @@
 {
  "meta": {
   "backend": "claude_cli",
-  "model": "sonnet",
-  "cost_usd": 0.171381,
-  "seconds": 38.7,
+  "model": "haiku",
+  "cost_usd": 0.066075,
+  "seconds": 78.8,
   "turns": 1
  },
  "error": null,
  "pages": [
-  "https://twenty.com/developers/section/api-and-webhooks",
   "https://twenty.com/developers",
+  "https://twenty.com/developers/section/api-and-webhooks",
   "https://twenty.com/developers/section/api-and-webhooks/webhooks",
   "https://docs.composio.dev/toolkits/twenty.md",
   "https://twenty.com",
@@ -17,14 +17,10 @@
   "https://twenty.com/pricing",
   "https://twenty.com/developers/section/self-hosting",
   "https://twenty.com/customers/alternative-partners",
-  "https://twenty.com/partners",
-  "https://twenty.com/partners/integrators",
-  "https://twenty.com/partners/creators",
-  "https://docs.twenty.com/getting-started/key-features",
   "https://docs.twenty.com/getting-started/quickstart"
  ],
  "output": {
-  "one_liner": "Twenty is an open-source CRM platform for managing people, companies, and opportunities, with a schema-generated REST/GraphQL API, offered both as a self-hostable open-source core and a paid cloud SaaS.",
+  "one_liner": "Twenty is an open-source, self-hostable CRM platform where teams define custom data models and workflows in TypeScript, also available as a cloud service.",
   "app_type": "open_source_self_hostable",
   "auth": {
    "methods": [
@@ -32,34 +28,34 @@
     "oauth2"
    ],
    "oauth_grant_types": [],
-   "notes": "API key is sent as a static Bearer token; a separate OAuth flow exists for external apps acting on behalf of users, but grant types are not detailed on these pages.",
+   "notes": "API uses bearer token authentication (static API keys); OAuth also supported for external applications acting on behalf of users.",
    "evidence": [
     {
      "url": "https://twenty.com/developers/section/api-and-webhooks",
-     "snippet": "Authorization: Bearer YOUR_API_KEY"
+     "snippet": "Create an API key in Settings → Developers → API → + Create key. Copy it immediately"
     },
     {
      "url": "https://twenty.com/developers/section/api-and-webhooks",
-     "snippet": "For OAuth-based access (external apps acting on behalf of users), see OAuth."
+     "snippet": "For OAuth-based access external apps acting on behalf of users, see OAuth."
     }
    ]
   },
   "access": {
    "status": "self_serve_free",
    "dev_sandbox": true,
-   "notes": "The open-source core can be self-hosted for free, and an API key can be created immediately in Settings without payment or approval; Cloud also offers a 7-day no-card trial, but that is time-limited.",
+   "notes": "Free 30-day cloud trial without credit card required; free open-source self-hosting alternative available.",
    "evidence": [
     {
      "url": "https://twenty.com/pricing",
-     "snippet": "Self-hosting the open source core is free."
+     "snippet": "Start your free trial today without credit card."
     },
     {
      "url": "https://docs.twenty.com/getting-started/quickstart",
-     "snippet": "Pick 30 days (with card) or 7 days (without card). Both include full access — unlimited contacts, email integration, custom objects, API."
+     "snippet": "Pick 7 days without card. Both include full access — unlimited contacts, email integration, custom objects, API."
     },
     {
-     "url": "https://twenty.com/developers/section/api-and-webhooks",
-     "snippet": "Create an API key in Settings → Developers → API → + Create key."
+     "url": "https://twenty.com/developers/section/self-hosting",
+     "snippet": "Twenty can be self-hosted on your own infrastructure, giving you full control over your data and deployment."
     }
    ]
   },
@@ -71,7 +67,7 @@
    "breadth": "broad",
    "openapi_spec_url": null,
    "webhooks": true,
-   "rate_limit_note": "100 per minute",
+   "rate_limit_note": "100 requests per minute; batch operations up to 60 records per call; GraphQL also supports batch upsert.",
    "evidence": [
     {
      "url": "https://twenty.com/developers/section/api-and-webhooks",
@@ -79,15 +75,15 @@
     },
     {
      "url": "https://twenty.com/developers/section/api-and-webhooks",
-     "snippet": "There is no static API reference for Twenty."
+     "snippet": "Core API CRUD on records: People, Companies, Opportunities, your custom objects."
     },
     {
      "url": "https://twenty.com/developers/section/api-and-webhooks",
-     "snippet": "100 per minute"
+     "snippet": "Rate limits Limit Value Requests 100 per minute Batch size 60 records per call"
     },
     {
      "url": "https://twenty.com/developers/section/api-and-webhooks/webhooks",
-     "snippet": "Twenty sends an HTTP POST to your URL whenever a record is created, updated, or deleted."
+     "snippet": "Get notified when records change — HTTP POST to your endpoint on every create, update, or delete."
     }
    ]
   },
@@ -97,18 +93,18 @@
    "evidence": [
     {
      "url": "https://twenty.com",
-     "snippet": "Every Cloud workspace ships with a native MCP server. Connect your AI assistant via OAuth and it can read and write your CRM data in natural language."
+     "snippet": "Every Cloud workspace ships with a native MCP server. Connect your AI assistant via OAuth and it can read and write your CRM data."
     },
     {
      "url": "https://twenty.com/pricing",
-     "snippet": "MCP server Yes"
+     "snippet": "MCP server Yes Yes"
     }
    ]
   },
   "buildability": {
    "verdict": "ready",
    "main_blocker": "none",
-   "rationale": "Self-hosted deployment plus an instantly-created API key give free, working credentials against a documented REST/GraphQL API with webhooks and rate limits, and Composio already lists a 23-tool toolkit for it.",
+   "rationale": "Self-serve free access, well-documented REST and GraphQL APIs, webhooks enabled, and Composio toolkit with 23 tools already published.",
    "composio_existing_toolkit": "yes",
    "composio_slug": "TWENTY"
   },
@@ -118,16 +114,20 @@
     "snippet": "Twenty | #1 Open Source CRM"
    },
    {
-    "url": "https://docs.twenty.com",
-    "snippet": "Open-source core, self-hostable, export your data anytime."
+    "url": "https://docs.twenty.com/getting-started/meet-twenty",
+    "snippet": "a production-ready CRM you can reshape as you go."
+   },
+   {
+    "url": "https://twenty.com/developers",
+    "snippet": "Build apps in TypeScript, connect your tools through APIs, and host Twenty yourself."
    }
   ],
-  "confidence": 0.8,
+  "confidence": 0.95,
   "unknown_reasons": {
-   "auth": "OAuth grant type details (e.g. authorization_code vs client_credentials) are not described on these pages, only that an OAuth flow exists for external apps.",
+   "auth": "",
    "access": "",
-   "api_surface": "No OpenAPI/Swagger spec URL is published; API docs are generated per-workspace after creating an API key, so breadth is inferred from described CRUD + Metadata APIs rather than a fixed endpoint count.",
-   "mcp": "The MCP server is described as shipping natively with Cloud workspaces, but no public MCP server URL or repo is given on these pages."
+   "api_surface": "",
+   "mcp": "Official MCP server confirmed to ship with Cloud workspaces, but no public repository URL provided in documentation pages."
   }
  }
 }

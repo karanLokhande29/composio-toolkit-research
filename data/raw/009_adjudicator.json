@@ -1,0 +1,80 @@
+{
+ "fields": [
+  "access.status",
+  "buildability.main_blocker",
+  "buildability.verdict"
+ ],
+ "pages": [
+  "https://support.copper.com/en/articles/9623758-copper-plans-feature-comparison",
+  "https://support.copper.com/en/articles/8823347-generating-an-api-key",
+  "https://www.copper.com/pricing",
+  "https://developer.copper.com/introduction/oauth/index.html",
+  "https://docs.copper.com",
+  "https://developer.copper.com/introduction/authentication.html",
+  "https://developer.copper.com/introduction/oauth/flow.html"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.120684,
+  "seconds": 37.7,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "access.status",
+    "value": "self_serve_trial",
+    "evidence": [
+     {
+      "url": "https://www.copper.com/pricing",
+      "snippet": "Start free, no credit card required."
+     },
+     {
+      "url": "https://www.copper.com/pricing",
+      "snippet": "per seat, per month"
+     },
+     {
+      "url": "https://support.copper.com/en/articles/8823347-generating-an-api-key",
+      "snippet": "Only Admin users are able to generate API Keys."
+     }
+    ],
+    "reason": "Copper has no permanent free tier—only paid Basic/Professional/Business plans with a time-limited free trial ('Start free, no credit card required')—and once inside an account an Admin can self-serve generate an API key, matching the self_serve_trial pattern rather than a hard paid-only gate or a fully unknown status."
+   },
+   {
+    "field": "buildability.verdict",
+    "value": "ready_with_caveats",
+    "evidence": [
+     {
+      "url": "https://support.copper.com/en/articles/8823347-generating-an-api-key",
+      "snippet": "Only Admin users are able to generate API Keys."
+     },
+     {
+      "url": "https://developer.copper.com/introduction/oauth/index.html",
+      "snippet": "To register your application, contact us"
+     },
+     {
+      "url": "https://www.copper.com/pricing",
+      "snippet": "Start free, no credit card required."
+     }
+    ],
+    "reason": "A toolkit can be built via self-serve API keys, but real usage requires an Admin role, a trial that converts to a paid seat-based plan, and OAuth app registration needs contacting Copper, so it is buildable with friction rather than fully frictionless."
+   },
+   {
+    "field": "buildability.main_blocker",
+    "value": "paid_plan",
+    "evidence": [
+     {
+      "url": "https://www.copper.com/pricing",
+      "snippet": "Start free, no credit card required."
+     },
+     {
+      "url": "https://www.copper.com/pricing",
+      "snippet": "per seat, per month"
+     }
+    ],
+    "reason": "Copper offers only time-limited free trials of paid per-seat plans (no permanent free tier), so sustained API access ultimately depends on purchasing a paid subscription, making paid_plan the dominant blocker over the secondary admin/app-review frictions."
+   }
+  ]
+ }
+}

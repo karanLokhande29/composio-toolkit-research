@@ -1,0 +1,132 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.10841599999999998,
+  "seconds": 120.3,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://docs.dataforseo.com/",
+  "https://docs.composio.dev/toolkits/dataforseo.md",
+  "https://dataforseo.com/pricing",
+  "https://docs.dataforseo.com/v3/auth/",
+  "https://docs.dataforseo.com/v3/app_data/google/app_reviews/task_post/",
+  "https://docs.dataforseo.com/v3/app_data/google/app_reviews/tasks_ready/",
+  "https://docs.dataforseo.com/v3/app_data/google/app_reviews/task_get/advanced/",
+  "https://docs.dataforseo.com/v3/app_data/apple/app_reviews/task_post/",
+  "https://docs.dataforseo.com/v3/app_data/apple/app_reviews/task_get/advanced/",
+  "https://github.com/dataforseo/mcp-server-typescript",
+  "https://github.com/houtini-ai/seo-audit",
+  "https://github.com/Skobyn/dataforseo-mcp-server"
+ ],
+ "output": {
+  "one_liner": "DataForSEO provides APIs for SERP data, app reviews, business data, and market intelligence across search engines and platforms.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "basic"
+   ],
+   "oauth_grant_types": [],
+   "notes": "API credentials (login:password) sent in Authorization header using HTTP Basic authentication. OAuth 2.0 available as optional wrapper via official MCP server.",
+   "evidence": [
+    {
+     "url": "https://docs.dataforseo.com/v3/auth/",
+     "snippet": "DataForSEO is using the Basic Authentication, which makes it possible to call our APIs with almost any programming language"
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/dataforseo.md",
+     "snippet": "Auth: BASIC"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_trial",
+   "dev_sandbox": true,
+   "notes": "Free $1 trial credit available to new accounts. Sandbox environment for testing with sample responses. Ongoing use requires pay-as-you-go payment model.",
+   "evidence": [
+    {
+     "url": "https://dataforseo.com/pricing",
+     "snippet": "You can sign up for free and use your $1 trial credit available to new accounts for trying our APIs"
+    },
+    {
+     "url": "https://dataforseo.com/pricing",
+     "snippet": "You can also test API integration for free using the DataForSEO Sandbox. The Sandbox provides sample responses for testing"
+    },
+    {
+     "url": "https://dataforseo.com/pricing",
+     "snippet": "DataForSEO uses a pay-as-you-go pricing model with no subscriptions or recurring fees"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Rate limits per endpoint with X-RateLimit-Limit and X-RateLimit-Remaining HTTP headers",
+   "evidence": [
+    {
+     "url": "https://docs.dataforseo.com/",
+     "snippet": "DataForSEO API is using the REST technology for interchanging data between your application and our service"
+    },
+    {
+     "url": "https://docs.dataforseo.com/v3/app_data/google/app_reviews/tasks_ready/",
+     "snippet": "Learn more about task completion and obtaining a list of completed tasks in pingbacks/postbacks instead"
+    },
+    {
+     "url": "https://docs.dataforseo.com/",
+     "snippet": "Each of DataForSEO APIs has a certain rate limit, which you can find in the HTTP header of every endpoint"
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://github.com/dataforseo/mcp-server-typescript",
+   "community": [
+    "https://github.com/houtini-ai/seo-audit",
+    "https://github.com/Skobyn/dataforseo-mcp-server"
+   ],
+   "evidence": [
+    {
+     "url": "https://github.com/dataforseo/mcp-server-typescript",
+     "snippet": "MCP server and CLI for LLM agents to browse DataForSEO API documentation and make authenticated API requests"
+    },
+    {
+     "url": "https://github.com/houtini-ai/seo-audit",
+     "snippet": "Free SEO Audit MCP server for Claude - captures and stores all the raw data you need for a complete technical SEO audit"
+    },
+    {
+     "url": "https://github.com/Skobyn/dataforseo-mcp-server",
+     "snippet": "A comprehensive stdio MCP server for DataForSEO API"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Self-serve free trial, well-documented REST API, Composio toolkit with 354 tools already exists, and official MCP server available.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "DATAFORSEO"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://docs.dataforseo.com/",
+    "snippet": "DataForSEO API is using the REST technology for interchanging data between your application and our service"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/dataforseo.md",
+    "snippet": "Tool to create Apple App Store reviews retrieval tasks. Use when you need to fetch user reviews for a specific iOS app from the App Store"
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  }
+ }
+}

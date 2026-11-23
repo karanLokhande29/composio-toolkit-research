@@ -1,0 +1,96 @@
+{
+ "fields": [
+  "auth.methods",
+  "buildability.main_blocker",
+  "buildability.verdict",
+  "mcp.official"
+ ],
+ "pages": [
+  "https://www.twilio.com/docs/iam/api",
+  "https://docs.composio.dev/toolkits/twilio.md",
+  "https://www.twilio.com/docs/usage/trials",
+  "https://www.twilio.com/en-us/pricing",
+  "https://www.twilio.com/pricing",
+  "https://twilio.com",
+  "https://www.twilio.com/docs/ai/mcp"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.15042899999999998,
+  "seconds": 40.9,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "auth.methods",
+    "value": [
+     "api_key",
+     "basic",
+     "oauth2"
+    ],
+    "evidence": [
+     {
+      "url": "https://www.twilio.com/docs/iam/api",
+      "snippet": "To authenticate requests to the Twilio APIs, Twilio supports HTTP Basic authentication"
+     },
+     {
+      "url": "https://www.twilio.com/docs/iam/api",
+      "snippet": "Use your API key SID as the username and your API key secret as the password"
+     },
+     {
+      "url": "https://www.twilio.com/docs/iam/api",
+      "snippet": "OAuth Apps Overview Account OAuth Apps Organization OAuth Apps OAuth Token API REST API: OAuth App resource"
+     }
+    ],
+    "reason": "Twilio's own docs show Basic auth using an API key SID/secret, plus a dedicated OAuth Apps/OAuth Token API section, so both agents' three methods are confirmed on-page."
+   },
+   {
+    "field": "buildability.main_blocker",
+    "value": "paid_plan",
+    "evidence": [
+     {
+      "url": "https://www.twilio.com/docs/usage/trials",
+      "snippet": "Trial accounts expire 30 days after sign-up. When your trial expires, you can no longer use trial resources."
+     },
+     {
+      "url": "https://www.twilio.com/pricing",
+      "snippet": "Start for free. Then pay as you go."
+     }
+    ],
+    "reason": "The free trial is explicitly time-limited (30 days, restricted recipients/content) and the pricing page confirms ongoing usage requires moving to pay-as-you-go, so paid plan is the real friction for sustained building."
+   },
+   {
+    "field": "buildability.verdict",
+    "value": "ready_with_caveats",
+    "evidence": [
+     {
+      "url": "https://www.twilio.com/docs/usage/trials",
+      "snippet": "You can sign up for a Twilio free trial account without a credit card. Trial accounts expire after 30 days."
+     },
+     {
+      "url": "https://www.twilio.com/docs/usage/trials",
+      "snippet": "You must use Twilio-provided templates or message examples. Custom message bodies, email content, and WhatsApp templates aren't available during the trial."
+     }
+    ],
+    "reason": "A developer can self-serve a working trial account and build against the documented REST API today, but trial expiration, verified-recipient limits, and template restrictions are real caveats before production use."
+   },
+   {
+    "field": "mcp.official",
+    "value": "https://mcp.twilio.com/docs",
+    "evidence": [
+     {
+      "url": "https://www.twilio.com/docs/ai/mcp",
+      "snippet": "The server is hosted by Twilio at mcp.twilio.com/docs"
+     },
+     {
+      "url": "https://www.twilio.com/docs/ai/mcp",
+      "snippet": "Hosted MCP server https://mcp.twilio.com/docs"
+     }
+    ],
+    "reason": "Twilio's own documentation at twilio.com/docs/ai/mcp states the MCP server is hosted by Twilio at mcp.twilio.com/docs, confirming it is an official vendor-published MCP server."
+   }
+  ]
+ }
+}

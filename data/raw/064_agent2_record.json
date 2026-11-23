@@ -1,0 +1,117 @@
+{
+ "id": 64,
+ "app": "Cloudflare",
+ "category": "Developer, Infra and Data platforms",
+ "hint": "developers.cloudflare.com/api",
+ "one_liner": "Cloudflare provides web infrastructure and security services including CDN, DDoS protection, DNS, Workers, and cloud storage.",
+ "app_type": "saas",
+ "auth": {
+  "methods": [
+   "api_key",
+   "bearer_token",
+   "oauth2"
+  ],
+  "oauth_grant_types": [],
+  "notes": "API tokens (bearer tokens) are recommended; legacy API keys also supported; OAuth2 for applications",
+  "evidence": [
+   {
+    "url": "https://developers.cloudflare.com/fundamentals/api/get-started/",
+    "snippet": "You can also authenticate with API keys , but these keys have",
+    "check": "repaired"
+   },
+   {
+    "url": "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/",
+    "snippet": "\"Authorization: Bearer <API_TOKEN>\"",
+    "check": "repaired"
+   },
+   {
+    "url": "https://developers.cloudflare.com/api/",
+    "snippet": "OAuth Clients OAuth Clients List OAuth Clients OAuth Client Details Create OAuth Client Update OAuth Client Delete OAuth Client",
+    "check": "repaired"
+   }
+  ]
+ },
+ "access": {
+  "status": "self_serve_free",
+  "dev_sandbox": null,
+  "notes": "Free tier available for personal/hobby projects; API tokens created self-serve via dashboard without sales contact",
+  "evidence": [
+   {
+    "url": "https://www.cloudflare.com/plans/",
+    "snippet": "Free For personal or hobby projects that aren't business-critical",
+    "check": "exact"
+   },
+   {
+    "url": "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/",
+    "snippet": "Copy the secret to a secure place. Warning The token secret is only shown once",
+    "check": "repaired"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "graphql",
+   "rest"
+  ],
+  "breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "rate_limit_note": "1200 requests per 5 minutes per user/token; 200/second per IP; GraphQL varies by query cost (max 320/5 min)",
+  "evidence": [
+   {
+    "url": "https://developers.cloudflare.com/fundamentals/api/",
+    "snippet": "REST API âï¸ API GraphQL API âï¸ Wrangler API",
+    "check": "repaired"
+   },
+   {
+    "url": "https://developers.cloudflare.com/api/",
+    "snippet": "Webhooks Webhooks List webhooks Get a webhook Create a webhook Update a webhook Delete a webhook",
+    "check": "repaired"
+   },
+   {
+    "url": "https://developers.cloudflare.com/fundamentals/api/reference/limits/",
+    "snippet": "Client API per user/account token 1200/5 minutes Client API per IP 200/second",
+    "check": "exact"
+   }
+  ]
+ },
+ "mcp": {
+  "official": null,
+  "community": [],
+  "evidence": [
+   {
+    "url": "https://developers.cloudflare.com/agents/model-context-protocol/",
+    "snippet": "You can build and deploy Model Context Protocol (MCP) âï¸ servers on Cloudflare.",
+    "check": "repaired"
+   }
+  ]
+ },
+ "buildability": {
+  "verdict": "ready",
+  "main_blocker": "none",
+  "rationale": "Composio toolkit already exists with 171 tools; free tier with self-serve API key authentication available",
+  "composio_existing_toolkit": "yes",
+  "composio_slug": "CLOUDFLARE"
+ },
+ "overview_evidence": [
+  {
+   "url": "https://docs.composio.dev/toolkits/cloudflare.md",
+   "snippet": "Auth API_KEY Composio-managed OAuth available N/A Tools 171"
+  }
+ ],
+ "confidence": 0.92,
+ "unknown_reasons": {
+  "auth": "",
+  "access": "",
+  "api_surface": "",
+  "mcp": "Pages reference Cloudflare Community MCP Server and domain-specific servers but provide no specific repository URLs"
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 9,
+  "error": null,
+  "cost_usd": 0.079346,
+  "seconds": 107.1
+ }
+}

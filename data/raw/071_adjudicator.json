@@ -1,0 +1,35 @@
+{
+ "fields": [
+  "mcp.official"
+ ],
+ "pages": [
+  "https://developers.notion.com/guides/mcp/overview",
+  "https://developers.notion.com/guides/mcp/mcp-security-best-practices",
+  "https://developers.notion.com/docs/mcp",
+  "https://developers.notion.com/reference",
+  "https://developers.notion.com/docs/authorization",
+  "https://www.notion.so/profile/integrations"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.067389,
+  "seconds": 6.5,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "mcp.official",
+    "value": "https://mcp.notion.com/mcp",
+    "evidence": [
+     {
+      "url": "https://developers.notion.com/guides/mcp/mcp-security-best-practices",
+      "snippet": "Use Notion’s official Streamable HTTP endpoint, https://mcp.notion.com/mcp"
+     }
+    ],
+    "reason": "Notion's own docs explicitly label this endpoint as the official Streamable HTTP MCP endpoint for Notion MCP."
+   }
+  ]
+ }
+}

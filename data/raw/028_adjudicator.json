@@ -1,0 +1,83 @@
+{
+ "fields": [
+  "access.status",
+  "api_surface.breadth",
+  "auth.methods"
+ ],
+ "pages": [
+  "https://developers.facebook.com/documentation/business-messaging/whatsapp/solution-providers/app-review",
+  "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
+  "https://developers.facebook.com/docs/whatsapp/cloud-api/guides/set-up-webhooks",
+  "https://developers.facebook.com/docs/whatsapp/overview",
+  "https://developers.facebook.com/docs/graph-api/overview/rate-limiting",
+  "https://developers.facebook.com/docs/whatsapp/cloud-api/reference/messages/",
+  "https://developers.facebook.com/documentation/business-messaging/whatsapp/access-tokens/"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.10611899999999999,
+  "seconds": 23.8,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "access.status",
+    "value": "app_review",
+    "evidence": [
+     {
+      "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/solution-providers/app-review",
+      "snippet": "if you are using the API for yourself as a Direct Developer, you do not need Advanced access or app review."
+     },
+     {
+      "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/solution-providers/app-review",
+      "snippet": "If you are building an app that other businesses will be using, you must request Advanced access for any permissions your app needs."
+     },
+     {
+      "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/guides/set-up-webhooks",
+      "snippet": "before you can use your app in a production capacity, you must create your own endpoint."
+     }
+    ],
+    "reason": "Pages show self-serve build/test is possible but production use for partners/multi-customer apps requires Advanced access via App Review, matching the app_review definition exactly."
+   },
+   {
+    "field": "api_surface.breadth",
+    "value": "broad",
+    "evidence": [
+     {
+      "url": "https://developers.facebook.com/docs/whatsapp/overview",
+      "snippet": "WhatsApp account management: Create accounts, add and remove phone numbers, link accounts together, and assign partner access."
+     },
+     {
+      "url": "https://developers.facebook.com/docs/whatsapp/overview",
+      "snippet": "Webhooks Webhooks deliver JSON payloads to your server for message status updates, incoming messages, asynchronous error handling,"
+     }
+    ],
+    "reason": "Both agents agree and pages show many resource types (accounts, templates, webhooks, analytics, numbers) consistent with a broad API surface."
+   },
+   {
+    "field": "auth.methods",
+    "value": [
+     "bearer_token",
+     "oauth2"
+    ],
+    "evidence": [
+     {
+      "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/reference/messages/",
+      "snippet": "Bearer token for API authentication. This should be a valid access token obtained through the appropriate OAuth flow or system user token."
+     },
+     {
+      "url": "https://developers.facebook.com/docs/whatsapp/overview",
+      "snippet": "Authentication uses OAuth (not 2.0) access tokens, while permissions restrict access to specific resources."
+     },
+     {
+      "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/access-tokens/",
+      "snippet": "System user access tokens (\"system tokens\") represent you, your business, organization, or people within your business or organization."
+     }
+    ],
+    "reason": "API calls are authenticated via long-lived system-user tokens sent as Bearer tokens, while onboarding (Embedded Signup/Facebook Login) uses an OAuth-style flow, so both methods are supported per the pages."
+   }
+  ]
+ }
+}

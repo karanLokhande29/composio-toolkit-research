@@ -1,0 +1,35 @@
+{
+ "fields": [
+  "access.status"
+ ],
+ "pages": [
+  "https://seranking.com/api-pricing.html",
+  "https://seranking.com/pricing"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.035288999999999994,
+  "seconds": 7.3,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "access.status",
+    "value": "self_serve_trial",
+    "evidence": [
+     {
+      "url": "https://seranking.com/api-pricing.html",
+      "snippet": "Yes. The 14-day free trial gives you 100K API credits across all six API endpoints, as well as  MCP server access."
+     },
+     {
+      "url": "https://seranking.com/api-pricing.html",
+      "snippet": "Instantly. Your API key is issued immediately after payment. If you are on a free trial, you’ll get an API key once you confirm your email."
+     }
+    ],
+    "reason": "Pages explicitly describe a self-serve 14-day free trial that issues an API key after email confirmation, with continued use requiring a paid Wallet/annual plan."
+   }
+  ]
+ }
+}

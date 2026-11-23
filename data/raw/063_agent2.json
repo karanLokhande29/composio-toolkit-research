@@ -1,0 +1,118 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.081542,
+  "seconds": 91.1,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://www.netlify.com/pricing/",
+  "https://open-api.netlify.com/",
+  "https://docs.netlify.com/api/get-started/",
+  "https://docs.netlify.com/",
+  "https://docs.netlify.com/site-deploys/notifications/",
+  "https://docs.composio.dev/toolkits/netlify_mcp.md",
+  "https://docs.netlify.com/cli/get-started/",
+  "https://docs.netlify.com/manage/security/secure-access-to-sites/identity/overview/"
+ ],
+ "output": {
+  "one_liner": "Netlify is a web hosting and continuous deployment platform for deploying and managing websites with automated builds.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "bearer_token"
+   ],
+   "oauth_grant_types": [],
+   "notes": "OAuth 2.0 for public integrations; personal access tokens sent as Bearer tokens for API access",
+   "evidence": [
+    {
+     "url": "https://open-api.netlify.com/",
+     "snippet": "uses JSON for serialization and OAuth 2 for authentication"
+    },
+    {
+     "url": "https://docs.netlify.com/api/get-started/",
+     "snippet": "Use your PAT for manual authentication in shell scripts or commands that use the Netlify API"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Free tier available forever with self-serve signup; personal access tokens can be generated from account settings without approval",
+   "evidence": [
+    {
+     "url": "https://www.netlify.com/pricing/",
+     "snippet": "Free forever. Build and deploy free forever."
+    },
+    {
+     "url": "https://docs.netlify.com/api/get-started/",
+     "snippet": "Go to Netlify user settings and select Personal access tokens"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": "https://open-api.netlify.com/",
+   "webhooks": true,
+   "rate_limit_note": "500 requests per minute for most endpoints; stricter limits on certain operations (3 deploys/min, 100/day)",
+   "evidence": [
+    {
+     "url": "https://open-api.netlify.com/",
+     "snippet": "This is a REST-style API that uses JSON for serialization"
+    },
+    {
+     "url": "https://open-api.netlify.com/",
+     "snippet": "This document is an OpenAPI reference for the Netlify API that you can explore"
+    },
+    {
+     "url": "https://docs.netlify.com/site-deploys/notifications/",
+     "snippet": "This type of notification works as an outgoing webhook and allows you to send event information"
+    },
+    {
+     "url": "https://docs.netlify.com/api/get-started/",
+     "snippet": "You can make up to 500 requests per minute for most requests"
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://mcp.netlify.com/mcp",
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://docs.netlify.com/",
+     "snippet": "Share context and connect AI assistants to your Netlify account for seamless deployment workflows"
+    },
+    {
+     "url": "https://docs.netlify.com/",
+     "snippet": "Connect to Netlify's remote MCP server npx -y add-mcp https://mcp.netlify.com/mcp"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Free tier with self-serve credentials, well-documented REST API with OpenAPI spec, webhooks support, and official MCP server already deployed.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "NETLIFY_MCP"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://open-api.netlify.com/",
+    "snippet": "Netlify is a hosting service for the programmable web. It understands your documents and provides an API to handle atomic deploys of websites"
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  }
+ }
+}

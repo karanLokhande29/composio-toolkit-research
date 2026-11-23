@@ -1,0 +1,108 @@
+{
+ "id": 92,
+ "app": "Otter AI",
+ "category": "AI, Research and Media-native",
+ "hint": "help.otter.ai (MCP server)",
+ "one_liner": "Meeting recording and transcription platform that captures, searches, and provides AI-powered transcripts of meetings from multiple platforms.",
+ "app_type": "saas",
+ "auth": {
+  "methods": [
+   "oauth2"
+  ],
+  "oauth_grant_types": [],
+  "notes": "Official API uses OAuth2 (DCR_OAUTH). Access tokens generated via Enterprise Settings. Community implementations also support email/password.",
+  "evidence": [
+   {
+    "url": "https://github.com/bcharleson/otter-cli",
+    "snippet": "Generate your access token in Otter.ai: Enterprise Settings → API → Generate Token",
+    "check": "exact"
+   }
+  ]
+ },
+ "access": {
+  "status": "contact_sales",
+  "dev_sandbox": false,
+  "notes": "Public API in beta; requires Enterprise plan; must contact Otter account manager for access. No free tier for API.",
+  "evidence": [
+   {
+    "url": "https://github.com/bcharleson/otter-cli",
+    "snippet": "The Otter.ai public API is currently in beta and requires an Enterprise plan. Contact your Otter account manager for API access.",
+    "check": "exact"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "rest"
+  ],
+  "breadth": "moderate",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "rate_limit_note": "",
+  "evidence": [
+   {
+    "url": "https://github.com/bcharleson/otter-cli",
+    "snippet": "Agent-native CLI + MCP server for the Otter.ai API. 31 commands across 8 groups",
+    "check": "exact"
+   },
+   {
+    "url": "https://github.com/bcharleson/otter-cli",
+    "snippet": "Set up webhook for transcript-ready events",
+    "check": "exact"
+   }
+  ]
+ },
+ "mcp": {
+  "official": null,
+  "community": [
+   "https://github.com/DarrenZal/otter-mcp",
+   "https://github.com/StanAngeloff/otter-mcp",
+   "https://github.com/bcharleson/otter-cli"
+  ],
+  "evidence": [
+   {
+    "url": "https://github.com/DarrenZal/otter-mcp",
+    "snippet": "MCP server for Otter.ai transcript search and retrieval",
+    "check": "exact"
+   },
+   {
+    "url": "https://github.com/StanAngeloff/otter-mcp",
+    "snippet": "Unofficial Otter.ai MCP server — list conversations, search, and export transcripts",
+    "check": "exact"
+   },
+   {
+    "url": "https://github.com/bcharleson/otter-cli",
+    "snippet": "Agent-native CLI + MCP server for the Otter.ai API",
+    "check": "exact"
+   }
+  ]
+ },
+ "buildability": {
+  "verdict": "ready_with_caveats",
+  "main_blocker": "paid_plan",
+  "rationale": "Composio toolkit exists (PAGE 1), but developers cannot access API without Enterprise plan and sales contact.",
+  "composio_existing_toolkit": "yes",
+  "composio_slug": "OTTER_AI_MCP"
+ },
+ "overview_evidence": [
+  {
+   "url": "https://docs.composio.dev/toolkits/otter_ai_mcp.md",
+   "snippet": "Otter.ai MCP lets agents retrieve the authenticated user's profile, search authorized meetings and conversations, and fetch complete transcripts."
+  }
+ ],
+ "confidence": 0.7,
+ "unknown_reasons": {
+  "auth": "Pages confirm OAuth2 but do not explicitly document all supported grant types (DCR_OAUTH mentioned but not fully specified).",
+  "access": "",
+  "api_surface": "API style inferred from webhook and CLI evidence but not explicitly documented. Rate limits not stated in pages. Breadth estimated from 31 CLI commands, not official API documentation.",
+  "mcp": "PAGE 6 references 'official MCP server' but provides no URL; only community implementations documented in provided pages."
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 7,
+  "error": null,
+  "cost_usd": 0.079545,
+  "seconds": 103.8
+ }
+}

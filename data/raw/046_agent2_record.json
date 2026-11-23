@@ -1,0 +1,138 @@
+{
+ "id": 46,
+ "app": "Squarespace",
+ "category": "Ecommerce",
+ "hint": "developers.squarespace.com",
+ "one_liner": "Squarespace is a SaaS website builder and ecommerce platform with APIs for building integrations and external applications.",
+ "app_type": "saas",
+ "auth": {
+  "methods": [
+   "oauth2"
+  ],
+  "oauth_grant_types": [
+   "authorization_code"
+  ],
+  "notes": "OAuth2 with client ID and secret; Authorization Code flow required.",
+  "evidence": [
+   {
+    "url": "https://developers.squarespace.com/changes/self-service-oauth-credential-management",
+    "snippet": "Generate OAuth client IDs and secrets immediately for development and testing",
+    "check": "exact"
+   },
+   {
+    "url": "https://github.com/BusyBee3333/squarespace-mcp-2026-complete",
+    "snippet": "OAuth2 authentication, automatic token refresh, pagination, error handling",
+    "check": "exact"
+   }
+  ]
+ },
+ "access": {
+  "status": "app_review",
+  "dev_sandbox": true,
+  "notes": "Demo credentials available immediately at no cost through self-service OAuth dashboard. Production use requires vendor app review.",
+  "evidence": [
+   {
+    "url": "https://developers.squarespace.com/changes/self-service-oauth-credential-management",
+    "snippet": "Generate OAuth client IDs and secrets immediately for development and testing",
+    "check": "exact"
+   },
+   {
+    "url": "https://developers.squarespace.com/changes/self-service-oauth-credential-management",
+    "snippet": "all new applications created via the self-service tool will enter Demo Mode by default",
+    "check": "exact"
+   },
+   {
+    "url": "https://developers.squarespace.com/changes/self-service-oauth-credential-management",
+    "snippet": "When you are ready to take your integration live, simply request a review",
+    "check": "exact"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "rest"
+  ],
+  "breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "rate_limit_note": "Not documented in provided pages",
+  "evidence": [
+   {
+    "url": "https://developers.squarespace.com/commerce-apis/overview",
+    "snippet": "All Commerce APIs are built on HTTPS and designed with REST principles in mind",
+    "check": "exact"
+   },
+   {
+    "url": "https://developers.squarespace.com/",
+    "snippet": "Read and write orders, products, inventory, and transactions. REST endpoints, webhooks for order events",
+    "check": "exact"
+   },
+   {
+    "url": "https://developers.squarespace.com/commerce-apis/overview",
+    "snippet": "With Squarespace Commerce APIs, you can build applications to manage the commerce features",
+    "check": "exact"
+   }
+  ]
+ },
+ "mcp": {
+  "official": "https://mcp.squarespace.com/mcp",
+  "community": [
+   "https://github.com/BusyBee3333/squarespace-mcp-2026-complete",
+   "https://github.com/timncox/squarespace-mcp"
+  ],
+  "evidence": [
+   {
+    "url": "https://developers.squarespace.com/mcp/overview",
+    "snippet": "The Squarespace MCP server connects AI assistants to Squarespace. It's built on the Model Context Protocol",
+    "check": "exact"
+   },
+   {
+    "url": "https://developers.squarespace.com/mcp/overview",
+    "snippet": "The Squarespace MCP server is a remote server. There's nothing to install. Your MCP client connects directly",
+    "check": "exact"
+   },
+   {
+    "url": "https://github.com/BusyBee3333/squarespace-mcp-2026-complete",
+    "snippet": "MCP server for Squarespace API - Complete 2026 version with 100+ tools",
+    "check": "exact"
+   },
+   {
+    "url": "https://github.com/timncox/squarespace-mcp",
+    "snippet": "MCP server that edits Squarespace websites via the Content Save API. Exposes 141+ tools",
+    "check": "exact"
+   }
+  ]
+ },
+ "buildability": {
+  "verdict": "ready_with_caveats",
+  "main_blocker": "app_review",
+  "rationale": "Demo credentials instantly available without payment or approval, documented REST APIs and webhooks present, official MCP server exists; production use requires vendor app review.",
+  "composio_existing_toolkit": "no",
+  "composio_slug": null
+ },
+ "overview_evidence": [
+  {
+   "url": "https://developers.squarespace.com/",
+   "snippet": "Everything you need to build and publish external apps – reliable APIs, clear documentation, and a marketplace"
+  },
+  {
+   "url": "https://developers.squarespace.com/",
+   "snippet": "What can you build on Squarespace? Integration, customization, or extension"
+  }
+ ],
+ "confidence": 0.92,
+ "unknown_reasons": {
+  "auth": "",
+  "access": "",
+  "api_surface": "OpenAPI spec and rate limiting documentation not found in provided pages",
+  "mcp": ""
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 9,
+  "error": null,
+  "cost_usd": 0.10047199999999999,
+  "seconds": 132.2
+ }
+}

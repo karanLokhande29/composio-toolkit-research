@@ -1,0 +1,130 @@
+{
+ "id": 4,
+ "app": "Attio",
+ "category": "CRM and Sales",
+ "hint": "attio.com",
+ "one_liner": "Attio is an AI-native CRM platform that builds sales pipeline, advances deals, and grows accounts around the clock.",
+ "app_type": "saas",
+ "auth": {
+  "methods": [
+   "bearer_token",
+   "oauth2"
+  ],
+  "oauth_grant_types": [],
+  "notes": "OAuth2 is primary auth method with Composio-managed OAuth. Bearer tokens (static access tokens) also supported via API.",
+  "evidence": [
+   {
+    "url": "https://docs.composio.dev/toolkits/attio.md",
+    "snippet": "**Auth:** OAUTH2 - **Composio-managed OAuth available?** Yes",
+    "check": "repaired"
+   },
+   {
+    "url": "https://attio.com/partners/app-partners",
+    "snippet": "Connect to your service by configuring OAuth or access tokens.",
+    "check": "exact"
+   },
+   {
+    "url": "https://github.com/hmk/attio-mcp-server",
+    "snippet": "This is expected to be a bearer token which means you can get one through the API Explorer",
+    "check": "exact"
+   }
+  ]
+ },
+ "access": {
+  "status": "self_serve_free",
+  "dev_sandbox": null,
+  "notes": "Free plan available at no cost for up to 3 users. API and webhooks included. 14-day free trial of Pro plan also offered. No approval or sales contact required.",
+  "evidence": [
+   {
+    "url": "https://attio.com/pricing",
+    "snippet": "The Free plan costs nothing for up to three users.",
+    "check": "exact"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/attio.md",
+    "snippet": "**Auth:** OAUTH2 - **Composio-managed OAuth available?** Yes",
+    "check": "repaired"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "rest"
+  ],
+  "breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "rate_limit_note": "",
+  "evidence": [
+   {
+    "url": "https://docs.attio.com",
+    "snippet": "REST API. REST API This allows developers to build apps that read and write information to and from Attio workspaces.",
+    "check": "repaired"
+   },
+   {
+    "url": "https://docs.attio.com",
+    "snippet": "You can also subscribe to events in realtime using webhooks.",
+    "check": "exact"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/attio.md",
+    "snippet": "**Category:** crm - **Auth:** OAUTH2 - **Composio-managed OAuth available?** Yes - **Tools:** 114",
+    "check": "repaired"
+   }
+  ]
+ },
+ "mcp": {
+  "official": null,
+  "community": [
+   "https://github.com/hmk/attio-mcp-server"
+  ],
+  "evidence": [
+   {
+    "url": "https://attio.com/platform/mcp",
+    "snippet": "Attio connects to the AI tools your team already has open.",
+    "check": "exact"
+   },
+   {
+    "url": "https://github.com/hmk/attio-mcp-server",
+    "snippet": "This is an MCP server for Attio , the AI-native CRM.",
+    "check": "repaired"
+   }
+  ]
+ },
+ "buildability": {
+  "verdict": "ready",
+  "main_blocker": "none",
+  "rationale": "Self-serve free credentials available, REST API documented with 114 tools, OAuth and webhooks supported.",
+  "composio_existing_toolkit": "yes",
+  "composio_slug": "attio"
+ },
+ "overview_evidence": [
+  {
+   "url": "https://attio.com",
+   "snippet": "Attio is the platform that builds pipeline, advances deals, and grows accounts around the clock."
+  },
+  {
+   "url": "https://docs.attio.com",
+   "snippet": "Attio is a revolutionary CRM platform which is highly customisable, incredibly powerful and data-driven."
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/attio.md",
+   "snippet": "Creates a new person record in Attio. This endpoint will throw an error on conflicts of unique attributes like email_addresses."
+  }
+ ],
+ "confidence": 0.95,
+ "unknown_reasons": {
+  "auth": "",
+  "access": "",
+  "api_surface": "OpenAPI spec URL and rate limit statement not documented in provided pages.",
+  "mcp": "Official Attio-published MCP server GitHub URL not found in pages; only community implementation available."
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 11,
+  "error": null,
+  "cost_usd": 0.07782900000000001,
+  "seconds": 96.6
+ }
+}

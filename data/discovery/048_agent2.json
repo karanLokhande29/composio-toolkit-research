@@ -1,0 +1,192 @@
+{
+ "id": 48,
+ "app": "Gumroad",
+ "tag": "agent2",
+ "urls": [
+  {
+   "url": "https://gumroad.com/api",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://app.gumroad.com/api",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://app.gumroad.com/api#authentication",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://app.gumroad.com/api#oauth",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://app.gumroad.com/oauth/applications",
+   "purpose": "credentials",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://app.gumroad.com/api#resources",
+   "purpose": "reference",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://app.gumroad.com/api#licenses",
+   "purpose": "reference",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://app.gumroad.com/api#products",
+   "purpose": "reference",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://app.gumroad.com/api#sales",
+   "purpose": "reference",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://app.gumroad.com/api#subscribers",
+   "purpose": "reference",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://app.gumroad.com/api#resource-subscriptions",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://help.gumroad.com",
+   "purpose": "support",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://github.com/rmarescu/gumroad-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/hanabi-jpn/clawhub-skills",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/Tanshaydar/Quartermaster",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": true
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/gumroad.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "rmarescu/gumroad-mcp",
+   "url": "https://github.com/rmarescu/gumroad-mcp",
+   "stars": 32,
+   "description": "A Model Context Protocol (MCP) server implementation for Gumroad API"
+  },
+  {
+   "repo": "hanabi-jpn/clawhub-skills",
+   "url": "https://github.com/hanabi-jpn/clawhub-skills",
+   "stars": 5,
+   "description": "43 premium AI agent skills in 5 packages by hanabi-jpn | EC, Finance, Marketing, Business Ops, Security | ClawHub, MCP, Poe, GPT Store, Coze, Gumroad"
+  },
+  {
+   "repo": "Tanshaydar/Quartermaster",
+   "url": "https://github.com/Tanshaydar/Quartermaster",
+   "stars": 4,
+   "description": "Your game-asset vault - Unity Asset Store, Fab, Quixel Megascans, Gumroad and Leartes Cosmos - searchable by AI agents over MCP. Local, offline, no telemetry."
+  },
+  {
+   "repo": "szachmacik/english-teacher-factory",
+   "url": "https://github.com/szachmacik/english-teacher-factory",
+   "stars": 3,
+   "description": "EduFactory — AI-powered digital product factory for English teachers. Multi-source (YouTube, PDF, Audio, Image, URL, AI Topic, Voice Note) → 21 product types + "
+  },
+  {
+   "repo": "surpradhan/claude-code-for-ai-engineers",
+   "url": "https://github.com/surpradhan/claude-code-for-ai-engineers",
+   "stars": 2,
+   "description": "Open-source preview of *Claude Code for AI Engineers* - a methodology-first skill pack for RAG eval, agent debugging, MCP servers, paper reproduction, and bench"
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Gumroad",
+    "slug": "GUMROAD",
+    "tools": 13,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/gumroad.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Gumroad",
+    "slug": "GUMROAD",
+    "tools": 13,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/gumroad.md"
+   }
+  ]
+ },
+ "search_meta": {}
+}

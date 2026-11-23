@@ -1,0 +1,31 @@
+{
+ "fields": [
+  "access.status"
+ ],
+ "pages": [
+  "https://docs.snowflake.com/en/user-guide/getting-started-tutorial",
+  "https://docs.composio.dev/toolkits/snowflake.md"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.039168,
+  "seconds": 9.8,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "access.status",
+    "value": "self_serve_trial",
+    "evidence": [
+     {
+      "url": "https://docs.snowflake.com/en/user-guide/getting-started-tutorial",
+      "snippet": "If you are using a 30-day trial account , which provides free credits, you won't incur any costs."
+     }
+    ],
+    "reason": "Pages show Snowflake credentials are obtained via a self-serve 30-day trial account, with continued use implied to require a paid account after the trial."
+   }
+  ]
+ }
+}

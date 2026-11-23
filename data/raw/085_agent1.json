@@ -1,0 +1,96 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.061105,
+  "seconds": 85.8,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://github.com/Ipayx-stellar/mcp-submit",
+  "https://github.com/Ipayx-stellar/mcp-fx-audit",
+  "https://github.com/iPAYX-Technologies/mcp-fx-audit"
+ ],
+ "output": {
+  "one_liner": "Fintech platform for auditing FX fees, comparing currency margins, and scoring cross-border payment invoices.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "bearer_token"
+   ],
+   "oauth_grant_types": [],
+   "notes": "API key-based authentication using Bearer token. Free API key available from ipayx.ai/ai-access.",
+   "evidence": [
+    {
+     "url": "https://github.com/Ipayx-stellar/mcp-fx-audit",
+     "snippet": "get a free key at ipayx.ai for live provider comparisons"
+    },
+    {
+     "url": "https://github.com/iPAYX-Technologies/mcp-fx-audit",
+     "snippet": "Bearer — API key from https://www.ipayx.ai/ai-access"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Free API key available with rate-limited free tier (3 audits per IP per calendar month). Mid-market rates accessible without authentication.",
+   "evidence": [
+    {
+     "url": "https://github.com/iPAYX-Technologies/mcp-fx-audit",
+     "snippet": "3 free audits per IP per calendar month"
+    },
+    {
+     "url": "https://github.com/Ipayx-stellar/mcp-fx-audit",
+     "snippet": "Mid-market rates work without a key (powered by ECB via exchangerate.host)."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "sdk_only"
+   ],
+   "breadth": "narrow",
+   "openapi_spec_url": null,
+   "webhooks": null,
+   "rate_limit_note": "Free tier capped at 3 audits per IP per calendar month",
+   "evidence": [
+    {
+     "url": "https://github.com/Ipayx-stellar/mcp-fx-audit",
+     "snippet": "audit FX fees, compare currency conversion margins and score cross-border payment invoices"
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://github.com/Ipayx-stellar/mcp-fx-audit",
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://github.com/Ipayx-stellar/mcp-fx-audit",
+     "snippet": "iPayX Protocol — audit FX fees, compare currency conversion margins and score cross-border payment invoices"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "other",
+   "rationale": "Official MCP server exists with free tier access, but only SDK-only interface documented; Composio would need REST/GraphQL API for traditional agent toolkit.",
+   "composio_existing_toolkit": "no",
+   "composio_slug": null
+  },
+  "overview_evidence": [
+   {
+    "url": "https://github.com/Ipayx-stellar/mcp-fx-audit",
+    "snippet": "iPayX Protocol — audit FX fees, compare currency conversion margins and score cross-border payment invoices"
+   }
+  ],
+  "confidence": 0.3,
+  "unknown_reasons": {
+   "auth": "MCP documentation shows Bearer token auth only; main API docs (ipayx.ai/docs hint) not provided, so other auth methods unknown",
+   "access": "Free tier limits documented for MCP; full access tiers, paid plan structure, admin approval, and production requirements unknown without primary documentation",
+   "api_surface": "Only MCP SDK interface documented in pages; underlying REST/GraphQL API details, endpoint breadth, webhooks support, and full capabilities unknown without ipayx.ai/docs",
+   "mcp": "Official iPayX MCP server identified; no community MCP implementations found in provided pages"
+  }
+ }
+}

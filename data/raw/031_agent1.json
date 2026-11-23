@@ -1,0 +1,119 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.082726,
+  "seconds": 102.2,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://developers.google.com/google-ads/api/docs/oauth/credential-management",
+  "https://developers.google.com/google-ads/api/reference/rpc/v26/overview",
+  "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+  "https://developers.google.com/google-ads/api/docs/get-started/introduction",
+  "https://developers.google.com/google-ads/api/docs/productionize/rate-limits",
+  "https://developers.google.com/google-ads/webhook/docs/overview",
+  "https://docs.composio.dev/toolkits/googleads.md",
+  "https://developers.google.com/google-ads",
+  "https://developers.google.com/google-ads/api/docs/oauth/overview",
+  "https://developers.google.com/google-ads/api/docs/oauth/access-model",
+  "https://developers.google.com/google-ads/api/docs/oauth/service-accounts",
+  "https://developers.google.com/google-ads/api/docs/oauth/user-authentication"
+ ],
+ "output": {
+  "one_liner": "Create and manage advertising campaigns and account data across Google Search, Display, YouTube and other channels.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2"
+   ],
+   "oauth_grant_types": [
+    "authorization_code"
+   ],
+   "notes": "Supports OAuth 2.0 for user authentication (single and multi-user) and service account workflows. OAuth client setup required via Google Cloud Console.",
+   "evidence": [
+    {
+     "url": "https://developers.google.com/google-ads/api/docs/oauth/overview",
+     "snippet": "Google Ads API utilizes the OAuth 2.0 protocol for authentication and authorization, allowing your app to access user accounts."
+    },
+    {
+     "url": "https://developers.google.com/google-ads/api/docs/oauth/credential-management",
+     "snippet": "Access token & refresh token represents the user's authorization to let the app access their Google Ads account on their behalf."
+    }
+   ]
+  },
+  "access": {
+   "status": "app_review",
+   "dev_sandbox": true,
+   "notes": "Test access is freely available. Production access requires applying for and receiving approval for access levels (Explorer, Basic, or Standard).",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/googleads.md",
+     "snippet": "To use production Ads accounts, open the Google Ads API Overview page for your Cloud project and apply for Explorer access."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Rate limited by queries per second (QPS) per customer ID and developer token using Token Bucket algorithm",
+   "evidence": [
+    {
+     "url": "https://developers.google.com/google-ads/api/reference/rpc/v26/overview",
+     "snippet": "Services include ConversionValueRuleService, CustomerAssetService, KeywordPlanService, RecommendationService, and many others."
+    },
+    {
+     "url": "https://developers.google.com/google-ads/api/docs/get-started/introduction",
+     "snippet": "Upload click, call, and enhanced conversions and configure automated bidding strategies."
+    },
+    {
+     "url": "https://developers.google.com/google-ads/api/docs/productionize/rate-limits",
+     "snippet": "Google Ads API rate limits requests by queries per second (QPS) per client customer ID and developer token using a Token Bucket algorithm."
+    },
+    {
+     "url": "https://developers.google.com/google-ads/webhook/docs/overview",
+     "snippet": "After the user clicks on an ad and submits the lead form, an HTTP POST request gets sent to the configured URL."
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+     "snippet": "The Google Ads MCP server provides a standardized bridge to the Google Ads API. Install via pipx install google-ads-mcp."
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "app_review",
+   "rationale": "Self-serve OAuth and test access available, but production multi-customer use requires API access level approval; Composio toolkit with 78 tools already built.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "googleads"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://developers.google.com/google-ads",
+    "snippet": "Create and manage ads that reach users looking for your products or services on Google Search, Display, YouTube and more."
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/googleads.md",
+    "snippet": "Tools: 78, Auth: OAUTH2, Composio-managed OAuth available? Yes, Category: ads & conversion"
+   }
+  ],
+  "confidence": 0.93,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": "Official MCP server confirmed to exist; specific repository URL not explicitly provided in pages, only package name google-ads-mcp"
+  }
+ }
+}

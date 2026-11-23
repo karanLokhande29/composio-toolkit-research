@@ -1,0 +1,55 @@
+{
+ "fields": [
+  "api_surface.breadth",
+  "buildability.main_blocker"
+ ],
+ "pages": [
+  "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+  "https://docs.usepylon.com/pylon-docs/developer/api/api-reference/accounts",
+  "https://docs.usepylon.com/pylon-docs/developer/webhooks",
+  "https://www.usepylon.com/pricing",
+  "https://usepylon.com/pricing",
+  "https://docs.usepylon.com/pylon-docs/integrations/pylon-mcp"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.110544,
+  "seconds": 24.4,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "api_surface.breadth",
+    "value": "moderate",
+    "evidence": [
+     {
+      "url": "https://docs.usepylon.com/pylon-docs/integrations/pylon-mcp",
+      "snippet": "can read and update issues, accounts, contacts, knowledge base articles, tasks and projects, triggers, and more"
+     },
+     {
+      "url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference/accounts",
+      "snippet": "Returns a paginated list of accounts for the organization."
+     }
+    ],
+    "reason": "Pages show multiple distinct resources (accounts, issues, contacts, knowledge base, tasks, triggers, call recordings, audit logs) with CRUD-style endpoints, indicating more than a narrow single-purpose API but no evidence of hundreds of endpoints to call it broad."
+   },
+   {
+    "field": "buildability.main_blocker",
+    "value": "paid_plan",
+    "evidence": [
+     {
+      "url": "https://www.usepylon.com/pricing",
+      "snippet": "Does Pylon offer a free trial or free plan? Pylon offers free trials for prospects."
+     },
+     {
+      "url": "https://www.usepylon.com/pricing",
+      "snippet": "REST API ✓ ✓"
+     }
+    ],
+    "reason": "The pricing page shows no free plan (only sales-arranged trials) and lists REST API as a feature only on the Advanced/Enterprise tiers, indicating a paid plan is required to get working API access."
+   }
+  ]
+ }
+}

@@ -1,0 +1,119 @@
+{
+ "id": 26,
+ "app": "Discord",
+ "category": "Communications and Messaging",
+ "hint": "discord.com",
+ "one_liner": "Discord provides voice, video, and text communication with APIs for building bots and integrations.",
+ "app_type": "saas",
+ "auth": {
+  "methods": [
+   "basic",
+   "bearer_token",
+   "oauth2"
+  ],
+  "oauth_grant_types": [
+   "authorization_code",
+   "refresh_token",
+   "client_credentials"
+  ],
+  "notes": "Discord supports OAuth2 with multiple grant types, bot tokens as bearer tokens, and basic auth (client_id:client_secret) for token endpoints.",
+  "evidence": [
+   {
+    "url": "https://discord.com/developers/docs/reference",
+    "snippet": "Authenticating with the Discord API can be done in one of three ways: Using a bot token",
+    "check": "exact"
+   },
+   {
+    "url": "https://discord.com/developers/docs/topics/oauth2",
+    "snippet": "We support the authorization code grant, the implicit grant, client credentials, and some modified special-for-Discord flows",
+    "check": "exact"
+   },
+   {
+    "url": "https://discord.com/.well-known/oauth-authorization-server",
+    "snippet": "\"grant_types_supported\": [ \"authorization_code\", \"refresh_token\", \"client_credentials\"",
+    "check": "repaired"
+   }
+  ]
+ },
+ "access": {
+  "status": "self_serve_free",
+  "dev_sandbox": true,
+  "notes": "Developers can register applications and get credentials (client_id, client_secret, bot tokens) at no cost. Some advanced scopes and privileged intents require approval for verified apps (100+ guilds), but do not block initial development.",
+  "evidence": [
+   {
+    "url": "https://discord.com/developers/docs/topics/oauth2",
+    "snippet": "The first step in implementing OAuth2 is registering a developer application and retrieving your client ID and",
+    "check": "repaired"
+   },
+   {
+    "url": "https://discord.com/developers/docs/topics/gateway",
+    "snippet": "Apps with fewer than 10,000 users can access privileged intents by enabling them in the Developer Portal.",
+    "check": "exact"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "rest",
+   "websocket"
+  ],
+  "breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "rate_limit_note": "Per-route and global rate limits enforced with dynamic limits. Rate limit details provided via HTTP headers (X-RateLimit-Limit, X-RateLimit-Reset, X-RateLimit-Bucket, X-RateLimit-Scope).",
+  "evidence": [
+   {
+    "url": "https://discord.com/developers/docs/reference",
+    "snippet": "The Discord API is a REST API that allows you to interact with Discord data from your own applications.",
+    "check": "exact"
+   },
+   {
+    "url": "https://discord.com/developers/docs/resources/webhook",
+    "snippet": "Webhooks are a low-effort way to post messages to channels in Discord.",
+    "check": "exact"
+   },
+   {
+    "url": "https://discord.com/developers/docs/topics/rate-limits",
+    "snippet": "Rate limits exist across Discord's APIs to prevent spam, abuse, and service overload.",
+    "check": "exact"
+   }
+  ]
+ },
+ "mcp": {
+  "official": null,
+  "community": [],
+  "evidence": []
+ },
+ "buildability": {
+  "verdict": "ready",
+  "main_blocker": "none",
+  "rationale": "Self-serve free credentials, well-documented REST and WebSocket APIs, webhooks, and rate-limiting all support immediate toolkit development.",
+  "composio_existing_toolkit": "yes",
+  "composio_slug": "DISCORD"
+ },
+ "overview_evidence": [
+  {
+   "url": "https://discord.com/developers/docs/intro",
+   "snippet": "Build bots and integrations on Discord, or connect your game with rich presence, voice chat, and more."
+  },
+  {
+   "url": "https://discord.com/developers/docs/reference",
+   "snippet": "The Discord API is a REST API that allows you to interact with Discord data from your own applications."
+  }
+ ],
+ "confidence": 0.92,
+ "unknown_reasons": {
+  "auth": "",
+  "access": "",
+  "api_surface": "OpenAPI spec availability not explicitly stated in provided documentation pages.",
+  "mcp": "Discord's own MCP server or third-party MCP server repos not mentioned in provided documentation pages."
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 9,
+  "error": null,
+  "cost_usd": 0.080733,
+  "seconds": 99.5
+ }
+}

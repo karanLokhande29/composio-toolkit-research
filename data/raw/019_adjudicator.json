@@ -1,0 +1,74 @@
+{
+ "fields": [
+  "access.status",
+  "auth.methods",
+  "mcp.official"
+ ],
+ "pages": [
+  "https://developers.gorgias.com/docs/access-tokens-api-keys",
+  "https://developers.gorgias.com/docs/1-register-on-developer-portal",
+  "https://developers.gorgias.com/reference/authentication",
+  "https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546",
+  "https://github.com/mattcoatsworth/Gorgias-MCP-Server",
+  "https://developers.gorgias.com/reference/introduction"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.077166,
+  "seconds": 21.9,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "access.status",
+    "value": "self_serve_trial",
+    "evidence": [
+     {
+      "url": "https://developers.gorgias.com/docs/1-register-on-developer-portal",
+      "snippet": "Once you register, feel free to create a trial account and reach out to [email protected] to transform it into a developer account."
+     },
+     {
+      "url": "https://developers.gorgias.com/docs/access-tokens-api-keys",
+      "snippet": "As an admin, you can easily generate and revoke your access token in the settings of your account."
+     }
+    ],
+    "reason": "Working credentials require first creating a trial Gorgias account (and admin access within it), with continued/developer use needing an email request or eventual paid plan, so this is self-serve but trial-gated rather than fully free."
+   },
+   {
+    "field": "auth.methods",
+    "value": [
+     "api_key",
+     "oauth2"
+    ],
+    "evidence": [
+     {
+      "url": "https://developers.gorgias.com/docs/access-tokens-api-keys",
+      "snippet": "the API key authentication method can be used only for private apps . If you plan to build a public app you have to use OAuth2."
+     },
+     {
+      "url": "https://developers.gorgias.com/reference/authentication",
+      "snippet": "Using OAuth2 is mandatory for public apps."
+     }
+    ],
+    "reason": "Docs explicitly define two supported auth methods: API key (HTTP Basic) for private apps and OAuth2 for public apps."
+   },
+   {
+    "field": "mcp.official",
+    "value": "https://mcp.gorgias.com/mcp",
+    "evidence": [
+     {
+      "url": "https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546",
+      "snippet": "the connection URL is the same: https://mcp.gorgias.com/mcp"
+     },
+     {
+      "url": "https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546",
+      "snippet": "The Gorgias MCP lets you work with your Gorgias helpdesk using an AI assistant, like Claude or ChatGPT."
+     }
+    ],
+    "reason": "Gorgias's own help docs (docs.gorgias.com) publish and describe this MCP endpoint as 'the Gorgias MCP', confirming it is vendor-official."
+   }
+  ]
+ }
+}

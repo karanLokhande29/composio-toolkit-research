@@ -1,0 +1,348 @@
+{
+ "id": 22,
+ "app": "Twilio",
+ "tag": "agent2",
+ "urls": [
+  {
+   "url": "https://twilio.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.twilio.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.twilio.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.twilio.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://twilio.com/pricing",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.twilio.com/docs",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.twilio.com/docs/usage/api",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.twilio.com/docs/iam/api",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.twilio.com/docs/usage/requests-to-twilio",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.twilio.com/try-twilio",
+   "purpose": "sandbox",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.twilio.com/console",
+   "purpose": "credentials",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://www.twilio.com/pricing",
+   "purpose": "pricing",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.twilio.com/partners",
+   "purpose": "partner programme",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.twilio.com/docs/all",
+   "purpose": "API reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.twilio.com/docs/usage/api/account",
+   "purpose": "rate limits",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.twilio.com/docs/usage/webhooks",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.twilio.com/docs/mcp",
+   "purpose": "MCP server",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/sosoj92/jarvis-assistant-vocal",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/XiyaoWang0519/agent-call",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/lgesuellip/langgraph-whatsapp-agent",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/twilio.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.twilio.com/en-us/partners",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.twilio.com/en-us/user-authentication-identity",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.twilio.com/en-us/user-authentication-identity/verify",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.twilio.com/en-us/user-authentication-identity/lookup",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.twilio.com/en-us/partners/become-a-partner",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.twilio.com/en-us/pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.twilio.com/en-us/products/conversational-ai/pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.twilio.com/en-us/pricing/messaging",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.twilio.com/en-us/sms/pricing/us",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.twilio.com/en-us/whatsapp/pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.twilio.com/en-us/messaging/pricing/conversations-api",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.twilio.com/en-us/voice/pricing/us",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.twilio.com/en-us/sip-trunking/pricing/us",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.twilio.com/en-us/voice/conference/pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "sosoj92/jarvis-assistant-vocal",
+   "url": "https://github.com/sosoj92/jarvis-assistant-vocal",
+   "stars": 573,
+   "description": "Assistant vocal local en francais : Claude ou Ollama (offline), domotique Hue, OBS, agenda, navigateur, appels Twilio, serveur MCP. Python."
+  },
+  {
+   "repo": "XiyaoWang0519/agent-call",
+   "url": "https://github.com/XiyaoWang0519/agent-call",
+   "stars": 269,
+   "description": "Open-source MCP server for safe, stateful AI-agent phone calls with OpenAI Realtime and Twilio."
+  },
+  {
+   "repo": "lgesuellip/langgraph-whatsapp-agent",
+   "url": "https://github.com/lgesuellip/langgraph-whatsapp-agent",
+   "stars": 243,
+   "description": "A template for building WhatsApp agents using LangGraph and Twilio. This project enables you to deploy AI agents that interact with users via WhatsApp, process "
+  },
+  {
+   "repo": "mr-tbot/mesh-api",
+   "url": "https://github.com/mr-tbot/mesh-api",
+   "stars": 188,
+   "description": "MESH-API  — Off-Grid AI & API Router & with MCP server & over 30 API extensions for Meshtastic & MeshCore - Seamlessly connect LM Studio, Ollama, AI Providers ,"
+  },
+  {
+   "repo": "twilio-labs/mcp",
+   "url": "https://github.com/twilio-labs/mcp",
+   "stars": 114,
+   "description": "Monorepo providing 1) OpenAPI to MCP Tool generator 2) Exposing all of Twilio's API as MCP Tools"
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Twilio",
+    "slug": "TWILIO",
+    "tools": 454,
+    "auth": [
+     "API_KEY",
+     "BASIC",
+     "S2S_OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/twilio.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Twilio",
+    "slug": "TWILIO",
+    "tools": 454,
+    "auth": [
+     "API_KEY",
+     "BASIC",
+     "S2S_OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/twilio.md"
+   }
+  ]
+ },
+ "search_meta": {}
+}

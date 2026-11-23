@@ -1,0 +1,126 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.091548,
+  "seconds": 96.9,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://developer.aircall.io/docs/oauth",
+  "https://developer.aircall.io/docs/basic-authentication",
+  "https://aircall.io/pricing/",
+  "https://developers.aircall.io/api-references",
+  "https://developer.aircall.io/docs/introduction",
+  "https://developer.aircall.io/docs/best-practices",
+  "https://developer.aircall.io/docs/webhooks-overview",
+  "https://developer.aircall.io/llms.txt",
+  "https://docs.composio.dev/toolkits/aircall.md",
+  "https://github.com/themobilefirstco/aircall-mcp-server",
+  "https://aircall.io",
+  "https://developers.aircall.io"
+ ],
+ "output": {
+  "one_liner": "AI-powered customer communications platform combining voice, messaging, and AI agents for business interactions.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "basic"
+   ],
+   "oauth_grant_types": [
+    "authorization_code"
+   ],
+   "notes": "OAuth 2.0 for technology partners building public applications (requires Tech Partner program approval); Basic Auth using API key/token for Aircall customers.",
+   "evidence": [
+    {
+     "url": "https://developer.aircall.io/docs/oauth",
+     "snippet": "Aircall implemented the OAuth 2.0 authentication protocol so you can easily build an app"
+    },
+    {
+     "url": "https://developer.aircall.io/docs/basic-authentication",
+     "snippet": "API key authentication works by sending your credentials in the Authorization header encoded in Base64"
+    },
+    {
+     "url": "https://developers.aircall.io/api-references",
+     "snippet": "With Aircall Public API, Authentication can be done through OAuth or Basic Auth"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_trial",
+   "dev_sandbox": true,
+   "notes": "Free trial available immediately with self-serve API key generation. OAuth for public apps requires Tech Partner program membership. Continued production use requires paid subscription.",
+   "evidence": [
+    {
+     "url": "https://aircall.io/pricing/",
+     "snippet": "Aircall offers free access to test the platform before committing. New accounts receive 100 AI Voice Agents minutes"
+    },
+    {
+     "url": "https://developer.aircall.io/docs/oauth",
+     "snippet": "if you qualify to be a tech partner you can then sign up for a developer account"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "120 requests per minute per token; 50 consecutive webhook delivery failures auto-disables webhook",
+   "evidence": [
+    {
+     "url": "https://developers.aircall.io/api-references",
+     "snippet": "Aircall Public API is a classic REST API. It can be used with any programming languages"
+    },
+    {
+     "url": "https://developer.aircall.io/docs/webhooks-overview",
+     "snippet": "Webhooks let you listen to Aircall events in real time, so your systems can react"
+    },
+    {
+     "url": "https://developer.aircall.io/docs/best-practices",
+     "snippet": "Aircall's Public API is rate-limited to 120 requests per minute per API key or OAuth token"
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [
+    "https://github.com/themobilefirstco/aircall-mcp-server"
+   ],
+   "evidence": [
+    {
+     "url": "https://github.com/themobilefirstco/aircall-mcp-server",
+     "snippet": "Unofficial MCP server for Aircall by Allo - 73 tools for calls, contacts, SMS, users, teams & AI insights"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Self-serve free trial access, documented REST API with broad endpoint coverage, webhooks support, and working Composio toolkit with 48 tools.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "AIRCALL"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://aircall.io",
+    "snippet": "AI-Powered Customer Communications Platform for SMBs & Enterprise | Aircall"
+   },
+   {
+    "url": "https://developer.aircall.io/docs/introduction",
+    "snippet": "Aircall's developer platform is the foundation for every integration, embedded experience, and AI-native app"
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  }
+ }
+}

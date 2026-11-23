@@ -1,0 +1,117 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.052289,
+  "seconds": 37.2,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://docs.apify.com/api/v2",
+  "https://docs.apify.com/platform/integrations/webhooks",
+  "https://docs.composio.dev/toolkits/apify.md",
+  "https://docs.apify.com",
+  "https://docs.apify.com/mcp",
+  "https://apify.com/partners/actor-developers",
+  "https://docs.apify.com/api/v2/getting-started",
+  "https://docs.apify.com/api/v2/actor-oauth-connections-get",
+  "https://docs.apify.com/api/v2/actor-o-auth-accounts-get",
+  "https://docs.apify.com/api/v2/actor-o-auth-account-get",
+  "https://docs.apify.com/cli/docs/reference",
+  "https://docs.apify.com/api/openapi.json"
+ ],
+ "output": {
+  "one_liner": "Apify is a cloud platform for developing, running, and sharing Actors—serverless microapps for web scraping, data extraction, and automation.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "bearer_token"
+   ],
+   "oauth_grant_types": [],
+   "notes": "API token authentication using Bearer tokens in Authorization header; bearer_token is static API key sent as Bearer token.",
+   "evidence": [
+    {
+     "url": "https://docs.apify.com/api/v2",
+     "snippet": "Add the token to your request's Authorization header as Bearer <token>."
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/apify.md",
+     "snippet": "Auth: API_KEY"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Free account creation with $500 worth of free usage included; free tier available for API access; pay-per-run pricing for published Actors.",
+   "evidence": [
+    {
+     "url": "https://apify.com/partners/actor-developers",
+     "snippet": "Create a free account. No credit card required."
+    },
+    {
+     "url": "https://apify.com/partners/actor-developers",
+     "snippet": "Enjoy $500 worth of free usage to build your own Actors along with other benefits for 6 months."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": "https://docs.apify.com/api/openapi.json",
+   "webhooks": true,
+   "rate_limit_note": "Pagination enforced; maximum limit values documented per endpoint and subject to change.",
+   "evidence": [
+    {
+     "url": "https://docs.apify.com/api/v2",
+     "snippet": "The API is organized around RESTful HTTP endpoints."
+    },
+    {
+     "url": "https://docs.apify.com/api/v2",
+     "snippet": "You can download the complete OpenAPI schema of Apify API in the YAML or JSON formats."
+    },
+    {
+     "url": "https://docs.apify.com/platform/integrations/webhooks",
+     "snippet": "Webhooks allow you to configure the Apify platform to perform an action when a certain system event occurs."
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://mcp.apify.com",
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://docs.apify.com/mcp",
+     "snippet": "The Apify's MCP server (mcp.apify.com) allows AI applications and agents to interact with the Apify platform using Model Context Protocol (MCP)."
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Self-serve free credentials, well-documented REST API with OpenAPI spec, official MCP server, and existing Composio toolkit with 185 tools already deployed.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "APIFY"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://docs.apify.com",
+    "snippet": "Apify is all about Actors—a new way to package your code to make it easy to share, integrate, and build upon."
+   },
+   {
+    "url": "https://docs.apify.com",
+    "snippet": "Develop, run, and share web scraping and automation tools in the cloud."
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  }
+ }
+}

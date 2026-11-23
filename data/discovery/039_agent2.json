@@ -1,0 +1,192 @@
+{
+ "id": 39,
+ "app": "Threads (Meta)",
+ "tag": "agent2",
+ "urls": [
+  {
+   "url": "https://developers.facebook.com/docs/threads",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.facebook.com/docs/threads/overview",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.facebook.com/docs/threads/get-started",
+   "purpose": "getting_started",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.facebook.com/docs/threads/get-started/get-access",
+   "purpose": "credentials/access",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developers.facebook.com/docs/threads/authentication",
+   "purpose": "auth",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developers.facebook.com/docs/threads/threads-api-review",
+   "purpose": "partner_programme/review",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developers.facebook.com/docs/threads/reference",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.facebook.com/docs/threads/threads-media",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.facebook.com/docs/threads/threads-profiles",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.facebook.com/docs/threads/rate-limits",
+   "purpose": "rate_limits",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developers.facebook.com/docs/threads/webhooks",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.facebook.com/docs/threads/changelog",
+   "purpose": "changelog",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/oliverames/meta-mcp-server",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/mikusnuz/meta-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/exileum/meta-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/threads.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "oliverames/meta-mcp-server",
+   "url": "https://github.com/oliverames/meta-mcp-server",
+   "stars": 71,
+   "description": "The most comprehensive MCP server for Meta's business platform. 200+ tools covering Facebook Pages, Instagram, Threads, Ads Manager, Commerce, Conversions API, "
+  },
+  {
+   "repo": "mikusnuz/meta-mcp",
+   "url": "https://github.com/mikusnuz/meta-mcp",
+   "stars": 36,
+   "description": "MCP server for Instagram Graph API, Threads API & Meta platform — 57 tools with Graph API v25.0"
+  },
+  {
+   "repo": "exileum/meta-mcp",
+   "url": "https://github.com/exileum/meta-mcp",
+   "stars": 14,
+   "description": "Enables AI assistants to manage Instagram and Threads accounts — publish content, handle comments, view insights, search hashtags, and manage DMs through the Me"
+  },
+  {
+   "repo": "dkyazzentwatwa/threads-mcp-crawler",
+   "url": "https://github.com/dkyazzentwatwa/threads-mcp-crawler",
+   "stars": 10,
+   "description": "Mark Zuckerberg's worst nightmare. Crawls Meta Threads for data."
+  },
+  {
+   "repo": "gayoreo/Server-crash",
+   "url": "https://github.com/gayoreo/Server-crash",
+   "stars": 7,
+   "description": "[14:27:46] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLServerTweaker [14:27:46] [main/INFO] [LaunchWrapper]:"
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Threads",
+    "slug": "THREADS",
+    "tools": 24,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/threads.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Threads",
+    "slug": "THREADS",
+    "tools": 24,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/threads.md"
+   }
+  ]
+ },
+ "search_meta": {}
+}

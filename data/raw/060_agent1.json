@@ -1,0 +1,119 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.080746,
+  "seconds": 100.0,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://docs.composio.dev/toolkits/clay.md",
+  "https://clay.com",
+  "https://developers.clay.com",
+  "https://docs.clay.com",
+  "https://clay.com/pricing",
+  "https://www.clay.com/mcp",
+  "https://www.clay.com/partners",
+  "https://www.clay.com/partners/solutions",
+  "https://www.clay.com/partners/integrations",
+  "https://university.clay.com/courses/clay-mcps-for-reps",
+  "https://university.clay.com/courses/clay-mcp-for-ops",
+  "https://university.clay.com/docs-topics/getting-started"
+ ],
+ "output": {
+  "one_liner": "Clay is a go-to-market platform that finds companies and people, runs enrichment and automation workflows, and integrates with business systems via API and CLI.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "api_key",
+    "jwt"
+   ],
+   "oauth_grant_types": [],
+   "notes": "API key and JWT authentication supported",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/clay.md",
+     "snippet": "Auth: API_KEY"
+    },
+    {
+     "url": "https://university.clay.com/docs-topics/getting-started",
+     "snippet": "HTTP API with JWT authentication"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Free plan available with 500 actions/month and 100 search results, no credit card required",
+   "evidence": [
+    {
+     "url": "https://clay.com/pricing",
+     "snippet": "Start for free today. No credit card required."
+    },
+    {
+     "url": "https://clay.com/pricing",
+     "snippet": "Includes 500 actions/mo"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest",
+    "sdk_only"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "$0.074 per requested result, charged for full limit (1-50 range)",
+   "evidence": [
+    {
+     "url": "https://developers.clay.com",
+     "snippet": "Best for Claude Code, Codex, Cursor, and agent-first work. The plugin ships skills and the Clay CLI."
+    },
+    {
+     "url": "https://developers.clay.com",
+     "snippet": "Best for backend jobs, internal tools, custom apps, queues, and product workflows."
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/clay.md",
+     "snippet": "Existing Clay webhook identifier to notify about the run, if desired."
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://www.clay.com/mcp",
+     "snippet": "Clay MCP Give reps the best prospecting data in their AI tools"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Clay offers free API access with documented REST and plugin interfaces, webhooks support, and an existing Composio toolkit with 15 tools confirms full buildability.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "CLAY"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://clay.com",
+    "snippet": "Infrastructure to get any data, run agentic workflows, and launch GTM plays."
+   },
+   {
+    "url": "https://developers.clay.com",
+    "snippet": "Use Clay from agents, terminals, backend services, internal tools, and custom apps."
+   }
+  ],
+  "confidence": 0.98,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": "Official MCP server repository URL not explicitly provided in documentation pages"
+  }
+ }
+}

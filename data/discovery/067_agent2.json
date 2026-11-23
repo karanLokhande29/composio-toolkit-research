@@ -1,0 +1,313 @@
+{
+ "id": 67,
+ "app": "Snowflake",
+ "tag": "agent2",
+ "urls": [
+  {
+   "url": "https://docs.snowflake.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.snowflake.com/en/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.snowflake.com/en/developer-guide/sql-api/authenticating",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.snowflake.com/en/user-guide/key-pair-auth",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.snowflake.com/en/developer-guide/sql-api/index",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.snowflake.com/en/developer-guide/sql-api/reference",
+   "purpose": "API reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.snowflake.com/en/developer-guide/sql-api/guide",
+   "purpose": "developer access/credentials",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.snowflake.com/en/developer-guide/sql-api/limitations",
+   "purpose": "rate limits",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://docs.snowflake.com/en/sql-reference/account-usage",
+   "purpose": "API reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/snowflake-rest-api",
+   "purpose": "API reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.snowflake.com/en/user-guide/trial-account",
+   "purpose": "sandbox",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://docs.snowflake.com/en/developer-guide/snowpark/index",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.snowflake.com/en/developer-guide/webhooks/webhook-notifications",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://github.com/Snowflake-Labs/mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/isaacwasserman/mcp-snowflake-server",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/ralforion/orionbelt-analytics",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/snowflake.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.snowflake.com/en/user-guide-getting-started",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.snowflake.com/en/user-guide/getting-started-tutorial",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.snowflake.com/fr/developer-guide/sql-api/authenticating",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.snowflake.com/de/developer-guide/sql-api/authenticating",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.snowflake.com/ja/developer-guide/sql-api/authenticating",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.snowflake.com/ko/developer-guide/sql-api/authenticating",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.snowflake.com/pt/developer-guide/sql-api/authenticating",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.snowflake.com/en/developer-guide/streamlit/getting-started/overview",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.snowflake.com/en/developer-guide/streamlit/getting-started/example-data-dashboard",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.snowflake.com/en/developer-guide/streamlit/getting-started/example-crud-app",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.snowflake.com/en/developer-guide/streamlit/features/external-access",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.snowflake.com/en/developer-guide/streamlit/features/row-access",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.snowflake.com/user-guide/oauth-intro",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "Snowflake-Labs/mcp",
+   "url": "https://github.com/Snowflake-Labs/mcp",
+   "stars": 303,
+   "description": "MCP Server for Snowflake including Cortex AI, object management, SQL orchestration, semantic view consumption, and more"
+  },
+  {
+   "repo": "isaacwasserman/mcp-snowflake-server",
+   "url": "https://github.com/isaacwasserman/mcp-snowflake-server",
+   "stars": 184,
+   "description": ""
+  },
+  {
+   "repo": "ralforion/orionbelt-analytics",
+   "url": "https://github.com/ralforion/orionbelt-analytics",
+   "stars": 59,
+   "description": "Ontology-based MCP server that analyzes database schemas (PostgreSQL, Snowflake, ClickHouse, Dremio) and generates RDF/OWL ontologies with SQL mappings for fan-"
+  },
+  {
+   "repo": "datawiz168/mcp-snowflake-service",
+   "url": "https://github.com/datawiz168/mcp-snowflake-service",
+   "stars": 45,
+   "description": "MCP server implementation for Snowflake integration"
+  },
+  {
+   "repo": "thorstenfoltz/octa",
+   "url": "https://github.com/thorstenfoltz/octa",
+   "stars": 36,
+   "description": "Fast native desktop app for exploring 20+ data formats like Parquet, DuckDB, CSV, Excel, Arrow, GeoJSON, Jupyter and more, plus connections to Postgres, Snowfla"
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Snowflake",
+    "slug": "SNOWFLAKE",
+    "tools": 17,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/snowflake.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Snowflake",
+    "slug": "SNOWFLAKE",
+    "tools": 17,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/snowflake.md"
+   },
+   {
+    "name": "Snowflake Basic",
+    "slug": "SNOWFLAKE_BASIC",
+    "tools": 6,
+    "auth": [
+     "BASIC"
+    ],
+    "url": "https://docs.composio.dev/toolkits/snowflake_basic.md"
+   }
+  ]
+ },
+ "search_meta": {}
+}

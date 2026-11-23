@@ -1,0 +1,357 @@
+{
+ "id": 7,
+ "app": "Zoho CRM",
+ "tag": "agent2",
+ "urls": [
+  {
+   "url": "https://zoho.com/crm",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.zoho.com/crm/developer/docs/api/v8/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": true
+  },
+  {
+   "url": "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.zoho.com/crm/developer/docs/api/v8/get-refresh-token.html",
+   "purpose": "auth",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://api-console.zoho.com/",
+   "purpose": "credentials",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.zoho.com/crm/developer/docs/api/v8/rate-limit.html",
+   "purpose": "rate-limits",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.zoho.com/crm/developer/docs/api/v8/notifications/",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 403,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://www.zoho.com/crm/developer/docs/api/v8/webhooks.html",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.zoho.com/crm/developer/docs/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.zoho.com/sandbox/",
+   "purpose": "sandbox",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://www.zoho.com/partners/",
+   "purpose": "partner-programme",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.zoho.com/crm/crmplus/pricing.html",
+   "purpose": "pricing",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/Officehub-Tech-LLC/MCP-Server",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/Mgabr90/zoho-mcp-server",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/LokiMCPUniverse/zoho-crm-mcp-server",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/zoho.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/zoho_analytics.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.zoho.com/crm/zohocrm-pricing.html?source_from=crm_home",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.zoho.com/accounts/oneauth",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.zoho.com/crm/developer/docs/mcp/overview.html?source_from=developer-docs",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.zoho.com/partners/partner-signup.html",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.zoho.com/partners/consulting-partnership.html",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.zoho.com/partners/system-integrators/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.zoho.com/partners/distributors.html",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.zoho.com/partners/resellers.html",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.zoho.com/marketplace/become-a-partner.html",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.zoho.com/crm/crmplus/pricing-calculator.html?source_from=pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.zoho.com/crm/developer/docs/api/v8/module-meta.html",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.zoho.com/crm/developer/docs/api/v8/get-records.html",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.zoho.com/crm/developer/docs/api/v8/composite-overview.html",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "Officehub-Tech-LLC/MCP-Server",
+   "url": "https://github.com/Officehub-Tech-LLC/MCP-Server",
+   "stars": 14,
+   "description": "MCP Server Integration with Zoho CRM"
+  },
+  {
+   "repo": "Mgabr90/zoho-mcp-server",
+   "url": "https://github.com/Mgabr90/zoho-mcp-server",
+   "stars": 4,
+   "description": "Unified Zoho CRM and Books MCP Server with AnythingLLM integration"
+  },
+  {
+   "repo": "LokiMCPUniverse/zoho-crm-mcp-server",
+   "url": "https://github.com/LokiMCPUniverse/zoho-crm-mcp-server",
+   "stars": 3,
+   "description": "MCP server for Zoho CRM - Complete CRM suite integration"
+  },
+  {
+   "repo": "sprintberlin/openclaw-zoho-crm-mcp-skill",
+   "url": "https://github.com/sprintberlin/openclaw-zoho-crm-mcp-skill",
+   "stars": 3,
+   "description": "OpenClaw Zoho CRM MCP Skill"
+  },
+  {
+   "repo": "JunnServices/Zoho-CRM-MCP",
+   "url": "https://github.com/JunnServices/Zoho-CRM-MCP",
+   "stars": 3,
+   "description": "A comprehensive Model Context Protocol server for Zoho CRM integration - Built by Jennifer Ugo of JunnAI"
+  }
+ ],
+ "composio": {
+  "exact": [],
+  "candidates": [
+   {
+    "name": "Zoho",
+    "slug": "ZOHO",
+    "tools": 115,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/zoho.md"
+   },
+   {
+    "name": "Zoho Analytics",
+    "slug": "ZOHO_ANALYTICS",
+    "tools": 198,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/zoho_analytics.md"
+   },
+   {
+    "name": "Zoho Bigin",
+    "slug": "ZOHO_BIGIN",
+    "tools": 54,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/zoho_bigin.md"
+   },
+   {
+    "name": "Zoho Bookings",
+    "slug": "ZOHO_BOOKINGS",
+    "tools": 27,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/zoho_bookings.md"
+   },
+   {
+    "name": "Zoho Books",
+    "slug": "ZOHO_BOOKS",
+    "tools": 326,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/zoho_books.md"
+   },
+   {
+    "name": "Zoho Calendar",
+    "slug": "ZOHO_CALENDAR",
+    "tools": 57,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/zoho_calendar.md"
+   },
+   {
+    "name": "Zoho Campaigns",
+    "slug": "ZOHO_CAMPAIGNS",
+    "tools": 39,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/zoho_campaigns.md"
+   },
+   {
+    "name": "Zoho Cliq",
+    "slug": "ZOHO_CLIQ",
+    "tools": 162,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/zoho_cliq.md"
+   }
+  ]
+ },
+ "search_meta": {}
+}

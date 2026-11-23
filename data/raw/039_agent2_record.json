@@ -1,0 +1,102 @@
+{
+ "id": 39,
+ "app": "Threads (Meta)",
+ "category": "Marketing, Ads, Email and Social",
+ "hint": "developers.facebook.com/docs/threads",
+ "one_liner": "Create and publish posts, retrieve media and profiles, moderate replies, and access insights on Threads.",
+ "app_type": "saas",
+ "auth": {
+  "methods": [
+   "oauth2"
+  ],
+  "oauth_grant_types": [],
+  "notes": "Threads user access tokens conforming to OAuth 2.0 protocol; short-lived (1 hour) or long-lived (60 days) tokens exchanged via authorization codes.",
+  "evidence": [
+   {
+    "url": "https://developers.facebook.com/docs/threads/get-started",
+    "snippet": "API authentication is handled by Threads user access tokens that conform to the OAuth 2.0 protocol.",
+    "check": "exact"
+   }
+  ]
+ },
+ "access": {
+  "status": "app_review",
+  "dev_sandbox": true,
+  "notes": "Self-serve: create app, test with Threads tester role at no cost. Production use with real users and multi-customer access requires App Review approval and app publication.",
+  "evidence": [
+   {
+    "url": "https://developers.facebook.com/docs/threads/get-started",
+    "snippet": "To access the Threads API, create an app and pick the [Threads use",
+    "check": "repaired"
+   },
+   {
+    "url": "https://developers.facebook.com/docs/threads/get-started",
+    "snippet": "[Threads testers](#threads-testers) can grant your app these permissions at any time.",
+    "check": "repaired"
+   },
+   {
+    "url": "https://developers.facebook.com/docs/threads/get-started",
+    "snippet": "each permission must first be approved through the [App Review](https://developers.facebook.com/documentation/resp-plat-initiatives/individual-processes/app-review) process, and your app must be published.",
+    "check": "repaired"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "rest"
+  ],
+  "breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "rate_limit_note": "250 API-published posts per rolling 24-hour period; separate rate limits for replies, deletions, and location searches; query endpoint to check usage.",
+  "evidence": [
+   {
+    "url": "https://developers.facebook.com/docs/threads/webhooks",
+    "snippet": "Webhooks for Threads allow you to receive real-time notifications for the subscribed topics and fields.",
+    "check": "exact"
+   },
+   {
+    "url": "https://developers.facebook.com/docs/threads/overview",
+    "snippet": "Threads profiles are limited to 250 API-published posts within a rolling 24-hour period.",
+    "check": "exact"
+   }
+  ]
+ },
+ "mcp": {
+  "official": null,
+  "community": [],
+  "evidence": []
+ },
+ "buildability": {
+  "verdict": "ready_with_caveats",
+  "main_blocker": "app_review",
+  "rationale": "Documented REST API with self-serve testing via Threads tester sandbox, but production use requires App Review approval.",
+  "composio_existing_toolkit": "yes",
+  "composio_slug": "THREADS"
+ },
+ "overview_evidence": [
+  {
+   "url": "https://developers.facebook.com/docs/threads",
+   "snippet": "Use the Threads API to create and publish posts, retrieve media and profiles, moderate replies, and access insights."
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/threads.md",
+   "snippet": "Return the connected or app-scoped Threads user's profile and identity fields."
+  }
+ ],
+ "confidence": 0.92,
+ "unknown_reasons": {
+  "auth": "",
+  "access": "",
+  "api_surface": "OAuth grant type names not explicitly stated; OpenAPI spec existence not mentioned",
+  "mcp": "MCP servers not mentioned in provided documentation"
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 8,
+  "error": null,
+  "cost_usd": 0.07467900000000001,
+  "seconds": 101.2
+ }
+}

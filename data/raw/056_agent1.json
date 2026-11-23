@@ -1,0 +1,122 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.090685,
+  "seconds": 100.5,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://docs.firecrawl.dev/webhooks",
+  "https://docs.composio.dev/toolkits/firecrawl.md",
+  "https://firecrawl.dev",
+  "https://docs.firecrawl.dev",
+  "https://firecrawl.dev/pricing",
+  "https://docs.firecrawl.dev/authentication",
+  "https://docs.firecrawl.dev/api-reference",
+  "https://docs.firecrawl.dev/rate-limits",
+  "https://www.firecrawl.dev/use-cases/ai-mcps",
+  "https://docs.firecrawl.dev/mcp-server",
+  "https://www.firecrawl.dev/auth.md",
+  "https://www.firecrawl.dev/pricing.md"
+ ],
+ "output": {
+  "one_liner": "Web scraping and data extraction platform enabling AI agents to search, scrape, and interact with websites to access live web data.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "api_key",
+    "oauth2"
+   ],
+   "oauth_grant_types": [],
+   "notes": "Supports API key (Bearer token), OAuth for apps, MCP OAuth, and WorkOS identity assertion flow. API key is primary method.",
+   "evidence": [
+    {
+     "url": "https://docs.firecrawl.dev/authentication",
+     "snippet": "Create a key in the and send it on every request as Authorization: Bearer fc-YOUR-API-KEY"
+    },
+    {
+     "url": "https://docs.firecrawl.dev/authentication",
+     "snippet": "Send the user through Firecrawl's OAuth flow with resource=https://api.firecrawl.dev/"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Free tier: 1,000 credits/month refreshed monthly, no credit card required. Paid plans: Hobby ($19/month), Scale ($749/month), Enterprise (custom).",
+   "evidence": [
+    {
+     "url": "https://firecrawl.dev/pricing",
+     "snippet": "Free tier 1,000 credits every month, refreshed monthly, no credit card required"
+    },
+    {
+     "url": "https://firecrawl.dev",
+     "snippet": "No credit card needed. Start for free"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Free: 10/min (scrape/map/search), 2/min (crawl/agent). Hobby: 100/min (scrape), 20/min (crawl). Scale: 10,000/min (scrape), 2,000/min (crawl).",
+   "evidence": [
+    {
+     "url": "https://docs.firecrawl.dev/api-reference",
+     "snippet": "The Firecrawl API gives you programmatic access to web data"
+    },
+    {
+     "url": "https://firecrawl.dev",
+     "snippet": "You can also call the REST API directly from any language. All SDKs support search, scrape, interact, and crawl"
+    },
+    {
+     "url": "https://docs.firecrawl.dev/webhooks",
+     "snippet": "Get notified the moment a crawl, batch scrape, extract, agent job, or monitor check starts, progresses, or finishes"
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://firecrawl.dev",
+     "snippet": "Connect Firecrawl to any AI agent or MCP client in minutes"
+    },
+    {
+     "url": "https://www.firecrawl.dev/use-cases/ai-mcps",
+     "snippet": "Install the official Firecrawl MCP server and Claude Code, Cursor, Codex, and Windsurf can call Search, Scrape, Parse"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Self-serve free credentials, documented REST API with broad endpoint coverage, official SDKs, webhooks, and official MCP server enable immediate toolkit development.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "FIRECRAWL"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://firecrawl.dev",
+    "snippet": "Firecrawl | Knowledge Infrastructure for AI Agents"
+   },
+   {
+    "url": "https://firecrawl.dev",
+    "snippet": "Search finds relevant information on the web. Scrape turns websites into clean, structured, AI-usable data"
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": "Official MCP server repo URL not explicitly provided in pages; only hosted server endpoint (https://mcp.firecrawl.dev/v2/mcp) is referenced"
+  }
+ }
+}

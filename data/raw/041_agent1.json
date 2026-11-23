@@ -1,0 +1,118 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.07253100000000001,
+  "seconds": 71.4,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://shopify.dev/docs/api",
+  "https://shopify.dev/",
+  "https://shopify.dev/docs/api/webhooks",
+  "https://docs.composio.dev/toolkits/shopify.md",
+  "https://shopify.dev/docs/api/admin-rest",
+  "https://shopify.dev/docs/api/admin-graphql",
+  "https://shopify.dev/docs/apps",
+  "https://shopify.dev/docs/apps/auth",
+  "https://shopify.dev/docs/api/usage/authentication",
+  "https://shopify.dev/docs/api/usage/access-scopes",
+  "https://shopify.dev/docs/api/shopify-mcp",
+  "https://shopify.dev/docs/api/web-mcp"
+ ],
+ "output": {
+  "one_liner": "Shopify is an e-commerce platform that lets merchants build and manage online stores with products, orders, customers, and inventory management.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2"
+   ],
+   "oauth_grant_types": [],
+   "notes": "Public and custom apps use OAuth2. Access tokens are sent as X-Shopify-Access-Token header. Composio catalog also lists S2S_OAuth2 for server-to-server authentication.",
+   "evidence": [
+    {
+     "url": "https://shopify.dev/docs/api/admin-rest",
+     "snippet": "Public and custom apps created in the Dev Dashboard generate tokens using OAuth"
+    },
+    {
+     "url": "https://shopify.dev/docs/api/admin-graphql",
+     "snippet": "Every GraphQL Admin API request carries an access token in the X-Shopify-Access-Token header."
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Developers can create free dev stores and obtain API credentials immediately without restriction. Public app distribution via App Store requires vendor review, but development and testing is unrestricted.",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/shopify.md",
+     "snippet": "Sign in to your Shopify admin. If you don't have a store, start one at shopify.com."
+    },
+    {
+     "url": "https://shopify.dev/docs/apps",
+     "snippet": "Publish your app in the Shopify App Store and any merchant can install it once it passes review."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest",
+    "graphql"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Shopify enforces rate limits covering input array size, pagination depth, and API-specific limits.",
+   "evidence": [
+    {
+     "url": "https://shopify.dev/docs/api",
+     "snippet": "GraphQL Admin API reads and writes products, customers, orders, inventory, and the rest of the data behind the Shopify admin."
+    },
+    {
+     "url": "https://shopify.dev/docs/api/admin-rest",
+     "snippet": "The REST Admin API is a legacy API as of October 1, 2024."
+    },
+    {
+     "url": "https://shopify.dev/docs/api/webhooks",
+     "snippet": "You can use webhook subscriptions to receive notifications about particular events in a shop."
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://shopify.dev/docs/api/shopify-mcp",
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://shopify.dev/docs/api/shopify-mcp",
+     "snippet": "Shopify MCP is a remote Model Context Protocol (MCP) server that lets merchants build and run a Shopify store through the AI agent of their choice."
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Self-serve free credentials, documented REST and GraphQL APIs with broad resource coverage, and webhook support enable immediate toolkit development without barriers.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "SHOPIFY"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://shopify.dev/docs/api",
+    "snippet": "Reference documentation for Shopify's APIs, libraries, and developer tools, plus the concepts that apply across all of them."
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/shopify.md",
+    "snippet": "This toolkit is GraphQL-first for new Admin API automations while retaining legacy REST compatibility actions for older workflows."
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  }
+ }
+}

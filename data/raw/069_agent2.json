@@ -1,0 +1,118 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.074879,
+  "seconds": 93.2,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://www.datadoghq.com/pricing/",
+  "https://docs.datadoghq.com/api/latest/",
+  "https://docs.datadoghq.com/developers/guide/",
+  "https://docs.datadoghq.com/api/latest/rate-limits/",
+  "https://docs.datadoghq.com/integrations/webhooks/",
+  "https://docs.composio.dev/toolkits/datadog.md",
+  "https://docs.datadoghq.com/api/latest/using-the-api/"
+ ],
+ "output": {
+  "one_liner": "Datadog is a cloud-based observability and security platform for monitoring applications, infrastructure, and security.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "api_key",
+    "oauth2",
+    "bearer_token"
+   ],
+   "oauth_grant_types": [],
+   "notes": "API key via DD-API-KEY header; some endpoints also require Application key. OAuth2 and bearer token also supported.",
+   "evidence": [
+    {
+     "url": "https://docs.datadoghq.com/api/latest/",
+     "snippet": "Authenticate to the API with an API key using the header DD-API-KEY. For some endpoints, you also need an Application key"
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/datadog.md",
+     "snippet": "Auth: OAUTH2, API_KEY, BEARER_TOKEN"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_trial",
+   "dev_sandbox": true,
+   "notes": "Free trial available without approval or sales contact; continued access requires paid plan; trial duration not specified.",
+   "evidence": [
+    {
+     "url": "https://www.datadoghq.com/pricing/",
+     "snippet": "Start Free Trial Explore telemetry and take action faster with Bits Chat"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Rate limits documented per endpoint; 250,000 events per minute per organization for event submission; can be increased via support.",
+   "evidence": [
+    {
+     "url": "https://docs.datadoghq.com/api/latest/",
+     "snippet": "The Datadog API is an HTTP REST API. The API uses resource-oriented URLs to call the API, uses status codes to indicate the success or failure of requests, returns JSON from all requests"
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/datadog.md",
+     "snippet": "Tools: 256"
+    },
+    {
+     "url": "https://docs.datadoghq.com/api/latest/rate-limits/",
+     "snippet": "The rate limit for event submission is 250,000 events per minute per organization."
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/datadog.md",
+     "snippet": "Create a webhook in Datadog. Registers a named destination endpoint; each monitor must explicitly reference the webhook by name"
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://www.datadoghq.com/pricing/",
+     "snippet": "Observability IaC Security Secret Scanning Cloud Security AI Guard MCP Server Pup CLI"
+    },
+    {
+     "url": "https://docs.datadoghq.com/developers/guide/",
+     "snippet": "Build Workflows Access for Enterprises Choosing Your Datadog Topology MCP Server Setup MCP Tools"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Composio toolkit with 256 tools already exists and production-ready; self-serve trial access available without approval.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "DATADOG"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://www.datadoghq.com/pricing/",
+    "snippet": "The integrated platform for monitoring & security"
+   },
+   {
+    "url": "https://docs.datadoghq.com/api/latest/",
+    "snippet": "Use the Datadog API to access the Datadog platform programmatically."
+   }
+  ],
+  "confidence": 0.8,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "Free trial duration and scope of credentials available during trial not documented in provided pages.",
+   "api_surface": "OpenAPI specification URL not documented in provided pages.",
+   "mcp": "MCP Server mentioned in navigation and documentation but no direct URL to official repository provided in pages."
+  }
+ }
+}

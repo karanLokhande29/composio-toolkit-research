@@ -1,0 +1,108 @@
+{
+ "id": 40,
+ "app": "SendGrid",
+ "category": "Marketing, Ads, Email and Social",
+ "hint": "sendgrid.com",
+ "one_liner": "SendGrid is a cloud-based email delivery platform that sends email at scale with proven deliverability.",
+ "app_type": "saas",
+ "auth": {
+  "methods": [
+   "basic",
+   "bearer_token"
+  ],
+  "oauth_grant_types": [],
+  "notes": "Requires API key created in SendGrid console; bearer_token sends API key as 'Bearer <key>' header; basic sends as 'apikey:<key>' HTTP basic auth. No OAuth support.",
+  "evidence": [
+   {
+    "url": "https://docs.sendgrid.com/for-developers/sending-email/authentication",
+    "snippet": "Twilio SendGrid supports API keys delivered via Bearer token or Basic authentication",
+    "check": "exact"
+   },
+   {
+    "url": "https://docs.sendgrid.com/for-developers/sending-email/authentication",
+    "snippet": "To use an API key, pass an Authorization header with a value of Bearer <Your-API-Key-Here>",
+    "check": "exact"
+   },
+   {
+    "url": "https://docs.sendgrid.com/for-developers/sending-email/authentication",
+    "snippet": "When using Basic Authentication, your username will always be apikey , and your password will be your API key.",
+    "check": "repaired"
+   }
+  ]
+ },
+ "access": {
+  "status": "self_serve_trial",
+  "dev_sandbox": null,
+  "notes": "Free trial with no credit card required; Sandbox Mode mentioned in docs but operational details not provided in given pages.",
+  "evidence": [
+   {
+    "url": "https://sendgrid.com/en-us/pricing",
+    "snippet": "Sign up for a free trialâno credit card required.",
+    "check": "repaired"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "rest"
+  ],
+  "breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "rate_limit_note": "Not documented in provided pages",
+  "evidence": [
+   {
+    "url": "https://docs.sendgrid.com/",
+    "snippet": "Review the SendGrid v3 API reference",
+    "check": "exact"
+   },
+   {
+    "url": "https://docs.sendgrid.com/",
+    "snippet": "Get started with the Event webhook",
+    "check": "exact"
+   },
+   {
+    "url": "https://docs.sendgrid.com/for-developers/tracking-events/getting-started-event-webhook",
+    "snippet": "To have Twilio SendGrid post email event data to a URL you control, add and configure an Event Webhook",
+    "check": "exact"
+   }
+  ]
+ },
+ "mcp": {
+  "official": null,
+  "community": [],
+  "evidence": []
+ },
+ "buildability": {
+  "verdict": "ready",
+  "main_blocker": "none",
+  "rationale": "Composio toolkit with 364 tools already published and operational; self-serve trial credentials available without sales contact.",
+  "composio_existing_toolkit": "yes",
+  "composio_slug": "SENDGRID"
+ },
+ "overview_evidence": [
+  {
+   "url": "https://sendgrid.com/en-us/pricing",
+   "snippet": "Send email on a world-class platform that delivers more than 200 billion emails every month"
+  },
+  {
+   "url": "https://docs.sendgrid.com/",
+   "snippet": "Get started with the Twilio SendGrid Mail Send API and the open-source SDKs"
+  }
+ ],
+ "confidence": 0.85,
+ "unknown_reasons": {
+  "auth": "",
+  "access": "Pages state 'free trial' but do not specify trial duration or post-trial terms",
+  "api_surface": "OpenAPI spec mentioned but no URL provided; rate limits undocumented in provided pages",
+  "mcp": "No mention of any MCP server in SendGrid or Composio documentation pages provided"
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 8,
+  "error": null,
+  "cost_usd": 0.074314,
+  "seconds": 89.8
+ }
+}

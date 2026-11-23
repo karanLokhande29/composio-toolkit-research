@@ -1,0 +1,123 @@
+{
+ "id": 8,
+ "app": "Close",
+ "category": "CRM and Sales",
+ "hint": "close.com",
+ "one_liner": "Close is a sales CRM with built-in calling, email, SMS, and AI agents.",
+ "app_type": "saas",
+ "auth": {
+  "methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "oauth_grant_types": [],
+  "notes": "API keys for scripts or OAuth 2.0 for user-facing integrations. Both methods support API and MCP server access.",
+  "evidence": [
+   {
+    "url": "https://developer.close.com/#authentication",
+    "snippet": "API keys for scripts or OAuth 2.0 for user-facing integrations.",
+    "check": "exact"
+   },
+   {
+    "url": "https://help.close.com/docs/api-keys",
+    "snippet": "An API key is a secret token (like a password) which you can use to connect Close data",
+    "check": "exact"
+   }
+  ]
+ },
+ "access": {
+  "status": "self_serve_trial",
+  "dev_sandbox": true,
+  "notes": "14-day free trial available without approval or sales contact. Developers can immediately create API keys during trial. Continued use requires paid plan.",
+  "evidence": [
+   {
+    "url": "https://help.close.com/docs/api-keys",
+    "snippet": "To create a new API key, go to Settings > Developer > API Keys and click + New API Key",
+    "check": "repaired"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "rest"
+  ],
+  "breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "rate_limit_note": "Essentials plan and above offer no daily API quota or per-request fees. Solo plan rate limits not explicitly documented.",
+  "evidence": [
+   {
+    "url": "https://developer.close.com/#authentication",
+    "snippet": "REST API Reference Full endpoint docs with schemas, examples, and an interactive API explorer.",
+    "check": "repaired"
+   },
+   {
+    "url": "https://developer.close.com/#authentication",
+    "snippet": "Webhooks & Events Real-time event notifications and a 30-day event log.",
+    "check": "exact"
+   },
+   {
+    "url": "https://close.com/pricing/",
+    "snippet": "No daily API request quota or per-request fees.",
+    "check": "exact"
+   },
+   {
+    "url": "https://developer.close.com/#authentication",
+    "snippet": "Browse 100+ Integrations",
+    "check": "exact"
+   }
+  ]
+ },
+ "mcp": {
+  "official": "https://mcp.close.com/mcp",
+  "community": [],
+  "evidence": [
+   {
+    "url": "https://developer.close.com/mcp",
+    "snippet": "The MCP server URL is https://mcp.close.com/mcp and has “HTTP Streamable” and “OAuth 2.0 Dynamic Client Registration (DCR)” support.",
+    "check": "repaired"
+   },
+   {
+    "url": "https://developer.close.com/mcp",
+    "snippet": "Close's MCP server is officially supported across the Claude ecosystem.",
+    "check": "exact"
+   }
+  ]
+ },
+ "buildability": {
+  "verdict": "ready",
+  "main_blocker": "none",
+  "rationale": "Self-serve free trial, public REST API with webhooks, official MCP server, and Composio toolkit with 75 tools already published.",
+  "composio_existing_toolkit": "yes",
+  "composio_slug": "CLOSE"
+ },
+ "overview_evidence": [
+  {
+   "url": "https://close.com",
+   "snippet": "Close CRM | The CRM That Does the Work"
+  },
+  {
+   "url": "https://close.com/pricing/",
+   "snippet": "Built-in calling, sales dialers, email, SMS, and AI Agents in one CRM."
+  },
+  {
+   "url": "https://developer.close.com/#authentication",
+   "snippet": "Build integrations, automate workflows, and extend Close for your team."
+  }
+ ],
+ "confidence": 0.95,
+ "unknown_reasons": {
+  "auth": "",
+  "access": "",
+  "api_surface": "OpenAPI spec URL not documented; API breadth inferred from 100+ integrations directory and 75 published Composio tools.",
+  "mcp": ""
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 8,
+  "error": null,
+  "cost_usd": 0.064726,
+  "seconds": 72.0
+ }
+}

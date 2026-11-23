@@ -1,0 +1,136 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.11470899999999999,
+  "seconds": 125.1,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://supabase.com/docs/guides/auth/overview",
+  "https://supabase.com/docs/reference/api",
+  "https://supabase.com/docs/guides/database/webhooks",
+  "https://docs.composio.dev/toolkits/supabase.md",
+  "https://supabase.com/docs",
+  "https://supabase.com/docs/guides/getting-started/quickstarts",
+  "https://supabase.com/docs/guides/api",
+  "https://supabase.com/docs/guides/realtime",
+  "https://supabase.com/docs/guides/getting-started/the-supabase-way-to-build",
+  "https://supabase.com/docs/guides/getting-started/api-keys",
+  "https://supabase.com/docs/guides/local-development/cli/getting-started",
+  "https://supabase.com/docs/guides/getting-started/architecture"
+ ],
+ "output": {
+  "one_liner": "An open-source backend-as-a-service platform providing Postgres database, authentication, storage, and real-time subscription APIs.",
+  "app_type": "cloud_platform",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "api_key",
+    "bearer_token"
+   ],
+   "oauth_grant_types": [],
+   "notes": "Supports OAuth2 and personal access tokens (PAT) sent as Bearer tokens. PATs start with 'sbp_' prefix.",
+   "evidence": [
+    {
+     "url": "https://supabase.com/docs/reference/api",
+     "snippet": "All API requests require an access token to be included in the Authorization header: Authorization Bearer <access_token>."
+    },
+    {
+     "url": "https://supabase.com/docs/reference/api",
+     "snippet": "Personal access token (PAT): PATs are tokens with a custom expiry that you manually generate to access the Management API."
+    },
+    {
+     "url": "https://supabase.com/docs/reference/api",
+     "snippet": "OAuth2 allows your application to generate tokens on behalf of a Supabase user, providing secure and limited access."
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/supabase.md",
+     "snippet": "Supabase also supports API key authentication. Choose API Key as the authentication type, then paste a personal access token that starts with sbp_."
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Free tier available with self-serve signup. API keys accessible immediately from dashboard without approval. Local development sandbox via CLI.",
+   "evidence": [
+    {
+     "url": "https://supabase.com/docs/guides/getting-started/api-keys",
+     "snippet": "Every request to your Supabase project carries an API key. Find your keys in Settings > API Keys section."
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/supabase.md",
+     "snippet": "Create one at Account → Access Tokens. Supabase shows it only once, so copy it right away."
+    },
+    {
+     "url": "https://supabase.com/docs/guides/local-development/cli/getting-started",
+     "snippet": "The Supabase CLI runs the entire Supabase stack on your own machine or in a CI environment, so you can build and test locally."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest",
+    "graphql",
+    "websocket"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "120 requests per 1 minute per user, per project or organization, per endpoint on Management API",
+   "evidence": [
+    {
+     "url": "https://supabase.com/docs/guides/api",
+     "snippet": "Supabase auto-generates an API directly from your database schema allowing you to connect through a restful interface."
+    },
+    {
+     "url": "https://supabase.com/docs/guides/api",
+     "snippet": "It exposes everything you need from a CRUD API at the URL https://<project_ref>.supabase.co/rest/v1/."
+    },
+    {
+     "url": "https://supabase.com/docs/guides/database/webhooks",
+     "snippet": "Database Webhooks allow you to send real-time data from your database to another system whenever a table event occurs."
+    },
+    {
+     "url": "https://supabase.com/docs/reference/api",
+     "snippet": "Rate limits: 120 requests per 1 minute per user, per project or organization, per endpoint"
+    },
+    {
+     "url": "https://supabase.com/docs/guides/realtime",
+     "snippet": "Supabase provides a globally distributed Realtime service with Broadcast, Presence, and Postgres Changes features."
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": []
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Self-serve free tier with well-documented REST/GraphQL APIs, 235 available tools, and existing Composio toolkit.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "SUPABASE"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://docs.composio.dev/toolkits/supabase.md",
+    "snippet": "Supabase is an open-source backend-as-a-service providing a Postgres database, authentication, storage, and real-time subscription APIs for building modern applications."
+   },
+   {
+    "url": "https://supabase.com/docs/guides/api",
+    "snippet": "Supabase auto-generates an API directly from your database schema allowing you to connect to your database through a restful interface."
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": "Pages mention MCP capability in local development and AI tools sections but do not publish a URL to an official MCP server."
+  }
+ }
+}

@@ -1,0 +1,143 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.08459999999999998,
+  "seconds": 106.3,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://developers.facebook.com/docs/threads/reference",
+  "https://developers.facebook.com/docs/threads/webhooks",
+  "https://docs.composio.dev/toolkits/threads.md",
+  "https://developers.facebook.com/docs/threads",
+  "https://developers.facebook.com/docs/threads/get-started",
+  "https://github.com/oliverames/meta-mcp-server",
+  "https://github.com/mikusnuz/meta-mcp",
+  "https://github.com/exileum/meta-mcp"
+ ],
+ "output": {
+  "one_liner": "Meta's API for creating and publishing Threads posts, retrieving media and profiles, moderating replies, and accessing insights.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2"
+   ],
+   "oauth_grant_types": [
+    "authorization_code"
+   ],
+   "notes": "OAuth 2.0 protocol with authorization code flow; users grant permissions through Authorization Window before API access.",
+   "evidence": [
+    {
+     "url": "https://developers.facebook.com/docs/threads/get-started",
+     "snippet": "API authentication is handled by Threads user access tokens that conform to the OAuth 2.0 protocol."
+    },
+    {
+     "url": "https://developers.facebook.com/docs/threads/get-started",
+     "snippet": "Authorization codes can be exchanged for Threads user access tokens"
+    }
+   ]
+  },
+  "access": {
+   "status": "app_review",
+   "dev_sandbox": true,
+   "notes": "Developers can test immediately with Threads testers; production use requires app review and app publication.",
+   "evidence": [
+    {
+     "url": "https://developers.facebook.com/docs/threads/get-started",
+     "snippet": "Threads testers can grant your app these permissions at any time."
+    },
+    {
+     "url": "https://developers.facebook.com/docs/threads/get-started",
+     "snippet": "each permission must first be approved through the App Review process"
+    },
+    {
+     "url": "https://developers.facebook.com/docs/threads/webhooks",
+     "snippet": "Your app must have successfully completed App Review to receive webhook notifications for all fields."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "moderate",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Rate limiting details not explicitly documented in provided pages",
+   "evidence": [
+    {
+     "url": "https://developers.facebook.com/docs/threads/reference",
+     "snippet": "The Threads API consists of the following endpoints."
+    },
+    {
+     "url": "https://developers.facebook.com/docs/threads/reference",
+     "snippet": "Upload and publish Threads media objects, check their status, and repost and delete posts."
+    },
+    {
+     "url": "https://developers.facebook.com/docs/threads/reference",
+     "snippet": "Retrieve Threads media objects by ID or keyword."
+    },
+    {
+     "url": "https://developers.facebook.com/docs/threads/reference",
+     "snippet": "Retrieve insights for Threads media objects and users."
+    },
+    {
+     "url": "https://developers.facebook.com/docs/threads/webhooks",
+     "snippet": "Webhooks for Threads allow you to receive real-time notifications for the subscribed topics and fields."
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/threads.md",
+     "snippet": "Tools: 24"
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [
+    "https://github.com/oliverames/meta-mcp-server",
+    "https://github.com/mikusnuz/meta-mcp",
+    "https://github.com/exileum/meta-mcp"
+   ],
+   "evidence": [
+    {
+     "url": "https://github.com/oliverames/meta-mcp-server",
+     "snippet": "The most comprehensive MCP server for Meta's business platform covering Facebook Pages, Instagram, Threads, Ads Manager, Commerce"
+    },
+    {
+     "url": "https://github.com/mikusnuz/meta-mcp",
+     "snippet": "MCP server for Instagram Graph API, Threads API & Meta platform — 57 tools with Graph API v25.0"
+    },
+    {
+     "url": "https://github.com/exileum/meta-mcp",
+     "snippet": "Enables AI assistants to manage Instagram and Threads accounts publish content, handle comments, view insights"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "app_review",
+   "rationale": "Public REST API with moderate breadth, well-documented, self-serve development sandbox, but production use requires Meta app review.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "THREADS"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://developers.facebook.com/docs/threads",
+    "snippet": "Use the Threads API to create and publish posts, retrieve media and profiles, moderate replies, and access insights."
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/threads.md",
+    "snippet": "Category: social media accounts; Auth: OAUTH2; Composio-managed OAuth available? No; Tools: 24"
+   }
+  ],
+  "confidence": 0.92,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "Specific rate limit thresholds not documented in provided pages",
+   "mcp": ""
+  }
+ }
+}

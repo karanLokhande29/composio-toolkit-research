@@ -1,0 +1,25 @@
+{
+ "fields": [
+  "access.status"
+ ],
+ "pages": [
+  "https://api-docs.ecwid.com/reference/authentication"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.011691,
+  "seconds": 6.6,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "access.status",
+    "value": "unknown",
+    "evidence": [],
+    "reason": "The provided page content lacks any text describing signup, pricing, or approval process for obtaining Ecwid API credentials."
+   }
+  ]
+ }
+}

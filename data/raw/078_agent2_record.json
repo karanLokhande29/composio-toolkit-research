@@ -1,0 +1,103 @@
+{
+ "id": 78,
+ "app": "Coda",
+ "category": "Productivity and Project Management",
+ "hint": "coda.io/developers",
+ "one_liner": "Superhuman Docs is a collaborative documentation and productivity platform that lets users programmatically interact with documents, tables, and content.",
+ "app_type": "saas",
+ "auth": {
+  "methods": [
+   "api_key"
+  ],
+  "oauth_grant_types": [],
+  "notes": "API key authentication; PAGE 1 mentions Bearer token transmission.",
+  "evidence": [
+   {
+    "url": "https://coda.io/developers/apis/v1#section/Introduction",
+    "snippet": "some libraries may not work with Bearer authentication",
+    "check": "exact"
+   }
+  ]
+ },
+ "access": {
+  "status": "self_serve_free",
+  "dev_sandbox": true,
+  "notes": "Any developer can sign up for a free workspace and obtain API credentials immediately.",
+  "evidence": [
+   {
+    "url": "https://coda.io/developers/apis/v1#section/Introduction",
+    "snippet": "We make the Superhuman Docs API available to all of our users free of charge, in both free and paid workspaces.",
+    "check": "exact"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "rest"
+  ],
+  "breadth": "broad",
+  "openapi_spec_url": "https://coda.io/apis/v1/openapi.yaml",
+  "webhooks": null,
+  "rate_limit_note": "Per-user: 100 reads/6s, 10 writes/6s, 5 doc-content-writes/10s, 4 list-docs/6s",
+  "evidence": [
+   {
+    "url": "https://coda.io/developers/apis/v1#section/Introduction",
+    "snippet": "The Superhuman Docs REST API is designed to be straightforward to use.",
+    "check": "exact"
+   },
+   {
+    "url": "https://coda.io/developers/apis/v1#section/Introduction",
+    "snippet": "In an effort to standardize our API and make it accessible, we offer an OpenAPI 3.0 specification",
+    "check": "exact"
+   },
+   {
+    "url": "https://coda.io/developers/apis/v1#section/Introduction",
+    "snippet": "Reading data (with the exceptions below): 100 requests per 6 seconds",
+    "check": "exact"
+   }
+  ]
+ },
+ "mcp": {
+  "official": null,
+  "community": [],
+  "evidence": [
+   {
+    "url": "https://coda.io/developers/apis/v1#section/Introduction",
+    "snippet": "you may also want to consider using the Superhuman Docs MCP server . It's optimized for LLM usage",
+    "check": "repaired"
+   }
+  ]
+ },
+ "buildability": {
+  "verdict": "ready",
+  "main_blocker": "none",
+  "rationale": "Self-serve free credentials, comprehensive REST+OpenAPI documentation, and 110 existing Composio tools confirm immediate buildability.",
+  "composio_existing_toolkit": "yes",
+  "composio_slug": "CODA"
+ },
+ "overview_evidence": [
+  {
+   "url": "https://coda.io/developers/apis/v1#section/Introduction",
+   "snippet": "The Superhuman Docs API is a RESTful API that lets you programmatically interact with data in Superhuman Docs"
+  },
+  {
+   "url": "https://coda.io/developers/apis/v1#section/Introduction",
+   "snippet": "List and search documents, Read, insert, upsert, update, and delete rows"
+  }
+ ],
+ "confidence": 0.95,
+ "unknown_reasons": {
+  "auth": "",
+  "access": "",
+  "api_surface": "Webhooks not mentioned in provided pages.",
+  "mcp": "Pages reference official MCP server with guide link but do not provide GitHub repository or package repository URL for the server code."
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 10,
+  "error": null,
+  "cost_usd": 0.080614,
+  "seconds": 107.4
+ }
+}

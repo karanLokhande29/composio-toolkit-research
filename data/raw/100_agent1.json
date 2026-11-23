@@ -1,0 +1,135 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.09287799999999999,
+  "seconds": 106.7,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://docs.composio.dev/toolkits/grain.md",
+  "https://grain.com",
+  "https://developers.grain.com",
+  "https://grain.com/pricing",
+  "https://developers.grain.com/mcp/",
+  "https://developers.grain.com/authentication.html",
+  "https://developers.grain.com/rate-limits.html",
+  "https://grain.com/blog/arrows-customer-success-grain",
+  "https://github.com/mcpgod/cli",
+  "https://github.com/alessandro-afloarei/shadowgit-mcp",
+  "https://github.com/autodesk-platform-services/aps-mcp-server-nodejs"
+ ],
+ "output": {
+  "one_liner": "An AI notetaker that records, transcribes, and organizes meetings for teams.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "bearer_token",
+    "oauth2"
+   ],
+   "oauth_grant_types": [
+    "authorization_code"
+   ],
+   "notes": "Supports Personal Access Tokens (PAT) and Workspace Access Tokens (WAT) sent as Bearer tokens in Authorization header, plus OAuth2 with Authorization Code flow and PKCE. OAuth2 tokens expire and support refresh.",
+   "evidence": [
+    {
+     "url": "https://developers.grain.com/authentication.html",
+     "snippet": "To authenticate API calls, the client must add the following header: Authorization: Bearer TOKEN"
+    },
+    {
+     "url": "https://developers.grain.com/authentication.html",
+     "snippet": "Personal Access Token (PAT) authenticates requests as you, with the same access you have in Grain."
+    },
+    {
+     "url": "https://developers.grain.com/authentication.html",
+     "snippet": "The API supports a standard OAuth2 Authorization Code flow, including the PKCE extension for client-side only authentication."
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Free plan available with unlimited meetings up to 45 minutes and 30-day history. Personal Access Tokens can be generated at no cost at grain.com/app/settings/integrations.",
+   "evidence": [
+    {
+     "url": "https://grain.com",
+     "snippet": "Grain is free to use, simple to set up, and affordable for your entire company."
+    },
+    {
+     "url": "https://grain.com/pricing",
+     "snippet": "Free forever for individuals. Upgrade to Pro for longer meetings and full history, or to Business for shared workspace meeting memory in Claude, ChatGPT, and Grain."
+    },
+    {
+     "url": "https://grain.com",
+     "snippet": "Unlimited meetings up to 45 minutes each, 30-day history, unlimited AI notes, live transcripts, bot-free capture, and Claude & ChatGPT connections."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "moderate",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "30 requests bucket capacity, 2 req/sec refill rate, 120 req/min sustained. Returns 429 Too Many Requests when exceeded.",
+   "evidence": [
+    {
+     "url": "https://developers.grain.com",
+     "snippet": "The Grain API lets you read and manage recordings, highlights, uploads, and more."
+    },
+    {
+     "url": "https://developers.grain.com/rate-limits.html",
+     "snippet": "Bucket capacity: 30 requests, Refill rate: 2 req/sec"
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/grain.md",
+     "snippet": "Create a Grain webhook subscription after Grain verifies that the public HTTPS callback returns a 2xx response."
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/grain.md",
+     "snippet": "List Grain webhook subscriptions, optionally filtering by event type or enabled state."
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://api.grain.com/_/mcp",
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://developers.grain.com/mcp/",
+     "snippet": "The Grain MCP (Model Context Protocol) connects Claude.ai (and other AI chat clients) directly to your meeting data in Grain."
+    },
+    {
+     "url": "https://developers.grain.com/authentication.html",
+     "snippet": "Tokens with the personal scope, including Personal Access Tokens, also authenticate the Grain MCP server at https://api.grain.com/_/mcp"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Composio toolkit already exists; self-serve free credentials available; documented REST API with webhooks, 17 tools, and both token and OAuth2 auth.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "GRAIN"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://docs.composio.dev/toolkits/grain.md",
+    "snippet": "Grain records, transcribes, and organizes meetings so teams can review conversations, share insights, and manage meeting content."
+   },
+   {
+    "url": "https://grain.com",
+    "snippet": "Grain is an AI notetaker and conversation intelligence platform that records video calls, Slack huddles, and in-person meetings to provide accurate summaries, insights, and coaching feedback."
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  }
+ }
+}

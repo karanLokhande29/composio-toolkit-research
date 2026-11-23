@@ -1,0 +1,132 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.077465,
+  "seconds": 97.8,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://docs.higgsfield.ai",
+  "https://docs.composio.dev/toolkits/higgsfield.md",
+  "https://higgsfield.ai/cli",
+  "https://higgsfield.ai/mcp",
+  "https://higgsfield.ai/pricing",
+  "https://higgsfield.ai/creator-partnership-program",
+  "https://docs.higgsfield.ai/docs/authentication",
+  "https://docs.higgsfield.ai/docs/concepts/rate-limits",
+  "https://console.higgsfield.ai",
+  "https://docs.higgsfield.ai/docs/api-reference/overview",
+  "https://docs.higgsfield.ai/docs/quickstart"
+ ],
+ "output": {
+  "one_liner": "Higgsfield provides an asynchronous REST API for generating images and videos through generative media models with polling and webhook support.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "api_key"
+   ],
+   "oauth_grant_types": [],
+   "notes": "Composite API key (KEY_ID:KEY_SECRET pair) sent in Authorization header; legacy hf-api-key and hf-secret headers also supported.",
+   "evidence": [
+    {
+     "url": "https://docs.higgsfield.ai/docs/authentication",
+     "snippet": "Authenticate server-side API requests with your Higgsfield key and secret."
+    },
+    {
+     "url": "https://docs.higgsfield.ai/docs/authentication",
+     "snippet": "Create and manage API credentials in Higgsfield Console."
+    }
+   ]
+  },
+  "access": {
+   "status": "unknown",
+   "dev_sandbox": null,
+   "notes": "Self-serve account and credential creation via Higgsfield Console is documented. Pages state credentials grant 'access to your account and its balance' and pricing is per-request ($2 max for typical models). However, pages do not explicitly state whether a free tier, trial, or sandbox environment is available.",
+   "evidence": [
+    {
+     "url": "https://docs.higgsfield.ai/docs/authentication",
+     "snippet": "API credentials grant access to your account and its balance."
+    },
+    {
+     "url": "https://docs.higgsfield.ai/docs/quickstart",
+     "snippet": "Prerequisites: A Higgsfield Console account, An API key ID and secret"
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/higgsfield.md",
+     "snippet": "Instant pricing: Soul Standard: varies by resolution and image count; $2 max per request."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "moderate",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Account and model-specific concurrency limits; queue limits with 429 Too Many Requests and Retry-After header; endpoint-specific limits documented.",
+   "evidence": [
+    {
+     "url": "https://docs.higgsfield.ai/docs/api-reference/overview",
+     "snippet": "The API reference is generated from the public OpenAPI specification."
+    },
+    {
+     "url": "https://docs.higgsfield.ai",
+     "snippet": "poll for the result or receive a webhook when processing finishes."
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/higgsfield.md",
+     "snippet": "Optional public HTTPS URL that receives the terminal completed, failed, or nsfw payload."
+    },
+    {
+     "url": "https://docs.higgsfield.ai/docs/concepts/rate-limits",
+     "snippet": "Design integrations for account and model concurrency limits."
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://higgsfield.ai/cli",
+     "snippet": "Higgsfield uses MCP (Model Context Protocol), an open standard that gives AI agents access to external tools."
+    },
+    {
+     "url": "https://higgsfield.ai/cli",
+     "snippet": "Add the Higgsfield MCP server URL in your agent's settings and authenticate through your Higgsfield account."
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "paid_plan",
+   "rationale": "REST API is well-documented with OpenAPI spec, self-serve credentials, webhooks, and published rate limits; Composio toolkit already built with 14 tools. Friction: pages do not confirm free tier exists; balance/credits model implies cost barrier.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "HIGGSFIELD"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://docs.higgsfield.ai",
+    "snippet": "Generate images and videos through one authenticated, asynchronous API."
+   },
+   {
+    "url": "https://higgsfield.ai/cli",
+    "snippet": "Create images and videos directly from your prompts in any AI tool"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/higgsfield.md",
+    "snippet": "Submit a ByteDance Seedance 2.5 text-to-video request through Higgsfield using the connected API key"
+   }
+  ],
+  "confidence": 0.82,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "Pages document self-serve Console account creation and credential management, plus pricing-per-request structure. However, do not explicitly state whether free credits, free tier, free trial, or approval requirement exists. The term 'your account and its balance' and per-request pricing suggest payment is required, but this is not stated.",
+   "api_surface": "",
+   "mcp": "Pages confirm Higgsfield publishes an MCP server and reference 'Higgsfield MCP server URL' for agent configuration, but the actual server endpoint URL is not provided in the documentation."
+  }
+ }
+}

@@ -44,7 +44,15 @@
    "js_rendered": false
   },
   {
-   "url": "https://developer.salesforce.com/docs",
+   "url": "https://developer.salesforce.com/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.salesforce.com/docs/apis",
    "purpose": "overview",
    "source": "search",
    "status": 200,
@@ -52,7 +60,7 @@
    "js_rendered": true
   },
   {
-   "url": "https://help.salesforce.com/s/articleView?id=sf.remoteaccess_oauth_tokens_scopes.htm",
+   "url": "https://help.salesforce.com/s/articleView?id=sf.remoteaccess_authenticate.htm",
    "purpose": "auth",
    "source": "search",
    "status": 200,
@@ -60,56 +68,24 @@
    "js_rendered": true
   },
   {
-   "url": "https://developer.salesforce.com/signup",
-   "purpose": "developer access/sandbox signup",
+   "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_understanding_authentication.htm",
+   "purpose": "auth",
    "source": "search",
    "status": 200,
-   "ok": false,
-   "js_rendered": true
+   "ok": true,
+   "js_rendered": false
   },
   {
-   "url": "https://developer.salesforce.com/platform/sandbox",
+   "url": "https://developer.salesforce.com/signup",
    "purpose": "sandbox",
    "source": "search",
-   "status": 404,
+   "status": 200,
    "ok": false,
    "js_rendered": true
   },
   {
-   "url": "https://www.salesforce.com/form/developer/pardot-isvforce-signup/",
+   "url": "https://developer.salesforce.com/partners",
    "purpose": "partner programme",
-   "source": "search",
-   "status": 200,
-   "ok": true,
-   "js_rendered": false
-  },
-  {
-   "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/",
-   "purpose": "API reference",
-   "source": "search",
-   "status": 200,
-   "ok": false,
-   "js_rendered": true
-  },
-  {
-   "url": "https://developer.salesforce.com/docs/atlas.en-us.salesforce_app_limits_cheatsheet.meta/salesforce_app_limits_cheatsheet/",
-   "purpose": "rate limits",
-   "source": "search",
-   "status": 200,
-   "ok": false,
-   "js_rendered": true
-  },
-  {
-   "url": "https://developer.salesforce.com/docs/atlas.en-us.platform_events.meta/platform_events/platform_events_intro.htm",
-   "purpose": "webhooks/events",
-   "source": "search",
-   "status": 200,
-   "ok": true,
-   "js_rendered": false
-  },
-  {
-   "url": "https://developer.salesforce.com/docs/platform/einstein-1-mcp",
-   "purpose": "MCP server",
    "source": "search",
    "status": 404,
    "ok": false,
@@ -122,6 +98,46 @@
    "status": 200,
    "ok": true,
    "js_rendered": false
+  },
+  {
+   "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_rest.htm",
+   "purpose": "api reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/",
+   "purpose": "api reference",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_rate_limiting.htm",
+   "purpose": "rate limits",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.salesforce.com/docs/atlas.en-us.platform_events.meta/platform_events/platform_event_webhook.htm",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.salesforce.com/docs/platform/mcp/overview",
+   "purpose": "mcp server",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
   },
   {
    "url": "https://github.com/salesforcecli/mcp",
@@ -229,6 +245,38 @@
   },
   {
    "url": "https://www.salesforce.com/in/small-business/pricing/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.salesforce.com/in/services/pricing/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.salesforce.com/in/partners/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.salesforce.com/in/partners/become-a-partner/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.salesforce.com/in/pricing/",
    "purpose": "crawl",
    "source": "crawl",
    "status": 200,

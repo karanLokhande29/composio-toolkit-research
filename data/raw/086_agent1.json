@@ -1,0 +1,105 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.06271700000000001,
+  "seconds": 94.8,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://docs.composio.dev/toolkits/quickbooks.md",
+  "https://github.com/intuit/quickbooks-online-mcp-server",
+  "https://github.com/Scottcjn/qb-auto",
+  "https://github.com/CDataSoftware/quickbooks-mcp-server-by-cdata"
+ ],
+ "output": {
+  "one_liner": "Cloud-based accounting and financial management software for small businesses and enterprises.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2"
+   ],
+   "oauth_grant_types": [],
+   "notes": "OAuth 2.0 required; Composio provides managed OAuth for seamless integration.",
+   "evidence": [
+    {
+     "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+     "snippet": "This server uses OAuth 2.0 to authenticate to a QuickBooks Online company."
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Sandbox freely available for development via Intuit Developer Portal; self-serve app registration. Production likely requires QuickBooks subscription.",
+   "evidence": [
+    {
+     "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+     "snippet": "You must register an app on the Intuit Developer Portal and complete a one-time, browser-based OAuth handshake."
+    },
+    {
+     "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+     "snippet": "Create or use a sandbox company under the Sandbox top-level menu item in the dev portal."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": null,
+   "rate_limit_note": "",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/quickbooks.md",
+     "snippet": "Create an eCheck payment through QuickBooks Payments API using customer bank account and routing details for ACH debit."
+    },
+    {
+     "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+     "snippet": "It includes full CRUD operations for 29 entity types and 11 financial reports, giving comprehensive access to QuickBooks."
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://github.com/intuit/quickbooks-online-mcp-server",
+   "community": [
+    "https://github.com/Scottcjn/qb-auto"
+   ],
+   "evidence": [
+    {
+     "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+     "snippet": "The QuickBooks MCP Server lets AI assistants access QuickBooks data via a standard interface using Model Context Protocol."
+    },
+    {
+     "url": "https://github.com/Scottcjn/qb-auto",
+     "snippet": "QuickBooks Online MCP server for Claude Code — 8 automation tools replacing 50K-token snapshots with 200-token extraction."
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Composio toolkit already published with 119 tools, self-serve OAuth2, documented API, and sandbox availability for development.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "quickbooks"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://docs.composio.dev/toolkits/quickbooks.md",
+    "snippet": "Auth: OAUTH2 Composio-managed OAuth available? Yes Tools: 119"
+   },
+   {
+    "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+    "snippet": "complete QuickBooks Online API integration for Claude Code and other MCP-compatible clients with full CRUD operations."
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "Pages show sandbox is free, but do not explicitly state whether production API requires paid QuickBooks subscription.",
+   "api_surface": "Native API style (REST/GraphQL/etc.) not documented; pages describe MCP and toolkit wrappers only. Webhooks and rate limits not mentioned.",
+   "mcp": ""
+  }
+ }
+}

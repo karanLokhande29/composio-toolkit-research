@@ -1,0 +1,40 @@
+{
+ "fields": [
+  "access.status"
+ ],
+ "pages": [
+  "https://docs.ahrefs.com/en/mcp/docs/introduction",
+  "https://ahrefs.com/api/pricing",
+  "https://docs.ahrefs.com/api"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.038919,
+  "seconds": 7.1,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "access.status",
+    "value": "paid_plan_required",
+    "evidence": [
+     {
+      "url": "https://docs.ahrefs.com/en/mcp/docs/introduction",
+      "snippet": "The remote MCP server is available on paid plans starting from Lite."
+     },
+     {
+      "url": "https://docs.ahrefs.com/api",
+      "snippet": "Ahrefs API is available on eligible paid plans"
+     },
+     {
+      "url": "https://ahrefs.com/api/pricing",
+      "snippet": "Try API endpoints without an Enterprise plan"
+     }
+    ],
+    "reason": "Both REST API and MCP require an eligible paid plan to get working credentials; free test queries exist but are explicitly limited, so self-serve paid purchase (no sales call needed) applies."
+   }
+  ]
+ }
+}

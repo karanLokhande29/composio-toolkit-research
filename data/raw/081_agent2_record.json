@@ -1,0 +1,113 @@
+{
+ "id": 81,
+ "app": "Stripe",
+ "category": "Finance and Fintech",
+ "hint": "stripe.com/docs/api",
+ "one_liner": "A payments platform enabling businesses to accept, process, and manage payments worldwide.",
+ "app_type": "saas",
+ "auth": {
+  "methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "oauth_grant_types": [],
+  "notes": "Stripe uses API keys for HTTP Basic Auth and Bearer Token authentication, plus OAuth2 for Connect applications.",
+  "evidence": [
+   {
+    "url": "https://stripe.com/docs/api/authentication",
+    "snippet": "The Stripe API uses API keys to authenticate requests.",
+    "check": "exact"
+   },
+   {
+    "url": "https://stripe.com/docs/api/authentication",
+    "snippet": "The Stripe API authenticates requests using HTTP Basic Auth",
+    "check": "repaired"
+   },
+   {
+    "url": "https://stripe.com/docs/api/authentication",
+    "snippet": "If you need to authenticate using bearer auth",
+    "check": "exact"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/stripe.md",
+    "snippet": "**Auth:** API_KEY, OAUTH2",
+    "check": "exact"
+   }
+  ]
+ },
+ "access": {
+  "status": "self_serve_free",
+  "dev_sandbox": true,
+  "notes": "Developers can create a Stripe account and immediately access sandbox/test API keys without payment or approval.",
+  "evidence": [
+   {
+    "url": "https://stripe.com/docs/development/quickstart",
+    "snippet": "This sample uses the default keys of your Stripe user account for your sandbox environment.",
+    "check": "repaired"
+   },
+   {
+    "url": "https://stripe.com/docs/keys",
+    "snippet": "Use a sandbox, and its associated test API keys, as you build your integration.",
+    "check": "exact"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "rest"
+  ],
+  "breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "rate_limit_note": "Pages reference rate limits in navigation menu but do not detail specific rate limit policies.",
+  "evidence": [
+   {
+    "url": "https://stripe.com/docs/api",
+    "snippet": "The Stripe API is organized around REST",
+    "check": "repaired"
+   },
+   {
+    "url": "https://stripe.com/docs/webhooks",
+    "snippet": "You can create an HTTPS webhook endpoint to receive events.",
+    "check": "exact"
+   }
+  ]
+ },
+ "mcp": {
+  "official": null,
+  "community": [],
+  "evidence": []
+ },
+ "buildability": {
+  "verdict": "ready",
+  "main_blocker": "none",
+  "rationale": "Self-serve free sandbox credentials, well-documented REST API with 435 tools, webhook support, and existing Composio toolkit enable immediate toolkit development.",
+  "composio_existing_toolkit": "yes",
+  "composio_slug": "STRIPE"
+ },
+ "overview_evidence": [
+  {
+   "url": "https://stripe.com/pricing",
+   "snippet": "Access a complete payments platform with simple, pay-as-you-go pricing."
+  },
+  {
+   "url": "https://stripe.com/docs/api",
+   "snippet": "The Stripe API is organized around REST."
+  }
+ ],
+ "confidence": 0.95,
+ "unknown_reasons": {
+  "auth": "",
+  "access": "",
+  "api_surface": "OpenAPI/Swagger spec URL not mentioned; specific rate limit values not documented.",
+  "mcp": "No MCP server availability information found in provided pages."
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 10,
+  "error": null,
+  "cost_usd": 0.07336800000000002,
+  "seconds": 84.2
+ }
+}

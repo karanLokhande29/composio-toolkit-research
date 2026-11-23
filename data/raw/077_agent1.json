@@ -1,0 +1,138 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.090954,
+  "seconds": 99.5,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://docs.clickup.com/en/articles/authentication",
+  "https://docs.composio.dev/toolkits/clickup.md",
+  "https://clickup.com/api",
+  "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
+  "https://developer.clickup.com/docs/authentication",
+  "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server-1",
+  "https://developer.clickup.com/docs/mcp-tools",
+  "https://help.clickup.com/hc/en-us/categories/5735460831255-Integrations-API-and-MCP",
+  "https://help.clickup.com/hc/en-us/articles/10129535087383-Intro-to-pricing",
+  "https://developer.clickup.com/reference",
+  "https://developer.clickup.com/docs/webhooks",
+  "https://github.com/taazkareem/clickup-mcp-server"
+ ],
+ "output": {
+  "one_liner": "ClickUp unifies tasks, docs, goals, and chat in a single platform for team collaboration and project management.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "bearer_token"
+   ],
+   "oauth_grant_types": [
+    "authorization_code"
+   ],
+   "notes": "Personal API tokens and OAuth 2.0 both supported for authentication",
+   "evidence": [
+    {
+     "url": "https://developer.clickup.com/docs/authentication",
+     "snippet": "For personal use, authenticate with your personal API token"
+    },
+    {
+     "url": "https://developer.clickup.com/docs/authentication",
+     "snippet": "For apps or integrations that other people use, use the OAuth flow"
+    },
+    {
+     "url": "https://developer.clickup.com/docs/authentication",
+     "snippet": "ClickUp uses the authorization code grant type"
+    },
+    {
+     "url": "https://developer.clickup.com/docs/authentication",
+     "snippet": "Add the token to the header: Authorization: {personal_token}. This is also needed."
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": null,
+   "notes": "API and MCP available on all plans including free tier; OAuth app creation requires workspace owner/admin",
+   "evidence": [
+    {
+     "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
+     "snippet": "ClickUp's MCP Server is available on all plans"
+    },
+    {
+     "url": "https://help.clickup.com/hc/en-us/articles/10129535087383-Intro-to-pricing",
+     "snippet": "A new ClickUp account is automatically set up with a Free Forever Workspace"
+    },
+    {
+     "url": "https://developer.clickup.com/docs/authentication",
+     "snippet": "Only Workspace owners or admins can create OAuth apps"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Rate limits vary by plan and MCP add-on status; rolling 24-hour limits apply",
+   "evidence": [
+    {
+     "url": "https://clickup.com/api",
+     "snippet": "Build integrations and apps with our Public API"
+    },
+    {
+     "url": "https://developer.clickup.com/docs/webhooks",
+     "snippet": "Webhooks allow you to subscribe to events in your Workspace"
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/clickup.md",
+     "snippet": "Tools: 165"
+    },
+    {
+     "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
+     "snippet": "ClickUp's MCP Server has rate limits that depend on two criteria"
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://mcp.clickup.com/mcp",
+   "community": [
+    "https://github.com/taazkareem/clickup-mcp-server"
+   ],
+   "evidence": [
+    {
+     "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
+     "snippet": "Our MCP server URL is https://mcp.clickup.com/mcp"
+    },
+    {
+     "url": "https://github.com/taazkareem/clickup-mcp-server",
+     "snippet": "ClickUp MCP Server - Integrate ClickUp project management with AI through Model Context Protocol"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Public API with self-serve free access, comprehensive REST documentation, OAuth support, official MCP server, and existing Composio toolkit already deployed.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "CLICKUP"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://docs.composio.dev/toolkits/clickup.md",
+    "snippet": "ClickUp unifies tasks, docs, goals, and chat in a single platform, allowing teams to plan, organize, and collaborate across projects with customizable workflows"
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  }
+ }
+}

@@ -1,0 +1,40 @@
+{
+ "fields": [
+  "mcp.official"
+ ],
+ "pages": [
+  "https://developers.intercom.com/docs/guides/mcp",
+  "https://github.com/fabian1710/mcp-intercom",
+  "https://www.intercom.com/",
+  "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+  "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication/setting-up-oauth",
+  "https://developers.intercom.com/docs/build-an-integration/getting-started",
+  "https://www.intercom.com/help/en/articles/9086429-create-a-developer-workspace-in-intercom"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.07632,
+  "seconds": 5.9,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "mcp.official",
+    "value": "https://mcp.intercom.com/mcp",
+    "evidence": [
+     {
+      "url": "https://developers.intercom.com/docs/guides/mcp",
+      "snippet": "Intercom hosts a remote MCP server that follows the authenticated remote MCP specification"
+     },
+     {
+      "url": "https://developers.intercom.com/docs/guides/mcp",
+      "snippet": "https://mcp.intercom.com/mcp"
+     }
+    ],
+    "reason": "Intercom's own developer docs host and document this MCP server endpoint directly, confirming it is vendor-official."
+   }
+  ]
+ }
+}

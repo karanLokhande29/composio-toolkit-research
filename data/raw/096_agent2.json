@@ -1,0 +1,123 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.086237,
+  "seconds": 109.9,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://docs.devin.ai/api-reference/authentication",
+  "https://docs.devin.ai/",
+  "https://docs.devin.ai/api-reference/overview",
+  "https://docs.composio.dev/toolkits/devin_mcp.md",
+  "https://docs.devin.ai/api-reference/sessions/create-a-new-devin-session",
+  "https://docs.devin.ai/api-reference/sessions/retrieve-details-about-an-existing-session",
+  "https://docs.devin.ai/enterprise/getting-started/get-started",
+  "https://docs.devin.ai/work-with-devin/browser-auth"
+ ],
+ "output": {
+  "one_liner": "Devin is an AI assistant for automating repetitive software engineering tasks including code review and codebase analysis.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "bearer_token"
+   ],
+   "oauth_grant_types": [],
+   "notes": "Bearer token authentication via Authorization header. Supports Service User API Keys (cog_ prefix) for automation and Personal Access Tokens for human access.",
+   "evidence": [
+    {
+     "url": "https://docs.devin.ai/api-reference/authentication",
+     "snippet": "Include your token in the Authorization header of every API request"
+    },
+    {
+     "url": "https://docs.devin.ai/api-reference/authentication",
+     "snippet": "A Service User API Key authenticates as the service user"
+    },
+    {
+     "url": "https://docs.devin.ai/api-reference/authentication",
+     "snippet": "A Personal Access Token authenticates as the human user who created it"
+    }
+   ]
+  },
+  "access": {
+   "status": "unknown",
+   "dev_sandbox": null,
+   "notes": "Pages document Individual and Teams plans but do not state whether API access is free-tier, paid-only, or requires approval; no explicit mention of free developer credentials.",
+   "evidence": [
+    {
+     "url": "https://docs.devin.ai/",
+     "snippet": "Individual and Teams plans are available."
+    },
+    {
+     "url": "https://docs.devin.ai/",
+     "snippet": "If your company is already working with Cognition, you can request permissions from your Administrator"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": null,
+   "rate_limit_note": "Rate limiting enforced; specific limit values not documented.",
+   "evidence": [
+    {
+     "url": "https://docs.devin.ai/api-reference/overview",
+     "snippet": "Learn how to programmatically interact with Devin using our REST APIs"
+    },
+    {
+     "url": "https://docs.devin.ai/api-reference/overview",
+     "snippet": "The API is organized into two scopes: Organization API and Enterprise API"
+    },
+    {
+     "url": "https://docs.devin.ai/api-reference/overview",
+     "snippet": "429 Too Many Requests: Rate limit exceeded"
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [
+    "https://docs.composio.dev/toolkits/devin_mcp.md"
+   ],
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/devin_mcp.md",
+     "snippet": "Devin MCP Category: model context protocol Auth: API_KEY Tools: 23"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "paid_plan",
+   "rationale": "REST API is well-documented with broad resource coverage and clear bearer-token authentication, but free-tier API credential access is not documented.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "DEVIN_MCP"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://docs.devin.ai/",
+    "snippet": "Devin is most effective when it's part of your team and your existing workflow."
+   },
+   {
+    "url": "https://docs.devin.ai/",
+    "snippet": "Watch Devin browse through documentation, test web applications it builds, download/upload information."
+   },
+   {
+    "url": "https://docs.devin.ai/",
+    "snippet": "Common, repetitive engineering tasks"
+   }
+  ],
+  "confidence": 0.72,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "Pages document Teams and Enterprise plans but do not specify pricing tier, free-tier eligibility for API access, or sandbox/developer account availability.",
+   "api_surface": "OpenAPI specification not referenced; webhook support not mentioned in provided documentation.",
+   "mcp": "No URL for official vendor-published MCP server documented; only Composio's third-party toolkit referenced."
+  }
+ }
+}

@@ -1,0 +1,142 @@
+{
+ "id": 93,
+ "app": "Fathom",
+ "category": "AI, Research and Media-native",
+ "hint": "fathom.video",
+ "one_liner": "Fathom is an AI meeting assistant that automatically captures, transcribes, and summarizes meetings.",
+ "app_type": "saas",
+ "auth": {
+  "methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "oauth_grant_types": [],
+  "notes": "OAuth2 and API key both supported; Composio-managed OAuth available without requiring Fathom OAuth app setup",
+  "evidence": [
+   {
+    "url": "https://docs.composio.dev/toolkits/fathom.md",
+    "snippet": "**Auth:** OAUTH2, API_KEY",
+    "check": "exact"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/fathom.md",
+    "snippet": "Select **OAuth 2.0**, choose **Composio Managed** under **Credentials**, keep the `public_api` scope selected",
+    "check": "exact"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/fathom.md",
+    "snippet": "Create a key in Fathom under **Settings** > **API Access**, create a Fathom auth config with the **API Key** authentication type",
+    "check": "exact"
+   }
+  ]
+ },
+ "access": {
+  "status": "self_serve_free",
+  "dev_sandbox": null,
+  "notes": "Free tier available permanently with no payment required; includes API access and integrations",
+  "evidence": [
+   {
+    "url": "https://fathom.video",
+    "snippet": "Get started - free forever",
+    "check": "exact"
+   },
+   {
+    "url": "https://fathom.video/pricing",
+    "snippet": "Free $ 0 Free forever. GET STARTED 90 day guarantee Unlimited recordings + transcriptions",
+    "check": "repaired"
+   },
+   {
+    "url": "https://fathom.video/pricing",
+    "snippet": "Public API & MCP Build custom integrations and workflows",
+    "check": "exact"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "none"
+  ],
+  "breadth": "moderate",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "rate_limit_note": "HTTP 429 returned for rate limit exceeded; rate limit headers included in responses",
+  "evidence": [
+   {
+    "url": "https://docs.composio.dev/toolkits/fathom.md",
+    "snippet": "Tool to create a webhook to receive new meeting content from Fathom",
+    "check": "exact"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/fathom.md",
+    "snippet": "Tool to retrieve the AI-generated summary for a specific recording",
+    "check": "exact"
+   },
+   {
+    "url": "https://github.com/Dot-Fun/fathom-mcp",
+    "snippet": "Rate-limited requests return HTTP 429 Monitor rate limit headers: RateLimit-Limit",
+    "check": "repaired"
+   }
+  ]
+ },
+ "mcp": {
+  "official": "https://developers.fathom.ai/mcp-docs",
+  "community": [
+   "https://github.com/agencyenterprise/fathom-mcp-server",
+   "https://github.com/Dot-Fun/fathom-mcp",
+   "https://github.com/sourcegate/mcp-fathom-server"
+  ],
+  "evidence": [
+   {
+    "url": "https://github.com/agencyenterprise/fathom-mcp-server",
+    "snippet": "Fathom now has an offical mcp: https://developers.fathom.ai/mcp-docs",
+    "check": "exact"
+   },
+   {
+    "url": "https://github.com/Dot-Fun/fathom-mcp",
+    "snippet": "Model Context Protocol server for Fathom AI - access meeting recordings, transcripts, summaries",
+    "check": "exact"
+   },
+   {
+    "url": "https://github.com/sourcegate/mcp-fathom-server",
+    "snippet": "MCP Fathom Server An MCP (Model Context Protocol) server that integrates with Fathom AI's meeting API, enabling Claude to search",
+    "check": "repaired"
+   }
+  ]
+ },
+ "buildability": {
+  "verdict": "ready",
+  "main_blocker": "none",
+  "rationale": "Composio toolkit already built with 10 tools; self-serve free credentials available; documented API with webhooks.",
+  "composio_existing_toolkit": "yes",
+  "composio_slug": "FATHOM"
+ },
+ "overview_evidence": [
+  {
+   "url": "https://fathom.video",
+   "snippet": "Fathom summarizes your meetings so you can focus on the conversation"
+  },
+  {
+   "url": "https://fathom.video/pricing",
+   "snippet": "Build custom integrations and workflows"
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/fathom.md",
+   "snippet": "Composio-managed OAuth needs no Fathom OAuth app or API key"
+  }
+ ],
+ "confidence": 0.85,
+ "unknown_reasons": {
+  "auth": "",
+  "access": "",
+  "api_surface": "Pages do not explicitly state underlying API style (REST vs GraphQL etc.); breadth inferred from 10 Composio tools but full API surface not fully detailed",
+  "mcp": ""
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 6,
+  "error": null,
+  "cost_usd": 0.09981,
+  "seconds": 126.6
+ }
+}

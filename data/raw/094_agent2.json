@@ -1,0 +1,115 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.090214,
+  "seconds": 107.5,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://docs.composio.dev/toolkits/consensus.md",
+  "https://docs.consensus.app",
+  "https://consensus.app/pricing",
+  "https://docs.consensus.app/consensus-mcp",
+  "https://docs.consensus.app/get-started/full-text-access",
+  "https://docs.consensus.app/core-features/mcp",
+  "https://docs.consensus.app/search-basics/research-an-author",
+  "https://github.com/antonbabenko/deliberation",
+  "https://github.com/wheattoast11/openrouter-deep-research-mcp"
+ ],
+ "output": {
+  "one_liner": "An AI search engine for research that searches 400+ million scholarly articles and returns evidence-based answers linked to peer-reviewed papers.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "api_key",
+    "oauth2"
+   ],
+   "oauth_grant_types": [],
+   "notes": "API uses API_KEY; MCP uses OAuth2",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/consensus.md",
+     "snippet": "**Auth:** API_KEY"
+    },
+    {
+     "url": "https://docs.consensus.app/consensus-mcp",
+     "snippet": "OAuth will open in your browser automatically on first use."
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": null,
+   "notes": "Free tier available with plan-dependent usage limits; no approval or sales process required.",
+   "evidence": [
+    {
+     "url": "https://docs.consensus.app/core-features/mcp",
+     "snippet": "It's self-serve and open to everyone."
+    },
+    {
+     "url": "https://docs.consensus.app",
+     "snippet": "It's free to start."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "narrow",
+   "openapi_spec_url": null,
+   "webhooks": null,
+   "rate_limit_note": "Search usage counts against plan calls; usage limits depend on selected plan tier.",
+   "evidence": [
+    {
+     "url": "https://docs.consensus.app/core-features/mcp",
+     "snippet": "The Consensus API gives you the same paper search over REST"
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/consensus.md",
+     "snippet": "Tools: 1"
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/consensus.md",
+     "snippet": "Search usage counts against plan calls, full-text excerpts are available on paid plans."
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://mcp.consensus.app/mcp",
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://docs.consensus.app/core-features/mcp",
+     "snippet": "The server is hosted, so there's nothing to install: https://mcp.consensus.app/mcp"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Self-serve free API tier, documented REST endpoint, official hosted MCP server, and existing Composio toolkit enable building today.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "CONSENSUS"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://docs.composio.dev/toolkits/consensus.md",
+    "snippet": "Consensus provides evidence-based search across scientific research papers."
+   },
+   {
+    "url": "https://docs.consensus.app",
+    "snippet": "Consensus is an AI search engine for research."
+   }
+  ],
+  "confidence": 0.85,
+  "unknown_reasons": {
+   "auth": "OAuth2 grant type not explicitly stated; authorization_code inferred from browser-based flow description.",
+   "access": "",
+   "api_surface": "OpenAPI specification not documented; webhooks not documented; full API breadth beyond single search endpoint not documented.",
+   "mcp": ""
+  }
+ }
+}

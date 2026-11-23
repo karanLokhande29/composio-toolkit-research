@@ -12,9 +12,9 @@ Human accuracy check: pending.
 - [Source repo](https://github.com/karanLokhande29/composio-toolkit-research): README explains how to run the agent
 
 ## Headlines
-- OAuth2 is the dominant auth pattern: 12 of 12 apps support it, and 8 offer both OAuth2 and a static key/token - so most toolkits need an OAuth app registration, with API keys as the quick path for single-tenant use.
-- Getting credentials is mostly self-serve: 83% of apps let a developer get working credentials alone (free or trial); 1 are gated by an admin, app review, partner programme or sales.
-- Gating clusters by category: Support and Helpdesk is the most self-serve (100%), CRM and Sales the least (80%).
-- The most common blocker is 'paid plan' (3 apps); 7 apps are ready today, 5 ready with caveats, 0 blocked.
-- MCP is already mainstream: 8 vendors ship an official MCP server and 3 more have only community servers.
-- Composio already has toolkits for 11 of the 12; 0 self-serve, ready apps have no Composio toolkit yet - the cheapest net-new wins.
+- Static keys/tokens are the most common auth: 77 of 100 apps accept an API key or token, 74 support OAuth2, and 56 offer both - so most toolkits can start on API-key auth and add OAuth for multi-tenant use.
+- Getting credentials is mostly self-serve: 74% of apps let a developer get working credentials alone (free or trial); 19 are gated by an admin, app review, partner programme or sales.
+- Gating clusters by category: Developer, Infra and Data platforms is the most self-serve (100%), Marketing, Ads, Email and Social the least (40%).
+- The most common blocker is 'paid plan' (13 apps); 58 apps are ready today, 36 ready with caveats, 6 blocked.
+- MCP is already mainstream: 50 vendors ship an official MCP server and 25 more have only community servers.
+- Composio already has toolkits for 80 of the 100; 4 self-serve, ready apps have no Composio toolkit yet - the cheapest net-new wins.

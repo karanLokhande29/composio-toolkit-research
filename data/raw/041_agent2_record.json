@@ -1,0 +1,108 @@
+{
+ "id": 41,
+ "app": "Shopify",
+ "category": "Ecommerce",
+ "hint": "shopify.dev",
+ "one_liner": "An all-in-one commerce platform for creating online stores, accepting payments, and selling across multiple channels.",
+ "app_type": "saas",
+ "auth": {
+  "methods": [
+   "oauth2"
+  ],
+  "oauth_grant_types": [
+   "authorization_code",
+   "client_credentials"
+  ],
+  "notes": "OAuth2 with authorization code flow for standalone/API-only apps and client credentials flow for internal stores. Requests authenticated with X-Shopify-Access-Token header.",
+  "evidence": [
+   {
+    "url": "https://shopify.dev/docs/apps/auth/oauth",
+    "snippet": "they authenticate using the OAuth authorization code grant flow: redirect the merchant to Shopify, get their approval, and exchange a code for an access token",
+    "check": "exact"
+   },
+   {
+    "url": "https://shopify.dev/docs/apps/auth/oauth",
+    "snippet": "If your app only acts on stores in your own Shopify organization, use the client credentials grant instead.",
+    "check": "exact"
+   },
+   {
+    "url": "https://shopify.dev/docs/apps/auth",
+    "snippet": "the token in the X-Shopify-Access-Token header on every GraphQL Admin API request.",
+    "check": "repaired"
+   }
+  ]
+ },
+ "access": {
+  "status": "unknown",
+  "dev_sandbox": null,
+  "notes": "Pages mention free 3-day trial and plans starting at ₹20/month but do not explicitly state whether API credentials are available during the trial or only on paid plans.",
+  "evidence": [
+   {
+    "url": "https://www.shopify.com/pricing",
+    "snippet": "Shopify starts with a free 3-day trial—no credit card required. After your trial, most plans start at just ₹20 per month",
+    "check": "exact"
+   },
+   {
+    "url": "https://shopify.dev/docs/apps/auth/oauth",
+    "snippet": "You have your app's client ID and client secret from the Dev Dashboard.",
+    "check": "exact"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "graphql",
+   "rest"
+  ],
+  "breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "rate_limit_note": "Leaky bucket algorithm with per-API limits varying by plan. GraphQL Admin API charged by calculated query cost.",
+  "evidence": [
+   {
+    "url": "https://shopify.dev/docs/apps/webhooks",
+    "snippet": "When your app needs information about specific events that have occurred on a shop, it can subscribe to Shopify webhook topics",
+    "check": "exact"
+   }
+  ]
+ },
+ "mcp": {
+  "official": null,
+  "community": [],
+  "evidence": [
+   {
+    "url": "https://shopify.dev/",
+    "snippet": "For agent skills and the Dev MCP server, see the Shopify AI Toolkit",
+    "check": "exact"
+   }
+  ]
+ },
+ "buildability": {
+  "verdict": "ready_with_caveats",
+  "main_blocker": "other",
+  "rationale": "API is comprehensively documented (GraphQL, REST, webhooks, rate limits) but developer access to credentials without paid plan is not documented in provided pages.",
+  "composio_existing_toolkit": "no",
+  "composio_slug": null
+ },
+ "overview_evidence": [
+  {
+   "url": "https://www.shopify.com/pricing",
+   "snippet": "Shopify is an all-in-one commerce platform that lets you create an online store, accept payments, and sell in person, on social channels, and in AI chats"
+  }
+ ],
+ "confidence": 0.72,
+ "unknown_reasons": {
+  "auth": "",
+  "access": "Pages show free 3-day trial and ₹20/month paid plans but do not explicitly document whether API credentials are obtainable during trial period or require paid subscription.",
+  "api_surface": "",
+  "mcp": "Pages mention 'Shopify AI Toolkit' and 'Dev MCP server' but provide no URL, documentation, or details about official MCP server publication or community implementations."
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 8,
+  "error": null,
+  "cost_usd": 0.063046,
+  "seconds": 76.5
+ }
+}

@@ -1,0 +1,54 @@
+{
+ "fields": [
+  "api_surface.breadth",
+  "auth.methods"
+ ],
+ "pages": [
+  "https://developer.xero.com",
+  "https://github.com/XeroAPI/xero-mcp-server",
+  "https://docs.composio.dev/toolkits/xero.md"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.049425000000000004,
+  "seconds": 7.6,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "api_surface.breadth",
+    "value": "broad",
+    "evidence": [
+     {
+      "url": "https://developer.xero.com",
+      "snippet": "OAuth 2 API reference Webhooks"
+     },
+     {
+      "url": "https://docs.composio.dev/toolkits/xero.md",
+      "snippet": "**Tools:** 109"
+     }
+    ],
+    "reason": "Composio toolkit lists 109 tools spanning accounting, payroll, assets, projects, and files, indicating a broad API surface."
+   },
+   {
+    "field": "auth.methods",
+    "value": [
+     "oauth2"
+    ],
+    "evidence": [
+     {
+      "url": "https://github.com/XeroAPI/xero-mcp-server",
+      "snippet": "Xero OAuth2 authentication with custom connections"
+     },
+     {
+      "url": "https://docs.composio.dev/toolkits/xero.md",
+      "snippet": "**Auth:** OAUTH2"
+     }
+    ],
+    "reason": "Both the MCP server docs and Composio toolkit page confirm OAuth2 as the authentication method for Xero's API."
+   }
+  ]
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "fields": [
+  "mcp.official"
+ ],
+ "pages": [
+  "https://github.com/github/github-mcp-server",
+  "https://github.com/idosal/git-mcp",
+  "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+  "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps",
+  "https://docs.github.com/en/rest/overview/other-authentication-methods"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.06853799999999999,
+  "seconds": 6.3,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "mcp.official",
+    "value": "https://github.com/github/github-mcp-server",
+    "evidence": [
+     {
+      "url": "https://github.com/github/github-mcp-server",
+      "snippet": "GitHub's official MCP Server"
+     },
+     {
+      "url": "https://github.com/github/github-mcp-server",
+      "snippet": "The GitHub MCP Server connects AI tools directly to GitHub's platform"
+     }
+    ],
+    "reason": "This repo is explicitly described as GitHub's official MCP Server, published under the github org, unlike git-mcp which is a third-party community project by idosal."
+   }
+  ]
+ }
+}

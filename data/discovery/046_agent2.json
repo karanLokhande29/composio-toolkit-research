@@ -1,0 +1,220 @@
+{
+ "id": 46,
+ "app": "Squarespace",
+ "tag": "agent2",
+ "urls": [
+  {
+   "url": "https://developers.squarespace.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.squarespace.com/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.squarespace.com/commerce-apis/overview",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.squarespace.com/commerce-apis/authentication",
+   "purpose": "auth",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developers.squarespace.com/commerce-apis/oauth-overview",
+   "purpose": "auth",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developers.squarespace.com/api-keys",
+   "purpose": "credentials",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developers.squarespace.com/commerce-apis/getting-started",
+   "purpose": "sandbox",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developers.squarespace.com/commerce-apis/rate-limits",
+   "purpose": "rate_limits",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.squarespace.com/commerce-apis/webhooks-overview",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developers.squarespace.com/commerce-apis/webhook-subscriptions",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developers.squarespace.com/openapi",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://github.com/BusyBee3333/squarespace-mcp-2026-complete",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/timncox/squarespace-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/nodemode-dev/formpublisher",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.squarespace.com/mcp/overview",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.squarespace.com/changes/self-service-oauth-credential-management",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.squarespace.com/reseller/products-and-pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.squarespace.com/commerce-apis/oauth",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://account.squarespace.com/developer-apps",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://www.squarespace.com/developer-terms",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.squarespace.com/commerce-apis/webhooksubscriptions",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "BusyBee3333/squarespace-mcp-2026-complete",
+   "url": "https://github.com/BusyBee3333/squarespace-mcp-2026-complete",
+   "stars": 10,
+   "description": "MCP server for Squarespace API - Complete 2026 version with 100+ tools"
+  },
+  {
+   "repo": "timncox/squarespace-mcp",
+   "url": "https://github.com/timncox/squarespace-mcp",
+   "stars": 9,
+   "description": "Let AI agents manage your Squarespace websites — menus, pages, blog posts, products, images, SEO, and site settings through natural language."
+  },
+  {
+   "repo": "nodemode-dev/formpublisher",
+   "url": "https://github.com/nodemode-dev/formpublisher",
+   "stars": 2,
+   "description": "FormPublisher - instead of Wix & Squarespace: the publishing & template platform from the FormAI family of apps for site building. Connects to FormWeb, driven b"
+  },
+  {
+   "repo": "bj-beer/squarespace-mcp-2026-complete",
+   "url": "https://github.com/bj-beer/squarespace-mcp-2026-complete",
+   "stars": 0,
+   "description": "Squarespace MCP Server"
+  },
+  {
+   "repo": "dakshjotwani/squarespace-mcp",
+   "url": "https://github.com/dakshjotwani/squarespace-mcp",
+   "stars": 0,
+   "description": "MCP server + Chrome extension that lets Claude build Squarespace 7.1 sites through the editor's internal API"
+  }
+ ],
+ "composio": {
+  "exact": [],
+  "candidates": []
+ },
+ "search_meta": {}
+}

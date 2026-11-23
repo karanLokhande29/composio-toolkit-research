@@ -1,0 +1,123 @@
+{
+ "id": 37,
+ "app": "systeme.io",
+ "category": "Marketing, Ads, Email and Social",
+ "hint": "systeme.io (funnel builder)",
+ "one_liner": "An all-in-one SaaS platform for building sales funnels, email marketing, online courses, and managing customer relationships.",
+ "app_type": "saas",
+ "auth": {
+  "methods": [
+   "api_key"
+  ],
+  "oauth_grant_types": [],
+  "notes": "API key authentication via X-API-Key header; only authentication method currently available",
+  "evidence": [
+   {
+    "url": "https://developer.systeme.io/",
+    "snippet": "To authenticate with the Systeme.io Public API, your only option right now is to attach your API key to the X-API-Key header of each request.",
+    "check": "exact"
+   }
+  ]
+ },
+ "access": {
+  "status": "self_serve_free",
+  "dev_sandbox": true,
+  "notes": "Free plan available without credit card; API keys generated self-service from dashboard; free plan includes API access with 2,000 contacts",
+  "evidence": [
+   {
+    "url": "https://systeme.io/pricing",
+    "snippet": "Yes, the free plan supports up to 2,000 contacts, 3 sales funnels, 1 blog, 1 course, 1 affiliate program, and 1 custom domain. Emails sent are unlimited. The free plan never expires and does not require a credit card.",
+    "check": "repaired"
+   },
+   {
+    "url": "https://developer.systeme.io/",
+    "snippet": "To begin using the Systeme.io Public API, you must first obtain an authentication key. This key is your ticket to unlocking the API's capabilities. Simply navigate to the profile settings within your Systeme.io dashboard, and generate a new key under the \"Public API keys\" section.",
+    "check": "repaired"
+   },
+   {
+    "url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+    "snippet": "You can create up to 3 API keys per account.",
+    "check": "exact"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "rest"
+  ],
+  "breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "rate_limit_note": "Shared quota across all API keys; X-RateLimit-Remaining header shows remaining requests; returns 429 when limit exceeded",
+  "evidence": [
+   {
+    "url": "https://developer.systeme.io/",
+    "snippet": "Adhering to RESTful conventions, our API ensures an intuitive and consistent interaction pattern for all users.",
+    "check": "exact"
+   },
+   {
+    "url": "https://developer.systeme.io/docs/webhooks",
+    "snippet": "Systeme.io webhooks allow your applications to receive real-time events from your systeme.io account. They allow you to set up many different subscriptions to receive information about the events you are interested in,",
+    "check": "repaired"
+   },
+   {
+    "url": "https://developer.systeme.io/",
+    "snippet": "Shared Quota : The request limit is collectively applied across all your API keys and tokens. The X-RateLimit-Remaining header informs you of the number of requests left in your current rate limit window.",
+    "check": "repaired"
+   },
+   {
+    "url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+    "snippet": "Below you will find the main actions you can perform using our public API: a. Contacts, tags, and custom field management:",
+    "check": "repaired"
+   }
+  ]
+ },
+ "mcp": {
+  "official": null,
+  "community": [],
+  "evidence": [
+   {
+    "url": "https://developer.systeme.io/docs/mcp-server",
+    "snippet": "Welcome to the Systeme.io MCP Server overview. The Model Context Protocol (MCP) is an open standard designed to connect AI models with external data and tools.",
+    "check": "exact"
+   },
+   {
+    "url": "https://developer.systeme.io/docs/mcp-server",
+    "snippet": "The Systeme.io MCP server is in its initial release. We're actively improving it by adding more capabilities and strengthening stability and reliability over time.",
+    "check": "exact"
+   }
+  ]
+ },
+ "buildability": {
+  "verdict": "ready",
+  "main_blocker": "none",
+  "rationale": "Self-serve free credentials available, well-documented REST API with broad resource coverage, webhooks supported, rate limiting documented, and official MCP server published.",
+  "composio_existing_toolkit": "no",
+  "composio_slug": null
+ },
+ "overview_evidence": [
+  {
+   "url": "https://systeme.io",
+   "snippet": "Systeme.io - The only tool you need to launch your online business"
+  },
+  {
+   "url": "https://systeme.io",
+   "snippet": "Your platform for sales funnels, email marketing, online courses, selling online, blogging"
+  }
+ ],
+ "confidence": 0.92,
+ "unknown_reasons": {
+  "auth": "",
+  "access": "",
+  "api_surface": "OpenAPI spec not documented in provided pages",
+  "mcp": "MCP server documentation page exists but no direct GitHub repository URL for implementation provided in pages"
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 12,
+  "error": null,
+  "cost_usd": 0.088838,
+  "seconds": 107.7
+ }
+}

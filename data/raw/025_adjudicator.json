@@ -1,0 +1,42 @@
+{
+ "fields": [
+  "mcp.official"
+ ],
+ "pages": [
+  "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/",
+  "https://pumble.com/mcp",
+  "https://github.com/infralayers/pumble-mcp",
+  "https://developers.pumble.com",
+  "https://developer.pumble.com",
+  "https://docs.pumble.com",
+  "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.068898,
+  "seconds": 6.9,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "mcp.official",
+    "value": "https://mcp.pumble.com/mcp",
+    "evidence": [
+     {
+      "url": "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/",
+      "snippet": "url = \"https://mcp.pumble.com/mcp\"",
+      "check": "exact"
+     },
+     {
+      "url": "https://pumble.com/mcp",
+      "snippet": "Bring your AI agent into your Pumble workspace and streamline collaboration, stay in the loop, and get an efficient way to interact with your workspace.",
+      "check": "exact"
+     }
+    ],
+    "reason": "Pumble's own help docs and pumble.com/mcp page describe and link an MCP server hosted at mcp.pumble.com, making it vendor-official."
+   }
+  ]
+ }
+}

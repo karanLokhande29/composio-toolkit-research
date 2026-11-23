@@ -1,0 +1,118 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.08532200000000001,
+  "seconds": 116.9,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://sendgrid.com/docs/api-reference",
+  "https://sendgrid.com/docs",
+  "https://sendgrid.com/docs/for-developers/tracking-events/event",
+  "https://docs.composio.dev/toolkits/sendgrid.md",
+  "https://sendgrid.com",
+  "https://sendgrid.com/docs/for-developers/sending-email",
+  "https://sendgrid.com/blog/leveraging-sendgrids-event-api",
+  "https://github.com/Garoth/sendgrid-mcp",
+  "https://github.com/KiKi-Builds/AI-Briefing-Skill",
+  "https://github.com/deyikong/sendgrid-mcp"
+ ],
+ "output": {
+  "one_liner": "SendGrid is a cloud-based email delivery platform for sending transactional and marketing emails at scale.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "api_key"
+   ],
+   "oauth_grant_types": [],
+   "notes": "API key credential transmitted as HTTP Bearer token in Authorization header",
+   "evidence": [
+    {
+     "url": "https://sendgrid.com/docs/for-developers/sending-email",
+     "snippet": "An API Key must be included in the Authorization header."
+    },
+    {
+     "url": "https://github.com/Garoth/sendgrid-mcp",
+     "snippet": "Go to Settings > API Keys, Create a new API key with full access permissions"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_trial",
+   "dev_sandbox": true,
+   "notes": "Free trial available without credit card; sandbox mode documented for testing",
+   "evidence": [
+    {
+     "url": "https://sendgrid.com",
+     "snippet": "Sign up for a free trial—no credit card required."
+    },
+    {
+     "url": "https://sendgrid.com/docs/for-developers/sending-email",
+     "snippet": "Sandbox Mode"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Rate limits documented in API reference",
+   "evidence": [
+    {
+     "url": "https://sendgrid.com/docs/api-reference",
+     "snippet": "The SendGrid v3 Web API provides a REST interface to send email at scale"
+    },
+    {
+     "url": "https://sendgrid.com/docs/api-reference",
+     "snippet": "Domain Authentication, Webhooks, Inbound Parse, Automation Stats, Security, API Keys, Partner Settings"
+    },
+    {
+     "url": "https://sendgrid.com/docs/api-reference",
+     "snippet": "Webhooks API Overview Create an Event Webhook Get All Event Webhooks"
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [
+    "https://github.com/Garoth/sendgrid-mcp",
+    "https://github.com/deyikong/sendgrid-mcp"
+   ],
+   "evidence": [
+    {
+     "url": "https://github.com/deyikong/sendgrid-mcp",
+     "snippet": "Built and maintained by a SendGrid engineer, as an independent project"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Public REST API with comprehensive documentation, straightforward API key auth, free trial access, and existing Composio toolkit with 364 tools confirm full buildability.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "SENDGRID"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://docs.composio.dev/toolkits/sendgrid.md",
+    "snippet": "Auth: API_KEY, Composio-managed OAuth available? N/A, Tools: 364"
+   },
+   {
+    "url": "https://sendgrid.com/docs/api-reference",
+    "snippet": "SendGrid v3 API endpoints allow you to integrate with tech stack to send emails"
+   }
+  ],
+  "confidence": 0.98,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  }
+ }
+}

@@ -1,0 +1,209 @@
+{
+ "id": 61,
+ "app": "GitHub",
+ "tag": "agent2",
+ "urls": [
+  {
+   "url": "https://docs.github.com/rest",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.github.com/en/rest",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.github.com/en/rest/overview/other-authentication-methods",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.github.com/en/apps/creating-github-apps/registering-a-github-app/registering-a-github-app",
+   "purpose": "credentials",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.github.com/en/developers/apps/getting-started-with-apps/setting-up-your-development-environment-to-create-a-github-app",
+   "purpose": "sandbox",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.github.com/en/rest/guides/best-practices-for-integrators",
+   "purpose": "partner programme",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.github.com/en/rest?apiVersion=2022-11-28",
+   "purpose": "api reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api",
+   "purpose": "rate limits",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.github.com/en/webhooks",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.github.com/en/webhooks/webhook-events-and-payloads",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.github.com/en/copilot/customizing-copilot/using-model-context-protocol/github-mcp-server",
+   "purpose": "mcp server",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://github.com/github/github-mcp-server",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/idosal/git-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/kucherenko/jscpd",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/github.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "github/github-mcp-server",
+   "url": "https://github.com/github/github-mcp-server",
+   "stars": 34687,
+   "description": "GitHub's official MCP Server"
+  },
+  {
+   "repo": "idosal/git-mcp",
+   "url": "https://github.com/idosal/git-mcp",
+   "stars": 8532,
+   "description": "Put an end to code hallucinations! GitMCP is a free, open-source, remote MCP server for any GitHub project"
+  },
+  {
+   "repo": "kucherenko/jscpd",
+   "url": "https://github.com/kucherenko/jscpd",
+   "stars": 6599,
+   "description": "Copy/paste detector for source code. 220+ languages, Rust engine, SARIF/HTML/badge reporters, GitHub Action, MCP server for AI agents."
+  },
+  {
+   "repo": "fallow-rs/fallow",
+   "url": "https://github.com/fallow-rs/fallow",
+   "stars": 5394,
+   "description": "Codebase intelligence for TypeScript and JavaScript. Health, complexity hotspots, duplication, architecture boundaries, circular dependencies, design-system dri"
+  },
+  {
+   "repo": "sandbox-quantum/switch",
+   "url": "https://github.com/sandbox-quantum/switch",
+   "stars": 4700,
+   "description": "Open-source AI teammates in Slack, Teams, Discord, Telegram and Mattermost. Bring Claude Code, Codex, Gemini (Antigravity), Cursor, GitHub Copilot or your own a"
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "GitHub",
+    "slug": "GITHUB",
+    "tools": 905,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/github.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "GitHub",
+    "slug": "GITHUB",
+    "tools": 905,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/github.md"
+   },
+   {
+    "name": "GitHub MCP",
+    "slug": "GITHUB_MCP",
+    "tools": 44,
+    "auth": [
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/github_mcp.md"
+   }
+  ]
+ },
+ "search_meta": {}
+}

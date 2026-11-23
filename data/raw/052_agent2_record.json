@@ -1,0 +1,94 @@
+{
+ "id": 52,
+ "app": "SE Ranking",
+ "category": "Data, SEO and Scraping",
+ "hint": "seranking.com/api",
+ "one_liner": "SEO API providing SEO and AEO data at scale for automating SEO workflows.",
+ "app_type": "saas",
+ "auth": {
+  "methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "oauth_grant_types": [],
+  "notes": "Static API key sent via Authorization header (Token or Bearer prefix) or query parameter. OAuth 2.1 with dynamic client registration for MCP server.",
+  "evidence": [
+   {
+    "url": "https://seranking.com/api/data/getting-started/",
+    "snippet": "Alternatively, you can pass the key as a URL query parameter named apikey",
+    "check": "repaired"
+   },
+   {
+    "url": "https://seranking.com/api/data/quickstarts/generate-seo-intelligence-reports-with-seointel/",
+    "snippet": "curl: Copy curl -X POST https://api.seranking.com/v1/domain/overview/db \\ -H \"Authorization: Bearer YOUR_API_KEY\"",
+    "check": "repaired"
+   },
+   {
+    "url": "https://seranking.com/api/integrations/mcp/",
+    "snippet": "Our MCP server supports Streamable HTTP transports. This transport uses OAuth 2.1 with dynamic client registration for authentication at the following address: Copy https://api.seranking.com/mcp",
+    "check": "repaired"
+   }
+  ]
+ },
+ "access": {
+  "status": "unknown",
+  "dev_sandbox": true,
+  "notes": "14-day free trial with 100K API credits, no credit card required. Continued use requires paid plan or pay-as-you-go subscription.",
+  "evidence": []
+ },
+ "api_surface": {
+  "styles": [
+   "rest"
+  ],
+  "breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": null,
+  "rate_limit_note": "Data API 10 RPS, Project API 5 RPS, Trial 1 RPS. Standard and custom rate limits documented. Rolling-second enforcement at API key level.",
+  "evidence": [
+   {
+    "url": "https://seranking.com/api/rate-limits/",
+    "snippet": "Trial accounts During the trial period, the Data API has a default rate limit of 1 request per second (RPS)",
+    "check": "repaired"
+   }
+  ]
+ },
+ "mcp": {
+  "official": "https://api.seranking.com/mcp",
+  "community": [],
+  "evidence": [
+   {
+    "url": "https://seranking.com/api/integrations/mcp/",
+    "snippet": "The Model Context Protocol (MCP) server provides a standardized interface that allows any compatible AI model to access your SE Ranking and SE Visible data simply and securely.",
+    "check": "exact"
+   }
+  ]
+ },
+ "buildability": {
+  "verdict": "ready_with_caveats",
+  "main_blocker": "paid_plan",
+  "rationale": "Self-serve trial enables immediate API testing with well-documented REST endpoints, but trial expires after 14 days and production use requires paid subscription.",
+  "composio_existing_toolkit": "no",
+  "composio_slug": null
+ },
+ "overview_evidence": [
+  {
+   "url": "https://seranking.com/api.html",
+   "snippet": "SEO API: Automate your SEO workflows"
+  }
+ ],
+ "confidence": 0.92,
+ "unknown_reasons": {
+  "auth": "",
+  "access": "agent2: evidence did not verify",
+  "api_surface": "OpenAPI specification URL not documented in provided pages; webhooks not mentioned in provided pages",
+  "mcp": ""
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 7,
+  "error": null,
+  "cost_usd": 0.099258,
+  "seconds": 128.5
+ }
+}

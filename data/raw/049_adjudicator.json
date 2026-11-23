@@ -1,0 +1,58 @@
+{
+ "fields": [
+  "access.status",
+  "auth.methods"
+ ],
+ "pages": [
+  "https://developer-docs.amazon.com/sp-api",
+  "https://developer-docs.amazon.com/sp-api/docs/connecting-to-the-selling-partner-api",
+  "https://developer-docs.amazon.com/sp-api/docs/getting-access-to-the-sp-api",
+  "https://developer-docs.amazon.com/sp-api/docs/orders-api-v0-reference",
+  "https://developer-docs.amazon.com/sp-api/docs/feeds-api-v2021-06-30-reference",
+  "https://developer-docs.amazon.com/sp-api/docs/catalog-items-api-v2021-12-01-reference",
+  "https://docs.composio.dev/toolkits/amazon.md"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.109005,
+  "seconds": 30.5,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "access.status",
+    "value": "unknown",
+    "evidence": [
+     {
+      "url": "https://developer-docs.amazon.com/sp-api/docs/connecting-to-the-selling-partner-api",
+      "snippet": "Step 4: Register a Sandbox Application"
+     },
+     {
+      "url": "https://developer-docs.amazon.com/sp-api/docs/connecting-to-the-selling-partner-api",
+      "snippet": "Step 7: Register Your Production Application"
+     }
+    ],
+    "reason": "The pages describe a multi-step developer registration and sandbox-then-production app registration flow but never state whether this is free, paid, or subject to approval, so cost/approval status cannot be confirmed from the given pages."
+   },
+   {
+    "field": "auth.methods",
+    "value": [
+     "oauth2"
+    ],
+    "evidence": [
+     {
+      "url": "https://docs.composio.dev/toolkits/amazon.md",
+      "snippet": "**Auth:** OAUTH2"
+     },
+     {
+      "url": "https://developer-docs.amazon.com/sp-api/docs/connecting-to-the-selling-partner-api",
+      "snippet": "Authorize Applications"
+     }
+    ],
+    "reason": "The Composio toolkit page for Amazon explicitly lists OAUTH2 as the auth method, and the SP-API docs' dedicated 'Authorization'/'Authorize Applications' workflow section corroborates an OAuth-based authorization flow, so oauth2 is the best-supported enum value rather than unknown."
+   }
+  ]
+ }
+}

@@ -1,0 +1,55 @@
+{
+ "fields": [
+  "api_surface.styles",
+  "buildability.verdict"
+ ],
+ "pages": [
+  "https://docs.composio.dev/toolkits/quickbooks.md",
+  "https://github.com/intuit/quickbooks-online-mcp-server",
+  "https://developer.intuit.com",
+  "https://developer.intuit.com/app/developer/myapps"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.066006,
+  "seconds": 16.2,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "api_surface.styles",
+    "value": [
+     "rest"
+    ],
+    "evidence": [
+     {
+      "url": "https://docs.composio.dev/toolkits/quickbooks.md",
+      "snippet": "Create an eCheck payment through the QuickBooks Payments API using customer bank account and routing details for an ACH debit."
+     },
+     {
+      "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+      "snippet": "This MCP server provides complete QuickBooks Online API integration for Claude Code and other MCP-compatible clients."
+     }
+    ],
+    "reason": "Multiple pages describe a documented QuickBooks Online/Payments REST API with resource-style endpoints (charges, estimates, accounts), so 'rest' is supported while 'none' contradicts the evidence."
+   },
+   {
+    "field": "buildability.verdict",
+    "value": "ready",
+    "evidence": [
+     {
+      "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+      "snippet": "You must register an app on the Intuit Developer Portal and complete a one-time, browser-based OAuth handshake."
+     },
+     {
+      "url": "https://developer.intuit.com",
+      "snippet": "Start building your Intuit-powered app today."
+     }
+    ],
+    "reason": "Developers can self-register an app, obtain sandbox credentials, and build against the documented REST API today, matching both agents' 'ready' verdict."
+   }
+  ]
+ }
+}

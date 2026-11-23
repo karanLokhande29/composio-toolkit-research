@@ -1,0 +1,125 @@
+{
+ "id": 56,
+ "app": "Firecrawl",
+ "category": "Data, SEO and Scraping",
+ "hint": "firecrawl.dev",
+ "one_liner": "Web scraping and data extraction service that turns websites into clean, structured data for AI systems.",
+ "app_type": "saas",
+ "auth": {
+  "methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "oauth_grant_types": [
+   "authorization_code"
+  ],
+  "notes": "Supports API keys sent as Bearer tokens (fc-* prefix) and OAuth2 (fco_* and fcr_* tokens). MCP OAuth also available for browser-based authentication.",
+  "evidence": [
+   {
+    "url": "https://docs.firecrawl.dev/authentication",
+    "snippet": "There are four ways to authenticate with Firecrawl.",
+    "check": "exact"
+   },
+   {
+    "url": "https://docs.firecrawl.dev/authentication",
+    "snippet": "send it on every request as Authorization: Bearer fc-YOUR-API-KEY",
+    "check": "repaired"
+   },
+   {
+    "url": "https://docs.firecrawl.dev/authentication",
+    "snippet": "OAuth for apps Send the user through Firecrawl’s OAuth flow with resource=https://api.firecrawl.dev/",
+    "check": "repaired"
+   }
+  ]
+ },
+ "access": {
+  "status": "self_serve_free",
+  "dev_sandbox": true,
+  "notes": "Free tier with 1,000 credits/month, no credit card required. Keyless endpoints available with rate limits. No approval, sales contact, or admin intervention needed.",
+  "evidence": [
+   {
+    "url": "https://www.firecrawl.dev/pricing",
+    "snippet": "Free tier 1,000 credits every month, refreshed monthly, no credit card required.",
+    "check": "repaired"
+   },
+   {
+    "url": "https://docs.firecrawl.dev/introduction",
+    "snippet": "Create a free account for direct API access and higher limits",
+    "check": "exact"
+   },
+   {
+    "url": "https://docs.firecrawl.dev/authentication",
+    "snippet": "A few REST endpoints also work with no credential at all, so you can try Firecrawl before you have a key.",
+    "check": "exact"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "rest"
+  ],
+  "breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "rate_limit_note": "Plan-dependent rate limits documented per endpoint: /scrape, /map, /search at 10/min (free), /crawl and /agent limits vary by plan. /interact at 2/min (free). 429 responses when exceeded.",
+  "evidence": [
+   {
+    "url": "https://docs.firecrawl.dev/webhooks/overview",
+    "snippet": "Real-time notifications for your Firecrawl operations",
+    "check": "exact"
+   },
+   {
+    "url": "https://www.firecrawl.dev/pricing",
+    "snippet": "Rate limit, /scrape, /map and /search Your team gets this many requests a minute for each endpoint. 10 / min",
+    "check": "repaired"
+   }
+  ]
+ },
+ "mcp": {
+  "official": "https://mcp.firecrawl.dev/v2/mcp",
+  "community": [],
+  "evidence": [
+   {
+    "url": "https://docs.firecrawl.dev/authentication",
+    "snippet": "Hosted MCP with an API key Point your MCP client at https://mcp.firecrawl.dev/v2/mcp",
+    "check": "repaired"
+   }
+  ]
+ },
+ "buildability": {
+  "verdict": "ready",
+  "main_blocker": "none",
+  "rationale": "Free self-serve API credentials, broad REST API with webhooks, official MCP server, and clear documentation enable immediate toolkit development.",
+  "composio_existing_toolkit": "no",
+  "composio_slug": null
+ },
+ "overview_evidence": [
+  {
+   "url": "https://www.firecrawl.dev/",
+   "snippet": "Search finds relevant information on the web. Scrape turns websites into clean, structured, AI-usable data."
+  },
+  {
+   "url": "https://www.firecrawl.dev/",
+   "snippet": "Firecrawl is the largest open source repo in the space with over 200K GitHub stars"
+  },
+  {
+   "url": "https://docs.firecrawl.dev/introduction",
+   "snippet": "Scrape your first page now. No account or API key is required for this request."
+  }
+ ],
+ "confidence": 0.91,
+ "unknown_reasons": {
+  "auth": "",
+  "access": "",
+  "api_surface": "OpenAPI specification URL not documented in provided pages",
+  "mcp": "GitHub repository URL for official MCP server not provided; only hosted endpoint URLs documented"
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 8,
+  "error": null,
+  "cost_usd": 0.071854,
+  "seconds": 94.7
+ }
+}

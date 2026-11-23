@@ -1,0 +1,37 @@
+{
+ "fields": [
+  "mcp.official"
+ ],
+ "pages": [
+  "https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp",
+  "https://developer.systeme.io/docs/mcp-server",
+  "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+  "https://developer.systeme.io/reference/api"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.076095,
+  "seconds": 20.4,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "mcp.official",
+    "value": null,
+    "evidence": [
+     {
+      "url": "https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp",
+      "snippet": "The systeme.io MCP server allows AI applications to access specific contact-management tools within your account."
+     },
+     {
+      "url": "https://developer.systeme.io/docs/mcp-server",
+      "snippet": "Welcome to the Systeme.io MCP Server overview. The Model Context Protocol (MCP) is an open standard designed to connect AI models with external data and tools."
+     }
+    ],
+    "reason": "Pages confirm systeme.io publishes its own official MCP server and documentation, but no page text gives the literal server connection URL (e.g. mcp.systeme.io/mcp), only the docs page URL, so the exact endpoint cannot be verified from the provided evidence."
+   }
+  ]
+ }
+}

@@ -1,0 +1,271 @@
+{
+ "id": 91,
+ "app": "NotebookLM",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://cloud.google.com/gemini",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://cloud.google.com/docs/gemini",
+   "purpose": "overview",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://cloud.google.com/docs/gemini/quickstart",
+   "purpose": "getting-started",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://cloud.google.com/docs/gemini/setup-access",
+   "purpose": "access-credentials",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://cloud.google.com/docs/authentication",
+   "purpose": "authentication",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://cloud.google.com/docs/gemini/api-reference",
+   "purpose": "api-reference",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://cloud.google.com/docs/gemini/rate-limits",
+   "purpose": "rate-limits",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/PleasePrompto/notebooklm-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/SourceWeft/SourceWeft",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/claude-world/notebooklm-skill",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/notebook_lm.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://cloud.google.com/find-a-partner/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://cloud.google.com/pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://cloud.google.com/products/spectrum-access-system",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://cloud.google.com/compute/all-pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://cloud.google.com/sql/pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://cloud.google.com/kubernetes-engine/pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://cloud.google.com/storage/pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://cloud.google.com/bigquery/pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://cloud.google.com/pricing/list",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://cloud.google.com/partners",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://partners.cloud.google.com",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.cloud.google.com/docs/authentication",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.cloud.google.com/docs/access-resources",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.cloud.google.com/sdk/use-gcloud-mcp",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "PleasePrompto/notebooklm-mcp",
+   "url": "https://github.com/PleasePrompto/notebooklm-mcp",
+   "stars": 3448,
+   "description": "MCP server for NotebookLM - Let your AI agents (Claude Code, Codex) research documentation directly with grounded, citation-backed answers from Gemini. Persiste"
+  },
+  {
+   "repo": "SourceWeft/SourceWeft",
+   "url": "https://github.com/SourceWeft/SourceWeft",
+   "stars": 551,
+   "description": "Open-source, self-hostable alternative to ChatGPT and NotebookLM — agents, skills, MCP, and cited knowledge in one AI workstation. Your models, your infrastruct"
+  },
+  {
+   "repo": "claude-world/notebooklm-skill",
+   "url": "https://github.com/claude-world/notebooklm-skill",
+   "stars": 503,
+   "description": "NotebookLM does the research, Claude writes the content. Research → Synthesis → Content Creation → Publishing. Claude Code Skill + MCP Server."
+  },
+  {
+   "repo": "roomi-fields/gemini-notebook-mcp",
+   "url": "https://github.com/roomi-fields/gemini-notebook-mcp",
+   "stars": 242,
+   "description": "Google Gemini Notebook (formerly NotebookLM) over MCP + a local HTTP REST API. Citation-backed Q&A, full Studio generation, chat history, multi-account rotation"
+  },
+  {
+   "repo": "capitalparser/notebooklm-wiki-pipeline",
+   "url": "https://github.com/capitalparser/notebooklm-wiki-pipeline",
+   "stars": 95,
+   "description": "Turn Google Drive PDFs into Obsidian wiki notes via NotebookLM MCP without loading full PDFs into Claude context"
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "NotebookLM",
+    "slug": "NOTEBOOK_LM",
+    "tools": 11,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/notebook_lm.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "NotebookLM",
+    "slug": "NOTEBOOK_LM",
+    "tools": 11,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/notebook_lm.md"
+   }
+  ]
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.024038999999999998,
+  "seconds": 37.6,
+  "turns": 1,
+  "mode": "knowledge+crawl"
+ }
+}

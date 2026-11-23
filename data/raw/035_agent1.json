@@ -1,0 +1,138 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.063051,
+  "seconds": 62.2,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://mailchimp.com/developer/marketing/api-concepts/authentication",
+  "https://mailchimp.com/developer/marketing/guides/access-user-data-oauth-2/",
+  "https://mailchimp.com/pricing/marketing/",
+  "https://mailchimp.com/developer/marketing/api/",
+  "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server",
+  "https://mailchimp.com/developer/",
+  "https://mailchimp.com/developer/marketing/api-concepts/rate-limits-and-timeouts",
+  "https://mailchimp.com/developer/marketing/guides/sync-audience-data-webhooks/",
+  "https://api.mailchimp.com/schema/3.0/Swagger.json?expand",
+  "https://docs.composio.dev/toolkits/mailchimp.md",
+  "https://github.com/damientilman/mailchimp-mcp-server",
+  "https://mailchimp.com/developer/integration-partner-program"
+ ],
+ "output": {
+  "one_liner": "An email marketing platform for creating, sending, and managing campaigns with integrated customer data and analytics.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "api_key"
+   ],
+   "oauth_grant_types": [
+    "authorization_code"
+   ],
+   "notes": "API key and OAuth 2 tokens both sent as Bearer tokens. API key grants full account access and cannot be revoked per-application alone.",
+   "evidence": [
+    {
+     "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication",
+     "snippet": "API keys and OAuth 2 access tokens are sent the same way. We'll refer to both as tokens."
+    },
+    {
+     "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication",
+     "snippet": "Bearer Authentication passes it in the Authorization header: curl --request GET --url 'https://api.mailchimp.com/3.0/' --header 'Authorization: Bearer TOKEN'"
+    },
+    {
+     "url": "https://mailchimp.com/developer/marketing/guides/access-user-data-oauth-2/",
+     "snippet": "Redirect the user to https://login.mailchimp.com/oauth2/authorize?response_type=code&client_id=YOUR_CLIENT_ID&redirect_uri=YOUR_REDIRECT_URI"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": null,
+   "notes": "Free plan available (under 250 contacts). API credentials obtainable on signup. Some specific tools require Essentials or higher paid plans, but API itself is accessible on free tier.",
+   "evidence": [
+    {
+     "url": "https://mailchimp.com/pricing/marketing/",
+     "snippet": "Under 250 contacts? It's free. Use core features to manage early growth."
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/mailchimp.md",
+     "snippet": "Some Mailchimp tools require at least the Mailchimp Essentials plan"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": "https://api.mailchimp.com/schema/3.0/Swagger.json?expand",
+   "webhooks": true,
+   "rate_limit_note": "10 simultaneous connections per user, 120-second timeout per request, max 500 pending batch webhook events",
+   "evidence": [
+    {
+     "url": "https://mailchimp.com/developer/marketing/api-concepts/rate-limits-and-timeouts",
+     "snippet": "The Marketing API has a limit of 10 simultaneous connections. The limit is per user, not per API key or per client."
+    },
+    {
+     "url": "https://mailchimp.com/developer/marketing/api-concepts/rate-limits-and-timeouts",
+     "snippet": "The Marketing API has a 120-second timeout on API calls."
+    },
+    {
+     "url": "https://mailchimp.com/developer/marketing/guides/sync-audience-data-webhooks/",
+     "snippet": "Webhooks are a helpful tool that you can use to collect information about audience changes in Mailchimp as they happen."
+    },
+    {
+     "url": "https://api.mailchimp.com/schema/3.0/Swagger.json?expand",
+     "snippet": "resources: root, audiences, contacts, authorized-apps, automations, batch-webhooks, campaigns, interest-categories, list-webhooks"
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server",
+   "community": [
+    "https://github.com/damientilman/mailchimp-mcp-server"
+   ],
+   "evidence": [
+    {
+     "url": "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server",
+     "snippet": "This documentation site is itself an MCP server. Connect an agent to it and the agent can search these docs directly."
+    },
+    {
+     "url": "https://github.com/damientilman/mailchimp-mcp-server",
+     "snippet": "The most complete Mailchimp Marketing API MCP server: 227 tools across campaigns, audiences, reports, segments, automations and full e-commerce"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Self-serve free tier, fully documented REST API, OAuth2 support, and existing successful 278-tool Composio toolkit demonstrate full buildability.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "MAILCHIMP"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://mailchimp.com/developer/",
+    "snippet": "Mailchimp's developer tools provide everything you need to integrate your data with intelligent marketing tools."
+   },
+   {
+    "url": "https://mailchimp.com/developer/marketing/api/",
+    "snippet": "Get links to all other resources available in the API."
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/mailchimp.md",
+    "snippet": "Category: email newsletters, Auth: OAUTH2, Composio-managed OAuth available: Yes, Tools: 278"
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": "Official MCP is primarily a documentation search tool; production action-taking MCP is community-maintained"
+  }
+ }
+}

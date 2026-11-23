@@ -1,0 +1,35 @@
+{
+ "fields": [
+  "mcp.official"
+ ],
+ "pages": [
+  "https://developers.asana.com/docs/mcp-server",
+  "https://developers.asana.com/reference",
+  "https://developers.asana.com/docs/authentication",
+  "https://developers.asana.com/docs/oauth",
+  "https://developers.asana.com/docs/personal-access-token",
+  "https://developers.asana.com/reference/rest-api-reference"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.064302,
+  "seconds": 7.0,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "mcp.official",
+    "value": "https://developers.asana.com/docs/mcp-server",
+    "evidence": [
+     {
+      "url": "https://developers.asana.com/docs/mcp-server",
+      "snippet": "Asana offers a Model Context Protocol (MCP) server, accessible via app integration, which allows AI assistants and other applications to access the Asana Work Graph"
+     }
+    ],
+    "reason": "Asana's own developer docs page describes and documents a first-party MCP server with setup guides, so it qualifies as a vendor-published official MCP server URL."
+   }
+  ]
+ }
+}

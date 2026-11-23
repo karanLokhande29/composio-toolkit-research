@@ -1,0 +1,32 @@
+{
+ "fields": [
+  "mcp.official"
+ ],
+ "pages": [
+  "https://github.com/dataforseo/mcp-server-typescript",
+  "https://github.com/houtini-ai/seo-audit",
+  "https://github.com/Skobyn/dataforseo-mcp-server"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.04827,
+  "seconds": 5.8,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "mcp.official",
+    "value": "https://github.com/dataforseo/mcp-server-typescript",
+    "evidence": [
+     {
+      "url": "https://github.com/dataforseo/mcp-server-typescript",
+      "snippet": "MCP server and CLI for LLM agents to browse DataForSEO API documentation and make authenticated API requests"
+     }
+    ],
+    "reason": "Repository is under the dataforseo GitHub org itself, making it a vendor-published official MCP server, unlike the Skobyn and houtini repos which are third-party."
+   }
+  ]
+ }
+}

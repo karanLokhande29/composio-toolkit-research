@@ -1,0 +1,103 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.06537100000000001,
+  "seconds": 84.2,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/",
+  "https://docs.composio.dev/toolkits/mongodb.md",
+  "https://docs.composio.dev/toolkits/mongodb_mcp.md",
+  "https://mongodb.com/docs/atlas/api",
+  "https://www.mongodb.com/docs/atlas/configure-api-access/",
+  "https://www.mongodb.com/company/partners",
+  "https://www.mongodb.com/pricing"
+ ],
+ "output": {
+  "one_liner": "MongoDB Atlas is a fully-managed cloud database platform providing programmatic REST API access to administrative features and cluster management.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "api_key"
+   ],
+   "oauth_grant_types": [],
+   "notes": "Service accounts use OAuth 2.0; API keys use HTTP Digest Authentication. Specific OAuth grant types not documented in provided pages.",
+   "evidence": [
+    {
+     "url": "https://www.mongodb.com/docs/atlas/configure-api-access/",
+     "snippet": "Service account access tokens (OAuth 2.0) API keys (HTTP Digest Authentication)"
+    }
+   ]
+  },
+  "access": {
+   "status": "unknown",
+   "dev_sandbox": true,
+   "notes": "Free tier exists ('Free Forever' for learning) but pages do not explicitly state Admin API access is available on free tier.",
+   "evidence": [
+    {
+     "url": "https://www.mongodb.com/pricing",
+     "snippet": "Free $0/hour Explore Atlas Free forever For learning and exploring MongoDB in a cloud environment"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": null,
+   "rate_limit_note": "",
+   "evidence": [
+    {
+     "url": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/",
+     "snippet": "The Atlas Administration API follows the principles of the REST architectural style to expose internal resources"
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/mongodb.md",
+     "snippet": "496 tools"
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [
+    "https://docs.composio.dev/toolkits/mongodb_mcp.md"
+   ],
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/mongodb_mcp.md",
+     "snippet": "MongoDB MCP lets authorized agents explore and manage MongoDB Atlas resources, databases, collections"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Public REST API with documented authentication methods; existing Composio toolkit with 496 tools confirms immediate buildability.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "MONGODB"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/",
+    "snippet": "The Atlas Administration API follows the principles of the REST architectural style to expose a number of internal resources that enable programmatic access to administrative features in Atlas"
+   },
+   {
+    "url": "https://mongodb.com/docs/atlas/api",
+    "snippet": "Programmatically perform administrative tasks on your Atlas cluster outside of the Atlas UI with the Atlas Administration API"
+   }
+  ],
+  "confidence": 0.75,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "Free tier exists but pages do not explicitly document whether Admin API is accessible on free tier or requires paid plan.",
+   "api_surface": "OpenAPI spec not referenced in provided pages; webhooks and rate limits not documented.",
+   "mcp": "MongoDB MCP is published on Composio but unclear whether this is officially maintained by MongoDB or community-contributed."
+  }
+ }
+}

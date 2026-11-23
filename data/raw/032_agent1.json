@@ -1,0 +1,138 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.050092,
+  "seconds": 43.6,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authentication.md",
+  "https://developers.facebook.com/documentation/development/create-an-app",
+  "https://developers.facebook.com/docs/app-review/submission-guide/",
+  "https://developers.facebook.com/docs/marketing-api/reference/",
+  "https://developers.facebook.com/docs/marketing-api/",
+  "https://developers.facebook.com/docs/marketing-api/overview/rate-limiting/",
+  "https://developers.facebook.com/docs/graph-api/webhooks/getting-started/webhooks-for-ad-accounts",
+  "https://docs.composio.dev/toolkits/metaads.md",
+  "https://github.com/mikusnuz/meta-ads-mcp",
+  "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authorization",
+  "https://developers.facebook.com/documentation/ads-commerce/marketing-api/ad-creative/partnership-ads",
+  "https://developers.facebook.com/documentation/ads-commerce/marketing-api/ad-creative/partnership-ads/content-discovery-api"
+ ],
+ "output": {
+  "one_liner": "Meta Ads is a SaaS platform for creating and managing Facebook and Instagram advertising campaigns via REST APIs.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "api_key"
+   ],
+   "oauth_grant_types": [
+    "authorization_code"
+   ],
+   "notes": "User access tokens and system user tokens supported. Tokens obtained via Graph API Explorer or OAuth authorization code flow.",
+   "evidence": [
+    {
+     "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authentication.md",
+     "snippet": "You can get a user access token using the Graph API Explorer."
+    },
+    {
+     "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authentication.md",
+     "snippet": "client_id=&lt;YOUR_APP_ID&gt;&amp;redirect_uri=&lt;YOUR_URL&gt;&amp;client_secret=&lt;YOUR_APP_SECRET&gt;&amp;code=&lt;AUTHORIZATION_CODE&gt;"
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/metaads.md",
+     "snippet": "Auth: OAUTH2, API_KEY"
+    }
+   ]
+  },
+  "access": {
+   "status": "app_review",
+   "dev_sandbox": true,
+   "notes": "Limited access tier granted automatically to all new apps for development. Full access tier requires App Review for production and multi-customer deployments.",
+   "evidence": [
+    {
+     "url": "https://developers.facebook.com/documentation/development/create-an-app",
+     "snippet": "To create an app with Meta, you must first register as a developer"
+    },
+    {
+     "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authorization",
+     "snippet": "Automatically granted when you add the Marketing API product to your app."
+    },
+    {
+     "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authorization",
+     "snippet": "Click +Upgrade for the Marketing API Access Tier feature in your App Dashboard."
+    },
+    {
+     "url": "https://developers.facebook.com/docs/app-review/submission-guide/",
+     "snippet": "App Review is required if your app will be used by people without a role on your app"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "100 QPS per app and ad account for mutations; ad account-level and concurrent request rate limiting.",
+   "evidence": [
+    {
+     "url": "https://developers.facebook.com/docs/marketing-api/reference/",
+     "snippet": "/adaccounts, /accounts, /leads, /previews - root nodes for Marketing API"
+    },
+    {
+     "url": "https://developers.facebook.com/docs/marketing-api/",
+     "snippet": "Marketing API with campaigns, ad sets, ads, audiences, catalogs, creative insights, webhooks"
+    },
+    {
+     "url": "https://developers.facebook.com/docs/graph-api/webhooks/getting-started/webhooks-for-ad-accounts",
+     "snippet": "Ad Accounts - Webhooks from Meta with subscriptions and reference documentation"
+    },
+    {
+     "url": "https://developers.facebook.com/docs/marketing-api/overview/rate-limiting/",
+     "snippet": "Limit: 100 requests per second (QPS) per app and ad account combination."
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [
+    "https://github.com/mikusnuz/meta-ads-mcp"
+   ],
+   "evidence": [
+    {
+     "url": "https://github.com/mikusnuz/meta-ads-mcp",
+     "snippet": "MCP server for Meta Marketing API v25.0 — 135 tools for Facebook & Instagram ad campaign management"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "app_review",
+   "rationale": "Development credentials available immediately; full production access requires Meta App Review.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "METAADS"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://developers.facebook.com/docs/marketing-api/",
+    "snippet": "Build with us - Marketing API for Facebook and Instagram ad management"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/metaads.md",
+    "snippet": "Category: ads & conversion. Auth: OAUTH2, API_KEY. Tools: 101"
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  }
+ }
+}

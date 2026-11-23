@@ -1,0 +1,72 @@
+{
+ "fields": [
+  "access.status",
+  "buildability.main_blocker",
+  "buildability.verdict"
+ ],
+ "pages": [
+  "https://docs.composio.dev/toolkits/ramp.md",
+  "https://docs.ramp.com/guides/authentication",
+  "https://docs.ramp.com/developer-api/v1/overview/authentication",
+  "https://docs.ramp.com/developer-api/v1/api-reference",
+  "https://docs.ramp.com/developer-api/v1/overview/scopes",
+  "https://docs.ramp.com/developer-api/v1/overview/errors",
+  "https://docs.ramp.com/developer-api/v1/overview/pagination"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.083259,
+  "seconds": 10.5,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "access.status",
+    "value": "admin_approval",
+    "evidence": [
+     {
+      "url": "https://docs.composio.dev/toolkits/ramp.md",
+      "snippet": "You need **Owner** or **Admin** access in Ramp to see the **Developer** page."
+     },
+     {
+      "url": "https://docs.ramp.com/developer-api/v1/overview/scopes",
+      "snippet": "My customer sees \"An admin must connect this app.\" What's wrong?"
+     }
+    ],
+    "reason": "Both the Composio guide and Ramp's own authorization FAQ confirm that creating a developer app and connecting it requires Owner/Admin role or admin approval."
+   },
+   {
+    "field": "buildability.main_blocker",
+    "value": "admin_scope",
+    "evidence": [
+     {
+      "url": "https://docs.composio.dev/toolkits/ramp.md",
+      "snippet": "You need **Owner** or **Admin** access in Ramp to see the **Developer** page."
+     },
+     {
+      "url": "https://docs.ramp.com/developer-api/v1/overview/scopes",
+      "snippet": "My customer sees \"An admin must connect this app.\" What's wrong?"
+     }
+    ],
+    "reason": "Access to the Developer page and app connection both require an admin-level role, making admin_scope the primary friction, not a paid plan or partner gate."
+   },
+   {
+    "field": "buildability.verdict",
+    "value": "ready_with_caveats",
+    "evidence": [
+     {
+      "url": "https://docs.composio.dev/toolkits/ramp.md",
+      "snippet": "You need **Owner** or **Admin** access in Ramp to see the **Developer** page."
+     },
+     {
+      "url": "https://docs.ramp.com/developer-api/v1/overview/scopes",
+      "snippet": "cards:read_vault is available only to approved integrators; see Virtual Cards ."
+     }
+    ],
+    "reason": "A documented REST API with OAuth2 exists and is self-serve for an Owner/Admin, but requires admin role to set up and some scopes need approval, so it is buildable with caveats rather than fully open."
+   }
+  ]
+ }
+}

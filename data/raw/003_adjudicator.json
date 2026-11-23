@@ -1,0 +1,60 @@
+{
+ "fields": [
+  "buildability.main_blocker",
+  "buildability.verdict"
+ ],
+ "pages": [
+  "https://www.pipedrive.com/en/pricing",
+  "https://developers.pipedrive.com/",
+  "https://developers.pipedrive.com/docs/api/v1",
+  "https://github.com/borgels/mcp-server-pipedrive",
+  "https://pipedrive.com",
+  "https://developers.pipedrive.com/docs/api/v1/Oauth",
+  "https://developers.pipedrive.com/start-here"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.100995,
+  "seconds": 20.0,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "buildability.main_blocker",
+    "value": "paid_plan",
+    "evidence": [
+     {
+      "url": "https://github.com/borgels/mcp-server-pipedrive",
+      "snippet": "Every Pipedrive plan has the API, the 14-day trial too."
+     },
+     {
+      "url": "https://www.pipedrive.com/en/pricing",
+      "snippet": "Free 14-day trial. No commitment – you can make changes anytime."
+     }
+    ],
+    "reason": "API access is tied to a Pipedrive plan and is only free during the 14-day trial, after which a paid subscription is required to keep using it."
+   },
+   {
+    "field": "buildability.verdict",
+    "value": "ready_with_caveats",
+    "evidence": [
+     {
+      "url": "https://developers.pipedrive.com/docs/api/v1",
+      "snippet": "The API token can be obtained manually from the Pipedrive app."
+     },
+     {
+      "url": "https://developers.pipedrive.com/docs/api/v1/Oauth",
+      "snippet": "Using OAuth 2.0 is necessary for developing apps that are available in the Pipedrive Marketplace."
+     },
+     {
+      "url": "https://github.com/borgels/mcp-server-pipedrive",
+      "snippet": "an app distributed commercially is a Marketplace app and needs Pipedrive's approval, even when unlisted"
+     }
+    ],
+    "reason": "A developer can self-serve a token or sandbox account to build immediately, but sustained/production or Marketplace-distributed use requires a paid plan and Pipedrive's app review, so it's buildable with caveats rather than fully unrestricted."
+   }
+  ]
+ }
+}

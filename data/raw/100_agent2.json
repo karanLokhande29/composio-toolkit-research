@@ -1,0 +1,122 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.08487299999999999,
+  "seconds": 92.2,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://docs.composio.dev/toolkits/grain.md",
+  "https://grain.com",
+  "https://developers.grain.com",
+  "https://grain.com/pricing",
+  "https://developers.grain.com/mcp/",
+  "https://developers.grain.com/authentication.html",
+  "https://developers.grain.com/rate-limits.html",
+  "https://grain.com/blog/arrows-customer-success-grain",
+  "https://github.com/mcpgod/cli",
+  "https://github.com/alessandro-afloarei/shadowgit-mcp"
+ ],
+ "output": {
+  "one_liner": "Grain records, transcribes, and organizes meetings so teams can review conversations, share insights, and manage meeting content.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "bearer_token",
+    "oauth2"
+   ],
+   "oauth_grant_types": [
+    "authorization_code"
+   ],
+   "notes": "Personal Access Tokens and Workspace Access Tokens sent as Bearer tokens; OAuth2 authorization code flow with PKCE support for integrations",
+   "evidence": [
+    {
+     "url": "https://developers.grain.com",
+     "snippet": "Every request needs a token in the Authorization header and a Public-Api-Version header"
+    },
+    {
+     "url": "https://developers.grain.com/authentication.html",
+     "snippet": "There are three types of tokens which can have one of two access scopes."
+    },
+    {
+     "url": "https://developers.grain.com/authentication.html",
+     "snippet": "OAuth2 Flow. This authentication method is for developers building integrations with Grain to be used by any Grain users."
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Any developer can generate Personal Access Tokens directly from account settings without approval or payment",
+   "evidence": [
+    {
+     "url": "https://developers.grain.com",
+     "snippet": "Create a Personal Access Token (PAT) which authenticates requests as you, with the same access you have in Grain."
+    },
+    {
+     "url": "https://grain.com",
+     "snippet": "Grain is free to use, simple to set up, and affordable for your entire company."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "moderate",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Token bucket per auth token: 30 request burst capacity, 2 req/sec refill rate, 120 req/min sustained",
+   "evidence": [
+    {
+     "url": "https://developers.grain.com",
+     "snippet": "The Grain API lets you read and manage recordings, highlights, uploads, and more."
+    },
+    {
+     "url": "https://developers.grain.com/rate-limits.html",
+     "snippet": "Grain rate limits requests with a token bucket algorithm per auth token."
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/grain.md",
+     "snippet": "Create a Grain webhook subscription after Grain verifies that the public HTTPS callback returns a 2xx response."
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://developers.grain.com/mcp/",
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://developers.grain.com/mcp/",
+     "snippet": "The Grain MCP (Model Context Protocol) connects Claude.ai (and other AI chat clients) directly to your meeting data in Grain,"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Self-serve free credentials available immediately without approval, documented REST API with webhooks and rate limits, official MCP server published, Composio toolkit already exists with 17 tools.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "GRAIN"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://docs.composio.dev/toolkits/grain.md",
+    "snippet": "Grain records, transcribes, and organizes meetings so teams can review conversations, share insights, and manage meeting content."
+   },
+   {
+    "url": "https://grain.com",
+    "snippet": "Grain is an AI notetaker and conversation intelligence platform that records video calls,"
+   }
+  ],
+  "confidence": 0.96,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "OpenAPI specification URL not found in provided pages",
+   "mcp": ""
+  }
+ }
+}

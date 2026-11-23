@@ -1,0 +1,132 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.06004790000000001,
+  "seconds": 97.2,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://www.zoho.com/cliq/help/restapi/v3/oauth/",
+  "https://www.zoho.com/cliq/help/restapi/v3/registerclient/",
+  "https://www.zoho.com/cliq/pricing.html",
+  "https://www.zoho.com/cliq/help/platform/zoho-cliq-mcp.html",
+  "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+  "https://www.zoho.com/cliq/help/restapi/v3/errors/",
+  "https://www.zoho.com/cliq/help/platform/webhook-tokens.html",
+  "https://www.zoho.com/cliq/help/restapi/v3/postman/",
+  "https://docs.composio.dev/toolkits/zoho_cliq.md",
+  "https://zoho.com/cliq",
+  "https://www.zoho.com/cliq/help/platform/getting-started-with-cliq-platform.html",
+  "https://www.zoho.com/accounts/protocol/oauth.html"
+ ],
+ "output": {
+  "one_liner": "Team chat and communication software for businesses with built-in messaging, channels, bots, and AI-powered collaboration features.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2"
+   ],
+   "oauth_grant_types": [
+    "authorization_code",
+    "refresh_token"
+   ],
+   "notes": "OAuth 2.0 with Bearer token authentication. Access tokens expire after 1 hour and can be refreshed using refresh tokens. Multiple client types supported (server-based, client-based, mobile-based, non-browser, self-client).",
+   "evidence": [
+    {
+     "url": "https://www.zoho.com/cliq/help/restapi/v3/oauth/",
+     "snippet": "Zoho Cliq API uses the OAuth 2.0 protocol for authentication. OAuth 2.0 is an industry-standard protocol specification"
+    },
+    {
+     "url": "https://www.zoho.com/cliq/help/restapi/v3/oauth/",
+     "snippet": "Zoho's OAuth implementation uses the Bearer authentication scheme; hence, when making API calls, the access token must be passed"
+    },
+    {
+     "url": "https://www.zoho.com/cliq/help/restapi/v3/oauth/",
+     "snippet": "Access tokens are valid for 1 hour. Use the stored refresh token to generate a new access token."
+    }
+   ]
+  },
+  "access": {
+   "status": "unknown",
+   "dev_sandbox": null,
+   "notes": "Pages show self-serve registration at Zoho API Console and confirm free plan exists, but do not explicitly state whether free tier users can register applications or if API access requires paid plan.",
+   "evidence": [
+    {
+     "url": "https://www.zoho.com/cliq/help/restapi/v3/registerclient/",
+     "snippet": "Upon successful registration of your application, you will receive a Client ID and Client Secret. These credentials are used to obtain"
+    },
+    {
+     "url": "https://www.zoho.com/cliq/pricing.html",
+     "snippet": "What happens after my trial ends? After your 14-day trial expires you will need to purchase a subscription"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "5 requests per minute per user documented for custom theme operations; general rate limits not explicitly stated in pages",
+   "evidence": [
+    {
+     "url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+     "snippet": "Zoho Cliq's REST API is designed based on RESTful architecture principles, enabling seamless communication between your applications"
+    },
+    {
+     "url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+     "snippet": "v3 introduces CRUD API endpoints for bots, slash commands, message actions, widgets, schedulers, and more, which were not available in v2"
+    },
+    {
+     "url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+     "snippet": "Download Zoho Cliq OpenAPI Document"
+    },
+    {
+     "url": "https://www.zoho.com/cliq/help/platform/webhook-tokens.html",
+     "snippet": "Webhook Tokens are unique authentication keys designed for individual users on the Cliq platform."
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://www.zoho.com/cliq/help/platform/zoho-cliq-mcp.html",
+     "snippet": "The Zoho Cliq MCP Server brings your chats into the world of AI using the Model Context Protocol (MCP)."
+    },
+    {
+     "url": "https://www.zoho.com/cliq/help/platform/zoho-cliq-mcp.html",
+     "snippet": "Any AI model or agent can use our official MCP server to access your Cliq data"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "REST API is well-documented with OpenAPI spec; self-serve OAuth registration available; comprehensive Composio toolkit with 162 tools already exists, confirming API is accessible and buildable.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "ZOHO_CLIQ"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://zoho.com/cliq",
+    "snippet": "Team chat & communication software for businesses - Zoho Cliq"
+   },
+   {
+    "url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+    "snippet": "Zoho Cliq's REST API is designed based on RESTful architecture principles, enabling seamless communication between your applications"
+   }
+  ],
+  "confidence": 0.92,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "Pages show self-serve registration at API console without mentioning payment requirement and confirm free plan exists, but do not explicitly state whether free users can register applications for API access",
+   "api_surface": "",
+   "mcp": "Pages document official MCP server exists and its capabilities but do not provide GitHub repository URL or deployment link"
+  }
+ }
+}

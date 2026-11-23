@@ -1,0 +1,109 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.04288,
+  "seconds": 49.1,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://docs.composio.dev/toolkits/higgsfield.md",
+  "https://higgsfield.ai/cli",
+  "https://higgsfield.ai/mcp",
+  "https://higgsfield.ai/pricing",
+  "https://higgsfield.ai/creator-partnership-program",
+  "https://github.com/BeatAPI/BeatDesign",
+  "https://github.com/midudev/mcp-higgsfield-landing",
+  "https://github.com/Barty-Bart/gpt-6-astra-10k-websites"
+ ],
+ "output": {
+  "one_liner": "AI-powered image and video generation platform for creators and agents",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "api_key"
+   ],
+   "oauth_grant_types": [],
+   "notes": "API uses API_KEY authentication; MCP provides alternative authentication via Higgsfield account login",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/higgsfield.md",
+     "snippet": "Auth: API_KEY"
+    }
+   ]
+  },
+  "access": {
+   "status": "unknown",
+   "dev_sandbox": null,
+   "notes": "Pages show pricing is credits-based with per-request costs ($2 max shown) and plans exist, but do not explicitly state free tier availability, trial period, or paid plan requirement",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/higgsfield.md",
+     "snippet": "Instant pricing: Popcorn Auto: varies by references, count and resolution; $2 max per request"
+    },
+    {
+     "url": "https://higgsfield.ai/cli",
+     "snippet": "Each generation costs credits based on the model and resolution. Your existing Higgsfield plan credits work seamlessly"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "moderate",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/higgsfield.md",
+     "snippet": "Tools: 14"
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/higgsfield.md",
+     "snippet": "Optional public HTTPS URL that receives the terminal completed, failed, or nsfw payload"
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://higgsfield.ai/mcp",
+     "snippet": "Higgsfield uses MCP (Model Context Protocol), an open standard that gives AI agents access to external tools"
+    },
+    {
+     "url": "https://higgsfield.ai/cli",
+     "snippet": "Higgsfield MCP works with Claude (web, Cowork, and Claude Code), OpenClaw, Hermes Agent, and NemoClaw"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Composio toolkit already exists with 14 documented REST tools, API_KEY authentication, and webhook support",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "HIGGSFIELD"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://higgsfield.ai/cli",
+    "snippet": "Create images and videos directly from your prompts in any AI tool"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/higgsfield.md",
+    "snippet": "Tools: 14"
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "Pages discuss credits-based pricing with per-request costs and mention plans, but do not explicitly state availability of free tier, free trial, or whether paid plan is required to access API",
+   "api_surface": "",
+   "mcp": "Official MCP server is referenced and documented at higgsfield.ai/mcp but no specific server URL endpoint is provided in the pages"
+  }
+ }
+}

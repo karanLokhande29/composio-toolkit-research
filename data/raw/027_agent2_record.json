@@ -1,0 +1,114 @@
+{
+ "id": 27,
+ "app": "Telegram",
+ "category": "Communications and Messaging",
+ "hint": "core.telegram.org",
+ "one_liner": "A cloud-based messaging platform that provides APIs for building customized clients and bots.",
+ "app_type": "saas",
+ "auth": {
+  "methods": [
+   "api_key",
+   "other"
+  ],
+  "oauth_grant_types": [],
+  "notes": "Bot API uses static API keys (bot tokens from BotFather). MTProto client API uses phone-based user authorization with api_id/api_hash.",
+  "evidence": [
+   {
+    "url": "https://core.telegram.org/bots/api",
+    "snippet": "Each bot is given a unique authentication token when it is created",
+    "check": "exact"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/telegram.md",
+    "snippet": "Telegram doesn't support OAuth. Composio connects to a Telegram bot using the bot token from BotFather.",
+    "check": "exact"
+   },
+   {
+    "url": "https://core.telegram.org/api/obtaining_api_id",
+    "snippet": "You will get basic addresses as well as the api_id and api_hash parameters required for user authorization.",
+    "check": "exact"
+   }
+  ]
+ },
+ "access": {
+  "status": "self_serve_free",
+  "dev_sandbox": null,
+  "notes": "Bot tokens freely available via @BotFather on Telegram. Client API credentials (api_id/api_hash) obtainable by signing up and accessing https://my.telegram.org.",
+  "evidence": [
+   {
+    "url": "https://core.telegram.org/api",
+    "snippet": "You are welcome to use both APIs free of charge.",
+    "check": "exact"
+   },
+   {
+    "url": "https://core.telegram.org/api/obtaining_api_id",
+    "snippet": "In order to obtain an API id and develop your own application using the Telegram API you need to do the following:",
+    "check": "repaired"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "rest",
+   "sdk_only"
+  ],
+  "breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "rate_limit_note": "Pages document API monitoring for abuse prevention but do not specify explicit rate limits.",
+  "evidence": [
+   {
+    "url": "https://core.telegram.org/bots/webhooks",
+    "snippet": "We currently support two ways of processing bot updates, getUpdates and setWebhook",
+    "check": "repaired"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/telegram.md",
+    "snippet": "Get a list of chat administrators, excluding other bots.",
+    "check": "exact"
+   },
+   {
+    "url": "https://core.telegram.org/api",
+    "snippet": "This API allows you to build your own customized Telegram clients.",
+    "check": "exact"
+   }
+  ]
+ },
+ "mcp": {
+  "official": null,
+  "community": [],
+  "evidence": []
+ },
+ "buildability": {
+  "verdict": "ready",
+  "main_blocker": "none",
+  "rationale": "Self-serve free bot tokens available, documented REST API, and Composio has already published a working 18-tool toolkit.",
+  "composio_existing_toolkit": "yes",
+  "composio_slug": "TELEGRAM"
+ },
+ "overview_evidence": [
+  {
+   "url": "https://core.telegram.org",
+   "snippet": "Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed."
+  },
+  {
+   "url": "https://core.telegram.org/api",
+   "snippet": "Telegram API and TDLib allow you to build your own customized Telegram clients."
+  }
+ ],
+ "confidence": 0.95,
+ "unknown_reasons": {
+  "auth": "",
+  "access": "",
+  "api_surface": "Explicit rate limits not stated in provided pages.",
+  "mcp": ""
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 10,
+  "error": null,
+  "cost_usd": 0.063471,
+  "seconds": 73.3
+ }
+}

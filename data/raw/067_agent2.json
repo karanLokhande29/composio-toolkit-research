@@ -1,0 +1,113 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.087734,
+  "seconds": 109.1,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://docs.snowflake.com/en/developer-guide/sql-api/authenticating",
+  "https://docs.snowflake.com/en/user-guide/key-pair-auth",
+  "https://docs.snowflake.com/en/",
+  "https://docs.snowflake.com/en/developer-guide/sql-api/index",
+  "https://docs.snowflake.com/en/developer-guide/snowpark/index",
+  "https://docs.composio.dev/toolkits/snowflake.md",
+  "https://docs.snowflake.com/en/developer-guide/sql-api/reference",
+  "https://docs.snowflake.com/en/sql-reference/account-usage",
+  "https://docs.snowflake.com/en/user-guide-getting-started",
+  "https://docs.snowflake.com/en/developer-guide/streamlit/getting-started/overview"
+ ],
+ "output": {
+  "one_liner": "Snowflake is a cloud data warehouse offering REST and Python APIs to execute SQL queries, manage deployments, and perform data operations.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "jwt",
+    "bearer_token"
+   ],
+   "oauth_grant_types": [],
+   "notes": "Supports OAuth, key-pair authentication (JWT), and workload identity federation. All credentials transmitted as Bearer tokens in Authorization headers.",
+   "evidence": [
+    {
+     "url": "https://docs.snowflake.com/en/developer-guide/sql-api/authenticating",
+     "snippet": "To use OAuth, follow these steps: Set up OAuth for authentication."
+    },
+    {
+     "url": "https://docs.snowflake.com/en/developer-guide/sql-api/authenticating",
+     "snippet": "To use key pair authentication, follow these steps: Set up key-pair authentication."
+    },
+    {
+     "url": "https://docs.snowflake.com/en/developer-guide/sql-api/reference",
+     "snippet": "KEYPAIR_JWT (for key-pair authentication) OAUTH (for OAuth) PROGRAMMATIC_ACCESS_TOKEN (for programmatic access tokens)"
+    }
+   ]
+  },
+  "access": {
+   "status": "unknown",
+   "dev_sandbox": null,
+   "notes": "Pages mention trial accounts but do not specify self-serve access model, approval requirements, or whether a free tier exists. OAuth integration setup requires ACCOUNTADMIN role in existing Snowflake account.",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/snowflake.md",
+     "snippet": "You need the ACCOUNTADMIN role, or a role with the privilege to create integrations."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest",
+    "sdk_only"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": false,
+   "rate_limit_note": "API enforces rate limits; clients must reduce request frequency and retry with backoff. Specific limit thresholds not documented.",
+   "evidence": [
+    {
+     "url": "https://docs.snowflake.com/en/developer-guide/sql-api/index",
+     "snippet": "The Snowflake SQL API is a REST API that you can use to access and update data in a Snowflake database."
+    },
+    {
+     "url": "https://docs.snowflake.com/en/developer-guide/sql-api/index",
+     "snippet": "You can use this API to execute standard queries and most DDL and DML statements."
+    },
+    {
+     "url": "https://docs.snowflake.com/en/developer-guide/sql-api/reference",
+     "snippet": "Too many requests. The number of requests hit the rate limit. The application must reduce the frequency of requests."
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": []
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "admin_scope",
+   "rationale": "Public REST API and SDKs are documented and functional; OAuth is self-serve but users must set up their own OAuth app (not Composio-managed) and require ACCOUNTADMIN role.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "SNOWFLAKE"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://docs.snowflake.com/en/developer-guide/sql-api/index",
+    "snippet": "The Snowflake SQL API is a REST API that you can use to access and update data in a Snowflake database."
+   },
+   {
+    "url": "https://docs.snowflake.com/en/developer-guide/snowpark/index",
+    "snippet": "You can download the Snowpark library for any of the three supported languages."
+   }
+  ],
+  "confidence": 0.75,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "Pages reference trial accounts but do not describe access model (self-serve, approval required, paid vs free). No clear path to free credentials documented.",
+   "api_surface": "Specific rate limit thresholds (requests per minute, concurrent connections) not documented in provided pages.",
+   "mcp": "No MCP server mentions found in provided documentation pages."
+  }
+ }
+}

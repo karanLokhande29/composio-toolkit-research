@@ -1,0 +1,64 @@
+{
+ "id": 85,
+ "app": "iPayX",
+ "tag": "agent2",
+ "urls": [
+  {
+   "url": "https://ipayx.ai/docs",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://github.com/Ipayx-stellar/mcp-submit",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/Ipayx-stellar/mcp-fx-audit",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/iPAYX-Technologies/mcp-fx-audit",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "Ipayx-stellar/mcp-submit",
+   "url": "https://github.com/Ipayx-stellar/mcp-submit",
+   "stars": 0,
+   "description": "One-click CLI to submit MCP servers to all major registries (registry.modelcontextprotocol.io, Smithery, Glama, Claude DXT, awesome-mcp lists, and more). Built "
+  },
+  {
+   "repo": "Ipayx-stellar/mcp-fx-audit",
+   "url": "https://github.com/Ipayx-stellar/mcp-fx-audit",
+   "stars": 0,
+   "description": "MCP server for iPayX Protocol — audit FX fees, compare currency margins and score cross-border invoices in Claude, Cursor, Cline, ChatGPT and any MCP client."
+  },
+  {
+   "repo": "iPAYX-Technologies/mcp-fx-audit",
+   "url": "https://github.com/iPAYX-Technologies/mcp-fx-audit",
+   "stars": 0,
+   "description": ""
+  }
+ ],
+ "composio": {
+  "exact": [],
+  "candidates": []
+ },
+ "search_meta": {}
+}

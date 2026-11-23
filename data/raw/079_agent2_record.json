@@ -1,0 +1,113 @@
+{
+ "id": 79,
+ "app": "Smartsheet",
+ "category": "Productivity and Project Management",
+ "hint": "smartsheet.com/developers",
+ "one_liner": "Cloud-based work management platform for planning, tracking, and automating project delivery across teams and organizations.",
+ "app_type": "saas",
+ "auth": {
+  "methods": [
+   "bearer_token",
+   "oauth2"
+  ],
+  "oauth_grant_types": [],
+  "notes": "Supports OAuth2 and Bearer token (personal API access token). Specific OAuth2 grant types not documented. Webhooks require personal API access token.",
+  "evidence": [
+   {
+    "url": "https://docs.composio.dev/toolkits/smartsheet.md",
+    "snippet": "**Auth:** OAUTH2, BEARER_TOKEN",
+    "check": "exact"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/smartsheet.md",
+    "snippet": "Creates an inactive webhook owned by the connected API-token user. Requires a personal API access token",
+    "check": "exact"
+   }
+  ]
+ },
+ "access": {
+  "status": "self_serve_trial",
+  "dev_sandbox": null,
+  "notes": "Free trial available ('Start a trial' offered on website); trial provides self-serve credentials. Continued use requires Business, Enterprise, or Advanced Work Management paid plan. No separate sandbox environment documented.",
+  "evidence": [
+   {
+    "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server",
+    "snippet": "Required plan: Business, Enterprise, or Advanced Work Management",
+    "check": "exact"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "rest"
+  ],
+  "breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "rate_limit_note": "API subject to rate limiting; specific thresholds not documented in provided pages.",
+  "evidence": [
+   {
+    "url": "https://docs.composio.dev/toolkits/smartsheet.md",
+    "snippet": "Creates an inactive webhook owned by the connected API-token user. Requires a personal API access token",
+    "check": "exact"
+   },
+   {
+    "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server-tools",
+    "snippet": "The tools are subject to Smartsheet API rate limiting and standard limitations . Discovery and navigation search",
+    "check": "repaired"
+   }
+  ]
+ },
+ "mcp": {
+  "official": "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server",
+  "community": [],
+  "evidence": [
+   {
+    "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server",
+    "snippet": "Smartsheet MCP server introduction",
+    "check": "exact"
+   },
+   {
+    "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server",
+    "snippet": "Integrate with popular AI platforms including ChatGPT, Claude, Cursor, Microsoft 365 Copilot, and Gemini",
+    "check": "exact"
+   }
+  ]
+ },
+ "buildability": {
+  "verdict": "ready",
+  "main_blocker": "none",
+  "rationale": "Composio toolkit already exists with 185 tools; API documented with OAuth2/Bearer auth; broad surface with official MCP server support; self-serve trial credentials available.",
+  "composio_existing_toolkit": "yes",
+  "composio_slug": "SMARTSHEET"
+ },
+ "overview_evidence": [
+  {
+   "url": "https://developers.smartsheet.com",
+   "snippet": "Explore API docs, connect to our MCP server, develop faster on SDKs, and join a thriving community"
+  },
+  {
+   "url": "https://www.smartsheet.com/solutions/client-partner-delivery",
+   "snippet": "Streamline how services teams plan, manage, and deliver client engagements. Automate workflows, connect data"
+  },
+  {
+   "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server",
+   "snippet": "Interact with your project data in Smartsheet using the Smartsheet MCP server connected to Claude, ChatGPT"
+  }
+ ],
+ "confidence": 0.93,
+ "unknown_reasons": {
+  "auth": "",
+  "access": "",
+  "api_surface": "OpenAPI spec availability not documented in provided pages.",
+  "mcp": ""
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 8,
+  "error": null,
+  "cost_usd": 0.059076000000000004,
+  "seconds": 63.6
+ }
+}

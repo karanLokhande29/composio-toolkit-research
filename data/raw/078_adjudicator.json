@@ -1,0 +1,32 @@
+{
+ "fields": [
+  "mcp.official"
+ ],
+ "pages": [
+  "https://coda.io/developers",
+  "https://github.com/orellazri/coda-mcp",
+  "https://coda.io/developers/apis/v1#section/Introduction"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.04264199999999999,
+  "seconds": 6.2,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "mcp.official",
+    "value": null,
+    "evidence": [
+     {
+      "url": "https://github.com/orellazri/coda-mcp",
+      "snippet": "This MCP server is not developed or maintained by Coda; it's a community-built project."
+     }
+    ],
+    "reason": "The only MCP server referenced (Superhuman Docs MCP / orellazri/coda-mcp) is explicitly stated to be community-built, not vendor-published, so there is no official Coda MCP server in the pages."
+   }
+  ]
+ }
+}

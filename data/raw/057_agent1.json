@@ -1,0 +1,133 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.07727,
+  "seconds": 87.9,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://docs.composio.dev/toolkits/brightdata.md",
+  "https://brightdata.com",
+  "https://docs.brightdata.com",
+  "https://brightdata.com/pricing",
+  "https://brightdata.com/ai/web-access",
+  "https://brightdata.com/ai/mcp-server",
+  "https://brightdata.com/pricing/web-unlocker",
+  "https://brightdata.com/pricing/serp",
+  "https://brightdata.com/pricing/scraping-browser",
+  "https://brightdata.com/pricing/web-scraper",
+  "https://brightdata.com/pricing/web-scraper/studio",
+  "https://brightdata.com/pricing/datasets"
+ ],
+ "output": {
+  "one_liner": "Web scraping, data extraction, and browser automation platform providing APIs to access and extract structured data from websites at scale.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "api_key"
+   ],
+   "oauth_grant_types": [],
+   "notes": "API key-based authentication using Bearer token format in HTTP Authorization headers.",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/brightdata.md",
+     "snippet": "Auth: API_KEY"
+    },
+    {
+     "url": "https://docs.brightdata.com",
+     "snippet": "Authorization: Bearer YOUR_API_KEY"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Free tier with 5,000 monthly credits; no credit card or approval required to sign up and begin development.",
+   "evidence": [
+    {
+     "url": "https://brightdata.com/ai/mcp-server",
+     "snippet": "Enjoy 5,000 MCP requests every month - for free!"
+    },
+    {
+     "url": "https://brightdata.com/pricing/web-unlocker",
+     "snippet": "Free Tier 5K requests per month Start free"
+    },
+    {
+     "url": "https://brightdata.com/pricing/serp",
+     "snippet": "Free Tier 5K records per month"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "HTTP 429 responses returned with Retry-After header; callers should respect retry delays.",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/brightdata.md",
+     "snippet": "Tools: 167"
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/brightdata.md",
+     "snippet": "Collect Agoda Properties Listings with Pricing. Supports collect_by_url, discover_by_search_input. Returns structured url, listing_id, title, location data and preserves additional provider fields."
+    },
+    {
+     "url": "https://docs.brightdata.com",
+     "snippet": "SDKs: Python and JavaScript clients"
+    },
+    {
+     "url": "https://docs.brightdata.com",
+     "snippet": "Bright Data CLI: The platform from your terminal"
+    },
+    {
+     "url": "https://brightdata.com/pricing/web-scraper/studio",
+     "snippet": "Webhook or API delivery"
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://mcp.brightdata.com/",
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://docs.brightdata.com",
+     "snippet": "mcp add brightdata https://mcp.brightdata.com/sse?token=YOUR_API_KEY"
+    },
+    {
+     "url": "https://brightdata.com/ai/mcp-server",
+     "snippet": "Bright Data MCP solves web access for LLMs and AI agents"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Self-serve free tier offers immediate credential access; documented REST API with 167 tools; official MCP server published; Composio toolkit already exists.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "BRIGHTDATA"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://brightdata.com",
+    "snippet": "Web Data Infrastructure for Humans & Agents"
+   },
+   {
+    "url": "https://brightdata.com/ai/web-access",
+    "snippet": "Let your Agent interact with dynamic websites. Perform complex actions like clicking, scrolling, and navigating."
+   }
+  ],
+  "confidence": 0.98,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  }
+ }
+}

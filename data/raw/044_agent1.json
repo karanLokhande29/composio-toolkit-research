@@ -1,0 +1,122 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.095522,
+  "seconds": 134.4,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://docs.composio.dev/toolkits/salesforce.md",
+  "https://docs.composio.dev/toolkits/salesforce_data_360.md",
+  "https://developer.salesforce.com/docs/commerce",
+  "https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-commerce-ocapi/get-started-with-ocapi.html",
+  "https://developer.salesforce.com/docs/atlas.en-us.order_management_developer_guide_html.meta/order_management_developer_guide_html/order_management_developer_guide_intro.htm",
+  "https://github.com/taurgis/sfcc-dev-mcp",
+  "https://github.com/brinzl/commercecloud-mcp-server",
+  "https://github.com/vinkius-labs/salesforce-commerce-mcp"
+ ],
+ "output": {
+  "one_liner": "Salesforce Commerce Cloud is a cloud platform for building B2B, D2C, and B2C ecommerce experiences with shopping, inventory, and order management capabilities.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "jwt",
+    "api_key"
+   ],
+   "oauth_grant_types": [],
+   "notes": "Client ID required for all requests. Authentication methods vary by endpoint: JWT tokens for shop customers, OAuth for Business Manager users, and Basic auth (username/password) or OAuth (client-id/client-secret) for API credentials.",
+   "evidence": [
+    {
+     "url": "https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-commerce-ocapi/get-started-with-ocapi.html",
+     "snippet": "A client ID is mandatory for all requests."
+    },
+    {
+     "url": "https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-commerce-ocapi/get-started-with-ocapi.html",
+     "snippet": "Authenticate the customer by obtaining a JWT to be passed in each request."
+    },
+    {
+     "url": "https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-commerce-ocapi/get-started-with-ocapi.html",
+     "snippet": "Authenticate the user by obtaining an OAuth token for a Business Manager user to be passed in each request."
+    }
+   ]
+  },
+  "access": {
+   "status": "unknown",
+   "dev_sandbox": null,
+   "notes": "Commerce Cloud is part of the enterprise Salesforce portfolio. Pages do not explicitly state pricing model, free tier availability, or whether a sandbox/trial is available to developers.",
+   "evidence": []
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": null,
+   "rate_limit_note": "",
+   "evidence": [
+    {
+     "url": "https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-commerce-ocapi/get-started-with-ocapi.html",
+     "snippet": "The Open Commerce API (OCAPI) enables you to access resources using HTTP requests and HTTP responses."
+    },
+    {
+     "url": "https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-commerce-ocapi/get-started-with-ocapi.html",
+     "snippet": "Shop API: allows a client to interact with the system as a shop customer or as an agent shopping on behalf of a customer."
+    },
+    {
+     "url": "https://developer.salesforce.com/docs/atlas.en-us.order_management_developer_guide_html.meta/order_management_developer_guide_html/order_management_developer_guide_intro.htm",
+     "snippet": "Use the Change Order Summary API to modify an order summary and its related entities in a single request."
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [
+    "https://github.com/taurgis/sfcc-dev-mcp",
+    "https://github.com/brinzl/commercecloud-mcp-server",
+    "https://github.com/vinkius-labs/salesforce-commerce-mcp"
+   ],
+   "evidence": [
+    {
+     "url": "https://github.com/taurgis/sfcc-dev-mcp",
+     "snippet": "It is generally available and includes the B2C CLI (@salesforce/b2c-cli), the official MCP server (@salesforce/b2c-dx-mcp, for example npx -y @salesforce/b2c-dx-mcp@latest)"
+    },
+    {
+     "url": "https://github.com/brinzl/commercecloud-mcp-server",
+     "snippet": "An MCP server that helps connect your AI applications with Salesforce Commerce Cloud instance"
+    },
+    {
+     "url": "https://github.com/vinkius-labs/salesforce-commerce-mcp",
+     "snippet": "Vinkius Edge enterprise Model Context Protocol (MCP) server for Salesforce B2C Commerce Cloud integration."
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "paid_plan",
+   "rationale": "Public REST API with working community MCP implementations exist, but OCAPI is deprecated and access requires paid Salesforce organization with admin-level Business Manager configuration.",
+   "composio_existing_toolkit": "no",
+   "composio_slug": null
+  },
+  "overview_evidence": [
+   {
+    "url": "https://developer.salesforce.com/docs/commerce",
+    "snippet": "Salesforce Commerce Cloud offers distinct solutions for B2B/D2C and B2C commerce."
+   },
+   {
+    "url": "https://developer.salesforce.com/docs/commerce",
+    "snippet": "Develop personalized ecommerce experiences with our fast, flexible solutions."
+   }
+  ],
+  "confidence": 0.72,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "Pages do not explicitly state whether Commerce Cloud requires paid subscription, offers free tier/sandbox, trial period, or how developers can obtain credentials.",
+   "api_surface": "OCAPI deprecated per page title; breadth inferred from multiple API types (Shop, Data, Meta, Order Management) but complete endpoint inventory not documented in provided pages.",
+   "mcp": "Official Salesforce MCP server (@salesforce/b2c-dx-mcp) mentioned but GitHub URL not provided in pages; only package name available via npm."
+  }
+ }
+}

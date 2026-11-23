@@ -1,0 +1,88 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.080631,
+  "seconds": 117.8,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://github.com/sherlock-project/sherlock",
+  "https://github.com/holistis/bug-bounty-intelligence-mcp",
+  "https://github.com/jcucci/dotnet-sherlock-mcp",
+  "https://github.com/Burnsedia/sherlock-mcp"
+ ],
+ "output": {
+  "one_liner": "Hunt down social media accounts by username across social networks",
+  "app_type": "cli_or_library",
+  "auth": {
+   "methods": [],
+   "oauth_grant_types": [],
+   "notes": "No authentication mentioned; open-source tool for public data searches",
+   "evidence": []
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": null,
+   "notes": "Open-source GitHub repository with public installation via Python package manager",
+   "evidence": [
+    {
+     "url": "https://github.com/Burnsedia/sherlock-mcp",
+     "snippet": "Sherlock CLI tool installed: pipx install sherlock-project"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "cli_or_library_only"
+   ],
+   "breadth": "narrow",
+   "openapi_spec_url": null,
+   "webhooks": null,
+   "rate_limit_note": "",
+   "evidence": [
+    {
+     "url": "https://github.com/sherlock-project/sherlock",
+     "snippet": "Hunt down social media accounts by username across social networks"
+    },
+    {
+     "url": "https://github.com/Burnsedia/sherlock-mcp",
+     "snippet": "social media username searches across 400+ platforms using Model Context Protocol"
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [
+    "https://github.com/Burnsedia/sherlock-mcp"
+   ],
+   "evidence": [
+    {
+     "url": "https://github.com/Burnsedia/sherlock-mcp",
+     "snippet": "Sherlock MCP Server: Find truth and counter propaganda through ethical OSINT"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "cli_only",
+   "rationale": "Open-source and freely available but CLI-only tool without native API; Composio would need to wrap CLI or integrate community MCP server",
+   "composio_existing_toolkit": "no",
+   "composio_slug": null
+  },
+  "overview_evidence": [
+   {
+    "url": "https://github.com/sherlock-project/sherlock",
+    "snippet": "Hunt down social media accounts by username across social networks"
+   }
+  ],
+  "confidence": 0.7,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  }
+ }
+}

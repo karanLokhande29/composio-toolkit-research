@@ -53,55 +53,63 @@
   },
   {
    "url": "https://developers.hubspot.com/docs/api/intro-to-auth",
-   "purpose": "auth",
+   "purpose": "authentication",
    "source": "search",
    "status": 200,
    "ok": true,
    "js_rendered": false
   },
   {
-   "url": "https://developers.hubspot.com/docs/api/working-with-oauth",
-   "purpose": "auth",
+   "url": "https://developers.hubspot.com/docs/api/oauth-quickstart-guide",
+   "purpose": "authentication",
    "source": "search",
    "status": 200,
    "ok": true,
    "js_rendered": false
   },
   {
-   "url": "https://developers.hubspot.com/docs/api/developer-tier",
+   "url": "https://developers.hubspot.com/docs/api/private-apps",
    "purpose": "credentials",
    "source": "search",
-   "status": 404,
-   "ok": false,
-   "js_rendered": true
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
   },
   {
-   "url": "https://developers.hubspot.com/docs/api/sandboxes",
+   "url": "https://developers.hubspot.com/docs/getting-started/account-types",
    "purpose": "sandbox",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.hubspot.com/beta-docs/guides/apps/developer-platform/overview",
+   "purpose": "developer access",
    "source": "search",
    "status": 404,
    "ok": false,
    "js_rendered": true
   },
   {
-   "url": "https://developers.hubspot.com/pricing",
+   "url": "https://app.hubspot.com/l/partners",
+   "purpose": "partner programme",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://www.hubspot.com/pricing/api",
    "purpose": "pricing",
    "source": "search",
    "status": 404,
    "ok": false,
-   "js_rendered": false
-  },
-  {
-   "url": "https://developers.hubspot.com/docs/reference/api",
-   "purpose": "reference",
-   "source": "search",
-   "status": 200,
-   "ok": true,
-   "js_rendered": false
+   "js_rendered": true
   },
   {
    "url": "https://developers.hubspot.com/docs/api/usage-details",
-   "purpose": "rate-limits",
+   "purpose": "rate limits",
    "source": "search",
    "status": 200,
    "ok": true,
@@ -117,7 +125,15 @@
   },
   {
    "url": "https://developers.hubspot.com/mcp",
-   "purpose": "mcp",
+   "purpose": "MCP server",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.hubspot.com/docs/reference/api/overview",
+   "purpose": "API reference",
    "source": "search",
    "status": 200,
    "ok": true,
@@ -229,6 +245,38 @@
   },
   {
    "url": "https://developers.hubspot.com/docs/getting-started/introduction",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.hubspot.com/docs/api-reference/latest/authentication/manage-oauth-tokens",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/account-service-keys",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/scopes",
    "purpose": "crawl",
    "source": "crawl",
    "status": 200,

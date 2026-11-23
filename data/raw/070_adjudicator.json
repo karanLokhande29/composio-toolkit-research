@@ -1,0 +1,37 @@
+{
+ "fields": [
+  "access.status"
+ ],
+ "pages": [
+  "https://docs.sentry.io/pricing/",
+  "https://docs.sentry.io/api/auth/",
+  "https://docs.sentry.io/api/events/",
+  "https://docs.sentry.io/api/projects/"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.052809,
+  "seconds": 6.3,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "access.status",
+    "value": "self_serve_free",
+    "evidence": [
+     {
+      "url": "https://docs.sentry.io/pricing/",
+      "snippet": "Without a paid plan, you will be automatically assigned a free Developer plan at the end of your trial."
+     },
+     {
+      "url": "https://docs.sentry.io/api/auth/",
+      "snippet": "You can create authentication tokens within Sentry by"
+     }
+    ],
+    "reason": "Both agents agree and pages confirm a free Developer plan exists with self-serve token creation, requiring no sales contact."
+   }
+  ]
+ }
+}

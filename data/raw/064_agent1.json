@@ -1,0 +1,101 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.085867,
+  "seconds": 89.5,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://developers.cloudflare.com/api/",
+  "https://docs.composio.dev/toolkits/cloudflare.md",
+  "https://developers.cloudflare.com/api/resources/billing/subresources/rate_plans",
+  "https://developers.cloudflare.com/api/resources/billing/subresources/rate_plans/methods/get",
+  "https://developers.cloudflare.com/api/resources/iam/subresources/oauth_clients",
+  "https://developers.cloudflare.com/api/resources/iam/subresources/oauth_clients/methods/list",
+  "https://developers.cloudflare.com/api/resources/iam/subresources/oauth_clients/methods/get",
+  "https://developers.cloudflare.com/api/resources/iam/subresources/oauth_clients/methods/create",
+  "https://developers.cloudflare.com/api/resources/iam/subresources/oauth_clients/methods/update",
+  "https://developers.cloudflare.com/api/resources/iam/subresources/oauth_clients/methods/delete",
+  "https://developers.cloudflare.com/api/resources/iam/subresources/oauth_clients/methods/rotate_secret",
+  "https://developers.cloudflare.com/api/resources/iam/subresources/oauth_clients/methods/delete_rotated_secret"
+ ],
+ "output": {
+  "one_liner": "Cloudflare is a web infrastructure platform providing DNS, CDN, DDoS protection, Workers serverless compute, and Zero Trust security.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "api_key",
+    "oauth2"
+   ],
+   "oauth_grant_types": [],
+   "notes": "API supports API key tokens for primary authentication and OAuth clients for delegated access",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/cloudflare.md",
+     "snippet": "Auth: API_KEY Composio-managed OAuth available N/A Tools: 171"
+    }
+   ]
+  },
+  "access": {
+   "status": "unknown",
+   "dev_sandbox": null,
+   "notes": "Toolkit exists with self-serve credentials but pages do not state whether free or paid tier is required",
+   "evidence": []
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "",
+   "evidence": [
+    {
+     "url": "https://developers.cloudflare.com/api/",
+     "snippet": "List webhooks Get a webhook Create a webhook Update a webhook Delete a webhook"
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/cloudflare.md",
+     "snippet": "Create a new empty custom list for use in WAF rules and filters"
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://developers.cloudflare.com/api/",
+     "snippet": "List MCP Portals Create a new MCP Portal Update an MCP Portal Delete an MCP Portal"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Documented REST API with 171 tools, self-serve API key credentials, and existing production Composio toolkit enable immediate toolkit building.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "CLOUDFLARE"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://docs.composio.dev/toolkits/cloudflare.md",
+    "snippet": "Auth: API_KEY Composio-managed OAuth available N/A Tools: 171"
+   },
+   {
+    "url": "https://developers.cloudflare.com/api/",
+    "snippet": "List OAuth Clients Get OAuth Client Details Create OAuth Client Update OAuth Client Delete OAuth Client"
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "Pages do not explicitly state free tier eligibility, paid plan requirement, or sandbox environment availability",
+   "api_surface": "",
+   "mcp": "Pages show Cloudflare API endpoints for MCP server management but no URL to official MCP server implementation provided"
+  }
+ }
+}

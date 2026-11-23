@@ -1,0 +1,66 @@
+{
+ "fields": [
+  "access.status",
+  "buildability.main_blocker",
+  "buildability.verdict"
+ ],
+ "pages": [
+  "https://developers.smartsheet.com/register",
+  "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server",
+  "https://www.smartsheet.com/content-center/best-practices/tips-tricks/api-getting-started",
+  "https://smartsheet.com/pricing",
+  "https://developers.smartsheet.com/api/smartsheet/openapi"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.07924799999999999,
+  "seconds": 17.0,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "access.status",
+    "value": "paid_plan_required",
+    "evidence": [
+     {
+      "url": "https://developers.smartsheet.com/api/smartsheet/openapi",
+      "snippet": "The Smartsheet API is restricted to users on Business and Enterprise plans"
+     },
+     {
+      "url": "https://developers.smartsheet.com/register",
+      "snippet": "must belong to an existing licensed Smartsheet user on a Business plan or higher"
+     }
+    ],
+    "reason": "Multiple pages explicitly state API access requires a paid Business/Enterprise plan with no mention of a time-limited trial granting API access specifically."
+   },
+   {
+    "field": "buildability.main_blocker",
+    "value": "paid_plan",
+    "evidence": [
+     {
+      "url": "https://developers.smartsheet.com/api/smartsheet/openapi",
+      "snippet": "The Smartsheet API is restricted to users on Business and Enterprise plans"
+     }
+    ],
+    "reason": "The primary obstacle to building with the API is the requirement of a paid Business or Enterprise plan license."
+   },
+   {
+    "field": "buildability.verdict",
+    "value": "ready_with_caveats",
+    "evidence": [
+     {
+      "url": "https://developers.smartsheet.com/api/smartsheet/openapi",
+      "snippet": "The Smartsheet API is restricted to users on Business and Enterprise plans"
+     },
+     {
+      "url": "https://www.smartsheet.com/content-center/best-practices/tips-tricks/api-getting-started",
+      "snippet": "you want to create a sandbox Smartsheet account that you can use for development and testing purposes"
+     }
+    ],
+    "reason": "The API is fully documented and self-serve via access tokens or OAuth2, but only usable on a paid Business/Enterprise plan, making it buildable but with a paid-plan caveat rather than fully free/ready."
+   }
+  ]
+ }
+}

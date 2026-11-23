@@ -1,0 +1,136 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.06833800000000001,
+  "seconds": 74.9,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://developers.asana.com/reference",
+  "https://developers.asana.com/docs",
+  "https://developers.asana.com/docs/rate-limits",
+  "https://developers.asana.com/docs/webhooks",
+  "https://docs.composio.dev/toolkits/asana.md",
+  "https://developers.asana.com",
+  "https://developers.asana.com/docs/authentication",
+  "https://developers.asana.com/docs/oauth",
+  "https://developers.asana.com/docs/personal-access-token",
+  "https://developers.asana.com/docs/getting-started-with-asana-oauth",
+  "https://developers.asana.com/docs/oauth-scopes",
+  "https://developers.asana.com/docs/mcp-server"
+ ],
+ "output": {
+  "one_liner": "Asana is a web-based project management and team collaboration platform for organizing, planning, and automating work.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "bearer_token"
+   ],
+   "oauth_grant_types": [
+    "authorization_code"
+   ],
+   "notes": "Asana supports OAuth 2.0 with authorization code grant flow, Personal Access Tokens (bearer tokens), and Service Accounts (Enterprise). OAuth is recommended for multi-user applications.",
+   "evidence": [
+    {
+     "url": "https://developers.asana.com/docs/oauth",
+     "snippet": "OAuth is a mechanism for applications to access the Asana API without access to the user's password. Instead the application gets a token"
+    },
+    {
+     "url": "https://developers.asana.com/docs/personal-access-token",
+     "snippet": "A personal access token (PAT) allows you to access the Asana REST API upon successful authentication"
+    },
+    {
+     "url": "https://developers.asana.com/docs/oauth",
+     "snippet": "Asana supports the authorization code grant flow"
+    },
+    {
+     "url": "https://developers.asana.com/docs/personal-access-token",
+     "snippet": "Personal access tokens should be used similarly to OAuth access tokens passing them in the Authorization header as Bearer tokens"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Free Asana accounts can immediately generate Personal Access Tokens for API access. Developer sandbox available for testing premium features. No payment required; rate limits differ between free and paid tiers.",
+   "evidence": [
+    {
+     "url": "https://developers.asana.com/docs",
+     "snippet": "You can test in any of your existing workspaces, create a free account, or request a developer sandbox"
+    },
+    {
+     "url": "https://developers.asana.com/docs/personal-access-token",
+     "snippet": "You can generate a personal access token from the Asana developer console"
+    },
+    {
+     "url": "https://developers.asana.com/docs/rate-limits",
+     "snippet": "Free domain maximum requests per minute: 150. Paid domain maximum requests per minute: 1,500"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Per-token rate limits: 150 req/min (free), 1,500 req/min (paid). Requests exceeding limits receive 429 with Retry-After header. Limits reset every minute.",
+   "evidence": [
+    {
+     "url": "https://developers.asana.com/reference",
+     "snippet": "The Asana API is a RESTful interface with predictable resource-oriented URLs"
+    },
+    {
+     "url": "https://developers.asana.com/reference",
+     "snippet": "This reference is generated from our OpenAPI Specification"
+    },
+    {
+     "url": "https://developers.asana.com/docs/webhooks",
+     "snippet": "Webhooks allow you to subscribe to notifications about events that occur on Asana resources"
+    },
+    {
+     "url": "https://developers.asana.com/docs/rate-limits",
+     "snippet": "Asana enforces multiple kinds of rate limiting to protect stability and keep the API available"
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://developers.asana.com/docs/mcp-server",
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://developers.asana.com/docs/mcp-server",
+     "snippet": "Asana offers a Model Context Protocol (MCP) server which allows AI assistants to access the Asana Work Graph"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Self-serve free API access, full REST+OpenAPI documentation, multiple auth methods, webhooks, MCP support, and existing production Composio toolkit confirm immediate buildability.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "ASANA"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://developers.asana.com",
+    "snippet": "Integrate tools, automate actions, and customize your workflows with Asana's developer platform"
+   },
+   {
+    "url": "https://developers.asana.com/reference",
+    "snippet": "The Asana API is a RESTful interface with predictable resource-oriented URLs"
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "Direct OpenAPI spec file URL not provided in pages (only HTML reference documentation)",
+   "mcp": ""
+  }
+ }
+}

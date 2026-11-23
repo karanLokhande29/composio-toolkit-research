@@ -1,0 +1,38 @@
+{
+ "fields": [
+  "mcp.official"
+ ],
+ "pages": [
+  "https://docs.twenty.com/user-guide/ai/capabilities/mcp",
+  "https://twenty.com",
+  "https://twenty.com/pricing",
+  "https://docs.twenty.com/developers/extend/api",
+  "https://docs.twenty.com/developers/extend/oauth"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.069585,
+  "seconds": 6.6,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "mcp.official",
+    "value": "https://docs.twenty.com/user-guide/ai/capabilities/mcp",
+    "evidence": [
+     {
+      "url": "https://docs.twenty.com/user-guide/ai/capabilities/mcp",
+      "snippet": "Twenty exposes an"
+     },
+     {
+      "url": "https://twenty.com",
+      "snippet": "Every Cloud workspace ships with a native MCP server. Connect your AI assistant via OAuth"
+     }
+    ],
+    "reason": "Twenty's own documentation describes a vendor-published MCP server with endpoints, auth, and tool schemas, confirming it is official and first-party."
+   }
+  ]
+ }
+}

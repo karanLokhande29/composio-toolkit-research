@@ -1,0 +1,102 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.046792,
+  "seconds": 61.3,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://api-docs.ecwid.com/",
+  "https://docs.ecwid.com/api-reference",
+  "https://docs.ecwid.com/webhook-automations",
+  "https://docs.ecwid.com/webhook-automations/webhook-flow-examples/export-new-orders",
+  "https://docs.ecwid.com/api-reference/advanced/js-api-calls",
+  "https://docs.ecwid.com/api-reference/rest-api/checkout-extra-fields"
+ ],
+ "output": {
+  "one_liner": "Ecwid is a SaaS ecommerce platform providing REST APIs and webhooks to build custom apps and manage store data, orders, products, customers, and payments.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "bearer_token"
+   ],
+   "oauth_grant_types": [],
+   "notes": "OAuth 2.0 is used for app authorization. Bearer tokens (static secret tokens) are used to authenticate REST API requests.",
+   "evidence": [
+    {
+     "url": "https://docs.ecwid.com/api-reference",
+     "snippet": "We use OAuth 2.0 authorization simplified for single-store customizations"
+    },
+    {
+     "url": "https://docs.ecwid.com/webhook-automations/webhook-flow-examples/export-new-orders",
+     "snippet": "Authorization: Bearer $sToken"
+    }
+   ]
+  },
+  "access": {
+   "status": "unknown",
+   "dev_sandbox": null,
+   "notes": "Pages reference 'Set up your dev environment in Ecwid' and 'Make your first API request' but do not explicitly state whether the API is free, requires payment, is trial-based, or needs approval.",
+   "evidence": []
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "600 requests per minute per token; requests exceeding the limit receive 429 error with Retry-After header",
+   "evidence": [
+    {
+     "url": "https://docs.ecwid.com/api-reference",
+     "snippet": "Ecwid REST API allows you to access and manage any store data"
+    },
+    {
+     "url": "https://docs.ecwid.com/api-reference",
+     "snippet": "We accept up to 600 requests per minute per token"
+    },
+    {
+     "url": "https://docs.ecwid.com/webhook-automations",
+     "snippet": "Ecwid webhooks are automatic real-time notifications for apps about different events"
+    },
+    {
+     "url": "https://docs.ecwid.com/api-reference",
+     "snippet": "Store Profile, Orders, Products, Categories, Customers, Discounts, Domains, Dictionaries"
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": []
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "other",
+   "rationale": "REST API and webhooks are well-documented with broad endpoint coverage, but the credential acquisition process and access status (free vs. paid vs. approval required) are not documented in the provided pages.",
+   "composio_existing_toolkit": "no",
+   "composio_slug": null
+  },
+  "overview_evidence": [
+   {
+    "url": "https://api-docs.ecwid.com/",
+    "snippet": "Build with Ecwid apps | Ecwid Documentation"
+   },
+   {
+    "url": "https://docs.ecwid.com/api-reference",
+    "snippet": "Ecwid REST API allows you to access and manage any store data, payment and shipping methods"
+   }
+  ],
+  "confidence": 0.75,
+  "unknown_reasons": {
+   "auth": "Pages specify OAuth 2.0 and Bearer tokens but do not document specific OAuth grant types supported.",
+   "access": "Pages do not state whether free tier is available, payment is required, trial-based access is offered, admin approval is needed, or app review is required for production use.",
+   "api_surface": "OpenAPI/Swagger specification URL not provided in pages; full endpoint inventory not exhaustively listed.",
+   "mcp": "No MCP server (official or community) mentioned in provided documentation pages."
+  }
+ }
+}

@@ -44,12 +44,12 @@
    "js_rendered": false
   },
   {
-   "url": "https://pipedrive.readme.io/docs/getting-started",
+   "url": "https://pipedrive.readme.io/docs/getting-started-with-pipedrive-api",
    "purpose": "overview",
    "source": "search",
-   "status": 200,
-   "ok": true,
-   "js_rendered": false
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
   },
   {
    "url": "https://pipedrive.readme.io/docs/marketplace-oauth-authorization",
@@ -68,16 +68,40 @@
    "js_rendered": false
   },
   {
-   "url": "https://pipedrive.readme.io/docs/core-api-concepts-rate-limiting",
-   "purpose": "rate_limits",
+   "url": "https://pipedrive.readme.io/docs/how-to-get-access-to-pipedrive-api",
+   "purpose": "credentials",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developers.pipedrive.com/",
+   "purpose": "overview",
    "source": "search",
    "status": 200,
    "ok": true,
    "js_rendered": false
   },
   {
-   "url": "https://developers.pipedrive.com/docs/api/v1",
-   "purpose": "api_reference",
+   "url": "https://developers.pipedrive.com/sandbox-account-for-development",
+   "purpose": "sandbox",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": true
+  },
+  {
+   "url": "https://pipedrive.readme.io/docs/marketplace-creating-a-proper-app",
+   "purpose": "credentials",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://pipedrive.readme.io/docs/core-api-concepts-rate-limiting",
+   "purpose": "rate_limits",
    "source": "search",
    "status": 200,
    "ok": true,
@@ -92,32 +116,24 @@
    "js_rendered": false
   },
   {
-   "url": "https://developers.pipedrive.com/",
-   "purpose": "overview",
+   "url": "https://developers.pipedrive.com/docs/api/v1",
+   "purpose": "api_reference",
    "source": "search",
    "status": 200,
    "ok": true,
    "js_rendered": false
   },
   {
-   "url": "https://pipedrive.readme.io/docs/marketplace-manager",
-   "purpose": "credentials",
+   "url": "https://pipedrive.readme.io/docs",
+   "purpose": "api_reference",
    "source": "search",
    "status": 200,
    "ok": true,
    "js_rendered": false
   },
   {
-   "url": "https://www.pipedrive.com/en/partners",
-   "purpose": "partner_programme",
-   "source": "search",
-   "status": 404,
-   "ok": false,
-   "js_rendered": false
-  },
-  {
-   "url": "https://pipedrive.readme.io/docs/sandbox-accounts",
-   "purpose": "sandbox",
+   "url": "https://pipedrive.com/en/marketplace/partnership-program",
+   "purpose": "pricing",
    "source": "search",
    "status": 404,
    "ok": false,
@@ -229,6 +245,38 @@
   },
   {
    "url": "https://www.pipedrive.com/hu/pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.pipedrive.com/id/pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.pipedrive.com/it/pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.pipedrive.com/ja/pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.pipedrive.com/ko/pricing",
    "purpose": "crawl",
    "source": "crawl",
    "status": 200,

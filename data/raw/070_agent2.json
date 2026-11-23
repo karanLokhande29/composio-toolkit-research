@@ -1,0 +1,117 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.041791999999999996,
+  "seconds": 38.7,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://docs.sentry.io/api/auth/",
+  "https://docs.sentry.io/pricing/",
+  "https://docs.sentry.io/api/events/",
+  "https://docs.sentry.io/api/projects/",
+  "https://docs.sentry.io/api/organizations/",
+  "https://docs.sentry.io/api/",
+  "https://docs.sentry.io/api/ratelimits/",
+  "https://docs.sentry.io/product/integrations/integration-platform/webhooks/",
+  "https://docs.composio.dev/toolkits/sentry.md",
+  "https://docs.sentry.io/organization/authentication/"
+ ],
+ "output": {
+  "one_liner": "Sentry is an error tracking and performance monitoring platform providing REST APIs to programmatically manage organizations, teams, projects, and analyze event/issue data.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "bearer_token",
+    "oauth2"
+   ],
+   "oauth_grant_types": [
+    "authorization_code"
+   ],
+   "notes": "Bearer tokens (static personal access tokens) created via internal integrations or user settings, and OAuth2 with authorization code grant. All requests use 'Authorization: Bearer {TOKEN}' header.",
+   "evidence": [
+    {
+     "url": "https://docs.sentry.io/api/auth/",
+     "snippet": "Authentication tokens are passed using an auth header, and are used to authenticate as a user or organization account with the API."
+    },
+    {
+     "url": "https://docs.sentry.io/api/auth/",
+     "snippet": "For third-party applications that need to access Sentry on behalf of users, Sentry supports OAuth2 with the authorization code grant type."
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": null,
+   "notes": "Free Developer plan available to anyone after 14-day free trial on Business plan; no payment or approval required. Tokens created via internal integrations accessible to any user account.",
+   "evidence": [
+    {
+     "url": "https://docs.sentry.io/pricing/",
+     "snippet": "Without a paid plan, you will be automatically assigned a free Developer plan at the end of your trial."
+    },
+    {
+     "url": "https://docs.sentry.io/api/auth/",
+     "snippet": "You can create authentication tokens within Sentry by creating an internal integration."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Fixed window rate limiting per endpoint, plus concurrent request limits. Response headers: X-Sentry-Rate-Limit-Limit, X-Sentry-Rate-Limit-Remaining, X-Sentry-Rate-Limit-Reset, X-Sentry-Rate-Limit-ConcurrentLimit, X-Sentry-Rate-Limit-ConcurrentRemaining. Webhooks recommended over polling.",
+   "evidence": [
+    {
+     "url": "https://docs.sentry.io/api/events/",
+     "snippet": "Bulk Mutate Issues, Create Issue View, Get Debug Information, List Events, Retrieve Events, Update Issue"
+    },
+    {
+     "url": "https://docs.sentry.io/api/projects/",
+     "snippet": "Create New Project, Link Repository, List Client Keys, Register Service Hook, Update Project"
+    },
+    {
+     "url": "https://docs.sentry.io/api/ratelimits/",
+     "snippet": "Sentry rate limits every API request made to prevent abuse and resource overuse."
+    },
+    {
+     "url": "https://docs.sentry.io/product/integrations/integration-platform/webhooks/",
+     "snippet": "Webhooks are a way for two applications or services to communicate over the web, allowing one application to send automatic notifications."
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": []
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Free self-serve credentials, OAuth2 support with Composio-managed option, broad documented REST API, and webhooks available. Composio toolkit already exists with 212 tools.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "SENTRY"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://docs.sentry.io/api/",
+    "snippet": "The Sentry web API is used to access the Sentry platform programmatically."
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/sentry.md",
+    "snippet": "Auth: OAUTH2, Composio-managed OAuth available? Yes, Tools: 212"
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "OpenAPI spec availability not mentioned in provided pages",
+   "mcp": "No official or community MCP server mentioned in provided pages"
+  }
+ }
+}

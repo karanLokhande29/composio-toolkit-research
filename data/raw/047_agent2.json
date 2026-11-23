@@ -1,0 +1,101 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.087985,
+  "seconds": 117.6,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://api-docs.ecwid.com/reference/authentication",
+  "https://api-docs.ecwid.com/reference/products",
+  "https://docs.ecwid.com/api-reference",
+  "https://docs.ecwid.com/webhook-automations",
+  "https://docs.ecwid.com/webhook-automations/webhook-flow-examples/export-new-orders",
+  "https://docs.ecwid.com/api-reference/advanced/js-api-calls",
+  "https://docs.ecwid.com/api-reference/rest-api/checkout-extra-fields",
+  "https://docs.ecwid.com/api-reference/rest-api/rest-api-error-codes",
+  "https://docs.ecwid.com/api-reference/rest-api/store-profile",
+  "https://docs.ecwid.com/api-reference/rest-api/orders",
+  "https://docs.ecwid.com/api-reference/rest-api/products/search-products",
+  "https://docs.ecwid.com/api-reference/rest-api/products/get-product"
+ ],
+ "output": {
+  "one_liner": "Ecwid is an ecommerce platform allowing developers to access and manage store data, payment methods, shipping options, and storefront settings via REST API.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "bearer_token"
+   ],
+   "oauth_grant_types": [],
+   "notes": "OAuth 2.0 simplified for single-store customizations; Bearer token authentication using secret_token credentials",
+   "evidence": [
+    {
+     "url": "https://docs.ecwid.com/api-reference",
+     "snippet": "We use OAuth 2.0 authorization simplified for single-store customizations, JSON-formatted data, and a clear structure."
+    },
+    {
+     "url": "https://docs.ecwid.com/api-reference/rest-api/products/get-product",
+     "snippet": "Authorization Bearer secret_ab***cd Access token of the application."
+    }
+   ]
+  },
+  "access": {
+   "status": "unknown",
+   "dev_sandbox": null,
+   "notes": "Pages reference 'Set up your dev environment in Ecwid' and 'Make your first API request' but do not explicitly detail the credential acquisition process. Pages mention 'Steps to go live with a public app', suggesting app review required for production, but initial development access path and cost are unspecified.",
+   "evidence": []
+  },
+  "api_surface": {
+   "styles": [
+    "rest",
+    "webhooks"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "600 requests per minute per token; exceeding returns 429 error with Retry-After header",
+   "evidence": [
+    {
+     "url": "https://docs.ecwid.com/api-reference",
+     "snippet": "Ecwid REST API allows you to access and manage any store data, payment and shipping methods, and storefront settings."
+    },
+    {
+     "url": "https://docs.ecwid.com/api-reference",
+     "snippet": "We accept up to 600 requests per minute per token. If you exceed the limit, all subsequent requests will be ignored with an error 429."
+    },
+    {
+     "url": "https://docs.ecwid.com/webhook-automations",
+     "snippet": "Ecwid webhooks are automatic real-time notifications for apps about different events in the store."
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": []
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "other",
+   "rationale": "API is comprehensive and well-documented (REST, webhooks, broad resources, documented rate limits), but credential acquisition process and access requirements are unspecified in provided pages.",
+   "composio_existing_toolkit": "no",
+   "composio_slug": null
+  },
+  "overview_evidence": [
+   {
+    "url": "https://docs.ecwid.com/api-reference",
+    "snippet": "Ecwid REST API allows you to access and manage any store data, payment and shipping methods, and storefront settings."
+   }
+  ],
+  "confidence": 0.72,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "Pages mention 'Set up your dev environment' and 'Make your first API request' without explaining the initial account signup or credential acquisition process. No information on cost, approval requirements, or trial periods. 'Steps to go live with a public app' suggests production review, but development-stage access is not documented.",
+   "api_surface": "",
+   "mcp": "Pages do not mention MCP servers or community repository projects"
+  }
+ }
+}

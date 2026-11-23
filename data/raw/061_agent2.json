@@ -1,0 +1,130 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.065432,
+  "seconds": 92.8,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+  "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps",
+  "https://docs.github.com/en/rest",
+  "https://docs.github.com/en/webhooks",
+  "https://docs.github.com/en/webhooks/webhook-events-and-payloads",
+  "https://docs.composio.dev/toolkits/github.md",
+  "https://docs.github.com/en/apps/creating-github-apps/registering-a-github-app/registering-a-github-app",
+  "https://docs.github.com/en/rest?apiVersion=2022-11-28"
+ ],
+ "output": {
+  "one_liner": "GitHub is a web-based developer platform providing REST APIs and webhooks for version control, repository management, and workflow automation.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "bearer_token",
+    "jwt"
+   ],
+   "oauth_grant_types": [
+    "authorization_code",
+    "device_flow"
+   ],
+   "notes": "Personal access tokens, GitHub App installation/user tokens sent as Bearer; OAuth 2.0 for GitHub/OAuth apps (web and device flows); JWT for app-to-server authentication. All tokens sent via Authorization header.",
+   "evidence": [
+    {
+     "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+     "snippet": "You can create a personal access token, generate a token with a GitHub App, or use the built-in GITHUB_TOKEN"
+    },
+    {
+     "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+     "snippet": "you can use Authorization: Bearer or Authorization: token to pass a token"
+    },
+    {
+     "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+     "snippet": "if you are passing a JSON web token (JWT), you must use Authorization: Bearer"
+    },
+    {
+     "url": "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps",
+     "snippet": "Both OAuth apps and GitHub Apps use OAuth 2.0. GitHub's OAuth implementation supports the standard authorization code grant type and the OAuth 2.0 Device Authorization Grant"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Any developer can sign up for a GitHub account and immediately create personal access tokens or register OAuth/GitHub Apps with no cost, payment requirement, or vendor approval documented.",
+   "evidence": [
+    {
+     "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+     "snippet": "If you want to use the GitHub REST API for personal use, you can create a personal access token"
+    },
+    {
+     "url": "https://docs.github.com/en/apps/creating-github-apps/registering-a-github-app/registering-a-github-app",
+     "snippet": "Click New GitHub App Under \"Homepage URL\", type the full URL to your app's website"
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/github.md",
+     "snippet": "Sign in to GitHub with the account that should own the app. To keep the app with a team, register it under an organization"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest",
+    "webhooks"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Authenticated requests have higher rate limits than unauthenticated requests; rate limit documentation available.",
+   "evidence": [
+    {
+     "url": "https://docs.github.com/en/rest",
+     "snippet": "The GitHub REST API is fully described in an OpenAPI compliant document."
+    },
+    {
+     "url": "https://docs.github.com/en/rest",
+     "snippet": "Create integrations, retrieve data, and automate your workflows with the GitHub REST API."
+    },
+    {
+     "url": "https://docs.github.com/en/webhooks",
+     "snippet": "Webhooks provide a way for notifications to be delivered to an external web server whenever certain events occur on GitHub"
+    },
+    {
+     "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+     "snippet": "you can make more requests per hour when you are authenticated"
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": []
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Self-serve free credentials, fully documented REST API with OpenAPI spec, webhooks support, and broad resource coverage enable immediate toolkit development.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "GITHUB"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://docs.github.com/en/rest",
+    "snippet": "Create integrations, retrieve data, and automate your workflows with the GitHub REST API."
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/github.md",
+    "snippet": "Category: developer tools; Auth: OAUTH2; Composio-managed OAuth available? Yes; Tools: 905"
+   }
+  ],
+  "confidence": 0.92,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "Direct URL to OpenAPI spec document not provided; only reference to 'OpenAPI compliant document'",
+   "mcp": "Pages contain no documentation of official or community MCP servers for GitHub"
+  }
+ }
+}

@@ -1,0 +1,247 @@
+{
+ "id": 23,
+ "app": "Zoho Cliq",
+ "tag": "agent2",
+ "urls": [
+  {
+   "url": "https://zoho.com/cliq",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.zoho.com/cliq/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.zoho.com/cliq/help/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.zoho.com/cliq/help/restapi/v2/",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.zoho.com/cliq/help/platform/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 403,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://www.zoho.com/cliq/help/platform/webhooks.html",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://www.zoho.com/cliq/help/platform/bots.html",
+   "purpose": "credentials",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.zoho.com/cliq/help/platform/extensions.html",
+   "purpose": "sandbox",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://api-console.zoho.com/",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.zoho.com/cliq/pricing.html",
+   "purpose": "pricing",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.zoho.com/cliq/help/restapi/v2/#Authentication",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/The-Luminous-Group/cliq-api-integration",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/zoho_cliq.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.zoho.com/accounts/oneauth",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.zoho.com/cliq/flexible-pricing.html",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.zoho.com/cliq/pricing/support-plans.html",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://accounts.zoho.com/developerconsole",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://www.zoho.com/sites/zweb/images/cliq/networks-plan-comparison.pdf",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "The-Luminous-Group/cliq-api-integration",
+   "url": "https://github.com/The-Luminous-Group/cliq-api-integration",
+   "stars": 0,
+   "description": "MCP server for Zoho Cliq - post messages, list channels, team communication"
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Zoho Cliq",
+    "slug": "ZOHO_CLIQ",
+    "tools": 162,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/zoho_cliq.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Zoho",
+    "slug": "ZOHO",
+    "tools": 115,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/zoho.md"
+   },
+   {
+    "name": "Zoho Analytics",
+    "slug": "ZOHO_ANALYTICS",
+    "tools": 198,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/zoho_analytics.md"
+   },
+   {
+    "name": "Zoho Bigin",
+    "slug": "ZOHO_BIGIN",
+    "tools": 54,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/zoho_bigin.md"
+   },
+   {
+    "name": "Zoho Bookings",
+    "slug": "ZOHO_BOOKINGS",
+    "tools": 27,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/zoho_bookings.md"
+   },
+   {
+    "name": "Zoho Books",
+    "slug": "ZOHO_BOOKS",
+    "tools": 326,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/zoho_books.md"
+   },
+   {
+    "name": "Zoho Calendar",
+    "slug": "ZOHO_CALENDAR",
+    "tools": 57,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/zoho_calendar.md"
+   },
+   {
+    "name": "Zoho Campaigns",
+    "slug": "ZOHO_CAMPAIGNS",
+    "tools": 39,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/zoho_campaigns.md"
+   },
+   {
+    "name": "Zoho Cliq",
+    "slug": "ZOHO_CLIQ",
+    "tools": 162,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/zoho_cliq.md"
+   }
+  ]
+ },
+ "search_meta": {}
+}

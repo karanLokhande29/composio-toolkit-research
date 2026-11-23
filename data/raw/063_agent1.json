@@ -1,0 +1,137 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.06681600000000001,
+  "seconds": 67.0,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://docs.composio.dev/toolkits/netlify_mcp.md",
+  "https://docs.netlify.com/api",
+  "https://docs.netlify.com/manage/security/secure-netlify-access/configure-team-saml-sso",
+  "https://www.netlify.com/blog/2016/10/10/integrating-with-netlify-oauth2/",
+  "https://docs.netlify.com/manage/security/overview",
+  "https://docs.netlify.com/resources/troubleshooting/error-reference",
+  "https://cli.netlify.com",
+  "https://visual-editor-reference.netlify.com",
+  "https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/how-credits-work-for-enterprise-plans",
+  "https://github.com/netlify/netlify-mcp",
+  "https://github.com/bella-and-c/sleepy-dog-lock",
+  "https://github.com/jbulger82/LLAMA_Hub"
+ ],
+ "output": {
+  "one_liner": "Netlify is a cloud platform for deploying and managing web applications via REST API with official MCP support.",
+  "app_type": "cloud_platform",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "bearer_token"
+   ],
+   "oauth_grant_types": [
+    "authorization_code",
+    "implicit"
+   ],
+   "notes": "OAuth2 is the primary authentication method with both Authorization Code and Implicit grant flows supported. Personal Access Tokens (PAT) can also be used as Bearer tokens in the Authorization header.",
+   "evidence": [
+    {
+     "url": "https://docs.netlify.com/api",
+     "snippet": "Netlify uses OAuth2 for authentication"
+    },
+    {
+     "url": "https://docs.netlify.com/api",
+     "snippet": "To authenticate API requests, include the token in the authorization header"
+    },
+    {
+     "url": "https://www.netlify.com/blog/2016/10/10/integrating-with-netlify-oauth2/",
+     "snippet": "Since Netlify is an OAuth2 provider, you can use this API to build services"
+    },
+    {
+     "url": "https://www.netlify.com/blog/2016/10/10/integrating-with-netlify-oauth2/",
+     "snippet": "This example demonstrates the Implicit Grant Flow where the main security mechanism"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Any user can create a free Netlify account and immediately generate personal access tokens for API access without payment or approval.",
+   "evidence": [
+    {
+     "url": "https://docs.netlify.com/api",
+     "snippet": "To generate a personal access token select New access token"
+    },
+    {
+     "url": "https://docs.netlify.com/api",
+     "snippet": "Personal access tokens A credential tied to your personal account"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": null,
+   "rate_limit_note": "500 requests per minute for most operations; 3 deploys per minute; 100 deploys per day maximum",
+   "evidence": [
+    {
+     "url": "https://docs.netlify.com/api",
+     "snippet": "Use the Netlify REST API to manage atomic deploys of your sites and apps"
+    },
+    {
+     "url": "https://docs.netlify.com/api",
+     "snippet": "You can browse the OpenAPI reference for the Netlify API to explore available endpoints"
+    },
+    {
+     "url": "https://docs.netlify.com/api",
+     "snippet": "You can make up to 500 requests per minute for most requests"
+    },
+    {
+     "url": "https://docs.netlify.com/api",
+     "snippet": "you can deploy through the Netlify API up to 3 times per minute"
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://github.com/netlify/netlify-mcp",
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://github.com/netlify/netlify-mcp",
+     "snippet": "Netlify's Official MCP server follows the Model Context Protocol (MCP)"
+    },
+    {
+     "url": "https://github.com/netlify/netlify-mcp",
+     "snippet": "Netlify MCP Server acts as a bridge, providing API access, CLI tools, prompts, and more"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Self-serve free credentials available; REST API well-documented with OpenAPI reference; OAuth2 fully supported; official Netlify MCP server already published.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "NETLIFY_MCP"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://docs.netlify.com/api",
+    "snippet": "Use the Netlify REST API to manage atomic deploys of your sites and apps"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/netlify_mcp.md",
+    "snippet": "Deploy, inspect, and manage Netlify sites, builds, environment configuration, and development workflows"
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "OpenAPI spec URL not provided in pages; webhook availability not explicitly documented",
+   "mcp": ""
+  }
+ }
+}

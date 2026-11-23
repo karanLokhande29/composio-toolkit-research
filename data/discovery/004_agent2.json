@@ -44,75 +44,91 @@
    "js_rendered": false
   },
   {
-   "url": "https://docs.attio.com/",
+   "url": "https://developers.attio.com/docs/overview",
    "purpose": "overview",
    "source": "search",
-   "status": 200,
-   "ok": true,
-   "js_rendered": false
-  },
-  {
-   "url": "https://docs.attio.com/docs/getting-started",
-   "purpose": "overview",
-   "source": "search",
-   "status": 404,
+   "status": 0,
    "ok": false,
    "js_rendered": false
   },
   {
-   "url": "https://docs.attio.com/docs/authentication",
-   "purpose": "auth",
+   "url": "https://developers.attio.com/docs/authentication",
+   "purpose": "authentication",
    "source": "search",
-   "status": 404,
+   "status": 0,
    "ok": false,
    "js_rendered": false
   },
   {
-   "url": "https://docs.attio.com/docs/open-api-and-webhook-reference",
-   "purpose": "api_reference",
+   "url": "https://developers.attio.com/docs/oauth",
+   "purpose": "authentication",
    "source": "search",
-   "status": 404,
+   "status": 0,
    "ok": false,
    "js_rendered": false
   },
   {
-   "url": "https://docs.attio.com/rest-api/overview",
-   "purpose": "api_reference",
+   "url": "https://developers.attio.com/docs/generating-an-api-key",
+   "purpose": "credentials",
    "source": "search",
-   "status": 200,
-   "ok": true,
-   "js_rendered": false
-  },
-  {
-   "url": "https://docs.attio.com/docs/rate-limits",
-   "purpose": "rate_limits",
-   "source": "search",
-   "status": 404,
+   "status": 0,
    "ok": false,
    "js_rendered": false
   },
   {
-   "url": "https://docs.attio.com/docs/webhooks",
-   "purpose": "webhooks",
+   "url": "https://developers.attio.com/docs/building-an-attio-app",
+   "purpose": "sandbox",
    "source": "search",
-   "status": 404,
-   "ok": false,
-   "js_rendered": false
-  },
-  {
-   "url": "https://docs.attio.com/docs/mcp-server",
-   "purpose": "mcp_server",
-   "source": "search",
-   "status": 404,
+   "status": 0,
    "ok": false,
    "js_rendered": false
   },
   {
    "url": "https://attio.com/partners",
-   "purpose": "partner_programme",
+   "purpose": "partner",
    "source": "search",
    "status": 200,
    "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.attio.com/reference/get_v2-objects",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.attio.com/docs/rate-limits",
+   "purpose": "rate_limits",
+   "source": "search",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.attio.com/docs/webhooks",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.attio.com/docs/mcp-server",
+   "purpose": "mcp",
+   "source": "search",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.attio.com/docs/self-service-api-keys",
+   "purpose": "credentials",
+   "source": "search",
+   "status": 0,
+   "ok": false,
    "js_rendered": false
   },
   {
@@ -205,6 +221,30 @@
   },
   {
    "url": "https://attio.com/help/reference/imports-and-exports/migrate-data-from-another-crm?source=footer_zoho",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.attio.com/mcp/overview",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://attio.com/platform/developers",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://attio.com/help/reference/attio-101",
    "purpose": "crawl",
    "source": "crawl",
    "status": 200,

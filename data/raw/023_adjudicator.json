@@ -1,0 +1,40 @@
+{
+ "fields": [
+  "access.status"
+ ],
+ "pages": [
+  "https://www.zoho.com/cliq/help/restapi/v3/registerclient/",
+  "https://www.zoho.com/cliq/pricing.html",
+  "https://www.zoho.com/cliq/help/restapi/v2/#Authentication",
+  "https://www.zoho.com/cliq/flexible-pricing.html",
+  "https://www.zoho.com/cliq/help/restapi/v3/oauth/",
+  "https://www.zoho.com/cliq/help/platform/zoho-cliq-mcp.html",
+  "https://help.zoho.com/portal/en/community/zoho-cliq/developers"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.096471,
+  "seconds": 9.9,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "access.status",
+    "value": "self_serve_free",
+    "evidence": [
+     {
+      "url": "https://www.zoho.com/cliq/help/restapi/v3/registerclient/",
+      "snippet": "Upon successful registration of your application, you will receive a Client ID and Client Secret."
+     },
+     {
+      "url": "https://www.zoho.com/cliq/flexible-pricing.html",
+      "snippet": "Free - Get everyone talking"
+     }
+    ],
+    "reason": "Developers can self-register an app via the Zoho API console to get OAuth client credentials at no cost, and Cliq offers a free plan, so working API credentials are obtainable for free without admin approval or sales contact."
+   }
+  ]
+ }
+}

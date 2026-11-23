@@ -1,0 +1,88 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.061455,
+  "seconds": 94.1,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://developer.gladly.com/",
+  "https://gladly.com",
+  "https://help.gladly.com/developer-tutorials/docs",
+  "https://help.gladly.com/developer-tutorials/docs/app-platform-overview",
+  "https://github.com/estebanruiz-beep/gladly-mcp-demo",
+  "https://github.com/gladly-hyphenated-21/flight-mcp"
+ ],
+ "output": {
+  "one_liner": "Customer support and helpdesk platform enabling conversation management with AI-powered insights and third-party integrations.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [],
+   "oauth_grant_types": [],
+   "notes": "Pages document REST APIs and App Platform but do not specify which authentication methods the API accepts.",
+   "evidence": []
+  },
+  "access": {
+   "status": "contact_sales",
+   "dev_sandbox": false,
+   "notes": "Developers can build locally with Appcfg CLI without a sandbox, but working credentials require contacting Gladly Support.",
+   "evidence": [
+    {
+     "url": "https://help.gladly.com/developer-tutorials/docs/app-platform-overview",
+     "snippet": "you can develop apps, even without a Gladly Sandbox environment. When you are ready to test your app, contact Gladly Support"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "unknown",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Not mentioned in provided pages.",
+   "evidence": [
+    {
+     "url": "https://developer.gladly.com/",
+     "snippet": "use Gladly's REST APIs, receive notifications with webhooks, build an App Platform integration"
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://github.com/estebanruiz-beep/gladly-mcp-demo",
+     "snippet": "This repository is empty."
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "blocked",
+   "main_blocker": "app_review",
+   "rationale": "API is documented (REST, webhooks, App Platform) but working credentials require sales contact, preventing immediate toolkit development.",
+   "composio_existing_toolkit": "no",
+   "composio_slug": null
+  },
+  "overview_evidence": [
+   {
+    "url": "https://gladly.com",
+    "snippet": "Agentic commerce platform built for top brands"
+   },
+   {
+    "url": "https://developer.gladly.com/",
+    "snippet": "Looking to extend Gladly, use Gladly's REST APIs, receive notifications with webhooks"
+   }
+  ],
+  "confidence": 0.65,
+  "unknown_reasons": {
+   "auth": "Pages document REST APIs and App Platform but do not specify which authentication methods (OAuth2, API key, bearer token, etc.) are supported.",
+   "access": "",
+   "api_surface": "Pages do not quantify API breadth or comprehensively list all available endpoints and resources.",
+   "mcp": "GitHub search found one empty repository (estebanruiz-beep/gladly-mcp-demo) and one unrelated MCP server (Google Flights); no Gladly MCP server identified."
+  }
+ }
+}

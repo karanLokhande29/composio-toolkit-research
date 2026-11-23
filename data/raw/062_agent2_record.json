@@ -1,0 +1,103 @@
+{
+ "id": 62,
+ "app": "Vercel",
+ "category": "Developer, Infra and Data platforms",
+ "hint": "vercel.com/docs/rest-api",
+ "one_liner": "Vercel is a cloud platform for deploying web applications with serverless functions, edge compute, and AI sandboxes.",
+ "app_type": "cloud_platform",
+ "auth": {
+  "methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "oauth_grant_types": [],
+  "notes": "OAuth2 and API Key are supported; specific grant types not detailed in provided pages",
+  "evidence": [
+   {
+    "url": "https://docs.composio.dev/toolkits/vercel.md",
+    "snippet": "Auth: OAUTH2, API_KEY",
+    "check": "exact"
+   }
+  ]
+ },
+ "access": {
+  "status": "unknown",
+  "dev_sandbox": true,
+  "notes": "Free Hobby plan signup is available; Vercel Sandbox includes 5 hours/month on free tier; but REST API access tier not explicitly documented",
+  "evidence": [
+   {
+    "url": "https://vercel.com/pricing",
+    "snippet": "Our Hobby plan is free and a great way to get started",
+    "check": "exact"
+   },
+   {
+    "url": "https://vercel.com/pricing",
+    "snippet": "Sandbox Active CPU 5 hours / month included",
+    "check": "exact"
+   },
+   {
+    "url": "https://vercel.com/docs/webhooks",
+    "snippet": "Account Webhooks are available on Enterprise and Pro plans",
+    "check": "exact"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "rest"
+  ],
+  "breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "rate_limit_note": "Page titled 'Limits' covers rate limits but specific API rate limit numbers not provided in excerpt",
+  "evidence": [
+   {
+    "url": "https://vercel.com/docs/webhooks",
+    "snippet": "A webhook is a trigger-based HTTP endpoint configured to receive HTTP POST requests through events",
+    "check": "exact"
+   },
+   {
+    "url": "https://vercel.com/docs/rest-api/rate-limits",
+    "snippet": "Look up account limits, usage summaries, rate limits, and resource constraints",
+    "check": "exact"
+   }
+  ]
+ },
+ "mcp": {
+  "official": null,
+  "community": [],
+  "evidence": []
+ },
+ "buildability": {
+  "verdict": "ready",
+  "main_blocker": "none",
+  "rationale": "REST API well-documented; 414 tools already integrated by Composio; OAuth2 and API Key auth supported; webhooks available on Pro+ tiers.",
+  "composio_existing_toolkit": "yes",
+  "composio_slug": "VERCEL"
+ },
+ "overview_evidence": [
+  {
+   "url": "https://vercel.com/docs/rest-api",
+   "snippet": "Interact programmatically with your Vercel account using the SDK or direct HTTP requests"
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/vercel.md",
+   "snippet": "Category: developer tools"
+  }
+ ],
+ "confidence": 0.82,
+ "unknown_reasons": {
+  "auth": "",
+  "access": "Pages show free Hobby plan signup available but do not explicitly state whether REST API access is included in free tier or requires paid plan",
+  "api_surface": "OpenAPI spec not mentioned; specific API rate limit numbers not shown in provided content",
+  "mcp": "MCP server referenced in documentation but full MCP server page not provided in page list"
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 9,
+  "error": null,
+  "cost_usd": 0.079705,
+  "seconds": 104.5
+ }
+}

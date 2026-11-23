@@ -1,0 +1,139 @@
+{
+ "id": 71,
+ "app": "Notion",
+ "category": "Productivity and Project Management",
+ "hint": "developers.notion.com",
+ "one_liner": "Build tools and automations that create pages, organize data, and share feedback in Notion.",
+ "app_type": "saas",
+ "auth": {
+  "methods": [
+   "bearer_token",
+   "oauth2"
+  ],
+  "oauth_grant_types": [],
+  "notes": "Supports OAuth 2.0 flows and bearer tokens (personal access tokens for user-scoped auth, internal connection tokens for connection-scoped auth). Both use Bearer header format.",
+  "evidence": [
+   {
+    "url": "https://developers.notion.com/docs/authorization",
+    "snippet": "Personal access token authentication Personal access tokens (PATs) are created directly by a Notion user in the Developer portal",
+    "check": "repaired"
+   },
+   {
+    "url": "https://developers.notion.com/docs/authorization",
+    "snippet": "OAuth integrations follow the OAuth 2.0 protocol to authorize a connection to interact with a workspace.",
+    "check": "exact"
+   },
+   {
+    "url": "https://developers.notion.com/docs/authorization",
+    "snippet": "include the API token in the Authorization header with every API request.",
+    "check": "repaired"
+   }
+  ]
+ },
+ "access": {
+  "status": "self_serve_free",
+  "dev_sandbox": false,
+  "notes": "Free Notion accounts can create personal access tokens or internal integrations without approval. Business/Enterprise plans may require admin approval for PAT creation. No dedicated sandbox; developers use their own workspace.",
+  "evidence": [
+   {
+    "url": "https://developers.notion.com",
+    "snippet": "A personal access token (PAT) lets you authenticate API requests as yourself without setting up",
+    "check": "exact"
+   },
+   {
+    "url": "https://developers.notion.com/docs/getting-started",
+    "snippet": "Use a personal access token for scripts, tools, and Workers that run with your Notion permissions.",
+    "check": "exact"
+   },
+   {
+    "url": "https://developers.notion.com",
+    "snippet": "On Business and Enterprise plans, PAT creation is restricted by default. Ask a workspace owner",
+    "check": "exact"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "rest"
+  ],
+  "breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "rate_limit_note": "Per-connection: 600 req/min (Business/Enterprise) or 180 req/min (others). Per-workspace shared limit. Data source queries ~3 req/sec per connection.",
+  "evidence": [
+   {
+    "url": "https://developers.notion.com/reference/intro",
+    "snippet": "Send requests over HTTPS to https://api.notion.com",
+    "check": "repaired"
+   },
+   {
+    "url": "https://developers.notion.com/reference/webhooks",
+    "snippet": "Webhooks let your connection receive real-time updates from Notion.",
+    "check": "exact"
+   },
+   {
+    "url": "https://developers.notion.com/reference/request-limits",
+    "snippet": "The Notion API enforces two rate limits: a per-connection limit and a per-workspace limit.",
+    "check": "exact"
+   },
+   {
+    "url": "https://developers.notion.com/reference/request-limits",
+    "snippet": "Business and Enterprise 600 requests per minute",
+    "check": "exact"
+   },
+   {
+    "url": "https://developers.notion.com/reference/request-limits",
+    "snippet": "All other plans 180 requests per minute",
+    "check": "exact"
+   }
+  ]
+ },
+ "mcp": {
+  "official": null,
+  "community": [],
+  "evidence": [
+   {
+    "url": "https://developers.notion.com/docs/mcp",
+    "snippet": "Connect your AI assistant to Notion with MCP to manage projects and tasks",
+    "check": "exact"
+   },
+   {
+    "url": "https://developers.notion.com/docs/mcp",
+    "snippet": "Connect an MCP client , such as Claude, ChatGPT, and Gemini, through the Model Context Protocol",
+    "check": "repaired"
+   }
+  ]
+ },
+ "buildability": {
+  "verdict": "ready",
+  "main_blocker": "none",
+  "rationale": "Composio toolkit already exists with 60 tools; OAuth2 and API_KEY auth fully self-serve.",
+  "composio_existing_toolkit": "yes",
+  "composio_slug": "NOTION"
+ },
+ "overview_evidence": [
+  {
+   "url": "https://developers.notion.com",
+   "snippet": "Build tools and automations that create pages, organize data, and share feedback in Notion."
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/notion.md",
+   "snippet": "Category: notes. Auth: OAUTH2, API_KEY. Tools: 60"
+  }
+ ],
+ "confidence": 0.95,
+ "unknown_reasons": {
+  "auth": "",
+  "access": "",
+  "api_surface": "",
+  "mcp": "Official Notion MCP exists and is documented at https://developers.notion.com/docs/mcp but specific implementation repository URL not provided in these pages."
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 8,
+  "error": null,
+  "cost_usd": 0.08635399999999999,
+  "seconds": 105.4
+ }
+}

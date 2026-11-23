@@ -1,0 +1,88 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.06278,
+  "seconds": 81.8,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://docs.composio.dev/toolkits/pitchbook.md",
+  "https://github.com/Avierovich/openpitch",
+  "https://github.com/dontmesswithme-cpu/IBsuite",
+  "https://github.com/JyothikKOPPULA/Multi-agent-pitchbook-generator"
+ ],
+ "output": {
+  "one_liner": "PitchBook provides private-market data on companies, deals, funds, investors, people, and service providers through its REST API.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "api_key"
+   ],
+   "oauth_grant_types": [],
+   "notes": "API key authentication required",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/pitchbook.md",
+     "snippet": "Auth: API_KEY"
+    }
+   ]
+  },
+  "access": {
+   "status": "contact_sales",
+   "dev_sandbox": null,
+   "notes": "API described as contracted; no self-serve free tier or public signup mentioned",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/pitchbook.md",
+     "snippet": "PitchBook provides private-market data on companies, deals, funds, investors, people, and service providers through its contracted REST API."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": null,
+   "rate_limit_note": "",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/pitchbook.md",
+     "snippet": "PitchBook provides private-market data on companies, deals, funds, investors, people, and service providers through its contracted REST API."
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/pitchbook.md",
+     "snippet": "Tools: 130"
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": []
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "contact_sales",
+   "rationale": "Composio toolkit with 130 tools already exists, but API access requires a contract with PitchBook.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "PITCHBOOK"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://docs.composio.dev/toolkits/pitchbook.md",
+    "snippet": "PitchBook provides private-market data on companies, deals, funds, investors, people, and service providers through its contracted REST API."
+   }
+  ],
+  "confidence": 0.9,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "API described as 'contracted' but specific access model not explicitly stated; could be contact_sales, partner_gated, or paid_plan",
+   "api_surface": "Rate limits and webhook support not documented on provided pages",
+   "mcp": "Pages reference PitchBook alternatives (OpenPitch) and related tools, but no official or community MCP servers for PitchBook itself"
+  }
+ }
+}

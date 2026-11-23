@@ -1,0 +1,123 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.08076,
+  "seconds": 97.2,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://ahrefs.com/api/pricing",
+  "https://docs.composio.dev/toolkits/ahrefs.md",
+  "https://docs.ahrefs.com/en/mcp/docs/introduction",
+  "https://docs.ahrefs.com/en/mcp/docs/claude-desktop-web",
+  "https://docs.ahrefs.com/en/mcp/docs/chatgpt-web",
+  "https://docs.ahrefs.com/en/mcp/docs/claude-code",
+  "https://docs.ahrefs.com/en/ahrefs-connect/docs/oauth-guide",
+  "https://docs.ahrefs.com/en/api/reference/site-explorer",
+  "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management",
+  "https://docs.ahrefs.com/openapi.json",
+  "https://github.com/cnych/seo-mcp",
+  "https://github.com/egebese/dataseo-mcp"
+ ],
+ "output": {
+  "one_liner": "SEO and marketing data platform providing API access to backlinks, keyword research, rankings, traffic, and site audit data.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "api_key",
+    "oauth2"
+   ],
+   "oauth_grant_types": [
+    "authorization_code"
+   ],
+   "notes": "API key: Bearer token in Authorization header. OAuth 2.0 Authorization Code Flow with PKCE for integration apps; MCP authentication via API key with Bearer token.",
+   "evidence": [
+    {
+     "url": "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management",
+     "snippet": "You'll need an API key to send requests via Ahrefs API v3. Provide it in the Authorization header"
+    },
+    {
+     "url": "https://docs.ahrefs.com/en/ahrefs-connect/docs/oauth-guide",
+     "snippet": "Ahrefs Connect uses OAuth 2.0 Authorization Code Flow with Proof Key for Code Exchange (PKCE)"
+    }
+   ]
+  },
+  "access": {
+   "status": "paid_plan_required",
+   "dev_sandbox": null,
+   "notes": "MCP and most API access requires paid plans starting from Lite; some public endpoints mentioned but signup process not clearly documented.",
+   "evidence": [
+    {
+     "url": "https://docs.ahrefs.com/en/mcp/docs/introduction",
+     "snippet": "The remote MCP server is available on paid plans starting from Lite"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": "https://docs.ahrefs.com/openapi.json",
+   "webhooks": null,
+   "rate_limit_note": "API unit consumption model used; specific per-request rate limits not documented",
+   "evidence": [
+    {
+     "url": "https://docs.ahrefs.com/en/api/reference/site-explorer",
+     "snippet": "Base URL https://api.ahrefs.com/v3/site-explorer Version 3.0.0 Endpoints 46"
+    },
+    {
+     "url": "https://docs.ahrefs.com/openapi.json",
+     "snippet": "Ahrefs API v3 gives programmatic access to Ahrefs' SEO, marketing, and AI-search data"
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://api.ahrefs.com/mcp/mcp",
+   "community": [
+    "https://github.com/cnych/seo-mcp",
+    "https://github.com/egebese/dataseo-mcp"
+   ],
+   "evidence": [
+    {
+     "url": "https://docs.ahrefs.com/en/mcp/docs/introduction",
+     "snippet": "Ahrefs provides a hosted MCP server that allows users with a Lite plan or higher"
+    },
+    {
+     "url": "https://github.com/cnych/seo-mcp",
+     "snippet": "A free SEO tool MCP (Model Control Protocol) service based on Ahrefs data"
+    },
+    {
+     "url": "https://github.com/egebese/dataseo-mcp",
+     "snippet": "DataSEO MCP is a Model Context Protocol server that lets Claude, Cursor"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Composio toolkit already exists with 46 tools; REST API is well-documented with comprehensive endpoints and straightforward authentication.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "ahrefs"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://ahrefs.com/api/pricing",
+    "snippet": "Research keywords, analyze backlinks, track rankings, and monitor brand visibility across traditional search"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/ahrefs.md",
+    "snippet": "Retrieves comprehensive backlink statistics for a specified website or URL using Ahrefs' Site Explorer tool"
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "Pages document paid plan requirement for MCP but do not clearly specify whether a free tier exists for base REST API",
+   "api_surface": "Webhooks not mentioned in provided pages; specific request rate limits not documented beyond API unit consumption model",
+   "mcp": ""
+  }
+ }
+}

@@ -1,0 +1,56 @@
+{
+ "fields": [
+  "buildability.main_blocker",
+  "buildability.verdict"
+ ],
+ "pages": [
+  "https://developer.zendesk.com/documentation/api-basics/",
+  "https://docs.composio.dev/toolkits/zendesk.md",
+  "https://developer.zendesk.com/",
+  "https://zendesk.com",
+  "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+  "https://developer.zendesk.com/api-reference/introduction/rate-limits/",
+  "https://developer.zendesk.com/api-reference/"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.088536,
+  "seconds": 14.0,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "buildability.main_blocker",
+    "value": "paid_plan",
+    "evidence": [
+     {
+      "url": "https://developer.zendesk.com/documentation/api-basics/",
+      "snippet": "You can try out the Zendesk platform with a free, 14-day trial account."
+     },
+     {
+      "url": "https://developer.zendesk.com/api-reference/introduction/rate-limits/",
+      "snippet": "The following limits apply depending on your Zendesk Suite plan type."
+     }
+    ],
+    "reason": "API access beyond the 14-day trial requires a paid Zendesk Suite/Support plan, so continued production use is gated by payment."
+   },
+   {
+    "field": "buildability.verdict",
+    "value": "ready_with_caveats",
+    "evidence": [
+     {
+      "url": "https://developer.zendesk.com/documentation/api-basics/",
+      "snippet": "You can try out the Zendesk platform with a free, 14-day trial account."
+     },
+     {
+      "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+      "snippet": "An OAuth token gives access to a single Zendesk instance (the one with the OAuth client used to create the token)."
+     }
+    ],
+    "reason": "A documented REST API with OAuth/API-token auth is usable today, but only via a time-limited trial before a paid plan is required for ongoing use, hence caveats rather than fully free."
+   }
+  ]
+ }
+}

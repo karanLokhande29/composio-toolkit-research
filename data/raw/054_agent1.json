@@ -1,0 +1,129 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.071374,
+  "seconds": 87.0,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://docs.composio.dev/toolkits/mrscraper.md",
+  "https://docs.mrscraper.com",
+  "https://docs.mrscraper.com/docs/getting-started/quickstart",
+  "https://docs.mrscraper.com/docs/getting-started/web-search",
+  "https://docs.mrscraper.com/docs/getting-started/scraper-api",
+  "https://docs.mrscraper.com/docs/getting-started/api-token",
+  "https://docs.mrscraper.com/docs/getting-started/cli",
+  "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+  "https://docs.mrscraper.com/docs/getting-started/billing",
+  "https://docs.mrscraper.com/docs/residential-proxy/getting-started/overview",
+  "https://docs.mrscraper.com/docs/residential-proxy/configuration/authentication",
+  "https://docs.mrscraper.com/docs/features/activating-api"
+ ],
+ "output": {
+  "one_liner": "AI-powered web scraping platform for extracting structured data from websites using natural language prompts, APIs, and automation workflows.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "api_key",
+    "bearer_token",
+    "oauth2"
+   ],
+   "oauth_grant_types": [
+    "authorization_code"
+   ],
+   "notes": "API tokens transmitted via x-api-token header or Authorization: Bearer header. OAuth 2.1 available for MCP server with browser sign-in.",
+   "evidence": [
+    {
+     "url": "https://docs.mrscraper.com/docs/getting-started/scraper-api",
+     "snippet": "Authenticate with the x-api-token"
+    },
+    {
+     "url": "https://docs.mrscraper.com/docs/getting-started/quickstart",
+     "snippet": "Authorization: bearer <MRSCRAPER_API_TOKEN>"
+    },
+    {
+     "url": "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+     "snippet": "Connect to the hosted MCP endpoint through Streamable HTTP with OAuth 2.1 browser sign-in."
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Free plan with 100 tokens/month, no credit card required. Self-serve Pro and Enterprise plans with higher allocations.",
+   "evidence": [
+    {
+     "url": "https://docs.mrscraper.com/docs/getting-started/billing",
+     "snippet": "The Free plan includes 100 tokens per month with no credit card required."
+    },
+    {
+     "url": "https://docs.mrscraper.com/docs/getting-started/billing",
+     "snippet": "MrScraper offers flexible subscription plans designed for different usage levels"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "moderate",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Rate limiting enforced per plan. Concurrency: Free 10, Pro 100, Enterprise Custom. Tokens reset monthly.",
+   "evidence": [
+    {
+     "url": "https://docs.mrscraper.com/docs/getting-started/scraper-api",
+     "snippet": "Build, test, and validate scraping requests in MrScraper's Scraper API"
+    },
+    {
+     "url": "https://docs.mrscraper.com/docs/getting-started/billing",
+     "snippet": "Concurrent Requests: 10, 100, Custom"
+    },
+    {
+     "url": "https://docs.mrscraper.com",
+     "snippet": "Webhook: Send scraper results directly to external services through webhooks."
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://mcp.mrscraper.com/mcp",
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+     "snippet": "Official MrScraper MCP server for retrieving web pages, web search, and account usage."
+    },
+    {
+     "url": "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+     "snippet": "MrScraper MCP server source code on GitHub"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Self-serve free plan available, well-documented REST API, official MCP server published, and Composio toolkit already built and maintained.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "mrscraper"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://docs.mrscraper.com",
+    "snippet": "Your all-in-one guide to understanding, configuring, and using the MrScraper platform"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/mrscraper.md",
+    "snippet": "Tools: 11"
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  }
+ }
+}

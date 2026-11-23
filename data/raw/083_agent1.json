@@ -1,0 +1,108 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.050586000000000006,
+  "seconds": 67.5,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://github.com/chrisleekr/binance-trading-bot",
+  "https://github.com/guangxiangdebizi/FinanceMCP",
+  "https://github.com/TermiX-official/binance-mcp"
+ ],
+ "output": {
+  "one_liner": "A cryptocurrency exchange platform providing REST API access for trading and account management via API key authentication",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "api_key"
+   ],
+   "oauth_grant_types": [],
+   "notes": "API key and secret required for authenticated endpoints; public market data endpoints require no authentication",
+   "evidence": [
+    {
+     "url": "https://github.com/TermiX-official/binance-mcp",
+     "snippet": "Binance API key and secret (for Binance exchange integration)"
+    },
+    {
+     "url": "https://github.com/TermiX-official/binance-mcp",
+     "snippet": "You'll get the API key and the Secret Key"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": null,
+   "notes": "Public API endpoints available without authentication or account; API key creation self-serve requiring identity verification and 2FA",
+   "evidence": [
+    {
+     "url": "https://github.com/guangxiangdebizi/FinanceMCP",
+     "snippet": "Binance Public API 不需要 Binance 账号、API Key 或交易权限"
+    },
+    {
+     "url": "https://github.com/TermiX-official/binance-mcp",
+     "snippet": "Complete identity verification Enable two-factor authentication (2FA) on your account"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": null,
+   "rate_limit_note": "",
+   "evidence": [
+    {
+     "url": "https://github.com/TermiX-official/binance-mcp",
+     "snippet": "Retrieve real-time trading data and account information Implement structured transactions"
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [
+    "https://github.com/chrisleekr/binance-trading-bot",
+    "https://github.com/guangxiangdebizi/FinanceMCP",
+    "https://github.com/TermiX-official/binance-mcp"
+   ],
+   "evidence": [
+    {
+     "url": "https://github.com/chrisleekr/binance-trading-bot",
+     "snippet": "Optionally, connect an AI agent such as Claude Code over MCP"
+    },
+    {
+     "url": "https://github.com/TermiX-official/binance-mcp",
+     "snippet": "Binance MCP Server is a backend service designed to interact with the Binance API"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Multiple third-party MCP implementations demonstrate a working, publicly accessible REST API with self-service API key authentication and free public data access",
+   "composio_existing_toolkit": "no",
+   "composio_slug": null
+  },
+  "overview_evidence": [
+   {
+    "url": "https://github.com/TermiX-official/binance-mcp",
+    "snippet": "Binance MCP Server is a backend service designed to interact with the Binance API"
+   },
+   {
+    "url": "https://github.com/TermiX-official/binance-mcp",
+    "snippet": "Execute trades programmatically based on predefined strategies Secure Authentication"
+   }
+  ],
+  "confidence": 0.68,
+  "unknown_reasons": {
+   "auth": "Pages show api_key usage by third parties but lack official Binance authentication specification and security details (official Binance docs not in provided pages)",
+   "access": "Public API is free; pages do not explicitly document whether paid plan required for trading features or if all features self-serve",
+   "api_surface": "Breadth inferred from third-party implementations covering trading, accounts, market data; official API specification not provided (hint suggests binance-docs.github.io but not included)",
+   "mcp": "No official Binance MCP server identified; only three community implementations provided"
+  }
+ }
+}

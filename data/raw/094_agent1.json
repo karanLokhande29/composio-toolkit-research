@@ -1,0 +1,125 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.063348,
+  "seconds": 64.5,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://docs.composio.dev/toolkits/consensus.md",
+  "https://docs.consensus.app",
+  "https://consensus.app/pricing",
+  "https://docs.consensus.app/consensus-mcp",
+  "https://docs.consensus.app/get-started/full-text-access",
+  "https://docs.consensus.app/core-features/mcp",
+  "https://docs.consensus.app/search-basics/research-an-author",
+  "https://github.com/antonbabenko/deliberation",
+  "https://github.com/wheattoast11/openrouter-deep-research-mcp",
+  "https://github.com/blackms/aistack"
+ ],
+ "output": {
+  "one_liner": "Consensus is an AI search engine that searches over 400 million scholarly articles and writes evidence-based answers linking to peer-reviewed research papers.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "api_key"
+   ],
+   "oauth_grant_types": [],
+   "notes": "API key self-serve generation through user dashboard. OAuth2 used for MCP and third-party integrations. Specific OAuth grant type not documented.",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/consensus.md",
+     "snippet": "Auth: API_KEY"
+    },
+    {
+     "url": "https://docs.consensus.app/core-features/mcp",
+     "snippet": "To get a key, click your profile icon in Consensus, choose API & MCP Dashboard, open Keys and Clients, and click New key"
+    },
+    {
+     "url": "https://docs.consensus.app/consensus-mcp",
+     "snippet": "OAuth will open in your browser automatically on first use."
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": null,
+   "notes": "Free Consensus account includes API access with unlimited paper searches. Full-text excerpts and advanced features require paid plans (Pro, Deep, Teams, Enterprise).",
+   "evidence": [
+    {
+     "url": "https://docs.consensus.app/core-features/mcp",
+     "snippet": "It's self-serve and open to everyone."
+    },
+    {
+     "url": "https://docs.consensus.app/consensus-mcp",
+     "snippet": "A Consensus account is required and free to create."
+    },
+    {
+     "url": "https://docs.consensus.app",
+     "snippet": "Paper search is unlimited on every plan."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest",
+    "mcp"
+   ],
+   "breadth": "moderate",
+   "openapi_spec_url": null,
+   "webhooks": null,
+   "rate_limit_note": "Rate limits not documented in provided pages",
+   "evidence": [
+    {
+     "url": "https://docs.consensus.app/core-features/mcp",
+     "snippet": "GET https://api.consensus.app/v1/search"
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/consensus.md",
+     "snippet": "Search Consensus for research papers with study, publication, and access filters"
+    },
+    {
+     "url": "https://docs.consensus.app/consensus-mcp",
+     "snippet": "Server URL https://mcp.consensus.app/mcp"
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://mcp.consensus.app/mcp",
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://docs.consensus.app/consensus-mcp",
+     "snippet": "Server URL https://mcp.consensus.app/mcp"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Self-serve API key generation, fully documented REST API, and official MCP server enable toolkit development today; Composio already has an existing toolkit.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "CONSENSUS"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://docs.consensus.app",
+    "snippet": "Consensus is an AI search engine for research. You ask a question, it searches over 400 million scholarly articles"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/consensus.md",
+    "snippet": "Consensus provides evidence-based search across scientific research papers."
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "OpenAPI spec URL not provided; webhook support not documented",
+   "mcp": ""
+  }
+ }
+}

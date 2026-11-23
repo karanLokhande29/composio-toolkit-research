@@ -1,0 +1,122 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.066267,
+  "seconds": 58.5,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://developers.klaviyo.com/",
+  "https://developers.klaviyo.com/docs",
+  "https://developers.klaviyo.com/docs/getting-started",
+  "https://docs.composio.dev/toolkits/klaviyo.md",
+  "https://developers.klaviyo.com/en/docs/klaviyo_mcp_server",
+  "https://developers.klaviyo.com/en/docs/connect_to_the_klaviyo_mcp_server",
+  "https://developers.klaviyo.com/en/docs/rate_limits_and_error_handling",
+  "https://developers.klaviyo.com/en/docs/create_a_public_oauth_app",
+  "https://developers.klaviyo.com/en/docs/migrate_to_oauth_from_private_key_authentication",
+  "https://developers.klaviyo.com/en/docs/application_objects_for_app_partners",
+  "https://developers.klaviyo.com/en/docs/authenticate_",
+  "https://developers.klaviyo.com/en/docs/klaviyo_mcp_server_available_tools"
+ ],
+ "output": {
+  "one_liner": "Klaviyo is a customer platform for email, SMS and push marketing.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "api_key",
+    "oauth2"
+   ],
+   "oauth_grant_types": [],
+   "notes": "Private API keys (server-side) and public keys (client-side) for direct API calls; OAuth for public marketplace apps.",
+   "evidence": [
+    {
+     "url": "https://developers.klaviyo.com/docs/getting-started",
+     "snippet": "Create a private API key and make your first call to the Klaviyo API in a few minutes."
+    },
+    {
+     "url": "https://developers.klaviyo.com/en/docs/create_a_public_oauth_app",
+     "snippet": "Public apps that can be installed from Klaviyo's App Marketplace require authentication via OAuth."
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Private API keys available immediately after account creation for Owner/Admin/Manager roles. OAuth apps require app review for marketplace listing. Sandbox accounts available linked to production login.",
+   "evidence": [
+    {
+     "url": "https://developers.klaviyo.com/docs/getting-started",
+     "snippet": "Creating an API key takes an Owner, Admin or Manager role on the account."
+    },
+    {
+     "url": "https://developers.klaviyo.com/docs/getting-started",
+     "snippet": "Create a private API key and make your first call to the Klaviyo API in a few minutes."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Per-account with burst (1-second) and steady (1-minute) windows; standard endpoints: 350/s burst, 3500/m steady.",
+   "evidence": [
+    {
+     "url": "https://developers.klaviyo.com/",
+     "snippet": "you can download the OpenAPI spec the reference is generated from."
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/klaviyo.md",
+     "snippet": "- **Tools:** 233"
+    },
+    {
+     "url": "https://developers.klaviyo.com/en/docs/rate_limits_and_error_handling",
+     "snippet": "All new API endpoints are rate limited on a per-account basis, and use a fixed-window rate limiting algorithm."
+    },
+    {
+     "url": "https://developers.klaviyo.com/en/docs/klaviyo_mcp_server_available_tools",
+     "snippet": "get_webhook Get details of a webhook."
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://mcp.klaviyo.com/mcp",
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://developers.klaviyo.com/",
+     "snippet": "Klaviyo's MCP server lets an agent work with the data in a Klaviyo account. Add the remote server at https://mcp.klaviyo.com/mcp"
+    },
+    {
+     "url": "https://developers.klaviyo.com/en/docs/connect_to_the_klaviyo_mcp_server",
+     "snippet": "Remote MCP server URL: https://mcp.klaviyo.com/mcp"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Self-serve private credentials, comprehensive REST API with OpenAPI spec, official MCP support, and existing Composio toolkit with 233 tools already built.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "KLAVIYO"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://developers.klaviyo.com/docs/getting-started",
+    "snippet": "Klaviyo is a customer platform for email, SMS and push marketing, built on the data your customers create."
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  }
+ }
+}

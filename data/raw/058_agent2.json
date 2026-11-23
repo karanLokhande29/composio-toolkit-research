@@ -1,0 +1,90 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.067941,
+  "seconds": 90.1,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://github.com/sherlock-project/sherlock#readme",
+  "https://github.com/sherlock-project/sherlock/wiki",
+  "https://github.com/holistis/bug-bounty-intelligence-mcp",
+  "https://github.com/jcucci/dotnet-sherlock-mcp",
+  "https://github.com/Burnsedia/sherlock-mcp"
+ ],
+ "output": {
+  "one_liner": "Hunt down social media accounts by username across social networks",
+  "app_type": "cli_or_library",
+  "auth": {
+   "methods": [],
+   "oauth_grant_types": [],
+   "notes": "Sherlock is an open-source CLI tool with no public API; no authentication required",
+   "evidence": [
+    {
+     "url": "https://github.com/sherlock-project/sherlock/wiki",
+     "snippet": "Sherlock is a tool that scans social networks (and other sites) for the existence of a specified username."
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": null,
+   "notes": "Open-source CLI tool freely available on GitHub; installation via pipx or git clone requires no payment or approval",
+   "evidence": [
+    {
+     "url": "https://github.com/Burnsedia/sherlock-mcp",
+     "snippet": "Sherlock CLI tool installed: pipx install sherlock-project"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "cli_or_library_only"
+   ],
+   "breadth": "unknown",
+   "openapi_spec_url": null,
+   "webhooks": null,
+   "rate_limit_note": "",
+   "evidence": [
+    {
+     "url": "https://github.com/Burnsedia/sherlock-mcp",
+     "snippet": "FastMCP integration for social media username searches across 400+ platforms using Model Context Protocol."
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [
+    "https://github.com/Burnsedia/sherlock-mcp"
+   ],
+   "evidence": [
+    {
+     "url": "https://github.com/Burnsedia/sherlock-mcp",
+     "snippet": "Sherlock MCP Server: Find truth and counter propaganda through ethical OSINT."
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "cli_only",
+   "rationale": "Open-source CLI tool with no native REST API; executable directly or via existing community MCP servers, but integration requires CLI wrapping.",
+   "composio_existing_toolkit": "no",
+   "composio_slug": null
+  },
+  "overview_evidence": [
+   {
+    "url": "https://github.com/sherlock-project/sherlock#readme",
+    "snippet": "Hunt down social media accounts by username across social networks"
+   }
+  ],
+  "confidence": 0.75,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "Sherlock is fundamentally a CLI tool without documented REST/GraphQL endpoints; API breadth metrics do not apply",
+   "mcp": ""
+  }
+ }
+}

@@ -1,0 +1,123 @@
+{
+ "id": 32,
+ "app": "Meta Ads",
+ "category": "Marketing, Ads, Email and Social",
+ "hint": "developers.facebook.com/docs/marketing-apis",
+ "one_liner": "Automate advertising across Meta technologies with API functions for ad creation, management, and performance analysis.",
+ "app_type": "saas",
+ "auth": {
+  "methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "oauth_grant_types": [
+   "authorization_code",
+   "client_credentials"
+  ],
+  "notes": "OAuth2 via User Login dialog (authorization_code) or server-to-server calls (client_credentials). API keys include User, App, Page, and System User access tokens sent as Bearer tokens.",
+  "evidence": [
+   {
+    "url": "https://developers.facebook.com/docs/facebook-login/guides/access-tokens",
+    "snippet": "User access tokens let your app take actions in real time based on input from the user.",
+    "check": "exact"
+   },
+   {
+    "url": "https://developers.facebook.com/docs/facebook-login/guides/access-tokens",
+    "snippet": "System User Access Token | System User access tokens let your app perform programmatic, automated actions on Ad objects",
+    "check": "repaired"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/metaads.md",
+    "snippet": "Auth: OAUTH2, API_KEY",
+    "check": "exact"
+   }
+  ]
+ },
+ "access": {
+  "status": "app_review",
+  "dev_sandbox": true,
+  "notes": "Limited Access auto-granted for free (dev-only, heavily rate-limited). Full Access for production requires App Review approval.",
+  "evidence": [
+   {
+    "url": "https://developers.facebook.com/docs/marketing-api/access",
+    "snippet": "Heavily rate-limited per ad account. For development only. Not for production apps running for live advertisers.",
+    "check": "exact"
+   },
+   {
+    "url": "https://developers.facebook.com/docs/marketing-api/access",
+    "snippet": "Depending on your intended use case, you may need to submit your app for review to gain access",
+    "check": "repaired"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "rest"
+  ],
+  "breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "rate_limit_note": "Limited Access: heavily rate-limited (development only). Full Access: lightly rate-limited.",
+  "evidence": [
+   {
+    "url": "https://developers.facebook.com/docs/marketing-api/overview",
+    "snippet": "Use the Marketing API to automate advertising across Meta technologies. The API provides functions for ad creation,",
+    "check": "repaired"
+   },
+   {
+    "url": "https://developers.facebook.com/docs/graph-api/overview",
+    "snippet": "The Graph API is the primary way to get data into and out of the Facebook platform. It's an HTTP-based API",
+    "check": "repaired"
+   },
+   {
+    "url": "https://developers.facebook.com/docs/graph-api/webhooks",
+    "snippet": "Webhooks allows you to receive real-time HTTP notifications of changes to specific objects in the Meta social graph.",
+    "check": "exact"
+   },
+   {
+    "url": "https://developers.facebook.com/docs/marketing-api/access",
+    "snippet": "Heavily rate-limited per ad account.",
+    "check": "exact"
+   }
+  ]
+ },
+ "mcp": {
+  "official": null,
+  "community": [],
+  "evidence": [
+   {
+    "url": "https://developers.facebook.com/docs/marketing-apis",
+    "snippet": "Ads MCP Server",
+    "check": "exact"
+   }
+  ]
+ },
+ "buildability": {
+  "verdict": "ready_with_caveats",
+  "main_blocker": "app_review",
+  "rationale": "Well-documented REST API with broad coverage; self-serve Limited Access available for development; Composio toolkit already exists with 101 tools; production use requires App Review.",
+  "composio_existing_toolkit": "yes",
+  "composio_slug": "metaads"
+ },
+ "overview_evidence": [
+  {
+   "url": "https://developers.facebook.com/docs/marketing-api/overview",
+   "snippet": "Use the Marketing API to automate advertising across Meta technologies. The API provides functions for ad creation, management."
+  }
+ ],
+ "confidence": 0.92,
+ "unknown_reasons": {
+  "auth": "",
+  "access": "",
+  "api_surface": "OpenAPI specification not mentioned in provided documentation.",
+  "mcp": "MCP server mentioned in documentation index but no URL or vendor publication confirmation provided in pages."
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 9,
+  "error": null,
+  "cost_usd": 0.096061,
+  "seconds": 116.6
+ }
+}

@@ -1,0 +1,134 @@
+{
+ "id": 5,
+ "app": "Twenty",
+ "category": "CRM and Sales",
+ "hint": "twenty.com (open-source CRM)",
+ "one_liner": "Twenty is an open-source, self-hostable CRM platform where teams define custom data models and workflows in TypeScript, also available as a cloud service.",
+ "app_type": "open_source_self_hostable",
+ "auth": {
+  "methods": [
+   "bearer_token",
+   "oauth2"
+  ],
+  "oauth_grant_types": [],
+  "notes": "API uses bearer token authentication (static API keys); OAuth also supported for external applications acting on behalf of users.",
+  "evidence": [
+   {
+    "url": "https://twenty.com/developers/section/api-and-webhooks",
+    "snippet": "Create an API key in Settings → Developers → API → + Create key . Copy it immediately",
+    "check": "repaired"
+   },
+   {
+    "url": "https://twenty.com/developers/section/api-and-webhooks",
+    "snippet": "For OAuth-based access (external apps acting on behalf of users), see OAuth",
+    "check": "repaired"
+   }
+  ]
+ },
+ "access": {
+  "status": "self_serve_free",
+  "dev_sandbox": true,
+  "notes": "Free 30-day cloud trial without credit card required; free open-source self-hosting alternative available.",
+  "evidence": [
+   {
+    "url": "https://twenty.com/pricing",
+    "snippet": "Start your free trial today without credit card.",
+    "check": "exact"
+   },
+   {
+    "url": "https://docs.twenty.com/getting-started/quickstart",
+    "snippet": "Pick 30 days (with card) or 7 days (without card). Both include full access — unlimited contacts, email integration, custom objects, API.",
+    "check": "repaired"
+   },
+   {
+    "url": "https://twenty.com/developers/section/self-hosting",
+    "snippet": "Twenty can be self-hosted on your own infrastructure, giving you full control over your data and deployment.",
+    "check": "exact"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "graphql",
+   "rest"
+  ],
+  "breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "rate_limit_note": "100 requests per minute; batch operations up to 60 records per call; GraphQL also supports batch upsert.",
+  "evidence": [
+   {
+    "url": "https://twenty.com/developers/section/api-and-webhooks",
+    "snippet": "REST and GraphQL APIs generated from your workspace schema.",
+    "check": "exact"
+   },
+   {
+    "url": "https://twenty.com/developers/section/api-and-webhooks",
+    "snippet": "Core API — /rest/ and /graphql/ CRUD on records: People, Companies, Opportunities, your custom objects.",
+    "check": "repaired"
+   },
+   {
+    "url": "https://twenty.com/developers/section/api-and-webhooks",
+    "snippet": "Rate limits Limit Value Requests 100 per minute Batch size 60 records per call",
+    "check": "exact"
+   },
+   {
+    "url": "https://twenty.com/developers/section/api-and-webhooks/webhooks",
+    "snippet": "Get notified when records change — HTTP POST to your endpoint on every create, update, or delete.",
+    "check": "exact"
+   }
+  ]
+ },
+ "mcp": {
+  "official": null,
+  "community": [],
+  "evidence": [
+   {
+    "url": "https://twenty.com",
+    "snippet": "Every Cloud workspace ships with a native MCP server. Connect your AI assistant via OAuth and it can read and write your CRM data",
+    "check": "repaired"
+   },
+   {
+    "url": "https://twenty.com/pricing",
+    "snippet": "MCP server Yes Yes",
+    "check": "exact"
+   }
+  ]
+ },
+ "buildability": {
+  "verdict": "ready",
+  "main_blocker": "none",
+  "rationale": "Self-serve free access, well-documented REST and GraphQL APIs, webhooks enabled, and Composio toolkit with 23 tools already published.",
+  "composio_existing_toolkit": "yes",
+  "composio_slug": "TWENTY"
+ },
+ "overview_evidence": [
+  {
+   "url": "https://twenty.com",
+   "snippet": "Twenty | #1 Open Source CRM"
+  },
+  {
+   "url": "https://docs.twenty.com/getting-started/meet-twenty",
+   "snippet": "a production-ready CRM you can reshape as you go."
+  },
+  {
+   "url": "https://twenty.com/developers",
+   "snippet": "Build apps in TypeScript, connect your tools through APIs, and host Twenty yourself."
+  }
+ ],
+ "confidence": 0.95,
+ "unknown_reasons": {
+  "auth": "",
+  "access": "",
+  "api_surface": "",
+  "mcp": "Official MCP server confirmed to ship with Cloud workspaces, but no public repository URL provided in documentation pages."
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 10,
+  "error": null,
+  "cost_usd": 0.066075,
+  "seconds": 78.8
+ }
+}

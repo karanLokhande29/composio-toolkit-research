@@ -1,0 +1,52 @@
+{
+ "fields": [
+  "buildability.main_blocker",
+  "buildability.verdict"
+ ],
+ "pages": [
+  "https://transcriptapi.com",
+  "https://transcriptapi.com/signup",
+  "https://transcriptapi.com/docs/getting-started/python/"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.050619,
+  "seconds": 15.4,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "buildability.main_blocker",
+    "value": "paid_plan",
+    "evidence": [
+     {
+      "url": "https://transcriptapi.com",
+      "snippet": "After that, the paid plan is $5 a month for 1,000 credits per month, or $54 a year billed annually."
+     },
+     {
+      "url": "https://transcriptapi.com/docs/getting-started/python/",
+      "snippet": "Free endpoints such as /youtube/info also need an active plan, so they can return 402"
+     }
+    ],
+    "reason": "The free tier is limited to 100 one-time credits with no recurring free plan, so any sustained use requires moving to the $5/mo paid plan, making paid_plan the real blocker rather than none."
+   },
+   {
+    "field": "buildability.verdict",
+    "value": "ready_with_caveats",
+    "evidence": [
+     {
+      "url": "https://transcriptapi.com",
+      "snippet": "100 free credits to try the API — no card required."
+     },
+     {
+      "url": "https://transcriptapi.com",
+      "snippet": "After that, the paid plan is $5 a month for 1,000 credits per month, or $54 a year billed annually."
+     }
+    ],
+    "reason": "A developer can self-serve a key and build immediately, but the free allowance is only 100 trial credits and continued/production use requires a paid plan, which is a caveat rather than fully free/ready."
+   }
+  ]
+ }
+}

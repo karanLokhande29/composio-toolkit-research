@@ -1,42 +1,42 @@
 {
- "checked_at": "2026-11-23T15:49:30+05:30",
- "phase": 1,
+ "checked_at": "2026-11-23T21:50:40+05:30",
+ "phase": 9,
  "results": {
   "R1": {
    "status": "PASS",
-   "detail": "apps.yaml 100 unique ids"
+   "detail": "apps.yaml 100 unique ids; results.json 100 unique"
   },
   "R2": {
    "status": "PASS",
-   "detail": "5 apps ok"
+   "detail": "100 apps ok"
   },
   "R3": {
    "status": "PASS",
-   "detail": "5 apps ok"
+   "detail": "100 apps ok"
   },
   "R4": {
    "status": "PASS",
-   "detail": "5 apps ok"
+   "detail": "100 apps ok"
   },
   "R5": {
    "status": "PASS",
-   "detail": "5 apps ok"
+   "detail": "100 apps ok"
   },
   "R6": {
    "status": "PASS",
-   "detail": "5 apps ok"
+   "detail": "100 apps ok"
   },
   "R7": {
    "status": "PASS",
-   "detail": "5 apps ok"
+   "detail": "100 apps ok"
   },
   "R8": {
    "status": "PASS",
-   "detail": "5 apps ok"
+   "detail": "100 apps ok"
   },
   "R9": {
-   "status": "NOT_YET",
-   "detail": "phase 6 not reached"
+   "status": "PASS",
+   "detail": "6 headlines map to patterns.json (MANUAL: insight quality)"
   },
   "R10": {
    "status": "MANUAL_PENDING",
@@ -44,59 +44,59 @@
   },
   "R11": {
    "status": "PASS",
-   "detail": "3 entries (MANUAL: completeness)"
+   "detail": "5 entries (MANUAL: completeness)"
   },
   "R12": {
-   "status": "NOT_YET",
-   "detail": "phase 3 not reached"
+   "status": "PASS",
+   "detail": "log lines per loop {1: 2363, 2: 1383, 3: 395}"
   },
   "R13": {
-   "status": "NOT_YET",
-   "detail": "phase 4 not reached"
+   "status": "MANUAL_PENDING",
+   "detail": "sheet generated: 260 rows, 260 still blank (Karan to fill)"
   },
   "R14": {
-   "status": "NOT_YET",
-   "detail": "phase 5 not reached"
+   "status": "MANUAL_PENDING",
+   "detail": "waiting for human sheet"
   },
   "R15": {
-   "status": "NOT_YET",
-   "detail": "phase 7 not reached"
+   "status": "PASS",
+   "detail": "self-contained, 1115 KB (MANUAL: 2-minute readability)"
   },
   "R16": {
-   "status": "NOT_YET",
-   "detail": "phase 7 not reached"
+   "status": "PASS",
+   "detail": "all 9 section ids in order"
   },
   "R17": {
-   "status": "NOT_YET",
-   "detail": "phase 7 not reached"
+   "status": "PASS",
+   "detail": "embedded JSON + 3 files"
   },
   "R18": {
-   "status": "NOT_YET",
-   "detail": "phase 7 not reached"
+   "status": "PASS",
+   "detail": "misses/unresolved/failures blocks present (MANUAL: honesty)"
   },
   "R19": {
-   "status": "NOT_YET",
-   "detail": "phase 2 not reached"
+   "status": "MANUAL_PENDING",
+   "detail": "Karan must confirm"
   },
   "R20": {
-   "status": "FAIL",
-   "detail": "missing or too short"
+   "status": "PASS",
+   "detail": "1392 words (MANUAL: Karan can explain)"
   },
   "R21": {
-   "status": "NOT_YET",
-   "detail": "phase 8 not reached"
+   "status": "PASS",
+   "detail": "https://karanlokhande29.github.io/composio-toolkit-research/ -> 200"
   },
   "R22": {
-   "status": "NOT_YET",
-   "detail": "phase 8 not reached"
+   "status": "PASS",
+   "detail": "all README sections present"
   },
   "R23": {
-   "status": "NOT_YET",
-   "detail": "phase 9 not reached"
+   "status": "MANUAL_PENDING",
+   "detail": "Karan must confirm"
   },
   "R24": {
    "status": "PASS",
-   "detail": ".env ignored; 0 tracked files + history scanned clean"
+   "detail": ".env ignored; 1995 tracked files + history scanned clean"
   }
  }
 }

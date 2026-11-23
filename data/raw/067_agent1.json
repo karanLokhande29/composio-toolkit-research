@@ -1,0 +1,108 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.08832699999999999,
+  "seconds": 120.2,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://docs.composio.dev/toolkits/snowflake.md",
+  "https://docs.snowflake.com",
+  "https://docs.snowflake.com/en/developer-guide/sql-api",
+  "https://docs.snowflake.com/en/developer-guide/sql-api/authenticating",
+  "https://docs.snowflake.com/en/user-guide/key-pair-auth",
+  "https://docs.snowflake.com/en/user-guide/admin-user-management",
+  "https://docs.snowflake.com/en/user-guide-getting-started",
+  "https://docs.snowflake.com/en/user-guide/getting-started-tutorial",
+  "https://docs.snowflake.com/en/developer-guide/streamlit/getting-started/overview",
+  "https://docs.snowflake.com/en/developer-guide/streamlit/getting-started/example-data-dashboard",
+  "https://docs.snowflake.com/en/developer-guide/streamlit/getting-started/example-crud-app",
+  "https://docs.snowflake.com/en/developer-guide/streamlit/features/external-access"
+ ],
+ "output": {
+  "one_liner": "Cloud data warehouse platform for querying, loading, and managing data with REST APIs and SQL.",
+  "app_type": "cloud_platform",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "jwt"
+   ],
+   "oauth_grant_types": [],
+   "notes": "Composio-managed OAuth not available; users must create custom OAuth security integration in their Snowflake account with ACCOUNTADMIN role; per-user setup required.",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/snowflake.md",
+     "snippet": "Snowflake has no Composio-managed OAuth app, so you create an OAuth security integration in your own Snowflake account"
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/snowflake.md",
+     "snippet": "You need the `ACCOUNTADMIN` role, or a role with the privilege to create integrations."
+    },
+    {
+     "url": "https://docs.snowflake.com/en/developer-guide/sql-api/authenticating",
+     "snippet": "Authorization: Bearer oauth_token where oauth_token is the generated OAuth token."
+    },
+    {
+     "url": "https://docs.snowflake.com/en/developer-guide/sql-api/authenticating",
+     "snippet": "X-Snowflake-Authorization-Token-Type: KEYPAIR_JWT (for key-pair authentication)"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_trial",
+   "dev_sandbox": true,
+   "notes": "30-day free trial accounts available with complimentary credits; continued use beyond trial requires paid plan.",
+   "evidence": [
+    {
+     "url": "https://docs.snowflake.com/en/user-guide/getting-started-tutorial",
+     "snippet": "If you are using a 30-day trial account , which provides free credits, you won't incur any costs."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": null,
+   "rate_limit_note": "",
+   "evidence": [
+    {
+     "url": "https://docs.snowflake.com/en/developer-guide/sql-api",
+     "snippet": "The Snowflake SQL API is a REST API that you can use to access and update data in a Snowflake database."
+    },
+    {
+     "url": "https://docs.snowflake.com/en/developer-guide/sql-api",
+     "snippet": "Submit SQL statements for execution. Check the status of the execution of a statement. Cancel the execution of a statement."
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": []
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "admin_scope",
+   "rationale": "SQL API is well-documented and Composio toolkit exists (17 tools), but setup requires ACCOUNTADMIN role and per-user OAuth integration creation in each user's account.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "SNOWFLAKE"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://docs.composio.dev/toolkits/snowflake.md",
+    "snippet": "Category: databases. Auth: OAUTH2. Tools: 17"
+   },
+   {
+    "url": "https://docs.snowflake.com/en/developer-guide/sql-api",
+    "snippet": "You can use this API to develop custom applications and integrations that perform queries and manage deployment."
+   }
+  ],
+  "confidence": 0.9,
+  "unknown_reasons": {}
+ }
+}

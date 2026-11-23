@@ -1,0 +1,40 @@
+{
+ "fields": [
+  "access.status"
+ ],
+ "pages": [
+  "https://airtable.com/developers/agents/mcp/getting-started",
+  "https://docs.composio.dev/toolkits/airtable.md",
+  "https://airtable.com/developers/web/api/introduction",
+  "https://airtable.com/developers/web/api/authentication",
+  "https://airtable.com/developers/web/api",
+  "https://airtable.com/developers/web/guides/rate-limits",
+  "https://airtable.com/developers/web/api/webhooks"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.06612299999999999,
+  "seconds": 9.6,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "access.status",
+    "value": "self_serve_free",
+    "evidence": [
+     {
+      "url": "https://airtable.com/developers/agents/mcp/getting-started",
+      "snippet": "The server is available to all users on all plans."
+     },
+     {
+      "url": "https://airtable.com/developers/web/api/authentication",
+      "snippet": "Personal access tokens are for personal development, like building an integration for"
+     }
+    ],
+    "reason": "Airtable lets any user self-create personal access tokens or use OAuth for free API/MCP access with no payment, admin approval, or sales contact required."
+   }
+  ]
+ }
+}

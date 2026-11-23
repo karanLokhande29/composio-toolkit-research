@@ -1,0 +1,109 @@
+{
+ "id": 72,
+ "app": "Airtable",
+ "category": "Productivity and Project Management",
+ "hint": "airtable.com/developers",
+ "one_liner": "Airtable's structured field types, relational links, and built-in automations make it a rich data layer for AI agents.",
+ "app_type": "saas",
+ "auth": {
+  "methods": [
+   "bearer_token",
+   "oauth2"
+  ],
+  "oauth_grant_types": [],
+  "notes": "OAuth recommended for end-user connections; Personal Access Tokens (PATs) recommended for CLI, scripts, and server-side setups, transmitted as Bearer authorization header.",
+  "evidence": [
+   {
+    "url": "https://docs.composio.dev/toolkits/airtable.md",
+    "snippet": "Auth: OAUTH2, API_KEY",
+    "check": "exact"
+   },
+   {
+    "url": "https://airtable.com/developers/agents/mcp/getting-started",
+    "snippet": "OAuth (recommended for end-user connections) and Personal Access Tokens (PATs, recommended for CLI, scripts, and server-side setups).",
+    "check": "exact"
+   },
+   {
+    "url": "https://airtable.com/developers/agents/mcp/cursor",
+    "snippet": "\"Authorization\": \"Bearer ${env:AIRTABLE_PAT}\"",
+    "check": "exact"
+   }
+  ]
+ },
+ "access": {
+  "status": "unknown",
+  "dev_sandbox": null,
+  "notes": "Pages state 'The server is available to all users on all plans' but do not describe account creation, free tier availability, sign-up process, or whether Airtable requires payment.",
+  "evidence": [
+   {
+    "url": "https://airtable.com/developers/agents/mcp/getting-started",
+    "snippet": "The server is available to all users on all plans.",
+    "check": "exact"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "rest"
+  ],
+  "breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": null,
+  "rate_limit_note": "5 requests per second per base documented for record operations; full rate-limit scope not detailed.",
+  "evidence": [
+   {
+    "url": "https://docs.composio.dev/toolkits/airtable.md",
+    "snippet": "Rate limit: 5 requests per second per base.",
+    "check": "exact"
+   }
+  ]
+ },
+ "mcp": {
+  "official": "https://mcp.airtable.com/mcp",
+  "community": [],
+  "evidence": [
+   {
+    "url": "https://airtable.com/developers/agents/mcp/getting-started",
+    "snippet": "Airtable's MCP server lets you connect AI tools directly to your Airtable bases.",
+    "check": "exact"
+   },
+   {
+    "url": "https://airtable.com/developers/agents/mcp/other",
+    "snippet": "point it at the Airtable MCP server URL: https://mcp.airtable.com/mcp",
+    "check": "exact"
+   }
+  ]
+ },
+ "buildability": {
+  "verdict": "ready",
+  "main_blocker": "none",
+  "rationale": "Composio has already built and deployed a 28-tool Airtable toolkit with OAuth and bearer token authentication; broad API coverage documented.",
+  "composio_existing_toolkit": "yes",
+  "composio_slug": "AIRTABLE"
+ },
+ "overview_evidence": [
+  {
+   "url": "https://airtable.com/developers",
+   "snippet": "Airtable's structured field types, relational links, and built-in automations make it a rich data layer for AI agents."
+  },
+  {
+   "url": "https://airtable.com/developers",
+   "snippet": "Airtable is model agnostic and works with the AI tools your team already use."
+  }
+ ],
+ "confidence": 0.95,
+ "unknown_reasons": {
+  "auth": "",
+  "access": "Pages state API is 'available to all users on all plans' but do not describe account creation, free tier existence, or whether payment is required to obtain credentials.",
+  "api_surface": "OpenAPI specification not mentioned; webhook API support not explicitly documented in provided pages.",
+  "mcp": ""
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 11,
+  "error": null,
+  "cost_usd": 0.079326,
+  "seconds": 89.3
+ }
+}

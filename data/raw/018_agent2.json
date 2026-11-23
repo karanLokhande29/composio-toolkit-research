@@ -1,0 +1,124 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.10894899999999999,
+  "seconds": 147.2,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+  "https://developer.helpscout.com/docs-api/",
+  "https://developer.helpscout.com/",
+  "https://developer.helpscout.com/mailbox-api/",
+  "https://www.helpscout.com/",
+  "https://developer.helpscout.com/webhooks/",
+  "https://docs.composio.dev/toolkits/help_scout.md",
+  "https://docs.helpscout.com",
+  "https://helpscout.com/pricing",
+  "https://developer.helpscout.com/apps/",
+  "https://www.helpscout.com/company/legal/accessibility-statement/",
+  "https://docs.helpscout.com/collection/1543-getting-started"
+ ],
+ "output": {
+  "one_liner": "Help Scout is an AI-driven customer support platform enabling teams to manage conversations and provide support across multiple channels.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "api_key"
+   ],
+   "oauth_grant_types": [
+    "authorization_code",
+    "client_credentials"
+   ],
+   "notes": "Inbox API uses OAuth 2.0 (Authorization Code and Client Credentials flows). Docs API uses API keys transmitted via HTTP Basic Authentication.",
+   "evidence": [
+    {
+     "url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+     "snippet": "This is an HTTPS-only API and it uses OAuth 2.0 authorization, implementing Authorization Code and Client Credential flows."
+    },
+    {
+     "url": "https://developer.helpscout.com/docs-api/",
+     "snippet": "This is an HTTPS-only API. Authentication is based on API keys. Each API key is associated with a Help Scout user."
+    },
+    {
+     "url": "https://developer.helpscout.com/docs-api/",
+     "snippet": "The API key is passed via HTTP Basic Authentication and goes in the username field."
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Free plan available (5 users, 1 Inbox, 1 Docs site). OAuth2 apps and API keys can be created self-service. Docs API requires permission from account admin.",
+   "evidence": [
+    {
+     "url": "https://helpscout.com/pricing",
+     "snippet": "The Free plan gives you 5 users, 1 Inbox, and 1 Docs site."
+    },
+    {
+     "url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+     "snippet": "You need to create an OAuth2 application before you can use the API. Create one by navigating to Your Profile > My apps and click Create My App."
+    },
+    {
+     "url": "https://developer.helpscout.com/docs-api/",
+     "snippet": "If you don't see an API key in your profile, that's because you haven't been granted the \"Docs: Create new, edit settings & Collections\" permission."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Docs API: up to 4000 requests per 10 minutes (varies by site count). Rate limit headers X-RateLimit-Remaining and X-RateLimit-Reset included. 429 response when exceeded.",
+   "evidence": [
+    {
+     "url": "https://developer.helpscout.com/",
+     "snippet": "Inbox API - read and write data to Help Scout inboxes. Chat API - read and answer live Beacon chats while they are still open. Docs API - read and write data to your Docs sites."
+    },
+    {
+     "url": "https://developer.helpscout.com/webhooks/",
+     "snippet": "Webhooks enable Help Scout to call a script on your server when one or more events have happened."
+    },
+    {
+     "url": "https://developer.helpscout.com/docs-api/",
+     "snippet": "Each account is allowed to make a limited number of requests per 10 minute period."
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": []
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Public REST API with self-serve free credentials, documented endpoints, webhooks, and an existing Composio toolkit with 129 tools.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "HELP_SCOUT"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://www.helpscout.com/",
+    "snippet": "Help Scout: The AI-driven support platform for customer-first brands"
+   },
+   {
+    "url": "https://developer.helpscout.com/",
+    "snippet": "Help Scout provides several tools for developers to make magic happen: Apps, Beacon, Inbox API, Chat API, Docs API, Webhooks"
+   }
+  ],
+  "confidence": 0.92,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "OpenAPI spec not documented in provided pages",
+   "mcp": "No MCP server documentation in provided pages"
+  }
+ }
+}

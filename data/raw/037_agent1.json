@@ -1,0 +1,121 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.098103,
+  "seconds": 102.9,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+  "https://developer.systeme.io/reference/api",
+  "https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp",
+  "https://systeme.io/features",
+  "https://help.systeme.io/article/2930-how-to-use-systeme-ios-webhook-service",
+  "https://systeme.io",
+  "https://systeme.io/pricing",
+  "https://help.systeme.io/category/11216-model-context-protocol-mcp",
+  "https://help-ar.systeme.io/article/10203-model-context-protocol-mcp-systeme-io",
+  "https://help-de.systeme.io/article/10194-so-verwenden-sie-das-model-context-protocol-mcp-mit-systemeio",
+  "https://help-el.systeme.io/article/10853-how-to-use-the-systeme-io-mcp",
+  "https://help-es.systeme.io/article/10191-como-usar-el-model-context-protocol-mcp-con-systeme-io"
+ ],
+ "output": {
+  "one_liner": "All-in-one platform for building sales funnels, email marketing, online courses, and selling digital products.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "api_key"
+   ],
+   "oauth_grant_types": [],
+   "notes": "Only API key (X-API-Key header) currently supported; OAuth planned.",
+   "evidence": [
+    {
+     "url": "https://developer.systeme.io/reference/api",
+     "snippet": "To authenticate with the Systeme.io Public API, your only option right now is to attach your API key to the X-API-Key header of each request."
+    },
+    {
+     "url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+     "snippet": "API keys are unique identifiers that authenticate requests to our public API."
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": null,
+   "notes": "Free plan includes API access; API key generation is self-serve in Settings > MCP & API keys.",
+   "evidence": [
+    {
+     "url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+     "snippet": "To connect an external integration, you first need to generate a secure API key. Click on your profile picture and select Settings"
+    },
+    {
+     "url": "https://systeme.io/pricing",
+     "snippet": "The free plan never expires and does not require a credit card."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Shared quota across all API keys; X-RateLimit-Remaining header shows remaining requests; 429 on limit exceeded.",
+   "evidence": [
+    {
+     "url": "https://developer.systeme.io/reference/api",
+     "snippet": "Adhering to RESTful conventions, our API ensures an intuitive and consistent interaction pattern for all users."
+    },
+    {
+     "url": "https://developer.systeme.io/reference/api",
+     "snippet": "Shared Quota: The request limit is collectively applied across all your API keys and tokens."
+    },
+    {
+     "url": "https://help.systeme.io/article/2930-how-to-use-systeme-ios-webhook-service",
+     "snippet": "Programmatically create new webhooks to receive real-time notifications."
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://mcp.systeme.io/mcp",
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp",
+     "snippet": "The systeme.io MCP server allows AI applications to access specific contact-management tools within your account."
+    },
+    {
+     "url": "https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp",
+     "snippet": "For technical details, please refer to our official MCP documentation: https://developer.systeme.io/docs/mcp-server"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Public REST API with self-serve free credentials and broad feature coverage enables toolkit building today.",
+   "composio_existing_toolkit": "no",
+   "composio_slug": null
+  },
+  "overview_evidence": [
+   {
+    "url": "https://systeme.io/features",
+    "snippet": "all-in-one platform that replaces the separate tools most online entrepreneurs use to run their business."
+   },
+   {
+    "url": "https://systeme.io",
+    "snippet": "The only tool you need to launch your online business"
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  }
+ }
+}

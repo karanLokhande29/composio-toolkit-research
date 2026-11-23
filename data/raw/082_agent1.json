@@ -1,0 +1,109 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.10343899999999999,
+  "seconds": 130.1,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://plaid.com/docs/",
+  "https://docs.composio.dev/toolkits/plaid.md",
+  "https://plaid.com/docs/api/",
+  "https://plaid.com/docs/sandbox/",
+  "https://plaid.com/docs/errors/",
+  "https://plaid.com/docs/auth/",
+  "https://plaid.com/docs/api/products/auth/",
+  "https://plaid.com/docs/api/oauth/",
+  "https://plaid.com/docs/api/processor-partners/",
+  "https://plaid.com/docs/api/partner/",
+  "https://plaid.com/docs/link/oauth/",
+  "https://plaid.com/docs/auth/coverage/testing/"
+ ],
+ "output": {
+  "one_liner": "Plaid is a fintech API that connects applications to financial institutions to access account, transaction, identity, and payment data.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "api_key"
+   ],
+   "oauth_grant_types": [],
+   "notes": "Client ID and secret required for all API endpoints, sent as headers (PLAID-CLIENT-ID, PLAID-SECRET) or request body. OAuth2 endpoints exist for dashboard/third-party access but not for Plaid API itself. Plaid Link uses OAuth 2.0 with financial institutions for end-user connections.",
+   "evidence": [
+    {
+     "url": "https://plaid.com/docs/api/",
+     "snippet": "Almost all Plaid API endpoints require a client_id and secret. These may be sent either in the request body or in the headers"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Sandbox is completely free with full API access for development and testing. Production requires either paid plan or time-limited trial. API keys obtained directly from Plaid Dashboard with no sales process.",
+   "evidence": [
+    {
+     "url": "https://plaid.com/docs/sandbox/",
+     "snippet": "The Plaid Sandbox is a free and fully-featured environment for application development and testing."
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/plaid.md",
+     "snippet": "Sandbox API keys can be obtained in the Plaid Dashboard"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Rate limiting enforced; specific rate limit values not provided in documentation excerpts",
+   "evidence": [
+    {
+     "url": "https://plaid.com/docs/api/",
+     "snippet": "The Plaid API is specified in our Plaid OpenAPI GitHub repo"
+    },
+    {
+     "url": "https://plaid.com/docs/api/products/auth/",
+     "snippet": "API reference for Auth endpoints and webhooks"
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://plaid.com/docs/",
+     "snippet": "Plug me in via the Plaid MCP Server"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Self-serve free Sandbox, well-documented REST API with OpenAPI spec, and static API credentials enable immediate toolkit building; Composio's 70-tool implementation already exists.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "PLAID"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://plaid.com/docs/api/",
+    "snippet": "Comprehensive reference for integrating with Plaid API endpoints"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/plaid.md",
+    "snippet": "Auth: API_KEY. Tools: 70"
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "OpenAPI specification URL referenced but not explicitly linked in provided pages",
+   "mcp": "Plaid MCP Server mentioned multiple times but specific URL not provided in page excerpts"
+  }
+ }
+}

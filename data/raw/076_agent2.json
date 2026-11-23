@@ -1,0 +1,128 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.08338899999999999,
+  "seconds": 98.0,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://developer.monday.com/api-reference/docs/authentication",
+  "https://developer.monday.com/api-reference/docs",
+  "https://developer.monday.com/api-reference/reference/webhooks",
+  "https://docs.composio.dev/toolkits/monday.md",
+  "https://docs.composio.dev/toolkits/monday_mcp.md",
+  "https://developer.monday.com",
+  "https://github.com/Prat011/mcp-server-monday",
+  "https://github.com/aliansoftwareteam/AlianHub-Project-Management-System"
+ ],
+ "output": {
+  "one_liner": "A work OS where teams create and shape their own workflows for project planning, collaboration, and automation.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "bearer_token",
+    "oauth2"
+   ],
+   "oauth_grant_types": [],
+   "notes": "Personal V2 API tokens (bearer_token) and OAuth2 for apps. Personal tokens inherit user permissions from the UI.",
+   "evidence": [
+    {
+     "url": "https://developer.monday.com/api-reference/docs/authentication",
+     "snippet": "The monday.com platform API utilizes personal V2 API tokens to authenticate requests"
+    },
+    {
+     "url": "https://developer.monday.com/api-reference/docs/authentication",
+     "snippet": "other authentication methods, like OAuth or a shortLivedToken"
+    },
+    {
+     "url": "https://developer.monday.com/api-reference/docs/authentication",
+     "snippet": "App tokens have an additional set of permission scopes that specify which queries and mutations it can access"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Free developer account available without credit card, approval, or sales contact. Provides immediate API token.",
+   "evidence": [
+    {
+     "url": "https://developer.monday.com/api-reference/docs/authentication",
+     "snippet": "If you don't have a monday.com account yet, create a free developer account to get an API token"
+    },
+    {
+     "url": "https://developer.monday.com/api-reference/docs",
+     "snippet": "For building and testing apps or API integrations without touching production data, use a free developer account."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "graphql"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Rate limits exist but specific thresholds not detailed in provided pages",
+   "evidence": [
+    {
+     "url": "https://developer.monday.com/api-reference/docs",
+     "snippet": "The monday GraphQL API is part of the monday apps framework"
+    },
+    {
+     "url": "https://developer.monday.com/api-reference/reference/webhooks",
+     "snippet": "Webhooks deliver data to other applications as it happens making webhooks much more efficient"
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/monday.md",
+     "snippet": "monday.com is a customizable work management platform for project planning, collaboration, and automation"
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [
+    "https://github.com/Prat011/mcp-server-monday"
+   ],
+   "evidence": [
+    {
+     "url": "https://developer.monday.com/api-reference/docs",
+     "snippet": "Integrate with the monday MCP server"
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/monday_mcp.md",
+     "snippet": "Monday MCP - Manage monday.com boards, items, and workspaces through its MCP server."
+    },
+    {
+     "url": "https://github.com/Prat011/mcp-server-monday",
+     "snippet": "MCP Server to interact with Monday.com boards and items"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "admin_scope",
+   "rationale": "Composio already has production toolkits (126 tools); GraphQL API fully documented; but workspace admin must install OAuth app first.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "MONDAY"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://developer.monday.com/api-reference/docs",
+    "snippet": "Welcome to monday.com, a work OS where teams create and shape their own workflows in minutes"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/monday.md",
+    "snippet": "monday.com is a customizable work management platform for project planning, collaboration, and automation, supporting agile, sales, marketing, and more"
+   }
+  ],
+  "confidence": 0.92,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "Specific rate limit thresholds/numbers referenced in navigation but content not shown in provided pages",
+   "mcp": "Official MCP server URL not provided in pages; Platform MCP architecture exists but specific endpoint URL unknown"
+  }
+ }
+}

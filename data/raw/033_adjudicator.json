@@ -1,0 +1,72 @@
+{
+ "fields": [
+  "access.status",
+  "buildability.main_blocker",
+  "buildability.verdict"
+ ],
+ "pages": [
+  "https://learn.microsoft.com/en-us/linkedin/shared/authentication/getting-access",
+  "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/marketing-tiers?view=li-lms-2026-04",
+  "https://learn.microsoft.com/en-us/linkedin/marketing/getting-started",
+  "https://learn.microsoft.com/en-us/linkedin/marketing/overview",
+  "https://learn.microsoft.com/en-us/linkedin/shared/authentication/authorization-code-flow",
+  "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads-reporting/ad-budget-pricing?view=li-lms-2026-07",
+  "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/getting-started?view=li-lms-2026-09"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.09444000000000001,
+  "seconds": 11.0,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "access.status",
+    "value": "app_review",
+    "evidence": [
+     {
+      "url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/getting-access",
+      "snippet": "Developers seeking to build a marketing related integration using Advertising API permissions must be approved."
+     },
+     {
+      "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/marketing-tiers?view=li-lms-2026-04",
+      "snippet": "Visit your app's Product tab in the"
+     },
+     {
+      "url": "https://learn.microsoft.com/en-us/linkedin/marketing/overview",
+      "snippet": "Matched Audiences, Audience Insights, Media Planning API, and Company Intelligence API are private APIs and require additional approval."
+     }
+    ],
+    "reason": "Advertising API access requires explicit LinkedIn approval via the Developer Portal Products tab before production use, matching app_review rather than unknown."
+   },
+   {
+    "field": "buildability.main_blocker",
+    "value": "app_review",
+    "evidence": [
+     {
+      "url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/getting-access",
+      "snippet": "Developers seeking to build a marketing related integration using Advertising API permissions must be approved."
+     }
+    ],
+    "reason": "The primary friction is LinkedIn's required approval/review of the app before Advertising API access is granted."
+   },
+   {
+    "field": "buildability.verdict",
+    "value": "ready_with_caveats",
+    "evidence": [
+     {
+      "url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/getting-access",
+      "snippet": "Developers seeking to build a marketing related integration using Advertising API permissions must be approved."
+     },
+     {
+      "url": "https://learn.microsoft.com/en-us/linkedin/marketing/getting-started",
+      "snippet": "Once you have a developer application that has been given access to the LinkedIn Marketing API Program, you're ready to start generating OAuth access tokens"
+     }
+    ],
+    "reason": "Developers can build/test against the documented REST API and OAuth flow, but production marketing use requires LinkedIn's approval, making it buildable with caveats rather than fully ready."
+   }
+  ]
+ }
+}

@@ -1,0 +1,268 @@
+{
+ "id": 42,
+ "app": "WooCommerce",
+ "tag": "agent2",
+ "urls": [
+  {
+   "url": "https://woocommerce.com/document/woocommerce-rest-api",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/#introduction",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/#authentication",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/#rest-api-keys",
+   "purpose": "credentials",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://woocommerce.com/document/woocommerce-rest-api/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/#rate-limiting",
+   "purpose": "rate_limits",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/#webhooks",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/#products",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/#orders",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.woocommerce.com/docs/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/techspawn/woocommerce-mcp-server",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/gobuildwp/wordpress-mcp-ai-gobuildwp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/tropk-ai/mcp-for-wordpress",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://woocommerce.com/documentation/woocommerce/getting-started/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://woocommerce.com/pricing/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://woocommerce.com/partners/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://woocommerce.com/accessibility/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.woocommerce.com/docs/extensions/getting-started-extensions/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.woocommerce.com/docs/getting-started/project-structure/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.woocommerce.com/docs/getting-started/development-environment/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.woocommerce.com/docs/getting-started/ai/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.woocommerce.com/docs/getting-started/scaffolding/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.woocommerce.com/docs/getting-started/developer-tools/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.woocommerce.com/docs/getting-started/tools-for-low-code-development/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.woocommerce.com/docs/getting-started/debugging/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.woocommerce.com/docs/getting-started/version-control-deployment/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.woocommerce.com/docs/extensions/getting-started-extensions/building-your-first-extension/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "techspawn/woocommerce-mcp-server",
+   "url": "https://github.com/techspawn/woocommerce-mcp-server",
+   "stars": 106,
+   "description": "A WooCommerce (MCP) Model Context Protocol server"
+  },
+  {
+   "repo": "gobuildwp/wordpress-mcp-ai-gobuildwp",
+   "url": "https://github.com/gobuildwp/wordpress-mcp-ai-gobuildwp",
+   "stars": 66,
+   "description": "GoBuildWP (formerly WPPilot): WordPress MCP server & AI agent for ChatGPT, Claude, Cursor, Codex. Build and edit sites in Elementor and Gutenberg, run SEO, Page"
+  },
+  {
+   "repo": "tropk-ai/mcp-for-wordpress",
+   "url": "https://github.com/tropk-ai/mcp-for-wordpress",
+   "stars": 33,
+   "description": "Connect WordPress to Claude.ai, Lovable, Cursor, Windsurf. 500+ pre-built tools across content, Elementor, Rank Math SEO, ACF, WooCommerce and ops. OAuth 2.1 wi"
+  },
+  {
+   "repo": "cosmincraciun97/stonewright-wp-mcp",
+   "url": "https://github.com/cosmincraciun97/stonewright-wp-mcp",
+   "stars": 31,
+   "description": "Guarded, recoverable WordPress MCP automation for Elementor, Gutenberg, WooCommerce, content, and code - with backups, validation, and audit trails."
+  },
+  {
+   "repo": "davidofug/Manual-Currency-Pricing-for-WooCommerce-Products-mcpwp",
+   "url": "https://github.com/davidofug/Manual-Currency-Pricing-for-WooCommerce-Products-mcpwp",
+   "stars": 17,
+   "description": ""
+  }
+ ],
+ "composio": {
+  "exact": [],
+  "candidates": []
+ },
+ "search_meta": {}
+}

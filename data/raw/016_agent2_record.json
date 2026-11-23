@@ -1,0 +1,107 @@
+{
+ "id": 16,
+ "app": "LiveAgent",
+ "category": "Support and Helpdesk",
+ "hint": "liveagent.com",
+ "one_liner": "Cloud help desk software combining email, live chat, phone, and social media in one inbox with AI agents for support teams.",
+ "app_type": "saas",
+ "auth": {
+  "methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "oauth_grant_types": [],
+  "notes": "API key authentication for REST API; OAuth 2.1 for MCP server token generation",
+  "evidence": [
+   {
+    "url": "https://support.liveagent.com/840770-Complete-API-reference",
+    "snippet": "You can get this in case your athentification with API key failed",
+    "check": "exact"
+   },
+   {
+    "url": "https://www.liveagent.com/features/mcp-server/",
+    "snippet": "or an OAuth 2.1 sign-in with a consent screen",
+    "check": "exact"
+   }
+  ]
+ },
+ "access": {
+  "status": "self_serve_trial",
+  "dev_sandbox": false,
+  "notes": "Free 30-day trial with all features, no credit card required; no permanent free plan; paid subscription required after trial expires",
+  "evidence": [
+   {
+    "url": "https://www.liveagent.com/pricing/",
+    "snippet": "30-day free trial, no credit card",
+    "check": "exact"
+   },
+   {
+    "url": "https://liveagent.com",
+    "snippet": "Every plan starts with a 30-day free trial with all features and without a credit card",
+    "check": "exact"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "rest"
+  ],
+  "breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": null,
+  "rate_limit_note": "No rate limit statements found in provided pages",
+  "evidence": [
+   {
+    "url": "https://support.liveagent.com/840770-Complete-API-reference",
+    "snippet": "400 - Bad request error You can get this in case your athentification with API key failed because of problem",
+    "check": "exact"
+   },
+   {
+    "url": "https://www.liveagent.com/features/mcp-server/",
+    "snippet": "LiveAgent's MCP server exposes tickets, ticket messages , knowledge base articles, agents, and departments",
+    "check": "repaired"
+   }
+  ]
+ },
+ "mcp": {
+  "official": "https://github.com/QualityUnit/liveagent-mcp-server",
+  "community": [
+   "https://github.com/wiselingsnet-ops/liveagent-mcp"
+  ],
+  "evidence": [
+   {
+    "url": "https://github.com/QualityUnit/liveagent-mcp-server",
+    "snippet": "LiveAgent MCP Server to automate tasks in your helpdesk",
+    "check": "exact"
+   }
+  ]
+ },
+ "buildability": {
+  "verdict": "ready_with_caveats",
+  "main_blocker": "paid_plan",
+  "rationale": "Free trial enables immediate toolkit development and API testing, but 30-day time limit means production use requires paid subscription.",
+  "composio_existing_toolkit": "no",
+  "composio_slug": null
+ },
+ "overview_evidence": [
+  {
+   "url": "https://liveagent.com",
+   "snippet": "LiveAgent is cloud help desk software for small and growing support teams email live chat phone and social media"
+  }
+ ],
+ "confidence": 0.9,
+ "unknown_reasons": {
+  "auth": "",
+  "access": "",
+  "api_surface": "OpenAPI spec URL not documented; webhooks not mentioned; rate limits not stated in provided pages",
+  "mcp": ""
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 9,
+  "error": null,
+  "cost_usd": 0.089997,
+  "seconds": 109.9
+ }
+}

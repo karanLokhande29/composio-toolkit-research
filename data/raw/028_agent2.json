@@ -1,0 +1,103 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.10528699999999999,
+  "seconds": 155.5,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://developers.facebook.com/docs/whatsapp/pricing",
+  "https://developers.facebook.com/docs/whatsapp/overview",
+  "https://developers.facebook.com/docs/whatsapp/cloud-api/guides/set-up-webhooks",
+  "https://docs.composio.dev/toolkits/whatsapp.md",
+  "https://developers.facebook.com/docs/whatsapp",
+  "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
+  "https://developers.facebook.com/docs/graph-api/overview/rate-limiting"
+ ],
+ "output": {
+  "one_liner": "Meta's cloud API platform enabling businesses to send and receive messages with customers at scale via WhatsApp.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2"
+   ],
+   "oauth_grant_types": [],
+   "notes": "Official docs state 'OAuth (not 2.0)' but Bearer token transmission and Composio catalog indicate OAuth 2.0 implementation; API key support listed in Composio catalog but not documented in official Meta pages.",
+   "evidence": [
+    {
+     "url": "https://developers.facebook.com/docs/whatsapp/overview",
+     "snippet": "Authentication uses OAuth (not 2.0) access tokens, while permissions restrict access to specific resources."
+    },
+    {
+     "url": "https://developers.facebook.com/docs/whatsapp/overview",
+     "snippet": "\"Authorization\": \"Bearer <ACCESS_TOKEN>\", \"Content-Type\": \"application/json\","
+    }
+   ]
+  },
+  "access": {
+   "status": "app_review",
+   "dev_sandbox": true,
+   "notes": "Free temporary test tokens generated via dashboard; production use requires custom webhook endpoint and business verification.",
+   "evidence": [
+    {
+     "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
+     "snippet": "Click **Generate access token** to generate a temporary access token to send a test message."
+    },
+    {
+     "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/guides/set-up-webhooks",
+     "snippet": "before you can use your app in a production capacity, you must create your own endpoint."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Graph API rate limit: 200 calls per user per rolling hour, proportional to number of active users.",
+   "evidence": [
+    {
+     "url": "https://developers.facebook.com/docs/whatsapp/overview",
+     "snippet": "Webhooks deliver JSON payloads to your server for message status updates, incoming messages, asynchronous error handling."
+    },
+    {
+     "url": "https://developers.facebook.com/docs/whatsapp/overview",
+     "snippet": "**WhatsApp account management:** Create accounts, add and remove phone numbers, link accounts together, and assign partner access."
+    },
+    {
+     "url": "https://developers.facebook.com/docs/graph-api/overview/rate-limiting",
+     "snippet": "Calls within one hour = 200 * Number of Users"
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": []
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "app_review",
+   "rationale": "Composio already built 127-tool WhatsApp toolkit with OAuth support; free sandbox credentials available, but production requires business verification and app review per official guidelines.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "WHATSAPP"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://developers.facebook.com/docs/whatsapp/overview",
+    "snippet": "The WhatsApp Business Platform enables businesses to communicate with customers at scale."
+   }
+  ],
+  "confidence": 0.87,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "No OpenAPI specification mentioned in provided pages.",
+   "mcp": "No official or community MCP server mentioned in provided pages; Composio provides toolkit integration but not MCP protocol implementation."
+  }
+ }
+}

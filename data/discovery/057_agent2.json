@@ -1,0 +1,337 @@
+{
+ "id": 57,
+ "app": "Bright Data",
+ "tag": "agent2",
+ "urls": [
+  {
+   "url": "https://brightdata.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.brightdata.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.brightdata.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.brightdata.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://brightdata.com/pricing",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.brightdata.com/introduction",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.brightdata.com/general/account/quick-start",
+   "purpose": "auth",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.brightdata.com/general/account/api-token",
+   "purpose": "auth",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.brightdata.com/api-reference/introduction",
+   "purpose": "API reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.brightdata.com/scraping-automation/web-scraper-api/introduction",
+   "purpose": "API reference",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://docs.brightdata.com/general/pricing/overview",
+   "purpose": "pricing",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://brightdata.com/partners",
+   "purpose": "partner programme",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.brightdata.com/general/account/rate-limits",
+   "purpose": "rate limits",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.brightdata.com/general/webhooks",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.brightdata.com/mcp-server/overview",
+   "purpose": "MCP server",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/brightdata/real-estate-ai-agent",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/liangdabiao/Bright-Data-MCP-Claude-Skill-deep-research",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/MeirKaD/MCP_ADK",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/brightdata.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://brightdata.com/ai/web-access",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://brightdata.com/ai/mcp-server",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://brightdata.com/pricing/web-unlocker",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://brightdata.com/pricing/serp",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://brightdata.com/pricing/scraping-browser",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://brightdata.com/pricing/web-scraper",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://brightdata.com/pricing/web-scraper/studio",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://brightdata.com/pricing/datasets",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://brightdata.com/pricing/archive-api",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://brightdata.com/pricing/insights",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://brightdata.com/pricing/managed-services",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://brightdata.com/pricing/proxy-network/residential-proxies",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://brightdata.com/pricing/proxy-network/datacenter-proxies",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://brightdata.com/pricing/proxy-network/isp-proxies",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "brightdata/real-estate-ai-agent",
+   "url": "https://github.com/brightdata/real-estate-ai-agent",
+   "stars": 161,
+   "description": "Intelligent Python system that extracts real estate property data as structured JSON using AI agents, Nebius Qwen LLM, and Bright Data MCP."
+  },
+  {
+   "repo": "liangdabiao/Bright-Data-MCP-Claude-Skill-deep-research",
+   "url": "https://github.com/liangdabiao/Bright-Data-MCP-Claude-Skill-deep-research",
+   "stars": 53,
+   "description": "针对 电商渠道或者更多平台 进行 深度调研： 这次利用了claude code , mcp, skill，bright data 等技术。 我现在把这2个热门技术结合起来，打造一个： 【开源】利用Bright Data’s MCP 的 Claude Code Skill 实现 深度电商平台调研 deep researc"
+  },
+  {
+   "repo": "MeirKaD/MCP_ADK",
+   "url": "https://github.com/MeirKaD/MCP_ADK",
+   "stars": 45,
+   "description": "A simple integration of Bright Data MCP with new Agent framework by google"
+  },
+  {
+   "repo": "Wewoc/Garmin_Local_Archive",
+   "url": "https://github.com/Wewoc/Garmin_Local_Archive",
+   "stars": 27,
+   "description": "Local database for offline analysis of Garmin health data. Combines Garmin Connect API and GDPR export data with weather, pollen and air quality context from Op"
+  },
+  {
+   "repo": "ToolMonsters/hand-raisers",
+   "url": "https://github.com/ToolMonsters/hand-raisers",
+   "stars": 24,
+   "description": "Claude Skill: find the people who publicly asked for what you sell this week, qualify each ask, check the competition, and draft the reply. Runs on Bright Data "
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Bright Data",
+    "slug": "BRIGHTDATA",
+    "tools": 167,
+    "auth": [
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/brightdata.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Bright Data",
+    "slug": "BRIGHTDATA",
+    "tools": 167,
+    "auth": [
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/brightdata.md"
+   },
+   {
+    "name": "D2L Brightspace",
+    "slug": "D2LBRIGHTSPACE",
+    "tools": 45,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/d2lbrightspace.md"
+   }
+  ]
+ },
+ "search_meta": {}
+}

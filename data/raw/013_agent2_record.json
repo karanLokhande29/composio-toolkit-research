@@ -1,0 +1,118 @@
+{
+ "id": 13,
+ "app": "Freshdesk",
+ "category": "Support and Helpdesk",
+ "hint": "freshdesk.com",
+ "one_liner": "Freshdesk is a cloud-based customer service helpdesk software for managing support tickets and customer interactions.",
+ "app_type": "saas",
+ "auth": {
+  "methods": [
+   "api_key"
+  ],
+  "oauth_grant_types": [],
+  "notes": "API authentication uses static API keys managed through dedicated endpoints.",
+  "evidence": [
+   {
+    "url": "https://developers.freshdesk.com/api/#authentication",
+    "snippet": "List API Keys /api/v2/agents/[id]/api_keys Create an API Key /api/v2/agents/[id]/api_keys View an API Key /api/v2/agents/[id]/api_keys/[api_key_id] Enable or Disable an API Key /api/v2/agents/[id]/api_keys/[api_key_id] Delete an API Key",
+    "check": "repaired"
+   }
+  ]
+ },
+ "access": {
+  "status": "self_serve_trial",
+  "dev_sandbox": true,
+  "notes": "Any developer can sign up free and immediately receive 14-day Enterprise plan access. API credentials available during trial period. Continued access requires paid subscription.",
+  "evidence": [
+   {
+    "url": "https://developers.freshdesk.com",
+    "snippet": "Don't have a Freshdesk account? Signup for free",
+    "check": "exact"
+   },
+   {
+    "url": "https://freshdesk.com/pricing",
+    "snippet": "When you sign up, you instantly get access to our Enterprise plan for 14 days.",
+    "check": "exact"
+   },
+   {
+    "url": "https://developers.freshdesk.com/api/#authentication",
+    "snippet": "For all trial users, there is a default API limit of 50 calls/minute.",
+    "check": "exact"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "rest"
+  ],
+  "breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": null,
+  "rate_limit_note": "Rate limits vary by plan: 50 calls/minute for trial users; 700 calls/minute for Enterprise. Per-endpoint rate limits also apply.",
+  "evidence": [
+   {
+    "url": "https://developers.freshdesk.com/api/#authentication",
+    "snippet": "Freshdesk's APIs belong to the Representational State Transfer (REST) category.",
+    "check": "exact"
+   },
+   {
+    "url": "https://developers.freshdesk.com/api/#authentication",
+    "snippet": "Rate Limit The number of API calls per minute is based on your plan.",
+    "check": "exact"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/freshdesk.md",
+    "snippet": "Tool to add the authenticated user as a watcher to a Freshdesk ticket.",
+    "check": "exact"
+   }
+  ]
+ },
+ "mcp": {
+  "official": "https://www.freshworks.com/freshdesk/omni/mcp/",
+  "community": [],
+  "evidence": [
+   {
+    "url": "https://www.freshworks.com/freshdesk/omni/mcp/",
+    "snippet": "Freshdesk MCP lets teams work with Freshdesk from the AI tools they already use",
+    "check": "exact"
+   },
+   {
+    "url": "https://freshdesk.com",
+    "snippet": "Through MCP, bring customer data into everyday workflows and automate support at scale.",
+    "check": "exact"
+   }
+  ]
+ },
+ "buildability": {
+  "verdict": "ready",
+  "main_blocker": "none",
+  "rationale": "Composio already has complete 184-tool Freshdesk toolkit built with API key authentication and self-serve trial access.",
+  "composio_existing_toolkit": "yes",
+  "composio_slug": "FRESHDESK"
+ },
+ "overview_evidence": [
+  {
+   "url": "https://developers.freshdesk.com/api/#authentication",
+   "snippet": "They allow you to perform RESTful operations such as reading modifying adding or deleting data from your helpdesk."
+  },
+  {
+   "url": "https://developers.freshdesk.com/api/#authentication",
+   "snippet": "Freshdesk's APIs belong to the Representational State Transfer (REST) category."
+  }
+ ],
+ "confidence": 0.95,
+ "unknown_reasons": {
+  "auth": "",
+  "access": "",
+  "api_surface": "OpenAPI specification URL and webhook support not documented in provided pages.",
+  "mcp": ""
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 11,
+  "error": null,
+  "cost_usd": 0.10572799999999999,
+  "seconds": 131.4
+ }
+}

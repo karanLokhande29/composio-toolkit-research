@@ -1,0 +1,292 @@
+{
+ "id": 62,
+ "app": "Vercel",
+ "tag": "agent2",
+ "urls": [
+  {
+   "url": "https://vercel.com/docs/rest-api",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://vercel.com/docs/rest-api/authentication",
+   "purpose": "authentication",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://vercel.com/docs/rest-api/reference",
+   "purpose": "api reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://vercel.com/docs/rest-api/rate-limits",
+   "purpose": "rate limits",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://vercel.com/docs/webhooks",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://vercel.com/docs/vercel-sandbox",
+   "purpose": "sandbox access",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://vercel.com/partners",
+   "purpose": "partner programme",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://vercel.com/pricing",
+   "purpose": "pricing",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://vercel.com/docs/mcp/vercel-mcp",
+   "purpose": "mcp server",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://vercel.com/docs/rest-api/sdk",
+   "purpose": "credentials/sdk",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/vercel/next-devtools-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/vercel-labs/mcp-handler",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/vercel-labs/mcp-for-next.js",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/vercel.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://vercel.com/partners/solution-partners",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://vercel.com/partners/aws",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://vercel.com/docs/pricing/taxes",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://vercel.com/docs/pricing/spend-management",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://vercel.com/docs/pricing/networking",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://vercel.com/docs/pricing/regional-pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://vercel.com/blog/introducing-active-cpu-pricing-for-fluid-compute",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://vercel.com/docs/speed-insights/limits-and-pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://vercel.com/docs/pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://vercel.com/docs/pricing/manage-and-optimize-usage",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://vercel.com/docs/pricing/flat-rate-cdn",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://vercel.com/sandbox",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "vercel/next-devtools-mcp",
+   "url": "https://github.com/vercel/next-devtools-mcp",
+   "stars": 837,
+   "description": "Next.js Development for Coding Agent"
+  },
+  {
+   "repo": "vercel-labs/mcp-handler",
+   "url": "https://github.com/vercel-labs/mcp-handler",
+   "stars": 708,
+   "description": "Easily spin up an MCP Server on Next.js, Nuxt, Svelte, and more"
+  },
+  {
+   "repo": "vercel-labs/mcp-for-next.js",
+   "url": "https://github.com/vercel-labs/mcp-for-next.js",
+   "stars": 375,
+   "description": ""
+  },
+  {
+   "repo": "vercel-labs/mcp-on-vercel",
+   "url": "https://github.com/vercel-labs/mcp-on-vercel",
+   "stars": 250,
+   "description": ""
+  },
+  {
+   "repo": "zendev-sh/goai",
+   "url": "https://github.com/zendev-sh/goai",
+   "stars": 241,
+   "description": "Go AI SDK, the Go way.  One unified API across 21+ providers. Streaming, structured output, MCP support, stdlib only. Go AI SDK for AI applications inspired by "
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Vercel",
+    "slug": "VERCEL",
+    "tools": 414,
+    "auth": [
+     "OAUTH2",
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/vercel.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Vercel",
+    "slug": "VERCEL",
+    "tools": 414,
+    "auth": [
+     "OAUTH2",
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/vercel.md"
+   },
+   {
+    "name": "Vercel AI Gateway",
+    "slug": "VERCEL_AI_GATEWAY",
+    "tools": 22,
+    "auth": [
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/vercel_ai_gateway.md"
+   },
+   {
+    "name": "Vercel MCP",
+    "slug": "VERCEL_MCP",
+    "tools": 37,
+    "auth": [
+     "DCR_OAUTH"
+    ],
+    "url": "https://docs.composio.dev/toolkits/vercel_mcp.md"
+   }
+  ]
+ },
+ "search_meta": {}
+}

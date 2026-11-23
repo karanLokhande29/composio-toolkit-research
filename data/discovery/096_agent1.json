@@ -1,0 +1,165 @@
+{
+ "id": 96,
+ "app": "Devin",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://docs.devin.ai",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/TabularisDB/tabularis",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/jhacksman/OpenSCAD-MCP-Server",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/midasmatterhorn/artcraft-skills",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/devin_mcp.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.devin.ai/enterprise/getting-started/get-started",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.devin.ai/work-with-devin/browser-auth",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.devin.ai/work-with-devin/mcp",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.devin.ai/work-with-devin/deepwiki-mcp",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.devin.ai/work-with-devin/devin-mcp",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.devin.ai/product-guides/plugin-mcp-setups",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.devin.ai/api-reference/overview",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.devin.ai/product-guides/oidc",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "TabularisDB/tabularis",
+   "url": "https://github.com/TabularisDB/tabularis",
+   "stars": 5526,
+   "description": "Open-source desktop SQL workspace with 3 built-in database drivers and 29 shipped driver plugins, including SQL Server, DuckDB, ClickHouse and Redis. Built-in M"
+  },
+  {
+   "repo": "jhacksman/OpenSCAD-MCP-Server",
+   "url": "https://github.com/jhacksman/OpenSCAD-MCP-Server",
+   "stars": 217,
+   "description": "Devin's attempt at creating an OpenSCAD MCP Server that takes a user prompt and generates a preview image and 3d file."
+  },
+  {
+   "repo": "midasmatterhorn/artcraft-skills",
+   "url": "https://github.com/midasmatterhorn/artcraft-skills",
+   "stars": 101,
+   "description": "Agent skills (SKILL.md) for the ArtCraft Rust creative suite — evidence-verified, MCP/CLI surfaces — for Claude Code, Codex, OpenCode, Devin, CommandCode, ZCode"
+  },
+  {
+   "repo": "vibheksoni/session-export",
+   "url": "https://github.com/vibheksoni/session-export",
+   "stars": 24,
+   "description": "Convert AI coding CLI sessions between Codex, Claude Code, Pi, OpenCode, Devin, and Factory. SDK, CLI, MCP chat recall, and trace export for fine-tuning."
+  },
+  {
+   "repo": "dazhi666666/agent-router",
+   "url": "https://github.com/dazhi666666/agent-router",
+   "stars": 21,
+   "description": "本地多 Agent 协作调度器：主代理常驻主线程（Claude Code/ZCode/Devin/Codex/OpenCode/Antigravity 可指定），共享任务板 MCP、事件驱动非阻塞派发、自动收割合并"
+  }
+ ],
+ "composio": {
+  "exact": [],
+  "candidates": [
+   {
+    "name": "Devin MCP",
+    "slug": "DEVIN_MCP",
+    "tools": 23,
+    "auth": [
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/devin_mcp.md"
+   }
+  ]
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.0083,
+  "seconds": 18.1,
+  "turns": 1,
+  "mode": "knowledge+crawl"
+ }
+}

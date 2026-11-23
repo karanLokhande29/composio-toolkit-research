@@ -1,0 +1,102 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.07238399999999999,
+  "seconds": 93.0,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://docs.ramp.com/guides/authentication",
+  "https://docs.composio.dev/toolkits/ramp.md",
+  "https://github.com/highflame-ai/ramparts",
+  "https://github.com/ramp-public/ramp_mcp",
+  "https://github.com/KevinRabun/FedRAMP20xMCP"
+ ],
+ "output": {
+  "one_liner": "Ramp is a corporate financial management platform providing expense management, bill payment, card controls, and accounting integration with admin-level financial oversight.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2"
+   ],
+   "oauth_grant_types": [
+    "authorization_code",
+    "client_credentials",
+    "refresh_token"
+   ],
+   "notes": "Custom OAuth app registration required in Ramp; no Composio-managed OAuth available. Requires organization Owner or Admin access to register OAuth apps.",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/ramp.md",
+     "snippet": "Ramp has no Composio-managed app, so you register your own OAuth app in Ramp and use its credentials in the auth config."
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/ramp.md",
+     "snippet": "Under **Grant types**, turn on **Authorization code**, **Client credentials**, and **Refresh token**."
+    }
+   ]
+  },
+  "access": {
+   "status": "admin_approval",
+   "dev_sandbox": true,
+   "notes": "Organization owner/admin must grant Developer page access to register OAuth apps; demo environment available at demo.ramp.com.",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/ramp.md",
+     "snippet": "You need **Owner** or **Admin** access in Ramp to see the **Developer** page."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": null,
+   "rate_limit_note": "",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/ramp.md",
+     "snippet": "read and write scopes across accounting, bills, cards, departments, limits, locations, memos, purchase orders, receipts, spend programs, users, and vendors"
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://github.com/ramp-public/ramp_mcp",
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://github.com/ramp-public/ramp_mcp",
+     "snippet": "A Model Context Protocol server for retrieving and analyzing data or running tasks for Ramp"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "admin_scope",
+   "rationale": "API is well-documented with OAuth2 support and 186 tools already successfully built, but organization admin approval required for OAuth app registration.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "ramp"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://docs.composio.dev/toolkits/ramp.md",
+    "snippet": "Ramp has no Composio-managed app, so you register your own OAuth app in Ramp and use its credentials in the auth config."
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/ramp.md",
+    "snippet": "read and write scopes across accounting, bills, cards, departments, limits, locations, memos, purchase orders, receipts, spend programs, users, and vendors"
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "OpenAPI spec URL and webhook support not documented in provided pages; REST inferred from OAuth2 standard and typical fintech API patterns.",
+   "mcp": ""
+  }
+ }
+}

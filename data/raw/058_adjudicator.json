@@ -1,0 +1,46 @@
+{
+ "fields": [
+  "api_surface.breadth",
+  "auth.methods"
+ ],
+ "pages": [
+  "https://github.com/sherlock-project/sherlock",
+  "https://github.com/Burnsedia/sherlock-mcp",
+  "https://github.com/sherlock-project/sherlock/wiki"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.035634,
+  "seconds": 8.8,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "api_surface.breadth",
+    "value": "unknown",
+    "evidence": [
+     {
+      "url": "https://github.com/sherlock-project/sherlock",
+      "snippet": "Hunt down social media accounts by username across social networks"
+     }
+    ],
+    "reason": "Sherlock is a CLI tool with no documented public API endpoints, so breadth of an API surface cannot be determined; the MCP wrapper's platform count describes sites it scrapes, not API endpoints."
+   },
+   {
+    "field": "auth.methods",
+    "value": [
+     "unknown"
+    ],
+    "evidence": [
+     {
+      "url": "https://github.com/sherlock-project/sherlock/wiki",
+      "snippet": "Sherlock is a tool that scans social networks (and other sites) for the existence of a specified username."
+     }
+    ],
+    "reason": "No authentication method is documented anywhere in the pages; Sherlock is a CLI tool with no API/auth layer described."
+   }
+  ]
+ }
+}

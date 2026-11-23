@@ -1,0 +1,297 @@
+{
+ "id": 70,
+ "app": "Sentry",
+ "tag": "agent2",
+ "urls": [
+  {
+   "url": "https://docs.sentry.io/api",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.sentry.io/api/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.sentry.io/api/auth/",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.sentry.io/product/integrations/integration-platform/public-integration/",
+   "purpose": "credentials",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.sentry.io/api/permissions/",
+   "purpose": "credentials",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.sentry.io/pricing/",
+   "purpose": "pricing",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.sentry.io/api/ratelimits/",
+   "purpose": "rate_limits",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.sentry.io/product/integrations/integration-platform/webhooks/",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.sentry.io/organization/integrations/integration-platform/webhooks/",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.sentry.io/api/events/",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.sentry.io/api/projects/",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.sentry.io/api/organizations/",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.sentry.io/product/sentry-mcp/",
+   "purpose": "mcp_server",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/buggregator/server",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/TheHoltz/errex",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/theRubberDuckiee/mcp-server-configs",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/sentry.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.sentry.io/api/guides/create-auth-token/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.sentry.io/account/auth-tokens/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.sentry.io/organization/getting-started/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.sentry.io/organization/authentication/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.sentry.io/pricing/quotas/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://sentry.io/pricing/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.sentry.io/pricing/quotas/manage-cron-monitors/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "http://sentry.io/pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.sentry.io/api/organizations/create-an-org-auth-token/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.sentry.io/api/organizations/list-an-organizations-org-auth-tokens/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.sentry.io/api/organizations/revoke-an-org-auth-token/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "buggregator/server",
+   "url": "https://github.com/buggregator/server",
+   "stars": 1083,
+   "description": "One local debugging server, one binary: catches errors, dumps, emails, logs, profiles and HTTP from your app in development. Speaks Sentry, Ray, VarDumper, Mono"
+  },
+  {
+   "repo": "TheHoltz/errex",
+   "url": "https://github.com/TheHoltz/errex",
+   "stars": 32,
+   "description": "Lightweight, self-hosted Sentry alternative. Rust + SQLite, ~10 MB RAM. Sentry-SDK compatible ingest, fast SvelteKit dashboard, MCP-ready for AI agents."
+  },
+  {
+   "repo": "theRubberDuckiee/mcp-server-configs",
+   "url": "https://github.com/theRubberDuckiee/mcp-server-configs",
+   "stars": 24,
+   "description": "MCP (Model Context Protocol) server configurations for popular services like GitHub, Figma, Puppeteer, Sentry, and Context7"
+  },
+  {
+   "repo": "MCP-100/mcp-sentry",
+   "url": "https://github.com/MCP-100/mcp-sentry",
+   "stars": 23,
+   "description": "A Model Context Protocol server for retrieving and analyzing issues from Sentry.io"
+  },
+  {
+   "repo": "daltoniam/switchboard",
+   "url": "https://github.com/daltoniam/switchboard",
+   "stars": 22,
+   "description": "One MCP server to rule them all. Aggregates GitHub, Datadog, Linear, Sentry, Slack, and Metabase behind a single search/execute interface."
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Sentry",
+    "slug": "SENTRY",
+    "tools": 212,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/sentry.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Sentry",
+    "slug": "SENTRY",
+    "tools": 212,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/sentry.md"
+   },
+   {
+    "name": "Sentry MCP",
+    "slug": "SENTRY_MCP",
+    "tools": 9,
+    "auth": [
+     "DCR_OAUTH"
+    ],
+    "url": "https://docs.composio.dev/toolkits/sentry_mcp.md"
+   }
+  ]
+ },
+ "search_meta": {}
+}

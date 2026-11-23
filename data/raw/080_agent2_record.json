@@ -1,0 +1,105 @@
+{
+ "id": 80,
+ "app": "Harvest",
+ "category": "Productivity and Project Management",
+ "hint": "harvestapp.com (help.getharvest.com/api-v2)",
+ "one_liner": "Time tracking and invoicing platform that helps teams log billable hours, manage projects, and bill clients.",
+ "app_type": "saas",
+ "auth": {
+  "methods": [
+   "bearer_token",
+   "oauth2"
+  ],
+  "oauth_grant_types": [
+   "authorization_code",
+   "implicit"
+  ],
+  "notes": "Personal Access Token (bearer_token) or OAuth2. Personal tokens are static tokens sent as Bearer in Authorization header. OAuth2 supports server-side (Authorization Code) and client-side (Implicit Grant) flows.",
+  "evidence": [
+   {
+    "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+    "snippet": "The V2 API requires an access token to authenticate requests. There are two options available to you: A Personal Access Token which is tied directly to you and is the quickest way to start playing around with the API. Implementing a full OAuth2 Authentication flow which allows other people to use your Harvest integrations.",
+    "check": "exact"
+   },
+   {
+    "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+    "snippet": "Once generated, a Personal Access Token can be used to access the API by either providing the token in the Authorization header or including it in the query string.",
+    "check": "exact"
+   },
+   {
+    "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+    "snippet": "We use the Authorization Code flow for server-side authorization. To start the authorization flow, you need to redirect the user to the following URL",
+    "check": "exact"
+   }
+  ]
+ },
+ "access": {
+  "status": "self_serve_trial",
+  "dev_sandbox": null,
+  "notes": "Developers can sign up for a 30-day free trial without credit card and create a Personal Access Token immediately. After 30 days, trial account is deactivated. A Free plan tier exists but whether API access is available post-trial on free plan is not documented in provided pages.",
+  "evidence": [
+   {
+    "url": "https://www.getharvest.com/pricing",
+    "snippet": "Get started on any plan with a free trial. No credit card required.",
+    "check": "exact"
+   },
+   {
+    "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+    "snippet": "The API can be accessed by creating a Personal Access Token from the Developers section of Harvest ID.",
+    "check": "exact"
+   },
+   {
+    "url": "https://www.getharvest.com/pricing",
+    "snippet": "If you haven't upgraded at the end of 30 days, your trial account will be automatically deactivated.",
+    "check": "exact"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "rest"
+  ],
+  "breadth": "unknown",
+  "openapi_spec_url": null,
+  "webhooks": null,
+  "rate_limit_note": "",
+  "evidence": []
+ },
+ "mcp": {
+  "official": null,
+  "community": [],
+  "evidence": []
+ },
+ "buildability": {
+  "verdict": "ready",
+  "main_blocker": "none",
+  "rationale": "Composio toolkit already built with 57 tools and Composio-managed OAuth available today.",
+  "composio_existing_toolkit": "yes",
+  "composio_slug": "HARVEST"
+ },
+ "overview_evidence": [
+  {
+   "url": "https://harvestapp.com",
+   "snippet": "Harvest helps professional teams track time, bill clients, optimize team time, and measure performance with confidence."
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/harvest.md",
+   "snippet": "Harvest is a time-tracking and invoicing tool designed for teams and freelancers, helping them log billable hours, manage projects, and streamline payments"
+  }
+ ],
+ "confidence": 0.85,
+ "unknown_reasons": {
+  "auth": "",
+  "access": "Pages do not explicitly document whether API access is included on free plan tier after 30-day trial period ends.",
+  "api_surface": "agent2: evidence did not verify",
+  "mcp": "No vendor-published MCP server identified in provided pages; no community MCP server repositories documented in provided pages."
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 11,
+  "error": null,
+  "cost_usd": 0.086322,
+  "seconds": 101.0
+ }
+}

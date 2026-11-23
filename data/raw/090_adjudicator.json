@@ -1,0 +1,51 @@
+{
+ "fields": [
+  "access.status",
+  "auth.methods"
+ ],
+ "pages": [
+  "https://docs.composio.dev/toolkits/pitchbook.md",
+  "https://pitchbook.com",
+  "https://pitchbook.com/pricing",
+  "https://pitchbook.com/data"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.054599999999999996,
+  "seconds": 8.0,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "access.status",
+    "value": "contact_sales",
+    "evidence": [
+     {
+      "url": "https://docs.composio.dev/toolkits/pitchbook.md",
+      "snippet": "PitchBook provides private-market data on companies, deals, funds, investors, people, and service providers through its contracted REST API."
+     },
+     {
+      "url": "https://pitchbook.com/pricing",
+      "snippet": "Get in touch with a representative today to see how PitchBook can help you."
+     }
+    ],
+    "reason": "The API is described as 'contracted' and pricing/access requires requesting a quote or trial via sales contact, with no self-serve signup found on the pages."
+   },
+   {
+    "field": "auth.methods",
+    "value": [
+     "api_key"
+    ],
+    "evidence": [
+     {
+      "url": "https://docs.composio.dev/toolkits/pitchbook.md",
+      "snippet": "- **Auth:** API_KEY"
+     }
+    ],
+    "reason": "Both agents agree and the documentation explicitly states API_KEY as the auth method."
+   }
+  ]
+ }
+}

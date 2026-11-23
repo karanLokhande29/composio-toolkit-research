@@ -1,0 +1,128 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.08269099999999999,
+  "seconds": 105.9,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://aircall.io/pricing/",
+  "https://developer.aircall.io/",
+  "https://developer.aircall.io/api-references/#webhooks",
+  "https://docs.composio.dev/toolkits/aircall.md",
+  "https://aircall.io",
+  "https://developers.aircall.io",
+  "https://developer.aircall.io/tutorials/",
+  "https://developer.aircall.io/docs/oauth",
+  "https://aircall.io/partners/"
+ ],
+ "output": {
+  "one_liner": "A cloud-based customer communications platform enabling businesses and AI agents to handle inbound and outbound calls, messages, and conversations at scale.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "basic"
+   ],
+   "oauth_grant_types": [],
+   "notes": "OAuth2 is for technology partners building marketplace apps and requires Tech Partner program approval. Basic Auth uses credentials from an Aircall account accessible via free trial.",
+   "evidence": [
+    {
+     "url": "https://developer.aircall.io/api-references/#webhooks",
+     "snippet": "With Aircall Public API, Authentication can be done through OAuth or Basic Auth."
+    },
+    {
+     "url": "https://developer.aircall.io/api-references/#webhooks",
+     "snippet": "Aircall implemented the OAuth 2.0 authentication protocol so you can easily build an app on top of Aircall"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_trial",
+   "dev_sandbox": null,
+   "notes": "A developer can obtain Basic Auth credentials via free trial account signup without approval or sales contact. OAuth requires application to and approval from the Tech Partner program.",
+   "evidence": [
+    {
+     "url": "https://aircall.io/pricing/",
+     "snippet": "Aircall offers free access to test the platform before committing."
+    },
+    {
+     "url": "https://aircall.io/pricing/",
+     "snippet": "New accounts receive 100 AI Voice Agents minutes at sign-ups in addition to the 50 free minutes all customers get every month."
+    },
+    {
+     "url": "https://developer.aircall.io/docs/oauth",
+     "snippet": "OAuth credentials — If you haven't received them yet, apply to the Tech Partner program."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest",
+    "webhooks"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Rate limiting is enforced but specific limits not documented in provided pages.",
+   "evidence": [
+    {
+     "url": "https://developer.aircall.io/api-references/#webhooks",
+     "snippet": "Aircall Public API is a classic REST API offering fast, reliable and secure access to account information."
+    },
+    {
+     "url": "https://developer.aircall.io/api-references/#webhooks",
+     "snippet": "We are also supporting Webhooks."
+    },
+    {
+     "url": "https://developer.aircall.io/tutorials/",
+     "snippet": "Manage calls, messages, AI agents, users, numbers, and more — fully documented with detailed schemas"
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://developer.aircall.io/",
+     "snippet": "Connect your tools and data to Aircall's AI Virtual Agents through MCP."
+    },
+    {
+     "url": "https://developer.aircall.io/tutorials/",
+     "snippet": "Build MCP-compliant integrations for Aircall's AI Virtual Agent. 🚧 Coming soon."
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Composio has already published a complete toolkit with 48 tools; developers can obtain working credentials immediately via free trial without approval.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "AIRCALL"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://aircall.io",
+    "snippet": "Aircall is the customer communications platform where both AI and your team handle every conversation."
+   },
+   {
+    "url": "https://developer.aircall.io/",
+    "snippet": "Build the next generation of AI communication"
+   },
+   {
+    "url": "https://aircall.io/pricing/",
+    "snippet": "One platform for all your customer conversations"
+   }
+  ],
+  "confidence": 0.92,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "OpenAPI specification URL not referenced in provided pages; specific rate limit numbers not documented in provided pages.",
+   "mcp": "Pages indicate MCP integration capability but do not explicitly state whether Aircall publishes its own official MCP server or document any community MCP servers."
+  }
+ }
+}

@@ -1,0 +1,117 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.066443,
+  "seconds": 85.5,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://help.otter.ai/hc/en-us",
+  "https://docs.composio.dev/toolkits/otter_ai_mcp.md",
+  "https://docs.composio.dev/toolkits/sslmate_cert_spotter_api.md",
+  "https://help.otter.ai/hc/en-us/categories/360002285334-Getting-started",
+  "https://github.com/DarrenZal/otter-mcp",
+  "https://github.com/StanAngeloff/otter-mcp",
+  "https://github.com/bcharleson/otter-cli"
+ ],
+ "output": {
+  "one_liner": "Otter.ai is a SaaS platform for recording, transcribing, and searching meetings across Zoom, Teams, Google Meet, Webex, and other sources with AI-powered analysis.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "bearer_token"
+   ],
+   "oauth_grant_types": [],
+   "notes": "Public API uses OAuth2 (DCR_OAUTH). Enterprise API access uses bearer tokens. Community implementations also support email/password with TOTP 2FA.",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/otter_ai_mcp.md",
+     "snippet": "Auth: DCR_OAUTH"
+    },
+    {
+     "url": "https://github.com/bcharleson/otter-cli",
+     "snippet": "Generate your access token in Otter.ai: Enterprise Settings → API → Generate Token"
+    }
+   ]
+  },
+  "access": {
+   "status": "paid_plan_required",
+   "dev_sandbox": false,
+   "notes": "Public API in beta, requires Enterprise plan. Free tier exists for core product but API access requires paid plan and sales contact.",
+   "evidence": [
+    {
+     "url": "https://github.com/bcharleson/otter-cli",
+     "snippet": "The Otter.ai public API is currently in beta and requires an Enterprise plan. Contact your Otter account manager for API access."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "narrow",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/otter_ai_mcp.md",
+     "snippet": "Otter.ai MCP lets agents retrieve the authenticated user's profile, search authorized meetings and conversations, and fetch complete transcripts"
+    },
+    {
+     "url": "https://github.com/bcharleson/otter-cli",
+     "snippet": "Set up webhook for transcript-ready events otter webhooks create --url https://your-app.com/webhooks/otter --events Conversation.processed"
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [
+    "https://github.com/DarrenZal/otter-mcp",
+    "https://github.com/StanAngeloff/otter-mcp",
+    "https://github.com/bcharleson/otter-cli"
+   ],
+   "evidence": [
+    {
+     "url": "https://github.com/DarrenZal/otter-mcp",
+     "snippet": "MCP server for Otter.ai transcript search and retrieval"
+    },
+    {
+     "url": "https://github.com/StanAngeloff/otter-mcp",
+     "snippet": "Unofficial Otter.ai MCP server — list conversations, search, and export transcripts"
+    },
+    {
+     "url": "https://github.com/bcharleson/otter-cli",
+     "snippet": "Agent-native CLI + MCP server for the Otter.ai API"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "paid_plan",
+   "rationale": "Composio already provides a working MCP toolkit with 3 tools, but the underlying Otter.ai public API requires an Enterprise plan and sales contact.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "OTTER_AI_MCP"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://docs.composio.dev/toolkits/otter_ai_mcp.md",
+    "snippet": "Otter.ai MCP lets agents retrieve the authenticated user's profile, search authorized meetings and conversations, and fetch complete transcripts for analysis and summarization."
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/otter_ai_mcp.md",
+    "snippet": "Tools: 3, Primary tool for finding meetings captured or imported into Otter from Zoom, Microsoft Teams, Google Meet, Webex"
+   }
+  ],
+  "confidence": 0.9,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": "Official Otter.ai MCP server URL not found in provided pages. Community implementations reference an official one, and hint suggests help.otter.ai, but specific URL and documentation not provided in crawled pages."
+  }
+ }
+}

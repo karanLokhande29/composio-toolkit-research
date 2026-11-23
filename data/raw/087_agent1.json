@@ -1,0 +1,133 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.060673000000000005,
+  "seconds": 73.9,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://developer.xero.com/",
+  "https://docs.composio.dev/toolkits/xero.md",
+  "https://developer.xero.com/faq/pricing-and-policy-updates",
+  "https://www.xero.com/signup/developers/",
+  "https://devblog.xero.com/xero-developer-growth-program-open-for-applications-apply-now-7c3dd8f39ea2",
+  "https://developer.xero.com/developer-events",
+  "https://developer.xero.com/xero-developer-platform-terms-conditions",
+  "https://github.com/XeroAPI/xero-mcp-server",
+  "https://github.com/XeroAPI/xero-agent-toolkit",
+  "https://github.com/john-zhang-dev/xero-mcp"
+ ],
+ "output": {
+  "one_liner": "Xero is a cloud-based accounting platform for small businesses providing APIs for managing invoices, contacts, payments, financial reports, and business transactions.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2"
+   ],
+   "oauth_grant_types": [],
+   "notes": "OAuth2 with custom connections requiring Client ID and Client Secret registered in Xero Developer Portal.",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/xero.md",
+     "snippet": "Auth: OAUTH2"
+    },
+    {
+     "url": "https://github.com/XeroAPI/xero-mcp-server",
+     "snippet": "Xero OAuth2 authentication with custom connections"
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/xero.md",
+     "snippet": "Sign in to the Xero Developer Portal, open your apps, and click New app."
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Free developer signup with demo company providing pre-loaded sample data for testing and development.",
+   "evidence": [
+    {
+     "url": "https://www.xero.com/signup/developers/",
+     "snippet": "No credit card required"
+    },
+    {
+     "url": "https://developer.xero.com/",
+     "snippet": "Sign up for a free account to build on the Xero platform."
+    },
+    {
+     "url": "https://github.com/XeroAPI/xero-mcp-server",
+     "snippet": "We recommend using a Demo Company to start with because it comes with pre-loaded sample data."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Production usage metered and billed on tiered model; free tier for development.",
+   "evidence": [
+    {
+     "url": "https://developer.xero.com/",
+     "snippet": "OAuth 2, API reference, Webhooks listed as platform tools"
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/xero.md",
+     "snippet": "Tools: 109"
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/xero.md",
+     "snippet": "accounting.invoices, accounting.contacts, accounting.payments, accounting.reports scopes"
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://github.com/XeroAPI/xero-mcp-server",
+   "community": [
+    "https://github.com/john-zhang-dev/xero-mcp"
+   ],
+   "evidence": [
+    {
+     "url": "https://github.com/XeroAPI/xero-mcp-server",
+     "snippet": "An MCP server that integrates with the MCP protocol."
+    },
+    {
+     "url": "https://developer.xero.com/",
+     "snippet": "RMCP Server, Agents Toolkit listed in AI toolkit resources"
+    },
+    {
+     "url": "https://github.com/john-zhang-dev/xero-mcp",
+     "snippet": "A Model Context Protocol server allows Clients to interact with Xero"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Composio toolkit already exists with 109 tools, self-serve free credentials available, documented REST API, and official MCP server published by Xero.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "XERO"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://docs.composio.dev/toolkits/xero.md",
+    "snippet": "Category: accounting, Auth: OAUTH2, Tools: 109"
+   },
+   {
+    "url": "https://developer.xero.com/",
+    "snippet": "Xero Developer Platform includes APIs, SDKs, documentation, and resources."
+   }
+  ],
+  "confidence": 0.94,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "OpenAPI spec URL not explicitly provided; API reference and documentation confirmed but specific spec URL unavailable.",
+   "mcp": ""
+  }
+ }
+}

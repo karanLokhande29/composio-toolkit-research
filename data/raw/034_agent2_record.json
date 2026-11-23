@@ -1,0 +1,142 @@
+{
+ "id": 34,
+ "app": "GoHighLevel",
+ "category": "Marketing, Ads, Email and Social",
+ "hint": "highlevel.stoplight.io",
+ "one_liner": "GoHighLevel is a cloud-based CRM and marketing automation platform providing API access to contact management, sales pipelines, and business workflows.",
+ "app_type": "saas",
+ "auth": {
+  "methods": [
+   "api_key",
+   "oauth2"
+  ],
+  "oauth_grant_types": [],
+  "notes": "Supports OAuth2 (via GHL Marketplace App with Client ID/Secret) and static API keys (Private Integrations API key). OAuth flow manages tokens automatically; API key approach requires manual setup from GoHighLevel account dashboard.",
+  "evidence": [
+   {
+    "url": "https://github.com/mastanley13/GoHighLevel-MCP",
+    "snippet": "This project requires a PRIVATE INTEGRATIONS API key, not a regular API key!",
+    "check": "exact"
+   },
+   {
+    "url": "https://github.com/basicmachines-co/open-ghl-mcp",
+    "snippet": "OAuth 2.0 Authentication : Full OAuth flow with automatic token management",
+    "check": "repaired"
+   },
+   {
+    "url": "https://github.com/BusyBee3333/Go-High-Level-MCP-2026-Complete",
+    "snippet": "A GoHighLevel private integration token or OAuth access token",
+    "check": "exact"
+   }
+  ]
+ },
+ "access": {
+  "status": "unknown",
+  "dev_sandbox": null,
+  "notes": "Pages show how to obtain API credentials from an existing GoHighLevel account (Private Integrations or OAuth), but do not explain whether initial account creation is free tier, trial, or paid-only.",
+  "evidence": [
+   {
+    "url": "https://github.com/mastanley13/GoHighLevel-MCP",
+    "snippet": "Login to your GoHighLevel account",
+    "check": "exact"
+   },
+   {
+    "url": "https://github.com/basicmachines-co/open-ghl-mcp",
+    "snippet": "A GoHighLevel Sub-Account Admin login on the sub-account you'll manage",
+    "check": "exact"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "rest"
+  ],
+  "breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": null,
+  "rate_limit_note": "Rate limits exist but specific thresholds not documented in provided pages.",
+  "evidence": [
+   {
+    "url": "https://github.com/BusyBee3333/Go-High-Level-MCP-2026-Complete",
+    "snippet": "100% of the locked current v3 endpoint surface covered",
+    "check": "exact"
+   },
+   {
+    "url": "https://github.com/mastanley13/GoHighLevel-MCP",
+    "snippet": "Provides access to ALL sub-account level GoHighLevel API endpoints via MCP",
+    "check": "exact"
+   },
+   {
+    "url": "https://github.com/mastanley13/GoHighLevel-MCP",
+    "snippet": "Rate Limiting : Monitor API usage to avoid hitting GoHighLevel rate limits",
+    "check": "repaired"
+   },
+   {
+    "url": "https://github.com/basicmachines-co/open-ghl-mcp",
+    "snippet": "This MCP server provides comprehensive access to GoHighLevel API v2",
+    "check": "exact"
+   }
+  ]
+ },
+ "mcp": {
+  "official": null,
+  "community": [
+   "https://github.com/mastanley13/GoHighLevel-MCP",
+   "https://github.com/BusyBee3333/Go-High-Level-MCP-2026-Complete",
+   "https://github.com/basicmachines-co/open-ghl-mcp"
+  ],
+  "evidence": [
+   {
+    "url": "https://github.com/mastanley13/GoHighLevel-MCP",
+    "snippet": "🚀 GoHighLevel MCP Server",
+    "check": "exact"
+   },
+   {
+    "url": "https://github.com/BusyBee3333/Go-High-Level-MCP-2026-Complete",
+    "snippet": "927 MCP tools across the full registry",
+    "check": "exact"
+   },
+   {
+    "url": "https://github.com/basicmachines-co/open-ghl-mcp",
+    "snippet": "An open source Model Context Protocol server for GoHighLevel API v2 with OAuth",
+    "check": "exact"
+   }
+  ]
+ },
+ "buildability": {
+  "verdict": "ready_with_caveats",
+  "main_blocker": "other",
+  "rationale": "API accessible and documented via three working community MCP servers (927+ tools, full v3 coverage); underlying GoHighLevel account access model (free vs paid) not documented in provided pages.",
+  "composio_existing_toolkit": "no",
+  "composio_slug": null
+ },
+ "overview_evidence": [
+  {
+   "url": "https://github.com/mastanley13/GoHighLevel-MCP",
+   "snippet": "Transform Claude Desktop into a complete GoHighLevel CRM powerhouse"
+  },
+  {
+   "url": "https://github.com/BusyBee3333/Go-High-Level-MCP-2026-Complete",
+   "snippet": "Talk to GoHighLevel. Get the work done."
+  },
+  {
+   "url": "https://github.com/basicmachines-co/open-ghl-mcp",
+   "snippet": "A Model Context Protocol server that provides seamless integration with the GoHighLevel API v2"
+  }
+ ],
+ "confidence": 0.6,
+ "unknown_reasons": {
+  "auth": "oauth_grant_types (authorization_code, etc.) not specified in pages",
+  "access": "Pages document credential retrieval from existing account; do not explain whether GoHighLevel account itself is free, freemium, trial-only, or requires purchase",
+  "api_surface": "OpenAPI spec referenced (highlevel.stoplight.io per hint) but URL not provided in pages; webhook support not explicitly confirmed; rate-limit values not stated",
+  "mcp": "All three are community-maintained repos; no official vendor-published MCP server identified in provided pages"
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 3,
+  "error": null,
+  "cost_usd": 0.057086000000000005,
+  "seconds": 80.5
+ }
+}

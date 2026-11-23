@@ -1,0 +1,122 @@
+{
+ "id": 42,
+ "app": "WooCommerce",
+ "category": "Ecommerce",
+ "hint": "woocommerce.com/document/woocommerce-rest-api",
+ "one_liner": "An open-source, self-hosted WordPress e-commerce platform providing REST API access for store management and integration with external systems.",
+ "app_type": "open_source_self_hostable",
+ "auth": {
+  "methods": [
+   "api_key"
+  ],
+  "oauth_grant_types": [],
+  "notes": "REST API keys (consumer_key and consumer_secret pair) generated through WooCommerce admin panel; pages mention two authentication methods but only REST API keys are clearly detailed.",
+  "evidence": [
+   {
+    "url": "https://woocommerce.com/document/woocommerce-rest-api/",
+    "snippet": "The WooCommerce REST API uses a key system to control access. Each set of keys is linked to a WordPress user on your site.",
+    "check": "exact"
+   },
+   {
+    "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/#authentication",
+    "snippet": "WooCommerce includes two ways to authenticate with the WP REST API. It is also possible to authenticate using any WP REST API authentication plugin or method.",
+    "check": "exact"
+   }
+  ]
+ },
+ "access": {
+  "status": "self_serve_free",
+  "dev_sandbox": true,
+  "notes": "WooCommerce is free, open-source software that can be self-hosted. API keys are generated through the WooCommerce admin panel without vendor approval.",
+  "evidence": [
+   {
+    "url": "https://woocommerce.com/pricing/",
+    "snippet": "WooCommerce is the free, Open Source ecommerce platform for WordPress.",
+    "check": "exact"
+   },
+   {
+    "url": "https://woocommerce.com/document/woocommerce-rest-api/",
+    "snippet": "To create or manage keys for a specific WordPress user: Go to WooCommerce > Settings > Advanced > REST API . Select Create an API key",
+    "check": "repaired"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "rest"
+  ],
+  "breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "rate_limit_note": "",
+  "evidence": [
+   {
+    "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/#authentication",
+    "snippet": "This allows WC data to be created, read, updated, and deleted using requests in JSON format and using WordPress REST API Authentication methods and standard HTTP verbs",
+    "check": "exact"
+   },
+   {
+    "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/#authentication",
+    "snippet": "Webhooks Topics Delivery/payload Logging Visual interface Webhook properties Create a webhook Retrieve a webhook List all webhooks",
+    "check": "repaired"
+   },
+   {
+    "url": "https://developer.woocommerce.com/docs/",
+    "snippet": "Use the REST API for store management data. Use the Store API for shopper-facing product, cart, and checkout flows.",
+    "check": "exact"
+   }
+  ]
+ },
+ "mcp": {
+  "official": null,
+  "community": [],
+  "evidence": [
+   {
+    "url": "https://developer.woocommerce.com/docs/",
+    "snippet": "WooCommerce CLI WooCommerce MCP ​ Connect a compatible AI client to a running store through the WordPress MCP Adapter and WooCommerce abilities.",
+    "check": "repaired"
+   },
+   {
+    "url": "https://developer.woocommerce.com/docs/getting-started/ai/",
+    "snippet": "WooCommerce registers product and order abilities that compatible AI clients can use through the WordPress MCP Adapter. This integration is a developer preview.",
+    "check": "exact"
+   }
+  ]
+ },
+ "buildability": {
+  "verdict": "ready",
+  "main_blocker": "none",
+  "rationale": "Free, open-source REST API with self-serve credential generation and no approval requirements.",
+  "composio_existing_toolkit": "no",
+  "composio_slug": null
+ },
+ "overview_evidence": [
+  {
+   "url": "https://woocommerce.com/document/woocommerce-rest-api/",
+   "snippet": "The WooCommerce REST API connects your store to external systems and services."
+  },
+  {
+   "url": "https://woocommerce.com/pricing/",
+   "snippet": "WooCommerce is the free, Open Source ecommerce platform for WordPress."
+  },
+  {
+   "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/#authentication",
+   "snippet": "WooCommerce (WC) 2.6+ is fully integrated with the WordPress REST API."
+  }
+ ],
+ "confidence": 0.9,
+ "unknown_reasons": {
+  "auth": "Second authentication method mentioned but not specified; references WP REST API authentication plugins which may include OAuth or bearer tokens.",
+  "access": "",
+  "api_surface": "OpenAPI specification not mentioned in provided pages; rate limits not documented in provided pages.",
+  "mcp": "MCP server implementation exists but no repository URL provided; references WordPress MCP Adapter and developer preview status only."
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "haiku",
+  "pages_used": 12,
+  "error": null,
+  "cost_usd": 0.079019,
+  "seconds": 101.3
+ }
+}

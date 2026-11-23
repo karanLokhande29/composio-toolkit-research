@@ -1,0 +1,138 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.07778700000000001,
+  "seconds": 103.2,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://marketplace.gohighlevel.com/docs/oauth/ExternalAuthentication/index.html",
+  "https://marketplace.gohighlevel.com/docs/oauth/CreateDeveloperAccount/",
+  "https://marketplace.gohighlevel.com/docs/oauth/Faqs/",
+  "https://marketplace.gohighlevel.com/docs/",
+  "https://marketplace.gohighlevel.com/docs/other/mcp/index.html",
+  "https://marketplace.gohighlevel.com/docs/intro/index.html",
+  "https://marketplace.gohighlevel.com/docs/other/rate-limits/",
+  "https://marketplace.gohighlevel.com/docs/webhook/WebhookIntegrationGuide/",
+  "https://github.com/GoHighLevel/highlevel-api-docs",
+  "https://github.com/mastanley13/GoHighLevel-MCP",
+  "https://marketplace.gohighlevel.com/docs/oauth/GettingStarted",
+  "https://marketplace.gohighlevel.com/docs/Authorization/authorization_doc"
+ ],
+ "output": {
+  "one_liner": "CRM platform offering contact management, messaging, calendars, payments, and automation accessible via REST API and MCP",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "api_key"
+   ],
+   "oauth_grant_types": [
+    "authorization_code"
+   ],
+   "notes": "OAuth 2.0 recommended for marketplace apps; Private Integration tokens (API keys) for internal/private use",
+   "evidence": [
+    {
+     "url": "https://marketplace.gohighlevel.com/docs/oauth/ExternalAuthentication/index.html",
+     "snippet": "External Authentication supports two methods: OAuth v2 (recommended) and API Key / Basic Auth"
+    },
+    {
+     "url": "https://marketplace.gohighlevel.com/docs/oauth/ExternalAuthentication/index.html",
+     "snippet": "Currently, only the OAuth 2.0 Authorization Code grant type is supported."
+    },
+    {
+     "url": "https://marketplace.gohighlevel.com/docs/Authorization/authorization_doc",
+     "snippet": "HighLevel currently supports two types of authorization: Private Integration Token and OAuth 2.0 Flow"
+    }
+   ]
+  },
+  "access": {
+   "status": "app_review",
+   "dev_sandbox": null,
+   "notes": "Private integration tokens self-serve; OAuth marketplace apps for production multi-customer use require vendor review",
+   "evidence": [
+    {
+     "url": "https://marketplace.gohighlevel.com/docs/oauth/CreateDeveloperAccount/",
+     "snippet": "Fill in the Sign Up form with the details requested. Verify your Phone Number."
+    },
+    {
+     "url": "https://marketplace.gohighlevel.com/docs/oauth/ExternalAuthentication/index.html",
+     "snippet": "Before submitting your app for review, always use Step 3 - Test your auth"
+    },
+    {
+     "url": "https://marketplace.gohighlevel.com/docs/Authorization/authorization_doc",
+     "snippet": "You should use a Private Integration Token if: Your use case involves accessing our API endpoints for internal purposes."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "100 requests per 10 seconds burst limit; 200,000 requests per 24 hours daily limit, per app per resource",
+   "evidence": [
+    {
+     "url": "https://marketplace.gohighlevel.com/docs/intro/index.html",
+     "snippet": "The API is organized around standard REST conventions: Predictable, resource-oriented URLs, JSON-encoded request and response bodies."
+    },
+    {
+     "url": "https://marketplace.gohighlevel.com/docs/",
+     "snippet": "Access all HighLevel platform features through our REST API. Perfect for building integrations, automating workflows, and creating custom applications."
+    },
+    {
+     "url": "https://marketplace.gohighlevel.com/docs/other/rate-limits/",
+     "snippet": "A burst limit of 100 API requests per 10 seconds and a daily limit of 200,000 API requests"
+    },
+    {
+     "url": "https://marketplace.gohighlevel.com/docs/webhook/WebhookIntegrationGuide/",
+     "snippet": "Webhooks are a way for applications to communicate in real-time. Think of them as automatic notifications"
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://services.leadconnectorhq.com/mcp/anthropic/v2",
+   "community": [
+    "https://github.com/mastanley13/GoHighLevel-MCP"
+   ],
+   "evidence": [
+    {
+     "url": "https://marketplace.gohighlevel.com/docs/other/mcp/index.html",
+     "snippet": "HighLevel MCP Server. No API key to create or paste. Sign in with your HighLevel login, connect your sub-account, and try your first request"
+    },
+    {
+     "url": "https://github.com/mastanley13/GoHighLevel-MCP",
+     "snippet": "This is a BASE-LEVEL foundational project designed to connect the GoHighLevel community with AI automation through MCP"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "app_review",
+   "rationale": "Well-documented REST API with broad coverage and official MCP support, but production OAuth integration requires marketplace app review",
+   "composio_existing_toolkit": "no",
+   "composio_slug": null
+  },
+  "overview_evidence": [
+   {
+    "url": "https://marketplace.gohighlevel.com/docs/",
+    "snippet": "Complete REST API documentation for the HighLevel CRM platform. Build powerful integrations with our comprehensive developer resources."
+   },
+   {
+    "url": "https://marketplace.gohighlevel.com/docs/intro/index.html",
+    "snippet": "The API gives you secure, programmatic access to core platform resources, including: Contacts, Conversations & Messaging, Calendars & Appointments, Payments, Webhooks"
+   }
+  ],
+  "confidence": 0.78,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "OAuth for general use without marketplace publication not explicitly documented; focus is on marketplace app OAuth which requires review",
+   "api_surface": "",
+   "mcp": ""
+  }
+ }
+}

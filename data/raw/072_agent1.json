@@ -1,0 +1,123 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.07977500000000001,
+  "seconds": 103.8,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://docs.composio.dev/toolkits/airtable.md",
+  "https://airtable.com/developers",
+  "https://airtable.com/developers/agents/mcp/getting-started",
+  "https://airtable.com/developers/agents/mcp/claude",
+  "https://airtable.com/developers/agents/mcp/chatgpt",
+  "https://airtable.com/developers/agents/mcp/gemini",
+  "https://airtable.com/developers/agents/mcp/cursor",
+  "https://airtable.com/developers/agents/mcp/claude-code",
+  "https://airtable.com/developers/agents/mcp/cli",
+  "https://airtable.com/developers/agents/mcp/other",
+  "https://airtable.com/developers/agents/mcp/controls",
+  "https://airtable.com/developers/agents/mcp/tools"
+ ],
+ "output": {
+  "one_liner": "A low-code platform for building databases and applications with structured data, automations, and native AI agent integration via MCP.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "api_key",
+    "bearer_token"
+   ],
+   "oauth_grant_types": [],
+   "notes": "OAuth2 for user-facing applications, static API keys for direct REST API access, and Personal Access Tokens sent as Bearer tokens for CLI and server-side setups.",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/airtable.md",
+     "snippet": "Auth: OAUTH2, API_KEY"
+    },
+    {
+     "url": "https://airtable.com/developers/agents/mcp/getting-started",
+     "snippet": "Our MCP server supports two authentication methods: OAuth (recommended for end-user connections) and Personal Access Tokens (PATs)"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "MCP server and API credentials available to all Airtable users on all plans; self-serve OAuth integration setup and PAT creation in developer hub at no cost.",
+   "evidence": [
+    {
+     "url": "https://airtable.com/developers/agents/mcp/getting-started",
+     "snippet": "The server is available to all users on all plans."
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/airtable.md",
+     "snippet": "Sign in to Airtable and open the Airtable developer hub"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": null,
+   "rate_limit_note": "5 requests per second per base for create record operations",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/airtable.md",
+     "snippet": "Tool to create multiple records (up to 10) in a specified Airtable table. Use when you need to add new rows."
+    },
+    {
+     "url": "https://airtable.com/developers",
+     "snippet": "Any MCP-compatible tool can read, write, and query your bases through natural language, scoped to your existing permissions."
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/airtable.md",
+     "snippet": "Rate limit: 5 requests per second per base."
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://mcp.airtable.com/mcp",
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://airtable.com/developers/agents/mcp/getting-started",
+     "snippet": "Airtable's MCP server lets you connect AI tools directly to your Airtable bases."
+    },
+    {
+     "url": "https://airtable.com/developers/agents/mcp/getting-started",
+     "snippet": "Model Context Protocol (MCP) is an open standard that allows AI tools to securely connect to external data sources."
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Self-serve free credentials with OAuth2 and API keys, comprehensive documented REST API with 28 implemented Composio tools, and official MCP server available to all users.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "AIRTABLE"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://airtable.com/developers",
+    "snippet": "Airtable's structured field types, relational links, and built-in automations make it a rich data layer for AI agents."
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/airtable.md",
+    "snippet": "Tools: 28"
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "OpenAPI specification URL not provided in documentation pages; webhook support for REST API events not explicitly documented",
+   "mcp": ""
+  }
+ }
+}

@@ -1,2 +1,45 @@
 IST now 16:26 | deadline 23:00 | 6h33m left
 extract: 42 apps to do
+  [ 42] WooCommerce                  auth=api_key,basic      access=self_serve_free    verdict=ready              pages=12 52.5s $0.050 
+  [ 43] BigCommerce                  auth=api_key,oauth2     access=self_serve_free    verdict=ready              pages=12 54.4s $0.059 
+  [ 41] Shopify                      auth=oauth2             access=self_serve_free    verdict=ready              pages=12 71.4s $0.073 
+  [ 45] Magento (Adobe Commerce)     auth=unknown            access=unknown            verdict=ready_with_caveats pages=12 73.7s $0.053 
+  [ 39] Threads (Meta)               auth=oauth2             access=app_review         verdict=ready_with_caveats pages=8 106.3s $0.085 
+  [ 47] Ecwid                        auth=bearer_token,oauth2 access=unknown            verdict=ready_with_caveats pages=6 61.3s $0.047 
+  [ 40] SendGrid                     auth=api_key            access=self_serve_trial   verdict=ready              pages=10 116.9s $0.085 
+  [ 50] fanbasis                     auth=unknown            access=unknown            verdict=ready_with_caveats pages=1 26.7s $0.017 
+  [ 44] Salesforce Commerce Cloud    auth=api_key,jwt,oauth2 access=unknown            verdict=ready_with_caveats pages=8 134.4s $0.096 
+  [ 49] Amazon Selling Partner       auth=oauth2             access=self_serve_free    verdict=ready_with_caveats pages=12 75.0s $0.059 
+  [ 46] Squarespace                  auth=oauth2             access=self_serve_free    verdict=ready_with_caveats pages=8 109.1s $0.084 
+  [ 48] Gumroad                      auth=bearer_token,oauth2 access=self_serve_free    verdict=ready              pages=4 91.5s $0.073 
+  [ 55] Apify                        auth=bearer_token       access=self_serve_free    verdict=ready              pages=12 37.2s $0.052 
+  [ 52] SE Ranking                   auth=api_key,bearer_token,oauth2 access=self_serve_trial   verdict=ready_with_caveats pages=12 103.1s $0.087 
+  [ 54] MrScraper                    auth=api_key,bearer_token,oauth2 access=self_serve_free    verdict=ready              pages=12 87.0s $0.071 
+  [ 53] Ahrefs                       auth=api_key,oauth2     access=paid_plan_required verdict=ready              pages=12 97.2s $0.081 
+  [ 51] DataForSEO                   auth=basic              access=self_serve_trial   verdict=ready              pages=12 120.3s $0.108 
+  [ 57] Bright Data                  auth=api_key            access=self_serve_free    verdict=ready              pages=12 87.9s $0.077 
+  [ 56] Firecrawl                    auth=api_key,oauth2     access=self_serve_free    verdict=ready              pages=12 100.5s $0.091 
+  [ 59] Waterfall.io                 auth=api_key            access=contact_sales      verdict=ready_with_caveats pages=12 79.9s $0.076 
+  [ 58] Sherlock                     auth=unknown            access=self_serve_free    verdict=ready_with_caveats pages=4 117.8s $0.081 
+  [ 61] GitHub                       auth=bearer_token,oauth2 access=self_serve_free    verdict=ready              pages=5 82.1s $0.063 
+  [ 63] Netlify                      auth=bearer_token,oauth2 access=self_serve_free    verdict=ready              pages=12 67.0s $0.067 
+  [ 60] Clay                         auth=api_key,jwt        access=self_serve_free    verdict=ready              pages=12 100.0s $0.081 
+  [ 62] Vercel                       auth=api_key,oauth2     access=self_serve_free    verdict=ready              pages=7 86.3s $0.068 
+  [ 64] Cloudflare                   auth=api_key,oauth2     access=unknown            verdict=ready              pages=12 89.5s $0.086 
+  [ 66] Neo4j                        auth=api_key,basic,oauth2 access=self_serve_free    verdict=ready              pages=4 86.9s $0.070 
+  [ 69] Datadog                      auth=api_key,bearer_token,oauth2 access=self_serve_trial   verdict=ready              pages=12 89.4s $0.086 
+  [ 70] Sentry                       auth=bearer_token,oauth2 access=unknown            verdict=ready              pages=12 88.9s $0.076 
+  [ 71] Notion                       auth=api_key,bearer_token,oauth2 access=self_serve_free    verdict=ready              pages=12 72.6s $0.067 
+  [ 65] Supabase                     auth=api_key,bearer_token,oauth2 access=self_serve_free    verdict=ready              pages=12 125.1s $0.115 
+  [ 67] Snowflake                    auth=jwt,oauth2         access=self_serve_trial   verdict=ready_with_caveats pages=12 120.2s $0.088 
+  [ 68] MongoDB Atlas                auth=api_key,oauth2     access=self_serve_free    verdict=ready              pages=12 128.2s $0.100 
+  [ 73] Linear                       auth=api_key,oauth2     access=self_serve_free    verdict=ready              pages=12 49.2s $0.055 
+  [ 74] Jira                         auth=api_key,basic,oauth2 access=self_serve_free    verdict=ready              pages=12 56.4s $0.055 
+  [ 72] Airtable                     auth=api_key,bearer_token,oauth2 access=self_serve_free    verdict=ready              pages=12 103.8s $0.080 
+  [ 75] Asana                        auth=bearer_token,oauth2 access=self_serve_free    verdict=ready              pages=12 74.9s $0.068 
+  [ 76] Monday.com                   auth=bearer_token,oauth2 access=self_serve_free    verdict=ready              pages=12 83.8s $0.082 
+  [ 77] ClickUp                      auth=bearer_token,oauth2 access=self_serve_free    verdict=ready              pages=12 99.5s $0.091 
+  [ 80] Harvest                      auth=bearer_token,oauth2 access=self_serve_free    verdict=ready              pages=12 72.9s $0.065 
+  [ 79] Smartsheet                   auth=bearer_token,oauth2 access=paid_plan_required verdict=ready_with_caveats pages=12 91.7s $0.090 
+  [ 78] Coda                         auth=bearer_token       access=self_serve_free    verdict=ready              pages=7 137.3s $0.099 
+done in 584s | IST now 16:36 | deadline 23:00 | 6h23m left

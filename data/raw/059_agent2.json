@@ -1,0 +1,119 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.076382,
+  "seconds": 95.6,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://www.waterfall.io",
+  "https://docs.waterfall.io",
+  "https://waterfall.io/pricing",
+  "https://docs.waterfall.io/v1/authentication",
+  "https://docs.waterfall.io/v1/rate-limit",
+  "https://docs.waterfall.io/v1/quickstart",
+  "https://docs.waterfall.io/v1/webhook-verification",
+  "https://docs.waterfall.io/v1/webhook-jwks",
+  "https://docs.waterfall.io/v1/api-keys-overview",
+  "https://docs.waterfall.io/v1/api-keys-list",
+  "https://docs.waterfall.io/v1/openapi-spec"
+ ],
+ "output": {
+  "one_liner": "B2B data enrichment platform providing email, phone, company, and job change verification through REST APIs.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "api_key"
+   ],
+   "oauth_grant_types": [],
+   "notes": "API key passed in x-api-key header",
+   "evidence": [
+    {
+     "url": "https://docs.waterfall.io/v1/authentication",
+     "snippet": "Authenticate data and account API requests with your Waterfall API key in the x-api-key header."
+    },
+    {
+     "url": "https://www.waterfall.io",
+     "snippet": "--header 'x-api-key: your_key'"
+    }
+   ]
+  },
+  "access": {
+   "status": "contact_sales",
+   "dev_sandbox": null,
+   "notes": "API credentials only via sales team. Free benchmarking available on sample data before contract signature.",
+   "evidence": [
+    {
+     "url": "https://docs.waterfall.io/v1/authentication",
+     "snippet": "Contact the team for API access and pricing."
+    },
+    {
+     "url": "https://docs.waterfall.io/v1/quickstart",
+     "snippet": "You need a Waterfall API key with Contact Enrichment enabled. Contact the team for access and pricing."
+    },
+    {
+     "url": "https://waterfall.io/pricing",
+     "snippet": "Commitments and minimums are set at contract and depend on volume and term"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "moderate",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Default 50 requests per 60 seconds; supports 10x+ higher limits via support request",
+   "evidence": [
+    {
+     "url": "https://docs.waterfall.io",
+     "snippet": "Contact Enrichment. Phone Enrichment. Job Change. Email Verification. Account Reporting."
+    },
+    {
+     "url": "https://docs.waterfall.io/v1/rate-limit",
+     "snippet": "The default limit for Prospector, Search, Enrichment, Job Change, and Email Verification is 50 requests per 60 seconds."
+    },
+    {
+     "url": "https://docs.waterfall.io/v1/webhook-verification",
+     "snippet": "Webhook signing applies to every endpoint that accepts webhook_url. Each signed delivery includes an X-Webhook-Signature header"
+    },
+    {
+     "url": "https://docs.waterfall.io/v1/openapi-spec",
+     "snippet": "The full OpenAPI 3.1 specification for the Waterfall API is available for download."
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": []
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "other",
+   "rationale": "API is fully documented with OpenAPI spec and webhooks support, but test credentials require sales contact.",
+   "composio_existing_toolkit": "no",
+   "composio_slug": null
+  },
+  "overview_evidence": [
+   {
+    "url": "https://www.waterfall.io",
+    "snippet": "Waterfall.io | One B2B data solution to connect them all"
+   },
+   {
+    "url": "https://www.waterfall.io",
+    "snippet": "Turn emails into complete business profiles - ready for scoring, segmenting and outreach"
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "Exact OpenAPI spec file URL not in provided pages; spec available for download per docs",
+   "mcp": "No MCP or Model Context Protocol mention in any provided pages"
+  }
+ }
+}

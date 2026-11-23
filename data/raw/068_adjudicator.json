@@ -1,0 +1,38 @@
+{
+ "fields": [
+  "access.status"
+ ],
+ "pages": [
+  "https://www.mongodb.com/docs/atlas/cli/current/atlas-cli-getting-started/",
+  "https://www.mongodb.com/pricing",
+  "https://www.mongodb.com/docs/atlas/reference/api-resources-spec/"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.049428,
+  "seconds": 6.9,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "access.status",
+    "value": "self_serve_free",
+    "evidence": [
+     {
+      "url": "https://www.mongodb.com/docs/atlas/cli/current/atlas-cli-getting-started/",
+      "snippet": "your first free database in Atlas with default settings? It's free forever!",
+      "check": "exact"
+     },
+     {
+      "url": "https://www.mongodb.com/pricing",
+      "snippet": "Free $0/hour Explore Atlas Free forever For learning and exploring MongoDB in a cloud environment",
+      "check": "exact"
+     }
+    ],
+    "reason": "Anyone can sign up for a free-forever Atlas account and generate Admin API keys at no cost, so access is self-serve and free."
+   }
+  ]
+ }
+}

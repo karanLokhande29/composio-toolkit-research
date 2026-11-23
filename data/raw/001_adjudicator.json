@@ -1,0 +1,60 @@
+{
+ "fields": [
+  "api_surface.breadth",
+  "mcp.official"
+ ],
+ "pages": [
+  "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm",
+  "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_list.htm",
+  "https://developer.salesforce.com/docs/platform/salesforce-app-limits-cheatsheet/guide/salesforce-app-limits-platform-api.html",
+  "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_rest.htm",
+  "https://developer.salesforce.com/docs/platform/sfdx-dev/guide/sfdx-dev-mcp-server.html",
+  "https://github.com/advancedcommunities/salesforce-mcp-server",
+  "https://salesforce.com"
+ ],
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.10491899999999998,
+  "seconds": 16.8,
+  "turns": 1
+ },
+ "output": {
+  "decisions": [
+   {
+    "field": "api_surface.breadth",
+    "value": "broad",
+    "evidence": [
+     {
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_list.htm",
+      "snippet": "The following table lists supported REST resources in the API and provides a brief description for each."
+     },
+     {
+      "url": "https://developer.salesforce.com/docs/platform/salesforce-app-limits-cheatsheet/guide/salesforce-app-limits-platform-api.html",
+      "snippet": "These limits and allocations apply to Salesforce Platform SOAP and REST APIs and any other API built on those frameworks, unless noted otherwise."
+     },
+     {
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm",
+      "snippet": "REST API is one of several web interfaces that you can use to access your Salesforce data without using the Salesforce user interface."
+     }
+    ],
+    "reason": "The resources list page enumerates dozens of distinct REST resource categories (Analytics, Chatter, Commerce, Composite, Connect, Metadata, Process Approvals, Search, sObject, etc.) plus separate SOAP, Bulk, and Metadata APIs, indicating hundreds of endpoints across a broad API surface."
+   },
+   {
+    "field": "mcp.official",
+    "value": "https://developer.salesforce.com/docs/platform/sfdx-dev/guide/sfdx-dev-mcp-server.html",
+    "evidence": [
+     {
+      "url": "https://developer.salesforce.com/docs/platform/sfdx-dev/guide/sfdx-dev-mcp-server.html",
+      "snippet": "The Salesforce DX MCP Server is an npm package called @salesforce/mcp"
+     },
+     {
+      "url": "https://salesforce.com",
+      "snippet": "Salesforce in Claude combines a prebuilt Salesforce MCP server with 37 ready-to-use sales skills"
+     }
+    ],
+    "reason": "developer.salesforce.com hosts official documentation for the Salesforce DX MCP Server published as the @salesforce/mcp npm package, confirming a vendor-published MCP server at that URL."
+   }
+  ]
+ }
+}

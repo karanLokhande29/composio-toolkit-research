@@ -1,0 +1,143 @@
+{
+ "id": 90,
+ "app": "PitchBook",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://pitchbook.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 403,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developers.pitchbook.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.pitchbook.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.pitchbook.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://pitchbook.com/pricing",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 403,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://github.com/Avierovich/openpitch",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/dontmesswithme-cpu/IBsuite",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/JyothikKOPPULA/Multi-agent-pitchbook-generator",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/pitchbook.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "Avierovich/openpitch",
+   "url": "https://github.com/Avierovich/openpitch",
+   "stars": 14,
+   "description": "Open, real-time, fully-sourced intelligence on AI startups — MCP-native, zero-cost. A free PitchBook alternative your AI agent can read."
+  },
+  {
+   "repo": "dontmesswithme-cpu/IBsuite",
+   "url": "https://github.com/dontmesswithme-cpu/IBsuite",
+   "stars": 1,
+   "description": "IBsuite — Investment Banking Excel MCP server (Model Context Protocol) for AI agents: build 3-statement models, DCF, LBO, comps & pitchbook-ready xlsx from chat"
+  },
+  {
+   "repo": "JyothikKOPPULA/Multi-agent-pitchbook-generator",
+   "url": "https://github.com/JyothikKOPPULA/Multi-agent-pitchbook-generator",
+   "stars": 0,
+   "description": "MCP | Azure AI Foundry"
+  },
+  {
+   "repo": "johnisanerd/Apify-PitchBook-Company-API",
+   "url": "https://github.com/johnisanerd/Apify-PitchBook-Company-API",
+   "stars": 0,
+   "description": "Python quick-start and MCP install guides for the PitchBook Company API on Apify: collect private-company and deal data as structured JSON."
+  },
+  {
+   "repo": "seantei/milmed-connect",
+   "url": "https://github.com/seantei/milmed-connect",
+   "stars": 0,
+   "description": "Dual-use medtech intelligence platform — a PitchBook-style database for military medical funding, built on public DoD sources (MTEC, SBIR.gov, USAspending, CDMR"
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "PitchBook",
+    "slug": "PITCHBOOK",
+    "tools": 130,
+    "auth": [
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/pitchbook.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "PitchBook",
+    "slug": "PITCHBOOK",
+    "tools": 130,
+    "auth": [
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/pitchbook.md"
+   }
+  ]
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.02156,
+  "seconds": 38.5,
+  "turns": 1,
+  "mode": "knowledge+crawl"
+ }
+}

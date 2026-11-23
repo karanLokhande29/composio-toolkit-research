@@ -1,0 +1,104 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.059591000000000005,
+  "seconds": 88.8,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://docs.composio.dev/toolkits/gumroad.md",
+  "https://github.com/rmarescu/gumroad-mcp",
+  "https://github.com/hanabi-jpn/clawhub-skills",
+  "https://github.com/Tanshaydar/Quartermaster"
+ ],
+ "output": {
+  "one_liner": "Gumroad is an ecommerce platform for selling digital products with built-in payment processing and subscription management.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "bearer_token"
+   ],
+   "oauth_grant_types": [],
+   "notes": "OAuth2 is primary documented auth. API also accepts static access tokens (bearer tokens) generated via account dashboard.",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/gumroad.md",
+     "snippet": "Auth: OAUTH2"
+    },
+    {
+     "url": "https://github.com/rmarescu/gumroad-mcp",
+     "snippet": "Keep your access token safe and confidential, like a password."
+    }
+   ]
+  },
+  "access": {
+   "status": "unknown",
+   "dev_sandbox": null,
+   "notes": "Pages show developers can generate API credentials via dashboard ('Create application' and 'Generate access token' button), but do not specify whether this requires payment, approval, or is available on free accounts.",
+   "evidence": [
+    {
+     "url": "https://github.com/rmarescu/gumroad-mcp",
+     "snippet": "Click Create application. Use the Generate access token button to get your access token."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "moderate",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/gumroad.md",
+     "snippet": "Tool to subscribe to a resource. Use when you need to receive real-time event webhooks after creating your webhook endpoint."
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/gumroad.md",
+     "snippet": "Retrieve successful sales for the authenticated Gumroad user, optionally filtering by customer email, date range, or product."
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [
+    "https://github.com/rmarescu/gumroad-mcp"
+   ],
+   "evidence": [
+    {
+     "url": "https://github.com/rmarescu/gumroad-mcp",
+     "snippet": "A Model Context Protocol (MCP) server implementation for Gumroad API"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Composio already provides a 13-tool official toolkit with OAuth2 (Composio-managed) and documented webhook support; buildable today.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "GUMROAD"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://docs.composio.dev/toolkits/gumroad.md",
+    "snippet": "Category: ecommerce"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/gumroad.md",
+    "snippet": "Tools: 13"
+   }
+  ],
+  "confidence": 0.75,
+  "unknown_reasons": {
+   "auth": "Pages confirm OAuth2 and access token auth but do not document other possible auth schemes.",
+   "access": "Pages show API credentials can be self-generated but do not state whether free accounts or payment/approval is required.",
+   "api_surface": "OpenAPI specification and rate limit policies are not mentioned in provided pages.",
+   "mcp": "No official vendor MCP server found; only community implementation at rmarescu/gumroad-mcp confirmed."
+  }
+ }
+}
