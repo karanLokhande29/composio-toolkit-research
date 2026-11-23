@@ -1,102 +1,198 @@
 {
- "n_apps": 12,
+ "n_apps": 100,
  "coverage": {
   "pass1": {
    "auth.methods": {
-    "filled": 12,
-    "unknown": 0
+    "filled": 95,
+    "unknown": 5
    },
    "access.status": {
-    "filled": 12,
-    "unknown": 0
+    "filled": 89,
+    "unknown": 11
    },
    "api_surface.breadth": {
-    "filled": 12,
-    "unknown": 0
+    "filled": 98,
+    "unknown": 2
    }
   },
   "final": {
    "auth.methods": {
-    "filled": 12,
-    "unknown": 0
+    "filled": 95,
+    "unknown": 5
    },
    "access.status": {
-    "filled": 12,
-    "unknown": 0
+    "filled": 96,
+    "unknown": 4
    },
    "api_surface.breadth": {
-    "filled": 12,
-    "unknown": 0
+    "filled": 98,
+    "unknown": 2
    }
   }
  },
  "loop1": {
-  "evidence_exact": 35,
-  "evidence_repaired": 16,
-  "evidence_dropped": 4,
-  "flags": {},
-  "fields_changed": 0,
-  "apps_changed": 0,
-  "evidence_total": 55,
-  "evidence_verified_pct": 92.7
+  "evidence_exact": 605,
+  "evidence_repaired": 195,
+  "evidence_dropped": 118,
+  "flags": {
+   "definitional_verdict": 6,
+   "evidence_gate": 6,
+   "api_key_without_key_evidence": 4,
+   "oauth2_without_oauth_evidence": 3,
+   "composio_has_api_key_we_do_not": 2,
+   "mcp_url_not_mcp_page": 1,
+   "composio_has_oauth2_we_do_not": 1,
+   "ready_without_api": 1
+  },
+  "fields_changed": 19,
+  "apps_changed": 13,
+  "evidence_total": 918,
+  "evidence_verified_pct": 87.1
  },
  "loop2": {
   "hard": {
-   "mcp.official": 3,
-   "buildability.verdict": 1,
-   "buildability.main_blocker": 1
+   "mcp.official": 28,
+   "buildability.main_blocker": 25,
+   "buildability.verdict": 22,
+   "auth.methods": 6,
+   "access.status": 5,
+   "api_surface.styles": 3
   },
   "soft": {
-   "access.status": 1,
-   "auth.methods": 1
+   "auth.methods": 22,
+   "api_surface.breadth": 10,
+   "api_surface.styles": 7,
+   "access.status": 7
   },
-  "gap": {},
-  "fields_filled": 0,
-  "apps_with_hard": 3
+  "gap": {
+   "access.status": 24,
+   "api_surface.breadth": 10,
+   "auth.methods": 7
+  },
+  "fields_filled": 15,
+  "apps_with_hard": 53
  },
  "loop3": {
-  "apps": 0,
-  "fields_examined": 0,
-  "fields_changed": 0,
-  "unresolved": 0,
-  "changed_by_field": {}
+  "apps": 74,
+  "fields_examined": 151,
+  "fields_changed": 42,
+  "unresolved": 23,
+  "changed_by_field": {
+   "access.status": 11,
+   "mcp.official": 9,
+   "buildability.main_blocker": 9,
+   "buildability.verdict": 8,
+   "auth.methods": 4,
+   "api_surface.styles": 1
+  }
  },
  "changed_by_automated_loops": {
-  "apps_changed": 0,
-  "apps_changed_pct": 0,
-  "by_field": {}
+  "apps_changed": 38,
+  "apps_changed_pct": 38,
+  "by_field": {
+   "access.status": 14,
+   "buildability.verdict": 14,
+   "buildability.main_blocker": 13,
+   "mcp.official": 10,
+   "auth.methods": 5,
+   "api_surface.styles": 3
+  }
  },
  "needs_human": [
   {
-   "id": 1,
-   "app": "Salesforce",
-   "reason": "loop3 error: LLM failed after retries: claude cli error: You've hit your session limit · resets 4:20pm (Asia/Calcutta)"
+   "id": 6,
+   "app": "Podio",
+   "reason": "mcp.official: MCP URL could not be verified"
   },
   {
-   "id": 3,
-   "app": "Pipedrive",
-   "reason": "loop3 error: LLM failed after retries: claude cli error: You've hit your session limit · resets 4:20pm (Asia/Calcutta)"
+   "id": 12,
+   "app": "Intercom",
+   "reason": "mcp.official: MCP URL could not be verified"
   },
   {
-   "id": 5,
-   "app": "Twenty",
-   "reason": "loop3 error: LLM failed after retries: claude cli error: You've hit your session limit · resets 4:20pm (Asia/Calcutta)"
+   "id": 14,
+   "app": "Front",
+   "reason": "mcp.official: MCP URL could not be verified"
+  },
+  {
+   "id": 34,
+   "app": "GoHighLevel",
+   "reason": "mcp.official: MCP URL could not be verified"
+  },
+  {
+   "id": 47,
+   "app": "Ecwid",
+   "reason": "access.status: The provided page content lacks any text describing signup, pricing, or approval process for obtaining Ecwid API credentials."
+  },
+  {
+   "id": 49,
+   "app": "Amazon Selling Partner",
+   "reason": "access.status: The pages describe a multi-step developer registration and sandbox-then-production app registration flow but never state whether this is free, paid, or subject to approval, so cost/approval status cannot be confirmed from the given pages.; auth.methods: adjudicator evidence did not verify"
+  },
+  {
+   "id": 50,
+   "app": "fanbasis",
+   "reason": "access.status: Page mentions Enterprise & APIs but gives no sign-up flow, pricing, or approval process details.; api_surface.breadth: Only a marketing mention of APIs and SDKs exists with no endpoint list or documentation to judge breadth.; auth.methods: No authentication scheme (OAuth, API key, bearer token, etc.) is mentioned anywhere on the page."
+  },
+  {
+   "id": 55,
+   "app": "Apify",
+   "reason": "mcp.official: MCP URL could not be verified"
+  },
+  {
+   "id": 58,
+   "app": "Sherlock",
+   "reason": "api_surface.breadth: Sherlock is a CLI tool with no documented public API endpoints, so breadth of an API surface cannot be determined; the MCP wrapper's platform count describes sites it scrapes, not API endpoints.; auth.methods: No authentication method is documented anywhere in the pages; Sherlock is a CLI tool with no API/auth layer described."
+  },
+  {
+   "id": 73,
+   "app": "Linear",
+   "reason": "mcp.official: MCP URL could not be verified"
+  },
+  {
+   "id": 83,
+   "app": "Binance",
+   "reason": "api_surface.breadth: Both pages are third-party MCP wrapper repos describing a handful of functions, not the official Binance API docs, so endpoint count/breadth cannot be determined from these pages."
+  },
+  {
+   "id": 84,
+   "app": "Paygent Connect",
+   "reason": "access.status: No pages were provided to verify how developers obtain credentials for this app.; api_surface.breadth: No pages were provided to assess the number or scope of API endpoints.; auth.methods: No pages were provided to confirm any authentication method used by the API.; buildability.main_blocker: adjudicator evidence did not verify; buildability.verdict: adjudicator evidence did not ver"
+  },
+  {
+   "id": 91,
+   "app": "NotebookLM",
+   "reason": "api_surface.breadth: The pages only reference one API (Discovery Engine) and one example endpoint without enumerating the full resource/endpoint set, so overall breadth cannot be determined."
+  },
+  {
+   "id": 97,
+   "app": "higgsfield",
+   "reason": "access.status: Pages show that an account and API key/secret are required but never state whether obtaining or using that key is free, trial-limited, or requires a paid plan."
+  },
+  {
+   "id": 98,
+   "app": "Mermaid CLI",
+   "reason": "auth.methods: No pages were provided to verify authentication methods for Mermaid CLI, and both agents agree it is unverifiable."
   }
  ],
  "resolved_by": {
-  "agent": 12
+  "browser": 59,
+  "unresolved": 15,
+  "agent": 26
  },
  "cost_time": {
-  "llm_cost_usd_reported": 16.52,
-  "llm_seconds": 1394,
+  "llm_cost_usd_reported": 31.86,
+  "llm_seconds": 18801,
   "calls": {
-   "discover:agent1": 73,
-   "extract:agent1": 12,
-   "discover:agent2": 5,
-   "extract:agent2": 5
+   "discover:agent1": 112,
+   "extract:agent1": 100,
+   "discover:agent2": 135,
+   "extract:agent2": 135
   }
  },
  "accuracy": {
-  "status": "no_sheet"
+  "status": "pending_human",
+  "rows": 260,
+  "filled": 0
  }
 }
