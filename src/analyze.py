@@ -120,7 +120,8 @@ def run() -> dict:
       f"{worst_cat[0]} the least ({worst_cat[1]['self_serve_pct']}%).", "worst_category.self_serve_pct")
     h(f"The most common blocker is '{top_blocker.replace('_', ' ')}' ({top_blocker_n} apps); "
       f"{verdicts.get('ready', 0)} apps are ready today, {verdicts.get('ready_with_caveats', 0)} ready with caveats, {verdicts.get('blocked', 0)} blocked.", "top_blocker.n")
-    h(f"MCP is already mainstream: {mcp_off} vendors ship an official MCP server and {mcp_comm_only} more have only community servers.", "mcp_coverage.official")
+    h(f"MCP is already mainstream: at least {mcp_off} vendors ship an official MCP server and {mcp_comm_only} more have community servers "
+      f"(a lower bound - the accuracy audit shows the agent misses official MCP servers more than anything else).", "mcp_coverage.official")
     h(f"Composio already has toolkits for {comp_yes} of the {n}; {len(easy_new)} self-serve, ready apps have no Composio toolkit yet - the cheapest net-new wins.", "easy_new_n")
     pat["headlines"] = H
     write_json(DATA / "patterns.json", pat)

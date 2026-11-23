@@ -1340,7 +1340,7 @@
    "key": "top_blocker.n"
   },
   {
-   "text": "MCP is already mainstream: 50 vendors ship an official MCP server and 25 more have only community servers.",
+   "text": "MCP is already mainstream: at least 50 vendors ship an official MCP server and 25 more have community servers (a lower bound - the accuracy audit shows the agent misses official MCP servers more than anything else).",
    "key": "mcp_coverage.official"
   },
   {

@@ -61,12 +61,16 @@ def verification_html(m: dict, pat: dict) -> str:
     ch = m["changed_by_automated_loops"]
     if acc.get("status") == "computed":
         o = acc["overall"]
+        ai = acc.get("judge") == "ai_auditor"
+        who = "an independent AI auditor (Claude Opus, which produced none of the answers)" if ai else "Karan, by hand"
         head = (f'<div class="kpis"><div class="kpi"><span>{pct(o["pass1"])}</span>pass-1 accuracy</div>'
                 f'<div class="kpi arrow">→</div><div class="kpi good"><span>{pct(o["final_automated"])}</span>after automated loops</div>'
-                f'<div class="kpi"><span>{o["human_corrections"]}</span>values corrected by human</div></div>'
-                f'<p class="muted">Human cross-check: {acc["rows"]} (app, field) pairs across {acc["apps"]} apps, '
-                f'stratified 3 apps per category with a fixed seed, plus every app still flagged after Loop 3. '
-                f'Karan marked each pass-1 and final value right/wrong against the vendor docs.</p>')
+                f'<div class="kpi"><span>{o["human_corrections"]}</span>sampled values still wrong</div></div>'
+                + ('<div class="callout warn"><b>Not a human check.</b> The human review step (Loop 4) was skipped for lack of time before the '
+                   'deadline, so these numbers come from an independent AI auditor instead. Treat them as a second opinion, not ground truth; '
+                   'the blank human sheet and the review tool are in the repo (human_review/).</div>' if ai else '')
+                + f'<p class="muted">Sample: {acc["rows"]} (app, field) pairs across {acc["apps"]} apps, stratified 3 apps per category '
+                f'with a fixed seed (20261123), plus every app still flagged after Loop 3. Judged by {who}: each pass-1 and final value marked right/wrong.</p>')
         rows = "".join(f'<tr><td>{E(k)}</td><td>{v["n"]}</td><td>{pct(v["pass1"])}</td><td><b>{pct(v["final"])}</b></td></tr>'
                        for k, v in sorted(acc["per_field"].items()))
         table = f'<table class="small"><thead><tr><th>Field</th><th>n</th><th>Pass 1</th><th>Final</th></tr></thead><tbody>{rows}</tbody></table>'
@@ -75,7 +79,7 @@ def verification_html(m: dict, pat: dict) -> str:
         misses = "".join(f'<tr><td>{E(x["app"])}</td><td>{E(x["field"])}</td><td>{E(x["final"])}</td><td>{E(x["human"])}</td><td>{E(x["caught_by"])}</td></tr>'
                          for x in acc["misses"]) or '<tr><td colspan="5">none - every sampled final value was judged correct</td></tr>'
         detail = (f'<h3>Hits the loops produced (wrong in pass 1, right in final)</h3><div class="scroll"><table class="small"><thead><tr><th>App</th><th>Field</th><th>Pass 1</th><th>Final</th><th>Fixed by</th></tr></thead><tbody>{fixed}</tbody></table></div>'
-                  f'<h3 id="misses">Misses (final value still wrong)</h3><div class="scroll"><table class="small"><thead><tr><th>App</th><th>Field</th><th>Our final value</th><th>Correct value (human)</th><th>Status</th></tr></thead><tbody>{misses}</tbody></table></div>')
+                  f'<h3 id="misses">Misses (final value still wrong)</h3><div class="scroll"><table class="small"><thead><tr><th>App</th><th>Field</th><th>Our final value</th><th>Correct value (judge)</th><th>Status</th></tr></thead><tbody>{misses}</tbody></table></div>')
     else:
         n = acc.get("rows", "")
         head = (f'<div class="callout warn"><b>Human accuracy check pending.</b> The stratified sample sheet ({n} rows) is generated '
@@ -112,7 +116,8 @@ def run() -> None:
         r.pop("_meta", None)
     total = pat["n_apps"]
     acc = m.get("accuracy", {})
-    acc_tile = (f'<div class="kpi good"><span>{pct(acc["overall"]["pass1"])} → {pct(acc["overall"]["final_automated"])}</span>accuracy, pass 1 → final (human-checked sample)</div>'
+    judge = "AI-audited sample, not human" if acc.get("judge") == "ai_auditor" else "human-checked sample"
+    acc_tile = (f'<div class="kpi good"><span>{pct(acc["overall"]["pass1"])} → {pct(acc["overall"]["final_automated"])}</span>accuracy, pass 1 → final ({judge})</div>'
                 if acc.get("status") == "computed" else '<div class="kpi"><span>pending</span>human accuracy check</div>')
     heads = "".join(f'<li>{E(h["text"])}</li>' for h in pat["headlines"])
     wins_new = li(pat["easy_wins_without_composio_toolkit"], lambda i: ' <span class="tag new">no Composio toolkit yet</span>')
@@ -155,7 +160,8 @@ def run() -> None:
 
 def llms_txt(pat, m) -> str:
     acc = m.get("accuracy", {})
-    a = (f"Human-checked accuracy on a stratified sample: pass 1 {pct(acc['overall']['pass1'])} -> final {pct(acc['overall']['final_automated'])}."
+    who = "an independent AI auditor (NOT a human)" if acc.get("judge") == "ai_auditor" else "a human"
+    a = (f"Accuracy on a stratified sample, judged by {who}: pass 1 {pct(acc['overall']['pass1'])} -> final {pct(acc['overall']['final_automated'])}."
          if acc.get("status") == "computed" else "Human accuracy check: pending.")
     return f"""# Composio toolkit research: 100 apps
 
@@ -222,7 +228,7 @@ code{background:var(--neutral-bg);padding:1px 5px;border-radius:4px;font-size:13
 <main>
 <header>
 <h1>Can Composio build a toolkit for it? 100 apps, researched by an agent</h1>
-<p class="lede">An agent read each app's own docs and decided how it authenticates, whether a developer can get credentials alone, how big the API is, whether an MCP server exists, and whether a toolkit could ship today. Every answer quotes the docs page behind it, and the whole dataset went through 3 automated verification loops plus a human spot-check.</p>
+<p class="lede">An agent read each app's own docs and decided how it authenticates, whether a developer can get credentials alone, how big the API is, whether an MCP server exists, and whether a toolkit could ship today. Every answer quotes the docs page behind it. The whole dataset went through 3 automated verification loops, and a stratified sample was then audited for accuracy.</p>
 <div class="kpis"><div class="kpi good"><span>__READY__</span>ready today</div><div class="kpi"><span>__CAVEATS__</span>ready with caveats</div><div class="kpi"><span>__BLOCKED__</span>blocked</div>
 <div class="kpi"><span>__SELF__%</span>self-serve credentials</div><div class="kpi"><span>__OAUTH__%</span>support OAuth2</div>__ACC_TILE__</div>
 </header>
@@ -264,7 +270,7 @@ code{background:var(--neutral-bg);padding:1px 5px;border-radius:4px;font-size:13
 <div class="step"><b>4 · Loop 1</b>Code-only checks: quote exists in the page, URL returned 200, enum/schema valid, consistency rules, Composio catalog cross-check.</div><span class="arrowr">→</span>
 <div class="step"><b>5 · Loop 2</b>An independent second agent re-researches each app blind to pass 1; field-level disagreements are flagged.</div><span class="arrowr">→</span>
 <div class="step"><b>6 · Loop 3</b>Headless Chromium re-renders flagged and JS-built pages; Claude Sonnet adjudicates with fresh quotes, which are re-checked in code.</div><span class="arrowr">→</span>
-<div class="step h"><b>7 · Human</b>Stratified sample (fixed seed) checked by hand against the docs; that sample is the accuracy measurement.</div>
+<div class="step h"><b>7 · Accuracy audit</b>Stratified sample (fixed seed, 260 field checks). A human review tool was built, but the hand check was skipped for time, so an independent AI auditor (Claude Opus) judged it, and the page says so.</div>
 </div>
 <p class="small muted">Plain Python, about 1,500 lines. LLM calls go through one wrapper that can use the local <code>claude</code> CLI or the Anthropic API. This run: __CALLS__ logged LLM stage calls, about $__COST__ list-price equivalent. Composio is used through its public toolkit catalog (no key needed), with an optional SDK check (<code>Composio().toolkits.get</code>) when <code>COMPOSIO_API_KEY</code> is set.</p>
 </section>
@@ -289,6 +295,7 @@ __VERIFICATION__
 <section id="limitations"><h2>Limitations and honest failures</h2>
 <ul>
 <li><b>Discovery depth varied by budget.</b> Apps 1–38 used Claude's web search for discovery. After the CLI hit its usage limit, apps 39–100 used model-proposed URLs plus crawling, which has lower recall for obscure apps.</li>
+<li><b>MCP is the weakest field and the loops made it worse.</b> In the accuracy audit, MCP was the least accurate field, and it was the only one where accuracy dropped after the loops. The agent mostly misses <i>official</i> MCP servers (e.g. Google Ads, Supabase, Linear, Jira/Atlassian, Snowflake, Vercel). These are announced on pages the crawler never fetched, and Loop 3 dropped some correct ones because the URL wasn't quoted on a fetched page. Fix: add a dedicated MCP discovery step (vendor docs search plus the MCP registry) before extraction.</li>
 <li><b>Docs say what's allowed, not what works.</b> Without paid or partner accounts, gated apps are judged from public docs only (as the brief asks). Nothing was tested with live credentials.</li>
 <li><b>Breadth is a judgement</b> (narrow/moderate/broad), not an endpoint count. Composio-toolkit presence is an exact name match against Composio's public catalog, which can miss renamed toolkits.</li>
 <li><b>Not SaaS:</b> __NON_SAAS__. These are classified as what they are, not forced into the SaaS mould.</li>

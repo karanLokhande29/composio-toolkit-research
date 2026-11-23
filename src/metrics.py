@@ -17,6 +17,7 @@ from collections import Counter, defaultdict
 from .common import DATA, LOGS, ROOT, VLOG, load_results, write_json
 
 SAMPLE = ROOT / "human_review" / "sample.csv"
+AUDIT = ROOT / "human_review" / "ai_audit.csv"   # independent AI auditor (used only if the human sheet is empty)
 FIELDS = ["one_liner", "auth.methods", "access.status", "api_surface.styles", "api_surface.breadth", "mcp",
           "buildability.verdict", "buildability.main_blocker"]
 
@@ -96,10 +97,10 @@ def which_loop(rec: dict, field: str) -> str:
     return ", ".join(hits) or "none"
 
 
-def accuracy(results):
-    if not SAMPLE.exists():
+def accuracy(results, path=SAMPLE):
+    if not path.exists():
         return {"status": "no_sheet"}
-    rows = list(csv.DictReader(SAMPLE.open()))
+    rows = list(csv.DictReader(path.open()))
     filled = [r for r in rows if r.get("pass1_correct", "").strip().lower() in ("y", "n") and r.get("final_correct", "").strip().lower() in ("y", "n")]
     if not rows or len(filled) < len(rows):
         return {"status": "pending_human", "rows": len(rows), "filled": len(filled)}
@@ -111,7 +112,7 @@ def accuracy(results):
         for d in (per_field[r["field"]], per_cat[rec["category"]]):
             d[0] += 1; d[1] += yes(r, "pass1_correct"); d[2] += yes(r, "final_correct")
         item = {"app": r["app"], "field": r["field"], "pass1": r["pass1_value"], "final": r["final_value"],
-                "human": r.get("human_value", ""), "note": r.get("note", "")}
+                "human": r.get("human_value") or r.get("auditor_value", ""), "note": r.get("note") or r.get("why", "")}
         if yes(r, "final_correct"):
             hits.append(item)
             if not yes(r, "pass1_correct"):
@@ -156,6 +157,10 @@ def run() -> dict:
          "resolved_by": dict(Counter(r["verification"].get("resolved_by", "agent") for r in rows)),
          "cost_time": cost_time(),
          "accuracy": accuracy(results)}
+    m["accuracy"]["judge"] = "human"
+    if m["accuracy"]["status"] != "computed" and AUDIT.exists():
+        human_status = m["accuracy"]
+        m["accuracy"] = accuracy(results, AUDIT) | {"judge": "ai_auditor", "human_status": human_status}
     write_json(DATA / "metrics.json", m)
     print(f"metrics: changed by loops {m['changed_by_automated_loops']['apps_changed']} apps; accuracy status {m['accuracy']['status']}")
     return m

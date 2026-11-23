@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-23T21:50:40+05:30",
+ "checked_at": "2026-11-23T21:58:37+05:30",
  "phase": 9,
  "results": {
   "R1": {
@@ -44,7 +44,7 @@
   },
   "R11": {
    "status": "PASS",
-   "detail": "5 entries (MANUAL: completeness)"
+   "detail": "6 entries (MANUAL: completeness)"
   },
   "R12": {
    "status": "PASS",
@@ -52,15 +52,15 @@
   },
   "R13": {
    "status": "MANUAL_PENDING",
-   "detail": "sheet generated: 260 rows, 260 still blank (Karan to fill)"
+   "detail": "sheet generated: 260 rows, 259 still blank (Karan to fill)"
   },
   "R14": {
-   "status": "MANUAL_PENDING",
-   "detail": "waiting for human sheet"
+   "status": "PASS",
+   "detail": "pass1 81.2% -> automated 82.7%"
   },
   "R15": {
    "status": "PASS",
-   "detail": "self-contained, 1115 KB (MANUAL: 2-minute readability)"
+   "detail": "self-contained, 1210 KB (MANUAL: 2-minute readability)"
   },
   "R16": {
    "status": "PASS",
@@ -96,7 +96,7 @@
   },
   "R24": {
    "status": "PASS",
-   "detail": ".env ignored; 1995 tracked files + history scanned clean"
+   "detail": ".env ignored; 3864 tracked files + history scanned clean"
   }
  }
 }
