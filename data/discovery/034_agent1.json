@@ -1,0 +1,227 @@
+{
+ "id": 34,
+ "app": "GoHighLevel",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://highlevel.stoplight.io",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://marketplace.gohighlevel.com/docs/intro/index.html",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://marketplace.gohighlevel.com/docs/oauth/ExternalAuthentication/index.html",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://marketplace.gohighlevel.com/docs/oauth/CreateDeveloperAccount/",
+   "purpose": "access",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://marketplace.gohighlevel.com/docs/oauth/Faqs/",
+   "purpose": "pricing",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://marketplace.gohighlevel.com/docs/",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://marketplace.gohighlevel.com/docs/other/rate-limits/",
+   "purpose": "rate_limits",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://marketplace.gohighlevel.com/docs/webhook/WebhookIntegrationGuide/",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/GoHighLevel/highlevel-api-docs",
+   "purpose": "openapi",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://marketplace.gohighlevel.com/docs/other/mcp/index.html",
+   "purpose": "mcp_official",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/mastanley13/GoHighLevel-MCP",
+   "purpose": "mcp_community",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/BusyBee3333/Go-High-Level-MCP-2026-Complete",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/basicmachines-co/open-ghl-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://marketplace.gohighlevel.com/docs/oauth/GettingStarted",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://marketplace.gohighlevel.com/docs/Authorization/authorization_doc",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://marketplace.gohighlevel.com/docs/sdk/GettingStartedSDK",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://marketplace.gohighlevel.com/docs/oauth/ExternalAuthentication",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://marketplace.gohighlevel.com/docs/2023-02-21/oauth/ExternalAuthentication",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://marketplace.gohighlevel.com/docs/2021-07-28/oauth/ExternalAuthentication",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://marketplace.gohighlevel.com/docs/2021-04-15/oauth/ExternalAuthentication",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://marketplace.gohighlevel.com/docs/oauth/Billing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://marketplace.gohighlevel.com/docs/oauth/external-auth/ConfigureYourFields",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "mastanley13/GoHighLevel-MCP",
+   "url": "https://github.com/mastanley13/GoHighLevel-MCP",
+   "stars": 197,
+   "description": ""
+  },
+  {
+   "repo": "BusyBee3333/Go-High-Level-MCP-2026-Complete",
+   "url": "https://github.com/BusyBee3333/Go-High-Level-MCP-2026-Complete",
+   "stars": 128,
+   "description": "GoHighLevel from Claude, Codex & MCP apps — 927 tools, full v3 coverage, safe CRM automation, plus RealWave for native workflow building."
+  },
+  {
+   "repo": "basicmachines-co/open-ghl-mcp",
+   "url": "https://github.com/basicmachines-co/open-ghl-mcp",
+   "stars": 53,
+   "description": "An open source Model Context Protocol server for GoHighLevel API v2 with OAuth"
+  },
+  {
+   "repo": "tenfoldmarc/ghl-mcp",
+   "url": "https://github.com/tenfoldmarc/ghl-mcp",
+   "stars": 19,
+   "description": "Connect your GoHighLevel sub-account to Claude Code. Manage contacts, pipelines, calendars, invoices, and 70+ tools — all from your terminal."
+  },
+  {
+   "repo": "drausal/gohighlevel-mcp",
+   "url": "https://github.com/drausal/gohighlevel-mcp",
+   "stars": 10,
+   "description": "Model Context Protocol (MCP) server for GoHighLevel API - Complete access to contacts, opportunities, calendars, workflows, and more"
+  }
+ ],
+ "composio": {
+  "exact": [],
+  "candidates": []
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.43054229999999993,
+  "seconds": 47.3,
+  "turns": 18,
+  "notes": "GoHighLevel migrated from Stoplight to their own marketplace.gohighlevel.com/docs portal; sandbox account support and OAuth sandbox available via CreateDeveloperAccount page"
+ }
+}

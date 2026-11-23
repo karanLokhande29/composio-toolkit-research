@@ -1,0 +1,281 @@
+{
+ "id": 29,
+ "app": "Aircall",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://aircall.io",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.aircall.io",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.aircall.io",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.aircall.io",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://aircall.io/pricing",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.aircall.io/docs/introduction",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.aircall.io/docs/oauth",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.aircall.io/docs/basic-authentication",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://aircall.io/pricing/",
+   "purpose": "pricing",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.aircall.io/api-references",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.aircall.io/docs/best-practices",
+   "purpose": "rate_limits",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.aircall.io/docs/webhooks-overview",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.aircall.io/llms.txt",
+   "purpose": "openapi",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/themobilefirstco/aircall-mcp-server",
+   "purpose": "mcp_community",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/TheAiShark/aircall-mcp-oauth",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/MaximeDeconinck/aircall-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/aircall.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://aircall.io/partners/technology/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://aircall.io/partners/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://aircall.io/partner-services/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://aircall.io/partner-stories/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://aircall.io/partners/affiliate-partners/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://aircall.io/partners/technology/signup/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.aircall.io/tutorials/how-aircall-oauth-flow-works",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://aircall.io/en-gb/pricing/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://aircall.io/en-au/pricing/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "themobilefirstco/aircall-mcp-server",
+   "url": "https://github.com/themobilefirstco/aircall-mcp-server",
+   "stars": 2,
+   "description": "Unofficial MCP server for Aircall by Allo - 73 tools for calls, contacts, SMS, users, teams & AI insights. Built by The Mobile First Company."
+  },
+  {
+   "repo": "TheAiShark/aircall-mcp-oauth",
+   "url": "https://github.com/TheAiShark/aircall-mcp-oauth",
+   "stars": 0,
+   "description": "aircall MCP "
+  },
+  {
+   "repo": "MaximeDeconinck/aircall-mcp",
+   "url": "https://github.com/MaximeDeconinck/aircall-mcp",
+   "stars": 0,
+   "description": "Unofficial Aircall MCP server ready to deploy on Vercel"
+  },
+  {
+   "repo": "CassiaResearch/aircall-mcp-server",
+   "url": "https://github.com/CassiaResearch/aircall-mcp-server",
+   "stars": 0,
+   "description": "Unofficial MCP server for Aircall"
+  },
+  {
+   "repo": "growth-box/aircall-mcp",
+   "url": "https://github.com/growth-box/aircall-mcp",
+   "stars": 0,
+   "description": "Local, read-only MCP server for the official Aircall REST API"
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Aircall",
+    "slug": "AIRCALL",
+    "tools": 48,
+    "auth": [
+     "OAUTH2",
+     "BASIC"
+    ],
+    "url": "https://docs.composio.dev/toolkits/aircall.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Aircall",
+    "slug": "AIRCALL",
+    "tools": 48,
+    "auth": [
+     "OAUTH2",
+     "BASIC"
+    ],
+    "url": "https://docs.composio.dev/toolkits/aircall.md"
+   }
+  ]
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.5637021,
+  "seconds": 95.7,
+  "turns": 21,
+  "notes": "Official Aircall MCP not published (per FAQs); beta MCP exists at https://mcp.aircall.io/mcp requiring account manager access. API Professional plan required for direct Messaging API access; sandbox/trial via developer account for tech partners."
+ }
+}

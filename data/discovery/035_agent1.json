@@ -1,0 +1,231 @@
+{
+ "id": 35,
+ "app": "Mailchimp",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://mailchimp.com/developer",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://mailchimp.com/developer/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://mailchimp.com/developer/marketing/guides/access-user-data-oauth-2/",
+   "purpose": "access",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://mailchimp.com/pricing/marketing/",
+   "purpose": "pricing",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://mailchimp.com/developer/marketing/api/",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://mailchimp.com/developer/marketing/api-concepts/rate-limits-and-timeouts",
+   "purpose": "rate_limits",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://mailchimp.com/developer/marketing/guides/sync-audience-data-webhooks/",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://api.mailchimp.com/schema/3.0/Swagger.json?expand",
+   "purpose": "openapi",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server",
+   "purpose": "mcp_official",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/damientilman/mailchimp-mcp-server",
+   "purpose": "mcp_community",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/AgentX-ai/mailchimp-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/CosmoBlk/email-design",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/mailchimp.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://mailchimp.com/developer/integration-partner-program",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/api-keys",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/oauth-2",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://mailchimp.com/developer/marketing/build/start-developing/set-up-an-oauth-app",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://mailchimp.com/developer/marketing/build/get-started/generate-your-api-key",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://us1.admin.mailchimp.com/account/oauth2/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": true
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "damientilman/mailchimp-mcp-server",
+   "url": "https://github.com/damientilman/mailchimp-mcp-server",
+   "stars": 25,
+   "description": "The most complete Mailchimp Marketing API MCP server: 227 tools across campaigns, audiences, reports, segments, automations and full e-commerce, with multi-acco"
+  },
+  {
+   "repo": "AgentX-ai/mailchimp-mcp",
+   "url": "https://github.com/AgentX-ai/mailchimp-mcp",
+   "stars": 13,
+   "description": "Allows AI agents to interact with the Mailchimp API (read-only)"
+  },
+  {
+   "repo": "CosmoBlk/email-design",
+   "url": "https://github.com/CosmoBlk/email-design",
+   "stars": 8,
+   "description": "Email design skill for Claude Code. Anti-slop emails — six committed archetypes, brand-aware briefs, real imagery, real footers. Works with any ESP via MCP (Nit"
+  },
+  {
+   "repo": "LokiMCPUniverse/mailchimp-mcp-server",
+   "url": "https://github.com/LokiMCPUniverse/mailchimp-mcp-server",
+   "stars": 2,
+   "description": "MCP server for Mailchimp - Email marketing and automation platform"
+  },
+  {
+   "repo": "cyanheads/mailchimp-mcp-server",
+   "url": "https://github.com/cyanheads/mailchimp-mcp-server",
+   "stars": 2,
+   "description": "Draft, test, and send Mailchimp campaigns straight from your MCP client — with audience management, subscriber CRUD, and post-send analytics behind safe-by-defa"
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Mailchimp",
+    "slug": "MAILCHIMP",
+    "tools": 278,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/mailchimp.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Mailchimp",
+    "slug": "MAILCHIMP",
+    "tools": 278,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/mailchimp.md"
+   }
+  ]
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.3434505,
+  "seconds": 44.1,
+  "turns": 12,
+  "notes": "Official MCP server at developer/marketing/build/ai-tools/mcp-server; multiple popular community implementations available; free tier available; OAuth 2 tokens do not expire."
+ }
+}

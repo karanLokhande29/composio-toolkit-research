@@ -1,0 +1,262 @@
+{
+ "id": 28,
+ "app": "WhatsApp Business",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://developers.facebook.com/docs/whatsapp",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/overview",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/access-tokens/",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started",
+   "purpose": "access",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/solution-providers/app-review",
+   "purpose": "access",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing",
+   "purpose": "pricing",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/reference/messages/",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.facebook.com/docs/whatsapp/api/rate-limits/",
+   "purpose": "rate_limits",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/webhooks/overview/",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/facebook/openapi",
+   "purpose": "openapi",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.facebook.com/blog/post/2026/09/15/whatsapp-business-messaging-mcp-ai-agent/",
+   "purpose": "mcp_official",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/metabusiness-mcp/meta-business-mcp",
+   "purpose": "mcp_community",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/melgarafael/DeskcommCRM",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/wassengerhq/whatsapp-chatgpt-bot",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/wassengerhq/whatsapp-chatgpt-bot-php",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/whatsapp.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/access-tokens",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing/non-template-messages",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing/authentication-international-rates",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing/ai-providers",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing/change-billing-currency",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing/prepaid-billing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing/deprecated",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing/conversation-based-pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/direct-send/send-utility-and-authentication-messages",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "melgarafael/DeskcommCRM",
+   "url": "https://github.com/melgarafael/DeskcommCRM",
+   "stars": 5523,
+   "description": "Open-source AI sales OS — self-hosted CRM with native AI agents + WhatsApp (WAHA). Open alternative to Kommo, Octadesk & Intercom for any business that sells by"
+  },
+  {
+   "repo": "wassengerhq/whatsapp-chatgpt-bot",
+   "url": "https://github.com/wassengerhq/whatsapp-chatgpt-bot",
+   "stars": 185,
+   "description": "Ready-to-use AI Multimodal ChatGPT-based WhatsApp chatbot assistant for your business. Now supports GPT-4o with text + audio + image input, audio responses, and"
+  },
+  {
+   "repo": "wassengerhq/whatsapp-chatgpt-bot-php",
+   "url": "https://github.com/wassengerhq/whatsapp-chatgpt-bot-php",
+   "stars": 10,
+   "description": "A featured, easy-to-use, multimodal WhatsApp AI GPT-4o Chatbot in PHP for your Business. Supports GPT-4o with text + audio + image input, audio responses, and i"
+  },
+  {
+   "repo": "Eyalm321/zernio-mcp",
+   "url": "https://github.com/Eyalm321/zernio-mcp",
+   "stars": 9,
+   "description": " Model Context Protocol (MCP) server that gives Claude full access to the Zernio social media management API — 273 tools covering posts, analytics, inbox, ads, "
+  },
+  {
+   "repo": "wassengerhq/whatsapp-chatgpt-bot-csharp",
+   "url": "https://github.com/wassengerhq/whatsapp-chatgpt-bot-csharp",
+   "stars": 8,
+   "description": "Ready-to-use, customizable WhatsApp AI GPT4o Chatbot in C# for your Business. Supports GPT-4o with text + audio + image input, audio responses, and improved RAG"
+  }
+ ],
+ "composio": {
+  "exact": [],
+  "candidates": [
+   {
+    "name": "WhatsApp",
+    "slug": "WHATSAPP",
+    "tools": 127,
+    "auth": [
+     "OAUTH2",
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/whatsapp.md"
+   }
+  ]
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.5022833999999999,
+  "seconds": 71.5,
+  "turns": 17,
+  "notes": "Official MCP server exists but no public GitHub repo; deployed via Claude/ChatGPT only. Multiple popular community implementations available."
+ }
+}

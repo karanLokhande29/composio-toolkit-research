@@ -36,3 +36,29 @@
 {"ts": "2026-11-23T15:49:28+05:30", "stage": "extract", "agent": "agent2", "app": "Pipedrive", "pages": 14, "error": null, "cost_usd": 0.21793800000000002, "seconds": 53.1}
 {"ts": "2026-11-23T15:49:29+05:30", "stage": "discover", "agent": "agent1", "app": "Discord", "urls": 24, "ok": 17, "cost_usd": 0.37580979999999997}
 {"ts": "2026-11-23T15:49:33+05:30", "stage": "extract", "agent": "agent2", "app": "HubSpot", "pages": 14, "error": null, "cost_usd": 0.249441, "seconds": 56.5}
+{"ts": "2026-11-23T15:49:47+05:30", "stage": "discover", "agent": "agent1", "app": "Lark (Larksuite)", "urls": 11, "ok": 3, "cost_usd": 0.4447719}
+{"ts": "2026-11-23T15:49:57+05:30", "stage": "extract", "agent": "agent2", "app": "Attio", "pages": 13, "error": null, "cost_usd": 0.24526799999999999, "seconds": 84.1}
+{"ts": "2026-11-23T15:50:14+05:30", "stage": "discover", "agent": "agent1", "app": "WhatsApp Business", "urls": 25, "ok": 25, "cost_usd": 0.5022833999999999}
+{"ts": "2026-11-23T15:50:15+05:30", "stage": "discover", "agent": "agent1", "app": "Pumble", "urls": 21, "ok": 18, "cost_usd": 0.3717984999999999}
+{"ts": "2026-11-23T15:50:18+05:30", "stage": "discover", "agent": "agent1", "app": "Vonage", "urls": 22, "ok": 21, "cost_usd": 0.34617650000000005}
+{"ts": "2026-11-23T15:50:40+05:30", "stage": "discover", "agent": "agent1", "app": "Meta Ads", "urls": 24, "ok": 23, "cost_usd": 0.4090185}
+{"ts": "2026-11-23T15:50:46+05:30", "stage": "discover", "agent": "agent1", "app": "Google Ads", "urls": 21, "ok": 20, "cost_usd": 0.34938749999999996}
+{"ts": "2026-11-23T15:50:48+05:30", "stage": "discover", "agent": "agent1", "app": "Telegram", "urls": 23, "ok": 23, "cost_usd": 0.3515329}
+{"ts": "2026-11-23T15:50:57+05:30", "stage": "discover", "agent": "agent1", "app": "Aircall", "urls": 26, "ok": 25, "cost_usd": 0.5637021}
+{"ts": "2026-11-23T15:50:59+05:30", "stage": "discover", "agent": "agent1", "app": "LinkedIn Ads", "urls": 23, "ok": 23, "cost_usd": 0.3878298}
+{"ts": "2026-11-23T15:51:13+05:30", "stage": "discover", "agent": "agent1", "app": "Mailchimp", "urls": 20, "ok": 20, "cost_usd": 0.3434505}
+{"ts": "2026-11-23T15:51:20+05:30", "stage": "discover", "agent": "agent1", "app": "GoHighLevel", "urls": 22, "ok": 21, "cost_usd": 0.43054229999999993}
+{"ts": "2026-11-23T15:51:23+05:30", "stage": "discover", "agent": "agent1", "app": "systeme.io", "urls": 21, "ok": 19, "cost_usd": 0.30738139999999997}
+{"ts": "2026-11-23T15:51:27+05:30", "stage": "discover", "agent": "agent1", "app": "Threads (Meta)", "urls": 5, "ok": 5, "cost_usd": 0}
+{"ts": "2026-11-23T15:51:31+05:30", "stage": "discover", "agent": "agent1", "app": "SendGrid", "urls": 9, "ok": 7, "cost_usd": 0}
+{"ts": "2026-11-23T15:51:36+05:30", "stage": "discover", "agent": "agent1", "app": "Shopify", "urls": 9, "ok": 5, "cost_usd": 0}
+{"ts": "2026-11-23T15:51:38+05:30", "stage": "discover", "agent": "agent1", "app": "Pinterest", "urls": 19, "ok": 18, "cost_usd": 0.31207380000000007}
+{"ts": "2026-11-23T15:51:46+05:30", "stage": "discover", "agent": "agent1", "app": "Salesforce Commerce Cloud", "urls": 8, "ok": 8, "cost_usd": 0}
+{"ts": "2026-11-23T15:51:47+05:30", "stage": "discover", "agent": "agent1", "app": "WooCommerce", "urls": 10, "ok": 10, "cost_usd": 0}
+{"ts": "2026-11-23T15:51:49+05:30", "stage": "discover", "agent": "agent1", "app": "BigCommerce", "urls": 15, "ok": 15, "cost_usd": 0}
+{"ts": "2026-11-23T15:51:50+05:30", "stage": "discover", "agent": "agent1", "app": "Magento (Adobe Commerce)", "urls": 10, "ok": 9, "cost_usd": 0}
+{"ts": "2026-11-23T15:51:51+05:30", "stage": "discover", "agent": "agent1", "app": "Ecwid", "urls": 6, "ok": 6, "cost_usd": 0}
+{"ts": "2026-11-23T15:51:54+05:30", "stage": "discover", "agent": "agent1", "app": "Gumroad", "urls": 5, "ok": 4, "cost_usd": 0}
+{"ts": "2026-11-23T15:51:54+05:30", "stage": "discover", "agent": "agent1", "app": "Squarespace", "urls": 9, "ok": 8, "cost_usd": 0}
+{"ts": "2026-11-23T15:51:59+05:30", "stage": "discover", "agent": "agent1", "app": "fanbasis", "urls": 5, "ok": 5, "cost_usd": 0}
+{"ts": "2026-11-23T15:51:59+05:30", "stage": "discover", "agent": "agent1", "app": "Amazon Selling Partner", "urls": 6, "ok": 6, "cost_usd": 0}

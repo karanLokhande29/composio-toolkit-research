@@ -1,0 +1,213 @@
+{
+ "id": 37,
+ "app": "systeme.io",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://systeme.io",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.systeme.io",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.systeme.io",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.systeme.io",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://systeme.io/pricing",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://systeme.io/features",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.systeme.io/reference/api",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://help.systeme.io/article/2930-how-to-use-systeme-ios-webhook-service",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp",
+   "purpose": "mcp_official",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/snzeeee/mcp-server-systemeio",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/management3consulting69-ops/systeme-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/cotlet-connect/systeme-io-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://help.systeme.io/category/11216-model-context-protocol-mcp",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://help-ar.systeme.io/article/10203-model-context-protocol-mcp-systeme-io",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://help-de.systeme.io/article/10194-so-verwenden-sie-das-model-context-protocol-mcp-mit-systemeio",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://help-el.systeme.io/article/10853-how-to-use-the-systeme-io-mcp",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://help-es.systeme.io/article/10191-como-usar-el-model-context-protocol-mcp-con-systeme-io",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://aide.systeme.io/article/10195-comment-utiliser-le-protocole-mcp-model-context-protocol-avec-systemeio",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://help-hi.systeme.io/article/10584-how-to-use-the-systeme-io-mcp-server-model-context-protocol",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://help-id.systeme.io/article/10440-cara-menggunakan-protokol-konteks-model-mcp-dengan-systeme-io",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "snzeeee/mcp-server-systemeio",
+   "url": "https://github.com/snzeeee/mcp-server-systemeio",
+   "stars": 3,
+   "description": "MCP Server for Systeme.io — manage contacts, tags, courses, and subscriptions through Claude"
+  },
+  {
+   "repo": "management3consulting69-ops/systeme-mcp",
+   "url": "https://github.com/management3consulting69-ops/systeme-mcp",
+   "stars": 0,
+   "description": "369Management MCP Server Systeme.io"
+  },
+  {
+   "repo": "cotlet-connect/systeme-io-mcp",
+   "url": "https://github.com/cotlet-connect/systeme-io-mcp",
+   "stars": 0,
+   "description": "Connect Systeme.io to ChatGPT, Claude and any AI agent for funnels, email campaigns, sales and pages."
+  },
+  {
+   "repo": "softreviewed/systeme-extra-mcp",
+   "url": "https://github.com/softreviewed/systeme-extra-mcp",
+   "stars": 0,
+   "description": "Additional Systeme.io MCP tools for course access, community membership, contact fields, subscriptions, webhooks and SMS configuration through Docker Gateway."
+  }
+ ],
+ "composio": {
+  "exact": [],
+  "candidates": []
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.30738139999999997,
+  "seconds": 37.1,
+  "turns": 11,
+  "notes": "systeme.io has a public API with rate limits tied to pricing plans (30-unlimited requests/min). OpenAPI spec not publicly available. No community MCP server found."
+ }
+}

@@ -1,0 +1,138 @@
+{
+ "id": 4,
+ "app": "Attio",
+ "category": "CRM and Sales",
+ "hint": "attio.com",
+ "one_liner": "Attio is a CRM platform for sales/GTM teams that organizes company, people, and deal data and lets AI agents find leads, update records, and draft follow-ups across the workspace.",
+ "app_type": "saas",
+ "auth": {
+  "methods": [
+   "bearer_token",
+   "oauth2"
+  ],
+  "oauth_grant_types": [],
+  "notes": "Docs list an OAuth 2.0 reference section and an access-token based bearer auth path; exact grant type not stated in the provided pages.",
+  "evidence": [
+   {
+    "url": "https://docs.attio.com/rest-api/overview",
+    "snippet": "Building an OAuth flow for your app",
+    "check": "exact"
+   },
+   {
+    "url": "https://attio.com/platform/mcp",
+    "snippet": "Authenticate via OAuth with user-scoped permissions.",
+    "check": "exact"
+   },
+   {
+    "url": "https://github.com/hmk/attio-mcp-server",
+    "snippet": "This is expected to be a bearer token which means you can get one through the API Explorer",
+    "check": "exact"
+   }
+  ]
+ },
+ "access": {
+  "status": "self_serve_free",
+  "dev_sandbox": true,
+  "notes": "A developer console account can be created for free and the Free workspace plan includes API and webhook access, so a developer can self-serve credentials without payment or sales contact.",
+  "evidence": [
+   {
+    "url": "https://attio.com/partners/app-partners",
+    "snippet": "Head over to our developer console and sign in with your Attio account. Create your app and give it a unique name.",
+    "check": "exact"
+   },
+   {
+    "url": "https://attio.com/pricing",
+    "snippet": "Yes. The Free plan costs nothing for up to three users.",
+    "check": "exact"
+   }
+  ]
+ },
+ "api_surface": {
+  "styles": [
+   "rest"
+  ],
+  "breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "rate_limit_note": "A dedicated rate-limit guide exists but no specific numeric limits are given in the provided pages.",
+  "evidence": [
+   {
+    "url": "https://docs.attio.com/rest-api/overview",
+    "snippet": "Attio provides a public REST API which exchanges JSON over HTTPS.",
+    "check": "exact"
+   },
+   {
+    "url": "https://docs.attio.com/rest-api/overview",
+    "snippet": "Setting up and listening to webhooks",
+    "check": "exact"
+   },
+   {
+    "url": "https://docs.attio.com/rest-api/overview",
+    "snippet": "Working within our rate limits",
+    "check": "exact"
+   }
+  ]
+ },
+ "mcp": {
+  "official": "https://attio.com/platform/mcp",
+  "community": [
+   "https://github.com/kesslerio/attio-mcp-server",
+   "https://github.com/hmk/attio-mcp-server",
+   "https://github.com/redriverwest/attio-mcp"
+  ],
+  "evidence": [
+   {
+    "url": "https://attio.com/platform/mcp",
+    "snippet": "Use Attio from your AI tools to find deals, log calls, and draft follow-ups.",
+    "check": "exact"
+   },
+   {
+    "url": "https://github.com/kesslerio/attio-mcp-server",
+    "snippet": "MCP server exposing Attio CRM records, deals, and pipelines to agent clients.",
+    "check": "exact"
+   },
+   {
+    "url": "https://github.com/hmk/attio-mcp-server",
+    "snippet": "This is an MCP server for Attio , the AI-native CRM.",
+    "check": "repaired"
+   },
+   {
+    "url": "https://github.com/redriverwest/attio-mcp",
+    "snippet": "MCP server for integrating Attio CRM with AI agents",
+    "check": "exact"
+   }
+  ]
+ },
+ "buildability": {
+  "verdict": "ready",
+  "main_blocker": "none",
+  "rationale": "A free self-serve developer account, documented REST API with OAuth/token auth, webhooks, and an existing 114-tool Composio toolkit show a toolkit can already be built today.",
+  "composio_existing_toolkit": "yes",
+  "composio_slug": "ATTIO"
+ },
+ "overview_evidence": [
+  {
+   "url": "https://attio.com",
+   "snippet": "Attio is the platform that builds pipeline, advances deals, and grows accounts around the clock."
+  },
+  {
+   "url": "https://attio.com/partners/app-partners",
+   "snippet": "Develop apps that read and write information to and from workspaces."
+  }
+ ],
+ "confidence": 0.75,
+ "unknown_reasons": {
+  "auth": "Exact OAuth grant type (e.g., authorization code vs client credentials) is not stated in the provided pages.",
+  "access": "",
+  "api_surface": "No explicit OpenAPI spec URL or precise endpoint/resource count is shown in the extracted page content; breadth is inferred from the Composio toolkit's 114 tools and the wide list of webhook event types referenced in nav.",
+  "mcp": "The provided pages show a marketing/feature page for Attio's MCP offering but no explicit MCP server connection URL or protocol doc was shown."
+ },
+ "_meta": {
+  "agent": "agent2",
+  "model": "sonnet",
+  "pages_used": 13,
+  "error": null,
+  "cost_usd": 0.24526799999999999,
+  "seconds": 84.1
+ }
+}

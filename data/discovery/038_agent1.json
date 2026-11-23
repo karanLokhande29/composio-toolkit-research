@@ -1,0 +1,232 @@
+{
+ "id": 38,
+ "app": "Pinterest",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://developers.pinterest.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.pinterest.com/docs/overview/welcome/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.pinterest.com/docs/getting-started/connect-app/",
+   "purpose": "access",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.pinterest.com/docs/key-concepts/access-tiers/",
+   "purpose": "access",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.pinterest.com/docs/api/v5/introduction/",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developers.pinterest.com/docs/reference/rate-limits/",
+   "purpose": "rate_limits",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.pinterest.com/docs/work-with-ads/lead-ads/",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.pinterest.com/about-pinterest-mcp/",
+   "purpose": "mcp_official",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/postoncehq/pinterest-mcp",
+   "purpose": "mcp_community",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/itallstartedwithaidea/advertising-hub",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/terryso/mcp-pinterest",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/collactivelabs/pinterest-mcp-server",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/pinterest.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://business.pinterest.com/en/pinterest-partners",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://help.pinterest.com/article/two-factor-authentication",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.pinterest.com/docs/getting-started/make-an-api-call/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.pinterest.com/docs/work-with-ads/share-business-access/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://help.pinterest.com/en/mcp-interest",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "itallstartedwithaidea/advertising-hub",
+   "url": "https://github.com/itallstartedwithaidea/advertising-hub",
+   "stars": 60,
+   "description": "The open-source one-stop shop for advertising platform APIs, MCP servers, AI agents, and PPC automation. 14 platforms (Google Ads, Meta, Microsoft, Amazon, Link"
+  },
+  {
+   "repo": "terryso/mcp-pinterest",
+   "url": "https://github.com/terryso/mcp-pinterest",
+   "stars": 52,
+   "description": ""
+  },
+  {
+   "repo": "collactivelabs/pinterest-mcp-server",
+   "url": "https://github.com/collactivelabs/pinterest-mcp-server",
+   "stars": 41,
+   "description": "A Model Context Protocol (MCP) server for integrating the Pinterest API with AI agents and LLMs."
+  },
+  {
+   "repo": "xyonium/reach-mcp",
+   "url": "https://github.com/xyonium/reach-mcp",
+   "stars": 13,
+   "description": "一次查询横跨 33 中英文信息源 —— 社媒（全网搜索、小红书、微博、知乎、豆瓣、头条、linux.do、B站、X、Reddit、Instagram、Threads、TikTok、YouTube、Pinterest、Bluesky、LinkedIn、quora）、IT（GitHub、HN、V2EX、RSS、arXiv、"
+  },
+  {
+   "repo": "clugtu/pinterest-mcp",
+   "url": "https://github.com/clugtu/pinterest-mcp",
+   "stars": 8,
+   "description": "MCP server for the Pinterest API v5 — create pins, manage boards, track analytics. First open-source Pinterest MCP server."
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Pinterest",
+    "slug": "PINTEREST",
+    "tools": 27,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/pinterest.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Pinterest",
+    "slug": "PINTEREST",
+    "tools": 27,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/pinterest.md"
+   },
+   {
+    "name": "Pinterest Ads",
+    "slug": "PINTEREST_ADS",
+    "tools": 10,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/pinterest_ads.md"
+   }
+  ]
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.31207380000000007,
+  "seconds": 33.0,
+  "turns": 14,
+  "notes": "No standalone OpenAPI spec file found; API uses REST v5. Pinterest MCP server is currently restricted to named agency partners (alpha). Pricing is free tier-based with rate limits rather than paid plans."
+ }
+}

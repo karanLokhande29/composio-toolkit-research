@@ -1,0 +1,264 @@
+{
+ "id": 33,
+ "app": "LinkedIn Ads",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://learn.microsoft.com/linkedin/marketing",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/ads-overview?view=li-lms-2026-10",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/authorization-code-flow",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/getting-access",
+   "purpose": "access",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/marketing-tiers?view=li-lms-2026-04",
+   "purpose": "access",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads-reporting/ad-budget-pricing?view=li-lms-2026-07",
+   "purpose": "pricing",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/getting-started?view=li-lms-2026-09",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads-reporting/conversions-api?view=li-lms-2026-09",
+   "purpose": "rate_limits",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://learn.microsoft.com/en-us/linkedin/shared/api-guide/developer-webhooks",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/danielpopamd/linkedin-ads-mcp",
+   "purpose": "mcp_community",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/paidsync/linkedin-ads-mcp",
+   "purpose": "mcp_community",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/amekala/ads-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/itallstartedwithaidea/advertising-hub",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/markifact/markifact-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/linkedin_ads.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://learn.microsoft.com/en-us/linkedin/marketing/increasing-access?view=li-lms-2026-11",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/authorization-code-flow?view=li-lms-2026-11&toc=/linkedin/marketing/toc.json&bc=/linkedin/breadcrumb/toc.json",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/getting-started?view=li-lms-2026-11",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads-reporting/getting-started?view=li-lms-2026-11",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://learn.microsoft.com/en-us/linkedin/marketing/conversions/getting-access-conversions?view=li-lms-2026-11",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://learn.microsoft.com/en-us/linkedin/shared/linkedin-api-partner-support-guide?view=li-lms-2026-11&toc=/linkedin/marketing/toc.json&bc=/linkedin/breadcrumb/toc.json",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/authentication?view=li-lms-2026-10",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/developer-portal-tools",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "amekala/ads-mcp",
+   "url": "https://github.com/amekala/ads-mcp",
+   "stars": 108,
+   "description": "MCP server for managing ad campaigns across Google Ads, Meta Ads, LinkedIn Ads, and TikTok Ads. 100+ tools for campaign creation, performance analysis, keyword "
+  },
+  {
+   "repo": "itallstartedwithaidea/advertising-hub",
+   "url": "https://github.com/itallstartedwithaidea/advertising-hub",
+   "stars": 60,
+   "description": "The open-source one-stop shop for advertising platform APIs, MCP servers, AI agents, and PPC automation. 14 platforms (Google Ads, Meta, Microsoft, Amazon, Link"
+  },
+  {
+   "repo": "markifact/markifact-mcp",
+   "url": "https://github.com/markifact/markifact-mcp",
+   "stars": 58,
+   "description": "MCP server for Google Ads, Meta Ads, GA4, TikTok Ads, and LinkedIn Ads. Manage 1000+ ad operations from Claude, ChatGPT, Gemini, Cursor, or any AI client. Human"
+  },
+  {
+   "repo": "jshorwitz/awesome-agentic-advertising",
+   "url": "https://github.com/jshorwitz/awesome-agentic-advertising",
+   "stars": 47,
+   "description": "A curated list of MCP servers, tools, protocols, and resources for AI-powered advertising campaign management. Covers Google Ads, Meta, LinkedIn, Reddit, TikTok"
+  },
+  {
+   "repo": "danielpopamd/linkedin-ads-mcp",
+   "url": "https://github.com/danielpopamd/linkedin-ads-mcp",
+   "stars": 42,
+   "description": "LinkedIn Ads MCP server with full write access: 25 tools across campaigns, creatives, audiences, conversions, and analytics. Create, update, and delete from Cla"
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Linkedin Ads",
+    "slug": "LINKEDIN_ADS",
+    "tools": 28,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/linkedin_ads.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "LinkedIn",
+    "slug": "LINKEDIN",
+    "tools": 31,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/linkedin.md"
+   },
+   {
+    "name": "Linkedin Ads",
+    "slug": "LINKEDIN_ADS",
+    "tools": 28,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/linkedin_ads.md"
+   }
+  ]
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.3878298,
+  "seconds": 52.6,
+  "turns": 15,
+  "notes": "No official OpenAPI spec or MCP server from LinkedIn/Microsoft found; API access requires app review and approval process; two access tiers (Development and Standard) with different capabilities; API is free but ad spend requires paid advertising budget"
+ }
+}

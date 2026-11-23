@@ -349,8 +349,8 @@
     "app_type": "cloud_platform"
    }
   },
-  "needs_human": false,
-  "human_reason": ""
+  "needs_human": true,
+  "human_reason": "loop3 error: LLM failed after retries: claude cli error: You've hit your session limit · resets 4:20pm (Asia/Calcutta)"
  },
  {
   "id": 2,
@@ -1169,8 +1169,8 @@
     "app_type": "saas"
    }
   },
-  "needs_human": false,
-  "human_reason": ""
+  "needs_human": true,
+  "human_reason": "loop3 error: LLM failed after retries: claude cli error: You've hit your session limit · resets 4:20pm (Asia/Calcutta)"
  },
  {
   "id": 4,
@@ -1450,11 +1450,140 @@
      },
      "flags": [],
      "changed": []
+    },
+    {
+     "loop": 2,
+     "model": "sonnet",
+     "changed": [],
+     "hard": []
     }
    ],
-   "disagreements": [],
+   "disagreements": [
+    {
+     "field": "auth.methods",
+     "agent1": [
+      "api_key",
+      "bearer_token",
+      "oauth2"
+     ],
+     "agent2": [
+      "bearer_token",
+      "oauth2"
+     ],
+     "level": "soft"
+    }
+   ],
    "resolved_by": "agent",
-   "human_checked": false
+   "human_checked": false,
+   "agent2": {
+    "auth": {
+     "methods": [
+      "bearer_token",
+      "oauth2"
+     ],
+     "oauth_grant_types": [],
+     "notes": "Docs list an OAuth 2.0 reference section and an access-token based bearer auth path; exact grant type not stated in the provided pages.",
+     "evidence": [
+      {
+       "url": "https://docs.attio.com/rest-api/overview",
+       "snippet": "Building an OAuth flow for your app",
+       "check": "exact"
+      },
+      {
+       "url": "https://attio.com/platform/mcp",
+       "snippet": "Authenticate via OAuth with user-scoped permissions.",
+       "check": "exact"
+      },
+      {
+       "url": "https://github.com/hmk/attio-mcp-server",
+       "snippet": "This is expected to be a bearer token which means you can get one through the API Explorer",
+       "check": "exact"
+      }
+     ]
+    },
+    "access": {
+     "status": "self_serve_free",
+     "dev_sandbox": true,
+     "notes": "A developer console account can be created for free and the Free workspace plan includes API and webhook access, so a developer can self-serve credentials without payment or sales contact.",
+     "evidence": [
+      {
+       "url": "https://attio.com/partners/app-partners",
+       "snippet": "Head over to our developer console and sign in with your Attio account. Create your app and give it a unique name.",
+       "check": "exact"
+      },
+      {
+       "url": "https://attio.com/pricing",
+       "snippet": "Yes. The Free plan costs nothing for up to three users.",
+       "check": "exact"
+      }
+     ]
+    },
+    "api_surface": {
+     "styles": [
+      "rest"
+     ],
+     "breadth": "broad",
+     "openapi_spec_url": null,
+     "webhooks": true,
+     "rate_limit_note": "A dedicated rate-limit guide exists but no specific numeric limits are given in the provided pages.",
+     "evidence": [
+      {
+       "url": "https://docs.attio.com/rest-api/overview",
+       "snippet": "Attio provides a public REST API which exchanges JSON over HTTPS.",
+       "check": "exact"
+      },
+      {
+       "url": "https://docs.attio.com/rest-api/overview",
+       "snippet": "Setting up and listening to webhooks",
+       "check": "exact"
+      },
+      {
+       "url": "https://docs.attio.com/rest-api/overview",
+       "snippet": "Working within our rate limits",
+       "check": "exact"
+      }
+     ]
+    },
+    "mcp": {
+     "official": "https://attio.com/platform/mcp",
+     "community": [
+      "https://github.com/kesslerio/attio-mcp-server",
+      "https://github.com/hmk/attio-mcp-server",
+      "https://github.com/redriverwest/attio-mcp"
+     ],
+     "evidence": [
+      {
+       "url": "https://attio.com/platform/mcp",
+       "snippet": "Use Attio from your AI tools to find deals, log calls, and draft follow-ups.",
+       "check": "exact"
+      },
+      {
+       "url": "https://github.com/kesslerio/attio-mcp-server",
+       "snippet": "MCP server exposing Attio CRM records, deals, and pipelines to agent clients.",
+       "check": "exact"
+      },
+      {
+       "url": "https://github.com/hmk/attio-mcp-server",
+       "snippet": "This is an MCP server for Attio , the AI-native CRM.",
+       "check": "repaired"
+      },
+      {
+       "url": "https://github.com/redriverwest/attio-mcp",
+       "snippet": "MCP server for integrating Attio CRM with AI agents",
+       "check": "exact"
+      }
+     ]
+    },
+    "buildability": {
+     "verdict": "ready",
+     "main_blocker": "none",
+     "rationale": "A free self-serve developer account, documented REST API with OAuth/token auth, webhooks, and an existing 114-tool Composio toolkit show a toolkit can already be built today.",
+     "composio_existing_toolkit": "yes",
+     "composio_slug": "ATTIO"
+    },
+    "one_liner": "Attio is a CRM platform for sales/GTM teams that organizes company, people, and deal data and lets AI agents find leads, update records, and draft follow-ups across the workspace.",
+    "app_type": "saas"
+   }
   },
   "needs_human": false,
   "human_reason": ""
@@ -1818,7 +1947,7 @@
     "app_type": "open_source_self_hostable"
    }
   },
-  "needs_human": false,
-  "human_reason": ""
+  "needs_human": true,
+  "human_reason": "loop3 error: LLM failed after retries: claude cli error: You've hit your session limit · resets 4:20pm (Asia/Calcutta)"
  }
 ]
