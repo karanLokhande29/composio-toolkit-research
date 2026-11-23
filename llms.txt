@@ -3,7 +3,7 @@
 > An agent researched 100 apps for Composio toolkit feasibility (auth, self-serve vs gated access, API surface, MCP,
 > buildability) with a verbatim evidence quote behind every answer, then verified itself in 3 automated loops + a human sample.
 
-Human accuracy check: pending.
+Accuracy on a stratified sample, judged by an independent AI auditor (NOT a human): pass 1 81% -> final 83%.
 
 ## Machine-readable files
 - [results.json](https://karanlokhande29.github.io/composio-toolkit-research/results.json): one object per app (schema: auth, access, api_surface, mcp, buildability, evidence, pass1, verification)
@@ -16,5 +16,5 @@ Human accuracy check: pending.
 - Getting credentials is mostly self-serve: 74% of apps let a developer get working credentials alone (free or trial); 19 are gated by an admin, app review, partner programme or sales.
 - Gating clusters by category: Developer, Infra and Data platforms is the most self-serve (100%), Marketing, Ads, Email and Social the least (40%).
 - The most common blocker is 'paid plan' (13 apps); 58 apps are ready today, 36 ready with caveats, 6 blocked.
-- MCP is already mainstream: 50 vendors ship an official MCP server and 25 more have only community servers.
+- MCP is already mainstream: at least 50 vendors ship an official MCP server and 25 more have community servers (a lower bound - the accuracy audit shows the agent misses official MCP servers more than anything else).
 - Composio already has toolkits for 80 of the 100; 4 self-serve, ready apps have no Composio toolkit yet - the cheapest net-new wins.
