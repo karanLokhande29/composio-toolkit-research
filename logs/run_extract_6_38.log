@@ -1,0 +1,19 @@
+IST now 16:21 | deadline 23:00 | 6h38m left
+extract: 33 apps to do
+  [  8] Close                        auth=api_key,bearer_token,oauth2 access=self_serve_trial   verdict=ready              pages=12 66.9s $0.069 
+  [  7] Zoho CRM                     auth=oauth2             access=self_serve_free    verdict=ready              pages=12 88.6s $0.087 
+  [  9] Copper                       auth=api_key,oauth2     access=paid_plan_required verdict=ready_with_caveats pages=12 101.8s $0.079 
+  [  6] Podio                        auth=oauth2             access=self_serve_free    verdict=ready              pages=12 105.4s $0.089 
+  [ 10] DealCloud                    auth=oauth2             access=admin_approval     verdict=ready_with_caveats pages=12 153.7s $0.090 
+  [ 11] Zendesk                      auth=basic,oauth2       access=self_serve_trial   verdict=ready_with_caveats pages=12 92.6s $0.094 
+  [ 12] Intercom                     auth=bearer_token,oauth2 access=self_serve_free    verdict=ready              pages=12 77.3s $0.078 
+  [ 14] Front                        auth=bearer_token,oauth2 access=self_serve_free    verdict=ready              pages=12 95.5s $0.083 
+  [ 13] Freshdesk                    auth=api_key            access=self_serve_trial   verdict=ready_with_caveats pages=12 125.3s $0.096 
+  [ 15] Pylon                        auth=bearer_token,oauth2 access=contact_sales      verdict=ready_with_caveats pages=12 74.3s $0.068 
+  [ 16] LiveAgent                    auth=api_key,oauth2     access=self_serve_trial   verdict=ready_with_caveats pages=12 72.2s $0.070 
+  [ 17] Plain                        auth=bearer_token,oauth2 access=self_serve_trial   verdict=ready              pages=12 66.5s $0.069 
+  [ 20] Gladly                       auth=basic              access=admin_approval     verdict=ready_with_caveats pages=10 53.9s $0.048 
+  [ 18] Help Scout                   auth=oauth2             access=self_serve_trial   verdict=ready_with_caveats pages=12 102.2s $0.088 
+  [ 22] Twilio                       auth=api_key,basic,oauth2 access=self_serve_trial   verdict=ready_with_caveats pages=12 70.8s $0.080 
+  [ 21] Slack                        auth=oauth2             access=self_serve_free    verdict=ready              pages=12 78.3s $0.079 
+  [ 19] Gorgias                      auth=api_key,oauth2     access=self_serve_free    verdict=ready              pages=12 93.5s $0.081 

@@ -1,0 +1,137 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.080296,
+  "seconds": 70.8,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://www.twilio.com/docs/usage/api-security-reference-guide/secure-auth",
+  "https://www.twilio.com/docs/usage/trials",
+  "https://www.twilio.com/en-us/pricing",
+  "https://www.twilio.com/docs/iam/api",
+  "https://www.twilio.com/docs/ai/mcp",
+  "https://www.twilio.com/en-us/developers",
+  "https://www.twilio.com/docs/verify/api/rate-limits-and-timeouts",
+  "https://www.twilio.com/docs/usage/webhooks/getting-started-twilio-webhooks",
+  "https://www.twilio.com/docs/openapi",
+  "https://docs.composio.dev/toolkits/twilio.md",
+  "https://github.com/griffinwork40/twilio-mcp",
+  "https://twilio.com"
+ ],
+ "output": {
+  "one_liner": "Twilio is a cloud communications platform providing APIs for SMS, email, voice, video, conversations, and authentication across multiple channels.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "api_key",
+    "basic"
+   ],
+   "oauth_grant_types": [],
+   "notes": "OAuth 2.0 recommended for new integrations with short-lived tokens and scoped permissions; API Keys for server-side applications; Auth Token as legacy option.",
+   "evidence": [
+    {
+     "url": "https://www.twilio.com/docs/usage/api-security-reference-guide/secure-auth",
+     "snippet": "Twilio supports three authentication methods. Choose based on your security requirements and integration needs: OAuth 2.0, API Keys, Auth Token authentication"
+    },
+    {
+     "url": "https://www.twilio.com/docs/iam/api",
+     "snippet": "To authenticate requests to the Twilio APIs, Twilio supports HTTP Basic authentication."
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_trial",
+   "dev_sandbox": true,
+   "notes": "Free 30-day trial without credit card required; full API access during trial. Production use requires paid subscription after trial expiration.",
+   "evidence": [
+    {
+     "url": "https://www.twilio.com/docs/usage/trials",
+     "snippet": "When you create a Twilio account, you start with a free 30-day trial that lets you explore Twilio products before upgrading."
+    },
+    {
+     "url": "https://www.twilio.com/docs/usage/trials",
+     "snippet": "Sign up for a Twilio free trial account without a credit card. Trial accounts expire after 30 days."
+    },
+    {
+     "url": "https://www.twilio.com/en-us/pricing",
+     "snippet": "Start for free. Then pay as you go. Sign up for a free trial—no credit card required"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Rate limits vary by product; Verify service enforces 60 requests per minute, 180 per hour, 250 per day for status checks.",
+   "evidence": [
+    {
+     "url": "https://www.twilio.com/docs/iam/api",
+     "snippet": "The Twilio REST API allows you to query metadata about your account"
+    },
+    {
+     "url": "https://www.twilio.com/docs/openapi",
+     "snippet": "Twilio OpenAPI 3.0 specification files allow you to integrate the Twilio API with a wide variety of community tools."
+    },
+    {
+     "url": "https://www.twilio.com/docs/ai/mcp",
+     "snippet": "Twilio's full API surface—over 1,800 endpoints across 30+ products"
+    },
+    {
+     "url": "https://www.twilio.com/docs/usage/webhooks/getting-started-twilio-webhooks",
+     "snippet": "Your app can use webhooks with the following Twilio products: Voice, Facebook Messenger"
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://mcp.twilio.com/docs",
+   "community": [
+    "https://github.com/griffinwork40/twilio-mcp"
+   ],
+   "evidence": [
+    {
+     "url": "https://www.twilio.com/docs/ai/mcp",
+     "snippet": "The Twilio Model Context Protocol (MCP) server gives AI coding agents direct, structured access to Twilio's full API surface"
+    },
+    {
+     "url": "https://www.twilio.com/docs/ai/mcp",
+     "snippet": "The MCP server is hosted by Twilio at mcp.twilio.com/docs"
+    },
+    {
+     "url": "https://github.com/griffinwork40/twilio-mcp",
+     "snippet": "Model Context Protocol (MCP) server for Twilio SMS messaging with intelligent conversation management"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "paid_plan",
+   "rationale": "Fully documented REST API with 1,800+ endpoints, OpenAPI specs, and webhooks; free 30-day trial enables immediate toolkit development, but production use requires paid subscription.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "TWILIO"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://twilio.com",
+    "snippet": "The Twilio platform empowers humans and AI agents to work together, coordinate across channels"
+   },
+   {
+    "url": "https://www.twilio.com/en-us/developers",
+    "snippet": "You're now at the one-stop command center for building with Twilio."
+   }
+  ],
+  "confidence": 0.96,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  }
+ }
+}

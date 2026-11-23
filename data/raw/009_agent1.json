@@ -1,0 +1,130 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.079283,
+  "seconds": 101.8,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://developer.copper.com/introduction/authentication.html",
+  "https://developer.copper.com/introduction/oauth/flow.html",
+  "https://support.copper.com/en/articles/8823347-generating-an-api-key",
+  "https://support.copper.com/en/articles/9623758-copper-plans-feature-comparison",
+  "https://www.copper.com/partners",
+  "https://www.copper.com/mcp",
+  "https://developer.copper.com/",
+  "https://developer.copper.com/introduction/requests.html",
+  "https://developer.copper.com/webhooks/overview.html",
+  "https://developer.copper.com/v1/openapi.json",
+  "https://docs.composio.dev/toolkits/copper.md",
+  "https://glama.ai/mcp/servers/dazanza/copper-mcp"
+ ],
+ "output": {
+  "one_liner": "CRM platform for managing contacts, companies, leads, opportunities, projects, tasks, activities, files, and webhooks, optimized for Google Workspace.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "api_key",
+    "oauth2"
+   ],
+   "oauth_grant_types": [
+    "authorization_code"
+   ],
+   "notes": "API keys require admin generation in Copper web app. OAuth2 uses Authorization Code Grant flow with Bearer token authentication.",
+   "evidence": [
+    {
+     "url": "https://developer.copper.com/introduction/authentication.html",
+     "snippet": "There are two ways to access the Copper Developer API: API keys and OAuth2.0."
+    },
+    {
+     "url": "https://developer.copper.com/introduction/authentication.html",
+     "snippet": "The Dev API uses token based authentication. You have to include the token in the header of every request"
+    },
+    {
+     "url": "https://developer.copper.com/introduction/oauth/flow.html",
+     "snippet": "Third-party integrations may take advantage of OAuth 2.0 for the purpose of authorizing and authenticating access to the Copper Developer API."
+    }
+   ]
+  },
+  "access": {
+   "status": "paid_plan_required",
+   "dev_sandbox": false,
+   "notes": "Developer API is only available on Professional tier ($69+/user/month) or higher paid plans. Self-serve purchase required. Admin must generate API keys in-app.",
+   "evidence": [
+    {
+     "url": "https://support.copper.com/en/articles/9623758-copper-plans-feature-comparison",
+     "snippet": "Professional Tier includes all features of the Basic Tier plus the following additions"
+    },
+    {
+     "url": "https://support.copper.com/en/articles/8823347-generating-an-api-key",
+     "snippet": "Only Admin users are able to generate API Keys."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": "https://developer.copper.com/v1/openapi.json",
+   "webhooks": true,
+   "rate_limit_note": "180 requests per minute globally; bulk APIs limited to 3 requests per second",
+   "evidence": [
+    {
+     "url": "https://developer.copper.com/",
+     "snippet": "The Copper Developer API provides a RESTful interface with JSON-formatted responses to access most Copper resources."
+    },
+    {
+     "url": "https://developer.copper.com/introduction/requests.html",
+     "snippet": "All API calls are limited to 180 requests per minute. Our bulk APIs have an additional rate limit of 3 requests per second."
+    },
+    {
+     "url": "https://developer.copper.com/webhooks/overview.html",
+     "snippet": "Webhooks allow systems integrated with Copper to receive near real-time notification of certain events"
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [
+    "https://glama.ai/mcp/servers/dazanza/copper-mcp"
+   ],
+   "evidence": [
+    {
+     "url": "https://www.copper.com/mcp",
+     "snippet": "Copper is launching an official MCP server, built and hosted by Copper. The beta launches in November 2026."
+    },
+    {
+     "url": "https://glama.ai/mcp/servers/dazanza/copper-mcp",
+     "snippet": "MCP server for the Copper CRM"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "paid_plan",
+   "rationale": "Well-documented REST API with broad resource coverage and webhooks, but requires paid Professional tier ($69+/user/month) for access and admin-only API key generation.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "COPPER"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://docs.composio.dev/toolkits/copper.md",
+    "snippet": "Copper is a customer relationship management platform for managing contacts, companies, leads, opportunities, projects, tasks, activities, files, and webhooks."
+   },
+   {
+    "url": "https://developer.copper.com/",
+    "snippet": "The Copper Developer API provides a RESTful interface with JSON-formatted responses to access most Copper resources."
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": "Official MCP server in beta launching November 2026; no public repository URL yet published"
+  }
+ }
+}

@@ -1,0 +1,306 @@
+{
+ "id": 64,
+ "app": "Cloudflare",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://developers.cloudflare.com/api",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.cloudflare.com/api/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.cloudflare.com/api/fundamentals/authentication/",
+   "purpose": "authentication",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developers.cloudflare.com/api/fundamentals/rate-limiting/",
+   "purpose": "rate limits",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developers.cloudflare.com/api/fundamentals/errors/",
+   "purpose": "api reference",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developers.cloudflare.com/api/operations/",
+   "purpose": "api reference",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developers.cloudflare.com/api/getting-started/",
+   "purpose": "access",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developers.cloudflare.com/notifications/webhooks/",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/cloudflare/mcp-server-cloudflare",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/tianma-if/edgeever",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/cloudflare/mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/cloudflare.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.cloudflare.com/api/resources/billing/subresources/rate_plans",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.cloudflare.com/api/resources/billing/subresources/rate_plans/methods/get",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.cloudflare.com/api/resources/iam/subresources/oauth_clients",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.cloudflare.com/api/resources/iam/subresources/oauth_clients/methods/list",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.cloudflare.com/api/resources/iam/subresources/oauth_clients/methods/get",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.cloudflare.com/api/resources/iam/subresources/oauth_clients/methods/create",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.cloudflare.com/api/resources/iam/subresources/oauth_clients/methods/update",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.cloudflare.com/api/resources/iam/subresources/oauth_clients/methods/delete",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.cloudflare.com/api/resources/iam/subresources/oauth_clients/methods/rotate_secret",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.cloudflare.com/api/resources/iam/subresources/oauth_clients/methods/delete_rotated_secret",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.cloudflare.com/api/resources/iam/subresources/oauth_scopes",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.cloudflare.com/api/resources/iam/subresources/oauth_scopes/methods/list",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.cloudflare.com/api/resources/ai/subresources/authors",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.cloudflare.com/api/resources/ai/subresources/authors/methods/list",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "cloudflare/mcp-server-cloudflare",
+   "url": "https://github.com/cloudflare/mcp-server-cloudflare",
+   "stars": 4489,
+   "description": "Product specific Cloudflare MCP servers"
+  },
+  {
+   "repo": "tianma-if/edgeever",
+   "url": "https://github.com/tianma-if/edgeever",
+   "stars": 3513,
+   "description": "AI-native note-taking app & Evernote/Obsidian alternative. Instant all-platform sync, rich notes (tables, mind maps, diagrams, posters), web clipper & MCP. 100%"
+  },
+  {
+   "repo": "cloudflare/mcp",
+   "url": "https://github.com/cloudflare/mcp",
+   "stars": 1157,
+   "description": "MCP server for the Cloudflare API"
+  },
+  {
+   "repo": "iannuttall/mcp-boilerplate",
+   "url": "https://github.com/iannuttall/mcp-boilerplate",
+   "stars": 1017,
+   "description": "A remote Cloudflare MCP server boilerplate with user authentication and Stripe for paid tools."
+  },
+  {
+   "repo": "P1kaj1uu/ChattyPlay-Agent",
+   "url": "https://github.com/P1kaj1uu/ChattyPlay-Agent",
+   "stars": 1002,
+   "description": "🚀 告别多个App！本项目主要基于Python+React+TypeScript+Hono+SQLite3+Redis，打造“All in One”智能工具集。免会员播放爱奇艺、腾讯视频、优酷、抖音、B站、小红书等20+平台视频，支持4K在线解析与无水印高速下载。集成Cloudflare Turnstile防机器人和爬"
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Cloudflare",
+    "slug": "CLOUDFLARE",
+    "tools": 171,
+    "auth": [
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/cloudflare.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Cloudflare",
+    "slug": "CLOUDFLARE",
+    "tools": 171,
+    "auth": [
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/cloudflare.md"
+   },
+   {
+    "name": "Cloudflare Api Key",
+    "slug": "CLOUDFLARE_API_KEY",
+    "tools": 103,
+    "auth": [
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/cloudflare_api_key.md"
+   },
+   {
+    "name": "Cloudflare Browser Rendering",
+    "slug": "CLOUDFLARE_BROWSER_RENDERING",
+    "tools": 4,
+    "auth": [
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/cloudflare_browser_rendering.md"
+   },
+   {
+    "name": "Cloudflare MCP",
+    "slug": "CLOUDFLARE_MCP",
+    "tools": 3,
+    "auth": [
+     "DCR_OAUTH"
+    ],
+    "url": "https://docs.composio.dev/toolkits/cloudflare_mcp.md"
+   }
+  ]
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.039566,
+  "seconds": 55.6,
+  "turns": 1,
+  "mode": "knowledge+crawl"
+ }
+}

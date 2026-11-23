@@ -1,0 +1,251 @@
+{
+ "id": 42,
+ "app": "WooCommerce",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://woocommerce.com/document/woocommerce-rest-api",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.woocommerce.com/docs/plugins/woocommerce/woocommerce-rest-api/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.woocommerce.com/docs/plugins/woocommerce/woocommerce-rest-api/authentication/",
+   "purpose": "authentication",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.woocommerce.com/docs/plugins/woocommerce/woocommerce-rest-api/keys-and-permissions/",
+   "purpose": "api-keys-credentials",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.woocommerce.com/docs/plugins/woocommerce/woocommerce-rest-api/oauth/",
+   "purpose": "oauth-authentication",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.woocommerce.com/docs/plugins/woocommerce/woocommerce-rest-api/rest-api-reference/",
+   "purpose": "api-reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.woocommerce.com/docs/plugins/woocommerce/woocommerce-rest-api/webhooks/",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.woocommerce.com/docs/plugins/woocommerce/woocommerce-rest-api/rate-limiting/",
+   "purpose": "rate-limits",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://woocommerce.com/partners/",
+   "purpose": "partner-program",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/techspawn/woocommerce-mcp-server",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/gobuildwp/wordpress-mcp-ai-gobuildwp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/tropk-ai/mcp-for-wordpress",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://woocommerce.com/documentation/woocommerce/getting-started/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://woocommerce.com/pricing/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://woocommerce.com/accessibility/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.woocommerce.com/docs/extensions/getting-started-extensions/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.woocommerce.com/docs/plugins/woocommerce/woocommerce-rest-api/authentication",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.woocommerce.com/docs/plugins/woocommerce/woocommerce-rest-api/oauth",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.woocommerce.com/docs/plugins/woocommerce/woocommerce-rest-api/rate-limiting",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://woocommerce.com/partnerships-contact/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://woocommerce.com/products/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.woocommerce.com/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.woocommerce.com/docs/woo-marketplace/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://woocommerce.com/woocommerce-marketplace/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.woocommerce.com/docs/plugins/woocommerce/woocommerce-rest-api/rest-api-reference",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "techspawn/woocommerce-mcp-server",
+   "url": "https://github.com/techspawn/woocommerce-mcp-server",
+   "stars": 106,
+   "description": "A WooCommerce (MCP) Model Context Protocol server"
+  },
+  {
+   "repo": "gobuildwp/wordpress-mcp-ai-gobuildwp",
+   "url": "https://github.com/gobuildwp/wordpress-mcp-ai-gobuildwp",
+   "stars": 66,
+   "description": "GoBuildWP (formerly WPPilot): WordPress MCP server & AI agent for ChatGPT, Claude, Cursor, Codex. Build and edit sites in Elementor and Gutenberg, run SEO, Page"
+  },
+  {
+   "repo": "tropk-ai/mcp-for-wordpress",
+   "url": "https://github.com/tropk-ai/mcp-for-wordpress",
+   "stars": 33,
+   "description": "Connect WordPress to Claude.ai, Lovable, Cursor, Windsurf. 500+ pre-built tools across content, Elementor, Rank Math SEO, ACF, WooCommerce and ops. OAuth 2.1 wi"
+  },
+  {
+   "repo": "cosmincraciun97/stonewright-wp-mcp",
+   "url": "https://github.com/cosmincraciun97/stonewright-wp-mcp",
+   "stars": 31,
+   "description": "Guarded, recoverable WordPress MCP automation for Elementor, Gutenberg, WooCommerce, content, and code - with backups, validation, and audit trails."
+  },
+  {
+   "repo": "davidofug/Manual-Currency-Pricing-for-WooCommerce-Products-mcpwp",
+   "url": "https://github.com/davidofug/Manual-Currency-Pricing-for-WooCommerce-Products-mcpwp",
+   "stars": 17,
+   "description": ""
+  }
+ ],
+ "composio": {
+  "exact": [],
+  "candidates": []
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.024078999999999996,
+  "seconds": 31.9,
+  "turns": 1,
+  "mode": "knowledge+crawl"
+ }
+}

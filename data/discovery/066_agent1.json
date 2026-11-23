@@ -1,0 +1,117 @@
+{
+ "id": 66,
+ "app": "Neo4j",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://neo4j.com/docs/api",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/neo4j-contrib/mcp-neo4j",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/orneryd/NornicDB",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/cyanheads/atlas-mcp-server",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/neo4j.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "neo4j-contrib/mcp-neo4j",
+   "url": "https://github.com/neo4j-contrib/mcp-neo4j",
+   "stars": 993,
+   "description": "Neo4j Labs Model Context Protocol servers"
+  },
+  {
+   "repo": "orneryd/NornicDB",
+   "url": "https://github.com/orneryd/NornicDB",
+   "stars": 935,
+   "description": "Nornicdb is a distributed low-latency, Graph+Vector, Temporal MVCC with all sub-ms HNSW search, graph traversal, and writes. Using Neo4j Bolt/Cypher and qdrant'"
+  },
+  {
+   "repo": "cyanheads/atlas-mcp-server",
+   "url": "https://github.com/cyanheads/atlas-mcp-server",
+   "stars": 481,
+   "description": "A Model Context Protocol (MCP) server for ATLAS, a Neo4j-powered task management system for LLM Agents - implementing a three-tier architecture (Projects, Tasks"
+  },
+  {
+   "repo": "neo4j/mcp",
+   "url": "https://github.com/neo4j/mcp",
+   "stars": 309,
+   "description": "Neo4j official MCP Server"
+  },
+  {
+   "repo": "esinecan/skynet-agent",
+   "url": "https://github.com/esinecan/skynet-agent",
+   "stars": 135,
+   "description": "An Open Source, Claude Code Like Tool, With RAG + Graph RAG + MCP Integration, and Supports Most LLMs (Incomplete But Functional & Usable)Autonomous LLM agent: "
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Neo4J",
+    "slug": "NEO4J",
+    "tools": 21,
+    "auth": [
+     "OAUTH2",
+     "BASIC",
+     "API_KEY",
+     "S2S_OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/neo4j.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Neo4J",
+    "slug": "NEO4J",
+    "tools": 21,
+    "auth": [
+     "OAUTH2",
+     "BASIC",
+     "API_KEY",
+     "S2S_OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/neo4j.md"
+   }
+  ]
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.036605000000000006,
+  "seconds": 61.1,
+  "turns": 1,
+  "mode": "knowledge+crawl"
+ }
+}

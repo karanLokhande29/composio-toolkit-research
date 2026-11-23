@@ -1,0 +1,267 @@
+{
+ "id": 52,
+ "app": "SE Ranking",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://seranking.com/api",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://seranking.com/api/authentication",
+   "purpose": "authentication",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://seranking.com/api/reference",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://seranking.com/api/rate-limits",
+   "purpose": "rate_limits",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://seranking.com/api/webhooks",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://seranking.com/api/getting-started",
+   "purpose": "getting_started",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://seranking.com/api/sandbox",
+   "purpose": "sandbox",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://seranking.com/pricing",
+   "purpose": "pricing",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://seranking.com/account",
+   "purpose": "credentials",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://seranking.com/partners",
+   "purpose": "partner_programme",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/seranking/seo-skills",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/hireblackout/awesome-mcp-servers",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/charlesdove977/search-console-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://seranking.com/api-pricing.html",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://seranking.com/mcp.html",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://seranking.com/api/rate-limits/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://seranking.com/api/integrations/mcp/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://seranking.com/api/data/getting-started/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://seranking.com/api/data/getting-started",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://seranking.com/api/data/quickstarts/generate-seo-intelligence-reports-with-seointel/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://seranking.com/api/data/quickstarts/build-authority-with-link-building/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://seranking.com/api/project/getting-started/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://seranking.com/api/project/getting-started",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://seranking.com/api/local-marketing-api/getting-started/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://seranking.com/api/local-marketing-api/getting-started",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://seranking.com/api/se-visible/getting-started/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://seranking.com/api/se-visible/getting-started",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "seranking/seo-skills",
+   "url": "https://github.com/seranking/seo-skills",
+   "stars": 213,
+   "description": "Claude SEO Skills — production Claude Agent Skills for the SE Ranking MCP server. Content briefs, AI Search share of voice, audits, backlink gaps, keyword clust"
+  },
+  {
+   "repo": "hireblackout/awesome-mcp-servers",
+   "url": "https://github.com/hireblackout/awesome-mcp-servers",
+   "stars": 28,
+   "description": "Comprehensive curated list of top MCP (Model Context Protocol) servers for AI development. Includes rankings from GitHub downloads, Reddit consensus, and real d"
+  },
+  {
+   "repo": "charlesdove977/search-console-mcp",
+   "url": "https://github.com/charlesdove977/search-console-mcp",
+   "stars": 13,
+   "description": "MCP server for Google Search Console. Brings keyword and ranking data to Claude Code, Cursor, and any MCP-compatible AI tool. Pairs with Google's analytics-mcp."
+  },
+  {
+   "repo": "cyanheads/un-comtrade-mcp-server",
+   "url": "https://github.com/cyanheads/un-comtrade-mcp-server",
+   "stars": 5,
+   "description": "Access UN Comtrade international merchandise and services trade statistics — country lookups, HS commodity search, bilateral trade flows, balances, rankings, an"
+  },
+  {
+   "repo": "TED-H-com/mcp-memory-server",
+   "url": "https://github.com/TED-H-com/mcp-memory-server",
+   "stars": 3,
+   "description": "MCP server with 18 tools: typed agent memory in a SQLite file per workspace, salience ranking, optional Oracle search"
+  }
+ ],
+ "composio": {
+  "exact": [],
+  "candidates": []
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.027508,
+  "seconds": 38.5,
+  "turns": 1,
+  "mode": "knowledge+crawl"
+ }
+}

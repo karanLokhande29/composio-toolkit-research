@@ -1,0 +1,144 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.093563,
+  "seconds": 92.6,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+  "https://developer.zendesk.com/documentation/api-basics/",
+  "https://developer.zendesk.com/api-reference/introduction/rate-limits/",
+  "https://developer.zendesk.com/api-reference/",
+  "https://developer.zendesk.com/api-reference/introduction/introduction/",
+  "https://developer.zendesk.com/documentation/webhooks/",
+  "https://developer.zendesk.com/zendesk/oas.yaml",
+  "https://docs.composio.dev/toolkits/zendesk.md",
+  "https://github.com/fruggr/zendesk-mcp-server",
+  "https://zendesk.com",
+  "https://developers.zendesk.com",
+  "https://developer.zendesk.com"
+ ],
+ "output": {
+  "one_liner": "Zendesk is a cloud-based customer support platform for managing tickets, help center articles, voice calls, and customer conversations across multiple channels.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "basic"
+   ],
+   "oauth_grant_types": [
+    "authorization_code",
+    "refresh_token",
+    "client_credentials"
+   ],
+   "notes": "OAuth2 is recommended and primary; basic auth used for deprecated API tokens scheduled for removal April 30, 2027. OAuth tokens sent as Bearer in Authorization header.",
+   "evidence": [
+    {
+     "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+     "snippet": "Zendesk supports using OAuth access tokens to authenticate API requests."
+    },
+    {
+     "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+     "snippet": "If you plan on distributing an app, integration, or bot to multiple Zendesk customers, you must use global OAuth tokens"
+    },
+    {
+     "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+     "snippet": "Basic authentication is used for API tokens."
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_trial",
+   "dev_sandbox": true,
+   "notes": "Free 14-day trial without credit card; continued use requires paid Zendesk account. OAuth client setup requires Zendesk admin access.",
+   "evidence": [
+    {
+     "url": "https://developer.zendesk.com/documentation/api-basics/",
+     "snippet": "You can try out the Zendesk platform with a free, 14-day trial account."
+    },
+    {
+     "url": "https://developer.zendesk.com/documentation/api-basics/",
+     "snippet": "If you're interested in becoming a Zendesk developer partner, you can convert your trial account into a sponsored Zendesk Support account."
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/zendesk.md",
+     "snippet": "Sign in to Zendesk Admin Center at https://<subdomain>.zendesk.com/admin/home."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": "https://developer.zendesk.com/zendesk/oas.yaml",
+   "webhooks": true,
+   "rate_limit_note": "Plan-dependent: 200-2500 requests/minute for Support API depending on plan type. Returns 429 Too Many Requests when exceeded.",
+   "evidence": [
+    {
+     "url": "https://developer.zendesk.com",
+     "snippet": "Zendesk's APIs are organized around REST principles."
+    },
+    {
+     "url": "https://developer.zendesk.com/api-reference/",
+     "snippet": "Most of our APIs are organized by product capabilities."
+    },
+    {
+     "url": "https://developer.zendesk.com/api-reference/",
+     "snippet": "You'll find APIs for ticketing, help center, live chat, voice, sales CRM"
+    },
+    {
+     "url": "https://developer.zendesk.com/documentation/webhooks/",
+     "snippet": "Webhooks let you build or set up integrations that subscribe to certain activity in Zendesk Support, Guide, Gather, and Messaging."
+    },
+    {
+     "url": "https://developer.zendesk.com/api-reference/introduction/rate-limits/",
+     "snippet": "If the rate limit is exceeded, the API responds with a 429 Too Many Requests"
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [
+    "https://github.com/fruggr/zendesk-mcp-server"
+   ],
+   "evidence": [
+    {
+     "url": "https://github.com/fruggr/zendesk-mcp-server",
+     "snippet": "A Model Context Protocol (MCP) server that puts Zendesk inside your AI assistant"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "paid_plan",
+   "rationale": "Free trial with documented OAuth and REST API enable development, but production use requires paid Zendesk account.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "ZENDESK"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+    "snippet": "Zendesk supports using OAuth access tokens to authenticate API requests."
+   },
+   {
+    "url": "https://developer.zendesk.com/api-reference/",
+    "snippet": "Most of our APIs are organized by product capabilities."
+   },
+   {
+    "url": "https://zendesk.com",
+    "snippet": "Use your work email to smoothly connect customer emails and existing apps, and also invite team members."
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": "No official MCP server published by Zendesk found in provided pages"
+  }
+ }
+}

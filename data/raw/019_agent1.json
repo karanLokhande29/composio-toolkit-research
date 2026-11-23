@@ -1,0 +1,124 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.080901,
+  "seconds": 93.5,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://developers.gorgias.com/reference/authentication",
+  "https://developers.gorgias.com/docs/1-register-on-developer-portal",
+  "https://developers.gorgias.com/docs/access-tokens-api-keys",
+  "https://developers.gorgias.com/reference/introduction",
+  "https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546",
+  "https://developers.gorgias.com/docs/overview",
+  "https://developers.gorgias.com/reference/limitations",
+  "https://developers.gorgias.com/docs/sync-gorgias-data-with-a-database",
+  "https://developers.gorgias.com/llms.txt",
+  "https://docs.composio.dev/toolkits/gorgias.md",
+  "https://github.com/mattcoatsworth/Gorgias-MCP-Server",
+  "https://gorgias.com"
+ ],
+ "output": {
+  "one_liner": "Gorgias is a conversational AI platform for ecommerce support and helpdesk management.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "api_key",
+    "oauth2"
+   ],
+   "oauth_grant_types": [],
+   "notes": "API key for private apps only (HTTP Basic auth with base64-encoded username:api_key). OAuth2 mandatory for public apps.",
+   "evidence": [
+    {
+     "url": "https://developers.gorgias.com/docs/access-tokens-api-keys",
+     "snippet": "the API key authentication method can be used only for private apps. If you plan to build a public app you have to use OAuth2."
+    },
+    {
+     "url": "https://developers.gorgias.com/reference/authentication",
+     "snippet": "Using OAuth2 is mandatory for public apps."
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "API keys are self-serve from account settings. Free trial accounts available; conversion to developer sandbox requires contacting support.",
+   "evidence": [
+    {
+     "url": "https://developers.gorgias.com/docs/access-tokens-api-keys",
+     "snippet": "As an admin, you can easily generate and revoke your access token in the settings of your account."
+    },
+    {
+     "url": "https://developers.gorgias.com/docs/1-register-on-developer-portal",
+     "snippet": "Once you register, feel free to create a trial account and reach out to [email protected] to transform it into a developer account."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": null,
+   "rate_limit_note": "OAuth2 apps: 80 requests per 20 seconds; API key integrations: 40 requests per 20 seconds; Enterprise: 10-second window",
+   "evidence": [
+    {
+     "url": "https://developers.gorgias.com/reference/introduction",
+     "snippet": "The Gorgias API is structured with REST in mind. Our API has predictable resource-oriented URLs, accepts JSON-encoded responses"
+    },
+    {
+     "url": "https://developers.gorgias.com/reference/limitations",
+     "snippet": "OAuth2 apps can make 80 requests in a 20 second window"
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://mcp.gorgias.com/mcp",
+   "community": [
+    "https://github.com/mattcoatsworth/Gorgias-MCP-Server"
+   ],
+   "evidence": [
+    {
+     "url": "https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546",
+     "snippet": "The Gorgias MCP lets you work with your Gorgias helpdesk using an AI assistant, like Claude or ChatGPT."
+    },
+    {
+     "url": "https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546",
+     "snippet": "the connection URL is the same: https://mcp.gorgias.com/mcp"
+    },
+    {
+     "url": "https://github.com/mattcoatsworth/Gorgias-MCP-Server",
+     "snippet": "An MCP server for interacting with the Gorgias helpdesk API. This server provides tools and resources"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Fully documented REST API with broad resource coverage; self-serve API key access; Composio toolkit already in production with 51 tools.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "gorgias"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://gorgias.com",
+    "snippet": "Bring your support team, customer data, workflows, and AI Agent together in one platform built for every stage of the customer journey."
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/gorgias.md",
+    "snippet": "With managed OAuth you don't need your own Gorgias app or client credentials. The flow starts in Gorgias and finishes in Composio."
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  }
+ }
+}

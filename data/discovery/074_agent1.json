@@ -1,0 +1,299 @@
+{
+ "id": 74,
+ "app": "Jira",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://developer.atlassian.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.atlassian.com/cloud/jira/platform/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.atlassian.com/cloud/jira/platform/getting-started/",
+   "purpose": "getting_started",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/",
+   "purpose": "auth_oauth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.atlassian.com/cloud/jira/platform/api-tokens/",
+   "purpose": "auth_tokens",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.atlassian.com/cloud/jira/platform/basic-auth/",
+   "purpose": "auth_basic",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.atlassian.com/cloud/jira/platform/rate-limits/",
+   "purpose": "rate_limits",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.atlassian.com/cloud/jira/platform/webhooks/",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.atlassian.com/apps/",
+   "purpose": "developer_access",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.atlassian.com/marketplace/",
+   "purpose": "partner_program",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://github.com/sooperset/mcp-atlassian",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/sandbox-quantum/switch",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/pipeshub-ai/pipeshub-ai",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/jira.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.atlassian.com/cloud/jira/platform/getting-started-with-forge/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.atlassian.com/cloud/jira/platform/scopes-for-oauth-2-3LO-and-forge-apps/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.atlassian.com/cloud/jira/platform/rate-limiting/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.atlassian.com/cloud/jira/platform/build-an-app-that-respects-rate-limits/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.atlassian.com/cloud/jira/platform/getting-started-with-connect/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://api.atlassian.com/oauth/token/accessible-resources",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 401,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://support.atlassian.com/security-and-access-policies/docs/supported-security-protocols-for-atlassian-cloud-products/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.atlassian.com/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.atlassian.com/platform/marketplace/atlassian-developer-terms/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.atlassian.com/cloud/jira/platform/jira-expressions-type-reference/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.atlassian.com/cloud/jira/platform/data-security-policy-developer-guide/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.atlassian.com/cloud/jira/platform/user-privacy-developer-guide/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "sooperset/mcp-atlassian",
+   "url": "https://github.com/sooperset/mcp-atlassian",
+   "stars": 6146,
+   "description": "MCP server for Atlassian tools (Confluence, Jira)"
+  },
+  {
+   "repo": "sandbox-quantum/switch",
+   "url": "https://github.com/sandbox-quantum/switch",
+   "stars": 4700,
+   "description": "Open-source AI teammates in Slack, Teams, Discord, Telegram and Mattermost. Bring Claude Code, Codex, Gemini (Antigravity), Cursor, GitHub Copilot or your own a"
+  },
+  {
+   "repo": "pipeshub-ai/pipeshub-ai",
+   "url": "https://github.com/pipeshub-ai/pipeshub-ai",
+   "stars": 4147,
+   "description": "The open-source context layer for AI agents and enterprise AI search. Permission-aware search and cited answers across 30+ sources, including Slack, Drive, Jira"
+  },
+  {
+   "repo": "atlassian/atlassian-mcp-server",
+   "url": "https://github.com/atlassian/atlassian-mcp-server",
+   "stars": 1186,
+   "description": "Official remote MCP server for Atlassian. Securely connect Jira, Confluence, Jira Service Management, Bitbucket, and Compass to Claude, ChatGPT, Cursor, VS Code"
+  },
+  {
+   "repo": "secfoo-com/secfoo",
+   "url": "https://github.com/secfoo-com/secfoo",
+   "stars": 422,
+   "description": "AI security review CLI: SAST, secret scanning, SCA, threat modeling and architecture review with Claude Code, Copilot, Codex, Gemini, Cursor or an API key. Read"
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Jira",
+    "slug": "JIRA",
+    "tools": 171,
+    "auth": [
+     "OAUTH2",
+     "S2S_OAUTH2",
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/jira.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Jira",
+    "slug": "JIRA",
+    "tools": 171,
+    "auth": [
+     "OAUTH2",
+     "S2S_OAUTH2",
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/jira.md"
+   }
+  ]
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.033018,
+  "seconds": 38.0,
+  "turns": 1,
+  "mode": "knowledge+crawl"
+ }
+}

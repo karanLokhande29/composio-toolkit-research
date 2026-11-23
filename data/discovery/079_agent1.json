@@ -1,0 +1,297 @@
+{
+ "id": 79,
+ "app": "Smartsheet",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://smartsheet.com/developers",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.smartsheet.com/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.smartsheet.com/docs/authentication",
+   "purpose": "authentication",
+   "source": "search",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.smartsheet.com/docs/oauth",
+   "purpose": "oauth_credentials",
+   "source": "search",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.smartsheet.com/docs/getting-started",
+   "purpose": "getting_started",
+   "source": "search",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.smartsheet.com/docs/api-basics",
+   "purpose": "api_overview",
+   "source": "search",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.smartsheet.com/docs/api-reference",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.smartsheet.com/docs/webhooks",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.smartsheet.com/docs/rate-limits",
+   "purpose": "rate_limits",
+   "source": "search",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://smartsheet.com/pricing",
+   "purpose": "pricing",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/smartsheet-platform/smar-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/terilios/smartsheet-server",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/smartsheet/cli-agent-power-tools",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/smartsheet.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server-tools",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.smartsheet.com/pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.smartsheet.com/solutions/client-partner-delivery",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.smartsheet.com/partners",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.smartsheet.com/marketplace/partners",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.smartsheet.com/partners/partner-program",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.smartsheet.com/partners/partner-solutions",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.smartsheet.com/content-center/best-practices/tips-tricks/api-getting-started",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.smartsheet.com/api/smartsheet/openapi",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developers.smartsheet.com/api/brandfolder/openapi",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developers.smartsheet.com/api/resource_management/openapi",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://community.smartsheet.com/categories/api-developers",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developers.smartsheet.com/register",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "smartsheet-platform/smar-mcp",
+   "url": "https://github.com/smartsheet-platform/smar-mcp",
+   "stars": 26,
+   "description": "Smartsheet MCP Server"
+  },
+  {
+   "repo": "terilios/smartsheet-server",
+   "url": "https://github.com/terilios/smartsheet-server",
+   "stars": 14,
+   "description": "MCP server providing healthcare analytics capabilities for Smartsheet, including clinical note summarization, patient feedback analysis, and research impact ass"
+  },
+  {
+   "repo": "smartsheet/cli-agent-power-tools",
+   "url": "https://github.com/smartsheet/cli-agent-power-tools",
+   "stars": 9,
+   "description": "A free, open-source, pack of Claude Code agents for project managers. Purpose-built against the Smartsheet MCP server. Twenty years of operational depth, at the"
+  },
+  {
+   "repo": "Beltran12138/wecom-docs-mcp-server",
+   "url": "https://github.com/Beltran12138/wecom-docs-mcp-server",
+   "stars": 7,
+   "description": "[Archived] stdio MCP proxy over WeCom's robot-doc backend. Superseded by the official WecomTeam/wecom-cli v1.1.0 — see README for what the CLI now covers, and t"
+  },
+  {
+   "repo": "Abdeltoto/smartsheet-controller",
+   "url": "https://github.com/Abdeltoto/smartsheet-controller",
+   "stars": 3,
+   "description": "Talk to Your Smartsheet - AI copilot with 53 tools, 80 formulas, voice control, streaming, and MCP server"
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Smartsheet",
+    "slug": "SMARTSHEET",
+    "tools": 185,
+    "auth": [
+     "OAUTH2",
+     "BEARER_TOKEN"
+    ],
+    "url": "https://docs.composio.dev/toolkits/smartsheet.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Smartsheet",
+    "slug": "SMARTSHEET",
+    "tools": 185,
+    "auth": [
+     "OAUTH2",
+     "BEARER_TOKEN"
+    ],
+    "url": "https://docs.composio.dev/toolkits/smartsheet.md"
+   }
+  ]
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.027947000000000003,
+  "seconds": 38.5,
+  "turns": 1,
+  "mode": "knowledge+crawl"
+ }
+}

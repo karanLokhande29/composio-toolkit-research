@@ -1,0 +1,290 @@
+{
+ "id": 73,
+ "app": "Linear",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://developers.linear.app",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.linear.app/docs/getting-started",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.linear.app/docs/authentication/oauth",
+   "purpose": "authentication",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.linear.app/docs/authentication/api-key",
+   "purpose": "authentication",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.linear.app/docs/graphql",
+   "purpose": "api-reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.linear.app/docs/graphql/subscription",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.linear.app/docs/rate-limiting",
+   "purpose": "rate-limits",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.linear.app/docs/mcp",
+   "purpose": "mcp-server",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/sandbox-quantum/switch",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/jerhadf/linear-mcp-server",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/khoj-ai/pipali",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/linear.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://linear.app/developers/rate-limiting",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://linear.app/developers/oauth-2-0-authentication",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://linear.app/developers/oauth-actor-authorization",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://linear.app/developers/oauth-app-manifests",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://linear.app/developers/file-storage-authentication",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://linear.app/developers",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://linear.app/developers/graphql",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://linear.app/developers/pagination",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://linear.app/developers/filtering",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://linear.app/developers/deprecations",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://linear.app/developers/webhooks",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://linear.app/developers/attachments",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://linear.app/developers/managing-customers",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://linear.app/developers/aig",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "sandbox-quantum/switch",
+   "url": "https://github.com/sandbox-quantum/switch",
+   "stars": 4700,
+   "description": "Open-source AI teammates in Slack, Teams, Discord, Telegram and Mattermost. Bring Claude Code, Codex, Gemini (Antigravity), Cursor, GitHub Copilot or your own a"
+  },
+  {
+   "repo": "jerhadf/linear-mcp-server",
+   "url": "https://github.com/jerhadf/linear-mcp-server",
+   "stars": 348,
+   "description": "A server that integrates Linear's project management system with the Model Context Protocol (MCP) to allow LLMs to interact with Linear."
+  },
+  {
+   "repo": "khoj-ai/pipali",
+   "url": "https://github.com/khoj-ai/pipali",
+   "stars": 339,
+   "description": "Research, create, automate. Work so fast it feels like play. Get an ai co-worker on your machine. It can read-write files, code safely in sandbox, use your brow"
+  },
+  {
+   "repo": "tacticlaunch/mcp-linear",
+   "url": "https://github.com/tacticlaunch/mcp-linear",
+   "stars": 151,
+   "description": "MCP server that enables AI assistants to interact with Linear project management system through natural language, allowing users to retrieve, create, and update"
+  },
+  {
+   "repo": "wrsmith108/linear-claude-skill",
+   "url": "https://github.com/wrsmith108/linear-claude-skill",
+   "stars": 142,
+   "description": "Agent skill for managing Linear issues, projects, and teams. MCP tools, SDK automation, GraphQL API patterns."
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Linear",
+    "slug": "LINEAR",
+    "tools": 48,
+    "auth": [
+     "OAUTH2",
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/linear.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Linear",
+    "slug": "LINEAR",
+    "tools": 48,
+    "auth": [
+     "OAUTH2",
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/linear.md"
+   },
+   {
+    "name": "Linear MCP",
+    "slug": "LINEAR_MCP",
+    "tools": 78,
+    "auth": [
+     "DCR_OAUTH"
+    ],
+    "url": "https://docs.composio.dev/toolkits/linear_mcp.md"
+   }
+  ]
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.005989,
+  "seconds": 11.7,
+  "turns": 1,
+  "mode": "knowledge+crawl"
+ }
+}

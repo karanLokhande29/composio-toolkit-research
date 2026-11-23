@@ -1,0 +1,136 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.06931300000000001,
+  "seconds": 66.5,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://www.plain.com/docs/graphql/authentication",
+  "https://help.plain.com/article/api-quickstart",
+  "https://www.plain.com/pricing",
+  "https://www.plain.com/docs/graphql/sdk",
+  "https://www.plain.com/docs/graphql-reference/queries/myWorkspace",
+  "https://help.plain.com/article/mcp-server",
+  "https://www.plain.com/docs/product/what-is-plain",
+  "https://help.plain.com/article/rate-limits",
+  "https://www.plain.com/docs/webhooks",
+  "https://core-api.uk.plain.com/graphql/v1/schema.graphql",
+  "https://docs.composio.dev/toolkits/plain.md",
+  "https://github.com/tellahq/plain-mcp"
+ ],
+ "output": {
+  "one_liner": "Support platform for B2B teams built API-first with GraphQL, webhooks, and AI agents for handling customer conversations across multiple channels.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "bearer_token",
+    "oauth2"
+   ],
+   "oauth_grant_types": [],
+   "notes": "Bearer token authentication via API keys created for machine users. OAuth also available for user-delegated access.",
+   "evidence": [
+    {
+     "url": "https://www.plain.com/docs/graphql/authentication",
+     "snippet": "Now that you have an API key, pass it on any API call as a header: Authorization: Bearer plainApiKey_xxx"
+    },
+    {
+     "url": "https://help.plain.com/article/api-quickstart",
+     "snippet": "Required headers: Authorization: Bearer YOUR_TOKEN where the token is your API key"
+    },
+    {
+     "url": "https://www.plain.com/docs/graphql/authentication",
+     "snippet": "To call the API as a user in your workspace, use an OAuth app"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_trial",
+   "dev_sandbox": null,
+   "notes": "7-day free trial available to self-serve sign up. API credentials are created by workspace members via Settings. Continued use after trial requires paid plan starting at $45/user/month.",
+   "evidence": [
+    {
+     "url": "https://www.plain.com/pricing",
+     "snippet": "7 day free trial · API Webhooks Events MCP Custom channels"
+    },
+    {
+     "url": "https://www.plain.com/pricing",
+     "snippet": "Plain Pricing – Plans from $45/user/month | 7-Day Free Trial"
+    },
+    {
+     "url": "https://www.plain.com/docs/graphql/authentication",
+     "snippet": "Go to Settings → Machine users & agents and click Add machine user"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "graphql"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "450–1000 requests/minute depending on plan: Foundation 450, Horizon 600, Frontier 1000",
+   "evidence": [
+    {
+     "url": "https://help.plain.com/article/api-quickstart",
+     "snippet": "API URL: https://core-api.uk.plain.com/graphql/v1 Allowed method: POST"
+    },
+    {
+     "url": "https://www.plain.com/docs/webhooks",
+     "snippet": "Webhooks allow you to get notified about events happening in your Plain workspace"
+    },
+    {
+     "url": "https://help.plain.com/article/rate-limits",
+     "snippet": "Plain applies rate limits to activity from machine users using the Plain API"
+    },
+    {
+     "url": "https://www.plain.com/docs/graphql/sdk",
+     "snippet": "The @team-plain/graphql package provides a fully typed client for Plain's GraphQL API"
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://mcp.plain.com/mcp",
+   "community": [
+    "https://github.com/tellahq/plain-mcp"
+   ],
+   "evidence": [
+    {
+     "url": "https://help.plain.com/article/mcp-server",
+     "snippet": "The Plain MCP server at https://mcp.plain.com/mcp lets tools like Claude work with support"
+    },
+    {
+     "url": "https://github.com/tellahq/plain-mcp",
+     "snippet": "An MCP server providing comprehensive access to the Plain.com API from Claude, with 77 tools"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "GraphQL API is well-documented, self-serve API key authentication is available, official MCP server exists, and Composio toolkit already exists with 120 tools.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "PLAIN"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://www.plain.com/docs/product/what-is-plain",
+    "snippet": "Plain is a support platform for B2B teams, built API-first so you can change how it works"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/plain.md",
+    "snippet": "Auth: API_KEY · Composio-managed OAuth available? N/A · Tools: 120"
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  }
+ }
+}

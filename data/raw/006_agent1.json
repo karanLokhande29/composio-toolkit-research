@@ -1,0 +1,127 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.088981,
+  "seconds": 105.4,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://developers.podio.com/authentication",
+  "https://developers.podio.com/api-key",
+  "https://developers.podio.com/doc",
+  "https://mcp.podio.com",
+  "https://developers.podio.com/",
+  "https://developers.podio.com/index/limits",
+  "https://developers.podio.com/doc/hooks",
+  "https://docs.composio.dev/toolkits/podio.md",
+  "https://github.com/Vuxified/podio-mcp-server",
+  "https://podio.com",
+  "https://developer.podio.com",
+  "https://company.podio.com/partners"
+ ],
+ "output": {
+  "one_liner": "Work management platform enabling CRM, project tracking, approvals, and collaborative workflows with automation.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2"
+   ],
+   "oauth_grant_types": [],
+   "notes": "OAuth2 primary authentication with four flow types: server-side (web), client-side (browser/mobile), username/password, and app authentication. Access tokens valid 8 hours, refresh tokens 28 days. Requires Client ID and Client Secret.",
+   "evidence": [
+    {
+     "url": "https://developers.podio.com/authentication",
+     "snippet": "The Podio API uses the OAuth2 protocol for authentication. This allows external apps to request authorization to Podio without having direct access to the user's password."
+    },
+    {
+     "url": "https://developers.podio.com/authentication",
+     "snippet": "Before you can use the Podio API you must register your application. Your application is assigned a unique identifier, called \"Client ID\", together with a \"Client Secret\"."
+    },
+    {
+     "url": "https://developers.podio.com/authentication",
+     "snippet": "Access Token: 8 hours. Refresh Token: 28 days."
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": null,
+   "notes": "Users can sign up and generate API keys from account settings with no mention of cost barriers or approval processes. Dedicated API key page emphasizes simplicity of access.",
+   "evidence": [
+    {
+     "url": "https://developers.podio.com/api-key",
+     "snippet": "It's easy to get one or more API keys for accessing your Podio data."
+    },
+    {
+     "url": "https://developers.podio.com/",
+     "snippet": "grab an API key for each app you want to build from your account settings page."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "1,000 calls/hour standard operations; 250 calls/hour resource-intensive operations. Per-user per-API-key rolling hour limits with response headers for monitoring.",
+   "evidence": [
+    {
+     "url": "https://developers.podio.com/",
+     "snippet": "The Podio API is a complete programmable interface to all Podio functionality."
+    },
+    {
+     "url": "https://developers.podio.com/index/limits",
+     "snippet": "The general limit is 1,000 API calls per hour, but if the API call is deemed resource-intensive, a lower rate of 250 calls per hour is enforced."
+    },
+    {
+     "url": "https://developers.podio.com/doc/hooks",
+     "snippet": "Hooks are webhooks that can call external sites when certain actions occur in Podio."
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://mcp.podio.com",
+   "community": [
+    "https://github.com/Vuxified/podio-mcp-server"
+   ],
+   "evidence": [
+    {
+     "url": "https://mcp.podio.com",
+     "snippet": "MCP server exposing Podio API tools for integration with ChatGPT, Copilot Studio, and other MCP-compatible clients."
+    },
+    {
+     "url": "https://github.com/Vuxified/podio-mcp-server",
+     "snippet": "MCP server for the Podio API: items, search, comments, webhooks, files"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Self-serve OAuth2 credentials, well-documented REST API with broad resource coverage, webhooks support, official MCP server, and existing Composio toolkit with 143 tools.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "PODIO"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://podio.com",
+    "snippet": "Work Management Platform | Streamline Collaboration & Workflows | Podio"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/podio.md",
+    "snippet": "Activate a deactivated Podio app, restoring it to the app navigator and allowing new item creation."
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  }
+ }
+}

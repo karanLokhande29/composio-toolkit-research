@@ -1,0 +1,102 @@
+{
+ "n_apps": 12,
+ "coverage": {
+  "pass1": {
+   "auth.methods": {
+    "filled": 12,
+    "unknown": 0
+   },
+   "access.status": {
+    "filled": 12,
+    "unknown": 0
+   },
+   "api_surface.breadth": {
+    "filled": 12,
+    "unknown": 0
+   }
+  },
+  "final": {
+   "auth.methods": {
+    "filled": 12,
+    "unknown": 0
+   },
+   "access.status": {
+    "filled": 12,
+    "unknown": 0
+   },
+   "api_surface.breadth": {
+    "filled": 12,
+    "unknown": 0
+   }
+  }
+ },
+ "loop1": {
+  "evidence_exact": 35,
+  "evidence_repaired": 16,
+  "evidence_dropped": 4,
+  "flags": {},
+  "fields_changed": 0,
+  "apps_changed": 0,
+  "evidence_total": 55,
+  "evidence_verified_pct": 92.7
+ },
+ "loop2": {
+  "hard": {
+   "mcp.official": 3,
+   "buildability.verdict": 1,
+   "buildability.main_blocker": 1
+  },
+  "soft": {
+   "access.status": 1,
+   "auth.methods": 1
+  },
+  "gap": {},
+  "fields_filled": 0,
+  "apps_with_hard": 3
+ },
+ "loop3": {
+  "apps": 0,
+  "fields_examined": 0,
+  "fields_changed": 0,
+  "unresolved": 0,
+  "changed_by_field": {}
+ },
+ "changed_by_automated_loops": {
+  "apps_changed": 0,
+  "apps_changed_pct": 0,
+  "by_field": {}
+ },
+ "needs_human": [
+  {
+   "id": 1,
+   "app": "Salesforce",
+   "reason": "loop3 error: LLM failed after retries: claude cli error: You've hit your session limit · resets 4:20pm (Asia/Calcutta)"
+  },
+  {
+   "id": 3,
+   "app": "Pipedrive",
+   "reason": "loop3 error: LLM failed after retries: claude cli error: You've hit your session limit · resets 4:20pm (Asia/Calcutta)"
+  },
+  {
+   "id": 5,
+   "app": "Twenty",
+   "reason": "loop3 error: LLM failed after retries: claude cli error: You've hit your session limit · resets 4:20pm (Asia/Calcutta)"
+  }
+ ],
+ "resolved_by": {
+  "agent": 12
+ },
+ "cost_time": {
+  "llm_cost_usd_reported": 16.52,
+  "llm_seconds": 1394,
+  "calls": {
+   "discover:agent1": 73,
+   "extract:agent1": 12,
+   "discover:agent2": 5,
+   "extract:agent2": 5
+  }
+ },
+ "accuracy": {
+  "status": "no_sheet"
+ }
+}

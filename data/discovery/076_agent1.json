@@ -1,0 +1,270 @@
+{
+ "id": 76,
+ "app": "Monday.com",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://developer.monday.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.monday.com/getting-started",
+   "purpose": "getting-started-access",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.monday.com/api-reference",
+   "purpose": "api-reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.monday.com/api-reference/authentication",
+   "purpose": "authentication",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.monday.com/api-reference/rate-limits",
+   "purpose": "rate-limits",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.monday.com/resources/webhooks",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.monday.com/apps",
+   "purpose": "app-credentials",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/Prat011/mcp-server-monday",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/aliansoftwareteam/AlianHub-Project-Management-System",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/pranavV77/skylark-bi-agent",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/monday.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/monday_mcp.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.monday.com/api-reference/docs/getting-started",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.monday.com/api-reference/docs/authentication",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://monday.com/pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://monday.com/partnership",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://monday.com/p/find-a-partner/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://monday.com/accessibility-statement",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.monday.com/apps/docs/monday-apps-mcp",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.monday.com/api-reference/docs/basics",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.monday.com/api-reference/reference/webhooks",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.monday.com/api-reference/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.monday.com/api-reference/docs",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.monday.com/api-reference/reference",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.monday.com/api-reference/changelog",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "Prat011/mcp-server-monday",
+   "url": "https://github.com/Prat011/mcp-server-monday",
+   "stars": 34,
+   "description": "MCP Server to interact with Monday.com boards and items"
+  },
+  {
+   "repo": "aliansoftwareteam/AlianHub-Project-Management-System",
+   "url": "https://github.com/aliansoftwareteam/AlianHub-Project-Management-System",
+   "stars": 27,
+   "description": "Open-source, self-hosted project management: tasks, sprints, Gantt, Kanban, docs, automations and time tracking with timesheets. Connect Claude or ChatGPT over "
+  },
+  {
+   "repo": "pranavV77/skylark-bi-agent",
+   "url": "https://github.com/pranavV77/skylark-bi-agent",
+   "stars": 1,
+   "description": "Conversational Business Intelligence assistant for Skylark Drones, integrating Gemini, MCP, and live monday.com data with deterministic metrics, cross-board ana"
+  },
+  {
+   "repo": "RomKadria/monday-mcp-server",
+   "url": "https://github.com/RomKadria/monday-mcp-server",
+   "stars": 0,
+   "description": "monday.com mcp server "
+  },
+  {
+   "repo": "AStheTECH/mewcp-monday",
+   "url": "https://github.com/AStheTECH/mewcp-monday",
+   "stars": 0,
+   "description": "Monday.com MCP Server"
+  }
+ ],
+ "composio": {
+  "exact": [],
+  "candidates": [
+   {
+    "name": "Monday",
+    "slug": "MONDAY",
+    "tools": 126,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/monday.md"
+   },
+   {
+    "name": "Monday MCP",
+    "slug": "MONDAY_MCP",
+    "tools": 96,
+    "auth": [
+     "DCR_OAUTH"
+    ],
+    "url": "https://docs.composio.dev/toolkits/monday_mcp.md"
+   }
+  ]
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.031631,
+  "seconds": 40.8,
+  "turns": 1,
+  "mode": "knowledge+crawl"
+ }
+}

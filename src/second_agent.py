@@ -95,16 +95,13 @@ def research(app: dict) -> dict:
     cached = read_json(RAW / f"{app['id']:03d}_agent2_record.json")
     if cached and not cached.get("_meta", {}).get("error"):
         return cached
-    model = env("SECOND_MODEL", "sonnet")
-    try:
-        sugg, _ = llm.ask_json(URL_PROMPT.format(**app), URL_SYSTEM, model=model)
-        extra = [{"url": u["url"], "purpose": u.get("purpose", ""), "source": "search"}
-                 for u in sugg.get("urls", []) if isinstance(u, dict) and str(u.get("url", "")).startswith("http")]
-    except Exception:
-        extra = []
+    model = env("SECOND_MODEL", "haiku")
+    # its own URL list comes from a different (stronger) model than agent 1's discovery
+    extra, _ = discover.knowledge_urls(app, env("SECOND_URL_MODEL", "sonnet"))
     disc = discover.discover_and_fetch(app, model=model, use_search=False, tag="agent2", extra=extra)
     rec = extract.extract(app, disc, model=model, prompt_template=PROMPT_B, tag="agent2",
-                          system="You are a sceptical integration reviewer. Use only the provided pages. Output only JSON.")
+                          system="You are a sceptical integration reviewer. Use only the provided pages. Output only JSON.",
+                          budget=int(env("SECOND_BUDGET_CHARS", "30000")))
     for g in verify.GROUPS:   # same deterministic evidence check as Loop 1
         rec[g]["evidence"] = verify.verify_evidence(rec[g]["evidence"], app["app"], g, loop=2)
         if not rec[g]["evidence"] and g != "mcp":
@@ -160,6 +157,6 @@ def run(ids: list[int], workers: int = 6) -> None:
                                 "hard": [d["field"] for d in dis if d["level"] == "hard"]})
             for d in dis:
                 log_jsonl(VLOG, {"loop": 2, "app": a["app"], "check": "disagreement", **d})
-            save_results(results)
+            save_results(results, only=[a["id"]])
             print(f"  loop2 [{a['id']:3d}] {a['app']:<26} hard={[d['field'] for d in dis if d['level']=='hard']} "
                   f"soft={len([d for d in dis if d['level']=='soft'])} filled={changed}")

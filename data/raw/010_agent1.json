@@ -1,0 +1,131 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.090081,
+  "seconds": 153.7,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://api.docs.dealcloud.com/docs/token",
+  "https://api.docs.dealcloud.com/docs/apikeys",
+  "https://api.docs.dealcloud.com/docs",
+  "https://api.docs.dealcloud.com/mcp",
+  "https://api.docs.dealcloud.com/",
+  "https://api.docs.dealcloud.com/docs/limits",
+  "https://api.docs.dealcloud.com/docs/publications",
+  "https://api.docs.dealcloud.com/docs/publications/getting_started",
+  "https://api.docs.dealcloud.com/docs/publications/getting_started/topics",
+  "https://api.docs.dealcloud.com/docs/publications/getting_started/poll",
+  "https://api.docs.dealcloud.com/docs/publications/getting_started/acknowledge",
+  "https://api.docs.dealcloud.com/mcp/getting-started"
+ ],
+ "output": {
+  "one_liner": "CRM and sales platform that manages relationships, deals, and pipeline data with built-in AI-ready MCP server.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2"
+   ],
+   "oauth_grant_types": [
+    "client_credentials"
+   ],
+   "notes": "OAuth2 Client Credentials flow using API key obtained from user profile; token passed as Bearer token in Authorization header",
+   "evidence": [
+    {
+     "url": "https://api.docs.dealcloud.com/docs/token",
+     "snippet": "DealCloud uses the OAuth2 Client Credentials flow to generate a bearer token, which is then used in the HTTP Authentication header for API requests."
+    },
+    {
+     "url": "https://api.docs.dealcloud.com/docs/token",
+     "snippet": "The client application sends a POST request to the token endpoint, providing its client_id, apiKey, and the required scope(s)."
+    },
+    {
+     "url": "https://api.docs.dealcloud.com/docs/apikeys",
+     "snippet": "Once user permissions are set, click the User Profile. Scroll down to the API Key section and click Enable."
+    }
+   ]
+  },
+  "access": {
+   "status": "admin_approval",
+   "dev_sandbox": null,
+   "notes": "Requires existing DealCloud organization; admin must enable API capability in user group settings via Admin > User Management",
+   "evidence": [
+    {
+     "url": "https://api.docs.dealcloud.com/docs/apikeys",
+     "snippet": "To enable API access, ensure the intended user is assigned to a user group with the appropriate permissions."
+    },
+    {
+     "url": "https://api.docs.dealcloud.com/docs/apikeys",
+     "snippet": "If you do not see the Admin section, contact your organization's admin or DealCloud Customer Success Manager"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": "https://{host}/swagger/current",
+   "webhooks": false,
+   "rate_limit_note": "Endpoint-specific limits: Auth 300/min, User Management 5/sec, Data 5/sec, Schema 5/sec, Publications 1000/sec",
+   "evidence": [
+    {
+     "url": "https://api.docs.dealcloud.com/docs",
+     "snippet": "This site provides a comprehensive overview of our REST APIs, their capabilities, and available endpoints."
+    },
+    {
+     "url": "https://api.docs.dealcloud.com/docs",
+     "snippet": "Postman can consume the Swagger/OpenAPI spec file exposed at https://{host}/swagger/current"
+    },
+    {
+     "url": "https://api.docs.dealcloud.com/docs",
+     "snippet": "Our APIs are organized into functional areas. Each area includes multiple endpoints designed to help you perform specific tasks"
+    },
+    {
+     "url": "https://api.docs.dealcloud.com/docs/limits",
+     "snippet": "Limits are applied on an endpoint basis. When a rate limit is exceeded, an HTTP 429"
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://api.docs.dealcloud.com/mcp",
+     "snippet": "The DealCloud MCP Server helps teams turn their DealCloud data into faster, higher-quality outcomes."
+    },
+    {
+     "url": "https://api.docs.dealcloud.com/mcp/getting-started",
+     "snippet": "DealCloud provides a default MCP Server out-of-the-box without any configuration required."
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "admin_scope",
+   "rationale": "Well-documented REST API with official MCP server available; buildable but requires admin to enable API capability.",
+   "composio_existing_toolkit": "no",
+   "composio_slug": null
+  },
+  "overview_evidence": [
+   {
+    "url": "https://api.docs.dealcloud.com/",
+    "snippet": "Welcome to the DealCloud API Docs! This site provides a comprehensive overview of our REST APIs"
+   },
+   {
+    "url": "https://api.docs.dealcloud.com/mcp",
+    "snippet": "The DealCloud MCP Server helps teams turn their DealCloud data into faster, higher-quality outcomes."
+   }
+  ],
+  "confidence": 0.85,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "Pages don't explicitly state whether free tier exists or if paid plan required; appears to require existing organization membership",
+   "api_surface": "",
+   "mcp": "Official default MCP server provided as hosted service endpoint (https://[tenant].my.intapp.com/mcp/celeste/DealCloud), not as public GitHub repository"
+  }
+ }
+}

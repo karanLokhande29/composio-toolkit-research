@@ -1,0 +1,294 @@
+{
+ "id": 68,
+ "app": "MongoDB Atlas",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://mongodb.com/docs/atlas/api",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://mongodb.com/docs/atlas/api/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://mongodb.com/docs/atlas/configure-api-access/",
+   "purpose": "credentials",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://mongodb.com/docs/atlas/reference/api/",
+   "purpose": "api-reference",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://mongodb.com/docs/atlas/reference/api/atlas-admin-api/",
+   "purpose": "admin-api-reference",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://mongodb.com/docs/atlas/app-services/",
+   "purpose": "app-services-overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://mongodb.com/docs/atlas/app-services/authentication/",
+   "purpose": "authentication",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://mongodb.com/docs/atlas/app-services/webhooks/",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://mongodb.com/docs/atlas/api/rate-limits/",
+   "purpose": "rate-limits",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/mongodb-js/mongodb-mcp-server",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/mongodb-developer/mcp-mongodb-atlas",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/montumodi/mongodb-atlas-mcp-server",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/mongodb.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/mongodb_mcp.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.mongodb.com/company/partners",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.mongodb.com/pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.mongodb.com/docs/atlas/configure-api-access/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.mongodb.com/docs/atlas/cli/current/atlas-cli-getting-started/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.mongodb.com/docs/atlas/access/manage-org-users/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.mongodb.com/docs/atlas/access/orgs-create-view-edit-delete/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.mongodb.com/docs/atlas/security/ip-access-list/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.mongodb.com/docs/atlas/api/service-accounts/generate-oauth2-token/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.mongodb.com/docs/atlas/api/service-accounts/revoke-oauth2-token/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.mongodb.com/docs/atlas/configure-api-access-org/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.mongodb.com/docs/atlas/configure-api-access-mult-org/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.mongodb.com/docs/atlas/configure-api-access-project/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.mongodb.com/docs/atlas/api/api-rate-limit/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "mongodb-js/mongodb-mcp-server",
+   "url": "https://github.com/mongodb-js/mongodb-mcp-server",
+   "stars": 1164,
+   "description": "A Model Context Protocol server to connect to MongoDB databases and MongoDB Atlas Clusters."
+  },
+  {
+   "repo": "mongodb-developer/mcp-mongodb-atlas",
+   "url": "https://github.com/mongodb-developer/mcp-mongodb-atlas",
+   "stars": 14,
+   "description": "MCP (Model Context Protocol) server for managing MongoDB Atlas projects — create and manage clusters, database users, and network access via MCP tools."
+  },
+  {
+   "repo": "montumodi/mongodb-atlas-mcp-server",
+   "url": "https://github.com/montumodi/mongodb-atlas-mcp-server",
+   "stars": 3,
+   "description": "MCP server for mongodb atlas api. Internally uses mongodb-atlas-api-client"
+  },
+  {
+   "repo": "Mancasvel/Mongodb-cursor-analysis",
+   "url": "https://github.com/Mancasvel/Mongodb-cursor-analysis",
+   "stars": 3,
+   "description": "Aplicación web desarrollada con Node.js, Express, MongoDB Atlas y EJS para realizar operaciones CRUD sobre una colección de cursores. Además de la integración d"
+  },
+  {
+   "repo": "Abhijit85/claim-intelligence-aws-quick",
+   "url": "https://github.com/Abhijit85/claim-intelligence-aws-quick",
+   "stars": 2,
+   "description": "Claim Intelligence using AWS Quick, MongoDB Atlas, Bedrock AgentCore, and MCP"
+  }
+ ],
+ "composio": {
+  "exact": [],
+  "candidates": [
+   {
+    "name": "MongoDB",
+    "slug": "MONGODB",
+    "tools": 496,
+    "auth": [
+     "S2S_OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/mongodb.md"
+   },
+   {
+    "name": "MongoDB MCP",
+    "slug": "MONGODB_MCP",
+    "tools": 41,
+    "auth": [
+     "S2S_OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/mongodb_mcp.md"
+   }
+  ]
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.040229,
+  "seconds": 46.4,
+  "turns": 1,
+  "mode": "knowledge+crawl"
+ }
+}

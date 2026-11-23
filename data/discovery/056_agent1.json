@@ -1,0 +1,279 @@
+{
+ "id": 56,
+ "app": "Firecrawl",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://firecrawl.dev",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.firecrawl.dev",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.firecrawl.dev",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.firecrawl.dev",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://firecrawl.dev/pricing",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.firecrawl.dev/getting-started",
+   "purpose": "getting-started",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.firecrawl.dev/authentication",
+   "purpose": "authentication",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.firecrawl.dev/api-reference",
+   "purpose": "api-reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.firecrawl.dev/rate-limits",
+   "purpose": "rate-limits",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.firecrawl.dev/webhooks",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/firecrawl/firecrawl-mcp-server",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/fastcrw/crw",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/spences10/mcp-omnisearch",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/firecrawl.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.firecrawl.dev/pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.firecrawl.dev/use-cases/ai-mcps",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.firecrawl.dev/mcp-server",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.firecrawl.dev/auth.md",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.firecrawl.dev/pricing.md",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.firecrawl.dev/oauth",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.firecrawl.dev/mcp-server/keyless",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.firecrawl.dev/mcp-server/oauth",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.firecrawl.dev/partner-credits",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.firecrawl.dev/token-efficiency",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.firecrawl.dev/developer-index",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.firecrawl.dev/introduction",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "firecrawl/firecrawl-mcp-server",
+   "url": "https://github.com/firecrawl/firecrawl-mcp-server",
+   "stars": 7886,
+   "description": "Official Firecrawl MCP server, the context API for AI agents: search, scrape, and interact with the web, plus parse, crawl, map, Agent and Monitor, from any MCP"
+  },
+  {
+   "repo": "fastcrw/crw",
+   "url": "https://github.com/fastcrw/crw",
+   "stars": 1293,
+   "description": "Fast, lightweight Firecrawl/Tavily alternative in Rust. Web scraper, crawler & search API with MCP server for AI agents. Drop-in Firecrawl-compatible API (/scra"
+  },
+  {
+   "repo": "spences10/mcp-omnisearch",
+   "url": "https://github.com/spences10/mcp-omnisearch",
+   "stars": 359,
+   "description": "🔍 A Model Context Protocol (MCP) server providing unified access to multiple search engines (Tavily, Brave, Kagi, Exa), AI tools (Kagi FastGPT, Exa, Linkup), an"
+  },
+  {
+   "repo": "DasDigitaleMomentum/searxNcrawl",
+   "url": "https://github.com/DasDigitaleMomentum/searxNcrawl",
+   "stars": 194,
+   "description": "Open-source MCP server that gives AI agents web search (SearXNG) and clean Markdown crawling of pages, whole sites and logged-in areas. Self-hosted, no API key."
+  },
+  {
+   "repo": "sadiuysal/crawl4ai-mcp-server",
+   "url": "https://github.com/sadiuysal/crawl4ai-mcp-server",
+   "stars": 118,
+   "description": "🕷️ A lightweight Model Context Protocol (MCP) server that exposes Crawl4AI web scraping and crawling capabilities as tools for AI agents.  Similar to Firecrawl'"
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Firecrawl",
+    "slug": "FIRECRAWL",
+    "tools": 246,
+    "auth": [
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/firecrawl.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Firecrawl",
+    "slug": "FIRECRAWL",
+    "tools": 246,
+    "auth": [
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/firecrawl.md"
+   }
+  ]
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.042009,
+  "seconds": 50.9,
+  "turns": 1,
+  "mode": "knowledge+crawl"
+ }
+}

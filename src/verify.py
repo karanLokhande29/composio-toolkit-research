@@ -191,6 +191,9 @@ def loop1_record(rec: dict) -> dict:
     """Run every deterministic check on one record (mutates it). Returns a summary for metrics."""
     app = rec["app"]
     changed, flags, ev_stats = [], [], {"exact": 0, "repaired": 0, "dropped": 0}
+    st = rec["api_surface"]["styles"]
+    if len(st) > 1 and "none" in st:  # schema hygiene: 'none' only when there is no API at all
+        rec["api_surface"]["styles"] = [x for x in st if x != "none"]
     for g in GROUPS:
         before = len(rec[g]["evidence"])
         rec[g]["evidence"] = verify_evidence(rec[g]["evidence"], app, g)

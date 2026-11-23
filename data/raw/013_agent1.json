@@ -1,0 +1,127 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.096138,
+  "seconds": 125.3,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://developers.freshdesk.com/api/",
+  "https://support.freshdesk.com/support/solutions/articles/50000001047-do-we-have-api-and-integration-capabilities-in-the-free-sprout-plan",
+  "https://support.freshdesk.com/support/solutions/articles/50000011778-understanding-freshdesk-pricing-plans",
+  "https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk-eap-",
+  "https://developers.freshdesk.com/",
+  "https://support.freshdesk.com/support/solutions/articles/225439-what-are-the-rate-limits-for-the-api-calls-to-freshdesk-",
+  "https://support.freshdesk.com/en/support/solutions/articles/217264-webhooks-faq",
+  "https://docs.composio.dev/toolkits/freshdesk.md",
+  "https://github.com/hashcott/freshdesk-mcp",
+  "https://freshdesk.com",
+  "https://freshdesk.com/pricing",
+  "https://support.freshdesk.com/support/solutions/articles/50000014407-mcp-integration-frequently-asked-questions-faq-"
+ ],
+ "output": {
+  "one_liner": "Freshdesk is a cloud-based customer support platform for managing tickets, customer communications, and helpdesk operations.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "api_key"
+   ],
+   "oauth_grant_types": [],
+   "notes": "API key authentication only. MCP integration also requires API key.",
+   "evidence": [
+    {
+     "url": "https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk-eap-",
+     "snippet": "Currently, Freshdesk allows you to authenticate requests involved in MCP integration by using an API key only."
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/freshdesk.md",
+     "snippet": "Auth: API_KEY"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_trial",
+   "dev_sandbox": true,
+   "notes": "14-day free trial with full API access included. After trial, API access available only on paid plans (Growth, Pro, Enterprise). Free tier has zero API calls.",
+   "evidence": [
+    {
+     "url": "https://support.freshdesk.com/support/solutions/articles/50000011778-understanding-freshdesk-pricing-plans",
+     "snippet": "Every new account starts with a 14-day free trial that includes: Full feature access"
+    },
+    {
+     "url": "https://support.freshdesk.com/support/solutions/articles/50000001047-do-we-have-api-and-integration-capabilities-in-the-free-sprout-plan",
+     "snippet": "No, the access to Freshdesk APIs and the integration capabilities is not available in the free Sprout plan."
+    },
+    {
+     "url": "https://support.freshdesk.com/support/solutions/articles/225439-what-are-the-rate-limits-for-the-api-calls-to-freshdesk-",
+     "snippet": "Free: 0 calls per minute. Growth: 100 calls per minute. Pro: 400 calls per minute."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Per-minute rate limits by plan: Free (0), Growth (100), Pro (400), Enterprise (700). Separate per-endpoint limits also enforced.",
+   "evidence": [
+    {
+     "url": "https://developers.freshdesk.com/api/",
+     "snippet": "Freshdesk's APIs belong to the Representational State Transfer (REST) category."
+    },
+    {
+     "url": "https://developers.freshdesk.com/api/",
+     "snippet": "They allow you to perform 'RESTful' operations such as reading, modifying, adding or deleting data from your helpdesk."
+    },
+    {
+     "url": "https://support.freshdesk.com/support/solutions/articles/225439-what-are-the-rate-limits-for-the-api-calls-to-freshdesk-",
+     "snippet": "The number of API calls you can make is based on your plan."
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [
+    "https://github.com/hashcott/freshdesk-mcp"
+   ],
+   "evidence": [
+    {
+     "url": "https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk-eap-",
+     "snippet": "The Freshworks Model Context Protocol (MCP) server enables AI tools like Cursor and Claude to securely connect and interact with Freshdesk."
+    },
+    {
+     "url": "https://github.com/hashcott/freshdesk-mcp",
+     "snippet": "MCP server for Freshdesk — 194 tools, stdio & HTTP transports, full Zod validation."
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "paid_plan",
+   "rationale": "REST API with broad endpoint coverage is fully documented and accessible via free trial, but production use requires paid subscription after 14 days.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "FRESHDESK"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://freshdesk.com",
+    "snippet": "AI-Powered Customer Service Software | Freshdesk | Freshworks"
+   },
+   {
+    "url": "https://developers.freshdesk.com/",
+    "snippet": "Join the Freshdesk Developer Community and build tools to help thousands of businesses worldwide"
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  }
+ }
+}

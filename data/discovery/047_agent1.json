@@ -1,0 +1,132 @@
+{
+ "id": 47,
+ "app": "Ecwid",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://api-docs.ecwid.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://api-docs.ecwid.com/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://api-docs.ecwid.com/getting-started",
+   "purpose": "getting-started",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://api-docs.ecwid.com/authentication",
+   "purpose": "authentication",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://api-docs.ecwid.com/credentials",
+   "purpose": "credentials",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://api-docs.ecwid.com/api-reference",
+   "purpose": "api-reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://api-docs.ecwid.com/webhooks",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://api-docs.ecwid.com/rate-limits",
+   "purpose": "rate-limits",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://api-docs.ecwid.com/sandbox",
+   "purpose": "sandbox",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.ecwid.com/api-reference",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.ecwid.com/webhook-automations",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.ecwid.com/webhook-automations/webhook-flow-examples/export-new-orders",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.ecwid.com/api-reference/advanced/js-api-calls",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.ecwid.com/api-reference/rest-api/checkout-extra-fields",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [],
+ "composio": {
+  "exact": [],
+  "candidates": []
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.026851,
+  "seconds": 37.1,
+  "turns": 1,
+  "mode": "knowledge+crawl"
+ }
+}

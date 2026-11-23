@@ -1,0 +1,102 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.04839,
+  "seconds": 53.9,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://developer.gladly.com/rest/",
+  "https://help.gladly.com/docs/generate-api-tokens-and-create-webhooks",
+  "https://developer.gladly.com/",
+  "https://gladly.com",
+  "https://help.gladly.com/developer-tutorials/docs",
+  "https://help.gladly.com/developer-tutorials/docs/app-platform-overview",
+  "https://help.gladly.com/developer/docs/lookup-adapter-introduction",
+  "https://help.gladly.com/docs/reactivate-deactivated-webhooks",
+  "https://github.com/estebanruiz-beep/gladly-mcp-demo",
+  "https://github.com/gladly-hyphenated-21/flight-mcp"
+ ],
+ "output": {
+  "one_liner": "Agentic commerce platform for customer support and helpdesk with REST API and webhooks for third-party integrations.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "basic"
+   ],
+   "oauth_grant_types": [],
+   "notes": "Token-based Basic Authentication. API tokens associated with Gladly users who have API User permission.",
+   "evidence": [
+    {
+     "url": "https://developer.gladly.com/rest/",
+     "snippet": "Gladly API uses token-based Basic Authentication. API tokens are associated with designated Gladly users."
+    }
+   ]
+  },
+  "access": {
+   "status": "admin_approval",
+   "dev_sandbox": true,
+   "notes": "Gladly Administrator must enable API User role for a user account to create tokens. Sandbox environment available at https://{organization}.gladly.qa",
+   "evidence": [
+    {
+     "url": "https://help.gladly.com/docs/generate-api-tokens-and-create-webhooks",
+     "snippet": "For integrations not built by Gladly, a Gladly Administrator should create a new user with an API role + Agent and/or Administrator"
+    },
+    {
+     "url": "https://developer.gladly.com/rest/",
+     "snippet": "We'll enable the Gladly API in a separate sandbox environment, so you can experiment freely without impacting your production environment"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "moderate",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Rate limiting enforced with retry mechanism; webhooks deactivate after failing retries",
+   "evidence": [
+    {
+     "url": "https://developer.gladly.com/rest/",
+     "snippet": "You can integrate easily with Gladly by calling Gladly's REST API and implementing the Lookup API"
+    },
+    {
+     "url": "https://developer.gladly.com/rest/",
+     "snippet": "Download OpenAPI specification: Download"
+    },
+    {
+     "url": "https://help.gladly.com/docs/generate-api-tokens-and-create-webhooks",
+     "snippet": "Create up to 50 webhooks for your organization. See our developer guide for more information about webhooks."
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": []
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "admin_scope",
+   "rationale": "REST API is well-documented with OpenAPI spec and sandbox, but requires Gladly admin approval to enable API access.",
+   "composio_existing_toolkit": "no",
+   "composio_slug": null
+  },
+  "overview_evidence": [
+   {
+    "url": "https://gladly.com",
+    "snippet": "Agentic commerce platform built for top brands. Help that pays for itself."
+   }
+  ],
+  "confidence": 0.76,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "Pages do not specify whether API access requires paid plan or is available on free tier",
+   "api_surface": "",
+   "mcp": "No official MCP from Gladly; GitHub demo repo found but is empty"
+  }
+ }
+}

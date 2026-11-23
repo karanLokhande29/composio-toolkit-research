@@ -1,0 +1,216 @@
+{
+ "id": 80,
+ "app": "Harvest",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://harvestapp.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.harvestapp.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.harvestapp.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": true
+  },
+  {
+   "url": "https://docs.harvestapp.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://harvestapp.com/pricing",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://help.getharvest.com/api-v2",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/taiste/harvest-mcp-server",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/Dominic-DK/mac-shortcuts-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/nospicyplease/amazon-ppc-advanced-skills",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/harvest.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.getharvest.com/pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://id.getharvest.com/google/oauth2/new?state%5Baccount_id%5D=1913509&state%5Bintent%5D=sign-in",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://id.getharvest.com/google/oauth2/new?state%5Baccount_id%5D=2239630&state%5Bintent%5D=sign-in",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://help.getharvest.com/api-v2/authentication-api",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.getharvest.com/add-time-tracking",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://help.getharvest.com/api-v2/notifications-api/notifications/notification-preferences/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "taiste/harvest-mcp-server",
+   "url": "https://github.com/taiste/harvest-mcp-server",
+   "stars": 37,
+   "description": "MCP Server for Harvest"
+  },
+  {
+   "repo": "Dominic-DK/mac-shortcuts-mcp",
+   "url": "https://github.com/Dominic-DK/mac-shortcuts-mcp",
+   "stars": 15,
+   "description": "Let any AI agent read your Mac — Calendar, Reminders, Notes, Contacts, Clipboard, Location, Weather — through Apple Shortcuts. Read-only, local, no account. Inc"
+  },
+  {
+   "repo": "nospicyplease/amazon-ppc-advanced-skills",
+   "url": "https://github.com/nospicyplease/amazon-ppc-advanced-skills",
+   "stars": 15,
+   "description": "Open-source Amazon PPC agent skills for Codex and Claude: diagnose drops, find growth, harvest search terms, and use Rocketcart MCP for live Ads + product-intel"
+  },
+  {
+   "repo": "abcubed3/okf",
+   "url": "https://github.com/abcubed3/okf",
+   "stars": 9,
+   "description": "The OKF-go provides a high-performance suite of utilities to validate bundles, harvest metadata from databases and APIs, assemble context for Large Language Mod"
+  },
+  {
+   "repo": "HurriKane/skyfactory-2.4-faults",
+   "url": "https://github.com/HurriKane/skyfactory-2.4-faults",
+   "stars": 9,
+   "description": "[16/5/2015 18:44:34 PM] Loading Language: English [16/5/2015 18:44:34 PM] Loading Language: English [16/5/2015 18:44:34 PM] ATLauncher Version: 3.2.2.6 [16/5/20"
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Harvest",
+    "slug": "HARVEST",
+    "tools": 57,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/harvest.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Harvest",
+    "slug": "HARVEST",
+    "tools": 57,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/harvest.md"
+   },
+   {
+    "name": "HarvestAPI",
+    "slug": "HARVESTAPI",
+    "tools": 32,
+    "auth": [
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/harvestapi.md"
+   }
+  ]
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.049704,
+  "seconds": 62.0,
+  "turns": 1,
+  "mode": "knowledge+crawl"
+ }
+}

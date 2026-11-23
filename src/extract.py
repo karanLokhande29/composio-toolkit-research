@@ -109,7 +109,7 @@ PURPOSE_RANK = {"auth": 0, "access": 1, "pricing": 2, "api_reference": 3, "mcp_o
                 "hint": 11, "crawl": 12, "mcp_community?": 13}
 
 
-def select_pages(disc: dict, max_pages: int = 14, total_budget: int = 80000, per_page: int = 5500) -> list[tuple[str, str]]:
+def select_pages(disc: dict, max_pages: int = 12, total_budget: int = 55000, per_page: int = 4500) -> list[tuple[str, str]]:
     cands = [u for u in disc["urls"] if u.get("ok")]
     cands.sort(key=lambda u: PURPOSE_RANK.get(u.get("purpose", ""), 12))
     chosen, used, seen_text = [], 0, set()
@@ -183,6 +183,8 @@ def normalise(out: dict, app: dict) -> dict:
         "confidence": float(out.get("confidence") or 0),
         "unknown_reasons": out.get("unknown_reasons") or {},
     }
+    if len(rec["api_surface"]["styles"]) > 1:
+        rec["api_surface"]["styles"] = [x for x in rec["api_surface"]["styles"] if x != "none"]
     # evidence items must be dicts with url+snippet
     for grp in ("auth", "access", "api_surface", "mcp"):
         rec[grp]["evidence"] = [e for e in rec[grp]["evidence"] if isinstance(e, dict) and e.get("url") and e.get("snippet")]
@@ -199,8 +201,9 @@ def snapshot(rec: dict) -> dict:
 
 
 def extract(app: dict, disc: dict, model: str, prompt_template: str = PROMPT_A, tag: str = "agent1",
-            system: str = "You are a careful API research analyst. You answer only from the provided pages and output only JSON.") -> dict:
-    pages = select_pages(disc)
+            system: str = "You are a careful API research analyst. You answer only from the provided pages and output only JSON.",
+            budget: int = 55000) -> dict:
+    pages = select_pages(disc, total_budget=budget, per_page=min(4500, budget // 7))
     prompt = prompt_template.format(app=app["app"], category=app["category"], hint=app["hint"],
                                     definitions=DEFINITIONS, evidence_rules=EVIDENCE_RULES,
                                     composio=composio_block(disc), pages=render_pages(pages), schema=SCHEMA)

@@ -1,0 +1,306 @@
+{
+ "id": 81,
+ "app": "Stripe",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://stripe.com/docs/api",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://stripe.com/docs/authentication",
+   "purpose": "authentication",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://stripe.com/docs/keys",
+   "purpose": "credentials-management",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://stripe.com/docs/testing",
+   "purpose": "sandbox-environment",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://stripe.com/docs/get-started",
+   "purpose": "developer-access",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://stripe.com/docs/rate-limits",
+   "purpose": "rate-limits",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://stripe.com/docs/webhooks",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://stripe.com/docs/development",
+   "purpose": "development-setup",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://stripe.com/docs/payments",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://stripe.com/docs/error-codes",
+   "purpose": "error-reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/iannuttall/mcp-boilerplate",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/Kronova-Intelligent-Systems/asset-intel-orchestration-engine",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/Justin0504/Sovereign-OS",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/stripe.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.stripe.com/api/authentication",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.stripe.com/api/three-d-secure/authentication",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.stripe.com/rate-limits",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.stripe.com/mcp",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.stripe.com/partners",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.stripe.com/partners/training-and-certification",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.stripe.com/stripe-apps/api-authentication/rak",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://dashboard.stripe.com/api-access-policies",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": true
+  },
+  {
+   "url": "https://support.stripe.com/questions/why-does-my-api-key-have-limited-access",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://docs.stripe.com/strong-customer-authentication",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.stripe.com/payments/checkout/pricing-table",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.stripe.com/payments/currencies/localize-prices/adaptive-pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.stripe.com/payments/3d-secure/authentication-flow",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.stripe.com/webhooks/migrate-snapshot-to-thin-events",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "iannuttall/mcp-boilerplate",
+   "url": "https://github.com/iannuttall/mcp-boilerplate",
+   "stars": 1017,
+   "description": "A remote Cloudflare MCP server boilerplate with user authentication and Stripe for paid tools."
+  },
+  {
+   "repo": "Kronova-Intelligent-Systems/asset-intel-orchestration-engine",
+   "url": "https://github.com/Kronova-Intelligent-Systems/asset-intel-orchestration-engine",
+   "stars": 257,
+   "description": "Open-source platform for multi-agent AI orchestration, real-world asset tokenization, workflow automation. Includes OAuth 2.1 MCP agent management, a 44-field R"
+  },
+  {
+   "repo": "Justin0504/Sovereign-OS",
+   "url": "https://github.com/Justin0504/Sovereign-OS",
+   "stars": 105,
+   "description": "Constitution-first AI orchestration: one Charter (YAML) defines mission, budget & rules. CEO plans → CFO approves → Ledger tracks every cent & token → Auditor s"
+  },
+  {
+   "repo": "Humblytics/humblytics-marketing-skills",
+   "url": "https://github.com/Humblytics/humblytics-marketing-skills",
+   "stars": 86,
+   "description": "Hosted MCP server and 12 marketing skills for Claude and Codex. Give your agent live web analytics, A/B tests, funnels, heatmaps and paid-ads attribution resolv"
+  },
+  {
+   "repo": "guillermoscript/lms-front",
+   "url": "https://github.com/guillermoscript/lms-front",
+   "stars": 49,
+   "description": "Open-source multi-tenant LMS for creators and schools: sell courses on your own subdomain. Next.js 16 + React 19 + Supabase (RLS) + Stripe Connect, an AI tutor "
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Stripe",
+    "slug": "STRIPE",
+    "tools": 435,
+    "auth": [
+     "API_KEY",
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/stripe.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Stripe",
+    "slug": "STRIPE",
+    "tools": 435,
+    "auth": [
+     "API_KEY",
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/stripe.md"
+   },
+   {
+    "name": "Stripe MCP",
+    "slug": "STRIPE_MCP",
+    "tools": 10,
+    "auth": [
+     "DCR_OAUTH"
+    ],
+    "url": "https://docs.composio.dev/toolkits/stripe_mcp.md"
+   }
+  ]
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.0070220000000000005,
+  "seconds": 11.9,
+  "turns": 1,
+  "mode": "knowledge+crawl"
+ }
+}

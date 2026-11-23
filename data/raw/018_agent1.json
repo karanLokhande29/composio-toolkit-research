@@ -1,0 +1,122 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.087518,
+  "seconds": 102.2,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+  "https://developer.helpscout.com/apps/getting-started/",
+  "https://www.helpscout.com/pricing/",
+  "https://docs.helpscout.com/article/1779-connect-your-ai-agent-with-help-scout-to-search-conversations-and-pull-reports",
+  "https://developer.helpscout.com/mailbox-api/",
+  "https://developer.helpscout.com/mailbox-api/overview/rate-limiting/",
+  "https://developer.helpscout.com/webhooks/",
+  "https://docs.composio.dev/toolkits/help_scout.md",
+  "https://github.com/drewburchfield/help-scout-mcp-server",
+  "https://helpscout.com",
+  "https://developer.helpscout.com",
+  "https://docs.helpscout.com"
+ ],
+ "output": {
+  "one_liner": "AI-driven customer support platform for managing conversations, customers, and support workflows across multiple channels.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2"
+   ],
+   "oauth_grant_types": [
+    "authorization_code",
+    "client_credentials"
+   ],
+   "notes": "OAuth2 application created via user profile; Authorization Code flow for user integrations, Client Credentials for internal integrations",
+   "evidence": [
+    {
+     "url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+     "snippet": "OAuth 2.0 authorization, implementing Authorization Code and Client Credential flows."
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_trial",
+   "dev_sandbox": true,
+   "notes": "Free 15-day trial of Standard/Plus/Pro plans (no credit card required) includes API access; sustained use requires paid subscription starting at Standard plan",
+   "evidence": [
+    {
+     "url": "https://docs.helpscout.com/article/1779-connect-your-ai-agent-with-help-scout-to-search-conversations-and-pull-reports",
+     "snippet": "Your Help Scout account must have API access, which is included on the Standard, Plus, and Pro plans."
+    },
+    {
+     "url": "https://www.helpscout.com/pricing/",
+     "snippet": "When you sign up for a free trial of the Standard or Plus plan, you'll get 15 days to take all of the plan's features for a test drive"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Rate limited per plan; write requests count as 2 requests; response code 429 when throttled; rate limit headers provided (X-RateLimit-*)",
+   "evidence": [
+    {
+     "url": "https://developer.helpscout.com/mailbox-api/",
+     "snippet": "with OAuth 2 authentication and CORS which should help you explore the API and free you from composing URIs by hand."
+    },
+    {
+     "url": "https://developer.helpscout.com/mailbox-api/overview/rate-limiting/",
+     "snippet": "The API is rate limited and all users associated with the same account count against the same rate limit."
+    },
+    {
+     "url": "https://developer.helpscout.com/webhooks/",
+     "snippet": "Webhooks enable Help Scout to call a script on your server when one or more events have happened."
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://mcp.helpscout.net/mcp",
+   "community": [
+    "https://github.com/drewburchfield/help-scout-mcp-server"
+   ],
+   "evidence": [
+    {
+     "url": "https://docs.helpscout.com/article/1779-connect-your-ai-agent-with-help-scout-to-search-conversations-and-pull-reports",
+     "snippet": "Set the remote MCP server URL to https://mcp.helpscout.net/mcp"
+    },
+    {
+     "url": "https://github.com/drewburchfield/help-scout-mcp-server",
+     "snippet": "MCP server for Help Scout - search conversations, customers, organizations, reports, and Docs with AI agents"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "paid_plan",
+   "rationale": "Well-documented REST API with self-serve OAuth credentials, but API access requires paid Standard plan (or time-limited free trial) rather than free tier.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "HELP_SCOUT"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://helpscout.com",
+    "snippet": "Help Scout: The AI-driven support platform for customer-first brands"
+   },
+   {
+    "url": "https://developer.helpscout.com",
+    "snippet": "Help Scout provides several tools for developers to make magic happen: Apps - display your own content as an internal sidebar application in the Inbox"
+   }
+  ],
+  "confidence": 0.9,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  }
+ }
+}

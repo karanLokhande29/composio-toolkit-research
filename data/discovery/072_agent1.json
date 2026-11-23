@@ -1,0 +1,265 @@
+{
+ "id": 72,
+ "app": "Airtable",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://airtable.com/developers",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://airtable.com/developers/web/api/introduction",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://airtable.com/developers/web/api/authentication",
+   "purpose": "authentication",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://airtable.com/developers/web/api",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://airtable.com/developers/web/guides/rate-limits",
+   "purpose": "rate_limits",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://airtable.com/developers/web/api/webhooks",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://airtable.com/developers/web/guides",
+   "purpose": "guides",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://github.com/julien040/anyquery",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/domdomegg/airtable-mcp-server",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/rashidazarang/airtable-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/airtable.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://airtable.com/developers/agents/mcp/getting-started",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://airtable.com/developers/agents/mcp/claude",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://airtable.com/developers/agents/mcp/chatgpt",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://airtable.com/developers/agents/mcp/gemini",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://airtable.com/developers/agents/mcp/cursor",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://airtable.com/developers/agents/mcp/claude-code",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://airtable.com/developers/agents/mcp/cli",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://airtable.com/developers/agents/mcp/other",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://airtable.com/developers/agents/mcp/controls",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://airtable.com/developers/agents/mcp/tools",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://airtable.com/developers/agents/skills-and-plugins/getting-started",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://airtable.com/developers/agents",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://airtable.com/developers/web",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "julien040/anyquery",
+   "url": "https://github.com/julien040/anyquery",
+   "stars": 1794,
+   "description": "One SQL interface for 60+ tools (e.g., GitHub, Notion, Airtable). Plug into any LLM through MCP."
+  },
+  {
+   "repo": "domdomegg/airtable-mcp-server",
+   "url": "https://github.com/domdomegg/airtable-mcp-server",
+   "stars": 456,
+   "description": "🗂️🤖 Airtable Model Context Protocol Server, for allowing AI systems to interact with your Airtable bases"
+  },
+  {
+   "repo": "rashidazarang/airtable-mcp",
+   "url": "https://github.com/rashidazarang/airtable-mcp",
+   "stars": 89,
+   "description": "Airtable integration for AI-powered applications via Anthropic's Model Context Protocol (MCP)"
+  },
+  {
+   "repo": "felores/airtable-mcp",
+   "url": "https://github.com/felores/airtable-mcp",
+   "stars": 75,
+   "description": "Search, create and update Airtable bases, tables, fields, and records using Claude Desktop and MCP (Model Context Protocol) clients"
+  },
+  {
+   "repo": "Airtable/airtable-mcp-cli",
+   "url": "https://github.com/Airtable/airtable-mcp-cli",
+   "stars": 41,
+   "description": "The official Airtable CLI."
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Airtable",
+    "slug": "AIRTABLE",
+    "tools": 28,
+    "auth": [
+     "OAUTH2",
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/airtable.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Airtable",
+    "slug": "AIRTABLE",
+    "tools": 28,
+    "auth": [
+     "OAUTH2",
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/airtable.md"
+   }
+  ]
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.030494,
+  "seconds": 38.2,
+  "turns": 1,
+  "mode": "knowledge+crawl"
+ }
+}

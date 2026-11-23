@@ -26,7 +26,7 @@ def stage_discover(apps, force, workers):
     print(f"discover: {len(todo)} apps to do ({len(apps) - len(todo)} cached)")
 
     def one(a):
-        d = discover.discover_and_fetch(a, model=model)
+        d = discover.discover_and_fetch(a, model=model, use_search=env("DISCOVERY_SEARCH", "0") == "1")
         return a, d
 
     with ThreadPoolExecutor(workers) as ex:
@@ -48,7 +48,7 @@ def stage_extract(apps, force, workers):
     def one(a):
         disc = discover.load_discovery(a["id"])
         if not disc:
-            disc = discover.discover_and_fetch(a, model=model)
+            disc = discover.discover_and_fetch(a, model=model, use_search=env("DISCOVERY_SEARCH", "0") == "1")
         rec = extract.extract(a, disc, model=model)
         if rec["_meta"].get("error"):  # retry once
             rec = extract.extract(a, disc, model=model)
@@ -62,7 +62,7 @@ def stage_extract(apps, force, workers):
         for fut in as_completed(futs):
             rec = fut.result()
             results[rec["id"]] = rec
-            save_results(results)
+            save_results(results, only=[rec["id"]])
             m = rec["_meta"]
             print(f"  [{rec['id']:3d}] {rec['app']:<28} auth={','.join(rec['auth']['methods']):<18} "
                   f"access={rec['access']['status']:<18} verdict={rec['buildability']['verdict']:<18} "

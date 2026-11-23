@@ -1,0 +1,122 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.067856,
+  "seconds": 74.3,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+  "https://www.usepylon.com/pricing",
+  "https://docs.usepylon.com/pylon-docs/developer/api/api-reference/accounts",
+  "https://docs.usepylon.com/pylon-docs/integrations/pylon-mcp",
+  "https://docs.usepylon.com/pylon-docs/developer/api",
+  "https://docs.usepylon.com/pylon-docs/developer/webhooks",
+  "https://docs.composio.dev/toolkits/pylon_mcp.md",
+  "https://usepylon.com",
+  "https://docs.usepylon.com",
+  "https://www.usepylon.com/integrations/mcp",
+  "https://docs.usepylon.com/pylon-docs/getting-started/publish-your-docs",
+  "https://docs.usepylon.com/pylon-docs/getting-started/setup"
+ ],
+ "output": {
+  "one_liner": "Agentic B2B support platform that tracks customer issues across channels and orchestrates AI agents and automation to investigate and resolve them.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "bearer_token",
+    "oauth2"
+   ],
+   "oauth_grant_types": [],
+   "notes": "REST API uses Bearer token authentication; MCP supports OAuth 2.0 or API token. Only Admins can create and manage API tokens.",
+   "evidence": [
+    {
+     "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+     "snippet": "The Pylon API uses Bearer authentication. This means you'll need to pass your API token in the header of your request"
+    },
+    {
+     "url": "https://docs.usepylon.com/pylon-docs/integrations/pylon-mcp",
+     "snippet": "Auth: OAuth 2.0 or an API token. Actions are performed as the signed-in user or the token's identity"
+    }
+   ]
+  },
+  "access": {
+   "status": "contact_sales",
+   "dev_sandbox": true,
+   "notes": "REST API and webhooks available on paid plan tiers shown in pricing table. Free trial available but requires sales contact. Sandbox environment listed as plan feature.",
+   "evidence": [
+    {
+     "url": "https://www.usepylon.com/pricing",
+     "snippet": "For Enterprise customers, our sales team will work with you on a custom quote."
+    },
+    {
+     "url": "https://www.usepylon.com/pricing",
+     "snippet": "Pylon offers free trials for prospects. Your sales representative will work with you on setting up the demo organization."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "moderate",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "300 requests per minute for most REST operations; rate limits apply per MCP tool",
+   "evidence": [
+    {
+     "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+     "snippet": "Authorization: Bearer <token>"
+    },
+    {
+     "url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference/accounts",
+     "snippet": "Rate limit: 300 requests per minute"
+    },
+    {
+     "url": "https://docs.usepylon.com/pylon-docs/developer/webhooks",
+     "snippet": "Webhooks are user-defined HTTP callbacks that are triggered by specific events within Pylon."
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://mcp.usepylon.com",
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://docs.usepylon.com/pylon-docs/integrations/pylon-mcp",
+     "snippet": "Server URL (US): https://mcp.usepylon.com | Server URL (EU): https://mcp.eu.usepylon.com"
+    },
+    {
+     "url": "https://www.usepylon.com/integrations/mcp",
+     "snippet": "Pylon MCP server: connect ChatGPT, Claude, and Cursor. Work issues, accounts, contacts, and your knowledge base"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "paid_plan",
+   "rationale": "REST API and MCP are documented with Bearer/OAuth authentication; a toolkit could be built today, but requires paid plan via sales contact; PYLON_MCP toolkit demonstrates this is achievable.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "PYLON_MCP"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://usepylon.com",
+    "snippet": "Pylon: Agentic B2B Support"
+   },
+   {
+    "url": "https://docs.usepylon.com",
+    "snippet": "Pylon is the first agentic support platform built for B2B."
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  }
+ }
+}

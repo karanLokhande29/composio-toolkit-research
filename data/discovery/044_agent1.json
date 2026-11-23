@@ -1,0 +1,132 @@
+{
+ "id": 44,
+ "app": "Salesforce Commerce Cloud",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://developer.salesforce.com/docs/commerce",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/taurgis/sfcc-dev-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/brinzl/commercecloud-mcp-server",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/vinkius-labs/salesforce-commerce-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/salesforce.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/salesforce_data_360.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-commerce-ocapi/get-started-with-ocapi.html",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.salesforce.com/docs/atlas.en-us.order_management_developer_guide_html.meta/order_management_developer_guide_html/order_management_developer_guide_intro.htm",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "taurgis/sfcc-dev-mcp",
+   "url": "https://github.com/taurgis/sfcc-dev-mcp",
+   "stars": 28,
+   "description": "Supercharge your Salesforce B2C Commerce Cloud development with AI-powered documentation access, real-time log analysis, and intelligent best practices guidance"
+  },
+  {
+   "repo": "brinzl/commercecloud-mcp-server",
+   "url": "https://github.com/brinzl/commercecloud-mcp-server",
+   "stars": 8,
+   "description": "🤖 An MCP server that helps connect your AI applications with your Salesforce Commerce Cloud instance"
+  },
+  {
+   "repo": "vinkius-labs/salesforce-commerce-mcp",
+   "url": "https://github.com/vinkius-labs/salesforce-commerce-mcp",
+   "stars": 3,
+   "description": "Vinkius Edge enterprise Model Context Protocol (MCP) server for Salesforce B2C Commerce Cloud integration."
+  }
+ ],
+ "composio": {
+  "exact": [],
+  "candidates": [
+   {
+    "name": "Salesforce",
+    "slug": "SALESFORCE",
+    "tools": 595,
+    "auth": [
+     "OAUTH2",
+     "S2S_OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/salesforce.md"
+   },
+   {
+    "name": "Salesforce Data 360",
+    "slug": "SALESFORCE_DATA_360",
+    "tools": 424,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/salesforce_data_360.md"
+   },
+   {
+    "name": "Salesforce Service Cloud",
+    "slug": "SALESFORCE_SERVICE_CLOUD",
+    "tools": 24,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/salesforce_service_cloud.md"
+   }
+  ]
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.020428,
+  "seconds": 27.4,
+  "turns": 1,
+  "mode": "knowledge+crawl"
+ }
+}

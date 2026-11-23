@@ -1,0 +1,242 @@
+{
+ "id": 77,
+ "app": "ClickUp",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://clickup.com/api",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.clickup.com",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.clickup.com/en/articles/authentication",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.clickup.com/en/articles/getting-started",
+   "purpose": "developer_access",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.clickup.com/en/articles/api-reference",
+   "purpose": "reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.clickup.com/en/articles/webhooks",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.clickup.com/en/articles/rate-limits",
+   "purpose": "rate_limits",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.clickup.com/en/articles/error-codes",
+   "purpose": "error_handling",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/taazkareem/clickup-mcp-server",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/hauptsacheNet/clickup-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/nsxdavid/clickup-mcp-server",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/clickup.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.clickup.com/docs/authentication",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server-1",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.clickup.com/docs/mcp-tools",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://help.clickup.com/hc/en-us/categories/5735460831255-Integrations-API-and-MCP",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://help.clickup.com/hc/en-us/articles/10129535087383-Intro-to-pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.clickup.com/reference",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.clickup.com/docs/webhooks",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "taazkareem/clickup-mcp-server",
+   "url": "https://github.com/taazkareem/clickup-mcp-server",
+   "stars": 54,
+   "description": "ClickUp MCP Server - Integrate ClickUp project management with AI through Model Context Protocol"
+  },
+  {
+   "repo": "hauptsacheNet/clickup-mcp",
+   "url": "https://github.com/hauptsacheNet/clickup-mcp",
+   "stars": 51,
+   "description": ""
+  },
+  {
+   "repo": "nsxdavid/clickup-mcp-server",
+   "url": "https://github.com/nsxdavid/clickup-mcp-server",
+   "stars": 43,
+   "description": ""
+  },
+  {
+   "repo": "aliansoftwareteam/AlianHub-Project-Management-System",
+   "url": "https://github.com/aliansoftwareteam/AlianHub-Project-Management-System",
+   "stars": 27,
+   "description": "Open-source, self-hosted project management: tasks, sprints, Gantt, Kanban, docs, automations and time tracking with timesheets. Connect Claude or ChatGPT over "
+  },
+  {
+   "repo": "Nazruden/clickup-mcp-server",
+   "url": "https://github.com/Nazruden/clickup-mcp-server",
+   "stars": 23,
+   "description": "A Model Context Protocol server implementation for ClickUp integration, enabling AI assistants to interact with ClickUp workspaces."
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "ClickUp",
+    "slug": "CLICKUP",
+    "tools": 165,
+    "auth": [
+     "OAUTH2",
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/clickup.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "ClickUp",
+    "slug": "CLICKUP",
+    "tools": 165,
+    "auth": [
+     "OAUTH2",
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/clickup.md"
+   },
+   {
+    "name": "ClickUp MCP",
+    "slug": "CLICKUP_MCP",
+    "tools": 58,
+    "auth": [
+     "DCR_OAUTH"
+    ],
+    "url": "https://docs.composio.dev/toolkits/clickup_mcp.md"
+   }
+  ]
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.033437,
+  "seconds": 41.9,
+  "turns": 1,
+  "mode": "knowledge+crawl"
+ }
+}

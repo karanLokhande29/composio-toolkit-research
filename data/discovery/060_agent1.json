@@ -1,0 +1,280 @@
+{
+ "id": 60,
+ "app": "Clay",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://clay.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.clay.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.clay.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.clay.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://clay.com/pricing",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.clay.com/guides",
+   "purpose": "getting_started",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://docs.clay.com/authentication",
+   "purpose": "authentication",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://docs.clay.com/api-reference",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://docs.clay.com/rate-limits",
+   "purpose": "rate_limits",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://github.com/clay-run/agent-plugins",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/clay-good/proxilion-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/bpw-civic/clay-mcp-server",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/clay.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.clay.com/pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.clay.com/mcp",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.clay.com/partners",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.clay.com/partners/solutions",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.clay.com/partners/integrations",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://university.clay.com/courses/clay-mcps-for-reps",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://university.clay.com/courses/clay-mcp-for-ops",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://university.clay.com/docs-topics/getting-started",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.clay.com/pricing-calculator",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://university.clay.com/docs/ai-pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.clay.com/integrations",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.clay.com/quickstart",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "clay-run/agent-plugins",
+   "url": "https://github.com/clay-run/agent-plugins",
+   "stars": 155,
+   "description": "Build with Clay in your AI coding agent - skills, MCP tools, and the clay CLI for Claude Code, Codex, and Cursor. Search companies and people, run enrichment ro"
+  },
+  {
+   "repo": "clay-good/proxilion-mcp",
+   "url": "https://github.com/clay-good/proxilion-mcp",
+   "stars": 6,
+   "description": "Proxilion MCP Security Gateway is a self-hosted, Docker-ready security gateway that provides real-time threat detection (<50ms P95 latency) against insider thre"
+  },
+  {
+   "repo": "bpw-civic/clay-mcp-server",
+   "url": "https://github.com/bpw-civic/clay-mcp-server",
+   "stars": 4,
+   "description": "MCP server for Clay.com API - people and company enrichment"
+  },
+  {
+   "repo": "mambalabsdev/mcp-gtm-suite",
+   "url": "https://github.com/mambalabsdev/mcp-gtm-suite",
+   "stars": 3,
+   "description": "MCP server for the full Mamba Labs GTM Suite. All six GTM actors as tools in one server via Apify. Clay-ready output."
+  },
+  {
+   "repo": "mambalabsdev/mcp-icp-fit-scorer",
+   "url": "https://github.com/mambalabsdev/mcp-icp-fit-scorer",
+   "stars": 3,
+   "description": "MCP server for ICP Fit Scorer. Scores a company against your ideal customer profile with weighted signals via Apify. Returns a 0 to 100 score, a tier, and a per"
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Clay",
+    "slug": "CLAY",
+    "tools": 15,
+    "auth": [
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/clay.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Clay",
+    "slug": "CLAY",
+    "tools": 15,
+    "auth": [
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/clay.md"
+   },
+   {
+    "name": "Clay MCP",
+    "slug": "CLAY_MCP",
+    "tools": 17,
+    "auth": [
+     "DCR_OAUTH"
+    ],
+    "url": "https://docs.composio.dev/toolkits/clay_mcp.md"
+   }
+  ]
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.035112000000000004,
+  "seconds": 48.3,
+  "turns": 1,
+  "mode": "knowledge+crawl"
+ }
+}

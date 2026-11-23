@@ -82,8 +82,15 @@ def load_results() -> dict[int, dict]:
     return {}
 
 
-def save_results(by_id: dict[int, dict]) -> None:
-    with _lock:
+def save_results(by_id: dict[int, dict], only: list[int] | None = None) -> None:
+    """Write results. With `only`, merge just those ids into what is on disk (safe for parallel runs)."""
+    import fcntl
+    with _lock, open(DATA / ".results.lock", "w") as lk:
+        fcntl.flock(lk, fcntl.LOCK_EX)
+        if only is not None:
+            disk = load_results()
+            disk.update({k: by_id[k] for k in only if k in by_id})
+            by_id = disk
         rows = [by_id[k] for k in sorted(by_id)]
         tmp = RESULTS.with_suffix(".tmp")
         tmp.write_text(json.dumps(rows, indent=1, ensure_ascii=False))

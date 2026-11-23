@@ -1,0 +1,263 @@
+{
+ "id": 75,
+ "app": "Asana",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://developers.asana.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.asana.com/docs",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.asana.com/docs/authentication",
+   "purpose": "authentication",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.asana.com/docs/get-started",
+   "purpose": "credentials",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.asana.com/docs/oauth",
+   "purpose": "oauth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.asana.com/docs/personal-access-tokens",
+   "purpose": "personal_access_tokens",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.asana.com/reference",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.asana.com/docs/rate-limits",
+   "purpose": "rate_limits",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.asana.com/docs/webhooks",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/itsdecodingai/enterprise-mcp-course",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/roychri/mcp-server-asana",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/bobmatnyc/mcp-ticketer",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/asana.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.asana.com/docs/personal-access-token",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.asana.com/docs/getting-started-with-asana-oauth",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.asana.com/docs/oauth-scopes",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.asana.com/docs/mcp-server",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.asana.com/docs/using-asanas-mcp-server",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.asana.com/docs/using-asanas-command-mcp-server",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.asana.com/docs/mcp-clients",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.asana.com/docs/connecting-mcp-clients-to-asanas-v2-server",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.asana.com/docs/integrating-with-asanas-mcp-server",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.asana.com/docs/mcp-tools-reference",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.asana.com/reference/access-requests",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "itsdecodingai/enterprise-mcp-course",
+   "url": "https://github.com/itsdecodingai/enterprise-mcp-course",
+   "stars": 278,
+   "description": "Learn to build from scratch an AI PR reviewer integrated with GitHub, Slack and Asana that scales within your organization."
+  },
+  {
+   "repo": "roychri/mcp-server-asana",
+   "url": "https://github.com/roychri/mcp-server-asana",
+   "stars": 150,
+   "description": ""
+  },
+  {
+   "repo": "bobmatnyc/mcp-ticketer",
+   "url": "https://github.com/bobmatnyc/mcp-ticketer",
+   "stars": 14,
+   "description": " Universal ticket management MCP server for AI agents. Connect Linear, GitHub, Jira, Asana to Claude & AI workflows with intelligent token optimization."
+  },
+  {
+   "repo": "kevinblanco/pmo-intelligence-engine",
+   "url": "https://github.com/kevinblanco/pmo-intelligence-engine",
+   "stars": 7,
+   "description": "A2A + MCP (Google & Asana) + Vertex AI + BigQuery + Asana"
+  },
+  {
+   "repo": "jak-myers/agents-os",
+   "url": "https://github.com/jak-myers/agents-os",
+   "stars": 4,
+   "description": "Collection of MCP servers for AI agent teams - Seamless integrations with Airtable, Asana, and Slack for powerful AI-driven workflows"
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Asana",
+    "slug": "ASANA",
+    "tools": 247,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/asana.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Asana",
+    "slug": "ASANA",
+    "tools": 247,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/asana.md"
+   }
+  ]
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.051952,
+  "seconds": 64.6,
+  "turns": 1,
+  "mode": "knowledge+crawl"
+ }
+}

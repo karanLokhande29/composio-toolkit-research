@@ -1,0 +1,19 @@
+{
+ "id": 84,
+ "app": "Paygent Connect",
+ "tag": "agent1",
+ "urls": [],
+ "github_mcp": [],
+ "composio": {
+  "exact": [],
+  "candidates": []
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.005052,
+  "seconds": 11.5,
+  "turns": 1,
+  "mode": "knowledge+crawl"
+ }
+}

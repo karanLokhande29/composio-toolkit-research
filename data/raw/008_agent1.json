@@ -1,0 +1,145 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.068786,
+  "seconds": 66.9,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://developer.close.com/api/overview/oauth-authentication",
+  "https://developer.close.com/integrations",
+  "https://developer.close.com/api/overview",
+  "https://developer.close.com/mcp",
+  "https://developer.close.com/",
+  "https://developer.close.com/api/overview/rate-limits",
+  "https://developer.close.com/topics/webhooks/",
+  "https://api.close.com/api/openapi.json",
+  "https://docs.composio.dev/toolkits/close.md",
+  "https://close.com",
+  "https://close.com/pricing",
+  "https://close.com/partners"
+ ],
+ "output": {
+  "one_liner": "Close is a SaaS CRM platform that provides sales teams with calling, email, SMS, and AI agents for managing leads and automating sales workflows.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "api_key",
+    "oauth2",
+    "bearer_token"
+   ],
+   "oauth_grant_types": [
+    "authorization_code"
+   ],
+   "notes": "API Keys use HTTP Basic Auth with key as username and empty password. OAuth 2.0 uses authorization_code grant with refresh token support. Bearer tokens used with OAuth access tokens.",
+   "evidence": [
+    {
+     "url": "https://developer.close.com/api/overview",
+     "snippet": "API Keys — Best for scripts, internal tools, and server-side integrations. Use HTTP Basic Auth with your API key as the username and an empty password."
+    },
+    {
+     "url": "https://developer.close.com/api/overview",
+     "snippet": "OAuth 2.0 — Best for user-facing integrations."
+    },
+    {
+     "url": "https://developer.close.com/api/overview/oauth-authentication",
+     "snippet": "Send your HTTP requests with an Authorization header that contains the word Bearer followed by a space and the Access Token."
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_trial",
+   "dev_sandbox": true,
+   "notes": "14-day free trial available to anyone. Free secondary organizations available to existing Close users. Free Dev organizations available on request to partners without Close account.",
+   "evidence": [
+    {
+     "url": "https://close.com/pricing",
+     "snippet": "14-day free trial · We'll help you move your data, get set up, and start selling in Close."
+    },
+    {
+     "url": "https://developer.close.com/integrations",
+     "snippet": "Already a Close user — You can create a free secondary organization."
+    },
+    {
+     "url": "https://developer.close.com/integrations",
+     "snippet": "Integration partners who don't use Close in their own sales process can request a free Dev organization by emailing support@close.com"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": "https://api.close.com/api/openapi.json",
+   "webhooks": true,
+   "rate_limit_note": "Rate limits enforced per endpoint group and per organization. Organization-wide limits are 3x higher than per-API-key limits.",
+   "evidence": [
+    {
+     "url": "https://developer.close.com/api/overview",
+     "snippet": "Close uses industry-standard REST conventions with predictable URL structures, standard HTTP methods, and JSON request/response bodies."
+    },
+    {
+     "url": "https://developer.close.com/api/overview",
+     "snippet": "We publish an OpenAPI spec at: https://api.close.com/api/openapi.json"
+    },
+    {
+     "url": "https://developer.close.com/topics/webhooks/",
+     "snippet": "Configure webhook subscriptions to receive real-time event notifications from Close."
+    },
+    {
+     "url": "https://developer.close.com/api/overview/rate-limits",
+     "snippet": "API requests are limited at a per Organization level across all users' API keys."
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://mcp.close.com/mcp",
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://developer.close.com/mcp",
+     "snippet": "The MCP server URL is https://mcp.close.com/mcp and has HTTP Streamable and OAuth 2.0 Dynamic Client Registration support."
+    },
+    {
+     "url": "https://developer.close.com/",
+     "snippet": "MCP Server - Model Context Protocol for AI agents."
+    },
+    {
+     "url": "https://developer.close.com/mcp",
+     "snippet": "Close's MCP server is officially supported across the Claude ecosystem."
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Self-serve API credentials (free trial, free dev orgs, API keys, OAuth), comprehensive REST API with OpenAPI spec, official MCP server, and clear documentation enable building a toolkit today.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "CLOSE"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://developer.close.com/",
+    "snippet": "Build integrations, automate workflows, and extend Close for your team."
+   },
+   {
+    "url": "https://developer.close.com/api/overview",
+    "snippet": "Close uses industry-standard REST conventions with predictable URL structures, standard HTTP methods, and JSON request/response bodies."
+   },
+   {
+    "url": "https://close.com",
+    "snippet": "The CRM Built for Action"
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  }
+ }
+}

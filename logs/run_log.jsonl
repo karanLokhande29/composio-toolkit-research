@@ -62,3 +62,66 @@
 {"ts": "2026-11-23T15:51:54+05:30", "stage": "discover", "agent": "agent1", "app": "Squarespace", "urls": 9, "ok": 8, "cost_usd": 0}
 {"ts": "2026-11-23T15:51:59+05:30", "stage": "discover", "agent": "agent1", "app": "fanbasis", "urls": 5, "ok": 5, "cost_usd": 0}
 {"ts": "2026-11-23T15:51:59+05:30", "stage": "discover", "agent": "agent1", "app": "Amazon Selling Partner", "urls": 6, "ok": 6, "cost_usd": 0}
+{"ts": "2026-11-23T16:21:56+05:30", "stage": "discover", "agent": "agent1", "app": "Salesforce Commerce Cloud", "urls": 8, "ok": 8, "cost_usd": 0.020428}
+{"ts": "2026-11-23T16:22:09+05:30", "stage": "discover", "agent": "agent1", "app": "BigCommerce", "urls": 27, "ok": 23, "cost_usd": 0.017783}
+{"ts": "2026-11-23T16:22:14+05:30", "stage": "discover", "agent": "agent1", "app": "WooCommerce", "urls": 25, "ok": 25, "cost_usd": 0.024078999999999996}
+{"ts": "2026-11-23T16:22:15+05:30", "stage": "discover", "agent": "agent1", "app": "Threads (Meta)", "urls": 10, "ok": 8, "cost_usd": 0.030302}
+{"ts": "2026-11-23T16:22:24+05:30", "stage": "discover", "agent": "agent1", "app": "fanbasis", "urls": 5, "ok": 5, "cost_usd": 0.003506}
+{"ts": "2026-11-23T16:22:30+05:30", "stage": "discover", "agent": "agent1", "app": "Squarespace", "urls": 17, "ok": 8, "cost_usd": 0.039824000000000005}
+{"ts": "2026-11-23T16:22:32+05:30", "stage": "discover", "agent": "agent1", "app": "SendGrid", "urls": 19, "ok": 13, "cost_usd": 0.042629999999999994}
+{"ts": "2026-11-23T16:22:39+05:30", "stage": "discover", "agent": "agent1", "app": "Magento (Adobe Commerce)", "urls": 27, "ok": 17, "cost_usd": 0.039016999999999996}
+{"ts": "2026-11-23T16:22:40+05:30", "stage": "extract", "agent": "agent1", "app": "Close", "pages": 12, "error": null, "cost_usd": 0.068786, "seconds": 66.9}
+{"ts": "2026-11-23T16:22:41+05:30", "stage": "discover", "agent": "agent1", "app": "Ecwid", "urls": 14, "ok": 14, "cost_usd": 0.026851}
+{"ts": "2026-11-23T16:22:48+05:30", "stage": "discover", "agent": "agent1", "app": "Shopify", "urls": 34, "ok": 28, "cost_usd": 0.03996}
+{"ts": "2026-11-23T16:22:53+05:30", "stage": "discover", "agent": "agent1", "app": "DataForSEO", "urls": 19, "ok": 14, "cost_usd": 0.009085}
+{"ts": "2026-11-23T16:22:56+05:30", "stage": "discover", "agent": "agent1", "app": "Gumroad", "urls": 10, "ok": 4, "cost_usd": 0.027374}
+{"ts": "2026-11-23T16:23:01+05:30", "stage": "extract", "agent": "agent1", "app": "Zoho CRM", "pages": 12, "error": null, "cost_usd": 0.086561, "seconds": 88.6}
+{"ts": "2026-11-23T16:23:04+05:30", "stage": "discover", "agent": "agent1", "app": "MrScraper", "urls": 19, "ok": 19, "cost_usd": 0.002646}
+{"ts": "2026-11-23T16:23:15+05:30", "stage": "extract", "agent": "agent1", "app": "Copper", "pages": 12, "error": null, "cost_usd": 0.079283, "seconds": 101.8}
+{"ts": "2026-11-23T16:23:18+05:30", "stage": "discover", "agent": "agent1", "app": "Amazon Selling Partner", "urls": 28, "ok": 25, "cost_usd": 0.04006799999999999}
+{"ts": "2026-11-23T16:23:18+05:30", "stage": "extract", "agent": "agent1", "app": "Podio", "pages": 12, "error": null, "cost_usd": 0.088981, "seconds": 105.4}
+{"ts": "2026-11-23T16:23:19+05:30", "stage": "discover", "agent": "agent1", "app": "Sherlock", "urls": 4, "ok": 4, "cost_usd": 0.008537}
+{"ts": "2026-11-23T16:23:29+05:30", "stage": "discover", "agent": "agent1", "app": "Waterfall.io", "urls": 15, "ok": 13, "cost_usd": 0.006137}
+{"ts": "2026-11-23T16:23:31+05:30", "stage": "discover", "agent": "agent1", "app": "Ahrefs", "urls": 19, "ok": 14, "cost_usd": 0.032654}
+{"ts": "2026-11-23T16:23:35+05:30", "stage": "discover", "agent": "agent1", "app": "SE Ranking", "urls": 27, "ok": 19, "cost_usd": 0.027508}
+{"ts": "2026-11-23T16:23:43+05:30", "stage": "discover", "agent": "agent1", "app": "Apify", "urls": 24, "ok": 20, "cost_usd": 0.034492}
+{"ts": "2026-11-23T16:23:52+05:30", "stage": "discover", "agent": "agent1", "app": "Firecrawl", "urls": 26, "ok": 23, "cost_usd": 0.042009}
+{"ts": "2026-11-23T16:24:01+05:30", "stage": "discover", "agent": "agent1", "app": "Bright Data", "urls": 29, "ok": 21, "cost_usd": 0.020629999999999996}
+{"ts": "2026-11-23T16:24:06+05:30", "stage": "extract", "agent": "agent1", "app": "DealCloud", "pages": 12, "error": null, "cost_usd": 0.090081, "seconds": 153.7}
+{"ts": "2026-11-23T16:24:13+05:30", "stage": "extract", "agent": "agent1", "app": "Zendesk", "pages": 12, "error": null, "cost_usd": 0.093563, "seconds": 92.6}
+{"ts": "2026-11-23T16:24:18+05:30", "stage": "discover", "agent": "agent1", "app": "Clay", "urls": 25, "ok": 20, "cost_usd": 0.035112000000000004}
+{"ts": "2026-11-23T16:24:19+05:30", "stage": "extract", "agent": "agent1", "app": "Intercom", "pages": 12, "error": null, "cost_usd": 0.07759, "seconds": 77.3}
+{"ts": "2026-11-23T16:24:22+05:30", "stage": "discover", "agent": "agent1", "app": "Vercel", "urls": 9, "ok": 8, "cost_usd": 0.035701}
+{"ts": "2026-11-23T16:24:33+05:30", "stage": "discover", "agent": "agent1", "app": "Netlify", "urls": 14, "ok": 12, "cost_usd": 0.042309000000000006}
+{"ts": "2026-11-23T16:24:45+05:30", "stage": "discover", "agent": "agent1", "app": "GitHub", "urls": 5, "ok": 5, "cost_usd": 0.059926}
+{"ts": "2026-11-23T16:24:51+05:30", "stage": "discover", "agent": "agent1", "app": "Supabase", "urls": 25, "ok": 25, "cost_usd": 0.040744}
+{"ts": "2026-11-23T16:24:54+05:30", "stage": "discover", "agent": "agent1", "app": "Cloudflare", "urls": 26, "ok": 20, "cost_usd": 0.039566}
+{"ts": "2026-11-23T16:24:54+05:30", "stage": "extract", "agent": "agent1", "app": "Front", "pages": 12, "error": null, "cost_usd": 0.083091, "seconds": 95.5}
+{"ts": "2026-11-23T16:24:57+05:30", "stage": "discover", "agent": "agent1", "app": "Neo4j", "urls": 5, "ok": 4, "cost_usd": 0.036605000000000006}
+{"ts": "2026-11-23T16:25:03+05:30", "stage": "discover", "agent": "agent1", "app": "Snowflake", "urls": 27, "ok": 22, "cost_usd": 0.029129}
+{"ts": "2026-11-23T16:25:20+05:30", "stage": "extract", "agent": "agent1", "app": "Freshdesk", "pages": 12, "error": null, "cost_usd": 0.096138, "seconds": 125.3}
+{"ts": "2026-11-23T16:25:21+05:30", "stage": "extract", "agent": "agent1", "app": "Pylon", "pages": 12, "error": null, "cost_usd": 0.067856, "seconds": 74.3}
+{"ts": "2026-11-23T16:25:25+05:30", "stage": "extract", "agent": "agent1", "app": "LiveAgent", "pages": 12, "error": null, "cost_usd": 0.07011400000000001, "seconds": 72.2}
+{"ts": "2026-11-23T16:25:25+05:30", "stage": "extract", "agent": "agent1", "app": "Plain", "pages": 12, "error": null, "cost_usd": 0.06931300000000001, "seconds": 66.5}
+{"ts": "2026-11-23T16:25:28+05:30", "stage": "discover", "agent": "agent1", "app": "Linear", "urls": 26, "ok": 26, "cost_usd": 0.005989}
+{"ts": "2026-11-23T16:25:29+05:30", "stage": "discover", "agent": "agent1", "app": "MongoDB Atlas", "urls": 28, "ok": 24, "cost_usd": 0.040229}
+{"ts": "2026-11-23T16:25:36+05:30", "stage": "discover", "agent": "agent1", "app": "Datadog", "urls": 23, "ok": 20, "cost_usd": 0.04607699999999999}
+{"ts": "2026-11-23T16:25:40+05:30", "stage": "discover", "agent": "agent1", "app": "Sentry", "urls": 25, "ok": 22, "cost_usd": 0.037244}
+{"ts": "2026-11-23T16:25:50+05:30", "stage": "discover", "agent": "agent1", "app": "Airtable", "urls": 24, "ok": 17, "cost_usd": 0.030494}
+{"ts": "2026-11-23T16:25:52+05:30", "stage": "discover", "agent": "agent1", "app": "Notion", "urls": 26, "ok": 20, "cost_usd": 0.034655}
+{"ts": "2026-11-23T16:25:57+05:30", "stage": "discover", "agent": "agent1", "app": "Jira", "urls": 28, "ok": 22, "cost_usd": 0.033018}
+{"ts": "2026-11-23T16:26:15+05:30", "stage": "extract", "agent": "agent1", "app": "Gladly", "pages": 10, "error": null, "cost_usd": 0.04839, "seconds": 53.9}
+{"ts": "2026-11-23T16:26:27+05:30", "stage": "discover", "agent": "agent1", "app": "ClickUp", "urls": 20, "ok": 20, "cost_usd": 0.033437}
+{"ts": "2026-11-23T16:26:27+05:30", "stage": "discover", "agent": "agent1", "app": "Stripe", "urls": 28, "ok": 26, "cost_usd": 0.0070220000000000005}
+{"ts": "2026-11-23T16:26:29+05:30", "stage": "discover", "agent": "agent1", "app": "Monday.com", "urls": 25, "ok": 22, "cost_usd": 0.031631}
+{"ts": "2026-11-23T16:26:30+05:30", "stage": "discover", "agent": "agent1", "app": "Asana", "urls": 24, "ok": 22, "cost_usd": 0.051952}
+{"ts": "2026-11-23T16:26:33+05:30", "stage": "discover", "agent": "agent1", "app": "Smartsheet", "urls": 28, "ok": 16, "cost_usd": 0.027947000000000003}
+{"ts": "2026-11-23T16:26:36+05:30", "stage": "extract", "agent": "agent1", "app": "Help Scout", "pages": 12, "error": null, "cost_usd": 0.087518, "seconds": 102.2}
+{"ts": "2026-11-23T16:26:36+05:30", "stage": "extract", "agent": "agent1", "app": "Twilio", "pages": 12, "error": null, "cost_usd": 0.080296, "seconds": 70.8}
+{"ts": "2026-11-23T16:26:37+05:30", "stage": "discover", "agent": "agent1", "app": "Coda", "urls": 13, "ok": 8, "cost_usd": 0.041017}
+{"ts": "2026-11-23T16:26:39+05:30", "stage": "discover", "agent": "agent1", "app": "Paygent Connect", "urls": 0, "ok": 0, "cost_usd": 0.005052}
+{"ts": "2026-11-23T16:26:43+05:30", "stage": "extract", "agent": "agent1", "app": "Slack", "pages": 12, "error": null, "cost_usd": 0.07893000000000001, "seconds": 78.3}
+{"ts": "2026-11-23T16:26:47+05:30", "stage": "discover", "agent": "agent1", "app": "iPayX", "urls": 9, "ok": 3, "cost_usd": 0.006053000000000001}
+{"ts": "2026-11-23T16:26:54+05:30", "stage": "extract", "agent": "agent1", "app": "Gorgias", "pages": 12, "error": null, "cost_usd": 0.080901, "seconds": 93.5}
+{"ts": "2026-11-23T16:26:59+05:30", "stage": "discover", "agent": "agent1", "app": "Harvest", "urls": 17, "ok": 15, "cost_usd": 0.049704}
+{"ts": "2026-11-23T16:27:03+05:30", "stage": "discover", "agent": "agent1", "app": "Plaid", "urls": 26, "ok": 20, "cost_usd": 0.040157}

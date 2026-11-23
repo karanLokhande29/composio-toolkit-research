@@ -1,0 +1,223 @@
+{
+ "id": 51,
+ "app": "DataForSEO",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://docs.dataforseo.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.dataforseo.com/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.dataforseo.com/base/authentication",
+   "purpose": "authentication",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://docs.dataforseo.com/base/getting-access",
+   "purpose": "getting_credentials",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://docs.dataforseo.com/base/rate-limits",
+   "purpose": "rate_limits",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://docs.dataforseo.com/base/webhooks",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://docs.dataforseo.com/api/",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://github.com/dataforseo/mcp-server-typescript",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/houtini-ai/seo-audit",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/Skobyn/dataforseo-mcp-server",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/dataforseo.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": true
+  },
+  {
+   "url": "https://dataforseo.com/pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.dataforseo.com/v3/auth/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.dataforseo.com/v3/app_data/google/app_reviews/task_post/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.dataforseo.com/v3/app_data/google/app_reviews/tasks_ready/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.dataforseo.com/v3/app_data/google/app_reviews/task_get/advanced/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.dataforseo.com/v3/app_data/apple/app_reviews/task_post/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.dataforseo.com/v3/app_data/apple/app_reviews/tasks_ready/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.dataforseo.com/v3/app_data/apple/app_reviews/task_get/advanced/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "dataforseo/mcp-server-typescript",
+   "url": "https://github.com/dataforseo/mcp-server-typescript",
+   "stars": 262,
+   "description": "DataForSEO API modelcontextprotocol server "
+  },
+  {
+   "repo": "houtini-ai/seo-audit",
+   "url": "https://github.com/houtini-ai/seo-audit",
+   "stars": 105,
+   "description": "Free SEO Audit MCP server for Claude - captures and stores all the raw data you need for a complete technical SEO audit. Google Search Console + a first-party c"
+  },
+  {
+   "repo": "Skobyn/dataforseo-mcp-server",
+   "url": "https://github.com/Skobyn/dataforseo-mcp-server",
+   "stars": 83,
+   "description": "A comprehensive stdio MCP server for DataForSEO API"
+  },
+  {
+   "repo": "Skobyn/mcp-dataforseo",
+   "url": "https://github.com/Skobyn/mcp-dataforseo",
+   "stars": 7,
+   "description": "Model Context Protocol server for DataForSEO API"
+  },
+  {
+   "repo": "aimonk2025/dataforseo-ai-mcp-server",
+   "url": "https://github.com/aimonk2025/dataforseo-ai-mcp-server",
+   "stars": 4,
+   "description": "MCP server for tracking brand visibility in LLMs (ChatGPT, Claude, Gemini, Perplexity) using DataForSEO API"
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "DataForSEO",
+    "slug": "DATAFORSEO",
+    "tools": 354,
+    "auth": [
+     "BASIC"
+    ],
+    "url": "https://docs.composio.dev/toolkits/dataforseo.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "DataForSEO",
+    "slug": "DATAFORSEO",
+    "tools": 354,
+    "auth": [
+     "BASIC"
+    ],
+    "url": "https://docs.composio.dev/toolkits/dataforseo.md"
+   }
+  ]
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.009085,
+  "seconds": 16.8,
+  "turns": 1,
+  "mode": "knowledge+crawl"
+ }
+}

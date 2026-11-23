@@ -1,0 +1,291 @@
+{
+ "id": 65,
+ "app": "Supabase",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://supabase.com/docs",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://supabase.com/docs/guides/getting-started/quickstarts",
+   "purpose": "getting_started",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://supabase.com/docs/guides/auth/overview",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://supabase.com/docs/guides/auth",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://supabase.com/docs/reference/api",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://supabase.com/docs/guides/api",
+   "purpose": "api_guide",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://supabase.com/docs/guides/database/webhooks",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://supabase.com/docs/guides/realtime",
+   "purpose": "realtime_webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/supabase/mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/alexander-zuev/supabase-mcp-server",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/panaversity/learn-low-code-agentic-ai",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/supabase.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://supabase.com/docs/guides/getting-started",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://supabase.com/docs/guides/getting-started/the-supabase-way-to-build",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://supabase.com/docs/guides/getting-started/api-keys",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://supabase.com/docs/guides/local-development/cli/getting-started",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://supabase.com/docs/guides/getting-started/architecture",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://supabase.com/docs/guides/getting-started/migrating-to-new-api-keys",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://supabase.com/docs/guides/getting-started/quickstarts/reactjs",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://supabase.com/docs/guides/getting-started/quickstarts/nextjs",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://supabase.com/docs/guides/getting-started/quickstarts/tanstack",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://supabase.com/docs/guides/getting-started/quickstarts/astrojs",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://supabase.com/docs/guides/getting-started/quickstarts/vue",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://supabase.com/docs/guides/getting-started/quickstarts/nuxtjs",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://supabase.com/docs/guides/getting-started/quickstarts/sveltekit",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "supabase/mcp",
+   "url": "https://github.com/supabase/mcp",
+   "stars": 3023,
+   "description": "Connect Supabase to your AI assistants"
+  },
+  {
+   "repo": "alexander-zuev/supabase-mcp-server",
+   "url": "https://github.com/alexander-zuev/supabase-mcp-server",
+   "stars": 837,
+   "description": "Query MCP enables end-to-end management of Supabase via chat interface: read & write query executions, management API support, automatic migration versioning, a"
+  },
+  {
+   "repo": "panaversity/learn-low-code-agentic-ai",
+   "url": "https://github.com/panaversity/learn-low-code-agentic-ai",
+   "stars": 463,
+   "description": "Low-Code Full-Stack Agentic AI Development using LLMs, n8n, Loveable, UXPilot, Supabase and MCP. Class Videos: https://www.youtube.com/playlist?list=PL0vKVrkG4h"
+  },
+  {
+   "repo": "coleam00/supabase-mcp",
+   "url": "https://github.com/coleam00/supabase-mcp",
+   "stars": 197,
+   "description": "Supabase MCP server created in Python."
+  },
+  {
+   "repo": "HenkDz/selfhosted-supabase-mcp",
+   "url": "https://github.com/HenkDz/selfhosted-supabase-mcp",
+   "stars": 138,
+   "description": "An MCP Server for your Self Hosted Supabase"
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Supabase",
+    "slug": "SUPABASE",
+    "tools": 235,
+    "auth": [
+     "OAUTH2",
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/supabase.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Supabase",
+    "slug": "SUPABASE",
+    "tools": 235,
+    "auth": [
+     "OAUTH2",
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/supabase.md"
+   },
+   {
+    "name": "Supabase MCP",
+    "slug": "SUPABASE_MCP",
+    "tools": 32,
+    "auth": [
+     "DCR_OAUTH"
+    ],
+    "url": "https://docs.composio.dev/toolkits/supabase_mcp.md"
+   },
+   {
+    "name": "Supabase Read MCP",
+    "slug": "SUPABASE_READ_MCP",
+    "tools": 21,
+    "auth": [
+     "DCR_OAUTH"
+    ],
+    "url": "https://docs.composio.dev/toolkits/supabase_read_mcp.md"
+   }
+  ]
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.040744,
+  "seconds": 47.4,
+  "turns": 1,
+  "mode": "knowledge+crawl"
+ }
+}

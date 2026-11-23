@@ -1,0 +1,289 @@
+{
+ "id": 43,
+ "app": "BigCommerce",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://developer.bigcommerce.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.bigcommerce.com/docs",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.bigcommerce.com/docs/start",
+   "purpose": "getting_started",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.bigcommerce.com/docs/start/authentication",
+   "purpose": "authentication",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.bigcommerce.com/docs/start/register",
+   "purpose": "getting_credentials",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.bigcommerce.com/docs/start/sandbox",
+   "purpose": "sandbox_access",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.bigcommerce.com/api-reference",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.bigcommerce.com/docs/start/webhooks",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.bigcommerce.com/docs/start/rate-limits",
+   "purpose": "rate_limits",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://github.com/isaacgounton/bigcommerce-api-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/ackm04/bigcommerce-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/Jimbootgit/bigcommerce-agent-toolkit",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/bigcommerce.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.bigcommerce.com/developer/docs/storefront/getting-started",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.bigcommerce.com/developer/docs/integrations/getting-started",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.bigcommerce.com/developer/docs/admin/getting-started",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.bigcommerce.com/developer/docs/b2b-edition/getting-started",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.bigcommerce.com/developer/docs/storefront/guides/customer-authentication/customer-login",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/rate-limits",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.bigcommerce.com/developer/docs/storefront/catalyst/getting-started/overview",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.bigcommerce.com/developer/docs/storefront/catalyst/getting-started/prerequisites",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.bigcommerce.com/developer/docs/storefront/catalyst/getting-started/one-click-catalyst",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.bigcommerce.com/developer/docs/storefront/catalyst/getting-started/cli-installation",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.bigcommerce.com/developer/docs/storefront/catalyst/getting-started/versioning",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.bigcommerce.com/developer/docs/storefront/catalyst/getting-started/upgrading",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.bigcommerce.com/developer/docs/storefront/catalyst/deployment/storefront-hosting/getting-started",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.bigcommerce.com/developer/docs/storefront/stencil/getting-started/about-stencil",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "isaacgounton/bigcommerce-api-mcp",
+   "url": "https://github.com/isaacgounton/bigcommerce-api-mcp",
+   "stars": 6,
+   "description": "BigCommerce MCP Server"
+  },
+  {
+   "repo": "ackm04/bigcommerce-mcp",
+   "url": "https://github.com/ackm04/bigcommerce-mcp",
+   "stars": 3,
+   "description": "The complete BigCommerce developer platform as an MCP server — wired into Cursor, Claude, Windsurf, and any MCP-compatible AI tool."
+  },
+  {
+   "repo": "Jimbootgit/bigcommerce-agent-toolkit",
+   "url": "https://github.com/Jimbootgit/bigcommerce-agent-toolkit",
+   "stars": 1,
+   "description": "Read-first BigCommerce MCP and CLI with approval-gated mutations"
+  },
+  {
+   "repo": "Codinative/bigC-mcp",
+   "url": "https://github.com/Codinative/bigC-mcp",
+   "stars": 0,
+   "description": "bigCommerce mcp server"
+  },
+  {
+   "repo": "jorgejaramillo/mcp-bigcommerce",
+   "url": "https://github.com/jorgejaramillo/mcp-bigcommerce",
+   "stars": 0,
+   "description": "MCP no oficial de bigcommerce"
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "BigCommerce",
+    "slug": "BIGCOMMERCE",
+    "tools": 532,
+    "auth": [
+     "API_KEY",
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/bigcommerce.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "BigCommerce",
+    "slug": "BIGCOMMERCE",
+    "tools": 532,
+    "auth": [
+     "API_KEY",
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/bigcommerce.md"
+   }
+  ]
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.017783,
+  "seconds": 27.5,
+  "turns": 1,
+  "mode": "knowledge+crawl"
+ }
+}

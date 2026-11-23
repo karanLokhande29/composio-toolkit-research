@@ -1949,5 +1949,3917 @@
   },
   "needs_human": true,
   "human_reason": "loop3 error: LLM failed after retries: claude cli error: You've hit your session limit · resets 4:20pm (Asia/Calcutta)"
+ },
+ {
+  "id": 6,
+  "app": "Podio",
+  "category": "CRM and Sales",
+  "hint": "podio.com",
+  "one_liner": "Work management platform enabling CRM, project tracking, approvals, and collaborative workflows with automation.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2"
+   ],
+   "oauth_grant_types": [],
+   "notes": "OAuth2 primary authentication with four flow types: server-side (web), client-side (browser/mobile), username/password, and app authentication. Access tokens valid 8 hours, refresh tokens 28 days. Requires Client ID and Client Secret.",
+   "evidence": [
+    {
+     "url": "https://developers.podio.com/authentication",
+     "snippet": "The Podio API uses the OAuth2 protocol for authentication. This allows external apps to request authorization to Podio without having direct access to the user's password."
+    },
+    {
+     "url": "https://developers.podio.com/authentication",
+     "snippet": "Before you can use the Podio API you must register your application. Your application is assigned a unique identifier, called \"Client ID\", together with a \"Client Secret\"."
+    },
+    {
+     "url": "https://developers.podio.com/authentication",
+     "snippet": "Access Token: 8 hours. Refresh Token: 28 days."
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": null,
+   "notes": "Users can sign up and generate API keys from account settings with no mention of cost barriers or approval processes. Dedicated API key page emphasizes simplicity of access.",
+   "evidence": [
+    {
+     "url": "https://developers.podio.com/api-key",
+     "snippet": "It's easy to get one or more API keys for accessing your Podio data."
+    },
+    {
+     "url": "https://developers.podio.com/",
+     "snippet": "grab an API key for each app you want to build from your account settings page."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "1,000 calls/hour standard operations; 250 calls/hour resource-intensive operations. Per-user per-API-key rolling hour limits with response headers for monitoring.",
+   "evidence": [
+    {
+     "url": "https://developers.podio.com/",
+     "snippet": "The Podio API is a complete programmable interface to all Podio functionality."
+    },
+    {
+     "url": "https://developers.podio.com/index/limits",
+     "snippet": "The general limit is 1,000 API calls per hour, but if the API call is deemed resource-intensive, a lower rate of 250 calls per hour is enforced."
+    },
+    {
+     "url": "https://developers.podio.com/doc/hooks",
+     "snippet": "Hooks are webhooks that can call external sites when certain actions occur in Podio."
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://mcp.podio.com",
+   "community": [
+    "https://github.com/Vuxified/podio-mcp-server"
+   ],
+   "evidence": [
+    {
+     "url": "https://mcp.podio.com",
+     "snippet": "MCP server exposing Podio API tools for integration with ChatGPT, Copilot Studio, and other MCP-compatible clients."
+    },
+    {
+     "url": "https://github.com/Vuxified/podio-mcp-server",
+     "snippet": "MCP server for the Podio API: items, search, comments, webhooks, files"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Self-serve OAuth2 credentials, well-documented REST API with broad resource coverage, webhooks support, official MCP server, and existing Composio toolkit with 143 tools.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "PODIO"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://podio.com",
+    "snippet": "Work Management Platform | Streamline Collaboration & Workflows | Podio"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/podio.md",
+    "snippet": "Activate a deactivated Podio app, restoring it to the app navigator and allowing new item creation."
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  },
+  "_meta": {
+   "agent": "agent1",
+   "model": "haiku",
+   "pages_used": 12,
+   "error": null,
+   "cost_usd": 0.088981,
+   "seconds": 105.4
+  },
+  "pass1": {
+   "one_liner": "Work management platform enabling CRM, project tracking, approvals, and collaborative workflows with automation.",
+   "app_type": "saas",
+   "auth": {
+    "methods": [
+     "oauth2"
+    ],
+    "oauth_grant_types": [],
+    "notes": "OAuth2 primary authentication with four flow types: server-side (web), client-side (browser/mobile), username/password, and app authentication. Access tokens valid 8 hours, refresh tokens 28 days. Requires Client ID and Client Secret.",
+    "evidence": [
+     {
+      "url": "https://developers.podio.com/authentication",
+      "snippet": "The Podio API uses the OAuth2 protocol for authentication. This allows external apps to request authorization to Podio without having direct access to the user's password."
+     },
+     {
+      "url": "https://developers.podio.com/authentication",
+      "snippet": "Before you can use the Podio API you must register your application. Your application is assigned a unique identifier, called \"Client ID\", together with a \"Client Secret\"."
+     },
+     {
+      "url": "https://developers.podio.com/authentication",
+      "snippet": "Access Token: 8 hours. Refresh Token: 28 days."
+     }
+    ]
+   },
+   "access": {
+    "status": "self_serve_free",
+    "dev_sandbox": null,
+    "notes": "Users can sign up and generate API keys from account settings with no mention of cost barriers or approval processes. Dedicated API key page emphasizes simplicity of access.",
+    "evidence": [
+     {
+      "url": "https://developers.podio.com/api-key",
+      "snippet": "It's easy to get one or more API keys for accessing your Podio data."
+     },
+     {
+      "url": "https://developers.podio.com/",
+      "snippet": "grab an API key for each app you want to build from your account settings page."
+     }
+    ]
+   },
+   "api_surface": {
+    "styles": [
+     "rest"
+    ],
+    "breadth": "broad",
+    "openapi_spec_url": null,
+    "webhooks": true,
+    "rate_limit_note": "1,000 calls/hour standard operations; 250 calls/hour resource-intensive operations. Per-user per-API-key rolling hour limits with response headers for monitoring.",
+    "evidence": [
+     {
+      "url": "https://developers.podio.com/",
+      "snippet": "The Podio API is a complete programmable interface to all Podio functionality."
+     },
+     {
+      "url": "https://developers.podio.com/index/limits",
+      "snippet": "The general limit is 1,000 API calls per hour, but if the API call is deemed resource-intensive, a lower rate of 250 calls per hour is enforced."
+     },
+     {
+      "url": "https://developers.podio.com/doc/hooks",
+      "snippet": "Hooks are webhooks that can call external sites when certain actions occur in Podio."
+     }
+    ]
+   },
+   "mcp": {
+    "official": "https://mcp.podio.com",
+    "community": [
+     "https://github.com/Vuxified/podio-mcp-server"
+    ],
+    "evidence": [
+     {
+      "url": "https://mcp.podio.com",
+      "snippet": "MCP server exposing Podio API tools for integration with ChatGPT, Copilot Studio, and other MCP-compatible clients."
+     },
+     {
+      "url": "https://github.com/Vuxified/podio-mcp-server",
+      "snippet": "MCP server for the Podio API: items, search, comments, webhooks, files"
+     }
+    ]
+   },
+   "buildability": {
+    "verdict": "ready",
+    "main_blocker": "none",
+    "rationale": "Self-serve OAuth2 credentials, well-documented REST API with broad resource coverage, webhooks support, official MCP server, and existing Composio toolkit with 143 tools.",
+    "composio_existing_toolkit": "yes",
+    "composio_slug": "PODIO"
+   },
+   "overview_evidence": [
+    {
+     "url": "https://podio.com",
+     "snippet": "Work Management Platform | Streamline Collaboration & Workflows | Podio"
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/podio.md",
+     "snippet": "Activate a deactivated Podio app, restoring it to the app navigator and allowing new item creation."
+    }
+   ],
+   "confidence": 0.95,
+   "unknown_reasons": {
+    "auth": "",
+    "access": "",
+    "api_surface": "",
+    "mcp": ""
+   }
+  },
+  "verification": {
+   "checks": [],
+   "disagreements": [],
+   "resolved_by": "agent",
+   "human_checked": false
+  },
+  "needs_human": false,
+  "human_reason": ""
+ },
+ {
+  "id": 7,
+  "app": "Zoho CRM",
+  "category": "CRM and Sales",
+  "hint": "zoho.com/crm",
+  "one_liner": "Cloud-based customer relationship management platform for managing sales pipelines, customer interactions, and business processes.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2"
+   ],
+   "oauth_grant_types": [
+    "authorization_code",
+    "client_credentials"
+   ],
+   "notes": "OAuth 2.0 with bearer token; supports authorization code and client credentials flows",
+   "evidence": [
+    {
+     "url": "https://www.zoho.com/crm/developer/docs/api/v8/access-refresh.html",
+     "snippet": "OAuth2.0 requests are usually authenticated with an access token, which is passed as bearer token."
+    },
+    {
+     "url": "https://www.zoho.com/crm/developer/docs/api/v8/client-credentials.html",
+     "snippet": "The client credentials flow can be used to perform one-time tasks like one-time data migration or testing Zoho CRM API calls, etc."
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Free developer edition with full CRM features; free tier includes 5000 API credits daily",
+   "evidence": [
+    {
+     "url": "https://www.zoho.com/crm/developer/developer-edition.html",
+     "snippet": "Zoho CRM's free developer edition is a fully-featured application environment that helps developers explore Zoho CRM and test their applications."
+    },
+    {
+     "url": "https://www.zoho.com/crm/developer/docs/api/v8/api-limits.html",
+     "snippet": "If your organization requires more API credits than the allowed limit for your edition, the super-admin of your org can increase the credit limit from the API Dashboard."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "graphql",
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Credit-based rate limiting: Free tier 5000 credits daily; concurrency limits 5-20 depending on edition; no time-based restrictions",
+   "evidence": [
+    {
+     "url": "https://www.zoho.com/crm/developer/docs/",
+     "snippet": "Core APIs - Perform CRUD operations on CRM module entities and integrate with any third party application through flexible RESTful endpoints."
+    },
+    {
+     "url": "https://www.zoho.com/crm/developer/docs/",
+     "snippet": "GraphQL APIs - Learn how to request specific resources, fields of the resources and relationships of the resources in a single query."
+    },
+    {
+     "url": "https://www.zoho.com/crm/developer/docs/api/v8/create-webhook.html",
+     "snippet": "Webhooks in Zoho CRM allow you to send real-time data from Zoho CRM to external applications or services when specific events occur"
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://www.zoho.com/crm/developer/mcp.html",
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://www.zoho.com/crm/developer/mcp.html",
+     "snippet": "Deploy four composable MCP servers that give your AI agent secure, scoped access to your Zoho CRM."
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Self-serve free developer tier, well-documented REST/GraphQL APIs, OAuth2 authentication, webhooks, and official MCP servers enable toolkit development today.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "ZOHO"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://www.zoho.com/crm/developer/docs/",
+    "snippet": "Perform CRUD operations on CRM module entities and integrate with any third party application through flexible RESTful endpoints."
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/zoho.md",
+    "snippet": "Creates a new deal in Zoho CRM representing a sales opportunity with deal name, stage, amount, and closing date."
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "OpenAPI specification GitHub repository URL not provided in pages",
+   "mcp": ""
+  },
+  "_meta": {
+   "agent": "agent1",
+   "model": "haiku",
+   "pages_used": 12,
+   "error": null,
+   "cost_usd": 0.086561,
+   "seconds": 88.6
+  },
+  "pass1": {
+   "one_liner": "Cloud-based customer relationship management platform for managing sales pipelines, customer interactions, and business processes.",
+   "app_type": "saas",
+   "auth": {
+    "methods": [
+     "oauth2"
+    ],
+    "oauth_grant_types": [
+     "authorization_code",
+     "client_credentials"
+    ],
+    "notes": "OAuth 2.0 with bearer token; supports authorization code and client credentials flows",
+    "evidence": [
+     {
+      "url": "https://www.zoho.com/crm/developer/docs/api/v8/access-refresh.html",
+      "snippet": "OAuth2.0 requests are usually authenticated with an access token, which is passed as bearer token."
+     },
+     {
+      "url": "https://www.zoho.com/crm/developer/docs/api/v8/client-credentials.html",
+      "snippet": "The client credentials flow can be used to perform one-time tasks like one-time data migration or testing Zoho CRM API calls, etc."
+     }
+    ]
+   },
+   "access": {
+    "status": "self_serve_free",
+    "dev_sandbox": true,
+    "notes": "Free developer edition with full CRM features; free tier includes 5000 API credits daily",
+    "evidence": [
+     {
+      "url": "https://www.zoho.com/crm/developer/developer-edition.html",
+      "snippet": "Zoho CRM's free developer edition is a fully-featured application environment that helps developers explore Zoho CRM and test their applications."
+     },
+     {
+      "url": "https://www.zoho.com/crm/developer/docs/api/v8/api-limits.html",
+      "snippet": "If your organization requires more API credits than the allowed limit for your edition, the super-admin of your org can increase the credit limit from the API Dashboard."
+     }
+    ]
+   },
+   "api_surface": {
+    "styles": [
+     "graphql",
+     "rest"
+    ],
+    "breadth": "broad",
+    "openapi_spec_url": null,
+    "webhooks": true,
+    "rate_limit_note": "Credit-based rate limiting: Free tier 5000 credits daily; concurrency limits 5-20 depending on edition; no time-based restrictions",
+    "evidence": [
+     {
+      "url": "https://www.zoho.com/crm/developer/docs/",
+      "snippet": "Core APIs - Perform CRUD operations on CRM module entities and integrate with any third party application through flexible RESTful endpoints."
+     },
+     {
+      "url": "https://www.zoho.com/crm/developer/docs/",
+      "snippet": "GraphQL APIs - Learn how to request specific resources, fields of the resources and relationships of the resources in a single query."
+     },
+     {
+      "url": "https://www.zoho.com/crm/developer/docs/api/v8/create-webhook.html",
+      "snippet": "Webhooks in Zoho CRM allow you to send real-time data from Zoho CRM to external applications or services when specific events occur"
+     }
+    ]
+   },
+   "mcp": {
+    "official": "https://www.zoho.com/crm/developer/mcp.html",
+    "community": [],
+    "evidence": [
+     {
+      "url": "https://www.zoho.com/crm/developer/mcp.html",
+      "snippet": "Deploy four composable MCP servers that give your AI agent secure, scoped access to your Zoho CRM."
+     }
+    ]
+   },
+   "buildability": {
+    "verdict": "ready",
+    "main_blocker": "none",
+    "rationale": "Self-serve free developer tier, well-documented REST/GraphQL APIs, OAuth2 authentication, webhooks, and official MCP servers enable toolkit development today.",
+    "composio_existing_toolkit": "yes",
+    "composio_slug": "ZOHO"
+   },
+   "overview_evidence": [
+    {
+     "url": "https://www.zoho.com/crm/developer/docs/",
+     "snippet": "Perform CRUD operations on CRM module entities and integrate with any third party application through flexible RESTful endpoints."
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/zoho.md",
+     "snippet": "Creates a new deal in Zoho CRM representing a sales opportunity with deal name, stage, amount, and closing date."
+    }
+   ],
+   "confidence": 0.95,
+   "unknown_reasons": {
+    "auth": "",
+    "access": "",
+    "api_surface": "OpenAPI specification GitHub repository URL not provided in pages",
+    "mcp": ""
+   }
+  },
+  "verification": {
+   "checks": [],
+   "disagreements": [],
+   "resolved_by": "agent",
+   "human_checked": false
+  },
+  "needs_human": false,
+  "human_reason": ""
+ },
+ {
+  "id": 8,
+  "app": "Close",
+  "category": "CRM and Sales",
+  "hint": "close.com",
+  "one_liner": "Close is a SaaS CRM platform that provides sales teams with calling, email, SMS, and AI agents for managing leads and automating sales workflows.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "api_key",
+    "bearer_token",
+    "oauth2"
+   ],
+   "oauth_grant_types": [
+    "authorization_code"
+   ],
+   "notes": "API Keys use HTTP Basic Auth with key as username and empty password. OAuth 2.0 uses authorization_code grant with refresh token support. Bearer tokens used with OAuth access tokens.",
+   "evidence": [
+    {
+     "url": "https://developer.close.com/api/overview",
+     "snippet": "API Keys — Best for scripts, internal tools, and server-side integrations. Use HTTP Basic Auth with your API key as the username and an empty password."
+    },
+    {
+     "url": "https://developer.close.com/api/overview",
+     "snippet": "OAuth 2.0 — Best for user-facing integrations."
+    },
+    {
+     "url": "https://developer.close.com/api/overview/oauth-authentication",
+     "snippet": "Send your HTTP requests with an Authorization header that contains the word Bearer followed by a space and the Access Token."
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_trial",
+   "dev_sandbox": true,
+   "notes": "14-day free trial available to anyone. Free secondary organizations available to existing Close users. Free Dev organizations available on request to partners without Close account.",
+   "evidence": [
+    {
+     "url": "https://close.com/pricing",
+     "snippet": "14-day free trial · We'll help you move your data, get set up, and start selling in Close."
+    },
+    {
+     "url": "https://developer.close.com/integrations",
+     "snippet": "Already a Close user — You can create a free secondary organization."
+    },
+    {
+     "url": "https://developer.close.com/integrations",
+     "snippet": "Integration partners who don't use Close in their own sales process can request a free Dev organization by emailing support@close.com"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": "https://api.close.com/api/openapi.json",
+   "webhooks": true,
+   "rate_limit_note": "Rate limits enforced per endpoint group and per organization. Organization-wide limits are 3x higher than per-API-key limits.",
+   "evidence": [
+    {
+     "url": "https://developer.close.com/api/overview",
+     "snippet": "Close uses industry-standard REST conventions with predictable URL structures, standard HTTP methods, and JSON request/response bodies."
+    },
+    {
+     "url": "https://developer.close.com/api/overview",
+     "snippet": "We publish an OpenAPI spec at: https://api.close.com/api/openapi.json"
+    },
+    {
+     "url": "https://developer.close.com/topics/webhooks/",
+     "snippet": "Configure webhook subscriptions to receive real-time event notifications from Close."
+    },
+    {
+     "url": "https://developer.close.com/api/overview/rate-limits",
+     "snippet": "API requests are limited at a per Organization level across all users' API keys."
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://mcp.close.com/mcp",
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://developer.close.com/mcp",
+     "snippet": "The MCP server URL is https://mcp.close.com/mcp and has HTTP Streamable and OAuth 2.0 Dynamic Client Registration support."
+    },
+    {
+     "url": "https://developer.close.com/",
+     "snippet": "MCP Server - Model Context Protocol for AI agents."
+    },
+    {
+     "url": "https://developer.close.com/mcp",
+     "snippet": "Close's MCP server is officially supported across the Claude ecosystem."
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Self-serve API credentials (free trial, free dev orgs, API keys, OAuth), comprehensive REST API with OpenAPI spec, official MCP server, and clear documentation enable building a toolkit today.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "CLOSE"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://developer.close.com/",
+    "snippet": "Build integrations, automate workflows, and extend Close for your team."
+   },
+   {
+    "url": "https://developer.close.com/api/overview",
+    "snippet": "Close uses industry-standard REST conventions with predictable URL structures, standard HTTP methods, and JSON request/response bodies."
+   },
+   {
+    "url": "https://close.com",
+    "snippet": "The CRM Built for Action"
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  },
+  "_meta": {
+   "agent": "agent1",
+   "model": "haiku",
+   "pages_used": 12,
+   "error": null,
+   "cost_usd": 0.068786,
+   "seconds": 66.9
+  },
+  "pass1": {
+   "one_liner": "Close is a SaaS CRM platform that provides sales teams with calling, email, SMS, and AI agents for managing leads and automating sales workflows.",
+   "app_type": "saas",
+   "auth": {
+    "methods": [
+     "api_key",
+     "bearer_token",
+     "oauth2"
+    ],
+    "oauth_grant_types": [
+     "authorization_code"
+    ],
+    "notes": "API Keys use HTTP Basic Auth with key as username and empty password. OAuth 2.0 uses authorization_code grant with refresh token support. Bearer tokens used with OAuth access tokens.",
+    "evidence": [
+     {
+      "url": "https://developer.close.com/api/overview",
+      "snippet": "API Keys — Best for scripts, internal tools, and server-side integrations. Use HTTP Basic Auth with your API key as the username and an empty password."
+     },
+     {
+      "url": "https://developer.close.com/api/overview",
+      "snippet": "OAuth 2.0 — Best for user-facing integrations."
+     },
+     {
+      "url": "https://developer.close.com/api/overview/oauth-authentication",
+      "snippet": "Send your HTTP requests with an Authorization header that contains the word Bearer followed by a space and the Access Token."
+     }
+    ]
+   },
+   "access": {
+    "status": "self_serve_trial",
+    "dev_sandbox": true,
+    "notes": "14-day free trial available to anyone. Free secondary organizations available to existing Close users. Free Dev organizations available on request to partners without Close account.",
+    "evidence": [
+     {
+      "url": "https://close.com/pricing",
+      "snippet": "14-day free trial · We'll help you move your data, get set up, and start selling in Close."
+     },
+     {
+      "url": "https://developer.close.com/integrations",
+      "snippet": "Already a Close user — You can create a free secondary organization."
+     },
+     {
+      "url": "https://developer.close.com/integrations",
+      "snippet": "Integration partners who don't use Close in their own sales process can request a free Dev organization by emailing support@close.com"
+     }
+    ]
+   },
+   "api_surface": {
+    "styles": [
+     "rest"
+    ],
+    "breadth": "broad",
+    "openapi_spec_url": "https://api.close.com/api/openapi.json",
+    "webhooks": true,
+    "rate_limit_note": "Rate limits enforced per endpoint group and per organization. Organization-wide limits are 3x higher than per-API-key limits.",
+    "evidence": [
+     {
+      "url": "https://developer.close.com/api/overview",
+      "snippet": "Close uses industry-standard REST conventions with predictable URL structures, standard HTTP methods, and JSON request/response bodies."
+     },
+     {
+      "url": "https://developer.close.com/api/overview",
+      "snippet": "We publish an OpenAPI spec at: https://api.close.com/api/openapi.json"
+     },
+     {
+      "url": "https://developer.close.com/topics/webhooks/",
+      "snippet": "Configure webhook subscriptions to receive real-time event notifications from Close."
+     },
+     {
+      "url": "https://developer.close.com/api/overview/rate-limits",
+      "snippet": "API requests are limited at a per Organization level across all users' API keys."
+     }
+    ]
+   },
+   "mcp": {
+    "official": "https://mcp.close.com/mcp",
+    "community": [],
+    "evidence": [
+     {
+      "url": "https://developer.close.com/mcp",
+      "snippet": "The MCP server URL is https://mcp.close.com/mcp and has HTTP Streamable and OAuth 2.0 Dynamic Client Registration support."
+     },
+     {
+      "url": "https://developer.close.com/",
+      "snippet": "MCP Server - Model Context Protocol for AI agents."
+     },
+     {
+      "url": "https://developer.close.com/mcp",
+      "snippet": "Close's MCP server is officially supported across the Claude ecosystem."
+     }
+    ]
+   },
+   "buildability": {
+    "verdict": "ready",
+    "main_blocker": "none",
+    "rationale": "Self-serve API credentials (free trial, free dev orgs, API keys, OAuth), comprehensive REST API with OpenAPI spec, official MCP server, and clear documentation enable building a toolkit today.",
+    "composio_existing_toolkit": "yes",
+    "composio_slug": "CLOSE"
+   },
+   "overview_evidence": [
+    {
+     "url": "https://developer.close.com/",
+     "snippet": "Build integrations, automate workflows, and extend Close for your team."
+    },
+    {
+     "url": "https://developer.close.com/api/overview",
+     "snippet": "Close uses industry-standard REST conventions with predictable URL structures, standard HTTP methods, and JSON request/response bodies."
+    },
+    {
+     "url": "https://close.com",
+     "snippet": "The CRM Built for Action"
+    }
+   ],
+   "confidence": 0.95,
+   "unknown_reasons": {
+    "auth": "",
+    "access": "",
+    "api_surface": "",
+    "mcp": ""
+   }
+  },
+  "verification": {
+   "checks": [],
+   "disagreements": [],
+   "resolved_by": "agent",
+   "human_checked": false
+  },
+  "needs_human": false,
+  "human_reason": ""
+ },
+ {
+  "id": 9,
+  "app": "Copper",
+  "category": "CRM and Sales",
+  "hint": "copper.com",
+  "one_liner": "CRM platform for managing contacts, companies, leads, opportunities, projects, tasks, activities, files, and webhooks, optimized for Google Workspace.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "api_key",
+    "oauth2"
+   ],
+   "oauth_grant_types": [
+    "authorization_code"
+   ],
+   "notes": "API keys require admin generation in Copper web app. OAuth2 uses Authorization Code Grant flow with Bearer token authentication.",
+   "evidence": [
+    {
+     "url": "https://developer.copper.com/introduction/authentication.html",
+     "snippet": "There are two ways to access the Copper Developer API: API keys and OAuth2.0."
+    },
+    {
+     "url": "https://developer.copper.com/introduction/authentication.html",
+     "snippet": "The Dev API uses token based authentication. You have to include the token in the header of every request"
+    },
+    {
+     "url": "https://developer.copper.com/introduction/oauth/flow.html",
+     "snippet": "Third-party integrations may take advantage of OAuth 2.0 for the purpose of authorizing and authenticating access to the Copper Developer API."
+    }
+   ]
+  },
+  "access": {
+   "status": "paid_plan_required",
+   "dev_sandbox": false,
+   "notes": "Developer API is only available on Professional tier ($69+/user/month) or higher paid plans. Self-serve purchase required. Admin must generate API keys in-app.",
+   "evidence": [
+    {
+     "url": "https://support.copper.com/en/articles/9623758-copper-plans-feature-comparison",
+     "snippet": "Professional Tier includes all features of the Basic Tier plus the following additions"
+    },
+    {
+     "url": "https://support.copper.com/en/articles/8823347-generating-an-api-key",
+     "snippet": "Only Admin users are able to generate API Keys."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": "https://developer.copper.com/v1/openapi.json",
+   "webhooks": true,
+   "rate_limit_note": "180 requests per minute globally; bulk APIs limited to 3 requests per second",
+   "evidence": [
+    {
+     "url": "https://developer.copper.com/",
+     "snippet": "The Copper Developer API provides a RESTful interface with JSON-formatted responses to access most Copper resources."
+    },
+    {
+     "url": "https://developer.copper.com/introduction/requests.html",
+     "snippet": "All API calls are limited to 180 requests per minute. Our bulk APIs have an additional rate limit of 3 requests per second."
+    },
+    {
+     "url": "https://developer.copper.com/webhooks/overview.html",
+     "snippet": "Webhooks allow systems integrated with Copper to receive near real-time notification of certain events"
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [
+    "https://glama.ai/mcp/servers/dazanza/copper-mcp"
+   ],
+   "evidence": [
+    {
+     "url": "https://www.copper.com/mcp",
+     "snippet": "Copper is launching an official MCP server, built and hosted by Copper. The beta launches in November 2026."
+    },
+    {
+     "url": "https://glama.ai/mcp/servers/dazanza/copper-mcp",
+     "snippet": "MCP server for the Copper CRM"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "paid_plan",
+   "rationale": "Well-documented REST API with broad resource coverage and webhooks, but requires paid Professional tier ($69+/user/month) for access and admin-only API key generation.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "COPPER"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://docs.composio.dev/toolkits/copper.md",
+    "snippet": "Copper is a customer relationship management platform for managing contacts, companies, leads, opportunities, projects, tasks, activities, files, and webhooks."
+   },
+   {
+    "url": "https://developer.copper.com/",
+    "snippet": "The Copper Developer API provides a RESTful interface with JSON-formatted responses to access most Copper resources."
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": "Official MCP server in beta launching November 2026; no public repository URL yet published"
+  },
+  "_meta": {
+   "agent": "agent1",
+   "model": "haiku",
+   "pages_used": 12,
+   "error": null,
+   "cost_usd": 0.079283,
+   "seconds": 101.8
+  },
+  "pass1": {
+   "one_liner": "CRM platform for managing contacts, companies, leads, opportunities, projects, tasks, activities, files, and webhooks, optimized for Google Workspace.",
+   "app_type": "saas",
+   "auth": {
+    "methods": [
+     "api_key",
+     "oauth2"
+    ],
+    "oauth_grant_types": [
+     "authorization_code"
+    ],
+    "notes": "API keys require admin generation in Copper web app. OAuth2 uses Authorization Code Grant flow with Bearer token authentication.",
+    "evidence": [
+     {
+      "url": "https://developer.copper.com/introduction/authentication.html",
+      "snippet": "There are two ways to access the Copper Developer API: API keys and OAuth2.0."
+     },
+     {
+      "url": "https://developer.copper.com/introduction/authentication.html",
+      "snippet": "The Dev API uses token based authentication. You have to include the token in the header of every request"
+     },
+     {
+      "url": "https://developer.copper.com/introduction/oauth/flow.html",
+      "snippet": "Third-party integrations may take advantage of OAuth 2.0 for the purpose of authorizing and authenticating access to the Copper Developer API."
+     }
+    ]
+   },
+   "access": {
+    "status": "paid_plan_required",
+    "dev_sandbox": false,
+    "notes": "Developer API is only available on Professional tier ($69+/user/month) or higher paid plans. Self-serve purchase required. Admin must generate API keys in-app.",
+    "evidence": [
+     {
+      "url": "https://support.copper.com/en/articles/9623758-copper-plans-feature-comparison",
+      "snippet": "Professional Tier includes all features of the Basic Tier plus the following additions"
+     },
+     {
+      "url": "https://support.copper.com/en/articles/8823347-generating-an-api-key",
+      "snippet": "Only Admin users are able to generate API Keys."
+     }
+    ]
+   },
+   "api_surface": {
+    "styles": [
+     "rest"
+    ],
+    "breadth": "broad",
+    "openapi_spec_url": "https://developer.copper.com/v1/openapi.json",
+    "webhooks": true,
+    "rate_limit_note": "180 requests per minute globally; bulk APIs limited to 3 requests per second",
+    "evidence": [
+     {
+      "url": "https://developer.copper.com/",
+      "snippet": "The Copper Developer API provides a RESTful interface with JSON-formatted responses to access most Copper resources."
+     },
+     {
+      "url": "https://developer.copper.com/introduction/requests.html",
+      "snippet": "All API calls are limited to 180 requests per minute. Our bulk APIs have an additional rate limit of 3 requests per second."
+     },
+     {
+      "url": "https://developer.copper.com/webhooks/overview.html",
+      "snippet": "Webhooks allow systems integrated with Copper to receive near real-time notification of certain events"
+     }
+    ]
+   },
+   "mcp": {
+    "official": null,
+    "community": [
+     "https://glama.ai/mcp/servers/dazanza/copper-mcp"
+    ],
+    "evidence": [
+     {
+      "url": "https://www.copper.com/mcp",
+      "snippet": "Copper is launching an official MCP server, built and hosted by Copper. The beta launches in November 2026."
+     },
+     {
+      "url": "https://glama.ai/mcp/servers/dazanza/copper-mcp",
+      "snippet": "MCP server for the Copper CRM"
+     }
+    ]
+   },
+   "buildability": {
+    "verdict": "ready_with_caveats",
+    "main_blocker": "paid_plan",
+    "rationale": "Well-documented REST API with broad resource coverage and webhooks, but requires paid Professional tier ($69+/user/month) for access and admin-only API key generation.",
+    "composio_existing_toolkit": "yes",
+    "composio_slug": "COPPER"
+   },
+   "overview_evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/copper.md",
+     "snippet": "Copper is a customer relationship management platform for managing contacts, companies, leads, opportunities, projects, tasks, activities, files, and webhooks."
+    },
+    {
+     "url": "https://developer.copper.com/",
+     "snippet": "The Copper Developer API provides a RESTful interface with JSON-formatted responses to access most Copper resources."
+    }
+   ],
+   "confidence": 0.95,
+   "unknown_reasons": {
+    "auth": "",
+    "access": "",
+    "api_surface": "",
+    "mcp": "Official MCP server in beta launching November 2026; no public repository URL yet published"
+   }
+  },
+  "verification": {
+   "checks": [],
+   "disagreements": [],
+   "resolved_by": "agent",
+   "human_checked": false
+  },
+  "needs_human": false,
+  "human_reason": ""
+ },
+ {
+  "id": 10,
+  "app": "DealCloud",
+  "category": "CRM and Sales",
+  "hint": "api.docs.dealcloud.com",
+  "one_liner": "CRM and sales platform that manages relationships, deals, and pipeline data with built-in AI-ready MCP server.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2"
+   ],
+   "oauth_grant_types": [
+    "client_credentials"
+   ],
+   "notes": "OAuth2 Client Credentials flow using API key obtained from user profile; token passed as Bearer token in Authorization header",
+   "evidence": [
+    {
+     "url": "https://api.docs.dealcloud.com/docs/token",
+     "snippet": "DealCloud uses the OAuth2 Client Credentials flow to generate a bearer token, which is then used in the HTTP Authentication header for API requests."
+    },
+    {
+     "url": "https://api.docs.dealcloud.com/docs/token",
+     "snippet": "The client application sends a POST request to the token endpoint, providing its client_id, apiKey, and the required scope(s)."
+    },
+    {
+     "url": "https://api.docs.dealcloud.com/docs/apikeys",
+     "snippet": "Once user permissions are set, click the User Profile. Scroll down to the API Key section and click Enable."
+    }
+   ]
+  },
+  "access": {
+   "status": "admin_approval",
+   "dev_sandbox": null,
+   "notes": "Requires existing DealCloud organization; admin must enable API capability in user group settings via Admin > User Management",
+   "evidence": [
+    {
+     "url": "https://api.docs.dealcloud.com/docs/apikeys",
+     "snippet": "To enable API access, ensure the intended user is assigned to a user group with the appropriate permissions."
+    },
+    {
+     "url": "https://api.docs.dealcloud.com/docs/apikeys",
+     "snippet": "If you do not see the Admin section, contact your organization's admin or DealCloud Customer Success Manager"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": "https://{host}/swagger/current",
+   "webhooks": false,
+   "rate_limit_note": "Endpoint-specific limits: Auth 300/min, User Management 5/sec, Data 5/sec, Schema 5/sec, Publications 1000/sec",
+   "evidence": [
+    {
+     "url": "https://api.docs.dealcloud.com/docs",
+     "snippet": "This site provides a comprehensive overview of our REST APIs, their capabilities, and available endpoints."
+    },
+    {
+     "url": "https://api.docs.dealcloud.com/docs",
+     "snippet": "Postman can consume the Swagger/OpenAPI spec file exposed at https://{host}/swagger/current"
+    },
+    {
+     "url": "https://api.docs.dealcloud.com/docs",
+     "snippet": "Our APIs are organized into functional areas. Each area includes multiple endpoints designed to help you perform specific tasks"
+    },
+    {
+     "url": "https://api.docs.dealcloud.com/docs/limits",
+     "snippet": "Limits are applied on an endpoint basis. When a rate limit is exceeded, an HTTP 429"
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://api.docs.dealcloud.com/mcp",
+     "snippet": "The DealCloud MCP Server helps teams turn their DealCloud data into faster, higher-quality outcomes."
+    },
+    {
+     "url": "https://api.docs.dealcloud.com/mcp/getting-started",
+     "snippet": "DealCloud provides a default MCP Server out-of-the-box without any configuration required."
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "admin_scope",
+   "rationale": "Well-documented REST API with official MCP server available; buildable but requires admin to enable API capability.",
+   "composio_existing_toolkit": "no",
+   "composio_slug": null
+  },
+  "overview_evidence": [
+   {
+    "url": "https://api.docs.dealcloud.com/",
+    "snippet": "Welcome to the DealCloud API Docs! This site provides a comprehensive overview of our REST APIs"
+   },
+   {
+    "url": "https://api.docs.dealcloud.com/mcp",
+    "snippet": "The DealCloud MCP Server helps teams turn their DealCloud data into faster, higher-quality outcomes."
+   }
+  ],
+  "confidence": 0.85,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "Pages don't explicitly state whether free tier exists or if paid plan required; appears to require existing organization membership",
+   "api_surface": "",
+   "mcp": "Official default MCP server provided as hosted service endpoint (https://[tenant].my.intapp.com/mcp/celeste/DealCloud), not as public GitHub repository"
+  },
+  "_meta": {
+   "agent": "agent1",
+   "model": "haiku",
+   "pages_used": 12,
+   "error": null,
+   "cost_usd": 0.090081,
+   "seconds": 153.7
+  },
+  "pass1": {
+   "one_liner": "CRM and sales platform that manages relationships, deals, and pipeline data with built-in AI-ready MCP server.",
+   "app_type": "saas",
+   "auth": {
+    "methods": [
+     "oauth2"
+    ],
+    "oauth_grant_types": [
+     "client_credentials"
+    ],
+    "notes": "OAuth2 Client Credentials flow using API key obtained from user profile; token passed as Bearer token in Authorization header",
+    "evidence": [
+     {
+      "url": "https://api.docs.dealcloud.com/docs/token",
+      "snippet": "DealCloud uses the OAuth2 Client Credentials flow to generate a bearer token, which is then used in the HTTP Authentication header for API requests."
+     },
+     {
+      "url": "https://api.docs.dealcloud.com/docs/token",
+      "snippet": "The client application sends a POST request to the token endpoint, providing its client_id, apiKey, and the required scope(s)."
+     },
+     {
+      "url": "https://api.docs.dealcloud.com/docs/apikeys",
+      "snippet": "Once user permissions are set, click the User Profile. Scroll down to the API Key section and click Enable."
+     }
+    ]
+   },
+   "access": {
+    "status": "admin_approval",
+    "dev_sandbox": null,
+    "notes": "Requires existing DealCloud organization; admin must enable API capability in user group settings via Admin > User Management",
+    "evidence": [
+     {
+      "url": "https://api.docs.dealcloud.com/docs/apikeys",
+      "snippet": "To enable API access, ensure the intended user is assigned to a user group with the appropriate permissions."
+     },
+     {
+      "url": "https://api.docs.dealcloud.com/docs/apikeys",
+      "snippet": "If you do not see the Admin section, contact your organization's admin or DealCloud Customer Success Manager"
+     }
+    ]
+   },
+   "api_surface": {
+    "styles": [
+     "rest"
+    ],
+    "breadth": "broad",
+    "openapi_spec_url": "https://{host}/swagger/current",
+    "webhooks": false,
+    "rate_limit_note": "Endpoint-specific limits: Auth 300/min, User Management 5/sec, Data 5/sec, Schema 5/sec, Publications 1000/sec",
+    "evidence": [
+     {
+      "url": "https://api.docs.dealcloud.com/docs",
+      "snippet": "This site provides a comprehensive overview of our REST APIs, their capabilities, and available endpoints."
+     },
+     {
+      "url": "https://api.docs.dealcloud.com/docs",
+      "snippet": "Postman can consume the Swagger/OpenAPI spec file exposed at https://{host}/swagger/current"
+     },
+     {
+      "url": "https://api.docs.dealcloud.com/docs",
+      "snippet": "Our APIs are organized into functional areas. Each area includes multiple endpoints designed to help you perform specific tasks"
+     },
+     {
+      "url": "https://api.docs.dealcloud.com/docs/limits",
+      "snippet": "Limits are applied on an endpoint basis. When a rate limit is exceeded, an HTTP 429"
+     }
+    ]
+   },
+   "mcp": {
+    "official": null,
+    "community": [],
+    "evidence": [
+     {
+      "url": "https://api.docs.dealcloud.com/mcp",
+      "snippet": "The DealCloud MCP Server helps teams turn their DealCloud data into faster, higher-quality outcomes."
+     },
+     {
+      "url": "https://api.docs.dealcloud.com/mcp/getting-started",
+      "snippet": "DealCloud provides a default MCP Server out-of-the-box without any configuration required."
+     }
+    ]
+   },
+   "buildability": {
+    "verdict": "ready_with_caveats",
+    "main_blocker": "admin_scope",
+    "rationale": "Well-documented REST API with official MCP server available; buildable but requires admin to enable API capability.",
+    "composio_existing_toolkit": "no",
+    "composio_slug": null
+   },
+   "overview_evidence": [
+    {
+     "url": "https://api.docs.dealcloud.com/",
+     "snippet": "Welcome to the DealCloud API Docs! This site provides a comprehensive overview of our REST APIs"
+    },
+    {
+     "url": "https://api.docs.dealcloud.com/mcp",
+     "snippet": "The DealCloud MCP Server helps teams turn their DealCloud data into faster, higher-quality outcomes."
+    }
+   ],
+   "confidence": 0.85,
+   "unknown_reasons": {
+    "auth": "",
+    "access": "Pages don't explicitly state whether free tier exists or if paid plan required; appears to require existing organization membership",
+    "api_surface": "",
+    "mcp": "Official default MCP server provided as hosted service endpoint (https://[tenant].my.intapp.com/mcp/celeste/DealCloud), not as public GitHub repository"
+   }
+  },
+  "verification": {
+   "checks": [],
+   "disagreements": [],
+   "resolved_by": "agent",
+   "human_checked": false
+  },
+  "needs_human": false,
+  "human_reason": ""
+ },
+ {
+  "id": 11,
+  "app": "Zendesk",
+  "category": "Support and Helpdesk",
+  "hint": "zendesk.com",
+  "one_liner": "Zendesk is a cloud-based customer support platform for managing tickets, help center articles, voice calls, and customer conversations across multiple channels.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "basic",
+    "oauth2"
+   ],
+   "oauth_grant_types": [
+    "authorization_code",
+    "refresh_token",
+    "client_credentials"
+   ],
+   "notes": "OAuth2 is recommended and primary; basic auth used for deprecated API tokens scheduled for removal April 30, 2027. OAuth tokens sent as Bearer in Authorization header.",
+   "evidence": [
+    {
+     "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+     "snippet": "Zendesk supports using OAuth access tokens to authenticate API requests."
+    },
+    {
+     "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+     "snippet": "If you plan on distributing an app, integration, or bot to multiple Zendesk customers, you must use global OAuth tokens"
+    },
+    {
+     "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+     "snippet": "Basic authentication is used for API tokens."
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_trial",
+   "dev_sandbox": true,
+   "notes": "Free 14-day trial without credit card; continued use requires paid Zendesk account. OAuth client setup requires Zendesk admin access.",
+   "evidence": [
+    {
+     "url": "https://developer.zendesk.com/documentation/api-basics/",
+     "snippet": "You can try out the Zendesk platform with a free, 14-day trial account."
+    },
+    {
+     "url": "https://developer.zendesk.com/documentation/api-basics/",
+     "snippet": "If you're interested in becoming a Zendesk developer partner, you can convert your trial account into a sponsored Zendesk Support account."
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/zendesk.md",
+     "snippet": "Sign in to Zendesk Admin Center at https://<subdomain>.zendesk.com/admin/home."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": "https://developer.zendesk.com/zendesk/oas.yaml",
+   "webhooks": true,
+   "rate_limit_note": "Plan-dependent: 200-2500 requests/minute for Support API depending on plan type. Returns 429 Too Many Requests when exceeded.",
+   "evidence": [
+    {
+     "url": "https://developer.zendesk.com",
+     "snippet": "Zendesk's APIs are organized around REST principles."
+    },
+    {
+     "url": "https://developer.zendesk.com/api-reference/",
+     "snippet": "Most of our APIs are organized by product capabilities."
+    },
+    {
+     "url": "https://developer.zendesk.com/api-reference/",
+     "snippet": "You'll find APIs for ticketing, help center, live chat, voice, sales CRM"
+    },
+    {
+     "url": "https://developer.zendesk.com/documentation/webhooks/",
+     "snippet": "Webhooks let you build or set up integrations that subscribe to certain activity in Zendesk Support, Guide, Gather, and Messaging."
+    },
+    {
+     "url": "https://developer.zendesk.com/api-reference/introduction/rate-limits/",
+     "snippet": "If the rate limit is exceeded, the API responds with a 429 Too Many Requests"
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [
+    "https://github.com/fruggr/zendesk-mcp-server"
+   ],
+   "evidence": [
+    {
+     "url": "https://github.com/fruggr/zendesk-mcp-server",
+     "snippet": "A Model Context Protocol (MCP) server that puts Zendesk inside your AI assistant"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "paid_plan",
+   "rationale": "Free trial with documented OAuth and REST API enable development, but production use requires paid Zendesk account.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "ZENDESK"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+    "snippet": "Zendesk supports using OAuth access tokens to authenticate API requests."
+   },
+   {
+    "url": "https://developer.zendesk.com/api-reference/",
+    "snippet": "Most of our APIs are organized by product capabilities."
+   },
+   {
+    "url": "https://zendesk.com",
+    "snippet": "Use your work email to smoothly connect customer emails and existing apps, and also invite team members."
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": "No official MCP server published by Zendesk found in provided pages"
+  },
+  "_meta": {
+   "agent": "agent1",
+   "model": "haiku",
+   "pages_used": 12,
+   "error": null,
+   "cost_usd": 0.093563,
+   "seconds": 92.6
+  },
+  "pass1": {
+   "one_liner": "Zendesk is a cloud-based customer support platform for managing tickets, help center articles, voice calls, and customer conversations across multiple channels.",
+   "app_type": "saas",
+   "auth": {
+    "methods": [
+     "basic",
+     "oauth2"
+    ],
+    "oauth_grant_types": [
+     "authorization_code",
+     "refresh_token",
+     "client_credentials"
+    ],
+    "notes": "OAuth2 is recommended and primary; basic auth used for deprecated API tokens scheduled for removal April 30, 2027. OAuth tokens sent as Bearer in Authorization header.",
+    "evidence": [
+     {
+      "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+      "snippet": "Zendesk supports using OAuth access tokens to authenticate API requests."
+     },
+     {
+      "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+      "snippet": "If you plan on distributing an app, integration, or bot to multiple Zendesk customers, you must use global OAuth tokens"
+     },
+     {
+      "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+      "snippet": "Basic authentication is used for API tokens."
+     }
+    ]
+   },
+   "access": {
+    "status": "self_serve_trial",
+    "dev_sandbox": true,
+    "notes": "Free 14-day trial without credit card; continued use requires paid Zendesk account. OAuth client setup requires Zendesk admin access.",
+    "evidence": [
+     {
+      "url": "https://developer.zendesk.com/documentation/api-basics/",
+      "snippet": "You can try out the Zendesk platform with a free, 14-day trial account."
+     },
+     {
+      "url": "https://developer.zendesk.com/documentation/api-basics/",
+      "snippet": "If you're interested in becoming a Zendesk developer partner, you can convert your trial account into a sponsored Zendesk Support account."
+     },
+     {
+      "url": "https://docs.composio.dev/toolkits/zendesk.md",
+      "snippet": "Sign in to Zendesk Admin Center at https://<subdomain>.zendesk.com/admin/home."
+     }
+    ]
+   },
+   "api_surface": {
+    "styles": [
+     "rest"
+    ],
+    "breadth": "broad",
+    "openapi_spec_url": "https://developer.zendesk.com/zendesk/oas.yaml",
+    "webhooks": true,
+    "rate_limit_note": "Plan-dependent: 200-2500 requests/minute for Support API depending on plan type. Returns 429 Too Many Requests when exceeded.",
+    "evidence": [
+     {
+      "url": "https://developer.zendesk.com",
+      "snippet": "Zendesk's APIs are organized around REST principles."
+     },
+     {
+      "url": "https://developer.zendesk.com/api-reference/",
+      "snippet": "Most of our APIs are organized by product capabilities."
+     },
+     {
+      "url": "https://developer.zendesk.com/api-reference/",
+      "snippet": "You'll find APIs for ticketing, help center, live chat, voice, sales CRM"
+     },
+     {
+      "url": "https://developer.zendesk.com/documentation/webhooks/",
+      "snippet": "Webhooks let you build or set up integrations that subscribe to certain activity in Zendesk Support, Guide, Gather, and Messaging."
+     },
+     {
+      "url": "https://developer.zendesk.com/api-reference/introduction/rate-limits/",
+      "snippet": "If the rate limit is exceeded, the API responds with a 429 Too Many Requests"
+     }
+    ]
+   },
+   "mcp": {
+    "official": null,
+    "community": [
+     "https://github.com/fruggr/zendesk-mcp-server"
+    ],
+    "evidence": [
+     {
+      "url": "https://github.com/fruggr/zendesk-mcp-server",
+      "snippet": "A Model Context Protocol (MCP) server that puts Zendesk inside your AI assistant"
+     }
+    ]
+   },
+   "buildability": {
+    "verdict": "ready_with_caveats",
+    "main_blocker": "paid_plan",
+    "rationale": "Free trial with documented OAuth and REST API enable development, but production use requires paid Zendesk account.",
+    "composio_existing_toolkit": "yes",
+    "composio_slug": "ZENDESK"
+   },
+   "overview_evidence": [
+    {
+     "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+     "snippet": "Zendesk supports using OAuth access tokens to authenticate API requests."
+    },
+    {
+     "url": "https://developer.zendesk.com/api-reference/",
+     "snippet": "Most of our APIs are organized by product capabilities."
+    },
+    {
+     "url": "https://zendesk.com",
+     "snippet": "Use your work email to smoothly connect customer emails and existing apps, and also invite team members."
+    }
+   ],
+   "confidence": 0.95,
+   "unknown_reasons": {
+    "auth": "",
+    "access": "",
+    "api_surface": "",
+    "mcp": "No official MCP server published by Zendesk found in provided pages"
+   }
+  },
+  "verification": {
+   "checks": [],
+   "disagreements": [],
+   "resolved_by": "agent",
+   "human_checked": false
+  },
+  "needs_human": false,
+  "human_reason": ""
+ },
+ {
+  "id": 12,
+  "app": "Intercom",
+  "category": "Support and Helpdesk",
+  "hint": "intercom.com",
+  "one_liner": "Customer support and helpdesk platform enabling multichannel customer conversations and ticket management.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "bearer_token",
+    "oauth2"
+   ],
+   "oauth_grant_types": [
+    "authorization_code"
+   ],
+   "notes": "Two authentication paths: Access Tokens for private apps (Bearer token format) and OAuth for public apps accessing other workspaces.",
+   "evidence": [
+    {
+     "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+     "snippet": "To access the Intercom API, you have two authentication options depending on whether you app is public or private."
+    },
+    {
+     "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+     "snippet": "simply provide it as an Authorization:Bearer header in your requests"
+    },
+    {
+     "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication/setting-up-oauth",
+     "snippet": "Trade your authorization code for an Access Token"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Development workspaces are free and available to anyone without credit card or existing Intercom account. Access tokens issued immediately upon app creation.",
+   "evidence": [
+    {
+     "url": "https://www.intercom.com/help/en/articles/9086429-create-a-developer-workspace-in-intercom",
+     "snippet": "Developer workspaces can be set up by anyone. You do not have to be an existing Intercom customer."
+    },
+    {
+     "url": "https://developers.intercom.com/docs/build-an-integration/getting-started",
+     "snippet": "Development workspaces are free and intended for development purposes only."
+    },
+    {
+     "url": "https://developers.intercom.com/docs/build-an-integration/getting-started",
+     "snippet": "We provide you with an Access Token as soon as you create an app on your workspace."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": "https://developers.intercom.com/docs/references/rest-api/api.intercom.io",
+   "webhooks": true,
+   "rate_limit_note": "10,000 API calls per minute for private apps; separate limits per public app. Rate limits measured in 10-second windows.",
+   "evidence": [
+    {
+     "url": "https://developers.intercom.com/docs/references/rest-api/api.intercom.io",
+     "snippet": "Download OpenAPI description api.intercom.io.json api.intercom.io.yaml"
+    },
+    {
+     "url": "https://developers.intercom.com/docs/webhooks",
+     "snippet": "Webhooks are a way that you can access real-time notifications about events that happen in your Intercom workspace."
+    },
+    {
+     "url": "https://developers.intercom.com/docs/references/rest-api/errors/rate-limiting",
+     "snippet": "Private apps have a default rate limit of 10,000 API calls per minute per workspace"
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://mcp.intercom.com/mcp",
+   "community": [
+    "https://github.com/fabian1710/mcp-intercom"
+   ],
+   "evidence": [
+    {
+     "url": "https://developers.intercom.com/docs/guides/mcp",
+     "snippet": "MCP is a protocol that enables AI tools and applications to connect with Intercom's data and services"
+    },
+    {
+     "url": "https://developers.intercom.com/docs/guides/mcp",
+     "snippet": "The Intercom MCP Server provides 16 tools for interacting with the Intercom API."
+    },
+    {
+     "url": "https://github.com/fabian1710/mcp-intercom",
+     "snippet": "MCP server for Intercom chat integration"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Self-serve free developer workspaces with immediate API credentials, fully documented REST API with OpenAPI spec, webhooks support, and official MCP server enable toolkit development today.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "INTERCOM"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+    "snippet": "To access the Intercom API, you have two authentication options depending on whether you app is public or private."
+   },
+   {
+    "url": "https://www.intercom.com/help/en/articles/9086429-create-a-developer-workspace-in-intercom",
+    "snippet": "Developer workspaces can be set up by anyone. You do not have to be an existing Intercom customer."
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/intercom.md",
+    "snippet": "Category: customer support Auth: OAUTH2 Composio-managed OAuth available? Yes Tools: 138"
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  },
+  "_meta": {
+   "agent": "agent1",
+   "model": "haiku",
+   "pages_used": 12,
+   "error": null,
+   "cost_usd": 0.07759,
+   "seconds": 77.3
+  },
+  "pass1": {
+   "one_liner": "Customer support and helpdesk platform enabling multichannel customer conversations and ticket management.",
+   "app_type": "saas",
+   "auth": {
+    "methods": [
+     "bearer_token",
+     "oauth2"
+    ],
+    "oauth_grant_types": [
+     "authorization_code"
+    ],
+    "notes": "Two authentication paths: Access Tokens for private apps (Bearer token format) and OAuth for public apps accessing other workspaces.",
+    "evidence": [
+     {
+      "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+      "snippet": "To access the Intercom API, you have two authentication options depending on whether you app is public or private."
+     },
+     {
+      "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+      "snippet": "simply provide it as an Authorization:Bearer header in your requests"
+     },
+     {
+      "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication/setting-up-oauth",
+      "snippet": "Trade your authorization code for an Access Token"
+     }
+    ]
+   },
+   "access": {
+    "status": "self_serve_free",
+    "dev_sandbox": true,
+    "notes": "Development workspaces are free and available to anyone without credit card or existing Intercom account. Access tokens issued immediately upon app creation.",
+    "evidence": [
+     {
+      "url": "https://www.intercom.com/help/en/articles/9086429-create-a-developer-workspace-in-intercom",
+      "snippet": "Developer workspaces can be set up by anyone. You do not have to be an existing Intercom customer."
+     },
+     {
+      "url": "https://developers.intercom.com/docs/build-an-integration/getting-started",
+      "snippet": "Development workspaces are free and intended for development purposes only."
+     },
+     {
+      "url": "https://developers.intercom.com/docs/build-an-integration/getting-started",
+      "snippet": "We provide you with an Access Token as soon as you create an app on your workspace."
+     }
+    ]
+   },
+   "api_surface": {
+    "styles": [
+     "rest"
+    ],
+    "breadth": "broad",
+    "openapi_spec_url": "https://developers.intercom.com/docs/references/rest-api/api.intercom.io",
+    "webhooks": true,
+    "rate_limit_note": "10,000 API calls per minute for private apps; separate limits per public app. Rate limits measured in 10-second windows.",
+    "evidence": [
+     {
+      "url": "https://developers.intercom.com/docs/references/rest-api/api.intercom.io",
+      "snippet": "Download OpenAPI description api.intercom.io.json api.intercom.io.yaml"
+     },
+     {
+      "url": "https://developers.intercom.com/docs/webhooks",
+      "snippet": "Webhooks are a way that you can access real-time notifications about events that happen in your Intercom workspace."
+     },
+     {
+      "url": "https://developers.intercom.com/docs/references/rest-api/errors/rate-limiting",
+      "snippet": "Private apps have a default rate limit of 10,000 API calls per minute per workspace"
+     }
+    ]
+   },
+   "mcp": {
+    "official": "https://mcp.intercom.com/mcp",
+    "community": [
+     "https://github.com/fabian1710/mcp-intercom"
+    ],
+    "evidence": [
+     {
+      "url": "https://developers.intercom.com/docs/guides/mcp",
+      "snippet": "MCP is a protocol that enables AI tools and applications to connect with Intercom's data and services"
+     },
+     {
+      "url": "https://developers.intercom.com/docs/guides/mcp",
+      "snippet": "The Intercom MCP Server provides 16 tools for interacting with the Intercom API."
+     },
+     {
+      "url": "https://github.com/fabian1710/mcp-intercom",
+      "snippet": "MCP server for Intercom chat integration"
+     }
+    ]
+   },
+   "buildability": {
+    "verdict": "ready",
+    "main_blocker": "none",
+    "rationale": "Self-serve free developer workspaces with immediate API credentials, fully documented REST API with OpenAPI spec, webhooks support, and official MCP server enable toolkit development today.",
+    "composio_existing_toolkit": "yes",
+    "composio_slug": "INTERCOM"
+   },
+   "overview_evidence": [
+    {
+     "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+     "snippet": "To access the Intercom API, you have two authentication options depending on whether you app is public or private."
+    },
+    {
+     "url": "https://www.intercom.com/help/en/articles/9086429-create-a-developer-workspace-in-intercom",
+     "snippet": "Developer workspaces can be set up by anyone. You do not have to be an existing Intercom customer."
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/intercom.md",
+     "snippet": "Category: customer support Auth: OAUTH2 Composio-managed OAuth available? Yes Tools: 138"
+    }
+   ],
+   "confidence": 0.95,
+   "unknown_reasons": {
+    "auth": "",
+    "access": "",
+    "api_surface": "",
+    "mcp": ""
+   }
+  },
+  "verification": {
+   "checks": [],
+   "disagreements": [],
+   "resolved_by": "agent",
+   "human_checked": false
+  },
+  "needs_human": false,
+  "human_reason": ""
+ },
+ {
+  "id": 13,
+  "app": "Freshdesk",
+  "category": "Support and Helpdesk",
+  "hint": "freshdesk.com",
+  "one_liner": "Freshdesk is a cloud-based customer support platform for managing tickets, customer communications, and helpdesk operations.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "api_key"
+   ],
+   "oauth_grant_types": [],
+   "notes": "API key authentication only. MCP integration also requires API key.",
+   "evidence": [
+    {
+     "url": "https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk-eap-",
+     "snippet": "Currently, Freshdesk allows you to authenticate requests involved in MCP integration by using an API key only."
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/freshdesk.md",
+     "snippet": "Auth: API_KEY"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_trial",
+   "dev_sandbox": true,
+   "notes": "14-day free trial with full API access included. After trial, API access available only on paid plans (Growth, Pro, Enterprise). Free tier has zero API calls.",
+   "evidence": [
+    {
+     "url": "https://support.freshdesk.com/support/solutions/articles/50000011778-understanding-freshdesk-pricing-plans",
+     "snippet": "Every new account starts with a 14-day free trial that includes: Full feature access"
+    },
+    {
+     "url": "https://support.freshdesk.com/support/solutions/articles/50000001047-do-we-have-api-and-integration-capabilities-in-the-free-sprout-plan",
+     "snippet": "No, the access to Freshdesk APIs and the integration capabilities is not available in the free Sprout plan."
+    },
+    {
+     "url": "https://support.freshdesk.com/support/solutions/articles/225439-what-are-the-rate-limits-for-the-api-calls-to-freshdesk-",
+     "snippet": "Free: 0 calls per minute. Growth: 100 calls per minute. Pro: 400 calls per minute."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Per-minute rate limits by plan: Free (0), Growth (100), Pro (400), Enterprise (700). Separate per-endpoint limits also enforced.",
+   "evidence": [
+    {
+     "url": "https://developers.freshdesk.com/api/",
+     "snippet": "Freshdesk's APIs belong to the Representational State Transfer (REST) category."
+    },
+    {
+     "url": "https://developers.freshdesk.com/api/",
+     "snippet": "They allow you to perform 'RESTful' operations such as reading, modifying, adding or deleting data from your helpdesk."
+    },
+    {
+     "url": "https://support.freshdesk.com/support/solutions/articles/225439-what-are-the-rate-limits-for-the-api-calls-to-freshdesk-",
+     "snippet": "The number of API calls you can make is based on your plan."
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [
+    "https://github.com/hashcott/freshdesk-mcp"
+   ],
+   "evidence": [
+    {
+     "url": "https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk-eap-",
+     "snippet": "The Freshworks Model Context Protocol (MCP) server enables AI tools like Cursor and Claude to securely connect and interact with Freshdesk."
+    },
+    {
+     "url": "https://github.com/hashcott/freshdesk-mcp",
+     "snippet": "MCP server for Freshdesk — 194 tools, stdio & HTTP transports, full Zod validation."
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "paid_plan",
+   "rationale": "REST API with broad endpoint coverage is fully documented and accessible via free trial, but production use requires paid subscription after 14 days.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "FRESHDESK"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://freshdesk.com",
+    "snippet": "AI-Powered Customer Service Software | Freshdesk | Freshworks"
+   },
+   {
+    "url": "https://developers.freshdesk.com/",
+    "snippet": "Join the Freshdesk Developer Community and build tools to help thousands of businesses worldwide"
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  },
+  "_meta": {
+   "agent": "agent1",
+   "model": "haiku",
+   "pages_used": 12,
+   "error": null,
+   "cost_usd": 0.096138,
+   "seconds": 125.3
+  },
+  "pass1": {
+   "one_liner": "Freshdesk is a cloud-based customer support platform for managing tickets, customer communications, and helpdesk operations.",
+   "app_type": "saas",
+   "auth": {
+    "methods": [
+     "api_key"
+    ],
+    "oauth_grant_types": [],
+    "notes": "API key authentication only. MCP integration also requires API key.",
+    "evidence": [
+     {
+      "url": "https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk-eap-",
+      "snippet": "Currently, Freshdesk allows you to authenticate requests involved in MCP integration by using an API key only."
+     },
+     {
+      "url": "https://docs.composio.dev/toolkits/freshdesk.md",
+      "snippet": "Auth: API_KEY"
+     }
+    ]
+   },
+   "access": {
+    "status": "self_serve_trial",
+    "dev_sandbox": true,
+    "notes": "14-day free trial with full API access included. After trial, API access available only on paid plans (Growth, Pro, Enterprise). Free tier has zero API calls.",
+    "evidence": [
+     {
+      "url": "https://support.freshdesk.com/support/solutions/articles/50000011778-understanding-freshdesk-pricing-plans",
+      "snippet": "Every new account starts with a 14-day free trial that includes: Full feature access"
+     },
+     {
+      "url": "https://support.freshdesk.com/support/solutions/articles/50000001047-do-we-have-api-and-integration-capabilities-in-the-free-sprout-plan",
+      "snippet": "No, the access to Freshdesk APIs and the integration capabilities is not available in the free Sprout plan."
+     },
+     {
+      "url": "https://support.freshdesk.com/support/solutions/articles/225439-what-are-the-rate-limits-for-the-api-calls-to-freshdesk-",
+      "snippet": "Free: 0 calls per minute. Growth: 100 calls per minute. Pro: 400 calls per minute."
+     }
+    ]
+   },
+   "api_surface": {
+    "styles": [
+     "rest"
+    ],
+    "breadth": "broad",
+    "openapi_spec_url": null,
+    "webhooks": true,
+    "rate_limit_note": "Per-minute rate limits by plan: Free (0), Growth (100), Pro (400), Enterprise (700). Separate per-endpoint limits also enforced.",
+    "evidence": [
+     {
+      "url": "https://developers.freshdesk.com/api/",
+      "snippet": "Freshdesk's APIs belong to the Representational State Transfer (REST) category."
+     },
+     {
+      "url": "https://developers.freshdesk.com/api/",
+      "snippet": "They allow you to perform 'RESTful' operations such as reading, modifying, adding or deleting data from your helpdesk."
+     },
+     {
+      "url": "https://support.freshdesk.com/support/solutions/articles/225439-what-are-the-rate-limits-for-the-api-calls-to-freshdesk-",
+      "snippet": "The number of API calls you can make is based on your plan."
+     }
+    ]
+   },
+   "mcp": {
+    "official": null,
+    "community": [
+     "https://github.com/hashcott/freshdesk-mcp"
+    ],
+    "evidence": [
+     {
+      "url": "https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk-eap-",
+      "snippet": "The Freshworks Model Context Protocol (MCP) server enables AI tools like Cursor and Claude to securely connect and interact with Freshdesk."
+     },
+     {
+      "url": "https://github.com/hashcott/freshdesk-mcp",
+      "snippet": "MCP server for Freshdesk — 194 tools, stdio & HTTP transports, full Zod validation."
+     }
+    ]
+   },
+   "buildability": {
+    "verdict": "ready_with_caveats",
+    "main_blocker": "paid_plan",
+    "rationale": "REST API with broad endpoint coverage is fully documented and accessible via free trial, but production use requires paid subscription after 14 days.",
+    "composio_existing_toolkit": "yes",
+    "composio_slug": "FRESHDESK"
+   },
+   "overview_evidence": [
+    {
+     "url": "https://freshdesk.com",
+     "snippet": "AI-Powered Customer Service Software | Freshdesk | Freshworks"
+    },
+    {
+     "url": "https://developers.freshdesk.com/",
+     "snippet": "Join the Freshdesk Developer Community and build tools to help thousands of businesses worldwide"
+    }
+   ],
+   "confidence": 0.95,
+   "unknown_reasons": {
+    "auth": "",
+    "access": "",
+    "api_surface": "",
+    "mcp": ""
+   }
+  },
+  "verification": {
+   "checks": [],
+   "disagreements": [],
+   "resolved_by": "agent",
+   "human_checked": false
+  },
+  "needs_human": false,
+  "human_reason": ""
+ },
+ {
+  "id": 14,
+  "app": "Front",
+  "category": "Support and Helpdesk",
+  "hint": "front.com",
+  "one_liner": "An AI-powered customer service platform with collaborative shared inboxes for team email management and client communication.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "bearer_token",
+    "oauth2"
+   ],
+   "oauth_grant_types": [
+    "authorization_code"
+   ],
+   "notes": "OAuth 2.0 required for public integrations. API tokens are static personal tokens sent as Bearer authentication.",
+   "evidence": [
+    {
+     "url": "https://dev.frontapp.com/docs/oauth",
+     "snippet": "OAuth 2.0 is a protocol that lets external applications request authorization to API access in a secure way."
+    },
+    {
+     "url": "https://dev.frontapp.com/docs/oauth",
+     "snippet": "Front's OAuth implementation only supports the authorization code grant type"
+    },
+    {
+     "url": "https://dev.frontapp.com/reference/introduction",
+     "snippet": "Front supports OAuth2.0 as well as API Tokens."
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Free developer account available to build integrations. API rate limits vary by pricing plan tier (Starter/Professional/Enterprise).",
+   "evidence": [
+    {
+     "url": "https://help.front.com/en/articles/2309",
+     "snippet": "Follow the instructions on the Developer Portal to create a free developer account to begin building integrations on the Front Platform."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": "https://github.com/frontapp/front-api-specs",
+   "webhooks": true,
+   "rate_limit_note": "Global: 50–200 requests/min depending on plan tier; Burst: 5 requests/sec per resource",
+   "evidence": [
+    {
+     "url": "https://github.com/frontapp/front-api-specs",
+     "snippet": "This repo provides Front Platform API schemas for public consumption. The API schemas conform to the OpenAPI specification."
+    },
+    {
+     "url": "https://dev.frontapp.com/reference/introduction",
+     "snippet": "The API is designed to communicate with your server using JSON."
+    },
+    {
+     "url": "https://help.front.com/en/articles/2212",
+     "snippet": "The Webhooks integration allows you to be automatically notified when something happens in Front without having to constantly poll the API."
+    },
+    {
+     "url": "https://help.front.com/en/articles/2438",
+     "snippet": "Front's default API rate limits vary by pricing plan"
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://mcp.frontapp.com/mcp",
+   "community": [
+    "https://github.com/wearehoust/front-mcp"
+   ],
+   "evidence": [
+    {
+     "url": "https://dev.frontapp.com/docs/mcp-server",
+     "snippet": "Front's MCP server (mcp.frontapp.com/mcp) lets AI agents act on Front conversation data using a single OAuth-authenticated endpoint."
+    },
+    {
+     "url": "https://github.com/wearehoust/front-mcp",
+     "snippet": "Secure MCP server for Front.com: search conversations, manage contacts, send messages, automate inbox workflows"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Free developer account, fully documented REST API with OpenAPI specs, webhooks support, and official MCP server all enable immediate toolkit development.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "FRONT"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://front.com",
+    "snippet": "Front | Customer service platform, powered by AI"
+   },
+   {
+    "url": "https://dev.frontapp.com/docs/core-api-overview",
+    "snippet": "The Core API allows you as a Front developer to access core data and actions within Front."
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  },
+  "_meta": {
+   "agent": "agent1",
+   "model": "haiku",
+   "pages_used": 12,
+   "error": null,
+   "cost_usd": 0.083091,
+   "seconds": 95.5
+  },
+  "pass1": {
+   "one_liner": "An AI-powered customer service platform with collaborative shared inboxes for team email management and client communication.",
+   "app_type": "saas",
+   "auth": {
+    "methods": [
+     "bearer_token",
+     "oauth2"
+    ],
+    "oauth_grant_types": [
+     "authorization_code"
+    ],
+    "notes": "OAuth 2.0 required for public integrations. API tokens are static personal tokens sent as Bearer authentication.",
+    "evidence": [
+     {
+      "url": "https://dev.frontapp.com/docs/oauth",
+      "snippet": "OAuth 2.0 is a protocol that lets external applications request authorization to API access in a secure way."
+     },
+     {
+      "url": "https://dev.frontapp.com/docs/oauth",
+      "snippet": "Front's OAuth implementation only supports the authorization code grant type"
+     },
+     {
+      "url": "https://dev.frontapp.com/reference/introduction",
+      "snippet": "Front supports OAuth2.0 as well as API Tokens."
+     }
+    ]
+   },
+   "access": {
+    "status": "self_serve_free",
+    "dev_sandbox": true,
+    "notes": "Free developer account available to build integrations. API rate limits vary by pricing plan tier (Starter/Professional/Enterprise).",
+    "evidence": [
+     {
+      "url": "https://help.front.com/en/articles/2309",
+      "snippet": "Follow the instructions on the Developer Portal to create a free developer account to begin building integrations on the Front Platform."
+     }
+    ]
+   },
+   "api_surface": {
+    "styles": [
+     "rest"
+    ],
+    "breadth": "broad",
+    "openapi_spec_url": "https://github.com/frontapp/front-api-specs",
+    "webhooks": true,
+    "rate_limit_note": "Global: 50–200 requests/min depending on plan tier; Burst: 5 requests/sec per resource",
+    "evidence": [
+     {
+      "url": "https://github.com/frontapp/front-api-specs",
+      "snippet": "This repo provides Front Platform API schemas for public consumption. The API schemas conform to the OpenAPI specification."
+     },
+     {
+      "url": "https://dev.frontapp.com/reference/introduction",
+      "snippet": "The API is designed to communicate with your server using JSON."
+     },
+     {
+      "url": "https://help.front.com/en/articles/2212",
+      "snippet": "The Webhooks integration allows you to be automatically notified when something happens in Front without having to constantly poll the API."
+     },
+     {
+      "url": "https://help.front.com/en/articles/2438",
+      "snippet": "Front's default API rate limits vary by pricing plan"
+     }
+    ]
+   },
+   "mcp": {
+    "official": "https://mcp.frontapp.com/mcp",
+    "community": [
+     "https://github.com/wearehoust/front-mcp"
+    ],
+    "evidence": [
+     {
+      "url": "https://dev.frontapp.com/docs/mcp-server",
+      "snippet": "Front's MCP server (mcp.frontapp.com/mcp) lets AI agents act on Front conversation data using a single OAuth-authenticated endpoint."
+     },
+     {
+      "url": "https://github.com/wearehoust/front-mcp",
+      "snippet": "Secure MCP server for Front.com: search conversations, manage contacts, send messages, automate inbox workflows"
+     }
+    ]
+   },
+   "buildability": {
+    "verdict": "ready",
+    "main_blocker": "none",
+    "rationale": "Free developer account, fully documented REST API with OpenAPI specs, webhooks support, and official MCP server all enable immediate toolkit development.",
+    "composio_existing_toolkit": "yes",
+    "composio_slug": "FRONT"
+   },
+   "overview_evidence": [
+    {
+     "url": "https://front.com",
+     "snippet": "Front | Customer service platform, powered by AI"
+    },
+    {
+     "url": "https://dev.frontapp.com/docs/core-api-overview",
+     "snippet": "The Core API allows you as a Front developer to access core data and actions within Front."
+    }
+   ],
+   "confidence": 0.95,
+   "unknown_reasons": {
+    "auth": "",
+    "access": "",
+    "api_surface": "",
+    "mcp": ""
+   }
+  },
+  "verification": {
+   "checks": [],
+   "disagreements": [],
+   "resolved_by": "agent",
+   "human_checked": false
+  },
+  "needs_human": false,
+  "human_reason": ""
+ },
+ {
+  "id": 15,
+  "app": "Pylon",
+  "category": "Support and Helpdesk",
+  "hint": "usepylon.com",
+  "one_liner": "Agentic B2B support platform that tracks customer issues across channels and orchestrates AI agents and automation to investigate and resolve them.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "bearer_token",
+    "oauth2"
+   ],
+   "oauth_grant_types": [],
+   "notes": "REST API uses Bearer token authentication; MCP supports OAuth 2.0 or API token. Only Admins can create and manage API tokens.",
+   "evidence": [
+    {
+     "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+     "snippet": "The Pylon API uses Bearer authentication. This means you'll need to pass your API token in the header of your request"
+    },
+    {
+     "url": "https://docs.usepylon.com/pylon-docs/integrations/pylon-mcp",
+     "snippet": "Auth: OAuth 2.0 or an API token. Actions are performed as the signed-in user or the token's identity"
+    }
+   ]
+  },
+  "access": {
+   "status": "contact_sales",
+   "dev_sandbox": true,
+   "notes": "REST API and webhooks available on paid plan tiers shown in pricing table. Free trial available but requires sales contact. Sandbox environment listed as plan feature.",
+   "evidence": [
+    {
+     "url": "https://www.usepylon.com/pricing",
+     "snippet": "For Enterprise customers, our sales team will work with you on a custom quote."
+    },
+    {
+     "url": "https://www.usepylon.com/pricing",
+     "snippet": "Pylon offers free trials for prospects. Your sales representative will work with you on setting up the demo organization."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "moderate",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "300 requests per minute for most REST operations; rate limits apply per MCP tool",
+   "evidence": [
+    {
+     "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+     "snippet": "Authorization: Bearer <token>"
+    },
+    {
+     "url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference/accounts",
+     "snippet": "Rate limit: 300 requests per minute"
+    },
+    {
+     "url": "https://docs.usepylon.com/pylon-docs/developer/webhooks",
+     "snippet": "Webhooks are user-defined HTTP callbacks that are triggered by specific events within Pylon."
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://mcp.usepylon.com",
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://docs.usepylon.com/pylon-docs/integrations/pylon-mcp",
+     "snippet": "Server URL (US): https://mcp.usepylon.com | Server URL (EU): https://mcp.eu.usepylon.com"
+    },
+    {
+     "url": "https://www.usepylon.com/integrations/mcp",
+     "snippet": "Pylon MCP server: connect ChatGPT, Claude, and Cursor. Work issues, accounts, contacts, and your knowledge base"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "paid_plan",
+   "rationale": "REST API and MCP are documented with Bearer/OAuth authentication; a toolkit could be built today, but requires paid plan via sales contact; PYLON_MCP toolkit demonstrates this is achievable.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "PYLON_MCP"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://usepylon.com",
+    "snippet": "Pylon: Agentic B2B Support"
+   },
+   {
+    "url": "https://docs.usepylon.com",
+    "snippet": "Pylon is the first agentic support platform built for B2B."
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  },
+  "_meta": {
+   "agent": "agent1",
+   "model": "haiku",
+   "pages_used": 12,
+   "error": null,
+   "cost_usd": 0.067856,
+   "seconds": 74.3
+  },
+  "pass1": {
+   "one_liner": "Agentic B2B support platform that tracks customer issues across channels and orchestrates AI agents and automation to investigate and resolve them.",
+   "app_type": "saas",
+   "auth": {
+    "methods": [
+     "bearer_token",
+     "oauth2"
+    ],
+    "oauth_grant_types": [],
+    "notes": "REST API uses Bearer token authentication; MCP supports OAuth 2.0 or API token. Only Admins can create and manage API tokens.",
+    "evidence": [
+     {
+      "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+      "snippet": "The Pylon API uses Bearer authentication. This means you'll need to pass your API token in the header of your request"
+     },
+     {
+      "url": "https://docs.usepylon.com/pylon-docs/integrations/pylon-mcp",
+      "snippet": "Auth: OAuth 2.0 or an API token. Actions are performed as the signed-in user or the token's identity"
+     }
+    ]
+   },
+   "access": {
+    "status": "contact_sales",
+    "dev_sandbox": true,
+    "notes": "REST API and webhooks available on paid plan tiers shown in pricing table. Free trial available but requires sales contact. Sandbox environment listed as plan feature.",
+    "evidence": [
+     {
+      "url": "https://www.usepylon.com/pricing",
+      "snippet": "For Enterprise customers, our sales team will work with you on a custom quote."
+     },
+     {
+      "url": "https://www.usepylon.com/pricing",
+      "snippet": "Pylon offers free trials for prospects. Your sales representative will work with you on setting up the demo organization."
+     }
+    ]
+   },
+   "api_surface": {
+    "styles": [
+     "rest"
+    ],
+    "breadth": "moderate",
+    "openapi_spec_url": null,
+    "webhooks": true,
+    "rate_limit_note": "300 requests per minute for most REST operations; rate limits apply per MCP tool",
+    "evidence": [
+     {
+      "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+      "snippet": "Authorization: Bearer <token>"
+     },
+     {
+      "url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference/accounts",
+      "snippet": "Rate limit: 300 requests per minute"
+     },
+     {
+      "url": "https://docs.usepylon.com/pylon-docs/developer/webhooks",
+      "snippet": "Webhooks are user-defined HTTP callbacks that are triggered by specific events within Pylon."
+     }
+    ]
+   },
+   "mcp": {
+    "official": "https://mcp.usepylon.com",
+    "community": [],
+    "evidence": [
+     {
+      "url": "https://docs.usepylon.com/pylon-docs/integrations/pylon-mcp",
+      "snippet": "Server URL (US): https://mcp.usepylon.com | Server URL (EU): https://mcp.eu.usepylon.com"
+     },
+     {
+      "url": "https://www.usepylon.com/integrations/mcp",
+      "snippet": "Pylon MCP server: connect ChatGPT, Claude, and Cursor. Work issues, accounts, contacts, and your knowledge base"
+     }
+    ]
+   },
+   "buildability": {
+    "verdict": "ready_with_caveats",
+    "main_blocker": "paid_plan",
+    "rationale": "REST API and MCP are documented with Bearer/OAuth authentication; a toolkit could be built today, but requires paid plan via sales contact; PYLON_MCP toolkit demonstrates this is achievable.",
+    "composio_existing_toolkit": "yes",
+    "composio_slug": "PYLON_MCP"
+   },
+   "overview_evidence": [
+    {
+     "url": "https://usepylon.com",
+     "snippet": "Pylon: Agentic B2B Support"
+    },
+    {
+     "url": "https://docs.usepylon.com",
+     "snippet": "Pylon is the first agentic support platform built for B2B."
+    }
+   ],
+   "confidence": 0.95,
+   "unknown_reasons": {
+    "auth": "",
+    "access": "",
+    "api_surface": "",
+    "mcp": ""
+   }
+  },
+  "verification": {
+   "checks": [],
+   "disagreements": [],
+   "resolved_by": "agent",
+   "human_checked": false
+  },
+  "needs_human": false,
+  "human_reason": ""
+ },
+ {
+  "id": 16,
+  "app": "LiveAgent",
+  "category": "Support and Helpdesk",
+  "hint": "liveagent.com",
+  "one_liner": "Cloud-based help desk software with ticketing, live chat, social media, and AI agents for support teams",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "api_key",
+    "oauth2"
+   ],
+   "oauth_grant_types": [
+    "authorization_code"
+   ],
+   "notes": "API key passed in request header; OAuth 2.1 with PKCE for MCP server integration",
+   "evidence": [
+    {
+     "url": "https://support.liveagent.com/741982-API-key",
+     "snippet": "Your API key has to be set in header of your requests"
+    },
+    {
+     "url": "https://support.liveagent.com/647358-MCP-Integration-for-Agents",
+     "snippet": "OAuth 2.1 (recommended), where the AI tool discovers the authorization server automatically"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_trial",
+   "dev_sandbox": true,
+   "notes": "30-day free trial without credit card; API key self-serve via Configuration panel; continued use requires paid plan",
+   "evidence": [
+    {
+     "url": "https://www.liveagent.com/pricing/",
+     "snippet": "30-day free trial, no credit card"
+    },
+    {
+     "url": "https://support.liveagent.com/741982-API-key",
+     "snippet": "While logged in as an admin navigate to Configuration> System> API"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "moderate",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "180 requests per minute per API key",
+   "evidence": [
+    {
+     "url": "https://support.liveagent.com/911737-API-v3",
+     "snippet": "You can find whole LiveAgent API documentation within your LiveAgent account"
+    },
+    {
+     "url": "https://support.liveagent.com/931802-API-rate-limit-API-requests-limit",
+     "snippet": "The API rate limit is set right now to 180 requests per minute"
+    },
+    {
+     "url": "https://faq.liveagent.com/532587-How-do-I-create-a-webhook-to-receive-notifications-on-my-channel",
+     "snippet": "You can create a webhook by building a custom integration using the API"
+    },
+    {
+     "url": "https://support.liveagent.com/094128-Swagger-API-descriptor",
+     "snippet": "You can use the swagger (OpenAPI) API descriptor which can be found"
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://github.com/QualityUnit/liveagent-mcp-server",
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://support.liveagent.com/647358-MCP-Integration-for-Agents",
+     "snippet": "LiveAgent exposes a built-in MCP server (Model Context Protocol) that lets you connect external AI tools"
+    },
+    {
+     "url": "https://github.com/QualityUnit/liveagent-mcp-server",
+     "snippet": "LiveAgent MCP Server to automate tasks in your helpdesk"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "paid_plan",
+   "rationale": "REST API well-documented with OpenAPI spec and available on free trial; production use requires paid subscription after 30 days.",
+   "composio_existing_toolkit": "no",
+   "composio_slug": null
+  },
+  "overview_evidence": [
+   {
+    "url": "https://www.liveagent.com/",
+    "snippet": "LiveAgent is cloud help desk software for small and growing support teams"
+   },
+   {
+    "url": "https://support.liveagent.com/911737-API-v3",
+    "snippet": "You can find whole LiveAgent API documentation within your LiveAgent account"
+   }
+  ],
+  "confidence": 0.85,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "Pages confirm free trial access and admin self-serve setup, but do not explicitly state whether API is included on all paid plan tiers",
+   "api_surface": "",
+   "mcp": ""
+  },
+  "_meta": {
+   "agent": "agent1",
+   "model": "haiku",
+   "pages_used": 12,
+   "error": null,
+   "cost_usd": 0.07011400000000001,
+   "seconds": 72.2
+  },
+  "pass1": {
+   "one_liner": "Cloud-based help desk software with ticketing, live chat, social media, and AI agents for support teams",
+   "app_type": "saas",
+   "auth": {
+    "methods": [
+     "api_key",
+     "oauth2"
+    ],
+    "oauth_grant_types": [
+     "authorization_code"
+    ],
+    "notes": "API key passed in request header; OAuth 2.1 with PKCE for MCP server integration",
+    "evidence": [
+     {
+      "url": "https://support.liveagent.com/741982-API-key",
+      "snippet": "Your API key has to be set in header of your requests"
+     },
+     {
+      "url": "https://support.liveagent.com/647358-MCP-Integration-for-Agents",
+      "snippet": "OAuth 2.1 (recommended), where the AI tool discovers the authorization server automatically"
+     }
+    ]
+   },
+   "access": {
+    "status": "self_serve_trial",
+    "dev_sandbox": true,
+    "notes": "30-day free trial without credit card; API key self-serve via Configuration panel; continued use requires paid plan",
+    "evidence": [
+     {
+      "url": "https://www.liveagent.com/pricing/",
+      "snippet": "30-day free trial, no credit card"
+     },
+     {
+      "url": "https://support.liveagent.com/741982-API-key",
+      "snippet": "While logged in as an admin navigate to Configuration> System> API"
+     }
+    ]
+   },
+   "api_surface": {
+    "styles": [
+     "rest"
+    ],
+    "breadth": "moderate",
+    "openapi_spec_url": null,
+    "webhooks": true,
+    "rate_limit_note": "180 requests per minute per API key",
+    "evidence": [
+     {
+      "url": "https://support.liveagent.com/911737-API-v3",
+      "snippet": "You can find whole LiveAgent API documentation within your LiveAgent account"
+     },
+     {
+      "url": "https://support.liveagent.com/931802-API-rate-limit-API-requests-limit",
+      "snippet": "The API rate limit is set right now to 180 requests per minute"
+     },
+     {
+      "url": "https://faq.liveagent.com/532587-How-do-I-create-a-webhook-to-receive-notifications-on-my-channel",
+      "snippet": "You can create a webhook by building a custom integration using the API"
+     },
+     {
+      "url": "https://support.liveagent.com/094128-Swagger-API-descriptor",
+      "snippet": "You can use the swagger (OpenAPI) API descriptor which can be found"
+     }
+    ]
+   },
+   "mcp": {
+    "official": "https://github.com/QualityUnit/liveagent-mcp-server",
+    "community": [],
+    "evidence": [
+     {
+      "url": "https://support.liveagent.com/647358-MCP-Integration-for-Agents",
+      "snippet": "LiveAgent exposes a built-in MCP server (Model Context Protocol) that lets you connect external AI tools"
+     },
+     {
+      "url": "https://github.com/QualityUnit/liveagent-mcp-server",
+      "snippet": "LiveAgent MCP Server to automate tasks in your helpdesk"
+     }
+    ]
+   },
+   "buildability": {
+    "verdict": "ready_with_caveats",
+    "main_blocker": "paid_plan",
+    "rationale": "REST API well-documented with OpenAPI spec and available on free trial; production use requires paid subscription after 30 days.",
+    "composio_existing_toolkit": "no",
+    "composio_slug": null
+   },
+   "overview_evidence": [
+    {
+     "url": "https://www.liveagent.com/",
+     "snippet": "LiveAgent is cloud help desk software for small and growing support teams"
+    },
+    {
+     "url": "https://support.liveagent.com/911737-API-v3",
+     "snippet": "You can find whole LiveAgent API documentation within your LiveAgent account"
+    }
+   ],
+   "confidence": 0.85,
+   "unknown_reasons": {
+    "auth": "",
+    "access": "Pages confirm free trial access and admin self-serve setup, but do not explicitly state whether API is included on all paid plan tiers",
+    "api_surface": "",
+    "mcp": ""
+   }
+  },
+  "verification": {
+   "checks": [],
+   "disagreements": [],
+   "resolved_by": "agent",
+   "human_checked": false
+  },
+  "needs_human": false,
+  "human_reason": ""
+ },
+ {
+  "id": 17,
+  "app": "Plain",
+  "category": "Support and Helpdesk",
+  "hint": "plain.com",
+  "one_liner": "Support platform for B2B teams built API-first with GraphQL, webhooks, and AI agents for handling customer conversations across multiple channels.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "bearer_token",
+    "oauth2"
+   ],
+   "oauth_grant_types": [],
+   "notes": "Bearer token authentication via API keys created for machine users. OAuth also available for user-delegated access.",
+   "evidence": [
+    {
+     "url": "https://www.plain.com/docs/graphql/authentication",
+     "snippet": "Now that you have an API key, pass it on any API call as a header: Authorization: Bearer plainApiKey_xxx"
+    },
+    {
+     "url": "https://help.plain.com/article/api-quickstart",
+     "snippet": "Required headers: Authorization: Bearer YOUR_TOKEN where the token is your API key"
+    },
+    {
+     "url": "https://www.plain.com/docs/graphql/authentication",
+     "snippet": "To call the API as a user in your workspace, use an OAuth app"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_trial",
+   "dev_sandbox": null,
+   "notes": "7-day free trial available to self-serve sign up. API credentials are created by workspace members via Settings. Continued use after trial requires paid plan starting at $45/user/month.",
+   "evidence": [
+    {
+     "url": "https://www.plain.com/pricing",
+     "snippet": "7 day free trial · API Webhooks Events MCP Custom channels"
+    },
+    {
+     "url": "https://www.plain.com/pricing",
+     "snippet": "Plain Pricing – Plans from $45/user/month | 7-Day Free Trial"
+    },
+    {
+     "url": "https://www.plain.com/docs/graphql/authentication",
+     "snippet": "Go to Settings → Machine users & agents and click Add machine user"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "graphql"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "450–1000 requests/minute depending on plan: Foundation 450, Horizon 600, Frontier 1000",
+   "evidence": [
+    {
+     "url": "https://help.plain.com/article/api-quickstart",
+     "snippet": "API URL: https://core-api.uk.plain.com/graphql/v1 Allowed method: POST"
+    },
+    {
+     "url": "https://www.plain.com/docs/webhooks",
+     "snippet": "Webhooks allow you to get notified about events happening in your Plain workspace"
+    },
+    {
+     "url": "https://help.plain.com/article/rate-limits",
+     "snippet": "Plain applies rate limits to activity from machine users using the Plain API"
+    },
+    {
+     "url": "https://www.plain.com/docs/graphql/sdk",
+     "snippet": "The @team-plain/graphql package provides a fully typed client for Plain's GraphQL API"
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://mcp.plain.com/mcp",
+   "community": [
+    "https://github.com/tellahq/plain-mcp"
+   ],
+   "evidence": [
+    {
+     "url": "https://help.plain.com/article/mcp-server",
+     "snippet": "The Plain MCP server at https://mcp.plain.com/mcp lets tools like Claude work with support"
+    },
+    {
+     "url": "https://github.com/tellahq/plain-mcp",
+     "snippet": "An MCP server providing comprehensive access to the Plain.com API from Claude, with 77 tools"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "GraphQL API is well-documented, self-serve API key authentication is available, official MCP server exists, and Composio toolkit already exists with 120 tools.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "PLAIN"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://www.plain.com/docs/product/what-is-plain",
+    "snippet": "Plain is a support platform for B2B teams, built API-first so you can change how it works"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/plain.md",
+    "snippet": "Auth: API_KEY · Composio-managed OAuth available? N/A · Tools: 120"
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  },
+  "_meta": {
+   "agent": "agent1",
+   "model": "haiku",
+   "pages_used": 12,
+   "error": null,
+   "cost_usd": 0.06931300000000001,
+   "seconds": 66.5
+  },
+  "pass1": {
+   "one_liner": "Support platform for B2B teams built API-first with GraphQL, webhooks, and AI agents for handling customer conversations across multiple channels.",
+   "app_type": "saas",
+   "auth": {
+    "methods": [
+     "bearer_token",
+     "oauth2"
+    ],
+    "oauth_grant_types": [],
+    "notes": "Bearer token authentication via API keys created for machine users. OAuth also available for user-delegated access.",
+    "evidence": [
+     {
+      "url": "https://www.plain.com/docs/graphql/authentication",
+      "snippet": "Now that you have an API key, pass it on any API call as a header: Authorization: Bearer plainApiKey_xxx"
+     },
+     {
+      "url": "https://help.plain.com/article/api-quickstart",
+      "snippet": "Required headers: Authorization: Bearer YOUR_TOKEN where the token is your API key"
+     },
+     {
+      "url": "https://www.plain.com/docs/graphql/authentication",
+      "snippet": "To call the API as a user in your workspace, use an OAuth app"
+     }
+    ]
+   },
+   "access": {
+    "status": "self_serve_trial",
+    "dev_sandbox": null,
+    "notes": "7-day free trial available to self-serve sign up. API credentials are created by workspace members via Settings. Continued use after trial requires paid plan starting at $45/user/month.",
+    "evidence": [
+     {
+      "url": "https://www.plain.com/pricing",
+      "snippet": "7 day free trial · API Webhooks Events MCP Custom channels"
+     },
+     {
+      "url": "https://www.plain.com/pricing",
+      "snippet": "Plain Pricing – Plans from $45/user/month | 7-Day Free Trial"
+     },
+     {
+      "url": "https://www.plain.com/docs/graphql/authentication",
+      "snippet": "Go to Settings → Machine users & agents and click Add machine user"
+     }
+    ]
+   },
+   "api_surface": {
+    "styles": [
+     "graphql"
+    ],
+    "breadth": "broad",
+    "openapi_spec_url": null,
+    "webhooks": true,
+    "rate_limit_note": "450–1000 requests/minute depending on plan: Foundation 450, Horizon 600, Frontier 1000",
+    "evidence": [
+     {
+      "url": "https://help.plain.com/article/api-quickstart",
+      "snippet": "API URL: https://core-api.uk.plain.com/graphql/v1 Allowed method: POST"
+     },
+     {
+      "url": "https://www.plain.com/docs/webhooks",
+      "snippet": "Webhooks allow you to get notified about events happening in your Plain workspace"
+     },
+     {
+      "url": "https://help.plain.com/article/rate-limits",
+      "snippet": "Plain applies rate limits to activity from machine users using the Plain API"
+     },
+     {
+      "url": "https://www.plain.com/docs/graphql/sdk",
+      "snippet": "The @team-plain/graphql package provides a fully typed client for Plain's GraphQL API"
+     }
+    ]
+   },
+   "mcp": {
+    "official": "https://mcp.plain.com/mcp",
+    "community": [
+     "https://github.com/tellahq/plain-mcp"
+    ],
+    "evidence": [
+     {
+      "url": "https://help.plain.com/article/mcp-server",
+      "snippet": "The Plain MCP server at https://mcp.plain.com/mcp lets tools like Claude work with support"
+     },
+     {
+      "url": "https://github.com/tellahq/plain-mcp",
+      "snippet": "An MCP server providing comprehensive access to the Plain.com API from Claude, with 77 tools"
+     }
+    ]
+   },
+   "buildability": {
+    "verdict": "ready",
+    "main_blocker": "none",
+    "rationale": "GraphQL API is well-documented, self-serve API key authentication is available, official MCP server exists, and Composio toolkit already exists with 120 tools.",
+    "composio_existing_toolkit": "yes",
+    "composio_slug": "PLAIN"
+   },
+   "overview_evidence": [
+    {
+     "url": "https://www.plain.com/docs/product/what-is-plain",
+     "snippet": "Plain is a support platform for B2B teams, built API-first so you can change how it works"
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/plain.md",
+     "snippet": "Auth: API_KEY · Composio-managed OAuth available? N/A · Tools: 120"
+    }
+   ],
+   "confidence": 0.95,
+   "unknown_reasons": {
+    "auth": "",
+    "access": "",
+    "api_surface": "",
+    "mcp": ""
+   }
+  },
+  "verification": {
+   "checks": [],
+   "disagreements": [],
+   "resolved_by": "agent",
+   "human_checked": false
+  },
+  "needs_human": false,
+  "human_reason": ""
+ },
+ {
+  "id": 18,
+  "app": "Help Scout",
+  "category": "Support and Helpdesk",
+  "hint": "helpscout.com",
+  "one_liner": "AI-driven customer support platform for managing conversations, customers, and support workflows across multiple channels.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2"
+   ],
+   "oauth_grant_types": [
+    "authorization_code",
+    "client_credentials"
+   ],
+   "notes": "OAuth2 application created via user profile; Authorization Code flow for user integrations, Client Credentials for internal integrations",
+   "evidence": [
+    {
+     "url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+     "snippet": "OAuth 2.0 authorization, implementing Authorization Code and Client Credential flows."
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_trial",
+   "dev_sandbox": true,
+   "notes": "Free 15-day trial of Standard/Plus/Pro plans (no credit card required) includes API access; sustained use requires paid subscription starting at Standard plan",
+   "evidence": [
+    {
+     "url": "https://docs.helpscout.com/article/1779-connect-your-ai-agent-with-help-scout-to-search-conversations-and-pull-reports",
+     "snippet": "Your Help Scout account must have API access, which is included on the Standard, Plus, and Pro plans."
+    },
+    {
+     "url": "https://www.helpscout.com/pricing/",
+     "snippet": "When you sign up for a free trial of the Standard or Plus plan, you'll get 15 days to take all of the plan's features for a test drive"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Rate limited per plan; write requests count as 2 requests; response code 429 when throttled; rate limit headers provided (X-RateLimit-*)",
+   "evidence": [
+    {
+     "url": "https://developer.helpscout.com/mailbox-api/",
+     "snippet": "with OAuth 2 authentication and CORS which should help you explore the API and free you from composing URIs by hand."
+    },
+    {
+     "url": "https://developer.helpscout.com/mailbox-api/overview/rate-limiting/",
+     "snippet": "The API is rate limited and all users associated with the same account count against the same rate limit."
+    },
+    {
+     "url": "https://developer.helpscout.com/webhooks/",
+     "snippet": "Webhooks enable Help Scout to call a script on your server when one or more events have happened."
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://mcp.helpscout.net/mcp",
+   "community": [
+    "https://github.com/drewburchfield/help-scout-mcp-server"
+   ],
+   "evidence": [
+    {
+     "url": "https://docs.helpscout.com/article/1779-connect-your-ai-agent-with-help-scout-to-search-conversations-and-pull-reports",
+     "snippet": "Set the remote MCP server URL to https://mcp.helpscout.net/mcp"
+    },
+    {
+     "url": "https://github.com/drewburchfield/help-scout-mcp-server",
+     "snippet": "MCP server for Help Scout - search conversations, customers, organizations, reports, and Docs with AI agents"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "paid_plan",
+   "rationale": "Well-documented REST API with self-serve OAuth credentials, but API access requires paid Standard plan (or time-limited free trial) rather than free tier.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "HELP_SCOUT"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://helpscout.com",
+    "snippet": "Help Scout: The AI-driven support platform for customer-first brands"
+   },
+   {
+    "url": "https://developer.helpscout.com",
+    "snippet": "Help Scout provides several tools for developers to make magic happen: Apps - display your own content as an internal sidebar application in the Inbox"
+   }
+  ],
+  "confidence": 0.9,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  },
+  "_meta": {
+   "agent": "agent1",
+   "model": "haiku",
+   "pages_used": 12,
+   "error": null,
+   "cost_usd": 0.087518,
+   "seconds": 102.2
+  },
+  "pass1": {
+   "one_liner": "AI-driven customer support platform for managing conversations, customers, and support workflows across multiple channels.",
+   "app_type": "saas",
+   "auth": {
+    "methods": [
+     "oauth2"
+    ],
+    "oauth_grant_types": [
+     "authorization_code",
+     "client_credentials"
+    ],
+    "notes": "OAuth2 application created via user profile; Authorization Code flow for user integrations, Client Credentials for internal integrations",
+    "evidence": [
+     {
+      "url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+      "snippet": "OAuth 2.0 authorization, implementing Authorization Code and Client Credential flows."
+     }
+    ]
+   },
+   "access": {
+    "status": "self_serve_trial",
+    "dev_sandbox": true,
+    "notes": "Free 15-day trial of Standard/Plus/Pro plans (no credit card required) includes API access; sustained use requires paid subscription starting at Standard plan",
+    "evidence": [
+     {
+      "url": "https://docs.helpscout.com/article/1779-connect-your-ai-agent-with-help-scout-to-search-conversations-and-pull-reports",
+      "snippet": "Your Help Scout account must have API access, which is included on the Standard, Plus, and Pro plans."
+     },
+     {
+      "url": "https://www.helpscout.com/pricing/",
+      "snippet": "When you sign up for a free trial of the Standard or Plus plan, you'll get 15 days to take all of the plan's features for a test drive"
+     }
+    ]
+   },
+   "api_surface": {
+    "styles": [
+     "rest"
+    ],
+    "breadth": "broad",
+    "openapi_spec_url": null,
+    "webhooks": true,
+    "rate_limit_note": "Rate limited per plan; write requests count as 2 requests; response code 429 when throttled; rate limit headers provided (X-RateLimit-*)",
+    "evidence": [
+     {
+      "url": "https://developer.helpscout.com/mailbox-api/",
+      "snippet": "with OAuth 2 authentication and CORS which should help you explore the API and free you from composing URIs by hand."
+     },
+     {
+      "url": "https://developer.helpscout.com/mailbox-api/overview/rate-limiting/",
+      "snippet": "The API is rate limited and all users associated with the same account count against the same rate limit."
+     },
+     {
+      "url": "https://developer.helpscout.com/webhooks/",
+      "snippet": "Webhooks enable Help Scout to call a script on your server when one or more events have happened."
+     }
+    ]
+   },
+   "mcp": {
+    "official": "https://mcp.helpscout.net/mcp",
+    "community": [
+     "https://github.com/drewburchfield/help-scout-mcp-server"
+    ],
+    "evidence": [
+     {
+      "url": "https://docs.helpscout.com/article/1779-connect-your-ai-agent-with-help-scout-to-search-conversations-and-pull-reports",
+      "snippet": "Set the remote MCP server URL to https://mcp.helpscout.net/mcp"
+     },
+     {
+      "url": "https://github.com/drewburchfield/help-scout-mcp-server",
+      "snippet": "MCP server for Help Scout - search conversations, customers, organizations, reports, and Docs with AI agents"
+     }
+    ]
+   },
+   "buildability": {
+    "verdict": "ready_with_caveats",
+    "main_blocker": "paid_plan",
+    "rationale": "Well-documented REST API with self-serve OAuth credentials, but API access requires paid Standard plan (or time-limited free trial) rather than free tier.",
+    "composio_existing_toolkit": "yes",
+    "composio_slug": "HELP_SCOUT"
+   },
+   "overview_evidence": [
+    {
+     "url": "https://helpscout.com",
+     "snippet": "Help Scout: The AI-driven support platform for customer-first brands"
+    },
+    {
+     "url": "https://developer.helpscout.com",
+     "snippet": "Help Scout provides several tools for developers to make magic happen: Apps - display your own content as an internal sidebar application in the Inbox"
+    }
+   ],
+   "confidence": 0.9,
+   "unknown_reasons": {
+    "auth": "",
+    "access": "",
+    "api_surface": "",
+    "mcp": ""
+   }
+  },
+  "verification": {
+   "checks": [],
+   "disagreements": [],
+   "resolved_by": "agent",
+   "human_checked": false
+  },
+  "needs_human": false,
+  "human_reason": ""
+ },
+ {
+  "id": 19,
+  "app": "Gorgias",
+  "category": "Support and Helpdesk",
+  "hint": "gorgias.com",
+  "one_liner": "Gorgias is a conversational AI platform for ecommerce support and helpdesk management.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "api_key",
+    "oauth2"
+   ],
+   "oauth_grant_types": [],
+   "notes": "API key for private apps only (HTTP Basic auth with base64-encoded username:api_key). OAuth2 mandatory for public apps.",
+   "evidence": [
+    {
+     "url": "https://developers.gorgias.com/docs/access-tokens-api-keys",
+     "snippet": "the API key authentication method can be used only for private apps. If you plan to build a public app you have to use OAuth2."
+    },
+    {
+     "url": "https://developers.gorgias.com/reference/authentication",
+     "snippet": "Using OAuth2 is mandatory for public apps."
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "API keys are self-serve from account settings. Free trial accounts available; conversion to developer sandbox requires contacting support.",
+   "evidence": [
+    {
+     "url": "https://developers.gorgias.com/docs/access-tokens-api-keys",
+     "snippet": "As an admin, you can easily generate and revoke your access token in the settings of your account."
+    },
+    {
+     "url": "https://developers.gorgias.com/docs/1-register-on-developer-portal",
+     "snippet": "Once you register, feel free to create a trial account and reach out to [email protected] to transform it into a developer account."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": null,
+   "rate_limit_note": "OAuth2 apps: 80 requests per 20 seconds; API key integrations: 40 requests per 20 seconds; Enterprise: 10-second window",
+   "evidence": [
+    {
+     "url": "https://developers.gorgias.com/reference/introduction",
+     "snippet": "The Gorgias API is structured with REST in mind. Our API has predictable resource-oriented URLs, accepts JSON-encoded responses"
+    },
+    {
+     "url": "https://developers.gorgias.com/reference/limitations",
+     "snippet": "OAuth2 apps can make 80 requests in a 20 second window"
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://mcp.gorgias.com/mcp",
+   "community": [
+    "https://github.com/mattcoatsworth/Gorgias-MCP-Server"
+   ],
+   "evidence": [
+    {
+     "url": "https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546",
+     "snippet": "The Gorgias MCP lets you work with your Gorgias helpdesk using an AI assistant, like Claude or ChatGPT."
+    },
+    {
+     "url": "https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546",
+     "snippet": "the connection URL is the same: https://mcp.gorgias.com/mcp"
+    },
+    {
+     "url": "https://github.com/mattcoatsworth/Gorgias-MCP-Server",
+     "snippet": "An MCP server for interacting with the Gorgias helpdesk API. This server provides tools and resources"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Fully documented REST API with broad resource coverage; self-serve API key access; Composio toolkit already in production with 51 tools.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "gorgias"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://gorgias.com",
+    "snippet": "Bring your support team, customer data, workflows, and AI Agent together in one platform built for every stage of the customer journey."
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/gorgias.md",
+    "snippet": "With managed OAuth you don't need your own Gorgias app or client credentials. The flow starts in Gorgias and finishes in Composio."
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  },
+  "_meta": {
+   "agent": "agent1",
+   "model": "haiku",
+   "pages_used": 12,
+   "error": null,
+   "cost_usd": 0.080901,
+   "seconds": 93.5
+  },
+  "pass1": {
+   "one_liner": "Gorgias is a conversational AI platform for ecommerce support and helpdesk management.",
+   "app_type": "saas",
+   "auth": {
+    "methods": [
+     "api_key",
+     "oauth2"
+    ],
+    "oauth_grant_types": [],
+    "notes": "API key for private apps only (HTTP Basic auth with base64-encoded username:api_key). OAuth2 mandatory for public apps.",
+    "evidence": [
+     {
+      "url": "https://developers.gorgias.com/docs/access-tokens-api-keys",
+      "snippet": "the API key authentication method can be used only for private apps. If you plan to build a public app you have to use OAuth2."
+     },
+     {
+      "url": "https://developers.gorgias.com/reference/authentication",
+      "snippet": "Using OAuth2 is mandatory for public apps."
+     }
+    ]
+   },
+   "access": {
+    "status": "self_serve_free",
+    "dev_sandbox": true,
+    "notes": "API keys are self-serve from account settings. Free trial accounts available; conversion to developer sandbox requires contacting support.",
+    "evidence": [
+     {
+      "url": "https://developers.gorgias.com/docs/access-tokens-api-keys",
+      "snippet": "As an admin, you can easily generate and revoke your access token in the settings of your account."
+     },
+     {
+      "url": "https://developers.gorgias.com/docs/1-register-on-developer-portal",
+      "snippet": "Once you register, feel free to create a trial account and reach out to [email protected] to transform it into a developer account."
+     }
+    ]
+   },
+   "api_surface": {
+    "styles": [
+     "rest"
+    ],
+    "breadth": "broad",
+    "openapi_spec_url": null,
+    "webhooks": null,
+    "rate_limit_note": "OAuth2 apps: 80 requests per 20 seconds; API key integrations: 40 requests per 20 seconds; Enterprise: 10-second window",
+    "evidence": [
+     {
+      "url": "https://developers.gorgias.com/reference/introduction",
+      "snippet": "The Gorgias API is structured with REST in mind. Our API has predictable resource-oriented URLs, accepts JSON-encoded responses"
+     },
+     {
+      "url": "https://developers.gorgias.com/reference/limitations",
+      "snippet": "OAuth2 apps can make 80 requests in a 20 second window"
+     }
+    ]
+   },
+   "mcp": {
+    "official": "https://mcp.gorgias.com/mcp",
+    "community": [
+     "https://github.com/mattcoatsworth/Gorgias-MCP-Server"
+    ],
+    "evidence": [
+     {
+      "url": "https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546",
+      "snippet": "The Gorgias MCP lets you work with your Gorgias helpdesk using an AI assistant, like Claude or ChatGPT."
+     },
+     {
+      "url": "https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546",
+      "snippet": "the connection URL is the same: https://mcp.gorgias.com/mcp"
+     },
+     {
+      "url": "https://github.com/mattcoatsworth/Gorgias-MCP-Server",
+      "snippet": "An MCP server for interacting with the Gorgias helpdesk API. This server provides tools and resources"
+     }
+    ]
+   },
+   "buildability": {
+    "verdict": "ready",
+    "main_blocker": "none",
+    "rationale": "Fully documented REST API with broad resource coverage; self-serve API key access; Composio toolkit already in production with 51 tools.",
+    "composio_existing_toolkit": "yes",
+    "composio_slug": "gorgias"
+   },
+   "overview_evidence": [
+    {
+     "url": "https://gorgias.com",
+     "snippet": "Bring your support team, customer data, workflows, and AI Agent together in one platform built for every stage of the customer journey."
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/gorgias.md",
+     "snippet": "With managed OAuth you don't need your own Gorgias app or client credentials. The flow starts in Gorgias and finishes in Composio."
+    }
+   ],
+   "confidence": 0.95,
+   "unknown_reasons": {
+    "auth": "",
+    "access": "",
+    "api_surface": "",
+    "mcp": ""
+   }
+  },
+  "verification": {
+   "checks": [],
+   "disagreements": [],
+   "resolved_by": "agent",
+   "human_checked": false
+  },
+  "needs_human": false,
+  "human_reason": ""
+ },
+ {
+  "id": 20,
+  "app": "Gladly",
+  "category": "Support and Helpdesk",
+  "hint": "gladly.com",
+  "one_liner": "Agentic commerce platform for customer support and helpdesk with REST API and webhooks for third-party integrations.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "basic"
+   ],
+   "oauth_grant_types": [],
+   "notes": "Token-based Basic Authentication. API tokens associated with Gladly users who have API User permission.",
+   "evidence": [
+    {
+     "url": "https://developer.gladly.com/rest/",
+     "snippet": "Gladly API uses token-based Basic Authentication. API tokens are associated with designated Gladly users."
+    }
+   ]
+  },
+  "access": {
+   "status": "admin_approval",
+   "dev_sandbox": true,
+   "notes": "Gladly Administrator must enable API User role for a user account to create tokens. Sandbox environment available at https://{organization}.gladly.qa",
+   "evidence": [
+    {
+     "url": "https://help.gladly.com/docs/generate-api-tokens-and-create-webhooks",
+     "snippet": "For integrations not built by Gladly, a Gladly Administrator should create a new user with an API role + Agent and/or Administrator"
+    },
+    {
+     "url": "https://developer.gladly.com/rest/",
+     "snippet": "We'll enable the Gladly API in a separate sandbox environment, so you can experiment freely without impacting your production environment"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "moderate",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Rate limiting enforced with retry mechanism; webhooks deactivate after failing retries",
+   "evidence": [
+    {
+     "url": "https://developer.gladly.com/rest/",
+     "snippet": "You can integrate easily with Gladly by calling Gladly's REST API and implementing the Lookup API"
+    },
+    {
+     "url": "https://developer.gladly.com/rest/",
+     "snippet": "Download OpenAPI specification: Download"
+    },
+    {
+     "url": "https://help.gladly.com/docs/generate-api-tokens-and-create-webhooks",
+     "snippet": "Create up to 50 webhooks for your organization. See our developer guide for more information about webhooks."
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [],
+   "evidence": []
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "admin_scope",
+   "rationale": "REST API is well-documented with OpenAPI spec and sandbox, but requires Gladly admin approval to enable API access.",
+   "composio_existing_toolkit": "no",
+   "composio_slug": null
+  },
+  "overview_evidence": [
+   {
+    "url": "https://gladly.com",
+    "snippet": "Agentic commerce platform built for top brands. Help that pays for itself."
+   }
+  ],
+  "confidence": 0.76,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "Pages do not specify whether API access requires paid plan or is available on free tier",
+   "api_surface": "",
+   "mcp": "No official MCP from Gladly; GitHub demo repo found but is empty"
+  },
+  "_meta": {
+   "agent": "agent1",
+   "model": "haiku",
+   "pages_used": 10,
+   "error": null,
+   "cost_usd": 0.04839,
+   "seconds": 53.9
+  },
+  "pass1": {
+   "one_liner": "Agentic commerce platform for customer support and helpdesk with REST API and webhooks for third-party integrations.",
+   "app_type": "saas",
+   "auth": {
+    "methods": [
+     "basic"
+    ],
+    "oauth_grant_types": [],
+    "notes": "Token-based Basic Authentication. API tokens associated with Gladly users who have API User permission.",
+    "evidence": [
+     {
+      "url": "https://developer.gladly.com/rest/",
+      "snippet": "Gladly API uses token-based Basic Authentication. API tokens are associated with designated Gladly users."
+     }
+    ]
+   },
+   "access": {
+    "status": "admin_approval",
+    "dev_sandbox": true,
+    "notes": "Gladly Administrator must enable API User role for a user account to create tokens. Sandbox environment available at https://{organization}.gladly.qa",
+    "evidence": [
+     {
+      "url": "https://help.gladly.com/docs/generate-api-tokens-and-create-webhooks",
+      "snippet": "For integrations not built by Gladly, a Gladly Administrator should create a new user with an API role + Agent and/or Administrator"
+     },
+     {
+      "url": "https://developer.gladly.com/rest/",
+      "snippet": "We'll enable the Gladly API in a separate sandbox environment, so you can experiment freely without impacting your production environment"
+     }
+    ]
+   },
+   "api_surface": {
+    "styles": [
+     "rest"
+    ],
+    "breadth": "moderate",
+    "openapi_spec_url": null,
+    "webhooks": true,
+    "rate_limit_note": "Rate limiting enforced with retry mechanism; webhooks deactivate after failing retries",
+    "evidence": [
+     {
+      "url": "https://developer.gladly.com/rest/",
+      "snippet": "You can integrate easily with Gladly by calling Gladly's REST API and implementing the Lookup API"
+     },
+     {
+      "url": "https://developer.gladly.com/rest/",
+      "snippet": "Download OpenAPI specification: Download"
+     },
+     {
+      "url": "https://help.gladly.com/docs/generate-api-tokens-and-create-webhooks",
+      "snippet": "Create up to 50 webhooks for your organization. See our developer guide for more information about webhooks."
+     }
+    ]
+   },
+   "mcp": {
+    "official": null,
+    "community": [],
+    "evidence": []
+   },
+   "buildability": {
+    "verdict": "ready_with_caveats",
+    "main_blocker": "admin_scope",
+    "rationale": "REST API is well-documented with OpenAPI spec and sandbox, but requires Gladly admin approval to enable API access.",
+    "composio_existing_toolkit": "no",
+    "composio_slug": null
+   },
+   "overview_evidence": [
+    {
+     "url": "https://gladly.com",
+     "snippet": "Agentic commerce platform built for top brands. Help that pays for itself."
+    }
+   ],
+   "confidence": 0.76,
+   "unknown_reasons": {
+    "auth": "",
+    "access": "Pages do not specify whether API access requires paid plan or is available on free tier",
+    "api_surface": "",
+    "mcp": "No official MCP from Gladly; GitHub demo repo found but is empty"
+   }
+  },
+  "verification": {
+   "checks": [],
+   "disagreements": [],
+   "resolved_by": "agent",
+   "human_checked": false
+  },
+  "needs_human": false,
+  "human_reason": ""
+ },
+ {
+  "id": 21,
+  "app": "Slack",
+  "category": "Communications and Messaging",
+  "hint": "slack.com",
+  "one_liner": "Slack is a channel-based messaging platform for team communication, collaboration, and application integration.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2"
+   ],
+   "oauth_grant_types": [
+    "authorization_code"
+   ],
+   "notes": "OAuth 2.0 authorization code flow. Apps request scopes during installation. Both bot and user scopes supported.",
+   "evidence": [
+    {
+     "url": "https://api.slack.com/authentication/oauth-v2",
+     "snippet": "Slack apps are installed with a v2 OAuth 2.0 flow."
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/slack.md",
+     "snippet": "Auth: OAUTH2"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Free Developer Program sandbox available to all developers. Basic features free; additional enterprise features available with optional payment method (not charged).",
+   "evidence": [
+    {
+     "url": "https://api.slack.com/docs/developer-sandbox",
+     "snippet": "A developer sandbox can be used to build against all Slack features safely and securely, without an additional cost."
+    },
+    {
+     "url": "https://api.slack.com/docs/developer-sandbox",
+     "snippet": "Every developer enrolled in the Slack Developer Program is eligible to provision a basic sandbox."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest",
+    "websocket"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Most methods allow at least 20 requests per minute with burst tolerance. Rates vary by tier and method.",
+   "evidence": [
+    {
+     "url": "https://api.slack.com/methods",
+     "snippet": "admin, agents, api, apps, assistant, auth, blocks, bookmarks, bots, calls, canvases, chat, conversations, dialog, dnd, emoji, entity, files, functions, lists"
+    },
+    {
+     "url": "https://api.slack.com/events-api",
+     "snippet": "set up one or more endpoints on your own servers to receive events atomically in near real-time"
+    },
+    {
+     "url": "https://api.slack.com/apis/rate-limits",
+     "snippet": "Most methods allow at least 20 requests per minute, while allowing for occasional bursts of more requests."
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://mcp.slack.com/mcp",
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://api.slack.com/start",
+     "snippet": "Server URL https://mcp.slack.com/mcp Remote MCP over HTTP with OAuth."
+    },
+    {
+     "url": "https://slack.com/help/articles/48855576908307-Guide-to-Model-Context-Protocol-in-Slack",
+     "snippet": "The Slack MCP server lets third-party AI agents such as Claude and Perplexity securely access your Slack content"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Self-serve free OAuth2 credentials via Developer Program sandbox, extensively documented broad REST API, official MCP server, and existing Composio toolkit confirm buildability.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "SLACK"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://docs.composio.dev/toolkits/slack.md",
+    "snippet": "Slack is a channel-based messaging platform. With Slack, people can work together more effectively"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/slack.md",
+    "snippet": "Composio turns Slack's API into ready-to-use tools that AI agents and automations can call. Tools: 174"
+   }
+  ],
+  "confidence": 0.98,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  },
+  "_meta": {
+   "agent": "agent1",
+   "model": "haiku",
+   "pages_used": 12,
+   "error": null,
+   "cost_usd": 0.07893000000000001,
+   "seconds": 78.3
+  },
+  "pass1": {
+   "one_liner": "Slack is a channel-based messaging platform for team communication, collaboration, and application integration.",
+   "app_type": "saas",
+   "auth": {
+    "methods": [
+     "oauth2"
+    ],
+    "oauth_grant_types": [
+     "authorization_code"
+    ],
+    "notes": "OAuth 2.0 authorization code flow. Apps request scopes during installation. Both bot and user scopes supported.",
+    "evidence": [
+     {
+      "url": "https://api.slack.com/authentication/oauth-v2",
+      "snippet": "Slack apps are installed with a v2 OAuth 2.0 flow."
+     },
+     {
+      "url": "https://docs.composio.dev/toolkits/slack.md",
+      "snippet": "Auth: OAUTH2"
+     }
+    ]
+   },
+   "access": {
+    "status": "self_serve_free",
+    "dev_sandbox": true,
+    "notes": "Free Developer Program sandbox available to all developers. Basic features free; additional enterprise features available with optional payment method (not charged).",
+    "evidence": [
+     {
+      "url": "https://api.slack.com/docs/developer-sandbox",
+      "snippet": "A developer sandbox can be used to build against all Slack features safely and securely, without an additional cost."
+     },
+     {
+      "url": "https://api.slack.com/docs/developer-sandbox",
+      "snippet": "Every developer enrolled in the Slack Developer Program is eligible to provision a basic sandbox."
+     }
+    ]
+   },
+   "api_surface": {
+    "styles": [
+     "rest",
+     "websocket"
+    ],
+    "breadth": "broad",
+    "openapi_spec_url": null,
+    "webhooks": true,
+    "rate_limit_note": "Most methods allow at least 20 requests per minute with burst tolerance. Rates vary by tier and method.",
+    "evidence": [
+     {
+      "url": "https://api.slack.com/methods",
+      "snippet": "admin, agents, api, apps, assistant, auth, blocks, bookmarks, bots, calls, canvases, chat, conversations, dialog, dnd, emoji, entity, files, functions, lists"
+     },
+     {
+      "url": "https://api.slack.com/events-api",
+      "snippet": "set up one or more endpoints on your own servers to receive events atomically in near real-time"
+     },
+     {
+      "url": "https://api.slack.com/apis/rate-limits",
+      "snippet": "Most methods allow at least 20 requests per minute, while allowing for occasional bursts of more requests."
+     }
+    ]
+   },
+   "mcp": {
+    "official": "https://mcp.slack.com/mcp",
+    "community": [],
+    "evidence": [
+     {
+      "url": "https://api.slack.com/start",
+      "snippet": "Server URL https://mcp.slack.com/mcp Remote MCP over HTTP with OAuth."
+     },
+     {
+      "url": "https://slack.com/help/articles/48855576908307-Guide-to-Model-Context-Protocol-in-Slack",
+      "snippet": "The Slack MCP server lets third-party AI agents such as Claude and Perplexity securely access your Slack content"
+     }
+    ]
+   },
+   "buildability": {
+    "verdict": "ready",
+    "main_blocker": "none",
+    "rationale": "Self-serve free OAuth2 credentials via Developer Program sandbox, extensively documented broad REST API, official MCP server, and existing Composio toolkit confirm buildability.",
+    "composio_existing_toolkit": "yes",
+    "composio_slug": "SLACK"
+   },
+   "overview_evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/slack.md",
+     "snippet": "Slack is a channel-based messaging platform. With Slack, people can work together more effectively"
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/slack.md",
+     "snippet": "Composio turns Slack's API into ready-to-use tools that AI agents and automations can call. Tools: 174"
+    }
+   ],
+   "confidence": 0.98,
+   "unknown_reasons": {
+    "auth": "",
+    "access": "",
+    "api_surface": "",
+    "mcp": ""
+   }
+  },
+  "verification": {
+   "checks": [],
+   "disagreements": [],
+   "resolved_by": "agent",
+   "human_checked": false
+  },
+  "needs_human": false,
+  "human_reason": ""
+ },
+ {
+  "id": 22,
+  "app": "Twilio",
+  "category": "Communications and Messaging",
+  "hint": "twilio.com",
+  "one_liner": "Twilio is a cloud communications platform providing APIs for SMS, email, voice, video, conversations, and authentication across multiple channels.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "api_key",
+    "basic",
+    "oauth2"
+   ],
+   "oauth_grant_types": [],
+   "notes": "OAuth 2.0 recommended for new integrations with short-lived tokens and scoped permissions; API Keys for server-side applications; Auth Token as legacy option.",
+   "evidence": [
+    {
+     "url": "https://www.twilio.com/docs/usage/api-security-reference-guide/secure-auth",
+     "snippet": "Twilio supports three authentication methods. Choose based on your security requirements and integration needs: OAuth 2.0, API Keys, Auth Token authentication"
+    },
+    {
+     "url": "https://www.twilio.com/docs/iam/api",
+     "snippet": "To authenticate requests to the Twilio APIs, Twilio supports HTTP Basic authentication."
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_trial",
+   "dev_sandbox": true,
+   "notes": "Free 30-day trial without credit card required; full API access during trial. Production use requires paid subscription after trial expiration.",
+   "evidence": [
+    {
+     "url": "https://www.twilio.com/docs/usage/trials",
+     "snippet": "When you create a Twilio account, you start with a free 30-day trial that lets you explore Twilio products before upgrading."
+    },
+    {
+     "url": "https://www.twilio.com/docs/usage/trials",
+     "snippet": "Sign up for a Twilio free trial account without a credit card. Trial accounts expire after 30 days."
+    },
+    {
+     "url": "https://www.twilio.com/en-us/pricing",
+     "snippet": "Start for free. Then pay as you go. Sign up for a free trial—no credit card required"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Rate limits vary by product; Verify service enforces 60 requests per minute, 180 per hour, 250 per day for status checks.",
+   "evidence": [
+    {
+     "url": "https://www.twilio.com/docs/iam/api",
+     "snippet": "The Twilio REST API allows you to query metadata about your account"
+    },
+    {
+     "url": "https://www.twilio.com/docs/openapi",
+     "snippet": "Twilio OpenAPI 3.0 specification files allow you to integrate the Twilio API with a wide variety of community tools."
+    },
+    {
+     "url": "https://www.twilio.com/docs/ai/mcp",
+     "snippet": "Twilio's full API surface—over 1,800 endpoints across 30+ products"
+    },
+    {
+     "url": "https://www.twilio.com/docs/usage/webhooks/getting-started-twilio-webhooks",
+     "snippet": "Your app can use webhooks with the following Twilio products: Voice, Facebook Messenger"
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://mcp.twilio.com/docs",
+   "community": [
+    "https://github.com/griffinwork40/twilio-mcp"
+   ],
+   "evidence": [
+    {
+     "url": "https://www.twilio.com/docs/ai/mcp",
+     "snippet": "The Twilio Model Context Protocol (MCP) server gives AI coding agents direct, structured access to Twilio's full API surface"
+    },
+    {
+     "url": "https://www.twilio.com/docs/ai/mcp",
+     "snippet": "The MCP server is hosted by Twilio at mcp.twilio.com/docs"
+    },
+    {
+     "url": "https://github.com/griffinwork40/twilio-mcp",
+     "snippet": "Model Context Protocol (MCP) server for Twilio SMS messaging with intelligent conversation management"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "paid_plan",
+   "rationale": "Fully documented REST API with 1,800+ endpoints, OpenAPI specs, and webhooks; free 30-day trial enables immediate toolkit development, but production use requires paid subscription.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "TWILIO"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://twilio.com",
+    "snippet": "The Twilio platform empowers humans and AI agents to work together, coordinate across channels"
+   },
+   {
+    "url": "https://www.twilio.com/en-us/developers",
+    "snippet": "You're now at the one-stop command center for building with Twilio."
+   }
+  ],
+  "confidence": 0.96,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  },
+  "_meta": {
+   "agent": "agent1",
+   "model": "haiku",
+   "pages_used": 12,
+   "error": null,
+   "cost_usd": 0.080296,
+   "seconds": 70.8
+  },
+  "pass1": {
+   "one_liner": "Twilio is a cloud communications platform providing APIs for SMS, email, voice, video, conversations, and authentication across multiple channels.",
+   "app_type": "saas",
+   "auth": {
+    "methods": [
+     "api_key",
+     "basic",
+     "oauth2"
+    ],
+    "oauth_grant_types": [],
+    "notes": "OAuth 2.0 recommended for new integrations with short-lived tokens and scoped permissions; API Keys for server-side applications; Auth Token as legacy option.",
+    "evidence": [
+     {
+      "url": "https://www.twilio.com/docs/usage/api-security-reference-guide/secure-auth",
+      "snippet": "Twilio supports three authentication methods. Choose based on your security requirements and integration needs: OAuth 2.0, API Keys, Auth Token authentication"
+     },
+     {
+      "url": "https://www.twilio.com/docs/iam/api",
+      "snippet": "To authenticate requests to the Twilio APIs, Twilio supports HTTP Basic authentication."
+     }
+    ]
+   },
+   "access": {
+    "status": "self_serve_trial",
+    "dev_sandbox": true,
+    "notes": "Free 30-day trial without credit card required; full API access during trial. Production use requires paid subscription after trial expiration.",
+    "evidence": [
+     {
+      "url": "https://www.twilio.com/docs/usage/trials",
+      "snippet": "When you create a Twilio account, you start with a free 30-day trial that lets you explore Twilio products before upgrading."
+     },
+     {
+      "url": "https://www.twilio.com/docs/usage/trials",
+      "snippet": "Sign up for a Twilio free trial account without a credit card. Trial accounts expire after 30 days."
+     },
+     {
+      "url": "https://www.twilio.com/en-us/pricing",
+      "snippet": "Start for free. Then pay as you go. Sign up for a free trial—no credit card required"
+     }
+    ]
+   },
+   "api_surface": {
+    "styles": [
+     "rest"
+    ],
+    "breadth": "broad",
+    "openapi_spec_url": null,
+    "webhooks": true,
+    "rate_limit_note": "Rate limits vary by product; Verify service enforces 60 requests per minute, 180 per hour, 250 per day for status checks.",
+    "evidence": [
+     {
+      "url": "https://www.twilio.com/docs/iam/api",
+      "snippet": "The Twilio REST API allows you to query metadata about your account"
+     },
+     {
+      "url": "https://www.twilio.com/docs/openapi",
+      "snippet": "Twilio OpenAPI 3.0 specification files allow you to integrate the Twilio API with a wide variety of community tools."
+     },
+     {
+      "url": "https://www.twilio.com/docs/ai/mcp",
+      "snippet": "Twilio's full API surface—over 1,800 endpoints across 30+ products"
+     },
+     {
+      "url": "https://www.twilio.com/docs/usage/webhooks/getting-started-twilio-webhooks",
+      "snippet": "Your app can use webhooks with the following Twilio products: Voice, Facebook Messenger"
+     }
+    ]
+   },
+   "mcp": {
+    "official": "https://mcp.twilio.com/docs",
+    "community": [
+     "https://github.com/griffinwork40/twilio-mcp"
+    ],
+    "evidence": [
+     {
+      "url": "https://www.twilio.com/docs/ai/mcp",
+      "snippet": "The Twilio Model Context Protocol (MCP) server gives AI coding agents direct, structured access to Twilio's full API surface"
+     },
+     {
+      "url": "https://www.twilio.com/docs/ai/mcp",
+      "snippet": "The MCP server is hosted by Twilio at mcp.twilio.com/docs"
+     },
+     {
+      "url": "https://github.com/griffinwork40/twilio-mcp",
+      "snippet": "Model Context Protocol (MCP) server for Twilio SMS messaging with intelligent conversation management"
+     }
+    ]
+   },
+   "buildability": {
+    "verdict": "ready_with_caveats",
+    "main_blocker": "paid_plan",
+    "rationale": "Fully documented REST API with 1,800+ endpoints, OpenAPI specs, and webhooks; free 30-day trial enables immediate toolkit development, but production use requires paid subscription.",
+    "composio_existing_toolkit": "yes",
+    "composio_slug": "TWILIO"
+   },
+   "overview_evidence": [
+    {
+     "url": "https://twilio.com",
+     "snippet": "The Twilio platform empowers humans and AI agents to work together, coordinate across channels"
+    },
+    {
+     "url": "https://www.twilio.com/en-us/developers",
+     "snippet": "You're now at the one-stop command center for building with Twilio."
+    }
+   ],
+   "confidence": 0.96,
+   "unknown_reasons": {
+    "auth": "",
+    "access": "",
+    "api_surface": "",
+    "mcp": ""
+   }
+  },
+  "verification": {
+   "checks": [],
+   "disagreements": [],
+   "resolved_by": "agent",
+   "human_checked": false
+  },
+  "needs_human": false,
+  "human_reason": ""
  }
 ]

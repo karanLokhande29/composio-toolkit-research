@@ -77,7 +77,26 @@ def search_agent(app: dict, model: str) -> tuple[list[dict], dict]:
         return [], {"error": str(e)[:200]}
 
 
-def crawl_candidates(pages: list[dict], allowed_hosts: set[str], limit: int = 10) -> list[str]:
+URL_SYSTEM = "You are an API documentation expert. Output only JSON."
+URL_PROMPT = """List the official documentation URLs you are confident exist for the API of: {app} ({hint}).
+Cover: overview, authentication, how developers get access/credentials (sandbox, partner programme, pricing),
+API reference, rate limits, webhooks, MCP server. Only vendor-owned URLs.
+Return ONLY {{"urls": [{{"url": "...", "purpose": "auth"}}]}} (max 12)."""
+
+
+def knowledge_urls(app: dict, model: str) -> tuple[list[dict], dict]:
+    """Cheap discovery: the model proposes official URLs from memory; every one is then fetched,
+    so a wrong guess simply 404s and is dropped (it can never become evidence)."""
+    try:
+        out, meta = llm.ask_json(URL_PROMPT.format(**app), URL_SYSTEM, model=model)
+        urls = [{"url": u["url"], "purpose": u.get("purpose", ""), "source": "search"}
+                for u in out.get("urls", []) if isinstance(u, dict) and str(u.get("url", "")).startswith("http")]
+        return urls[:12], meta
+    except Exception as e:
+        return [], {"error": str(e)[:200]}
+
+
+def crawl_candidates(pages: list[dict], allowed_hosts: set[str], limit: int = 14) -> list[str]:
     seen, out = set(), []
     for rec in pages:
         for ln in rec.get("links", []):
@@ -101,9 +120,13 @@ def discover_and_fetch(app: dict, model: str, use_search: bool = True, tag: str 
     out_path = DISCOVERY / f"{app['id']:03d}_{tag}.json"
     urls: list[dict] = [{"url": u, "purpose": "hint", "source": "hint"} for u in hint_urls(app["hint"])]
     meta = {}
-    if use_search:
+    if use_search:  # Claude + WebSearch (best recall, ~$0.28/app)
         found, meta = search_agent(app, model)
         urls += [{"url": u["url"], "purpose": u.get("purpose", ""), "source": "search"} for u in found]
+    elif extra is None:  # budget mode: model-proposed URLs, verified by fetching (~$0.01/app)
+        found, meta = knowledge_urls(app, model)
+        urls += found
+        meta["mode"] = "knowledge+crawl"
     if extra:
         urls += extra
     gh = github_mcp_search(app["app"])

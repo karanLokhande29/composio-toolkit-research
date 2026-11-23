@@ -88,7 +88,7 @@ def pages_for(rec: dict, fields: list[str]) -> list[str]:
     for u in urls:
         if u not in seen and "docs.composio.dev/toolkits.md" not in u:
             seen.add(u); out.append(u)
-    return out[:8]
+    return out[:7]
 
 
 def adjudicate(rec: dict) -> dict | None:
@@ -99,12 +99,12 @@ def adjudicate(rec: dict) -> dict | None:
     for u in urls:
         fetch.render(u)
     pages = []
-    budget = 70000
+    budget = 36000
     for u in urls:
         r = fetch.load(u)
         if not fetch.ok(r):
             continue
-        ex = extract.excerpt(fetch.page_text(r).strip(), 7000)
+        ex = extract.excerpt(fetch.page_text(r).strip(), 5000)
         if budget - len(ex) < 0:
             break
         budget -= len(ex); pages.append((u, ex))
@@ -179,4 +179,4 @@ def run(ids: list[int], workers: int = 3) -> None:
                 rec["needs_human"] = bool(unresolved)
                 rec["human_reason"] = "; ".join(unresolved)[:400]
                 print(f"  loop3 [{rec['id']:3d}] {rec['app']:<26} fields={res['fields']} changed={changed} unresolved={len(unresolved)}")
-            save_results(results)
+            save_results(results, only=[rec["id"]])

@@ -1,0 +1,142 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.07759,
+  "seconds": 77.3,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+  "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication/setting-up-oauth",
+  "https://developers.intercom.com/docs/build-an-integration/getting-started",
+  "https://www.intercom.com/help/en/articles/9086429-create-a-developer-workspace-in-intercom",
+  "https://www.intercom.com/learning-center/intercom-pricing",
+  "https://developers.intercom.com/docs/guides/mcp",
+  "https://developers.intercom.com/docs/references/rest-api/api.intercom.io",
+  "https://developers.intercom.com/docs/references/rest-api/errors/rate-limiting",
+  "https://developers.intercom.com/docs/webhooks",
+  "https://developers.intercom.com/docs/references/introduction",
+  "https://docs.composio.dev/toolkits/intercom.md",
+  "https://github.com/fabian1710/mcp-intercom"
+ ],
+ "output": {
+  "one_liner": "Customer support and helpdesk platform enabling multichannel customer conversations and ticket management.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "bearer_token"
+   ],
+   "oauth_grant_types": [
+    "authorization_code"
+   ],
+   "notes": "Two authentication paths: Access Tokens for private apps (Bearer token format) and OAuth for public apps accessing other workspaces.",
+   "evidence": [
+    {
+     "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+     "snippet": "To access the Intercom API, you have two authentication options depending on whether you app is public or private."
+    },
+    {
+     "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+     "snippet": "simply provide it as an Authorization:Bearer header in your requests"
+    },
+    {
+     "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication/setting-up-oauth",
+     "snippet": "Trade your authorization code for an Access Token"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Development workspaces are free and available to anyone without credit card or existing Intercom account. Access tokens issued immediately upon app creation.",
+   "evidence": [
+    {
+     "url": "https://www.intercom.com/help/en/articles/9086429-create-a-developer-workspace-in-intercom",
+     "snippet": "Developer workspaces can be set up by anyone. You do not have to be an existing Intercom customer."
+    },
+    {
+     "url": "https://developers.intercom.com/docs/build-an-integration/getting-started",
+     "snippet": "Development workspaces are free and intended for development purposes only."
+    },
+    {
+     "url": "https://developers.intercom.com/docs/build-an-integration/getting-started",
+     "snippet": "We provide you with an Access Token as soon as you create an app on your workspace."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": "https://developers.intercom.com/docs/references/rest-api/api.intercom.io",
+   "webhooks": true,
+   "rate_limit_note": "10,000 API calls per minute for private apps; separate limits per public app. Rate limits measured in 10-second windows.",
+   "evidence": [
+    {
+     "url": "https://developers.intercom.com/docs/references/rest-api/api.intercom.io",
+     "snippet": "Download OpenAPI description api.intercom.io.json api.intercom.io.yaml"
+    },
+    {
+     "url": "https://developers.intercom.com/docs/webhooks",
+     "snippet": "Webhooks are a way that you can access real-time notifications about events that happen in your Intercom workspace."
+    },
+    {
+     "url": "https://developers.intercom.com/docs/references/rest-api/errors/rate-limiting",
+     "snippet": "Private apps have a default rate limit of 10,000 API calls per minute per workspace"
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://mcp.intercom.com/mcp",
+   "community": [
+    "https://github.com/fabian1710/mcp-intercom"
+   ],
+   "evidence": [
+    {
+     "url": "https://developers.intercom.com/docs/guides/mcp",
+     "snippet": "MCP is a protocol that enables AI tools and applications to connect with Intercom's data and services"
+    },
+    {
+     "url": "https://developers.intercom.com/docs/guides/mcp",
+     "snippet": "The Intercom MCP Server provides 16 tools for interacting with the Intercom API."
+    },
+    {
+     "url": "https://github.com/fabian1710/mcp-intercom",
+     "snippet": "MCP server for Intercom chat integration"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Self-serve free developer workspaces with immediate API credentials, fully documented REST API with OpenAPI spec, webhooks support, and official MCP server enable toolkit development today.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "INTERCOM"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+    "snippet": "To access the Intercom API, you have two authentication options depending on whether you app is public or private."
+   },
+   {
+    "url": "https://www.intercom.com/help/en/articles/9086429-create-a-developer-workspace-in-intercom",
+    "snippet": "Developer workspaces can be set up by anyone. You do not have to be an existing Intercom customer."
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/intercom.md",
+    "snippet": "Category: customer support Auth: OAUTH2 Composio-managed OAuth available? Yes Tools: 138"
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  }
+ }
+}

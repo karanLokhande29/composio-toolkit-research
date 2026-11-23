@@ -1,0 +1,130 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.083091,
+  "seconds": 95.5,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://dev.frontapp.com/docs/oauth",
+  "https://help.front.com/en/articles/2309",
+  "https://dev.frontapp.com/reference/introduction",
+  "https://dev.frontapp.com/docs/mcp-server",
+  "https://dev.frontapp.com/docs/core-api-overview",
+  "https://help.front.com/en/articles/2438",
+  "https://help.front.com/en/articles/2212",
+  "https://github.com/frontapp/front-api-specs",
+  "https://docs.composio.dev/toolkits/front.md",
+  "https://github.com/wearehoust/front-mcp",
+  "https://front.com",
+  "https://front.com/pricing"
+ ],
+ "output": {
+  "one_liner": "An AI-powered customer service platform with collaborative shared inboxes for team email management and client communication.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "bearer_token"
+   ],
+   "oauth_grant_types": [
+    "authorization_code"
+   ],
+   "notes": "OAuth 2.0 required for public integrations. API tokens are static personal tokens sent as Bearer authentication.",
+   "evidence": [
+    {
+     "url": "https://dev.frontapp.com/docs/oauth",
+     "snippet": "OAuth 2.0 is a protocol that lets external applications request authorization to API access in a secure way."
+    },
+    {
+     "url": "https://dev.frontapp.com/docs/oauth",
+     "snippet": "Front's OAuth implementation only supports the authorization code grant type"
+    },
+    {
+     "url": "https://dev.frontapp.com/reference/introduction",
+     "snippet": "Front supports OAuth2.0 as well as API Tokens."
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Free developer account available to build integrations. API rate limits vary by pricing plan tier (Starter/Professional/Enterprise).",
+   "evidence": [
+    {
+     "url": "https://help.front.com/en/articles/2309",
+     "snippet": "Follow the instructions on the Developer Portal to create a free developer account to begin building integrations on the Front Platform."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": "https://github.com/frontapp/front-api-specs",
+   "webhooks": true,
+   "rate_limit_note": "Global: 50–200 requests/min depending on plan tier; Burst: 5 requests/sec per resource",
+   "evidence": [
+    {
+     "url": "https://github.com/frontapp/front-api-specs",
+     "snippet": "This repo provides Front Platform API schemas for public consumption. The API schemas conform to the OpenAPI specification."
+    },
+    {
+     "url": "https://dev.frontapp.com/reference/introduction",
+     "snippet": "The API is designed to communicate with your server using JSON."
+    },
+    {
+     "url": "https://help.front.com/en/articles/2212",
+     "snippet": "The Webhooks integration allows you to be automatically notified when something happens in Front without having to constantly poll the API."
+    },
+    {
+     "url": "https://help.front.com/en/articles/2438",
+     "snippet": "Front's default API rate limits vary by pricing plan"
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://mcp.frontapp.com/mcp",
+   "community": [
+    "https://github.com/wearehoust/front-mcp"
+   ],
+   "evidence": [
+    {
+     "url": "https://dev.frontapp.com/docs/mcp-server",
+     "snippet": "Front's MCP server (mcp.frontapp.com/mcp) lets AI agents act on Front conversation data using a single OAuth-authenticated endpoint."
+    },
+    {
+     "url": "https://github.com/wearehoust/front-mcp",
+     "snippet": "Secure MCP server for Front.com: search conversations, manage contacts, send messages, automate inbox workflows"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Free developer account, fully documented REST API with OpenAPI specs, webhooks support, and official MCP server all enable immediate toolkit development.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "FRONT"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://front.com",
+    "snippet": "Front | Customer service platform, powered by AI"
+   },
+   {
+    "url": "https://dev.frontapp.com/docs/core-api-overview",
+    "snippet": "The Core API allows you as a Front developer to access core data and actions within Front."
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  }
+ }
+}

@@ -1,0 +1,128 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.07011400000000001,
+  "seconds": 72.2,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://support.liveagent.com/741982-API-key",
+  "https://www.liveagent.com/pricing/",
+  "https://support.liveagent.com/911737-API-v3",
+  "https://support.liveagent.com/840770-Complete-API-reference",
+  "https://support.liveagent.com/647358-MCP-Integration-for-Agents",
+  "https://www.liveagent.com/",
+  "https://support.liveagent.com/931802-API-rate-limit-API-requests-limit",
+  "https://faq.liveagent.com/532587-How-do-I-create-a-webhook-to-receive-notifications-on-my-channel",
+  "https://support.liveagent.com/094128-Swagger-API-descriptor",
+  "https://github.com/QualityUnit/liveagent-mcp-server",
+  "https://www.liveagent.com/features/mcp-server/",
+  "https://www.liveagent.com/blog/zendesk-pricing/"
+ ],
+ "output": {
+  "one_liner": "Cloud-based help desk software with ticketing, live chat, social media, and AI agents for support teams",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "api_key",
+    "oauth2"
+   ],
+   "oauth_grant_types": [
+    "authorization_code"
+   ],
+   "notes": "API key passed in request header; OAuth 2.1 with PKCE for MCP server integration",
+   "evidence": [
+    {
+     "url": "https://support.liveagent.com/741982-API-key",
+     "snippet": "Your API key has to be set in header of your requests"
+    },
+    {
+     "url": "https://support.liveagent.com/647358-MCP-Integration-for-Agents",
+     "snippet": "OAuth 2.1 (recommended), where the AI tool discovers the authorization server automatically"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_trial",
+   "dev_sandbox": true,
+   "notes": "30-day free trial without credit card; API key self-serve via Configuration panel; continued use requires paid plan",
+   "evidence": [
+    {
+     "url": "https://www.liveagent.com/pricing/",
+     "snippet": "30-day free trial, no credit card"
+    },
+    {
+     "url": "https://support.liveagent.com/741982-API-key",
+     "snippet": "While logged in as an admin navigate to Configuration> System> API"
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "moderate",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "180 requests per minute per API key",
+   "evidence": [
+    {
+     "url": "https://support.liveagent.com/911737-API-v3",
+     "snippet": "You can find whole LiveAgent API documentation within your LiveAgent account"
+    },
+    {
+     "url": "https://support.liveagent.com/931802-API-rate-limit-API-requests-limit",
+     "snippet": "The API rate limit is set right now to 180 requests per minute"
+    },
+    {
+     "url": "https://faq.liveagent.com/532587-How-do-I-create-a-webhook-to-receive-notifications-on-my-channel",
+     "snippet": "You can create a webhook by building a custom integration using the API"
+    },
+    {
+     "url": "https://support.liveagent.com/094128-Swagger-API-descriptor",
+     "snippet": "You can use the swagger (OpenAPI) API descriptor which can be found"
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://github.com/QualityUnit/liveagent-mcp-server",
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://support.liveagent.com/647358-MCP-Integration-for-Agents",
+     "snippet": "LiveAgent exposes a built-in MCP server (Model Context Protocol) that lets you connect external AI tools"
+    },
+    {
+     "url": "https://github.com/QualityUnit/liveagent-mcp-server",
+     "snippet": "LiveAgent MCP Server to automate tasks in your helpdesk"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "paid_plan",
+   "rationale": "REST API well-documented with OpenAPI spec and available on free trial; production use requires paid subscription after 30 days.",
+   "composio_existing_toolkit": "no",
+   "composio_slug": null
+  },
+  "overview_evidence": [
+   {
+    "url": "https://www.liveagent.com/",
+    "snippet": "LiveAgent is cloud help desk software for small and growing support teams"
+   },
+   {
+    "url": "https://support.liveagent.com/911737-API-v3",
+    "snippet": "You can find whole LiveAgent API documentation within your LiveAgent account"
+   }
+  ],
+  "confidence": 0.85,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "Pages confirm free trial access and admin self-serve setup, but do not explicitly state whether API is included on all paid plan tiers",
+   "api_surface": "",
+   "mcp": ""
+  }
+ }
+}

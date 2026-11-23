@@ -1,0 +1,121 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.086561,
+  "seconds": 88.6,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://www.zoho.com/crm/developer/docs/api/v8/access-refresh.html",
+  "https://www.zoho.com/accounts/protocol/oauth-setup.html",
+  "https://www.zoho.com/crm/developer/docs/api/v8/client-credentials.html",
+  "https://www.zoho.com/crm/developer/developer-edition.html",
+  "https://www.zoho.com/crm/developer/docs/api/v8/api-limits.html",
+  "https://www.zoho.com/crm/developer/docs/api/v8/api-references.html",
+  "https://www.zoho.com/crm/developer/mcp.html",
+  "https://www.zoho.com/crm/developer/docs/",
+  "https://www.zoho.com/crm/developer/docs/api/v8/create-webhook.html",
+  "https://www.zoho.com/crm/developer/docs/api/v8/openapi-specification.html",
+  "https://docs.composio.dev/toolkits/zoho.md",
+  "https://docs.composio.dev/toolkits/zoho_analytics.md"
+ ],
+ "output": {
+  "one_liner": "Cloud-based customer relationship management platform for managing sales pipelines, customer interactions, and business processes.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2"
+   ],
+   "oauth_grant_types": [
+    "authorization_code",
+    "client_credentials"
+   ],
+   "notes": "OAuth 2.0 with bearer token; supports authorization code and client credentials flows",
+   "evidence": [
+    {
+     "url": "https://www.zoho.com/crm/developer/docs/api/v8/access-refresh.html",
+     "snippet": "OAuth2.0 requests are usually authenticated with an access token, which is passed as bearer token."
+    },
+    {
+     "url": "https://www.zoho.com/crm/developer/docs/api/v8/client-credentials.html",
+     "snippet": "The client credentials flow can be used to perform one-time tasks like one-time data migration or testing Zoho CRM API calls, etc."
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Free developer edition with full CRM features; free tier includes 5000 API credits daily",
+   "evidence": [
+    {
+     "url": "https://www.zoho.com/crm/developer/developer-edition.html",
+     "snippet": "Zoho CRM's free developer edition is a fully-featured application environment that helps developers explore Zoho CRM and test their applications."
+    },
+    {
+     "url": "https://www.zoho.com/crm/developer/docs/api/v8/api-limits.html",
+     "snippet": "If your organization requires more API credits than the allowed limit for your edition, the super-admin of your org can increase the credit limit from the API Dashboard."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest",
+    "graphql"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Credit-based rate limiting: Free tier 5000 credits daily; concurrency limits 5-20 depending on edition; no time-based restrictions",
+   "evidence": [
+    {
+     "url": "https://www.zoho.com/crm/developer/docs/",
+     "snippet": "Core APIs - Perform CRUD operations on CRM module entities and integrate with any third party application through flexible RESTful endpoints."
+    },
+    {
+     "url": "https://www.zoho.com/crm/developer/docs/",
+     "snippet": "GraphQL APIs - Learn how to request specific resources, fields of the resources and relationships of the resources in a single query."
+    },
+    {
+     "url": "https://www.zoho.com/crm/developer/docs/api/v8/create-webhook.html",
+     "snippet": "Webhooks in Zoho CRM allow you to send real-time data from Zoho CRM to external applications or services when specific events occur"
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://www.zoho.com/crm/developer/mcp.html",
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://www.zoho.com/crm/developer/mcp.html",
+     "snippet": "Deploy four composable MCP servers that give your AI agent secure, scoped access to your Zoho CRM."
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Self-serve free developer tier, well-documented REST/GraphQL APIs, OAuth2 authentication, webhooks, and official MCP servers enable toolkit development today.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "ZOHO"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://www.zoho.com/crm/developer/docs/",
+    "snippet": "Perform CRUD operations on CRM module entities and integrate with any third party application through flexible RESTful endpoints."
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/zoho.md",
+    "snippet": "Creates a new deal in Zoho CRM representing a sales opportunity with deal name, stage, amount, and closing date."
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "OpenAPI specification GitHub repository URL not provided in pages",
+   "mcp": ""
+  }
+ }
+}

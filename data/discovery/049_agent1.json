@@ -1,0 +1,285 @@
+{
+ "id": 49,
+ "app": "Amazon Selling Partner",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://developer-docs.amazon.com/sp-api",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer-docs.amazon.com/sp-api/docs/understanding-the-setup-process",
+   "purpose": "setup",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer-docs.amazon.com/sp-api/docs/registering-your-application",
+   "purpose": "credentials",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer-docs.amazon.com/sp-api/docs/getting-access-to-the-sp-api",
+   "purpose": "access",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer-docs.amazon.com/sp-api/docs/sandbox",
+   "purpose": "sandbox",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer-docs.amazon.com/sp-api/docs/sp-api-endpoints",
+   "purpose": "authentication",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits",
+   "purpose": "rate_limits",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer-docs.amazon.com/sp-api/docs/notifications-api-v1-reference",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer-docs.amazon.com/sp-api/docs/orders-api-v0-reference",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer-docs.amazon.com/sp-api/docs/feeds-api-v2021-06-30-reference",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer-docs.amazon.com/sp-api/docs/catalog-items-api-v2021-12-01-reference",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/amzn/selling-partner-agentic-toolkit",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/bhavykhatri/amazon-seller-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/ailumia/amazon-sp-api-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/amazon.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer-docs.amazon.com/sp-api/docs/application-authorization-limits",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://sellercentral.amazon.com/sellingpartner/developerconsole",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://vendorcentral.amazon.com/sellingpartner/developerconsole",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://sellingpartnerapi-na.amazon.com",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://sellingpartnerapi-eu.amazon.com",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://sellingpartnerapi-fe.amazon.com",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer-docs.amazon.com/sp-api/docs/strategies-to-optimize-rate-limits-for-your-application-workloads",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits-in-the-sp-api",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer-docs.amazon.com/sp-api/docs/feeds-api-rate-limits",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer-docs.amazon.com/amazon-shipping/docs/shipping-api-v2-reference",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer-docs.amazon.com/sp-api/docs",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer-docs.amazon.com/sp-api/reference/welcome-to-api-references",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer-docs.amazon.com/sp-api/reference/feeds-v2021-06-30",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "amzn/selling-partner-agentic-toolkit",
+   "url": "https://github.com/amzn/selling-partner-agentic-toolkit",
+   "stars": 50,
+   "description": "Skills for managing an Amazon seller account via SP-API, through the Amazon Selling Partner Connector (MCP). Write actions are always human-in-the-loop (drafted"
+  },
+  {
+   "repo": "bhavykhatri/amazon-seller-mcp",
+   "url": "https://github.com/bhavykhatri/amazon-seller-mcp",
+   "stars": 5,
+   "description": "MCP server for the Amazon Selling Partner API (SP-API): listings, orders, reports, feeds, pricing. Works with any marketplace/region."
+  },
+  {
+   "repo": "ailumia/amazon-sp-api-mcp",
+   "url": "https://github.com/ailumia/amazon-sp-api-mcp",
+   "stars": 4,
+   "description": "Production-grade, version-aware MCP server for the Amazon Selling Partner API"
+  },
+  {
+   "repo": "christian-ramos/mcp-amazon-sp-api",
+   "url": "https://github.com/christian-ramos/mcp-amazon-sp-api",
+   "stars": 4,
+   "description": "MCP server exposing Amazon Selling Partner API to Claude Desktop and other MCP clients. 55+ tools across 19 SP-API scopes, multi-marketplace, safe writes."
+  },
+  {
+   "repo": "KuudoAI/amazon-selling-partner-mcp",
+   "url": "https://github.com/KuudoAI/amazon-selling-partner-mcp",
+   "stars": 2,
+   "description": "MCP server for the Amazon Selling Partner API: orders, listings, pricing, FBA, and reimbursements."
+  }
+ ],
+ "composio": {
+  "exact": [],
+  "candidates": [
+   {
+    "name": "Amazon",
+    "slug": "AMAZON",
+    "tools": 0,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/amazon.md"
+   }
+  ]
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.04006799999999999,
+  "seconds": 46.8,
+  "turns": 1,
+  "mode": "knowledge+crawl"
+ }
+}

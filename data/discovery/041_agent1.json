@@ -1,0 +1,345 @@
+{
+ "id": 41,
+ "app": "Shopify",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://shopify.dev",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.shopify.dev",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.shopify.dev",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.shopify.dev",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://shopify.dev/pricing",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://shopify.dev/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://shopify.dev/docs",
+   "purpose": "documentation",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://shopify.dev/docs/api",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://shopify.dev/docs/api/admin-rest",
+   "purpose": "rest_api",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://shopify.dev/docs/api/admin-graphql",
+   "purpose": "graphql_api",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://shopify.dev/docs/apps",
+   "purpose": "apps",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://shopify.dev/docs/apps/auth",
+   "purpose": "authentication",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://shopify.dev/docs/apps/getting-started",
+   "purpose": "getting_started",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://shopify.dev/docs/apps/app-setup",
+   "purpose": "credentials",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://shopify.dev/docs/apps/sandbox",
+   "purpose": "sandbox",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://shopify.dev/docs/api/webhooks",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/GeLi2001/shopify-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/henkisdabro/wookstar-claude-plugins",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/ctrlaltdylan/mock-bridge",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/shopify.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://shopify.dev/docs/api/usage/authentication",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://shopify.dev/docs/api/usage/access-scopes",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://shopify.dev/docs/api/shopify-mcp",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://shopify.dev/docs/api/web-mcp",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://shopify.dev/docs/api/partner",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://shopify.dev/docs/api/customer-authentication/multipass",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://shopify.dev/apps/auth/oauth",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://shopify.dev/apps/auth/admin-app-access-tokens",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://shopify.dev/apps/auth",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://shopify.dev/apps/getting-started",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://shopify.dev/docs/api/admin-rest/usage/rate-limits",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://shopify.dev/docs/apps/build/authentication-authorization",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://shopify.dev/docs/apps/build/authentication-authorization/access-tokens",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://shopify.dev/docs/apps/build/apis/graphql-admin/rate-limits",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "GeLi2001/shopify-mcp",
+   "url": "https://github.com/GeLi2001/shopify-mcp",
+   "stars": 238,
+   "description": "MCP server for Shopify api, usable on mcp hosts such as Claude and Cursor"
+  },
+  {
+   "repo": "henkisdabro/wookstar-claude-plugins",
+   "url": "https://github.com/henkisdabro/wookstar-claude-plugins",
+   "stars": 94,
+   "description": "An opinionated Claude Code Plugin Pack. Skills, Agents, Hooks, MCPs. Examples: Email draft preview assistance & humanisation. Agents for Codex and Gemini \"outso"
+  },
+  {
+   "repo": "ctrlaltdylan/mock-bridge",
+   "url": "https://github.com/ctrlaltdylan/mock-bridge",
+   "stars": 67,
+   "description": "A complete mock of Shopify App Bridge to unlock automated browser testing, Chrome MCP and more for Shopify Apps"
+  },
+  {
+   "repo": "Shopify/dev-mcp-gemini-cli",
+   "url": "https://github.com/Shopify/dev-mcp-gemini-cli",
+   "stars": 31,
+   "description": "Setup the Shopify Dev MCP with the Gemini CLI"
+  },
+  {
+   "repo": "Mobeen-Dev/chatbot_Shopify",
+   "url": "https://github.com/Mobeen-Dev/chatbot_Shopify",
+   "stars": 27,
+   "description": "Agentic Shopify Chatbot with MCP integration, embedded directly into Shopify via a Theme Extension"
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Shopify",
+    "slug": "SHOPIFY",
+    "tools": 478,
+    "auth": [
+     "OAUTH2",
+     "S2S_OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/shopify.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Shopify",
+    "slug": "SHOPIFY",
+    "tools": 478,
+    "auth": [
+     "OAUTH2",
+     "S2S_OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/shopify.md"
+   }
+  ]
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.03996,
+  "seconds": 52.1,
+  "turns": 1,
+  "mode": "knowledge+crawl"
+ }
+}

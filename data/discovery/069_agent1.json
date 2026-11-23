@@ -1,0 +1,268 @@
+{
+ "id": 69,
+ "app": "Datadog",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://docs.datadoghq.com/api",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.datadoghq.com/api/latest/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.datadoghq.com/api/latest/authentication/",
+   "purpose": "authentication",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.datadoghq.com/account-management/api-app-keys/",
+   "purpose": "credentials",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.datadoghq.com/api/latest/rate-limits/",
+   "purpose": "rate-limits",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.datadoghq.com/api/latest/webhooks/",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.datadoghq.com/api/latest/getting-started/",
+   "purpose": "getting-started",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/winor30/mcp-server-datadog",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/GeLi2001/datadog-mcp-server",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/datadog-labs/mcp-server",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/datadog.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.datadoghq.com/pricing/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.datadoghq.com/product/ai/mcp-server/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.datadoghq.com/marketplacepartners/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.datadoghq.com/partner/network/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.datadoghq.com/api/latest/authn-mappings/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.datadoghq.com/api/latest/cloud-authentication/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.datadoghq.com/api/latest/oauth2-client-public/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.datadoghq.com/api/latest/org-authorized-clients/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.datadoghq.com/api/latest/user-authorized-clients/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.datadoghq.com/getting_started/site/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.datadoghq.com/getting_started/application/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.datadoghq.com/api/latest/authentication.md",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "winor30/mcp-server-datadog",
+   "url": "https://github.com/winor30/mcp-server-datadog",
+   "stars": 142,
+   "description": ""
+  },
+  {
+   "repo": "GeLi2001/datadog-mcp-server",
+   "url": "https://github.com/GeLi2001/datadog-mcp-server",
+   "stars": 70,
+   "description": "MCP server interacts with the official Datadog API"
+  },
+  {
+   "repo": "datadog-labs/mcp-server",
+   "url": "https://github.com/datadog-labs/mcp-server",
+   "stars": 49,
+   "description": "Official Datadog MCP Server"
+  },
+  {
+   "repo": "hoangsonww/PetSwipe-Match-App",
+   "url": "https://github.com/hoangsonww/PetSwipe-Match-App",
+   "stars": 26,
+   "description": "🐻 A Tinder-inspired pet adoption app where you swipe to navigate, “adopt”, or “pass” on shelter animals. Built & deployed with PostgreSQL, Express, Node.js, Typ"
+  },
+  {
+   "repo": "daltoniam/switchboard",
+   "url": "https://github.com/daltoniam/switchboard",
+   "stars": 22,
+   "description": "One MCP server to rule them all. Aggregates GitHub, Datadog, Linear, Sentry, Slack, and Metabase behind a single search/execute interface."
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Datadog",
+    "slug": "DATADOG",
+    "tools": 256,
+    "auth": [
+     "OAUTH2",
+     "API_KEY",
+     "BEARER_TOKEN"
+    ],
+    "url": "https://docs.composio.dev/toolkits/datadog.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Datadog",
+    "slug": "DATADOG",
+    "tools": 256,
+    "auth": [
+     "OAUTH2",
+     "API_KEY",
+     "BEARER_TOKEN"
+    ],
+    "url": "https://docs.composio.dev/toolkits/datadog.md"
+   },
+   {
+    "name": "Datadog MCP",
+    "slug": "DATADOG_MCP",
+    "tools": 370,
+    "auth": [
+     "DCR_OAUTH"
+    ],
+    "url": "https://docs.composio.dev/toolkits/datadog_mcp.md"
+   }
+  ]
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.04607699999999999,
+  "seconds": 58.7,
+  "turns": 1,
+  "mode": "knowledge+crawl"
+ }
+}

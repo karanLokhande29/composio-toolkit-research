@@ -1,0 +1,124 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.07893000000000001,
+  "seconds": 78.3,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://api.slack.com/authentication/oauth-v2",
+  "https://api.slack.com/docs/developer-sandbox",
+  "https://api.slack.com/methods",
+  "https://slack.com/help/articles/48855576908307-Guide-to-Model-Context-Protocol-in-Slack",
+  "https://api.slack.com/start",
+  "https://api.slack.com/apis/rate-limits",
+  "https://api.slack.com/events-api",
+  "https://docs.composio.dev/toolkits/slack.md",
+  "https://slack.com",
+  "https://slack.com/pricing",
+  "https://slack.com/intl/en-in/solutions/use-cases/collaborating-with-external-partners",
+  "https://slack.com/partner-offers"
+ ],
+ "output": {
+  "one_liner": "Slack is a channel-based messaging platform for team communication, collaboration, and application integration.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2"
+   ],
+   "oauth_grant_types": [
+    "authorization_code"
+   ],
+   "notes": "OAuth 2.0 authorization code flow. Apps request scopes during installation. Both bot and user scopes supported.",
+   "evidence": [
+    {
+     "url": "https://api.slack.com/authentication/oauth-v2",
+     "snippet": "Slack apps are installed with a v2 OAuth 2.0 flow."
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/slack.md",
+     "snippet": "Auth: OAUTH2"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Free Developer Program sandbox available to all developers. Basic features free; additional enterprise features available with optional payment method (not charged).",
+   "evidence": [
+    {
+     "url": "https://api.slack.com/docs/developer-sandbox",
+     "snippet": "A developer sandbox can be used to build against all Slack features safely and securely, without an additional cost."
+    },
+    {
+     "url": "https://api.slack.com/docs/developer-sandbox",
+     "snippet": "Every developer enrolled in the Slack Developer Program is eligible to provision a basic sandbox."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest",
+    "websocket"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Most methods allow at least 20 requests per minute with burst tolerance. Rates vary by tier and method.",
+   "evidence": [
+    {
+     "url": "https://api.slack.com/methods",
+     "snippet": "admin, agents, api, apps, assistant, auth, blocks, bookmarks, bots, calls, canvases, chat, conversations, dialog, dnd, emoji, entity, files, functions, lists"
+    },
+    {
+     "url": "https://api.slack.com/events-api",
+     "snippet": "set up one or more endpoints on your own servers to receive events atomically in near real-time"
+    },
+    {
+     "url": "https://api.slack.com/apis/rate-limits",
+     "snippet": "Most methods allow at least 20 requests per minute, while allowing for occasional bursts of more requests."
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://mcp.slack.com/mcp",
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://api.slack.com/start",
+     "snippet": "Server URL https://mcp.slack.com/mcp Remote MCP over HTTP with OAuth."
+    },
+    {
+     "url": "https://slack.com/help/articles/48855576908307-Guide-to-Model-Context-Protocol-in-Slack",
+     "snippet": "The Slack MCP server lets third-party AI agents such as Claude and Perplexity securely access your Slack content"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Self-serve free OAuth2 credentials via Developer Program sandbox, extensively documented broad REST API, official MCP server, and existing Composio toolkit confirm buildability.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "SLACK"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://docs.composio.dev/toolkits/slack.md",
+    "snippet": "Slack is a channel-based messaging platform. With Slack, people can work together more effectively"
+   },
+   {
+    "url": "https://docs.composio.dev/toolkits/slack.md",
+    "snippet": "Composio turns Slack's API into ready-to-use tools that AI agents and automations can call. Tools: 174"
+   }
+  ],
+  "confidence": 0.98,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  }
+ }
+}
