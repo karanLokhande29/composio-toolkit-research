@@ -1,0 +1,297 @@
+{
+ "id": 2,
+ "app": "HubSpot",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://hubspot.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.hubspot.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.hubspot.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.hubspot.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://hubspot.com/pricing",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developers.hubspot.com/docs/getting-started/developer-overview",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://knowledge.hubspot.com/integrations/how-do-i-get-my-hubspot-api-key",
+   "purpose": "access",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.hubspot.com/docs/api/usage-details",
+   "purpose": "pricing",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.hubspot.com/docs/api-reference/latest/overview",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.hubspot.com/docs/developer-tooling/platform/usage-guidelines",
+   "purpose": "rate_limits",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.hubspot.com/docs/api-reference/latest/webhooks/guide",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/HubSpot/HubSpot-public-api-spec-collection",
+   "purpose": "openapi",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.hubspot.com/ai-tools/mcp",
+   "purpose": "mcp_official",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/LokiMCPUniverse/hubspot-mcp-server",
+   "purpose": "mcp_community",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/baryhuang/mcp-hubspot",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/shinzo-labs/hubspot-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/lkm1developer/hubspot-mcp-server",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/hubspot.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.hubspot.com/pricing/marketing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://www.hubspot.com/partners/solutions",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.hubspot.com/partners/app",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.hubspot.com/partners/affiliates",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://academy.hubspot.com/education-partner-program",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.hubspot.com/startups/partners",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.hubspot.com/partners",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://legal.hubspot.com/website-accessibility",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://legal.hubspot.com/accessibility",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "baryhuang/mcp-hubspot",
+   "url": "https://github.com/baryhuang/mcp-hubspot",
+   "stars": 129,
+   "description": "A Model Context Protocol (MCP) server that enables AI assistants to interact with HubSpot CRM data, providing built-in vector storage and caching mechanisms hel"
+  },
+  {
+   "repo": "shinzo-labs/hubspot-mcp",
+   "url": "https://github.com/shinzo-labs/hubspot-mcp",
+   "stars": 35,
+   "description": "MCP Implementation for HubSpot"
+  },
+  {
+   "repo": "lkm1developer/hubspot-mcp-server",
+   "url": "https://github.com/lkm1developer/hubspot-mcp-server",
+   "stars": 12,
+   "description": "hubspot mcp server"
+  },
+  {
+   "repo": "scopiousdigital/hubspot-mcp",
+   "url": "https://github.com/scopiousdigital/hubspot-mcp",
+   "stars": 11,
+   "description": "mcp server for interacting with HubSpot"
+  },
+  {
+   "repo": "bcharleson/hubspot-cli",
+   "url": "https://github.com/bcharleson/hubspot-cli",
+   "stars": 8,
+   "description": "JSON-first, agent-native CLI and MCP server for the HubSpot CRM API"
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "HubSpot",
+    "slug": "HUBSPOT",
+    "tools": 355,
+    "auth": [
+     "OAUTH2",
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/hubspot.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "HubSpot",
+    "slug": "HUBSPOT",
+    "tools": 355,
+    "auth": [
+     "OAUTH2",
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/hubspot.md"
+   }
+  ]
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.32665040000000006,
+  "seconds": 77.0,
+  "turns": 10,
+  "notes": "HubSpot uses date-based API versioning (e.g., 2026-09). Official MCP server in public beta; multiple community implementations available on GitHub."
+ }
+}

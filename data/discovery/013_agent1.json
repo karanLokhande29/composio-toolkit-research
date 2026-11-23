@@ -1,0 +1,255 @@
+{
+ "id": 13,
+ "app": "Freshdesk",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://freshdesk.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.freshdesk.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.freshdesk.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.freshdesk.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://freshdesk.com/pricing",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.freshdesk.com/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.freshdesk.com/api/",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://support.freshdesk.com/support/solutions/articles/50000001047-do-we-have-api-and-integration-capabilities-in-the-free-sprout-plan",
+   "purpose": "access",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://support.freshdesk.com/support/solutions/articles/50000011778-understanding-freshdesk-pricing-plans",
+   "purpose": "pricing",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://support.freshdesk.com/support/solutions/articles/225439-what-are-the-rate-limits-for-the-api-calls-to-freshdesk-",
+   "purpose": "rate_limits",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://support.freshdesk.com/en/support/solutions/articles/217264-webhooks-faq",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk-eap-",
+   "purpose": "mcp_official",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/hashcott/freshdesk-mcp",
+   "purpose": "mcp_community",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/effytech/freshdesk_mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/Enreign/freshdeck-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/freshdesk.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://support.freshdesk.com/support/solutions/articles/50000014407-mcp-integration-frequently-asked-questions-faq-",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://support.freshdesk.com/support/solutions/articles/50000011785-getting-started-with-freshdesk-omni",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://support.freshdesk.com/support/solutions/articles/225433-what-webhooks-will-contribute-to-my-rate-limit-",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://support.freshdesk.com/support/solutions/articles/50000014411-freshworks-mcp-security",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://support.freshdesk.com/support/solutions/folders/272646",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://support.freshdesk.com/support/solutions/articles/225435-where-can-i-find-my-api-key-",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.freshdesk.com/v2/docs/your-first-app/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "effytech/freshdesk_mcp",
+   "url": "https://github.com/effytech/freshdesk_mcp",
+   "stars": 70,
+   "description": "MCP server created for Freshdesk, allowing AI models to interact with Freshdesk modules"
+  },
+  {
+   "repo": "Enreign/freshdeck-mcp",
+   "url": "https://github.com/Enreign/freshdeck-mcp",
+   "stars": 12,
+   "description": "A Model Context Protocol (MCP) server implementation for Freshdesk API v2 integration. This server provides tools for managing tickets, contacts, agents, compan"
+  },
+  {
+   "repo": "hashcott/freshdesk-mcp",
+   "url": "https://github.com/hashcott/freshdesk-mcp",
+   "stars": 3,
+   "description": "MCP server for Freshdesk — 194 tools, stdio & HTTP transports, full Zod validation. Works with Claude, Cursor, and any MCP client."
+  },
+  {
+   "repo": "BrightSec/freshdesk_mcp",
+   "url": "https://github.com/BrightSec/freshdesk_mcp",
+   "stars": 2,
+   "description": "MCP (Model Context Protocol) server for Freshdesk API integration. 41 tools for managing support tickets, contacts, companies, and more."
+  },
+  {
+   "repo": "petrolivka/freshdesk-mcp",
+   "url": "https://github.com/petrolivka/freshdesk-mcp",
+   "stars": 1,
+   "description": ""
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Freshdesk",
+    "slug": "FRESHDESK",
+    "tools": 184,
+    "auth": [
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/freshdesk.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Freshdesk",
+    "slug": "FRESHDESK",
+    "tools": 184,
+    "auth": [
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/freshdesk.md"
+   }
+  ]
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.3827208,
+  "seconds": 145.5,
+  "turns": 12,
+  "notes": "Main API reference covers auth and api_reference; OAuth documented separately at developer.freshdesk.com/v2/docs/oauth; no public OpenAPI spec file found"
+ }
+}

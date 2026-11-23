@@ -1,0 +1,299 @@
+{
+ "id": 22,
+ "app": "Twilio",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://twilio.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.twilio.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.twilio.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.twilio.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://twilio.com/pricing",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.twilio.com/en-us/developers",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.twilio.com/docs/usage/api-security-reference-guide/secure-auth",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.twilio.com/docs/usage/trials",
+   "purpose": "access",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.twilio.com/en-us/pricing",
+   "purpose": "pricing",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.twilio.com/docs/iam/api",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.twilio.com/docs/verify/api/rate-limits-and-timeouts",
+   "purpose": "rate_limits",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.twilio.com/docs/usage/webhooks/getting-started-twilio-webhooks",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.twilio.com/docs/openapi",
+   "purpose": "openapi",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.twilio.com/docs/ai/mcp",
+   "purpose": "mcp_official",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/griffinwork40/twilio-mcp",
+   "purpose": "mcp_community",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/sosoj92/jarvis-assistant-vocal",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/XiyaoWang0519/agent-call",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/lgesuellip/langgraph-whatsapp-agent",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/twilio.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.twilio.com/en-us/partners",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.twilio.com/en-us/user-authentication-identity",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.twilio.com/en-us/user-authentication-identity/verify",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.twilio.com/en-us/user-authentication-identity/lookup",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.twilio.com/en-us/partners/become-a-partner",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.twilio.com/en-us/products/conversational-ai/pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.twilio.com/en-us/pricing/messaging",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.twilio.com/en-us/sms/pricing/us",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.twilio.com/en-us/whatsapp/pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "sosoj92/jarvis-assistant-vocal",
+   "url": "https://github.com/sosoj92/jarvis-assistant-vocal",
+   "stars": 573,
+   "description": "Assistant vocal local en francais : Claude ou Ollama (offline), domotique Hue, OBS, agenda, navigateur, appels Twilio, serveur MCP. Python."
+  },
+  {
+   "repo": "XiyaoWang0519/agent-call",
+   "url": "https://github.com/XiyaoWang0519/agent-call",
+   "stars": 269,
+   "description": "Open-source MCP server for safe, stateful AI-agent phone calls with OpenAI Realtime and Twilio."
+  },
+  {
+   "repo": "lgesuellip/langgraph-whatsapp-agent",
+   "url": "https://github.com/lgesuellip/langgraph-whatsapp-agent",
+   "stars": 243,
+   "description": "A template for building WhatsApp agents using LangGraph and Twilio. This project enables you to deploy AI agents that interact with users via WhatsApp, process "
+  },
+  {
+   "repo": "mr-tbot/mesh-api",
+   "url": "https://github.com/mr-tbot/mesh-api",
+   "stars": 188,
+   "description": "MESH-API  — Off-Grid AI & API Router & with MCP server & over 30 API extensions for Meshtastic & MeshCore - Seamlessly connect LM Studio, Ollama, AI Providers ,"
+  },
+  {
+   "repo": "twilio-labs/mcp",
+   "url": "https://github.com/twilio-labs/mcp",
+   "stars": 114,
+   "description": "Monorepo providing 1) OpenAPI to MCP Tool generator 2) Exposing all of Twilio's API as MCP Tools"
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Twilio",
+    "slug": "TWILIO",
+    "tools": 454,
+    "auth": [
+     "API_KEY",
+     "BASIC",
+     "S2S_OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/twilio.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Twilio",
+    "slug": "TWILIO",
+    "tools": 454,
+    "auth": [
+     "API_KEY",
+     "BASIC",
+     "S2S_OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/twilio.md"
+   }
+  ]
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.3434045,
+  "seconds": 67.1,
+  "turns": 11,
+  "notes": "Twilio uses API key authentication for server-side integrations rather than traditional OAuth; MCP server provides read-only access to 1800+ endpoints via AI coding agents without direct API execution."
+ }
+}

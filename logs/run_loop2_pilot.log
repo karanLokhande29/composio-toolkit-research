@@ -1,0 +1,6 @@
+IST now 15:48 | deadline 23:00 | 7h11m left
+loop2: second agent on 5 apps
+  loop2 [  5] Twenty                     hard=['mcp.official'] soft=0 filled=[]
+  loop2 [  1] Salesforce                 hard=['mcp.official'] soft=0 filled=[]
+  loop2 [  3] Pipedrive                  hard=['mcp.official', 'buildability.verdict', 'buildability.main_blocker'] soft=1 filled=[]
+  loop2 [  2] HubSpot                    hard=[] soft=0 filled=[]

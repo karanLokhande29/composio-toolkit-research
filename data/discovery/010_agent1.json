@@ -1,0 +1,171 @@
+{
+ "id": 10,
+ "app": "DealCloud",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://api.docs.dealcloud.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://api.docs.dealcloud.com/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://api.docs.dealcloud.com/docs/token",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://api.docs.dealcloud.com/docs/apikeys",
+   "purpose": "access",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://api.docs.dealcloud.com/docs",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://api.docs.dealcloud.com/docs/limits",
+   "purpose": "rate_limits",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://api.docs.dealcloud.com/docs/publications",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://api.docs.dealcloud.com/mcp",
+   "purpose": "mcp_official",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/jstewartrr/infra-20251230-mcp-dealcloud",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://api.docs.dealcloud.com/docs/publications/getting_started",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://api.docs.dealcloud.com/docs/publications/getting_started/topics",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://api.docs.dealcloud.com/docs/publications/getting_started/poll",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://api.docs.dealcloud.com/docs/publications/getting_started/acknowledge",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://api.docs.dealcloud.com/mcp/getting-started",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://api.docs.dealcloud.com/mcp/connections",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://api.docs.dealcloud.com/mcp/authentication",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://api.docs.dealcloud.com/mcp/tools",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://api.docs.dealcloud.com/mcp/custom-servers",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "jstewartrr/infra-20251230-mcp-dealcloud",
+   "url": "https://github.com/jstewartrr/infra-20251230-mcp-dealcloud",
+   "stars": 0,
+   "description": "DealCloud MCP Server for Sovereign Mind"
+  }
+ ],
+ "composio": {
+  "exact": [],
+  "candidates": []
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.2809227,
+  "seconds": 44.4,
+  "turns": 12,
+  "notes": "DealCloud uses Publications API (event streaming) instead of traditional webhooks; MCP server available for AI integrations; OpenAPI specs are per-site at {host}/swagger/current; no public pricing page found for API access"
+ }
+}

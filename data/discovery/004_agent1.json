@@ -1,0 +1,271 @@
+{
+ "id": 4,
+ "app": "Attio",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://attio.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.attio.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.attio.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.attio.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://attio.com/pricing",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.attio.com/rest-api/overview",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.attio.com/rest-api/guides/authentication",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://attio.com/platform/developers",
+   "purpose": "access",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.attio.com/rest-api/guides/rate-limiting",
+   "purpose": "rate_limits",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.attio.com/rest-api/guides/webhooks",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.attio.com/rest-api/endpoint-reference/openapi",
+   "purpose": "openapi",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.attio.com/mcp/overview",
+   "purpose": "mcp_official",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/kesslerio/attio-mcp-server",
+   "purpose": "mcp_community",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/hmk/attio-mcp-server",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/redriverwest/attio-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/attio.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://attio.com/platform/mcp",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://attio.com/partners/app-partners",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://attio.com/partners/expert-partners",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://attio.com/partners/creator-partners",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://attio.com/partners",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://attio.com/help/reference/imports-and-exports/migrate-data-from-another-crm?source=footer_salesforce",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://attio.com/help/reference/imports-and-exports/migrate-data-from-another-crm?source=footer_hubspot",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://attio.com/help/reference/imports-and-exports/migrate-data-from-another-crm?source=footer_pipedrive",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://attio.com/help/reference/imports-and-exports/migrate-data-from-another-crm?source=footer_zoho",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "kesslerio/attio-mcp-server",
+   "url": "https://github.com/kesslerio/attio-mcp-server",
+   "stars": 69,
+   "description": "MCP server exposing Attio CRM records, deals, and pipelines to agent clients. Needs Node and an Attio API key."
+  },
+  {
+   "repo": "hmk/attio-mcp-server",
+   "url": "https://github.com/hmk/attio-mcp-server",
+   "stars": 16,
+   "description": ""
+  },
+  {
+   "repo": "redriverwest/attio-mcp",
+   "url": "https://github.com/redriverwest/attio-mcp",
+   "stars": 8,
+   "description": "MCP server for integrating Attio CRM with AI agents"
+  },
+  {
+   "repo": "itsbrex/attio-mcp-server",
+   "url": "https://github.com/itsbrex/attio-mcp-server",
+   "stars": 7,
+   "description": "Model Context Protocol server for Attio CRM - enables Claude Desktop and Cursor to interact with your Attio workspace"
+  },
+  {
+   "repo": "Arkel-ai/attio-mcp-server",
+   "url": "https://github.com/Arkel-ai/attio-mcp-server",
+   "stars": 5,
+   "description": "✨ Attio MCP Server"
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Attio",
+    "slug": "ATTIO",
+    "tools": 114,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/attio.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Attio",
+    "slug": "ATTIO",
+    "tools": 114,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/attio.md"
+   }
+  ]
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.3086243,
+  "seconds": 99.1,
+  "turns": 10,
+  "notes": "Overview page serves as both product overview and API reference; API access included in all plans without separate developer tier; kesslerio/attio-mcp-server is most popular community MCP implementation."
+ }
+}

@@ -1,0 +1,132 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.09889099999999999,
+  "seconds": 95.5,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+  "https://developers.hubspot.com/docs/api/usage-details",
+  "https://developers.hubspot.com/docs/api-reference/latest/overview",
+  "https://developers.hubspot.com/ai-tools/mcp",
+  "https://developers.hubspot.com/docs/getting-started/developer-overview",
+  "https://developers.hubspot.com/docs/api-reference/latest/webhooks/guide",
+  "https://github.com/HubSpot/HubSpot-public-api-spec-collection",
+  "https://docs.composio.dev/toolkits/hubspot.md",
+  "https://github.com/LokiMCPUniverse/hubspot-mcp-server",
+  "https://hubspot.com",
+  "https://developers.hubspot.com",
+  "https://www.hubspot.com/partners/solutions",
+  "https://www.hubspot.com/partners/app",
+  "https://www.hubspot.com/partners/affiliates"
+ ],
+ "output": {
+  "one_liner": "HubSpot is a customer relationship management (CRM) platform for managing sales, marketing, and customer service operations.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "api_key",
+    "bearer_token"
+   ],
+   "oauth_grant_types": [],
+   "notes": "OAuth required for multi-account distribution; static auth bearer tokens for single account; developer API keys for specific features",
+   "evidence": [
+    {
+     "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+     "snippet": "OAuth is required for multiple accounts, while static auth access tokens are used for installing in a single account at a time."
+    },
+    {
+     "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+     "snippet": "Some app features and settings require a developer API key, which is available in the developer overview of your HubSpot account."
+    },
+    {
+     "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+     "snippet": "This access token is provided using the Bearer HTTP authorization header."
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Free developer account creation with sandbox access; app review required for production/marketplace distribution",
+   "evidence": [
+    {
+     "url": "https://docs.composio.dev/toolkits/hubspot.md",
+     "snippet": "Create a developer account in the HubSpot developer portal. HubSpot public apps must belong to a developer account."
+    },
+    {
+     "url": "https://developers.hubspot.com/docs/getting-started/developer-overview",
+     "snippet": "The development overview in your HubSpot account provides a centralized page to manage apps, authentication details, app monitoring, app marketplace listings."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest",
+    "graphql"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": "https://github.com/HubSpot/HubSpot-public-api-spec-collection",
+   "webhooks": true,
+   "rate_limit_note": "Rate limits vary by plan: Free/Starter 100 req/app/day, Enterprise 190 req/app/day, latest platforms 250 req/app/day",
+   "evidence": [
+    {
+     "url": "https://developers.hubspot.com/docs/api-reference/latest/overview",
+     "snippet": "All APIs, whether legacy, new, or beta, use the same root path as before: https://api.hubapi.com/."
+    },
+    {
+     "url": "https://developers.hubspot.com/docs/api-reference/latest/webhooks/guide",
+     "snippet": "The webhooks API allows you to subscribe to events happening in a HubSpot account with your integration installed."
+    },
+    {
+     "url": "https://developers.hubspot.com/docs/api-usage-details",
+     "snippet": "Free and Starter 100 / app (Any Hub) Enterprise 190 / app (Any Hub) Free, Starter, Professional, and Enterprise 250 / app"
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://developers.hubspot.com/ai-tools/mcp",
+   "community": [
+    "https://github.com/LokiMCPUniverse/hubspot-mcp-server"
+   ],
+   "evidence": [
+    {
+     "url": "https://developers.hubspot.com/ai-tools/mcp",
+     "snippet": "HubSpot offers two distinct MCP (Model Context Protocol) servers — one for connecting any MCP-compatible AI tool or agent to your CRM"
+    },
+    {
+     "url": "https://github.com/LokiMCPUniverse/hubspot-mcp-server",
+     "snippet": "MCP server for HubSpot - CRM, Marketing, Sales and Service Hub integration"
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "app_review",
+   "rationale": "Self-serve free developer account with documented REST/GraphQL API and webhooks; app review required for production distribution.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "HUBSPOT"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://hubspot.com",
+    "snippet": "All of HubSpot's marketing, sales, and customer service software on one agentic platform."
+   },
+   {
+    "url": "https://developers.hubspot.com",
+    "snippet": "Create tomorrow's solutions today on HubSpot's Developer Platform."
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  }
+ }
+}

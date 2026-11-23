@@ -1,0 +1,266 @@
+{
+ "id": 18,
+ "app": "Help Scout",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://helpscout.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.helpscout.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.helpscout.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.helpscout.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://helpscout.com/pricing",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.helpscout.com/mailbox-api/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.helpscout.com/apps/getting-started/",
+   "purpose": "access",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.helpscout.com/pricing/",
+   "purpose": "pricing",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.helpscout.com/mailbox-api/overview/rate-limiting/",
+   "purpose": "rate_limits",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.helpscout.com/webhooks/",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.helpscout.com/article/1779-connect-your-ai-agent-with-help-scout-to-search-conversations-and-pull-reports",
+   "purpose": "mcp_official",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/drewburchfield/help-scout-mcp-server",
+   "purpose": "mcp_community",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/David-Parry/build-scout",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/WayLit/help-scout-mcp-server",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/help_scout.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.helpscout.com/company/legal/accessibility-statement/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.helpscout.com/collection/1543-getting-started",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.helpscout.com/mailbox-api/overview/authentication",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.helpscout.com/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.helpscout.com/mailbox-api/endpoints/webhooks/create/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "drewburchfield/help-scout-mcp-server",
+   "url": "https://github.com/drewburchfield/help-scout-mcp-server",
+   "stars": 46,
+   "description": "MCP server for Help Scout - search conversations, customers, organizations, reports, and Docs with AI agents, plus opt-in writes for drafting replies and triage"
+  },
+  {
+   "repo": "David-Parry/build-scout",
+   "url": "https://github.com/David-Parry/build-scout",
+   "stars": 3,
+   "description": "A lightweight tool for MCP-based projects that detects build systems, analyzes dependencies, and helps automate future upgrades and migrations."
+  },
+  {
+   "repo": "WayLit/help-scout-mcp-server",
+   "url": "https://github.com/WayLit/help-scout-mcp-server",
+   "stars": 1,
+   "description": "MCP server for Help Scout - search conversations, threads, and inboxes with AI agents"
+  },
+  {
+   "repo": "unievolver/dep-scout",
+   "url": "https://github.com/unievolver/dep-scout",
+   "stars": 1,
+   "description": "An MCP server that helps AI coding agents reuse mature packages (crates.io, npm, PyPI, Go, Maven, NuGet) instead of reinventing them."
+  },
+  {
+   "repo": "BryanMcKinney/HelpScoutMCP",
+   "url": "https://github.com/BryanMcKinney/HelpScoutMCP",
+   "stars": 0,
+   "description": ""
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Help Scout",
+    "slug": "HELP_SCOUT",
+    "tools": 129,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/help_scout.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Help Scout",
+    "slug": "HELP_SCOUT",
+    "tools": 129,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/help_scout.md"
+   },
+   {
+    "name": "Helpdesk",
+    "slug": "HELPDESK",
+    "tools": 14,
+    "auth": [
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/helpdesk.md"
+   },
+   {
+    "name": "HelpSpot",
+    "slug": "HELP_SPOT",
+    "tools": 10,
+    "auth": [
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/help_spot.md"
+   },
+   {
+    "name": "Helpwise",
+    "slug": "HELPWISE",
+    "tools": 37,
+    "auth": [
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/helpwise.md"
+   }
+  ]
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.3327277,
+  "seconds": 89.7,
+  "turns": 11,
+  "notes": "OpenAPI spec unavailable. Docs API and Chat API also available. API access requires paid plan (Standard minimum). MCP is read-only in GA version."
+ }
+}

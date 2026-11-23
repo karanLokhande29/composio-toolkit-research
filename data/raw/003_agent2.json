@@ -1,0 +1,134 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "sonnet",
+  "cost_usd": 0.21793800000000002,
+  "seconds": 53.1,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://pipedrive.readme.io/docs/marketplace-oauth-authorization",
+  "https://pipedrive.readme.io/docs/core-api-concepts-authentication",
+  "https://developers.pipedrive.com/docs/api/v1",
+  "https://pipedrive.readme.io/docs/getting-started",
+  "https://developers.pipedrive.com/",
+  "https://pipedrive.readme.io/docs/core-api-concepts-rate-limiting",
+  "https://pipedrive.readme.io/docs/guide-for-webhooks",
+  "https://docs.composio.dev/toolkits/pipedrive.md",
+  "https://pipedrive.com",
+  "https://pipedrive.com/pricing",
+  "https://pipedrive.readme.io/docs/marketplace-manager",
+  "https://www.pipedrive.com/en/features/mcp-server",
+  "https://www.pipedrive.com/en/partner",
+  "https://app.pipedrive.com/auth/login"
+ ],
+ "output": {
+  "one_liner": "Pipedrive is a web-based Sales CRM that lets businesses track pipelines, manage deals/leads, and automate sales processes.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "api_key"
+   ],
+   "oauth_grant_types": [
+    "authorization_code"
+   ],
+   "notes": "OAuth 2.0 authorization-code flow is required for Marketplace apps (public/private); a static per-user API token sent in the x-api-token header is an alternative for direct integrations.",
+   "evidence": [
+    {
+     "url": "https://pipedrive.readme.io/docs/marketplace-oauth-authorization",
+     "snippet": "Using OAuth 2.0 is necessary for developing apps that are available in the Pipedrive Marketplace."
+    },
+    {
+     "url": "https://pipedrive.readme.io/docs/core-api-concepts-authentication",
+     "snippet": "The API token must be provided in the x-api-token header for all requests, for example:"
+    },
+    {
+     "url": "https://pipedrive.readme.io/docs/marketplace-oauth-authorization",
+     "snippet": "you must use the value \"authorization_code\""
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "A free developer sandbox account can be created without payment, approval, or sales contact; it provides an API token and lets you register an app to get OAuth client_id/client_secret. Private apps skip Pipedrive's review process entirely; only public Marketplace listing requires app review.",
+   "evidence": [
+    {
+     "url": "https://developers.pipedrive.com/",
+     "snippet": "Sign up for a Sandbox Account today to begin experimenting and developing in a risk free environment"
+    },
+    {
+     "url": "https://developers.pipedrive.com/docs/api/v1",
+     "snippet": "To test your applications, we recommend creating a new, separate Pipedrive account for sandboxing purposes."
+    },
+    {
+     "url": "https://pipedrive.readme.io/docs/marketplace-manager",
+     "snippet": "They don’t have to go through the app approval process and will not be published in the Pipedrive Marketplace."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "Token-based daily rate limiting; budget = 30,000 base tokens × subscription plan multiplier × number of seats (+ purchased API Token top-ups).",
+   "evidence": [
+    {
+     "url": "https://developers.pipedrive.com/docs/api/v1",
+     "snippet": "This reference helps you implement the RESTful Pipedrive API."
+    },
+    {
+     "url": "https://developers.pipedrive.com/docs/api/v1",
+     "snippet": "you can always import our OpenAPI 3 specification files (available for both v1 and v2 APIs) into your tool of choice."
+    },
+    {
+     "url": "https://pipedrive.readme.io/docs/core-api-concepts-rate-limiting",
+     "snippet": "30,000 base tokens × subscription plan multiplier × number of seats (+ purchased API Token top-ups)"
+    },
+    {
+     "url": "https://pipedrive.readme.io/docs/guide-for-webhooks",
+     "snippet": "Webhooks allow you to get programmatic notifications from Pipedrive about changes to your data as they happen."
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://www.pipedrive.com/en/features/mcp-server",
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://www.pipedrive.com/en/features/mcp-server",
+     "snippet": "Pipedrive MCP (Model Context Protocol) connects your AI assistant directly to Pipedrive, allowing it to securely access, update and act on your CRM data using natural language."
+    },
+    {
+     "url": "https://www.pipedrive.com/en/features/mcp-server",
+     "snippet": "Yes. Pipedrive MCP is built and maintained by Pipedrive and follows our security standards."
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "A free developer sandbox gives working OAuth/API-token credentials with a broad, documented REST API, OpenAPI specs and webhooks, and Composio already ships a 407-tool Pipedrive toolkit.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "PIPEDRIVE"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://developers.pipedrive.com/docs/api/v1",
+    "snippet": "Pipedrive is a Web-based Sales CRM."
+   }
+  ],
+  "confidence": 0.82,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "No explicit OpenAPI spec URL is given on the pages, only that spec files exist and can be imported.",
+   "mcp": "Pages do not mention any third-party/community MCP server for Pipedrive, only the vendor's own MCP offering."
+  }
+ }
+}

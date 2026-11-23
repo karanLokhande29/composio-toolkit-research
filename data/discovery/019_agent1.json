@@ -1,0 +1,289 @@
+{
+ "id": 19,
+ "app": "Gorgias",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://gorgias.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.gorgias.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.gorgias.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://docs.gorgias.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://gorgias.com/pricing",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.gorgias.com/docs/overview",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.gorgias.com/reference/authentication",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.gorgias.com/docs/1-register-on-developer-portal",
+   "purpose": "access",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.gorgias.com/docs/access-tokens-api-keys",
+   "purpose": "access",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.gorgias.com/reference/introduction",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.gorgias.com/reference/limitations",
+   "purpose": "rate_limits",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.gorgias.com/docs/sync-gorgias-data-with-a-database",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.gorgias.com/llms.txt",
+   "purpose": "openapi",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546",
+   "purpose": "mcp_official",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/mattcoatsworth/Gorgias-MCP-Server",
+   "purpose": "mcp_community",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/benpalmer1/Gorgias-MCP-Server",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/gorgias/mcp-cookbook",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/gorgias.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.gorgias.com/pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.gorgias.com/tech-partner",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.gorgias.com/partner-stories",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.gorgias.com/pricing?ref=home&ref-position=other",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.gorgias.com/partner-referral",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.gorgias.com/partner-program",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.gorgias.com/legal/accessibility",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://partners.gorgias.com/signup",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://www.gorgias.com/partner-program?utm_source=help-center&utm_content=link&utm_campaign=footer",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "mattcoatsworth/Gorgias-MCP-Server",
+   "url": "https://github.com/mattcoatsworth/Gorgias-MCP-Server",
+   "stars": 4,
+   "description": ""
+  },
+  {
+   "repo": "benpalmer1/Gorgias-MCP-Server",
+   "url": "https://github.com/benpalmer1/Gorgias-MCP-Server",
+   "stars": 2,
+   "description": "Helpful MCP server for the Gorgias API"
+  },
+  {
+   "repo": "gorgias/mcp-cookbook",
+   "url": "https://github.com/gorgias/mcp-cookbook",
+   "stars": 2,
+   "description": "Ready-to-fork recipes for the Gorgias MCP — automate your helpdesk and AI Agent from Claude, ChatGPT, or Cursor."
+  },
+  {
+   "repo": "Elie-Elia/gorgias-mcp",
+   "url": "https://github.com/Elie-Elia/gorgias-mcp",
+   "stars": 0,
+   "description": "MCP server: Gorgias MCP Server"
+  },
+  {
+   "repo": "NoBanks/gorgias-mcp",
+   "url": "https://github.com/NoBanks/gorgias-mcp",
+   "stars": 0,
+   "description": "MCP server for Gorgias, the e-commerce customer support helpdesk. 5 tools for AI agents to triage tickets, read context, draft internal notes, send replies when"
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Gorgias",
+    "slug": "GORGIAS",
+    "tools": 51,
+    "auth": [
+     "API_KEY",
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/gorgias.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Gorgias",
+    "slug": "GORGIAS",
+    "tools": 51,
+    "auth": [
+     "API_KEY",
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/gorgias.md"
+   }
+  ]
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.31785990000000003,
+  "seconds": 41.8,
+  "turns": 12,
+  "notes": "Gorgias has official MCP server in open beta (May 2026). API pricing not tiered by plan; uses same API regardless of plan level. No separate OpenAPI spec file, but llms.txt provides OpenAPI format for AI agents."
+ }
+}

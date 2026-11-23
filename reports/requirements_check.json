@@ -1,0 +1,102 @@
+{
+ "checked_at": "2026-11-23T15:49:30+05:30",
+ "phase": 1,
+ "results": {
+  "R1": {
+   "status": "PASS",
+   "detail": "apps.yaml 100 unique ids"
+  },
+  "R2": {
+   "status": "PASS",
+   "detail": "5 apps ok"
+  },
+  "R3": {
+   "status": "PASS",
+   "detail": "5 apps ok"
+  },
+  "R4": {
+   "status": "PASS",
+   "detail": "5 apps ok"
+  },
+  "R5": {
+   "status": "PASS",
+   "detail": "5 apps ok"
+  },
+  "R6": {
+   "status": "PASS",
+   "detail": "5 apps ok"
+  },
+  "R7": {
+   "status": "PASS",
+   "detail": "5 apps ok"
+  },
+  "R8": {
+   "status": "PASS",
+   "detail": "5 apps ok"
+  },
+  "R9": {
+   "status": "NOT_YET",
+   "detail": "phase 6 not reached"
+  },
+  "R10": {
+   "status": "MANUAL_PENDING",
+   "detail": "Karan must confirm"
+  },
+  "R11": {
+   "status": "PASS",
+   "detail": "3 entries (MANUAL: completeness)"
+  },
+  "R12": {
+   "status": "NOT_YET",
+   "detail": "phase 3 not reached"
+  },
+  "R13": {
+   "status": "NOT_YET",
+   "detail": "phase 4 not reached"
+  },
+  "R14": {
+   "status": "NOT_YET",
+   "detail": "phase 5 not reached"
+  },
+  "R15": {
+   "status": "NOT_YET",
+   "detail": "phase 7 not reached"
+  },
+  "R16": {
+   "status": "NOT_YET",
+   "detail": "phase 7 not reached"
+  },
+  "R17": {
+   "status": "NOT_YET",
+   "detail": "phase 7 not reached"
+  },
+  "R18": {
+   "status": "NOT_YET",
+   "detail": "phase 7 not reached"
+  },
+  "R19": {
+   "status": "NOT_YET",
+   "detail": "phase 2 not reached"
+  },
+  "R20": {
+   "status": "FAIL",
+   "detail": "missing or too short"
+  },
+  "R21": {
+   "status": "NOT_YET",
+   "detail": "phase 8 not reached"
+  },
+  "R22": {
+   "status": "NOT_YET",
+   "detail": "phase 8 not reached"
+  },
+  "R23": {
+   "status": "NOT_YET",
+   "detail": "phase 9 not reached"
+  },
+  "R24": {
+   "status": "PASS",
+   "detail": ".env ignored; 0 tracked files + history scanned clean"
+  }
+ }
+}

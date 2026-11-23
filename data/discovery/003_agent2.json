@@ -1,0 +1,298 @@
+{
+ "id": 3,
+ "app": "Pipedrive",
+ "tag": "agent2",
+ "urls": [
+  {
+   "url": "https://pipedrive.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.pipedrive.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.pipedrive.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.pipedrive.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://pipedrive.com/pricing",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://pipedrive.readme.io/docs/getting-started",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://pipedrive.readme.io/docs/marketplace-oauth-authorization",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://pipedrive.readme.io/docs/core-api-concepts-authentication",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://pipedrive.readme.io/docs/core-api-concepts-rate-limiting",
+   "purpose": "rate_limits",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.pipedrive.com/docs/api/v1",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://pipedrive.readme.io/docs/guide-for-webhooks",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.pipedrive.com/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://pipedrive.readme.io/docs/marketplace-manager",
+   "purpose": "credentials",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.pipedrive.com/en/partners",
+   "purpose": "partner_programme",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://pipedrive.readme.io/docs/sandbox-accounts",
+   "purpose": "sandbox",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://github.com/WillDent/pipedrive-mcp-server",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/Wirasm/pipedrive-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/nubiia-dev/mcp-pipedrive",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/pipedrive.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.pipedrive.com/en/features/mcp-server",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.pipedrive.com/en/partner",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.pipedrive.com/en/pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://app.pipedrive.com/auth/login",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.pipedrive.com/cs/pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.pipedrive.com/de/pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.pipedrive.com/et/pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.pipedrive.com/es/pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.pipedrive.com/fr/pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.pipedrive.com/hu/pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "WillDent/pipedrive-mcp-server",
+   "url": "https://github.com/WillDent/pipedrive-mcp-server",
+   "stars": 60,
+   "description": "Secure, self-hosted MCP server for Pipedrive CRM with v2 read tools, optional preview-first writes, stdio/HTTP transports, and Docker support."
+  },
+  {
+   "repo": "Wirasm/pipedrive-mcp",
+   "url": "https://github.com/Wirasm/pipedrive-mcp",
+   "stars": 14,
+   "description": ""
+  },
+  {
+   "repo": "nubiia-dev/mcp-pipedrive",
+   "url": "https://github.com/nubiia-dev/mcp-pipedrive",
+   "stars": 12,
+   "description": "Pipedrive CRM MCP server for AI assistants like Claude — 300+ tools covering the full Pipedrive API. Built by Nubiia."
+  },
+  {
+   "repo": "ckalima/pipedrive-mcp-server",
+   "url": "https://github.com/ckalima/pipedrive-mcp-server",
+   "stars": 10,
+   "description": "MCP server for Pipedrive CRM. 155 contract-tested tools, v2-first API, gated destructive ops. Works with Claude Desktop, Claude Code, and any MCP client."
+  },
+  {
+   "repo": "comma-compliance/pipedrive-mcp",
+   "url": "https://github.com/comma-compliance/pipedrive-mcp",
+   "stars": 8,
+   "description": "Pipedrive CRM server for the Model Context Protocol (MCP). 75 tools covering full CRUD, custom field resolution, and shortcut tools for common CRM workflows."
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Pipedrive",
+    "slug": "PIPEDRIVE",
+    "tools": 407,
+    "auth": [
+     "OAUTH2",
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/pipedrive.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Pipedrive",
+    "slug": "PIPEDRIVE",
+    "tools": 407,
+    "auth": [
+     "OAUTH2",
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/pipedrive.md"
+   }
+  ]
+ },
+ "search_meta": {}
+}

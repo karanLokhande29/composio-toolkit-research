@@ -1,0 +1,271 @@
+{
+ "id": 6,
+ "app": "Podio",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://podio.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.podio.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.podio.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.podio.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://podio.com/pricing",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.podio.com/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.podio.com/authentication",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.podio.com/api-key",
+   "purpose": "access",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.podio.com/doc",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.podio.com/index/limits",
+   "purpose": "rate_limits",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.podio.com/doc/hooks",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://mcp.podio.com",
+   "purpose": "mcp_official",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/Vuxified/podio-mcp-server",
+   "purpose": "mcp_community",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/Podiom/Podiom",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/stoskov/podio-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/jscord30/MCPServer-Podio",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/podio.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://company.podio.com/partners",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://podio.com/login?provider=podio&return_to=https%3A%2F%2Fpodio.com%2Fpricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.podio.com/authentication/scopes",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.podio.com/authentication/server_side",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.podio.com/authentication/client_side",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.podio.com/authentication/username_password",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.podio.com/authentication/app_auth",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.podio.com/doc/oauth-authorization",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "Podiom/Podiom",
+   "url": "https://github.com/Podiom/Podiom",
+   "stars": 25,
+   "description": "Local-first workspace for Claude Code and OpenAI Codex agents. Durable sessions, projects, scheduling, goals, and native MCP/tool/skill integration."
+  },
+  {
+   "repo": "stoskov/podio-mcp",
+   "url": "https://github.com/stoskov/podio-mcp",
+   "stars": 1,
+   "description": ""
+  },
+  {
+   "repo": "jscord30/MCPServer-Podio",
+   "url": "https://github.com/jscord30/MCPServer-Podio",
+   "stars": 0,
+   "description": ""
+  },
+  {
+   "repo": "phases/mcp-server-for-podio",
+   "url": "https://github.com/phases/mcp-server-for-podio",
+   "stars": 0,
+   "description": "Model Context Protocol server for Podio"
+  },
+  {
+   "repo": "Vuxified/podio-mcp-server",
+   "url": "https://github.com/Vuxified/podio-mcp-server",
+   "stars": 0,
+   "description": "MCP server for the Podio API: items, search, comments, webhooks, files"
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Podio",
+    "slug": "PODIO",
+    "tools": 143,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/podio.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Podio",
+    "slug": "PODIO",
+    "tools": 143,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/podio.md"
+   }
+  ]
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.3062279,
+  "seconds": 37.3,
+  "turns": 12,
+  "notes": "Podio API is free to use with base rate limits (1000/hour); no official OpenAPI spec found; pricing is per Podio plan tier, not per API access; MCP is in beta for AI assistant integration."
+ }
+}

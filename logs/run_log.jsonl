@@ -1,0 +1,38 @@
+{"ts": "2026-11-23T15:42:33+05:30", "stage": "discover", "agent": "agent1", "app": "Twenty", "urls": 23, "ok": 21, "cost_usd": 0.3167327}
+{"ts": "2026-11-23T15:42:52+05:30", "stage": "discover", "agent": "agent1", "app": "Pipedrive", "urls": 27, "ok": 26, "cost_usd": 0.46331699999999987}
+{"ts": "2026-11-23T15:42:59+05:30", "stage": "discover", "agent": "agent1", "app": "Salesforce", "urls": 30, "ok": 28, "cost_usd": 0.40710999999999997}
+{"ts": "2026-11-23T15:43:10+05:30", "stage": "discover", "agent": "agent1", "app": "HubSpot", "urls": 28, "ok": 24, "cost_usd": 0.32665040000000006}
+{"ts": "2026-11-23T15:43:34+05:30", "stage": "discover", "agent": "agent1", "app": "Attio", "urls": 25, "ok": 23, "cost_usd": 0.3086243}
+{"ts": "2026-11-23T15:44:22+05:30", "stage": "extract", "agent": "agent1", "app": "Attio", "pages": 14, "error": null, "cost_usd": 0.05977, "seconds": 43.0}
+{"ts": "2026-11-23T15:45:06+05:30", "stage": "extract", "agent": "agent1", "app": "Salesforce", "pages": 14, "error": null, "cost_usd": 0.088109, "seconds": 87.6}
+{"ts": "2026-11-23T15:45:10+05:30", "stage": "extract", "agent": "agent1", "app": "Twenty", "pages": 14, "error": null, "cost_usd": 0.084873, "seconds": 91.2}
+{"ts": "2026-11-23T15:45:14+05:30", "stage": "extract", "agent": "agent1", "app": "HubSpot", "pages": 14, "error": null, "cost_usd": 0.09889099999999999, "seconds": 95.5}
+{"ts": "2026-11-23T15:45:35+05:30", "stage": "extract", "agent": "agent1", "app": "Pipedrive", "pages": 14, "error": null, "cost_usd": 0.093099, "seconds": 116.4}
+{"ts": "2026-11-23T15:46:40+05:30", "stage": "discover", "agent": "agent1", "app": "Copper", "urls": 25, "ok": 23, "cost_usd": 0.3065987}
+{"ts": "2026-11-23T15:46:47+05:30", "stage": "discover", "agent": "agent1", "app": "Podio", "urls": 25, "ok": 25, "cost_usd": 0.3062279}
+{"ts": "2026-11-23T15:46:58+05:30", "stage": "discover", "agent": "agent1", "app": "DealCloud", "urls": 18, "ok": 18, "cost_usd": 0.2809227}
+{"ts": "2026-11-23T15:47:03+05:30", "stage": "discover", "agent": "agent1", "app": "Zoho CRM", "urls": 28, "ok": 27, "cost_usd": 0.34498910000000005}
+{"ts": "2026-11-23T15:47:04+05:30", "stage": "discover", "agent": "agent1", "app": "Intercom", "urls": 30, "ok": 29, "cost_usd": 0.35072729999999996}
+{"ts": "2026-11-23T15:47:19+05:30", "stage": "discover", "agent": "agent1", "app": "Close", "urls": 24, "ok": 22, "cost_usd": 0.2256386}
+{"ts": "2026-11-23T15:47:22+05:30", "stage": "discover", "agent": "agent1", "app": "Zendesk", "urls": 28, "ok": 26, "cost_usd": 0.4492644}
+{"ts": "2026-11-23T15:47:43+05:30", "stage": "discover", "agent": "agent1", "app": "Front", "urls": 25, "ok": 22, "cost_usd": 0.422998}
+{"ts": "2026-11-23T15:47:49+05:30", "stage": "discover", "agent": "agent1", "app": "Pylon", "urls": 24, "ok": 22, "cost_usd": 0.38395650000000003}
+{"ts": "2026-11-23T15:47:52+05:30", "stage": "discover", "agent": "agent1", "app": "LiveAgent", "urls": 24, "ok": 21, "cost_usd": 0.27974899999999997}
+{"ts": "2026-11-23T15:48:10+05:30", "stage": "discover", "agent": "agent1", "app": "Plain", "urls": 29, "ok": 27, "cost_usd": 0.39639710000000006}
+{"ts": "2026-11-23T15:48:18+05:30", "stage": "discover", "agent": "agent1", "app": "Gorgias", "urls": 27, "ok": 25, "cost_usd": 0.31785990000000003}
+{"ts": "2026-11-23T15:48:26+05:30", "stage": "discover", "agent": "agent1", "app": "Gladly", "urls": 17, "ok": 13, "cost_usd": 0.38378560000000006}
+{"ts": "2026-11-23T15:48:33+05:30", "stage": "discover", "agent": "agent2", "app": "Attio", "urls": 26, "ok": 18, "cost_usd": 0}
+{"ts": "2026-11-23T15:48:34+05:30", "stage": "discover", "agent": "agent1", "app": "Freshdesk", "urls": 23, "ok": 22, "cost_usd": 0.3827208}
+{"ts": "2026-11-23T15:48:35+05:30", "stage": "discover", "agent": "agent2", "app": "Twenty", "urls": 26, "ok": 20, "cost_usd": 0}
+{"ts": "2026-11-23T15:48:35+05:30", "stage": "discover", "agent": "agent2", "app": "Pipedrive", "urls": 29, "ok": 26, "cost_usd": 0}
+{"ts": "2026-11-23T15:48:36+05:30", "stage": "discover", "agent": "agent2", "app": "Salesforce", "urls": 29, "ok": 21, "cost_usd": 0}
+{"ts": "2026-11-23T15:48:36+05:30", "stage": "discover", "agent": "agent2", "app": "HubSpot", "urls": 29, "ok": 22, "cost_usd": 0}
+{"ts": "2026-11-23T15:48:42+05:30", "stage": "discover", "agent": "agent1", "app": "Help Scout", "urls": 21, "ok": 20, "cost_usd": 0.3327277}
+{"ts": "2026-11-23T15:49:06+05:30", "stage": "discover", "agent": "agent1", "app": "Slack", "urls": 27, "ok": 21, "cost_usd": 0.4767814}
+{"ts": "2026-11-23T15:49:13+05:30", "stage": "extract", "agent": "agent2", "app": "Twenty", "pages": 14, "error": null, "cost_usd": 0.171381, "seconds": 38.7}
+{"ts": "2026-11-23T15:49:14+05:30", "stage": "discover", "agent": "agent1", "app": "Twilio", "urls": 28, "ok": 28, "cost_usd": 0.3434045}
+{"ts": "2026-11-23T15:49:18+05:30", "stage": "extract", "agent": "agent2", "app": "Salesforce", "pages": 14, "error": null, "cost_usd": 0.214452, "seconds": 41.7}
+{"ts": "2026-11-23T15:49:23+05:30", "stage": "discover", "agent": "agent1", "app": "Zoho Cliq", "urls": 19, "ok": 18, "cost_usd": 0.4609115}
+{"ts": "2026-11-23T15:49:28+05:30", "stage": "extract", "agent": "agent2", "app": "Pipedrive", "pages": 14, "error": null, "cost_usd": 0.21793800000000002, "seconds": 53.1}
+{"ts": "2026-11-23T15:49:29+05:30", "stage": "discover", "agent": "agent1", "app": "Discord", "urls": 24, "ok": 17, "cost_usd": 0.37580979999999997}
+{"ts": "2026-11-23T15:49:33+05:30", "stage": "extract", "agent": "agent2", "app": "HubSpot", "pages": 14, "error": null, "cost_usd": 0.249441, "seconds": 56.5}

@@ -1,0 +1,146 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.05977,
+  "seconds": 43.0,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://docs.attio.com/rest-api/guides/authentication",
+  "https://attio.com/platform/developers",
+  "https://docs.attio.com/mcp/overview",
+  "https://docs.attio.com/rest-api/overview",
+  "https://docs.attio.com/rest-api/guides/rate-limiting",
+  "https://docs.attio.com/rest-api/guides/webhooks",
+  "https://docs.attio.com/rest-api/endpoint-reference/openapi",
+  "https://docs.composio.dev/toolkits/attio.md",
+  "https://github.com/kesslerio/attio-mcp-server",
+  "https://attio.com",
+  "https://attio.com/pricing",
+  "https://attio.com/platform/mcp",
+  "https://attio.com/partners/app-partners",
+  "https://attio.com/partners/expert-partners"
+ ],
+ "output": {
+  "one_liner": "Attio is a cloud-based CRM platform that enables teams to manage pipelines, deals, and customer relationships through AI-powered agents and revenue orchestration.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "api_key",
+    "bearer_token"
+   ],
+   "oauth_grant_types": [
+    "authorization_code"
+   ],
+   "notes": "OAuth 2.0 with Authorization Code Grant Flow recommended for multi-workspace apps. API keys available for single workspace. Bearer token used in Authorization header. HTTP Basic Auth also supported.",
+   "evidence": [
+    {
+     "url": "https://docs.attio.com/rest-api/guides/authentication",
+     "snippet": "There are two ways to generate an access token: By implementing an OAuth 2.0 flow or By generating an API key for your workspace."
+    },
+    {
+     "url": "https://docs.attio.com/rest-api/guides/authentication",
+     "snippet": "Attio implements the standard OAuth 2.0 specification, using the Authorization Code Grant Flow."
+    },
+    {
+     "url": "https://docs.attio.com/rest-api/guides/authentication",
+     "snippet": "Pass the value of the token in the Authorization header of your requests like so. Authorization: Bearer <access_token>"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": null,
+   "notes": "Free plan available at no cost for up to 3 users, includes API, webhooks, MCP server, and App SDK. All new workspaces get 14-day free trial of Pro plan.",
+   "evidence": [
+    {
+     "url": "https://attio.com/pricing",
+     "snippet": "Yes. The Free plan costs nothing for up to three users. It includes Ask Attio, automatic enrichment, workflows, and email and calendar sync."
+    },
+    {
+     "url": "https://attio.com/pricing",
+     "snippet": "Yes. Every new Attio workspace starts with a 14-day free trial of the Pro plan, with access to all Pro features."
+    },
+    {
+     "url": "https://attio.com/pricing",
+     "snippet": "Free plan: For individuals to get started with Attio. API and webhooks, MCP server, App SDK."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest",
+    "mcp"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": "https://docs.attio.com/rest-api/endpoint-reference/openapi",
+   "webhooks": true,
+   "rate_limit_note": "100 requests/second read, 25 requests/second write. Score-based limits on List records/entries endpoints.",
+   "evidence": [
+    {
+     "url": "https://docs.attio.com/rest-api/overview",
+     "snippet": "Attio provides a public REST API which exchanges JSON over HTTPS."
+    },
+    {
+     "url": "https://docs.attio.com/rest-api/endpoint-reference/openapi",
+     "snippet": "Attio exposes a public OpenAPI specification for the Attio REST API."
+    },
+    {
+     "url": "https://docs.attio.com/rest-api/guides/rate-limiting",
+     "snippet": "Our rate limit across the whole API is 100 requests per second for read requests, 25 requests per second for write requests."
+    },
+    {
+     "url": "https://docs.attio.com/rest-api/guides/webhooks",
+     "snippet": "Webhooks allow you to subscribe to changes that happen in Attio and receive real-time HTTP requests to a target URL."
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/attio.md",
+     "snippet": "Tools: 114"
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://mcp.attio.com/mcp",
+   "community": [
+    "https://github.com/kesslerio/attio-mcp-server"
+   ],
+   "evidence": [
+    {
+     "url": "https://docs.attio.com/mcp/overview",
+     "snippet": "Add https://mcp.attio.com/mcp as a remote MCP server and complete the OAuth authentication when prompted."
+    },
+    {
+     "url": "https://github.com/kesslerio/attio-mcp-server",
+     "snippet": "MCP server exposing Attio CRM records, deals, and pipelines to agent clients. Needs Node and an Attio API key."
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Self-serve free credentials with documented REST API, OpenAPI spec, official MCP server, and OAuth2 support enable immediate toolkit development.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "ATTIO"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://attio.com",
+    "snippet": "Attio is the platform that builds pipeline, advances deals, and grows accounts around the clock."
+   },
+   {
+    "url": "https://attio.com/platform/developers",
+    "snippet": "Connect your GTM stack with the REST API, App SDK, or Attio MCP."
+   }
+  ],
+  "confidence": 0.99,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  }
+ }
+}

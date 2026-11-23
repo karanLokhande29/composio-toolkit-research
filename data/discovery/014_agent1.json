@@ -1,0 +1,273 @@
+{
+ "id": 14,
+ "app": "Front",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://front.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.front.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.front.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.front.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://front.com/pricing",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://dev.frontapp.com/docs/core-api-overview",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://dev.frontapp.com/docs/oauth",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://help.front.com/en/articles/2309",
+   "purpose": "access",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://dev.frontapp.com/reference/introduction",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://help.front.com/en/articles/2438",
+   "purpose": "rate_limits",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://help.front.com/en/articles/2212",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/frontapp/front-api-specs",
+   "purpose": "openapi",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://dev.frontapp.com/docs/mcp-server",
+   "purpose": "mcp_official",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/wearehoust/front-mcp",
+   "purpose": "mcp_community",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/IBM/mcp-context-forge",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/wilwaldon/Claude-Code-Frontend-Design-Toolkit",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/mrwyndham/pocketbase-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/front.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://front.com/partners/channel",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://front.com/partners/integration",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://dev.frontapp.com/docs/partnering-with-front",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://dev.frontapp.com/docs/core-api-getting-started",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://dev.frontapp.com/docs/authentication",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://dev.frontapp.com/docs/rate-limiting",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://dev.frontapp.com/docs/admin-mcp-server",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "IBM/mcp-context-forge",
+   "url": "https://github.com/IBM/mcp-context-forge",
+   "stars": 4876,
+   "description": "An AI Gateway, registry, and proxy that sits in front of any MCP, A2A, or REST/gRPC APIs, exposing a unified endpoint with centralized discovery, guardrails and"
+  },
+  {
+   "repo": "wilwaldon/Claude-Code-Frontend-Design-Toolkit",
+   "url": "https://github.com/wilwaldon/Claude-Code-Frontend-Design-Toolkit",
+   "stars": 1382,
+   "description": "Everything I've found that actually makes Claude Code output better-looking frontends. Skills, plugins, MCP servers, CLAUDE.md tricks"
+  },
+  {
+   "repo": "mrwyndham/pocketbase-mcp",
+   "url": "https://github.com/mrwyndham/pocketbase-mcp",
+   "stars": 156,
+   "description": "MCP server for building PocketBase apps really quickly - Need a front end quick consider FastPocket"
+  },
+  {
+   "repo": "agentfront/frontmcp",
+   "url": "https://github.com/agentfront/frontmcp",
+   "stars": 153,
+   "description": "The TypeScript framework for MCP servers Build MCP tools that share services, validate inputs and apply the access rules you configure. Bring authentication, te"
+  },
+  {
+   "repo": "ceilf6/FrontAgent",
+   "url": "https://github.com/ceilf6/FrontAgent",
+   "stars": 125,
+   "description": "Frontend AI coding agent platform with CLI, VS Code extension, desktop app, MCP server, RAG planning, Skills, SDD guardrails, browser automation, and LoRA plann"
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Front",
+    "slug": "FRONT",
+    "tools": 180,
+    "auth": [
+     "API_KEY",
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/front.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Front",
+    "slug": "FRONT",
+    "tools": 180,
+    "auth": [
+     "API_KEY",
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/front.md"
+   }
+  ]
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.422998,
+  "seconds": 49.8,
+  "turns": 17,
+  "notes": "Front provides comprehensive API documentation via dev.frontapp.com; OAuth and Bearer token authentication supported; MCP server available for AI integrations with official release and active community implementations"
+ }
+}

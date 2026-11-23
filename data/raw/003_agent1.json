@@ -1,0 +1,149 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.093099,
+  "seconds": 116.4,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://developers.pipedrive.com/docs/api/v1/Oauth",
+  "https://developers.pipedrive.com/start-here",
+  "https://www.pipedrive.com/en/pricing",
+  "https://developers.pipedrive.com/docs/api/v1",
+  "https://www.pipedrive.com/en/features/mcp-server",
+  "https://developers.pipedrive.com/",
+  "https://developers.pipedrive.com/changelog/post/breaking-changes-token-based-rate-limits-for-api-requests",
+  "https://developers.pipedrive.com/docs/api/v1/Webhooks",
+  "https://developers.pipedrive.com/docs/api/v1/openapi.yaml",
+  "https://docs.composio.dev/toolkits/pipedrive.md",
+  "https://github.com/borgels/mcp-server-pipedrive",
+  "https://pipedrive.com",
+  "https://www.pipedrive.com/en/partner",
+  "https://app.pipedrive.com/auth/login"
+ ],
+ "output": {
+  "one_liner": "Pipedrive is a cloud-based sales CRM platform for managing pipelines, leads, deals, and automating sales workflows.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2",
+    "api_key"
+   ],
+   "oauth_grant_types": [
+    "authorization_code",
+    "refresh_token"
+   ],
+   "notes": "OAuth 2.0 required for Marketplace apps; API tokens obtained manually from Pipedrive app; Bearer token authorization format used.",
+   "evidence": [
+    {
+     "url": "https://developers.pipedrive.com/docs/api/v1/Oauth",
+     "snippet": "Using OAuth 2.0 is necessary for developing apps that are available in the Pipedrive Marketplace."
+    },
+    {
+     "url": "https://developers.pipedrive.com/docs/api/v1",
+     "snippet": "The API token can be obtained manually from the Pipedrive app."
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/pipedrive.md",
+     "snippet": "Choose OAuth2 and your own credentials, then paste the Client ID and Client Secret."
+    },
+    {
+     "url": "https://github.com/borgels/mcp-server-pipedrive",
+     "snippet": "sends it as Authorization: Bearer only to that user's company address."
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_trial",
+   "dev_sandbox": true,
+   "notes": "Free 14-day trial without credit card; developer sandbox account available for testing; API access included on all plans including trial.",
+   "evidence": [
+    {
+     "url": "https://www.pipedrive.com/en/pricing",
+     "snippet": "Free 14-day trial. No credit card required."
+    },
+    {
+     "url": "https://developers.pipedrive.com/",
+     "snippet": "Sign up for a Sandbox Account today to begin experimenting and developing in a risk free environment"
+    },
+    {
+     "url": "https://developers.pipedrive.com/docs/api/v1",
+     "snippet": "To test your applications, we recommend creating a new, separate Pipedrive account for sandboxing purposes."
+    },
+    {
+     "url": "https://github.com/borgels/mcp-server-pipedrive",
+     "snippet": "Every Pipedrive plan has the API, the 14-day trial too."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": "https://developers.pipedrive.com/docs/api/v1/openapi.yaml",
+   "webhooks": true,
+   "rate_limit_note": "Token-based rate limits effective December 2024; API requests consume tokens from daily budget reset every 24 hours.",
+   "evidence": [
+    {
+     "url": "https://developers.pipedrive.com/docs/api/v1",
+     "snippet": "This reference helps you implement the RESTful Pipedrive API."
+    },
+    {
+     "url": "https://developers.pipedrive.com/docs/api/v1",
+     "snippet": "OpenAPI 3 specification files (available for both v1 and v2 APIs)"
+    },
+    {
+     "url": "https://developers.pipedrive.com/docs/api/v1/Webhooks",
+     "snippet": "Creates a new Webhook and returns its details."
+    },
+    {
+     "url": "https://developers.pipedrive.com/changelog/post/breaking-changes-token-based-rate-limits-for-api-requests",
+     "snippet": "API requests will now consume tokens from the company's daily budget, which resets every 24 hours."
+    }
+   ]
+  },
+  "mcp": {
+   "official": null,
+   "community": [
+    "https://github.com/borgels/mcp-server-pipedrive"
+   ],
+   "evidence": [
+    {
+     "url": "https://www.pipedrive.com/en/features/mcp-server",
+     "snippet": "Pipedrive MCP connects your AI assistant directly to Pipedrive, allowing it to securely access, update and act on your CRM data."
+    },
+    {
+     "url": "https://github.com/borgels/mcp-server-pipedrive",
+     "snippet": "Unofficial MCP server for Pipedrive CRM: persons, organizations, deals, activities and notes."
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready_with_caveats",
+   "main_blocker": "paid_plan",
+   "rationale": "REST API is well-documented with free sandbox and broad endpoints, but end-users require paid Pipedrive plan after 14-day trial.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "PIPEDRIVE"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://developers.pipedrive.com/",
+    "snippet": "Easily build integrations with our API and developer platform to reach over 100,000 companies through the Pipedrive Marketplace"
+   },
+   {
+    "url": "https://www.pipedrive.com/",
+    "snippet": "Pipedrive lets you track your sales pipeline, optimize leads, manage deals with AI and automate your entire sales process"
+   }
+  ],
+  "confidence": 0.87,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "Whether sandbox accounts inherit 14-day trial limit or allow indefinite testing access not explicitly stated.",
+   "api_surface": "",
+   "mcp": "Official Pipedrive MCP server repository URL not provided in pages; only described as a product feature."
+  }
+ }
+}

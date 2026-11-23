@@ -1,0 +1,126 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.088109,
+  "seconds": 87.6,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
+  "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-dev-org.html",
+  "https://www.salesforce.com/platform/enterprise-app-development/pricing/",
+  "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_list.htm",
+  "https://developer.salesforce.com/docs/platform/sfdx-dev/guide/sfdx-dev-mcp-server.html",
+  "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm",
+  "https://developer.salesforce.com/docs/platform/salesforce-app-limits-cheatsheet/guide/salesforce-app-limits-platform-api.html",
+  "https://developer.salesforce.com/docs/platform/connect-rest-api/guide/intro_rate_limits.html",
+  "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/openapi_beta.htm",
+  "https://docs.composio.dev/toolkits/salesforce.md",
+  "https://github.com/advancedcommunities/salesforce-mcp-server",
+  "https://salesforce.com",
+  "https://developer.salesforce.com",
+  "https://docs.salesforce.com"
+ ],
+ "output": {
+  "one_liner": "Salesforce is a cloud-based CRM platform for managing customer relationships, sales, service, and commerce with integrated AI agents.",
+  "app_type": "saas",
+  "auth": {
+   "methods": [
+    "oauth2"
+   ],
+   "oauth_grant_types": [],
+   "notes": "OAuth 2.0 is the primary authentication method for external client apps and connected apps. External client apps are now preferred over connected apps as of Spring 2026. DPoP (Demonstrating Proof-of-Possession) is optional for enhanced token security.",
+   "evidence": [
+    {
+     "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
+     "snippet": "OAuth 2.0 is an open protocol that authorizes secure data sharing between applications through the exchange of tokens."
+    },
+    {
+     "url": "https://docs.composio.dev/toolkits/salesforce.md",
+     "snippet": "Auth: OAUTH2, S2S_OAUTH2"
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Free Salesforce Developer Edition available at developer.salesforce.com/signup for testing and development. 30-day free trial also available for Salesforce Platform editions.",
+   "evidence": [
+    {
+     "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-dev-org.html",
+     "snippet": "Developer Edition provides a free and easy solution so that you can use Salesforce for testing and development."
+    },
+    {
+     "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-dev-org.html",
+     "snippet": "To sign up for a Developer Edition account, go to developer.salesforce.com/signup."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest",
+    "soap"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": null,
+   "rate_limit_note": "Developer Edition: 15,000 API calls per 24 hours; 5 concurrent requests. Production/Sandboxes: 100,000+ calls per 24 hours; 25 concurrent requests.",
+   "evidence": [
+    {
+     "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm",
+     "snippet": "REST API is one of several web interfaces that you can use to access your Salesforce data without using the Salesforce user interface."
+    },
+    {
+     "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_list.htm",
+     "snippet": "The following table lists supported REST resources in the API and provides a brief description for each."
+    },
+    {
+     "url": "https://developer.salesforce.com/docs/platform/salesforce-app-limits-cheatsheet/guide/salesforce-app-limits-platform-api.html",
+     "snippet": "These limits and allocations apply to Salesforce Platform SOAP and REST APIs and any other API built on those frameworks, unless noted otherwise."
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://developer.salesforce.com/docs/platform/sfdx-dev/guide/sfdx-dev-mcp-server.html",
+   "community": [
+    "https://github.com/advancedcommunities/salesforce-mcp-server"
+   ],
+   "evidence": [
+    {
+     "url": "https://developer.salesforce.com/docs/platform/sfdx-dev/guide/sfdx-dev-mcp-server.html",
+     "snippet": "The Salesforce DX MCP Server is an npm package called @salesforce/mcp."
+    },
+    {
+     "url": "https://github.com/advancedcommunities/salesforce-mcp-server",
+     "snippet": "Salesforce MCP Server is a Model Context Protocol (MCP) server that enables AI assistants to interact with Salesforce organizations."
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Free self-serve Developer Edition credentials, well-documented OAuth 2.0 REST and SOAP APIs with broad resource coverage, and existing Composio toolkit with 595 tools confirm immediate buildability.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "SALESFORCE"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://salesforce.com",
+    "snippet": "Your agents, your team, your data — working together so every customer interaction reflects your business at its best."
+   },
+   {
+    "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm",
+    "snippet": "REST API uses RESTful architecture to provide a straightforward and consistent interface without requiring much tooling to access data."
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "Specific OAuth 2.0 grant types (authorization_code, client_credentials, etc.) not explicitly named in provided pages.",
+   "access": "",
+   "api_surface": "OpenAPI spec generation is beta; stable URL not provided. Webhooks not mentioned in provided pages.",
+   "mcp": ""
+  }
+ }
+}

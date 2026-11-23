@@ -1,0 +1,272 @@
+{
+ "id": 5,
+ "app": "Twenty",
+ "tag": "agent2",
+ "urls": [
+  {
+   "url": "https://twenty.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.twenty.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.twenty.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://docs.twenty.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://twenty.com/pricing",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://twenty.com/developers",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://twenty.com/developers/section/api-and-webhooks",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://twenty.com/developers/section/api-and-webhooks/webhooks",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://twenty.com/developers/section/api-and-webhooks/rest-api",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://twenty.com/developers/section/api-and-webhooks/graphql-api",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://twenty.com/developers/section/api-and-webhooks/authentication",
+   "purpose": "auth",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://twenty.com/developers/section/api-and-webhooks/mcp-server",
+   "purpose": "mcp_server",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://twenty.com/developers/section/self-hosting",
+   "purpose": "sandbox",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/mhenry3164/twenty-crm-mcp-server",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/jezweb/twenty-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/Jdu278/twenty-mcp-server",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/twenty.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://twenty.com/customers/alternative-partners",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://twenty.com/partners",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://twenty.com/partners/integrators",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://twenty.com/partners/creators",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.twenty.com/getting-started/introduction",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.twenty.com/getting-started/key-features",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.twenty.com/getting-started/quickstart",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.twenty.com/getting-started/core-concepts/data-model",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.twenty.com/getting-started/core-concepts/layout",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "mhenry3164/twenty-crm-mcp-server",
+   "url": "https://github.com/mhenry3164/twenty-crm-mcp-server",
+   "stars": 109,
+   "description": "A Model Context Protocol (MCP) server for Twenty CRM integration. Enables natural language interactions with your CRM data through Claude and other AI assistant"
+  },
+  {
+   "repo": "jezweb/twenty-mcp",
+   "url": "https://github.com/jezweb/twenty-mcp",
+   "stars": 53,
+   "description": ""
+  },
+  {
+   "repo": "Jdu278/twenty-mcp-server",
+   "url": "https://github.com/Jdu278/twenty-mcp-server",
+   "stars": 14,
+   "description": ""
+  },
+  {
+   "repo": "KonstiDoll/twenty-crm-mcp-server",
+   "url": "https://github.com/KonstiDoll/twenty-crm-mcp-server",
+   "stars": 9,
+   "description": "A clean, GraphQL-based Model Context Protocol server for Twenty CRM. Enables natural language interactions with your CRM data through Claude and other AI assist"
+  },
+  {
+   "repo": "smartsheet/cli-agent-power-tools",
+   "url": "https://github.com/smartsheet/cli-agent-power-tools",
+   "stars": 9,
+   "description": "A free, open-source, pack of Claude Code agents for project managers. Purpose-built against the Smartsheet MCP server. Twenty years of operational depth, at the"
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Twenty",
+    "slug": "TWENTY",
+    "tools": 23,
+    "auth": [
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/twenty.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Twenty",
+    "slug": "TWENTY",
+    "tools": 23,
+    "auth": [
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/twenty.md"
+   }
+  ]
+ },
+ "search_meta": {}
+}

@@ -1,0 +1,296 @@
+{
+ "id": 21,
+ "app": "Slack",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://slack.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.slack.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 403,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.slack.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 403,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.slack.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 403,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://slack.com/pricing",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://api.slack.com/start",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://api.slack.com/authentication/oauth-v2",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://api.slack.com/developer-program",
+   "purpose": "access",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://api.slack.com/docs/developer-sandbox",
+   "purpose": "access",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://api.slack.com/methods",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://api.slack.com/apis/rate-limits",
+   "purpose": "rate_limits",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://api.slack.com/events-api",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://slack.com/help/articles/48855576908307-Guide-to-Model-Context-Protocol-in-Slack",
+   "purpose": "mcp_official",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://slack.com/marketplace/category/At0B6CJ29JDB-mcp-registry",
+   "purpose": "mcp_community",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://github.com/sansan0/TrendRadar",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/PostHog/posthog",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/sandbox-quantum/switch",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/slack.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://slack.com/intl/en-in/solutions/use-cases/collaborating-with-external-partners",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://slack.com/intl/en-in/partners",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 404,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://slack.com/partner-offers",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://slack.com/intl/en-in/pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://slack.com/intl/en-in/pricing/paid-vs-free",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://slack.com/intl/en-in/accessibility",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://slack.com/intl/en-in/partner-offers",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://slack.com/intl/es-la/pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://slack.com/intl/pt-br/pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "sansan0/TrendRadar",
+   "url": "https://github.com/sansan0/TrendRadar",
+   "stars": 63819,
+   "description": "⭐AI-driven public opinion & trend monitor with multi-platform aggregation, RSS, web search, MCP & smart alerts.🎯 告别信息过载，你的 AI     舆情监控助手与热点筛选工具！聚合多平台热点 + RSS 订阅"
+  },
+  {
+   "repo": "PostHog/posthog",
+   "url": "https://github.com/PostHog/posthog",
+   "stars": 41040,
+   "description": ":hedgehog: PostHog is the leading platform for building self-driving products. Our developer tools – AI observability, analytics, session replay, flags, experim"
+  },
+  {
+   "repo": "sandbox-quantum/switch",
+   "url": "https://github.com/sandbox-quantum/switch",
+   "stars": 4699,
+   "description": "Open-source AI teammates in Slack, Teams, Discord, Telegram and Mattermost. Bring Claude Code, Codex, Gemini (Antigravity), Cursor, GitHub Copilot or your own a"
+  },
+  {
+   "repo": "pipeshub-ai/pipeshub-ai",
+   "url": "https://github.com/pipeshub-ai/pipeshub-ai",
+   "stars": 4147,
+   "description": "The open-source context layer for AI agents and enterprise AI search. Permission-aware search and cited answers across 30+ sources, including Slack, Drive, Jira"
+  },
+  {
+   "repo": "OpenCoworkAI/open-cowork",
+   "url": "https://github.com/OpenCoworkAI/open-cowork",
+   "stars": 2284,
+   "description": "Open-source AI agent desktop app for Windows & macOS. One-click install Claude Code, MCP tools, and Skills — with sandbox isolation, multi-model support, and Fe"
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Slack",
+    "slug": "SLACK",
+    "tools": 174,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/slack.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Slack",
+    "slug": "SLACK",
+    "tools": 174,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/slack.md"
+   },
+   {
+    "name": "Slackbot",
+    "slug": "SLACKBOT",
+    "tools": 108,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/slackbot.md"
+   }
+  ]
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.4767814,
+  "seconds": 66.7,
+  "turns": 17,
+  "notes": "OpenAPI spec available on api.slack.com but no direct downloadable URL found; pricing is free for developer program and paid plans only affect workspace features, not API access tier"
+ }
+}

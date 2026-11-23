@@ -1,0 +1,271 @@
+{
+ "id": 9,
+ "app": "Copper",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://copper.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.copper.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.copper.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.copper.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://copper.com/pricing",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.copper.com/",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.copper.com/introduction/authentication.html",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.copper.com/introduction/oauth/flow.html",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://support.copper.com/en/articles/8823347-generating-an-api-key",
+   "purpose": "access",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://support.copper.com/en/articles/9623758-copper-plans-feature-comparison",
+   "purpose": "access",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.copper.com/partners",
+   "purpose": "access",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.copper.com/introduction/requests.html",
+   "purpose": "rate_limits",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.copper.com/webhooks/overview.html",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.copper.com/v1/openapi.json",
+   "purpose": "openapi",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.copper.com/mcp",
+   "purpose": "mcp_official",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://glama.ai/mcp/servers/dazanza/copper-mcp",
+   "purpose": "mcp_community",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/claynicholson/copper-kicad-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/Copperpour/Copperpour",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/seunghyukchoe/copper-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/copper.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.copper.com/pricing",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.copper.com/introduction/oauth/index.html",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.copper.com/introduction/oauth/quickstart.html",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://support.copper.com/en/collections/9574909-certified-service-partners",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://glama.ai/mcp/servers",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "claynicholson/copper-kicad-mcp",
+   "url": "https://github.com/claynicholson/copper-kicad-mcp",
+   "stars": 120,
+   "description": "MCP server that lets any AI app design real, orderable KiCad boards: schematic, LCSC parts, PCB routing, ERC/DRC, JLCPCB fab files."
+  },
+  {
+   "repo": "Copperpour/Copperpour",
+   "url": "https://github.com/Copperpour/Copperpour",
+   "stars": 43,
+   "description": "Open-source AI-assisted PCB design for KiCad 10. Connect your AI assistant to schematic capture, PCB layout, routing, design checks, and manufacturing exports t"
+  },
+  {
+   "repo": "seunghyukchoe/copper-mcp",
+   "url": "https://github.com/seunghyukchoe/copper-mcp",
+   "stars": 5,
+   "description": "Local-first PCB automation for KiCad with safe MCP tools and deterministic autorouting research."
+  },
+  {
+   "repo": "noelschwarz/copper",
+   "url": "https://github.com/noelschwarz/copper",
+   "stars": 1,
+   "description": "Copper is an open-source CLI by Basematter that tails MCP (Model Context Protocol) tool calls, redacts secrets, and flags risky ones. See what your AI agent is "
+  },
+  {
+   "repo": "Lotulune/Copperbench",
+   "url": "https://github.com/Lotulune/Copperbench",
+   "stars": 1,
+   "description": "Visual Minecraft Java mod creation for Windows 11 and Ubuntu 24.04: Fabric/NeoForge, Blockly, local MCP and SDK automation. Independent MCreator derivative, GPL"
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Copper",
+    "slug": "COPPER",
+    "tools": 65,
+    "auth": [
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/copper.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Copper",
+    "slug": "COPPER",
+    "tools": 65,
+    "auth": [
+     "API_KEY"
+    ],
+    "url": "https://docs.composio.dev/toolkits/copper.md"
+   }
+  ]
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.3065987,
+  "seconds": 34.3,
+  "turns": 15,
+  "notes": "API available on trial, professional and business plans. Rate limit: 180 req/min (rolling window). Bulk APIs: 3 req/sec. OAuth2.0 preferred for partner integrations."
+ }
+}

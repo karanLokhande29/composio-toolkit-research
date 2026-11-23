@@ -1,0 +1,253 @@
+{
+ "id": 15,
+ "app": "Pylon",
+ "tag": "agent1",
+ "urls": [
+  {
+   "url": "https://usepylon.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.usepylon.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.usepylon.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 0,
+   "ok": false,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.usepylon.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://usepylon.com/pricing",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.usepylon.com/pylon-docs/developer/api",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.usepylon.com/pricing",
+   "purpose": "pricing",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference/accounts",
+   "purpose": "api_reference",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.usepylon.com/pylon-docs/developer/webhooks",
+   "purpose": "webhooks",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.usepylon.com/pylon-docs/integrations/pylon-mcp",
+   "purpose": "mcp_official",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/JustinBeckwith/pylon-mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/toalba/Pylon",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/OpenAgentsInc/pylon-previous",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/pylon_mcp.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.usepylon.com/integrations/mcp",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.usepylon.com/pylon-docs/getting-started/publish-your-docs",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.usepylon.com/pylon-docs/getting-started/setup",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.usepylon.com/pylon-docs/getting-started/channel-configuration",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.usepylon.com/pylon-docs/getting-started/user-guide",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.usepylon.com/pylon-docs/getting-started/pylonboarding",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.usepylon.com/pylon-docs/knowledge-base/custom-authentication",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.usepylon.com/pylon-docs/customer-portal/access-control",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.usepylon.com/pylon-docs/customer-portal/custom-authentication",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "JustinBeckwith/pylon-mcp",
+   "url": "https://github.com/JustinBeckwith/pylon-mcp",
+   "stars": 8,
+   "description": "MCP server for Pylon customer support platform"
+  },
+  {
+   "repo": "toalba/Pylon",
+   "url": "https://github.com/toalba/Pylon",
+   "stars": 3,
+   "description": "VS Code MCP server — exposes terminals, diagnostics, debugging & editor actions to AI coding agents over a single HTTP endpoint. Multi-window support via hub/sa"
+  },
+  {
+   "repo": "OpenAgentsInc/pylon-previous",
+   "url": "https://github.com/OpenAgentsInc/pylon-previous",
+   "stars": 2,
+   "description": "DVM/MCP node for Onyx"
+  },
+  {
+   "repo": "pylonapi/pylon-mcp",
+   "url": "https://github.com/pylonapi/pylon-mcp",
+   "stars": 1,
+   "description": "MCP server for Pylon AI — 10 pay-per-request APIs as AI agent tools. Powered by x402 on Base."
+  },
+  {
+   "repo": "lwsinclair/pylon-mcp",
+   "url": "https://github.com/lwsinclair/pylon-mcp",
+   "stars": 0,
+   "description": "MCP server for the Pylon API"
+  }
+ ],
+ "composio": {
+  "exact": [],
+  "candidates": [
+   {
+    "name": "Pylon MCP",
+    "slug": "PYLON_MCP",
+    "tools": 12,
+    "auth": [
+     "DCR_OAUTH"
+    ],
+    "url": "https://docs.composio.dev/toolkits/pylon_mcp.md"
+   }
+  ]
+ },
+ "search_meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.38395650000000003,
+  "seconds": 46.3,
+  "turns": 15,
+  "notes": "No standalone OpenAPI spec file URL found; API endpoints contain rate limits in individual resource pages; MCP server available at mcp.usepylon.com; API access via admin-created tokens, no separate developer plan needed"
+ }
+}

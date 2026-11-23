@@ -1,0 +1,128 @@
+{
+ "meta": {
+  "backend": "claude_cli",
+  "model": "haiku",
+  "cost_usd": 0.084873,
+  "seconds": 91.2,
+  "turns": 1
+ },
+ "error": null,
+ "pages": [
+  "https://docs.twenty.com/developers/extend/api",
+  "https://docs.twenty.com/developers/extend/oauth",
+  "https://docs.twenty.com/getting-started/quickstart",
+  "https://docs.twenty.com/user-guide/ai/capabilities/mcp",
+  "https://docs.twenty.com/developers/introduction",
+  "https://docs.twenty.com/user-guide/billing/capabilities/usage-limits",
+  "https://docs.composio.dev/toolkits/twenty.md",
+  "https://twenty.com",
+  "https://docs.twenty.com",
+  "https://twenty.com/pricing",
+  "https://twenty.com/customers/alternative-partners",
+  "https://twenty.com/partners",
+  "https://twenty.com/partners/integrators",
+  "https://twenty.com/partners/creators"
+ ],
+ "output": {
+  "one_liner": "Twenty is an open-source CRM platform providing REST and GraphQL APIs for managing CRM records with AI agent capabilities.",
+  "app_type": "open_source_self_hostable",
+  "auth": {
+   "methods": [
+    "bearer_token",
+    "oauth2"
+   ],
+   "oauth_grant_types": [
+    "authorization_code",
+    "client_credentials"
+   ],
+   "notes": "API key (static bearer token) created in Settings → Developers → API. OAuth supports both authorization code flow with PKCE and client credentials for server-to-server access.",
+   "evidence": [
+    {
+     "url": "https://docs.twenty.com/developers/extend/api",
+     "snippet": "Authorization: Bearer YOUR_API_KEY. Create an API key in Settings → Developers → API → + Create key."
+    },
+    {
+     "url": "https://docs.twenty.com/developers/extend/oauth",
+     "snippet": "Twenty implements OAuth 2.0 with authorization code + PKCE for user-facing apps and client credentials for server-to-server access."
+    }
+   ]
+  },
+  "access": {
+   "status": "self_serve_free",
+   "dev_sandbox": true,
+   "notes": "Cloud trial available without credit card (7 days) or with card (30 days) with full API access included. Open-source core is free to self-host. Cloud plans require payment after trial.",
+   "evidence": [
+    {
+     "url": "https://docs.twenty.com/getting-started/quickstart",
+     "snippet": "Pick 30 days (with card) or 7 days (without card). Both include full access — unlimited contacts, email integration, custom objects, API."
+    },
+    {
+     "url": "https://twenty.com",
+     "snippet": "Self-hosting the open source core is free."
+    }
+   ]
+  },
+  "api_surface": {
+   "styles": [
+    "rest",
+    "graphql"
+   ],
+   "breadth": "broad",
+   "openapi_spec_url": null,
+   "webhooks": true,
+   "rate_limit_note": "100 requests per minute; batch size 60 records per call",
+   "evidence": [
+    {
+     "url": "https://docs.twenty.com/developers/extend/api",
+     "snippet": "REST and GraphQL APIs generated from your workspace schema. Schema-per-tenant APIs."
+    },
+    {
+     "url": "https://docs.twenty.com/developers/extend/api",
+     "snippet": "Rate limits: Requests 100 per minute, Batch size 60 records per call"
+    },
+    {
+     "url": "https://twenty.com/pricing",
+     "snippet": "REST & GraphQL API: Yes. Webhooks: Yes."
+    }
+   ]
+  },
+  "mcp": {
+   "official": "https://docs.twenty.com/user-guide/ai/capabilities/mcp",
+   "community": [],
+   "evidence": [
+    {
+     "url": "https://docs.twenty.com/user-guide/ai/capabilities/mcp",
+     "snippet": "Twenty exposes an MCP server so that AI assistants — Claude Desktop, Claude Code, Cursor, ChatGPT, and others — can read and write your CRM data."
+    },
+    {
+     "url": "https://twenty.com",
+     "snippet": "Every Cloud workspace ships with a native MCP server. Connect your AI assistant via OAuth."
+    }
+   ]
+  },
+  "buildability": {
+   "verdict": "ready",
+   "main_blocker": "none",
+   "rationale": "Self-serve free credentials via cloud trial or open-source self-hosting; documented REST and GraphQL APIs; Composio toolkit with 23 tools already exists.",
+   "composio_existing_toolkit": "yes",
+   "composio_slug": "TWENTY"
+  },
+  "overview_evidence": [
+   {
+    "url": "https://twenty.com",
+    "snippet": "Twenty | #1 Open Source CRM. Build your Enterprise CRM at AI Speed."
+   },
+   {
+    "url": "https://docs.twenty.com",
+    "snippet": "Twenty is a production-ready CRM you can reshape as you go. Built for Agents."
+   }
+  ],
+  "confidence": 0.95,
+  "unknown_reasons": {
+   "auth": "",
+   "access": "",
+   "api_surface": "",
+   "mcp": ""
+  }
+ }
+}

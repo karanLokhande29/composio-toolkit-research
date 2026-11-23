@@ -1,0 +1,316 @@
+{
+ "id": 1,
+ "app": "Salesforce",
+ "tag": "agent2",
+ "urls": [
+  {
+   "url": "https://salesforce.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developers.salesforce.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 403,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.salesforce.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.salesforce.com",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://salesforce.com/pricing",
+   "purpose": "hint",
+   "source": "hint",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.salesforce.com/docs",
+   "purpose": "overview",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://help.salesforce.com/s/articleView?id=sf.remoteaccess_oauth_tokens_scopes.htm",
+   "purpose": "auth",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.salesforce.com/signup",
+   "purpose": "developer access/sandbox signup",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.salesforce.com/platform/sandbox",
+   "purpose": "sandbox",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://www.salesforce.com/form/developer/pardot-isvforce-signup/",
+   "purpose": "partner programme",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/",
+   "purpose": "API reference",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.salesforce.com/docs/atlas.en-us.salesforce_app_limits_cheatsheet.meta/salesforce_app_limits_cheatsheet/",
+   "purpose": "rate limits",
+   "source": "search",
+   "status": 200,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://developer.salesforce.com/docs/atlas.en-us.platform_events.meta/platform_events/platform_events_intro.htm",
+   "purpose": "webhooks/events",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://developer.salesforce.com/docs/platform/einstein-1-mcp",
+   "purpose": "MCP server",
+   "source": "search",
+   "status": 404,
+   "ok": false,
+   "js_rendered": true
+  },
+  {
+   "url": "https://www.salesforce.com/editions-pricing/platform/",
+   "purpose": "pricing",
+   "source": "search",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/salesforcecli/mcp",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/smn2gnt/MCP-Salesforce",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://github.com/tsmztech/mcp-server-salesforce",
+   "purpose": "mcp_community?",
+   "source": "github",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://docs.composio.dev/toolkits/salesforce.md",
+   "purpose": "composio_toolkit",
+   "source": "composio",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.salesforce.com/in/agentforce/pricing/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.salesforce.com/in/sales/partner-cloud/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.salesforce.com/in/sales/pricing/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.salesforce.com/in/service/pricing/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.salesforce.com/in/marketing/pricing/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.salesforce.com/in/commerce/pricing/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.salesforce.com/in/analytics/pricing/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.salesforce.com/in/slack/pricing/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.salesforce.com/in/net-zero/pricing/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  },
+  {
+   "url": "https://www.salesforce.com/in/small-business/pricing/",
+   "purpose": "crawl",
+   "source": "crawl",
+   "status": 200,
+   "ok": true,
+   "js_rendered": false
+  }
+ ],
+ "github_mcp": [
+  {
+   "repo": "salesforcecli/mcp",
+   "url": "https://github.com/salesforcecli/mcp",
+   "stars": 493,
+   "description": "MCP Server for interacting with Salesforce instances"
+  },
+  {
+   "repo": "smn2gnt/MCP-Salesforce",
+   "url": "https://github.com/smn2gnt/MCP-Salesforce",
+   "stars": 180,
+   "description": "MCP Salesforce connector"
+  },
+  {
+   "repo": "tsmztech/mcp-server-salesforce",
+   "url": "https://github.com/tsmztech/mcp-server-salesforce",
+   "stars": 165,
+   "description": "Salesforce MCP Server"
+  },
+  {
+   "repo": "forcedotcom/mcp-hosted",
+   "url": "https://github.com/forcedotcom/mcp-hosted",
+   "stars": 136,
+   "description": "Salesforce Hosted MCP Servers"
+  },
+  {
+   "repo": "SalesforceCommerceCloud/b2c-developer-tooling",
+   "url": "https://github.com/SalesforceCommerceCloud/b2c-developer-tooling",
+   "stars": 58,
+   "description": "B2C CLI, VSCode Extension, Skills+MCP, and Tooling SDK for Salesforce Agentforce Commerce B2C "
+  }
+ ],
+ "composio": {
+  "exact": [
+   {
+    "name": "Salesforce",
+    "slug": "SALESFORCE",
+    "tools": 595,
+    "auth": [
+     "OAUTH2",
+     "S2S_OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/salesforce.md"
+   }
+  ],
+  "candidates": [
+   {
+    "name": "Salesforce",
+    "slug": "SALESFORCE",
+    "tools": 595,
+    "auth": [
+     "OAUTH2",
+     "S2S_OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/salesforce.md"
+   },
+   {
+    "name": "Salesforce Data 360",
+    "slug": "SALESFORCE_DATA_360",
+    "tools": 424,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/salesforce_data_360.md"
+   },
+   {
+    "name": "Salesforce Service Cloud",
+    "slug": "SALESFORCE_SERVICE_CLOUD",
+    "tools": 24,
+    "auth": [
+     "OAUTH2"
+    ],
+    "url": "https://docs.composio.dev/toolkits/salesforce_service_cloud.md"
+   }
+  ]
+ },
+ "search_meta": {}
+}
