@@ -1,0 +1,270 @@
+{
+ "n_apps": 12,
+ "auth_distribution": {
+  "oauth2": 12,
+  "bearer_token": 5,
+  "api_key": 5,
+  "basic": 1
+ },
+ "auth_summary": {
+  "oauth2_any": 12,
+  "key_or_token_any": 8,
+  "both": 8,
+  "key_only": 0,
+  "oauth2_pct": 100,
+  "key_or_token_pct": 67,
+  "both_pct": 67
+ },
+ "access_distribution": {
+  "self_serve_free": 7,
+  "self_serve_trial": 3,
+  "paid_plan_required": 1,
+  "admin_approval": 1
+ },
+ "access_buckets": {
+  "self-serve": 10,
+  "paid plan": 1,
+  "gated": 1
+ },
+ "self_serve_pct": 83,
+ "gated_n": 1,
+ "access_by_category": {
+  "CRM and Sales": {
+   "n": 10,
+   "self-serve": 8,
+   "paid plan": 1,
+   "gated": 1,
+   "unknown": 0,
+   "self_serve_pct": 80,
+   "ready": 6,
+   "ready_with_caveats": 4,
+   "blocked": 0,
+   "oauth2": 10,
+   "mcp_official": 7
+  },
+  "Support and Helpdesk": {
+   "n": 2,
+   "self-serve": 2,
+   "paid plan": 0,
+   "gated": 0,
+   "unknown": 0,
+   "self_serve_pct": 100,
+   "ready": 1,
+   "ready_with_caveats": 1,
+   "blocked": 0,
+   "oauth2": 2,
+   "mcp_official": 1
+  }
+ },
+ "category_rank_self_serve": [
+  "Support and Helpdesk",
+  "CRM and Sales"
+ ],
+ "best_category": {
+  "name": "Support and Helpdesk",
+  "self_serve_pct": 100
+ },
+ "worst_category": {
+  "name": "CRM and Sales",
+  "self_serve_pct": 80
+ },
+ "blocker_frequency": {
+  "paid_plan": 3,
+  "app_review": 1,
+  "admin_scope": 1
+ },
+ "top_blocker": {
+  "name": "paid_plan",
+  "n": 3
+ },
+ "verdicts": {
+  "ready": 7,
+  "ready_with_caveats": 5
+ },
+ "ready_n": 7,
+ "caveats_n": 5,
+ "blocked_n": 0,
+ "mcp_coverage": {
+  "official": 8,
+  "community_only": 3,
+  "none_found": 1
+ },
+ "composio_coverage": {
+  "has_toolkit": 11,
+  "no_toolkit": 1
+ },
+ "api_styles": {
+  "rest": 12,
+  "graphql": 3,
+  "soap": 1,
+  "none": 1
+ },
+ "app_types": {
+  "saas": 11,
+  "open_source_self_hostable": 1
+ },
+ "easy_wins": [
+  {
+   "id": 1,
+   "app": "Salesforce",
+   "category": "CRM and Sales",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": true,
+   "rationale": "Free self-serve Developer Edition credentials, well-documented OAuth 2.0 REST and SOAP APIs with broad resource coverage, and existing Composio toolkit with 595 tools confirm immediate buildability."
+  },
+  {
+   "id": 4,
+   "app": "Attio",
+   "category": "CRM and Sales",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": true,
+   "rationale": "Self-serve free credentials with documented REST API, OpenAPI spec, official MCP server, and OAuth2 support enable immediate toolkit development."
+  },
+  {
+   "id": 5,
+   "app": "Twenty",
+   "category": "CRM and Sales",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": true,
+   "rationale": "Self-serve free credentials via cloud trial or open-source self-hosting; documented REST and GraphQL APIs; Composio toolkit with 23 tools already exists."
+  },
+  {
+   "id": 6,
+   "app": "Podio",
+   "category": "CRM and Sales",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": true,
+   "rationale": "Self-serve OAuth2 credentials, well-documented REST API with broad resource coverage, webhooks support, official MCP server, and existing Composio toolkit with 143 tools."
+  },
+  {
+   "id": 7,
+   "app": "Zoho CRM",
+   "category": "CRM and Sales",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": true,
+   "rationale": "Self-serve free developer tier, well-documented REST/GraphQL APIs, OAuth2 authentication, webhooks, and official MCP servers enable toolkit development today."
+  },
+  {
+   "id": 8,
+   "app": "Close",
+   "category": "CRM and Sales",
+   "access": "self_serve_trial",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": true,
+   "rationale": "Self-serve API credentials (free trial, free dev orgs, API keys, OAuth), comprehensive REST API with OpenAPI spec, official MCP server, and clear documentation enable building a toolkit today."
+  },
+  {
+   "id": 12,
+   "app": "Intercom",
+   "category": "Support and Helpdesk",
+   "access": "self_serve_free",
+   "verdict": "ready",
+   "blocker": "none",
+   "composio_toolkit": "yes",
+   "mcp_official": true,
+   "rationale": "Self-serve free developer workspaces with immediate API credentials, fully documented REST API with OpenAPI spec, webhooks support, and official MCP server enable toolkit development today."
+  }
+ ],
+ "easy_wins_n": 7,
+ "easy_wins_without_composio_toolkit": [],
+ "easy_new_n": 0,
+ "needs_outreach": [],
+ "outreach_n": 0,
+ "needs_app_review": [
+  {
+   "id": 2,
+   "app": "HubSpot",
+   "category": "CRM and Sales",
+   "access": "self_serve_free",
+   "verdict": "ready_with_caveats",
+   "blocker": "app_review",
+   "composio_toolkit": "yes",
+   "mcp_official": true,
+   "rationale": "Self-serve free developer account with documented REST/GraphQL API and webhooks; app review required for production distribution."
+  }
+ ],
+ "review_n": 1,
+ "needs_paid_plan": [
+  {
+   "id": 3,
+   "app": "Pipedrive",
+   "category": "CRM and Sales",
+   "access": "self_serve_trial",
+   "verdict": "ready_with_caveats",
+   "blocker": "paid_plan",
+   "composio_toolkit": "yes",
+   "mcp_official": false,
+   "rationale": "REST API is well-documented with free sandbox and broad endpoints, but end-users require paid Pipedrive plan after 14-day trial."
+  },
+  {
+   "id": 9,
+   "app": "Copper",
+   "category": "CRM and Sales",
+   "access": "paid_plan_required",
+   "verdict": "ready_with_caveats",
+   "blocker": "paid_plan",
+   "composio_toolkit": "yes",
+   "mcp_official": false,
+   "rationale": "Well-documented REST API with broad resource coverage and webhooks, but requires paid Professional tier ($69+/user/month) for access and admin-only API key generation."
+  },
+  {
+   "id": 11,
+   "app": "Zendesk",
+   "category": "Support and Helpdesk",
+   "access": "self_serve_trial",
+   "verdict": "ready_with_caveats",
+   "blocker": "paid_plan",
+   "composio_toolkit": "yes",
+   "mcp_official": false,
+   "rationale": "Free trial with documented OAuth and REST API enable development, but production use requires paid Zendesk account."
+  }
+ ],
+ "paid_n": 3,
+ "unknowns": [],
+ "non_saas": [],
+ "rest_n": 12,
+ "graphql_n": 3,
+ "headlines": [
+  {
+   "text": "OAuth2 is the dominant auth pattern: 12 of 12 apps support it, and 8 offer both OAuth2 and a static key/token - so most toolkits need an OAuth app registration, with API keys as the quick path for single-tenant use.",
+   "key": "auth_summary.oauth2_any"
+  },
+  {
+   "text": "Getting credentials is mostly self-serve: 83% of apps let a developer get working credentials alone (free or trial); 1 are gated by an admin, app review, partner programme or sales.",
+   "key": "self_serve_pct"
+  },
+  {
+   "text": "Gating clusters by category: Support and Helpdesk is the most self-serve (100%), CRM and Sales the least (80%).",
+   "key": "worst_category.self_serve_pct"
+  },
+  {
+   "text": "The most common blocker is 'paid plan' (3 apps); 7 apps are ready today, 5 ready with caveats, 0 blocked.",
+   "key": "top_blocker.n"
+  },
+  {
+   "text": "MCP is already mainstream: 8 vendors ship an official MCP server and 3 more have only community servers.",
+   "key": "mcp_coverage.official"
+  },
+  {
+   "text": "Composio already has toolkits for 11 of the 12; 0 self-serve, ready apps have no Composio toolkit yet - the cheapest net-new wins.",
+   "key": "easy_new_n"
+  }
+ ]
+}
